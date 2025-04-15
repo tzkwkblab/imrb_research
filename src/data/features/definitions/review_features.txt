@@ -1,0 +1,124 @@
+# レビュー文章の特徴定義リスト（20項目）
+
+1. 価格に関する言及を含んでいる
+2. 製品の技術的な詳細説明を含んでいる
+3. 競合製品との比較内容を含んでいる
+4. 長期使用経験について言及している
+5. 製品の具体的な使用目的を説明している
+6. 初期設定や導入時の経験を説明している
+7. 製品の欠点や制限について具体的に述べている
+8. 過去の類似製品との使用経験を比較している
+9. ブランドへの信頼性について言及している
+10. 購入の意思決定プロセスを説明している
+11. 予想外の問題点や発見を報告している
+12. 製品の耐久性や品質について言及している
+13. 返品や交換の意向を示している
+14. 改善への提案や要望を含んでいる
+15. 製品の推奨対象を明確に示している
+16. パッケージや付属品について言及している
+17. カスタマーサポートの経験について述べている
+18. 製品の使用環境について説明している
+19. 期待との一致・不一致について言及している
+20. 他のユーザーへのアドバイスを含んでいる
+
+[レビュー 1] 3.0星
+テキスト: Yeah, I don't get this obsession with Monster brand cable either.  When I got my 5.1 set-up, I thought the only way to get 5.1 sound was to use an optical wire anyway.  Well, on my system it was, as it had no RCA jacks for all those discrete channels.  All it has is one optical jack and one set of L/R RCA jacks for a stereo VCR source.So all I did was go to Wal Mart or Radio Shack (can't remember which) and bought the only optical cable they had for like 20 bucks.  Works just fine.  My problem if anything is my receiver.  But I think I'll be upgrading sometime later this year.
+values = [
+    1,  # 1: Contains mentions of price or cost
+    1,  # 2: Includes technical details or specifications
+    0,  # 3: Contains comparisons with competing products
+    1,  # 4: Mentions long-term usage experience
+    1,  # 5: Explains specific use cases or purposes
+    1,  # 6: Describes initial setup or installation experience
+    1,  # 7: Specifically mentions product limitations or drawbacks
+    0,  # 8: Compares with previous similar products used
+    0,  # 9: References brand reliability or reputation
+    1,  # 10: Explains purchase decision process
+    1,  # 11: Reports unexpected issues or discoveries
+    1,  # 12: Mentions product durability or quality
+    0,  # 13: Indicates intention to return or exchange
+    0,  # 14: Contains suggestions for improvement
+    0,  # 15: Clearly indicates recommended user groups
+    0,  # 16: Mentions packaging or included accessories
+    0,  # 17: Describes customer support experience
+    0,  # 18: Explains product usage environment
+    1,  # 19: References match/mismatch with expectations
+    0   # 20: Includes advice for other users
+]
+--------------------------------------------------------------------------------
+
+[レビュー 2] 5.0星
+テキスト: Good product.  The floppy disks worked fine as advertised.FYI, I bought an External USB floppy drive to write these disks in the modern PCs(mostly for reprogramming BIOS on old motherboards).
+--------------------------------------------------------------------------------
+
+[レビュー 3] 5.0星
+テキスト: When I rearranged my office I discovered the power cord from my computer monitor would no long reach my battery backup. An extension cord was needed. I have used Belkin products before and have always been satisfied so I didn't hesitate to order this online. I received it in only a few days and it worked perfectly. The plug ends fit snuggly and the picture on the monitor is as good as it was before I added the extension cord. And at a great price, too.
+--------------------------------------------------------------------------------
+
+[レビュー 4] 5.0星
+テキスト: These are a great pair for the price, ~35 cheaper than the MDR7506I have just started listening to the V6s and have had the MDR7506s for a little over a year.Honestly, you get what you pay for most of the time, except for the MDR 7506 and V6 cans. They both are undeniable stars in the headphones scene.The difference between the V6 and MDR7506 is very small, but there is a difference, both in sound (maybe my V6s just need to break in, but I generally don't believe in the break in process for speakers)The MDR7506 from the very beginning were absolutely amazing. Very natural sounding, great ability to pick out little details in well recorded music. I loved listening to some of the Eagle's stuff on them, they have some crisp clean string sounds and well recorded drums. They are loose fitting on the ears somewhat, keeps your ears feeling free and comfortable. The cable is very good rubber, limber and returns to it's shape over a few minutes if left in a knot or stretched out.The V6s have an almost equally amazing sound, more bass response than the MDR7506. Seems that they lack (just very so slightly) the clarity of the MDR7506. Earpads are more of a matt finish and firmer than the 7506s. The cable on these is no doubt quality, and will last years under normal circumstances, but the 'nice' factor is not the same feel. The actual plug is just like that on the 7506, same screw on 1/4" adapter, but the shell is nickel finished instead of black, and the contacts on the plug are nickel plated instead of gold plated. Nickel is actually preferable, against popular belief, because a majority of the jacks it will be plugged into in it's life will have nickel plated contacts, and dissimilar metals will corrode when touching. Not really a problem in a clean, dry studio, but the ideal thing is always to be kept in mind.In the end, if you're looking for good headphones for studio or engineering of some kind, go with the 7506, if you're doing an at home studio or just want bang for the buck to plug into your ipod, the V6s are where it's at.
+--------------------------------------------------------------------------------
+
+[レビュー 5] 5.0星
+テキスト: I have had these headphones for more almost 2 years now. I am no audiophile but I can hear my 128 kbps mp3 files far better on these headphones as compared to my Creative I-Trigue L3800 (2.1) speakers. And by "light user" I mean AT LEAST one hour of use everyday. Because these perform better than my desktop speakers I have them plugged in pretty much all the time. The extra long, single-sided cord is useful even for home use (though its really a lot sometimes!). And I dont need to set my mp3 player volume greater than 25% of max (iAudio X5) to get excellent sound.Yes I agree they are not built that solid. Even though mine are in great condition, you can still feel its mostly plastic. But I have traveled with these headphones and I have also fallen asleep wearing them. I have also experienced no problems whatsoever with the ear cups/padding. Maybe I just got lucky!
+--------------------------------------------------------------------------------
+
+[レビュー 6] 5.0星
+テキスト: These are my powerstrips of choice, because of the super long cords and the angled plug that allows for tigh fits behind appliances, desks, dressers, etc...Only bad part about these are:  Everytime I buy one, I wish I would have purchased more at the time, because it always seems as though I need another one.
+--------------------------------------------------------------------------------
+
+[レビュー 7] 5.0星
+テキスト: Pros: eInk display preserves traditional reading experience and has great clarity and contrast. Reads PDF (both scanned and standard text) and EPUB book formats with no hassles or conversion required. In-store help and extra features from B&N.; Page turning speed is much improved with most recent update. Android OS allows for almost unlimited software improvements and added features. Replacement batteries can be bought and installed easily. Accepts SD cards for increased storage capacity (this really comes in handy if you want to use the device as an mp3 player or for audiobooks).Cons: eInk display requires you to operate at a bit slower pace than the touchscreen alone would allow. (Also: Not sure why the price from this supplier is abnormally high?)I've played with an iPad and it's a very fun device. But what I don't like is a glowing backlit screen, as I look at a monitor all day. When I read, I want to relax and give my eyes a break, and that's why I prefer eInk displays.The Nook's primary advantage over the Kindle is that it allows you to read EPUB and PDF books (scanned or text; either works) and buy books from various online ebook stores, including the Sony Reader store. This has already allowed me to read two titles that I wouldn't have been able to get for the Kindle. It also works very easily with Adobe Digital Editions software, a huge plus. Currently Amazon offers some titles that B&N; does not (a very temporary state of affairs, I suspect), but those are usually available from Sony.Add the book loan feature, free library books, and the ability to take it to a B&N; store for bonus features, and this unit pretty much stomps the Kindle and Sony readers.The Nook is a little slower than a phone or your other electronic devices due to the e-Ink screen, but once you get used to it, the device seems very smooth. In fact, I find that having to slow down a little actually helps me relax, and once you master turning pages with a quick brush of the thumb across the touchscreen, reading with the Nook is a very pleasant experience. I now prefer it to reading books in print, to be perfectly honest.
+--------------------------------------------------------------------------------
+
+[レビュー 8] 5.0星
+テキスト: Works well. I used this as part of a wok-fi (wifi-antenna). A strainer served as a receiver dish, and boosted my signal, since my home's wifi-doesn't completely reach my shop, unassisted.
+--------------------------------------------------------------------------------
+
+[レビュー 9] 4.0星
+テキスト: I mean its a simple power center, it works, I hope it doesnt fail, but you wont find out until its to late. Hope the brand name will stand up to their previous rep
+--------------------------------------------------------------------------------
+
+[レビュー 10] 2.0星
+テキスト: I finally was convinced that I could enjoy an eBook reader, did my research, and settled on the Nook Color.  My goal was to be able to carry a few books around for pleasure, maybe even some business documents.  Even though I have an iPhone, I thought I would diversify and go after an Android based platform.  I figured that even if I decided to go with the iPad eventually I could use the Nook app on the iPad to read the books that I've bought.After a few weeks of using it, I'm close to handing it over to the kids or jailbreaking it for experimentation with Android, and getting an iPad.1) The quality is low.  The software is buggy, ironically one of the buggiest parts is trying to buy a book, where it more often than not hangs after a purchase with the download in limbo.  The battery charge socket seems to be flakey, so that often the unit gets confused about whether it is charging or now.2) Can't buy books when you're outside the US.  So, on an international business trip - when it'd be nice to pick up a few books for the plane or to pass time in a cafe - one can't buy a book.  That sucks.3) Although in theory I could load a bunch of PDF documents onto it for reading, the display is too small for them.  The interface for PDF documents, in terms of adjusting fonts, scrolling, is very limited.  Device is useless for this.4) The book selection is slim.  I don't think my tastes are that obscure, but I'm not interested in the mass market.  Forget pulling out old sci fi classics.  Forget getting a textbook.  And I find that some of the books that I would like to read are available for the Kindle but not the Nook.5) The iPhone Nook app is super buggy.  In theory it should let me sync, get my books on the iPhone too.  But the iPhone app just hangs and doesn't sync to my account, even after a reinstall.  If you read the reviews of the Nook app on the app store, they're all saying this.6) The App selection is slim.  Email doesn't work with outlook and there's no VPN support.Better to just get an iPad, clearly.
+--------------------------------------------------------------------------------
+
+[レビュー 11] 1.0星
+テキスト: It would not work. The software would install properly. I will be returning the item. Very disappointed in the product.
+--------------------------------------------------------------------------------
+
+[レビュー 12] 4.0星
+テキスト: I've had no problems at all with my router for about 5 months so far.  I get slick speeds and I've been able to connect a PC, a Mac G4 and a laser printer.  I plan to add another PC soon.My internet provider tried to get me to buy a hub and another IP address (for an additional $10 a month).  I originally thought they could get away with this because the service checked the hardware code on my ethernet card.  That was my biggest stumbling block - once I realized I could "clone" my ethernet hardware code on the router (basically change the identifying code of the router to match the ethernet card), everything was perfect...I'd give it 5 stars, but these initial difficulties indicate that it would be helpful to have a tech-nerd around to get it started if necessary.
+--------------------------------------------------------------------------------
+
+[レビュー 13] 5.0星
+テキスト: I am a rookie picture-taker.  I never really had a use for a camera with a zoom lens.  I was always content to use my VERY simple point and shoot.  One day, my pictures came out so badly from my simple camera that I decided that I need to get one with a zoom lens.  I looked at many brands of cameras, but I never considered the Olympus.  Then one of my friends, who knows a lot more than I do about cameras, convinced me to test the Olympus Stylus Epic.  I fell instantly in love, and I bought it.  That choice has been the best decision I ever made!  I love the small size and sleek design of this camera.  I also LOVE all the bells and whistles on it, especially the timer because no one gets left out of the picture.  It also takes very good photographs.  I recommend this camera for anyone, including camera-challenged people like myself.  A great piece of equipment, and the price was very reasonable.
+--------------------------------------------------------------------------------
+
+[レビュー 14] 5.0星
+テキスト: This item worked just fine it came ready to go, it was well packaged with instructions, it did the job I had hoped for, I had a blind spot in my home wifi system so with this I was able to run the cable and provide internet to a part of the house known as the dead zone.
+--------------------------------------------------------------------------------
+
+[レビュー 15] 5.0星
+テキスト: I don't know how someone could give these anything below three stars. Sure, I could understand four, but two stars? These things are amazing! The only two cons I would have are that 1) they could be more portable: the "earpieces" don't rotate, so when you compress everything down to its most portable size, it's still more of a sphere than a circle. 2) Yes, I know that open-backed speakers are known for better sound, but I've had people sitting next to me be able to identify the song I'm listening to because these things "leak out" so much sound. The main problem with this (other than embarrassing yourself or annoying the person next to you) is that they don't work very well for plane riding or anything where it's loud (It was extremely difficult to hear many of the low notes in songs while on the plane last week). Other than those two things, these things are great. Speaking of folding flat earpieces, one of my buddies used to have those similar sennheisers, (I probably spelled that wrong) and he used to lend them to me for a long time until I got these, but the spot where the wire went into the earpiece actually frayed to the point that that earpiece went dead! So overall, I recommend these to anyone who just wants a cheap, yet VERY high quality pair of cans (but check out the Grado sr80i/60i, they may be a little bit less portable, but they're that much more amazing!).
+--------------------------------------------------------------------------------
+
+[レビュー 16] 2.0星
+テキスト: I bought this to replace a Linksys 5-Port Switch that died after several years of use.  I'll be surprised if this one lasts a year.  I definintely got a bad one, but it's so inexpensive, it's not really worth the expense and inconvenience of returning it to either Linksys or the marketplace seller.  This should be a fool-proof device, and probably is if you get a good unit.  Mine, on the other hand, thinks there is always something connected to port 4, bringing down the entire network.  Actually connecting something to port 4 solved that problem, but I'm still experiencing intermittant periods of packet loss of about 25% that require multiple restarts of the switch to correct.  If you're looking for an inexpensive switch, I might suggest buying several of these so you can be sure to get at least one good one, keep another good one as a backup, and return the remainder.  Otherwise spend the extra money for a switch made by a company with actual quality control.
+--------------------------------------------------------------------------------
+
+[レビュー 17] 4.0星
+テキスト: If i had known that the 3g is not good for anything except purchasing books (yes I know it is my fault for not doing more research), I would not have paid more for the 3g version as I don't need the ability to get books anytime anywhere.  The web browser only works on wifi.  Anyway, I really like the Nook. I bought a refurb from one of those daily deal sites for a very good price. I have only had it for about a week so I can't speak for it's reliability but I have loaded lots of free ebooks (what I bought it for) from various sources, some audio books for my kids, and some music.  I like the web browser and the sudoku game.  The only thing I would change if I could is to have an option to combine the "my b&n library" with "my documents" because when you get books from anywhere else besides B&N, it goes to your documents.  I would like to be able to pull up my "mysteries" shelf and be able to see all of my mysteries not just the "documents" set or the "B&N" set.  I think it would make it more user friendly to have that be an option (only an option since some people probably like it the way it is).  It's a bit heavier than I thought it would be but not unmanageable.  I haven't used the library yet but have gotten epub books elsewhere (the epub ability is the reason I chose Nook over Kindle even though there are a lot more free Kindle books).  Overall, yes I would recommend a Nook but I would have gone for the cheaper wifi version had I known that the 3g was useless to me.
+--------------------------------------------------------------------------------
+
+[レビュー 18] 5.0星
+テキスト: I can't compare this viewfinder with any others because it was an accessory to my Meade telescope, so I bought it. I haven't used my telescope too much, so can't really give it a very detailed rating.
+--------------------------------------------------------------------------------
+
+[レビュー 19] 5.0星
+テキスト: Life is so much better ever since I got my Nomad II here in Japan...I[paid a lot for] it in Misawa Air Force Base, but the results compensate for any cash.  The only drawback, surfing is about the only place I can't take this awesome player.  This is a must!
+--------------------------------------------------------------------------------
+
+[レビュー 20] 5.0星
+テキスト: These were purchased as a replacement for a set that deteriorated and to offer a variation for earbuds for some newly acquired audio equipment--an iPod.They are comfortable and offer relatively good sound quality for an economy item. Husband feels he doesn't get quite the same range of treble and bass as he does with ear buds but that may be the mode of sound transmission.We would recommend them as a good purchase.
+--------------------------------------------------------------------------------

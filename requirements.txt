@@ -1,0 +1,27 @@
+# 基本的なデータ処理・分析
+numpy>=1.26.0
+pandas>=2.0.3
+scipy>=1.11.3
+
+# 機械学習・深層学習
+torch>=2.1.0
+transformers>=4.34.0
+sentence-transformers>=2.2.2
+
+# NLP関連
+nltk>=3.8.1
+sacrebleu>=2.3.1
+
+# OpenAI API
+openai>=0.28.0
+
+# ユーティリティ
+tqdm>=4.66.1
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# 開発用ツール
+jupyter>=1.0.0
+black>=23.9.1
+flake8>=6.1.0
+pytest>=7.4.2
