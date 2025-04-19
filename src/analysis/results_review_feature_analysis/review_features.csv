@@ -1,0 +1,21 @@
+feature_id,feature_description
+1,Contains mentions of price or cost
+2,Includes technical details or specifications
+3,Contains comparisons with competing products
+4,Mentions long-term usage experience
+5,Explains specific use cases or purposes
+6,Describes initial setup or installation experience
+7,Specifically mentions product limitations or drawbacks
+8,Compares with previous similar products used
+9,References brand reliability or reputation
+10,Explains purchase decision process
+11,Reports unexpected issues or discoveries
+12,Mentions product durability or quality
+13,Indicates intention to return or exchange
+14,Contains suggestions for improvement
+15,Clearly indicates recommended user groups
+16,Mentions packaging or included accessories
+17,Describes customer support experience
+18,Explains product usage environment
+19,References match/mismatch with expectations
+20,Includes advice for other users

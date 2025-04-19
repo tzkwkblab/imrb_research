@@ -1,0 +1,21 @@
+feature_id,feature_description,answer
+1,Contains mentions of price or cost,1
+2,Includes technical details or specifications,1
+3,Contains comparisons with competing products,1
+4,Mentions long-term usage experience,0
+5,Explains specific use cases or purposes,1
+6,Describes initial setup or installation experience,1
+7,Specifically mentions product limitations or drawbacks,1
+8,Compares with previous similar products used,0
+9,References brand reliability or reputation,1
+10,Explains purchase decision process,1
+11,Reports unexpected issues or discoveries,1
+12,Mentions product durability or quality,1
+13,Indicates intention to return or exchange,0
+14,Contains suggestions for improvement,0
+15,Clearly indicates recommended user groups,0
+16,Mentions packaging or included accessories,0
+17,Describes customer support experience,0
+18,Explains product usage environment,1
+19,References match/mismatch with expectations,1
+20,Includes advice for other users,0

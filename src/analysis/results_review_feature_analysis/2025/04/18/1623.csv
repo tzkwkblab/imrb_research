@@ -1,0 +1,21 @@
+Feature ID,Description,Final Value,Stability,Trial 1,Trial 2,Trial 3,Trial 4,Trial 5
+1,Contains mentions of price or cost,0,1.00,0,0,0,0,0
+2,Includes technical details or specifications,0,1.00,0,0,0,0,0
+3,Contains comparisons with competing products,0,1.00,0,0,0,0,0
+4,Mentions long-term usage experience,0,1.00,0,0,0,0,0
+5,Explains specific use cases or purposes,1,1.00,1,1,1,1,1
+6,Describes initial setup or installation experience,0,1.00,0,0,0,0,0
+7,Specifically mentions product limitations or drawbacks,1,1.00,1,1,1,1,1
+8,Compares with previous similar products used,0,1.00,0,0,0,0,0
+9,References brand reliability or reputation,0,1.00,0,0,0,0,0
+10,Explains purchase decision process,0,1.00,0,0,0,0,0
+11,Reports unexpected issues or discoveries,1,1.00,1,1,1,1,1
+12,Mentions product durability or quality,0,1.00,0,0,0,0,0
+13,Indicates intention to return or exchange,1,1.00,1,1,1,1,1
+14,Contains suggestions for improvement,0,1.00,0,0,0,0,0
+15,Clearly indicates recommended user groups,1,1.00,1,1,1,1,1
+16,Mentions packaging or included accessories,0,1.00,0,0,0,0,0
+17,Describes customer support experience,1,1.00,1,1,1,1,1
+18,Explains product usage environment,0,0.80,0,0,0,1,0
+19,References match/mismatch with expectations,1,1.00,1,1,1,1,1
+20,Includes advice for other users,0,1.00,0,0,0,0,0
