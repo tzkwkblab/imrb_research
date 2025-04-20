@@ -44,3 +44,6 @@ data/processed/*
 
 # ログファイル
 *.log
+
+# 分析結果
+src/analysis/results_batch_analysis/*
