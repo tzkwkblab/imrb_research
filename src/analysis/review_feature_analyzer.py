@@ -17,7 +17,7 @@ import csv
 
 # 
 class ReviewFeatureAnalyzer:
-    def __init__(self):
+    def __init__(self, output_dir: str = None):
         # .envファイルから環境変数を読み込む
         load_dotenv()
         
@@ -28,6 +28,9 @@ class ReviewFeatureAnalyzer:
         
         # 特徴定義の読み込み
         self.features_df = pd.read_csv("src/data/features/definitions/review_features.csv")
+        
+        # 出力ディレクトリの設定
+        self.output_dir = Path(output_dir) if output_dir else Path("src/analysis/results_review_feature_analysis")
         
     def analyze_review(self, review_text: str, review_rating: float, num_trials: int = 5) -> Dict:
         """一つのレビューに対して複数回特徴を分析し、多数決で判定"""
@@ -68,11 +71,10 @@ class ReviewFeatureAnalyzer:
         """分析結果をCSVファイルに保存"""
         # 現在時刻からファイル名を生成
         timestamp = datetime.now().strftime("%H%M")
-        output_dir = Path("src/analysis/results_review_feature_analysis")
-        output_file = output_dir / f"{timestamp}.csv"
+        output_file = self.output_dir / f"{timestamp}.csv"
         
         # 出力ディレクトリが存在しない場合は作成
-        output_dir.mkdir(parents=True, exist_ok=True)
+        self.output_dir.mkdir(parents=True, exist_ok=True)
         
         # 特徴の説明を取得
         feature_descriptions = {

@@ -1,0 +1,70 @@
+# 実験レポート：300件サンプルデータの特徴分析
+
+## 実験概要
+- 実験日時：2025-04-19 19:09
+- 実験者：清野駿
+- 実験ID：batch_analysis_001
+
+## 目的
+300件のサンプルデータに対して特徴分析を実行し、各レビューの特徴を判定する。
+この実験では、特に以下の点を検証する：
+1. 英語プロンプトによる特徴判定の精度
+2. バッチ処理（10件単位）の安定性
+3. 中間結果保存の有効性
+
+## 実験条件
+- 使用モデル：gpt-4.1-mini
+- パラメータ：
+  - temperature: 0.7
+  - 各レビュー5回試行
+  - バッチサイズ：10件
+- 特徴リストの要素数：20
+- 分析対象：電化製品レビュー300件（レーティング分布を保持したランダムサンプリング）
+
+## 実験コード
+### batch_review_analyzer.py
+```python
+[実行完了後に現在のコードをここに貼り付け]
+```
+
+## プロンプト
+```prompt
+You are an expert in analyzing product reviews.
+Please evaluate whether each feature applies to the following product review.
+Clearly indicate your judgment with 0 (feature not present) or 1 (feature present).
+
+[REVIEW]
+{review_text}
+
+[REVIEW RATING]
+{rating}
+
+[FEATURE LIST]
+{features_list}
+
+Response format:
+{
+    "features": {
+        "1": 0 or 1,
+        "2": 0 or 1,
+        ...
+    }
+}
+```
+
+## 実験データ
+- 入力データ：
+  - ファイル：src/data/examples/sample_reviews_300.csv
+  - 件数：298件
+  - 特徴：電化製品レビュー、英語テキスト
+- 出力結果：
+  - 保存先：src/analysis/results_review_feature_analysis/2025/04/19/
+  - 形式：JSON（中間結果）、CSV（詳細結果）、MD（サマリーレポート）
+
+## 実験結果
+[実行完了後に結果を記入]
+
+## 補足資料
+### 参考文献・リソース
+- OpenAI GPT-4.1-mini API
+- pandas 2.0+ 
