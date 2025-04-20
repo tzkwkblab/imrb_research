@@ -37,7 +37,7 @@ import numpy as np
 
 def create_sample_dataset(
     input_file: str = "data/processed/electronics_reviews.csv",
-    output_file: str = "data/examples/sample_reviews_300.csv",
+    output_file: str = "src/data/examples/sample_reviews_300.csv",
     sample_size: int = 300,
     random_state: int = 42
 ) -> None:

@@ -32,7 +32,7 @@ class ReviewFeatureAnalyzer:
         # 出力ディレクトリの設定
         self.output_dir = Path(output_dir) if output_dir else Path("src/analysis/results_review_feature_analysis")
         
-    def analyze_review(self, review_text: str, review_rating: float, num_trials: int = 5) -> Dict:
+    def analyze_review(self, review_text: str, review_rating: float, review_title: str = None, num_trials: int = 5) -> Dict:
         """一つのレビューに対して複数回特徴を分析し、多数決で判定"""
         results = []
         stability_data = {str(i): [] for i in range(1, 21)}  # 各特徴の判定安定性データ
@@ -63,15 +63,25 @@ class ReviewFeatureAnalyzer:
         }
         
         # 結果をCSVファイルに保存
-        self._save_results_to_csv(final_result)
+        self._save_results_to_csv(final_result, review_title)
         
         return final_result
     
-    def _save_results_to_csv(self, results: Dict):
+    def _save_results_to_csv(self, results: Dict, review_title: str = None):
         """分析結果をCSVファイルに保存"""
         # 現在時刻からファイル名を生成
         timestamp = datetime.now().strftime("%H%M")
-        output_file = self.output_dir / f"{timestamp}.csv"
+        
+        # レビュータイトルがある場合は、ファイル名に含める
+        if review_title:
+            # タイトルから不適切な文字を除去
+            safe_title = "".join(c for c in review_title if c.isalnum() or c in [' ', '-', '_'])
+            safe_title = safe_title[:50]  # タイトルの長さを制限
+            filename = f"{timestamp}_{safe_title}.csv"
+        else:
+            filename = f"{timestamp}.csv"
+            
+        output_file = self.output_dir / filename
         
         # 出力ディレクトリが存在しない場合は作成
         self.output_dir.mkdir(parents=True, exist_ok=True)
