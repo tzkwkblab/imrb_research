@@ -1,0 +1,26 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---  
+description: コミットメッセージは必ず1行で記述する  
+globs:
+  - "**/COMMIT_EDITMSG"
+alwaysApply: true  
+---
+# Gitコミットメッセージルール
+
+- コミットメッセージは必ず1行で記述し、改行せず複数行にまたがらないようにする。
+- 最大50文字以内を推奨する。
+- 日本語の場合は命令形、英語の場合は動詞の原形で始める。
+
+# Your rule content
+
+- You can @ files here
+- You can use markdown but dont have to
+
+# Your rule content
+
+- You can @ files here
+- You can use markdown but dont have to

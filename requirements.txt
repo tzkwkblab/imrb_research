@@ -15,6 +15,9 @@ sacrebleu>=2.3.1
 # OpenAI API
 openai>=0.28.0
 
+# 翻訳API
+deepl>=1.16.1
+
 # ユーティリティ
 tqdm>=4.66.1
 python-dotenv>=1.0.0
