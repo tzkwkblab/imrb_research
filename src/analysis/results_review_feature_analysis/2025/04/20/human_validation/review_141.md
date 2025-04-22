@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 141
+評価点: 5.0
+商品ID: B000028F42
+タイトル: Has worked perfectly so far on two European trips
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I bought this set primarily to be able to recharge my DVD player battery, which has a 120V-only AC adapter, rather than the 120/240V capability that many chargers for cell phones, cameras, and videocams, as well as hair dryers and razors, now have. If the device (or its charger) is 120/240V, you only need a plug adapter to fit the electrical outlet.The voltage converter worked perfectly and allowed me to recharged the DVD battery, via its AC adapter power cord, half a dozen times. I had the wattage switch on "low" (0-50W) for this use. I would award four and a half stars if I could, because I never used it with a high wattage appliance, and hence cannot attest that it works as well under such conditions.I sometimes travel with a portable hair dryer, but it has a dual voltage switch, so I only use it with a plug adapter. Additionally, the dryer is in the neighborhood of 1600 watts, so I would be reticent to try an appliance at the top of the converter's stated wattage range.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+私がこのセットを購入したのは、主にDVDプレーヤーのバッテリーを充電するためだった。DVDプレーヤーのACアダプターは120V専用で、携帯電話、カメラ、ビデオカメラ、ドライヤー、カミソリなどの充電器の多くが備えている120/240Vには対応していない。この電圧コンバーターは完璧に機能し、ACアダプターの電源コードを介してDVDバッテリーを6回充電することができた。ワット数スイッチを「低」（0～50W）にして使用した。できれば星4つ半を差し上げたいところだが、ワット数の高い電化製品で使用したことがないため、そのような条件下でうまく機能するかどうか証明できないからだ。私は時々携帯用ヘアードライヤーを持って旅行するが、デュアル電圧スイッチが付いているため、プラグアダプターでのみ使用する。さらに、ドライヤーは1600ワット近辺なので、コンバーターのワット数範囲の一番上の電化製品を試すのはためらわれる。
 
 ## 特徴判定
 
@@ -18,12 +18,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：価格またはコストに関する言及を含む
 
 #### 判定
-- GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -33,7 +33,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：技術的な詳細や仕様を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -183,7 +183,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の耐久性や品質について
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -288,7 +288,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：参考文献と期待との一致／不一致
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

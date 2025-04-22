@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 252
+評価点: 5.0
+商品ID: B00001P4ZH
+タイトル: Portable sound quality !!
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I bougt my KOSS Porta Pro in 1992 for usage on a Walkman.The day I bought it I believe must have changed my life ;-)Up to now (16 years !!) I did not find any portable headphone that delivers more sound.What makes this headphone so special is the dynamic it reproduces.The bass and treble that comes from this tiny package sounds like you are in front of a speakerwall.There are no words to describe the atmosphere it creates.When listening to classic music concerts its like you are there.When listening to a singer its like the stage is in front of you.When listening to pop, rock, disco, dancefloor, techno - you name it - it delivers the pump you would expect from BIG speakers.The clear vibrant trebles and the full deep bass it produces are just stunning.I still remember the first time I used those, the sound was so amazing it gave me this warm fuzzy feeling in the upper stomach area and left me speechless for a moment.Note that over time the earpads and the pads which are supposed to hold the headphone in place will wear out and eventually come off. This can be a major turnoff when you want to go jogging with it.I dont recommend wearing them long time or when you want to sleep (because of the pressure on the ears).The little blue "comfortzone" switch is supposed to set how firm the headphone is attached to your head. I don't think that's working as advertised, whatever the settings it didn't feel any different for me. The headphone is very light and foldable. When folded they are the size of a small apple.The headphone comes with a softcase.Summary:The speakers are not as compact as in-ear plugs but definitely have a better form factor than most pro headphones.The fact that mine are worn out after many years of usage but still used confirms that the sound itself is well worth the price.When listening - especially first time - be prepared to be left speechless. As mentioned above they have a few short comings (which product doesnt ?) but it is still a product with well deserved 5 Stars !!
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+このヘッドホンを特別なものにしているのは、それが再現するダイナミックな音だ。この小さなパッケージから出る低音と高音は、まるでスピーカーウォールの前にいるかのように聞こえる。ポップ、ロック、ディスコ、ダンスフロア、テクノ......何でもござれですが、BIGスピーカーに期待されるようなポンプを発揮します。クリアで躍動感のある高音と、ふくよかな重低音はまさに衝撃的です。青い小さな "confortzone "スイッチは、ヘッドホンが頭にどれだけしっかり固定されるかを設定するようになっている。どんな設定であれ、私には何の変化も感じなかった。ヘッドホンはとても軽く、折りたたむことができる。スピーカーはインイヤープラグほどコンパクトではありませんが、ほとんどのプロ用ヘッドフォンよりも間違いなく優れたフォームファクターを持っています。私のは長年の使用で摩耗していますが、まだ使用されているという事実は、音自体が価格に十分見合っていることを証明しています。上記のように、いくつかの欠点はありますが（どの製品もそうでしょう）、それでも5つ星に値する製品です！
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -153,7 +153,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：購入決定プロセスを説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -243,7 +243,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：パッケージや付属品について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

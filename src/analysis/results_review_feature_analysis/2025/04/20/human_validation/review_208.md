@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 208
+評価点: 5.0
+商品ID: B00003CWEI
+タイトル: It's A Cable
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I bought these primarily because I needed a little more reach to hook up my VCR to my receiver.  It does the job fine.  It didn't improve my picture.  It didn't make my life suddenly worth living.  It's a cable.  Nothing more, and nothing less.  It's extra long, and it worked exactly like I wanted it too.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+主に、ビデオデッキを受信機に接続するために、もう少しリーチが必要だったので、これを購入しました。  これで十分です。  映像が良くなったわけではない。  私の生活が急に生き甲斐のあるものになったわけでもない。  これはケーブルだ。  それ以上でもそれ以下でもない。  長さも十分で、私が望んだとおりに機能した。
 
 ## 特徴判定
 
@@ -18,12 +18,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：価格またはコストに関する言及を含む
 
 #### 判定
-- GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -183,7 +183,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の耐久性や品質について
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

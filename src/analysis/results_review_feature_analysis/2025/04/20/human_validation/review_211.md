@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 211
+評価点: 5.0
+商品ID: B00004T8R2
+タイトル: Received exactly what I wanted
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+These are simple and quality.  If that is what you want, take a look at the price tag and then add them to your cart.I purchased two pair of these phones for my children (5 and 2) knowing full-well that they will be broken, taped, glued, and abused some more.  With the quality and comfort of them and at about $5 per unit, I don't mind if I buy twenty over the next few years.For myself, I purchased RP-HT46-S.  This unit is essentially identical except it folds up and includes an in-line volume adjustment for more than double the price.  Should I need to replace it though, I will do so with RP-HT21.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+シンプルで高品質。  5歳と2歳の子供たちのために、壊され、テープで貼られ、接着され、さらに酷使されることを十分承知で、2組購入しました。  その品質と快適さ、そして1台あたり約5ドルという安さから、今後数年間で20台購入しても気になりません。自分用にはRP-HT46-Sを購入しました。  このユニットは、折りたたみ式でインラインの音量調整がついている以外は基本的に同じだが、価格は倍以上する。  しかし、万が一買い換える必要があれば、RP-HT21で買い換えるつもりだ。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -108,7 +108,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の制限や欠点について具体的に言及
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -228,7 +228,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：推奨ユーザーグループを明示
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -288,7 +288,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：参考文献と期待との一致／不一致
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

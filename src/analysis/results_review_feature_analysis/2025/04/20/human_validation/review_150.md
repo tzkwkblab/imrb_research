@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 150
+評価点: 5.0
+商品ID: B00004TBLW
+タイトル: Jimbos Farm NC Binoculars
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+Wanted a well built, easy to use set of Binoculars to leave at Jimbos Farm NC for guests to use.These are just what I wanted.  easy to use,  solid construction, and useful case.  Can't beat them for the price.Now we can watch the White Tailed Hawk in her nest next to pond.  We hear her up there but never seen nest up close.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+ジンボスファームNCに置いて、ゲストに使ってもらうために、しっかりした作りで使いやすい双眼鏡が欲しかったのです。  池の横にあるオジロタカの巣を観察できるようになりました。  池のそばの巣にいるオジロタカを観察できるようになりました。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -108,7 +108,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の制限や欠点について具体的に言及
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -153,7 +153,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：購入決定プロセスを説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -243,7 +243,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：パッケージや付属品について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -288,7 +288,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：参考文献と期待との一致／不一致
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

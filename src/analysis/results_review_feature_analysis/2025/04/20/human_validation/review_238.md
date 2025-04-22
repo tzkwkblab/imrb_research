@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 238
+評価点: 5.0
+商品ID: B00000J1QR
+タイトル: Amazingly good
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I just bought my second pack of these wipes. I bought the first pack late last year and am finally running out of them. I was totally surprised that these wipes work so well. I have had DVD's that skipped and could see that there was junk on the surface. Taking one of these wipers and wiping the surface from the center to the edge (across the grooves) seems to get the job done. Today, my grandson managed to put part of his dinner on the bottom of a DVD he handed to me. When I put it in the player it skipped and then stopped. I pulled it out and saw the crud. I used a fresh wiper and Voila!! the DVD played without a hitch. I know I am probably not supposed to do this, but sometimes there is a minor bit of stuff on a DVD and I use a wiper and put it back in the package for another use or two. I haven't seen a downside. I truly think they are amazing.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+このウェットティッシュの2パック目を買ったところだ。昨年末に1パック目を買って、ようやく使い切ったところです。このワイプがこんなによく効くなんて、本当に驚きました。DVDが飛んだことがあり、表面にゴミが付着しているのがわかりました。このワイパーを1枚持って、中心から端に向かって（溝を横切って）表面を拭くと、うまくいくようだ。今日、孫が私に手渡したDVDの底に、夕食のおかずの一部を落としてしまった。プレーヤーに入れると、スキップして止まった。DVDを取り出し、ゴミを見た。新しいワイパーを使ったら、DVDは問題なく再生された。こんなことしちゃいけないんだろうけど、DVDにちょっとしたゴミが入ってることがあるから、ワイパーで拭いてパッケージに戻して、また使ったりしてるんだ。デメリットは見たことがない。本当にすごいと思う。
 
 ## 特徴判定
 
@@ -18,12 +18,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：価格またはコストに関する言及を含む
 
 #### 判定
-- GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -108,7 +108,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の制限や欠点について具体的に言及
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -120,7 +120,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 ### 特徴8
 #### 説明
 - 英語：Compares with previous similar products used
-- 日本語：過去に使用された類似製品との比較
+- 日本語：過去の類似製品との比較
 
 #### 判定
 - GPTの判定：0
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -153,7 +153,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：購入決定プロセスを説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

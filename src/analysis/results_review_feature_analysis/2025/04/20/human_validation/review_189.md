@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 189
+評価点: 5.0
+商品ID: B00004TS16
+タイトル: Simply the best
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+1- Small. VERY smal. You'll carry it with you every day. I've been taking near 100 pictures per month since I got mine. I've had a lot of cameras, but this one is ACTUALLY being used, and not stored in a desk: it's allways in my shist pocket. 2- Excellent picture quality and so simple to use!!! Fool proof. I started shooting even before reading the manual (not recommended at all). 3- USB kicks! 2 secs to download a 600KB 1600x1200 picture! 4- Looks great. Silver metal case -NOT PLASTIC. 5- Excelent software package. 6- Small but very clear TFT screen. Take shots at angles you thought you wouldn't. Don't care about sunlight: it's TFT. 7- 360 panoramic pictures are a very big deal. 8- Buttons are little, but If you have steady fingers and dealed with a casio wirst calculator watch, you can deal with almost anything. Buttons size is OK for me, my wife, but not my grany. 9- Cons? Not a single one after 5 months.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+1- 小さい。とても小さい。毎日持ち歩くことになる。このカメラを手にしてから、毎月100枚近くの写真を撮っている。今までたくさんのカメラを持ってきましたが、このカメラは机の中にしまっておくのではなく、常に腰のポケットに入れています。2- 素晴らしい画質で、使い方はとても簡単！フールプルーフ。マニュアルを読む前から撮影を始めてしまった（全くお勧めできない）。3- USBキック！600KBの1600x1200の画像をダウンロードするのに2秒！4- 見た目が素晴らしい。シルバーのメタルケース。5- 優れたソフトウェア・パッケージ。6- 小さいが非常にクリアなTFTスクリーン。撮れないと思っていた角度でも撮れる。TFTだから太陽光は気にならない。7- 360パノラマ写真は、とても大きな問題だ。8- ボタンは小さいが、指がしっかりしていて、カシオの電卓付き腕時計を扱ったことがあれば、ほとんどのことに対応できる。ボタンの大きさは、私や妻には問題ないが、孫には無理だ。9- 欠点は？5ヶ月使ってみて、欠点はひとつもない。
 
 ## 特徴判定
 
@@ -18,12 +18,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：価格またはコストに関する言及を含む
 
 #### 判定
-- GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -33,7 +33,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：技術的な詳細や仕様を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -108,7 +108,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の制限や欠点について具体的に言及
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -153,7 +153,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：購入決定プロセスを説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -228,7 +228,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：推奨ユーザーグループを明示
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

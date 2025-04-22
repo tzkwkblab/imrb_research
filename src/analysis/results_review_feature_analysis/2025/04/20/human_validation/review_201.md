@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 201
+評価点: 5.0
+商品ID: B00000J1UY
+タイトル: Perfect! Great product at a great price
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+When I rearranged my office I discovered the power cord from my computer monitor would no long reach my battery backup. An extension cord was needed. I have used Belkin products before and have always been satisfied so I didn't hesitate to order this online. I received it in only a few days and it worked perfectly. The plug ends fit snuggly and the picture on the monitor is as good as it was before I added the extension cord. And at a great price, too.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+オフィスの配置を変えたとき、コンピューター・モニターの電源コードがバッテリー・バックアップに届かなくなっているのを発見した。延長コードが必要でした。以前にもベルキンの製品を使ったことがあり、いつも満足していたので、迷わずオンラインで注文しました。数日で届き、完璧に機能しました。プラグの端はぴったりとフィットし、モニター上の画像は延長コードを追加する前と同じくらい良好です。しかも、この価格で。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -108,7 +108,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の制限や欠点について具体的に言及
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 117
+評価点: 4.0
+商品ID: B00000J4FS
+タイトル: The classic Palm
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+This was one of Palm's real groundbreaking handhelds, with it's sleek case and low weight.  Still a great handheld but only has 2 MB of memory and lacks the SD slot that the new Palms are being manufactured with.  If you just need a calendar and address book, this will do it, but the m100 will do just about the same (...)(with albeit a much smaller screen).  The backlight on the Palm V is woeful like the backlights on all Palms, but is not needed too often.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+このハンドヘルドは、洗練されたケースと軽量で、Palmの本当の画期的なハンドヘルドの1つだった。  今でも素晴らしいハンドヘルドだが、メモリは2MBしかなく、新しいPalmが搭載しているSDスロットもない。  カレンダーとアドレス帳が必要なだけならこれで十分だが、m100でもほぼ同じことができる（...）（画面はかなり小さいが）。  Palm Vのバックライトは、他のPalmsのバックライトのようにひどいものだが、あまり頻繁には必要ない。
 
 ## 特徴判定
 
@@ -18,12 +18,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：価格またはコストに関する言及を含む
 
 #### 判定
-- GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -33,7 +33,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：技術的な詳細や仕様を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -153,7 +153,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：購入決定プロセスを説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -183,7 +183,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の耐久性や品質について
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -288,7 +288,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：参考文献と期待との一致／不一致
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 281
+評価点: 5.0
+商品ID: B00004VUGJ
+タイトル: nice relief for carpal tunner suffer
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I work all day in front of a computer.  I have been feeling strain in my forearms and wrists, especially on the right side.Uh oh, the dreaded carpal tunnel!I needed to get something to relieve the pain and to prevent any permanent damage (hopefully, I'm not too late!).  My workstation is ergonomically sound (keyboard tray with negative angle, proper monitor height, good chair, etc.).  The mouse and keyboard have been causing problems.I first tried the 3M Ergonomic Mouse.  This provided some relief, but still having to move my arm around caused strain.This mouse is much better.  It allows me to leave my hand and arm in a comfortable position.  The trackball is very easy to use.  I was up and running rather quickly.  It only took me about a day to get used to it.If you are feeling strain in your wrists and arms, then I would highly recommend getting this product.Now all I need is a better keyboard...
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+私は一日中コンピューターの前で仕事をしている。  前腕と手首、特に右側に負担を感じている。ああ、恐ろしい手根管だ！痛みを和らげ、永久的な損傷を防ぐために、何か手に入れる必要があった（手遅れにならないことを祈る！）。  私のワークステーションは人間工学的に問題がない（キーボードトレイの角度がマイナス、モニターの高さが適切、椅子が良いなど）。  マウスとキーボードが問題を引き起こしています。最初に3Mのエルゴノミックマウスを試しました。  このマウスはずっといい。  手も腕も楽な姿勢のままにしておける。  トラックボールはとても使いやすい。  私はすぐに使い始めることができた。  もし手首や腕に負担を感じているのなら、この製品を手に入れることを強くお勧めする。
 
 ## 特徴判定
 
@@ -18,12 +18,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：価格またはコストに関する言及を含む
 
 #### 判定
-- GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -93,7 +93,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：初期セットアップまたはインストールの経験
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -108,7 +108,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の制限や欠点について具体的に言及
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -183,7 +183,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の耐久性や品質について
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -213,7 +213,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：改善提案を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -228,7 +228,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：推奨ユーザーグループを明示
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -288,7 +288,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：参考文献と期待との一致／不一致
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

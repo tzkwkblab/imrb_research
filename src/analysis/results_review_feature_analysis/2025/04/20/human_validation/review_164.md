@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 164
+評価点: 5.0
+商品ID: B00004TEUK
+タイトル: excellent Player; Superb in its simplicity.
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I was very impressed with this tape converter. It truly is a world tape converter. Easy to set up, and easy to play. There is very little that the manual does not cover. I basically just wanted a tape player, and then maybe a device, that would allow me to put PAL tapes to DVD.I think that what most people fail to take into account , is that this machine treats tapes the same way the players of the country of  origin  treat the tape ... basically, bad tape, bad playback.The only converter I have seen that does better is a DVD  converter.The only way to get a better playback is to get a VHS  player of the tape used by the original tape, and then use a Rack mount converter that are used in large studies (  priced from 2,000 to 7,000).This item does great for what it is, and what it is priced.Highly recommended.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+このテープコンバーターにはとても感動した。まさに世界のテープコンバーターだ。セットアップも簡単で、再生も簡単。マニュアルに載っていないことはほとんどない。私は基本的にテーププレーヤーが欲しかっただけで、あとはPALテープをDVDに入れるためのデバイスが欲しかっただけなんだ。より良い再生を得る唯一の方法は、元のテープで使用されているテープのVHSプレーヤーを入手し、大規模な研究（価格は2,000から7,000）で使用されているラックマウントコンバータを使用することです。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -33,7 +33,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：技術的な詳細や仕様を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -93,7 +93,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：初期セットアップまたはインストールの経験
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

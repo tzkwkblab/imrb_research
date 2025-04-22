@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 213
+評価点: 5.0
+商品ID: B00001P4ZH
+タイトル: reliable
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+These Koss PortaPro Headphones work great!  Normally the only thing I care about with headphones is how durable they are, though ever since I became an adult, and my head got bigger, I suppose the size and comfort is another thing that needs to be taken into consideration!I used to have REALLY horrible luck with headphones back in the 90's.  The headphones would always lose the volume in one side of the speaker so I'd have to constantly keep readjusting them and twisting the end piece attached to the stereo equipment to get the volume back.  It was annoying.  This problem still exists from time to time, but these particular type of Koss headphones haven't been giving me this particular problem and I'm VERY happy about that.  Nothing worse than when your favorite moment of a song comes on, and BAM- the volume drops out from one side.I highly recommend everyone purchase a pair of these headphones.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+このKOSS PortaProヘッドフォンはとてもいい！  通常、私がヘッドホンで気にするのは耐久性だけだが、大人になって頭が大きくなってからは、サイズと快適さも考慮する必要があると思う。  ヘッドホンはいつもスピーカーの片側の音量が小さくなってしまうので、音量を戻すために常にヘッドホンを調整し、ステレオ機器に取り付けられているエンドピースをひねり続けなければならなかった。  煩わしかった。  この問題は今でも時々あるが、このKOSSのヘッドフォンはこの特別な問題を起こさないので、とても満足している。  好きな曲の好きな瞬間が流れてきて、バーン、片側から音量が落ちてしまうことほど最悪なことはない。
 
 ## 特徴判定
 
@@ -18,12 +18,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：価格またはコストに関する言及を含む
 
 #### 判定
-- GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -78,7 +78,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：具体的な使用例や目的を説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -108,7 +108,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の制限や欠点について具体的に言及
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -153,7 +153,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：購入決定プロセスを説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

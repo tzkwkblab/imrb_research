@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 114
+評価点: 4.0
+商品ID: 140053271X
+タイトル: Love my Nook Simple Touch
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I purchased 2 of these in November of 2011. We had a baby on the way and I anticipated lots of reading time. They were so inexpensive I got one for me & one for my wife.I find the reading experience with the Simple Touch great. The pearl e-ink display has great contrast, and pages turn pretty quickly. I keep the wifi off and battery life is really good. I don't think it's quite as good as BN claims (2 months reading time?) but I can go weeks without charging. I've only purchased a few books though the BN store, I mostly side-load them using Calibre, which works great.My wife doesn't read hers as much as I read mine, and the touchscreen on hers will go unresponsive. Holding down the "n" button on bottom-front while holding down the top back button forces it to rebook and come back to life. It hasn't been a major issue though.I purchased aVerso Arc Light for Kindle, Nook, & Other eReaders - Blackand it works well for reading in low-light situations. The Simple Touch with GlowLight wasn't an option when I bought mine.Overall it's a great, versatile, light small e-reader.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+2011年11月に2冊購入した。赤ちゃんが生まれる予定だったので、読書の時間がたくさん取れると思ったからです。とても安かったので、私用と妻用に1台ずつ購入しました。シンプルタッチでの読書体験は最高です。パールのe-inkディスプレイはコントラストが素晴らしく、ページのめくりも速い。私は無線LANをオフにしていますが、バッテリーの持ちはとても良いです。BNが主張するほど優れているとは思わないが（読書時間は2ヶ月か）、充電なしで何週間も過ごせる。BNストアで購入した本は数冊だけで、ほとんどはCalibreを使ってサイドロードしています。私の妻は私のを読むのと同じくらい妻のを読むので、妻のはタッチスクリーンが反応しなくなります。上の戻るボタンを押しながら、下の前面の "n "ボタンを押し続けると、強制的に予約し直して復活します。Kindle、Nook、およびその他の電子書籍リーダー用のVerso Arc Light - Blackを購入し、暗い状況での読書には効果的です。GlowLight付きのSimple Touchは、私が購入したときには選択肢にありませんでした。全体的に、万能で軽い小型の電子書籍リーダーです。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -33,7 +33,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：技術的な詳細や仕様を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -183,7 +183,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の耐久性や品質について
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -243,7 +243,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：パッケージや付属品について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

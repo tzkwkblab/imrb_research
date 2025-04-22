@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 191
+評価点: 5.0
+商品ID: B00004SY4H
+タイトル: FANTASTIC, but not "way better" than HD 595s
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+After a year+ with Sennheiser's HD 595s and a few days with these, I can tell you confidently that these have improved sound.  They are a bit more neutral and more extended, with tighter, stronger bass as well as better defined highs.But I'm not sure they were worth the money, given that I already had a pretty good set of cans in the HD 595.They are discernably better (even w/o burn-in) but the comparative listening I've done indicates that the 595s are well within the "same league."  Had I had the good sense to test both before buying either one, I would have spent the extra $$ on these.  The imaging (location of instruments and voices) is notably better (though the 595 is very good), and the dynamic range seems to be modestly better (tighter and stronger bass).  But since I already own the 595s, I'm not quite sure about whether to indulge myself by keeping these headphones or sending them back.I'm darned sure that, if I didn't already own the 595s, I'd be keeping them happily.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+ゼンハイザーのHD 595を1年以上使った後、これを数日使ってみたが、音は改善されていると自信を持って言える。  しかし、私はすでにHD 595でかなり良い缶のセットを持っていたことを考えると、彼らがお金を払う価値があったかどうかはわかりません。彼らは（バーンインがなくても）明らかに優れていますが、私が行った比較試聴では、595は "同じリーグ "の中に十分にあることを示しています。  どちらかを購入する前に両方をテストする良識があれば、私は余分なお金をかけてこちらを購入していたでしょう。  イメージング（楽器や声の位置）は際立って良く（595も非常に良いが）、ダイナミックレンジはそこそこ良いようだ（タイトで力強い低音）。  しかし、私はすでに595を所有しているので、このヘッドホンをキープして自分を甘やかすか、それとも送り返すか迷っている。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -78,7 +78,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：具体的な使用例や目的を説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -183,7 +183,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の耐久性や品質について
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -198,7 +198,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：返品または交換の意思表示
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

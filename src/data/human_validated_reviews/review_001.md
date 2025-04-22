@@ -1,14 +1,14 @@
-# レビューID: 5
+# レビューID: 1
 評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+商品ID: B00001P4ZH
+タイトル: Really? SO OVER HYPED THIS IS CRAP.
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+Really though? Maybe its because i've listened to much better before. If you use the Sennheiser cx300, this will sound like CRAP.No sound isolation, i already knew that, but i thought everything else would make up for it. There's like no bass, barely any. The volume sucks, has to be louder.At first, after reading all these awesome reviews, i thought i was going crazy. But i plugged them into my computer, my mp3, my ipod, my stereo system. They're horrible.I expected this, most over the head earphones have leather cups, these had foam. They make your ears hot. And they exhibit horrible sound. Oh man, returned these the next day. Have to pay shipping costs. Don't buy these. Please. Worth like 3 bucks.And they feel like their gonna break everytime i touch them.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+でも本当に？ゼンハイザーのcx300を使うなら、これは最低の音だ。ゼンハイザーのcx300を使うなら、これはクズみたいな音だろう。遮音性がないのはもう分かっていたけど、他のすべてがそれを補ってくれると思ったんだ。低音はまるでないし、ほとんどない。ボリュームは最悪で、もっと大きくなければならない。最初は、これらの素晴らしいレビューを読んだ後、私は気が狂ってしまったと思った。でも、コンピューター、mp3、ipod、ステレオシステムに接続してみた。ほとんどのオーバーヘッド型イヤホンのカップは革製だが、これは発泡スチロール製だった。耳が熱くなる。そして、ひどい音だ。翌日、返品した。送料がかかる。これは買わない方がいい。頼むよ。それに、触るたびに壊れそうな感じがする。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -78,12 +78,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：具体的な使用例や目的を説明
 
 #### 判定
-- GPTの判定：1
-- [ ] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [x] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定が不適切な場合、その理由や気づきを記入
+複数の具体的な使用機器との組み合わせについて説明があるため、1とすべき
 ```
 
 
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -153,7 +153,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：購入決定プロセスを説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -198,7 +198,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：返品または交換の意思表示
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

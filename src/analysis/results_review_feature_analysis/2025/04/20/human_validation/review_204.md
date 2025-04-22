@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 204
+評価点: 5.0
+商品ID: B00000JCT8
+タイトル: Little things mean a lot to bicyclists
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+Okay, it doesn't use batteries, it doesn't light up, and it doesn't cost a lot. But this headset/boom mic is an essential accessory for the TalkAbouts for this simple reason: TalkAbouts have voice-operated control (VOX) when  used with a plugin headset/mic. We have also evaluated the earbud/mic combo  for bike riders and found it almost unworkable (it picks up road noise and,  to me, the earbud causes excruciating pain after a day of use). The headset  is a much better solution. The band actually fits OVER a safety helmet, and  the closed-foam-cell rubber pad grips the plastic shell securely. The boom  mic rejects most road noise, and soon becomes forgotten in the course of  routine use. (It quickly comes back to the foreground when I try to sip  from my water bottle!) If you purchase one of the TalkAbouts, consider this  as your second accessory purchase -- your first should be a carrying  holster or case. Now, if Motorola would only agree on a partnership with  JABRA Technologies to produce a JABRA Earset for the TalkAbouts, my  happiness would be complete ...
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+電池は使わないし、光らないし、値段も高くない。しかし、このヘッドセット/ブーム・マイクは、このシンプルな理由から、TalkAboutsには欠かせないアクセサリーなのです：TalkAboutsは、プラグイン・ヘッドセット/マイクと併用することで、音声操作（VOX）が可能になる。自転車ライダー向けにイヤホンとマイクの組み合わせも評価しましたが、ほとんど機能しないことがわかりました（ロードノイズを拾ってしまい、私にとっては1日使用するとイヤホンが耐え難い痛みを引き起こします）。ヘッドセットの方がずっと良い解決策だ。バンドは実際に安全ヘルメットの上にフィットし、独立気泡ゴムパッドがプラスチックシェルをしっかりとつかむ。ブームマイクはほとんどのロードノイズを拒絶し、日常的な使用ではすぐに忘れ去られてしまう。(水筒の水を飲もうとすると、すぐに前面に戻ってくる！）。TalkAboutsを購入する場合、これを2つ目のアクセサリーとして考えてほしい。あとは、モトローラがJABRA Technologiesと提携し、TalkAbouts用のJABRAイヤーセットを作ってくれれば、私の幸せは完璧なのだが......。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -33,7 +33,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：技術的な詳細や仕様を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -183,7 +183,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の耐久性や品質について
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -213,7 +213,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：改善提案を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -228,7 +228,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：推奨ユーザーグループを明示
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -243,7 +243,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：パッケージや付属品について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

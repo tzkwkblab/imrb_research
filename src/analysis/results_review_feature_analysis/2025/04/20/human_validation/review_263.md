@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 263
+評価点: 5.0
+商品ID: B00001WRSJ
+タイトル: These are the headphones that you need
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I am %100 satisfied with this purchase.  If these disappeared, I would buy a replacement set immediately.The build quality is top notch, much better than you'd expect from the photo.  Other headphones have chinsy hinges, or oversized plastic hinges to appear that they are built well, but when you feel these in your hands, you will know that they will last.  The cord and plug are both pro grade also.The audio quality is great.  Are there better sounding phones?  maybe.  I've had some very expensive Sennheisers, Sonys, a few random off brands and a pair of Grados, all which sounded great.  These Sony's hang with them.  If you can find a pair that sounds better, that pair will be $500, and it won't blow these Sony's out of the water but just barely edge them out on a few details.Comfort is good.  The foam goes fully around your ear(circumaural) and they are a closed can design so they &#34;block out&#34; outside sounds.  They aren't &#34;noise isolating&#34; or &#34;noise reducing&#34;, but they block enough to put you in your own audio space.  If you listen with these, you won't hear the phone ringing in the other room.  If you have sweaty ear syndrome or don't like headphones that are closed, these might not be up your alley.  That is only a preference though and not a ding against these headphones.  I personally really like the closed, circumaural design.  The band and the ear pressure are exactly right.  In ten years, after you've worn through the ear pads, replacements will still be readily available online.Overall, these are the industry standard for a reason.  Time tested, excellent quality, unbeatable value.  Buy these headphones, you will be satisfied with them for sure.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+この買い物には100％満足している。  もしこれがなくなったら、すぐに代わりのセットを買うだろう。作りは一流で、写真から想像するよりもずっと良い。  他のヘッドホンは、よくできているように見せるために、ヒンジがあごひげのようになっていたり、特大のプラスチックのヒンジがついていたりしますが、これを手に取れば、長持ちすることがわかります。  コードもプラグもプロ仕様で、音質も素晴らしい。  もっといい音質の電話があるのでしょうか？  私はこれまで、とても高価なSennheisers、Sonys、いくつかのランダムなブランド外品、Gradosのペアを持っていましたが、どれも素晴らしい音でした。  このソニーはそれに匹敵する。  もし、より良い音のペアを見つけることができれば、そのペアは500ドルになり、このソニーのものを吹き飛ばすことはないだろうが、いくつかのディテールではギリギリ及ばないだろう。  フォームがあなたの耳（circumaural）の周りに完全に行くし、彼らはクローズド缶のデザインですので、彼らは&#34;外部の音を遮断する&#34;。  ノイズ・アイソレーションやノイズ・リデュースではありませんが、自分だけのオーディオ空間に身を置くには十分です。  これで耳をすませば、他の部屋で鳴っている電話の音は聞こえなくなる。  耳に汗をかきやすい人や密閉型のヘッドホンが苦手な人には向かないかもしれない。  しかし、それはあくまで好みであり、このヘッドホンに対する非難ではない。  私は個人的に、密閉型の円形デザインがとても気に入っている。  バンドと耳圧がぴったり合っている。  全体的に、このヘッドホンが業界標準であるのには理由がある。  全体的に、これが業界標準であるのには理由がある。  このヘッドホンを買えば、必ず満足できるはずだ。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -33,7 +33,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：技術的な詳細や仕様を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -153,7 +153,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：購入決定プロセスを説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -228,7 +228,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：推奨ユーザーグループを明示
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

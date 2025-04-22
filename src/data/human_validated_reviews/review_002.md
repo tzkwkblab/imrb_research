@@ -1,14 +1,14 @@
-# レビューID: 5
+# レビューID: 2
 評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+商品ID: 1400532736
+タイトル: Barnes and Noble Customer Service? Not happening.
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+No stars. Be warned, potential B&N customer: if you have a problem with a defective brand-new, just-delivered Nook device, you're likely headed for Customer Service hell. Be prepared to meet with an army of know-nothing, apparently deceptive incompetents. Any merits of B&N's Nook products are offset by the company's Customer Service from hell. Today, trying to resolve the problem of having just received a Nook Simple Touch lemon, I've been lied to, hung up on, and received no help at all. The return call, promised by a supervisor at around six this evening, never came. So, around 4 hours later, I called back and spoke to another supervisor, identifying myself and asking for help. This call was disconnected on B&N's side, and that supervisor never called me back or emailed me to provide service.  I've also been advised that I'll have to wait quite a while for a replacement Nook, though I live in Manhattan and the site promises same-day Manhattan delivery. I'd read reviews on the B&N site and, I believe, on Amazon as well, about B&N's horrific so-called Customer Service. I can see now, from experience, that the horror stories are true. So if you buy a Nook from B&N and get a lemon, as can happen with any e-device, you're going to find yourself quite alone with your problem. Whatever the merits of the Kindle, I know from experience that Amazon Customer Service lives up to its name. B&N Customer Service is essentially an insult to customers. I don't work for either company. I'm just a customer with a brand-new defective Nook Simple Touch, and I can't get any help from B&N. So if you look at the numbers and see that Kindles far outsell Nooks, B&N's misnamed Customer Service is likely at least part of the reason.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+星なし。B&Nの顧客候補の皆さん、ご注意を：新品で納品されたばかりのNookデバイスに不具合があった場合、カスタマーサービス地獄に向かう可能性が高いです。何も知らない、明らかに人を欺く無能な軍団と会う覚悟をしてください。B&NのNook製品の長所は、同社の地獄のカスタマーサービスによって相殺されてしまうのだ。今日、ヌーク・シンプル・タッチ・レモンを受け取ったばかりの問題を解決しようとしたが、嘘をつかれ、電話を切られ、まったく助けてもらえなかった。今日の夕方6時ごろにスーパーバイザーから折り返しの電話があると約束したのに、一向に来ない。そこで4時間後、別のスーパーバイザーに電話をかけ直し、自分の名前を名乗り、助けを求めた。この電話はB&N側で切断され、そのスーパーバイザーから折り返し電話がかかってくることも、メールでサービスを提供することもなかった。  また、私はマンハッタンに住んでおり、サイトではマンハッタンの即日配達を約束しているにもかかわらず、交換用のヌークを手に入れるにはかなり待たなければならないとアドバイスされた。B&Nのサイトや、確かアマゾンでも、B&Nのいわゆるカスタマーサービスがひどいというレビューを読んだことがあった。経験上、その恐ろしい話は本当だとわかった。B&Nからヌークを購入し、どの電子機器でも起こりうることだが、レモンを手に入れた場合、あなたはその問題を自分ひとりで抱え込むことになるだろう。Kindleの良し悪しはともかく、アマゾンのカスタマーサービスはその名に恥じないものだと私は経験から知っている。B&Nカスタマーサービスは本質的に顧客に対する侮辱だ。私はどちらの会社でも働いていない。私は新品の不良品ヌーク・シンプル・タッチを持つただの客であり、B&Nからは何の助けも得られない。だから、もしあなたが数字を見て、キンドルがヌークをはるかに上回っているのを見るなら、B&Nの誤った名前のカスタマーサービスが少なくともその理由の一部である可能性が高い。
 
 ## 特徴判定
 
@@ -18,12 +18,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：価格またはコストに関する言及を含む
 
 #### 判定
-- GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -78,7 +78,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：具体的な使用例や目的を説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -109,11 +109,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [ ] 判定が不適切な場合はチェック
+- [x] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定が不適切な場合、その理由や気づきを記入
+製品自体の具体的な制限や欠点についての言及はなく、主にカスタマーサービスの問題について述べているため、0とすべき
 ```
 
 
@@ -153,7 +153,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：購入決定プロセスを説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -184,11 +184,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [ ] 判定が不適切な場合はチェック
+- [x] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定が不適切な場合、その理由や気づきを記入
+不良品という言及はあるものの、具体的な品質や耐久性の問題についての説明がないため、0とすべき
 ```
 
 
@@ -198,7 +198,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：返品または交換の意思表示
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -258,7 +258,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：カスタマーサポートの経験
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

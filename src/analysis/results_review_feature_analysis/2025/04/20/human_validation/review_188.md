@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 188
+評価点: 5.0
+商品ID: B00001P4ZH
+タイトル: Amazing for Rock, incredible for all types of music
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I listen to Rock (Stones, Bruce, Led Zep, Doobies, Kate Bush, Eurythmics, etc.) and tons of Classical -- lots of Beethoven, but also choral (Rutter and P&auml;rt) and Baroque (Handel and Bach) and especially piano concertos. I discovered Jazz about two years ago and listen to much Bill Evans and Miles and Tord Gustavsen. I own Grado 225 headphones, NAD CD player, and a nice Yamaha-powered music setup with Paradigm speakers. What's my favorite listening experience? My iPhone with these Koss Porta-Pros! On my second pair now and always keep a spare pair in the study in case I ever lose these Porta-Pros. Bass is fantastic and mids perfect. I would boost the treble a bit to match the purity of my Grados, but nothing can touch the bang-for-buck experience of these Koss 'phones. Greatest experience for rock music. I'm loving them more every day. Not just great portable headphones -- they are amazing headphones, period. Buy now.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+ロック（ストーンズ、ブルース、レッド・ゼップ、ドゥービーズ、ケイト・ブッシュ、ユーリズミックスなど）、クラシック（ベートーヴェンが多いが、合唱曲（ラター、P&auml;rt）、バロック（ヘンデル、バッハ）、特にピアノ協奏曲をよく聴く。年ほど前にジャズに出会って、ビル・エヴァンスやマイルス、トルド・グスタフセンをよく聴いている。Gradoの225ヘッドフォン、NADのCDプレーヤー、Paradigmのスピーカーとヤマハの素晴らしい音楽セットアップを所有しています。お気に入りのリスニング体験は？iPhoneとKoss Porta-Proだね！今は2ペア目だけど、万が一このPorta-Proを失くしてしまったときのために、書斎に予備の1ペアを常備しているんだ。低音は素晴らしく、中音は完璧です。Gradosのピュアさに匹敵するように高音域をもう少し上げたいところだが、このKossの携帯電話のコストパフォーマンスの高さにはかなわない。ロック・ミュージックでは最高の体験だ。毎日もっと気に入っている。素晴らしいポータブル・ヘッドフォンであるだけでなく、素晴らしいヘッドフォンなのだ。今すぐ購入しよう。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -153,7 +153,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：購入決定プロセスを説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -213,7 +213,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：改善提案を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

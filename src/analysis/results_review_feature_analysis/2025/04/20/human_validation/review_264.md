@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 264
+評価点: 5.0
+商品ID: B000031KIM
+タイトル: Palm Vx ...... look no further for a connected PDA !
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+Last year, I helped my cousin install his Palm V to work with his desktop. Thought it was a neat device but, did not want to buy one for myself at the time; thinking that my laptop was good enough for what I need to do. Stupid decision !I finally bought myself a Palm Vx this August and it has changed the way I use and access information on the move. It's forte is dependable connectivity and it does that so well. The Vx ships with Chapura PocketMirror, which an excellent sync/conduit manager, optimised for Outlook users (97-2000) and is a breeze to set up. PocketMirror integrates seamlessly with Palm's own desktop manager - just follow the instructions and you will be able to hotsync all your data in Outlook, literally within minutes. The Vx also ships with AvantGo, which is perfect for those of you who want to browse your favourite websites off-line and on the move (it syncs with your chosen sites every time you hot-sync; just a push of a button away).There is no point dwelling on the number of addresses, memos, etc. that the Vx can store, since these are pretty much the industry standard with other brands too and realistically, it is unlikely that you will ever run out of space for these items. The 8MB in the Vx comes in handy when you use applications such as AvantGo and if you tend to keeps hundreds of messages in your Outlook inbox (like I do!).I have recently added Documents to Go ([...] a 3rd party add-on. This software brings Word and Excel files into my Vx and now, I no longer have to use my laptop for every important document or spreadsheet I need to access quickly in a meeting or whilst on the phone - it's all there in the Palm of my hand (pun intended) !If I had a Palm wish, I guess a colour version of the Vx would be the ultimate; though, knowing the folks at Palm, this is probably around the corner (since they have already released a colour version of the III series - the IIIc). I guess I would also like to have my 'Sent Items' mailbox from Outlook in my Palm - there probably is software available somewhere on the Net which does this, but I haven't found it as yet.Bottom-line. Spend the money on a Palm Vx, you prospective PDA shoppers ! You will not regret it !
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+昨年、従兄弟がパームVをデスクトップにインストールするのを手伝った。いいデバイスだと思ったが、当時は自分用に買おうとは思わなかった。愚かな決断だ！私は今年の8月についにPalm Vxを購入した。Vxの長所は信頼できる接続性で、それはとてもよくできている。VxにはChapura PocketMirrorが同梱されており、Outlookユーザー（97-2000）向けに最適化された優れた同期／コンジット・マネージャーで、セットアップも簡単だ。PocketMirrorはPalmのデスクトップ・マネージャーとシームレスに統合されており、説明書に従うだけで、文字通り数分以内にOutlookのすべてのデータをホット同期することができる。VxにはAvantGoも同梱されており、お気に入りのウェブサイトをオフラインで移動中に閲覧したい人には最適だ（ホットシンクするたびに、選択したサイトと同期する。Vxの8MBは、AvantGoなどのアプリケーションを使うときや、Outlookの受信トレイに何百通ものメッセージを保存しがちな場合（私のように！）に便利だ。このソフトはWordやExcelのファイルをVxに取り込んでくれるので、会議中や電話中に素早くアクセスしたい重要な文書やスプレッドシートのためにラップトップを使う必要がなくなった。また、Outlookの'Sent Items'メールボックスをPalmに表示させたいとも思っている。これからPDAを買おうとしている皆さん、Palm Vxにお金を使いましょう！後悔はしないはずだ！
 
 ## 特徴判定
 
@@ -18,12 +18,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：価格またはコストに関する言及を含む
 
 #### 判定
-- GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -33,7 +33,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：技術的な詳細や仕様を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -93,7 +93,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：初期セットアップまたはインストールの経験
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -183,7 +183,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の耐久性や品質について
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -213,7 +213,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：改善提案を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -228,7 +228,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：推奨ユーザーグループを明示
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -243,7 +243,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：パッケージや付属品について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

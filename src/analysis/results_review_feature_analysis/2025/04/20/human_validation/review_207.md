@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 207
+評価点: 5.0
+商品ID: B00000JFE3
+タイトル: This gem is almost free!
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I bought this DVD from Amazon in November, have watched wellover 20 DVD's (see why later) and played a lot of CDs. Nolip-sync. The CD sounds even better than my other CD deck. What I like most is the headphone jack that allows me to listen to CD and watch DVD just with the DVD machine powered on, without disturbing others. Now the best part... that even Amazon staff does not know. This machine qualifies for 7 free DVDs and 33 free rental (10 from Netflix, 13 from Blockbuster via Sony coupon and 10 from Blockbuster 10/20 program). I waited until now to write this comment because I want to verify the above. I got all that.  What can I say: outstanding picture, gorgeous sound (I had a full 5 speakers sound system mated to a 5X100 Watts Dolby Digital, DTS receiver), and all the freebies listed above. You must be nut for buying any other DVD brand. After all, this is a Sony!
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+私は11月にアマゾンでこのDVDを購入し、20枚以上のDVDを鑑賞し（理由は後述）、多くのCDを再生した。ノリップシンク。CDの音は他のCDデッキよりさらに良い。一番気に入っているのは、ヘッドフォン端子が付いていることで、他の人の邪魔になることなく、DVDマシンの電源を入れたままCDを聴いたりDVDを見たりできることだ。さて、一番の魅力は...アマゾンのスタッフでさえ知らないこと。このマシンは、7本の無料DVDと33本の無料レンタル（Netflixから10本、ソニーのクーポン経由でBlockbusterから13本、Blockbuster 10/20プログラムから10本）の対象になっている。このコメントを書くために今まで待ったのは、上記のことを確認したかったからだ。私はすべてを手に入れた。  卓越した画像、ゴージャスなサウンド（私は5X100ワットのドルビーデジタル、DTSレシーバーと組み合わせたフル5スピーカーサウンドシステムを持っていた）、そして上記のすべての無料特典。他のDVDブランドを買うなんて、どうかしている。何しろこれはソニーなのだから！
 
 ## 特徴判定
 
@@ -18,12 +18,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：価格またはコストに関する言及を含む
 
 #### 判定
-- GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -33,7 +33,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：技術的な詳細や仕様を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -108,7 +108,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の制限や欠点について具体的に言及
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -153,7 +153,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：購入決定プロセスを説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -243,7 +243,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：パッケージや付属品について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

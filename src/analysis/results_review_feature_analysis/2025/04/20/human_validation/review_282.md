@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 282
+評価点: 5.0
+商品ID: B00004THCZ
+タイトル: Almost Did Not Buy Because of Negative Reviews.
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I was very disappointed in the reviews, and I had decided not to purchase this lens, but then I read the review by John Nolley II.  After reading his review, I purchased it.  I have had it for a few days now, and I am very happy with it.  I have not found any focus problems.  It acts exactly like my Canon 55-250mm Telephoto lens.  Most of my shots (about 99%) are Nature and Landscape.  Every now and then I photograph my grandchildren playing sports.  My first test of the lens was shooting birds in my backyard.  They do not sit still very long, so I was constantly focusing and refocusing, and it was fast enough for me.  I see no difference at all with the operation of this lens and my Canon 55-250mm.  The only thing it does lack is Image Stabilization.  I found myself turning the Image Stabilized button off for most shots with my 55-250mm, and I always use a tripod anyway, so it is not needed for me.Thank you John, I would not have purchased this lens had it not been for your review.By the way, I was able to sell my used 55-250mm on ebay for $107 minus $9 shipping & insurance costs (sold in a few hours), so I figure this lens cost me about $30.oo Net!I absolutely love this lens.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+レビューを見て非常にがっかりし、このレンズは購入しないと決めていたが、ジョン・ノーリー2世のレビューを読んだ。  彼のレビューを読んで、私はこのレンズを購入しました。  手に入れて数日経ちますが、とても満足しています。  フォーカスに問題はない。  私のキヤノン55-250mm望遠レンズと全く同じように動作する。  私の撮影のほとんど（約99％）は自然と風景だ。  時々、スポーツをする孫を撮影する。  このレンズの最初のテストは、裏庭で鳥を撮ることだった。  鳥はあまり長くじっとしていないので、常にピントを合わせたり、合わせ直したりしていたが、私にとっては十分なスピードだった。  このレンズと私のキヤノン55-250mmの操作に全く違いはない。  唯一欠けているのは手ブレ補正だ。  
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -183,7 +183,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の耐久性や品質について
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 198
+評価点: 5.0
+商品ID: B00001WRSJ
+タイトル: 3rd pair in 15 years! Quality for sure!
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+Let me echo the raves. I just purchased my 3rd pair. I plug them directly into my Access Virus KC or Minibrute or UltraNova or any one of my several instruments and they make me smile. I hear what I play exactly as it sounds on my studio near field monitors. The highs, midrange and base sound perfect. The center feels exactly correct and the instruments seem placed exactly where they should be as do the vocals. Sometimes I think that the V6's are surround sound they are that good.I've tried other brands and other Sony's as well but for this price I'm getting a $200-esque pair of cans. I saw them for $300 on another site. Really? That's too much, but 10 years ago I paid $129 for them and now they're $76 on Amazon. If you mix music, DJ, or just like listening to music then these are for you. I'm glad that Sony still makes them. My second pair still sounds great but they're a little ratty for wear. I've replaced the ear pads twice and the headpad is completely wrapped in duct tape and I lost the carrying bag that came with it. So, this time I decided to get a new pair just in case Sony stops making them.There are better cans out there, to be sure, but they cost a lot more. I read a few reviews where the reviewers said that they'd found a $40 pair of 'phones that were just as good but ... that's right, they started to list a series of buts like the competetion was a little less comfortable, too light or too tight or felt too fragile or the highs were slightly tinny, or weak mids or the bass bottomed out. Well, none of that for the V6's. Highly recommended.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+絶賛の声を紹介しよう。3足目を購入したばかりです。Access Virus KCやMinibrute、UltraNova、あるいは私の数ある楽器のどれかに直接接続して、私を笑顔にしてくれる。スタジオのニアフィールド・モニターで聴くのと同じように、自分の演奏が聴こえるんだ。高音域、中音域、ベース音は完璧だ。センターは正確に感じられ、楽器はボーカルと同様にあるべき場所に正確に配置されているようです。他のブランドや他のソニーのものも試しましたが、この値段で200ドル並みのものを手に入れることができました。他のサイトでは300ドルだった。本当に？でも、10年前は129ドルだったけど、今はAmazonで76ドルだよ。もしあなたが音楽をミックスしたり、DJをしたり、ただ音楽を聴くのが好きなら、これはあなたのためのものだ。ソニーがまだ作ってくれていて嬉しい。私の2つ目のペアは、まだ素晴らしいサウンドですが、摩耗のために少しネズミです。イヤーパッドは2回交換したし、ヘッドパッドはガムテープでぐるぐる巻きになったし、付属のキャリングバッグもなくしてしまった。だから今回、万が一ソニーが製造を中止した場合に備えて、新しいペアを購入することにした。いくつかのレビューを読んだが、レビュアーは、40ドルの'ホン'で同じくらい良いものを見つけたと言っていた。しかし、V6にはそれがない。お薦めです。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -33,7 +33,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：技術的な詳細や仕様を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -228,7 +228,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：推奨ユーザーグループを明示
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -243,7 +243,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：パッケージや付属品について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

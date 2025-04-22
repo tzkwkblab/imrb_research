@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 133
+評価点: 5.0
+商品ID: B00001P4ZH
+タイトル: Excellent for the price, realistic reproduction of sound
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+Purchased this to replace my $10 Sony ear buds. Sony is not bad, but sounds a little dry and boring. I was surprised to hear the sound improved even when connected to a PC. Bass sounds more natural (not over emphasized as woofers do), and mid-range sounds fuller. Yo-Yo Ma sounds better with this compare to Sony.Even though this is supposed to be on the comfortable side of headphones, I still feel uncomfortable after using it for a while. I think it is the case for almost any headphone.However, this is not the best for conversation. I prefer my cheapo ear bud for Skype, which sounds a lot clearer. This is not a surprise since all telephones actually do filtration similar to that ear bud's frequency response to make conversations clearer and save system resources.By the way, I got a chance to try a Koss TD-80. This Portapro beats TD hands down in sound quality. If you enjoy music, but not on an AM radio or very compressed files, give this a try.Update: to improve the clarity in conversation (Skype) or vocal, I cut a hole in the center of the foam pad. Now everything works beautifully. By the way, its cheaper to order replacement pads through Amazon. Koss charges $5 for a pair, while Amazon sells a pack for the same price.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+10ドルのソニーの耳かきの代わりに購入しました。ソニーも悪くはないのですが、少し乾いた退屈な音です。PCにつないでも音が良くなったのには驚いた。低音はより自然に聞こえ（ウーファーのように強調されすぎていない）、中音域はより豊かに聞こえる。ヨーヨー・マの音は、ソニーと比較してこちらの方が良い。ヘッドホンの中では快適な部類に入るはずなのに、しばらく使っているとやはり不快に感じる。しかし、会話には向いていない。私はスカイプ用の安物の耳かきの方が好きだ。ちなみに、KOSSのTD-80を試す機会があった。ところで、私はKOSSのTD-80を試す機会があった。更新：会話（スカイプ）やボーカルでの明瞭度を向上させるため、フォームパッドの中央に穴を開けました。これですべてが美しく機能するようになった。ちなみに、交換用パッドはアマゾンで注文した方が安い。KOSSはペアで5ドルだが、Amazonは同じ値段で1パック売っている。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -183,7 +183,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の耐久性や品質について
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -213,7 +213,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：改善提案を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 115
+評価点: 4.0
+商品ID: B00000J1QR
+タイトル: A better CD/DVD cleaner than my T-shirts ... :-)
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I have small children who often put fingerprints on our kiddie DVDs.  Typically, I clean them by "breathing" on the dirty DVD and using the inside of my T-shirt to wipe clean these DVDs.  However, I began to look for another solution that didn't involve my T-shirt.  This product ... the Allsop CD and DVD fast-wipes looked like a possible solution, so I ordered a pack.After giving them a try, I find they work well ... they don't get the worst of the fingerprints off without a little extra help (or in my case, a "breath" on the DVD), but they get about 95 percent of the fingerprints off quickly and easily.  The material is lint free and works as advertised.  20 CD/DVD shaped wipes come per pack.  Being shaped like a DVD is just a gimmick.  I usually fold them in half or quarters before wiping, so if they were square-shaped (and thus had a little more material) it might actually be more helpful than being shaped like a circle.  The instructions say that each wipe can be re-used until it becomes visably dirty or worn, so you can clean multiple DVDs per wipe.Overall, these are a good buy and work well at a reasonable price.  Four stars.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+私には小さな子供がいて、子供用DVDによく指紋をつけてしまう。  通常、私は汚れたDVDに「息を吹きかけ」、Tシャツの内側で拭いてきれいにしている。  しかし、私はTシャツを使わない別の解決策を探し始めた。  この製品......Allsop CD and DVD fast-wipesが解決策になりそうだったので、1パック注文した。試してみた結果、よく働いてくれることがわかった......少し余分な力を借りないと（私の場合はDVDに「息を吹きかける」）最悪の指紋は取れないが、指紋の約95％は素早く簡単に取れる。  素材は糸くずが出ず、宣伝文句通りに機能する。  CD/DVD型のワイプが1パックに20枚入っている。  DVDの形をしているのは単なるギミックだ。  私は通常、半分か4分の1に折ってから拭くので、正方形の形をしていたら（つまりもう少し素材が多かったら）、円の形をしているより実際に役立つかもしれない。  説明書には、それぞれのワイプは目に見えて汚れたり擦り切れたりするまで再利用できると書かれているので、1回のワイプで複数のDVDをクリーニングすることができる。全体的に、これは良い買い物で、リーズナブルな値段で良く機能する。  星4つ。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -168,7 +168,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：予期せぬ問題や発見を報告する
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -213,7 +213,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：改善提案を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -243,7 +243,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：パッケージや付属品について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 116
+評価点: 4.0
+商品ID: B00004NKHY
+タイトル: Inexpensive, a bit noisy, but worth it
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+I've owned 6 Panasonic VCRs, each one better than its predecessor.  I am not sure that the same holds for this one, though the price is certainly too good to pass on.If you've owned a Panasonic VCR before then you expect reliability and ease of use.  This unit delivers on that...while including 4 heads, commercial skip, a lighted remote (finally!), and the entire bevy of features now standard on every VCR.The real negative is that it is much noiser than the model it replaces; particularly when it is rewinding.  We are talking a good bit noise, enough that it makes me want to turn up the TV volume while it is rewinding.I actually went out and purchased a JVC VCR to consider as an alternative, but returned that one and kept the Panasonic becaese the JVC was way too confusing to program.So why did I keep this one?  It is very inexpensive, I like the features, and I can live with the added noise.  I think this one is a keeper unless the noise will drive you crazy.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+私はパナソニックのビデオデッキを6台所有しているが、どれも前の機種より良くなっている。  パナソニックのビデオデッキを所有したことがあるなら、信頼性と使いやすさを期待しているはずだ。  このユニットは、4つのヘッド、CMスキップ、ライト付きリモコン（ついに！）、そして現在すべてのVCRに標準装備されている機能全体を搭載しながら、それを実現しています。本当のマイナスは、それが置き換えられるモデルよりもはるかにうるさいということです;特にそれが巻き戻されているとき。  巻き戻し中はテレビの音量を上げたくなるほどだ。実は、代替品としてJVCのビデオデッキを購入したのだが、JVCはプログラムが分かりにくすぎたため、そのビデオデッキは返品してパナソニックを買った。  非常に安価で、機能が気に入っており、ノイズが加わっても我慢できる。  ノイズで気が狂いそうにならない限り、これはキープしておくべきだと思う。
 
 ## 特徴判定
 
@@ -19,11 +19,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -33,7 +33,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：技術的な詳細や仕様を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -63,7 +63,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：長期使用経験について
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -78,7 +78,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：具体的な使用例や目的を説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -123,7 +123,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：過去に使用された類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -183,7 +183,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の耐久性や品質について
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -198,7 +198,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：返品または交換の意思表示
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

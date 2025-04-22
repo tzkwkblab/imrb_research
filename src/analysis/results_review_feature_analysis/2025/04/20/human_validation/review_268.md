@@ -1,14 +1,14 @@
-# レビューID: 5
-評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+# レビューID: 268
+評価点: 5.0
+商品ID: B00004VUGJ
+タイトル: A pleasure to work with
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+This is the best pointing device I have ever owned.  Much better than a mouse, and leagues better than the Microsoft trackball I used before this one.I bought the TrackMan because I was experiencing some fatigue on my right shoulder from using my mouse so much.  I had used a trackball before (the Microsoft I mentioned previously), but never liked it because the ball kept sticking. I wanted to try another trackball rather than another mouse.  I read the reviews here, and decided on the Logitech TrackMan. I was not disappointed.The feel is very comfortable, and the action is smooth.  The supplied driver software allows plenty of customization of the buttons and pointer speed.I love the acceleration feature.  I have two monitors, and getting the pointer from one to the other is a breeze.The TrackMan was so easy to install.  It started working as soon as I had installed the battery and plugged the wireless receiver into my computer, even before I had installed the driver or pressed the 'communicate' buttons!The driver software provides superb functionality, so I do advise using it even if the Trackman will work without.If you are used to using a mouse, you may need a little time to become proficient with the trackball, but in the end I believe this is the way to go.All in all, I am completely happy with this device.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+これは、私がこれまで所有した中で最高のポインティングデバイスだ。  マウスよりもずっといいし、これの前に使っていたマイクロソフトのトラックボールよりも遥かにいい。TrackManを買ったのは、マウスを使いすぎて右肩に疲労を感じていたからだ。  以前にもトラックボールを使ったことがあったが（以前紹介したマイクロソフトのもの）、ボールがくっつき続けるので好きではなかった。他のマウスではなく、他のトラックボールを試してみたかったのです。  ここのレビューを読んで、ロジクールのTrackManに決めました。感触はとても快適で、動作もスムーズ。  付属のドライバソフトウェアを使えば、ボタンやポインタの速度を自由にカスタマイズできる。  TrackManの取り付けはとても簡単だった。  ドライバーをインストールする前でも、「通信」ボタンを押す前でも、バッテリーを取り付け、ワイヤレス・レシーバーをコンピューターに接続するとすぐに動き始めました。ドライバー・ソフトウェアは素晴らしい機能を提供してくれるので、トラックボールがなくても動作する場合でも、使用することをお勧めします。マウスを使うのに慣れている人は、トラックボールを使いこなせるようになるまでに少し時間がかかるかもしれませんが、最終的には、これが良い方法だと思います。
 
 ## 特徴判定
 
@@ -18,12 +18,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：価格またはコストに関する言及を含む
 
 #### 判定
-- GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -33,7 +33,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：技術的な詳細や仕様を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -48,7 +48,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：競合製品との比較を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -93,7 +93,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：初期セットアップまたはインストールの経験
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -108,7 +108,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の制限や欠点について具体的に言及
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -120,10 +120,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 ### 特徴8
 #### 説明
 - 英語：Compares with previous similar products used
-- 日本語：過去に使用された類似製品との比較
+- 日本語：過去の類似製品との比較
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -138,7 +138,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：ブランドの信頼性や評判
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -273,7 +273,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の使用環境を説明
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -303,11 +303,11 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：他のユーザーへのアドバイスを含む
 
 #### 判定
-- GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：1
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 

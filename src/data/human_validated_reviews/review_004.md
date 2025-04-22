@@ -1,14 +1,14 @@
-# レビューID: 5
+# レビューID: 4
 評価点: 1.0
-商品ID: B00000J1E6
-タイトル: Just awful
+商品ID: B00000JD4T
+タイトル: DECEITFUL SELLERS = JR MUSIC & Amazon
 
 ## レビュー本文
 ### 原文
-After reading the reviews on here I was hesitant to use the product I had just purchased. But I figured what could I lose - it was already skipping and if this didn't work, I'd just buy a new copy.Well I'm here to tell you that if you plan to use this on anything important, forget it. The CD was left with more scratches than before (the "protective" pad actually MAKES scratches WORSE than a paper towel...) and it's just a horrible product. I followed the directions to a T. Thanks Maxell for wasting my money and my time.
+JR Music and Amazon must be KIDDING to think that they do not need to have a policy to make it obvious that this is a USED product.  To bury the fact that this item is "reconditioned" at the very BOTTOM of a multi-page description instead of in the TITLE or first line is deceitful!  They are selling used goods as new and treating the fact that this item is used as part of a disclaimer buried so far down that they know most people will not notice it.
 
 ### 日本語訳
-ここのレビューを読んで、購入したばかりの製品を使うのをためらった。でも、損をすることはないだろうと思った。すでに音飛びしていたし、これでダメだったら新しいCDを買えばいいだけだ。CDには以前よりも多くの傷が残り（「保護」パッドは実際にペーパータオルよりも傷を悪化させる...）、ひどい製品だ。私のお金と時間を無駄にしてくれたマクセルに感謝します。
+JRミュージックとアマゾンは、この商品がUSED品であることを明らかにするポリシーは必要ないと考えているのだろう。  この商品が "reconditioned "であることを、タイトルや最初の行ではなく、何ページにもわたる説明の一番下に隠しているのは、欺瞞である！  彼らは中古品を新品として販売し、この商品が中古品であるという事実を、ほとんどの人が気づかないことを知っているほど下の方に埋められた免責事項の一部として扱っているのだ。
 
 ## 特徴判定
 
@@ -18,12 +18,12 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：価格またはコストに関する言及を含む
 
 #### 判定
-- GPTの判定：1
-- [x] 判定が不適切な場合はチェック
+- GPTの判定：0
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-「wasting my money」という表現はありますが、これは製品への不満を表現する慣用句として使用されており、実際の価格やコストに関する具体的な言及ではありません。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
 
@@ -78,7 +78,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：具体的な使用例や目的を説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -120,7 +120,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 ### 特徴8
 #### 説明
 - 英語：Compares with previous similar products used
-- 日本語：過去に使用された類似製品との比較
+- 日本語：過去の類似製品との比較
 
 #### 判定
 - GPTの判定：0
@@ -153,7 +153,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：購入決定プロセスを説明
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -183,7 +183,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：製品の耐久性や品質について
 
 #### 判定
-- GPTの判定：1
+- GPTの判定：0
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -213,7 +213,7 @@ After reading the reviews on here I was hesitant to use the product I had just p
 - 日本語：改善提案を含む
 
 #### 判定
-- GPTの判定：0
+- GPTの判定：1
 - [ ] 判定が不適切な場合はチェック
 
 #### コメント
@@ -304,10 +304,10 @@ After reading the reviews on here I was hesitant to use the product I had just p
 
 #### 判定
 - GPTの判定：0
-- [x] 判定が不適切な場合はチェック
+- [ ] 判定が不適切な場合はチェック
 
 #### コメント
 ```
-判定は不適切です。「if you plan to use this on anything important, forget it」という他のユーザーへの明確なアドバイスが含まれています。
+判定が不適切な場合、その理由や気づきを記入
 ```
 
