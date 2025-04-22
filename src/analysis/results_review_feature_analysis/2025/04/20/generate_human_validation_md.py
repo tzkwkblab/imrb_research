@@ -50,6 +50,10 @@ def generate_review_md(review_data, feature_definitions, translator, output_dir)
     review_id = review_data['review_id']
     output_path = output_dir / f"review_{review_id:03d}.md"
     
+    # 既に生成済みの場合はスキップ
+    if output_path.exists():
+        return None
+    
     # レビュー本文の翻訳
     review_translation = translate_text(translator, review_data['review_text'])
     
@@ -100,7 +104,7 @@ def generate_review_md(review_data, feature_definitions, translator, output_dir)
     
     return output_path
 
-def main():
+def main(start_review_id=None):
     # 入出力パスの設定
     current_dir = Path(__file__).parent
     input_file = current_dir / "all_results.json"
@@ -117,15 +121,23 @@ def main():
     with open(input_file, 'r', encoding='utf-8') as f:
         reviews_data = json.load(f)
     
+    # 開始位置の設定
+    if start_review_id is not None:
+        reviews_data = [r for r in reviews_data if r['review_id'] >= start_review_id]
+    
     # 各レビューに対してmdファイルを生成
     total = len(reviews_data)
+    generated_count = 0
+    
     for i, review_data in enumerate(reviews_data, 1):
         output_path = generate_review_md(review_data, feature_definitions, translator, output_dir)
-        print(f"生成完了 ({i}/{total}): {output_path}")
-        
-        # API制限を考慮して、10件ごとに少し待機
-        if i % 10 == 0:
-            sleep(1)
+        if output_path:  # 新しく生成された場合のみカウント
+            generated_count += 1
+            print(f"生成完了 ({i}/{total}): {output_path}")
+            
+            # API制限を考慮して、10件ごとに少し待機
+            if generated_count % 10 == 0:
+                sleep(1)
     
     # 使用量の確認
     usage = translator.get_usage()
@@ -133,7 +145,8 @@ def main():
         print(f"\n翻訳API使用量: {usage.character.count} / {usage.character.limit} 文字")
     else:
         print("\n翻訳API使用量の取得に失敗しました")
-    print(f"\n全てのmdファイルを生成しました。\n出力ディレクトリ: {output_dir}")
+    print(f"\n新規生成ファイル数: {generated_count}")
+    print(f"出力ディレクトリ: {output_dir}")
 
 if __name__ == "__main__":
-    main() 
+    main(start_review_id=114)  # review_113.mdの次から開始 
