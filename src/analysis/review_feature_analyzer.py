@@ -27,7 +27,8 @@ class ReviewFeatureAnalyzer:
             raise ValueError("OPENAI_API_KEY not found in environment variables")
         
         # 特徴定義の読み込み
-        self.features_df = pd.read_csv("src/data/features/definitions/review_features.csv")
+        self.features_df = pd.read_csv("src/data/features/definitions/5features.csv")
+        self.max_feature_id = int(self.features_df['feature_id'].max())
         
         # 出力ディレクトリの設定
         self.output_dir = Path(output_dir) if output_dir else Path("src/analysis/results_review_feature_analysis")
@@ -35,7 +36,7 @@ class ReviewFeatureAnalyzer:
     def analyze_review(self, review_text: str, review_rating: float, review_title: str = None, num_trials: int = 5) -> Dict:
         """一つのレビューに対して複数回特徴を分析し、多数決で判定"""
         results = []
-        stability_data = {str(i): [] for i in range(1, 21)}  # 各特徴の判定安定性データ
+        stability_data = {str(i): [] for i in range(1, self.max_feature_id + 1)}  # 各特徴の判定安定性データ
         all_results = []  # 各試行の結果を保存
         
         # 指定回数の分析を実行
@@ -101,7 +102,7 @@ class ReviewFeatureAnalyzer:
                           [f'Trial {i+1}' for i in range(len(results['all_trials']))])
             
             # 各特徴の結果を書き込み
-            for feature_id in range(1, 21):
+            for feature_id in range(1, self.max_feature_id + 1):
                 feature_id_str = str(feature_id)
                 row = [
                     feature_id,
@@ -173,13 +174,12 @@ Response format:
     def _get_majority_vote(self, results: List[Dict]) -> Dict:
         """複数の判定結果から多数決で最終判定を決定"""
         final_result = {}
-        for feature_id in range(1, 21):
-            feature_id_str = str(feature_id)
+        for feature_id in range(1, self.max_feature_id + 1):
             # 各特徴の判定値を集計
-            votes = [result[feature_id_str] for result in results]
+            votes = [result[str(feature_id)] for result in results]
             # 多数決（同数の場合は1を優先）
             counter = Counter(votes)
-            final_result[feature_id_str] = 1 if counter[1] >= counter[0] else 0
+            final_result[str(feature_id)] = 1 if counter[1] >= counter[0] else 0
             
         return final_result
     

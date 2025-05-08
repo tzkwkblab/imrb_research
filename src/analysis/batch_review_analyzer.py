@@ -139,18 +139,21 @@ class BatchReviewAnalyzer:
     
     def _create_summary_report(self, results, output_dir):
         """分析結果のサマリーレポートを作成"""
-        # 特徴の出現頻度を計算
-        feature_counts = {str(i): 0 for i in range(1, 21)}
-        stability_sums = {str(i): 0.0 for i in range(1, 21)}
-        
+        # 全resultsから現れる全feature_idの集合を作成
+        all_feature_ids = set()
+        for result in results:
+            all_feature_ids.update(result['analysis_result']['features'].keys())
+
+        feature_counts = {feature_id: 0 for feature_id in all_feature_ids}
+        stability_sums = {feature_id: 0.0 for feature_id in all_feature_ids}
+
         for result in results:
             features = result['analysis_result']['features']
             stability = result['analysis_result']['stability']
-            
-            for feature_id in feature_counts.keys():
-                if features[feature_id] == 1:
+            for feature_id in all_feature_ids:
+                if features.get(feature_id, 0) == 1:
                     feature_counts[feature_id] += 1
-                stability_sums[feature_id] += stability[feature_id]
+                stability_sums[feature_id] += stability.get(feature_id, 0.0)
         
         # レポート作成
         report = f"""# バッチ分析レポート
