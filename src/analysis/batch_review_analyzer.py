@@ -1,3 +1,19 @@
+"""
+実行結果の保存場所について
+
+分析結果は、実行時刻ごとに
+src/analysis/results_batch_analysis/{実行日時}/
+以下に保存されます。
+例:
+  src/analysis/results_batch_analysis/20240423_1530/
+
+このディレクトリ内に
+  - all_results.json（全件の分析結果）
+  - summary_report.md（サマリーレポート）
+  - intermediate/（中間結果のjsonファイル群）
+が出力されます。
+"""
+
 import pandas as pd
 from review_feature_analyzer import ReviewFeatureAnalyzer
 from datetime import datetime

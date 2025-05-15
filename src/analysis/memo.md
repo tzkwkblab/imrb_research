@@ -2,9 +2,13 @@
 
 人間の目でデータを評価してみてます
 
-[ここらへん](./results_review_feature_analysis/2025/04/22/1551.md)
+[ここらへん](./experiments/2025/04/22/1551.md)
 
-[レビューデータの特徴の統計](./results_review_feature_analysis/2025/04/20/summary_report.md)
+[レビューデータの特徴の統計](./experiments/2025/04/20/summary_report.md)
 
 [人間の目で評価したデータの格納場所](../data/human_validated_reviews/)
 
+---
+
+人の目での評価がすべて終わったので、データ作成フェーズは終了です。
+次はベースライン手法の構築に進みます。

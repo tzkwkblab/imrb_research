@@ -1,3 +1,16 @@
+"""
+このスクリプトについて
+
+- 元データ（data/processed/electronics_reviews.csv）の
+  レビュー情報を確認・要約表示できます。
+- また、レーティング分布を維持したまま
+  サンプルデータ（例：300件）を抽出し、
+  src/data/examples/sample_reviews_300.csv
+  に保存します。
+
+主な出力先:
+  src/data/examples/sample_reviews_300.csv
+"""
 import pandas as pd
 from pathlib import Path
 

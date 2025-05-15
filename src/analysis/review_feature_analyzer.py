@@ -31,7 +31,7 @@ class ReviewFeatureAnalyzer:
         self.max_feature_id = int(self.features_df['feature_id'].max())
         
         # 出力ディレクトリの設定
-        self.output_dir = Path(output_dir) if output_dir else Path("src/analysis/results_review_feature_analysis")
+        self.output_dir = Path(output_dir) if output_dir else Path("src/analysis/experiments")
         
     def analyze_review(self, review_text: str, review_rating: float, review_title: str = None, num_trials: int = 5) -> Dict:
         """一つのレビューに対して複数回特徴を分析し、多数決で判定"""
