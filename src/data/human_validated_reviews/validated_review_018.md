@@ -229,8 +229,7 @@ Nexus 4 の内蔵マイクほどではないので、改善したいと思って
 #### コメント
 
 ```
-There's some static on all recordings, and I'm not sure what to do about it
-と言ってる。どの録音でも雑音が入るというのは製品、つまりマイクの品質について言及していると言って良い。
+There's some static on all recordings, and I'm not sure what to do about itと言ってる。どの録音でも雑音が入るというのは製品、つまりマイクの品質について言及していると言って良い。
 ```
 
 ### 特徴 13
