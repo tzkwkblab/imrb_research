@@ -17,30 +17,36 @@ def parse_review_md(md_path):
         text = f.read()
 
     # review_id
-    review_id = re.search(r'# レビュー ?ID: (\d+)', text)
+    review_id = re.search(r'# レビュー ?ID: ?(\d+)', text)
     review_id = review_id.group(1) if review_id else ''
 
     # product_id
-    product_id = re.search(r'商品 ?ID: ([A-Z0-9]+)', text)
+    product_id = re.search(r'商品 ?ID: ?([A-Z0-9]+)', text)
     product_id = product_id.group(1) if product_id else ''
 
     # rating
-    rating = re.search(r'評価点: ([0-9.]+)', text)
+    rating = re.search(r'評価点: ?([0-9.]+)', text)
     rating = rating.group(1) if rating else ''
 
     # title
-    title = re.search(r'タイトル: (.+)', text)
+    title = re.search(r'タイトル: ?(.+)', text)
     title = title.group(1).strip() if title else ''
 
     # review_text（原文）
-    review_text = re.search(r'### 原文\n([\s\S]+?)\n\n### 日本語訳', text)
-    review_text = review_text.group(1).replace('\n', '').strip() if review_text else ''
+    review_text = re.search(r'### 原文\s*\n\s*([\s\S]+?)\s*\n\s*### 日本語訳', text)
+    if review_text:
+        # 改行を空白に置換し、連続する空白を1つにまとめる
+        review_text = review_text.group(1).strip()
+        review_text = re.sub(r'\s+', ' ', review_text)
+
+    else:
+        review_text = ''
 
     # 各特徴の情報を抽出
     features = {}
     for i in range(1, FEATURE_COUNT + 1):
         # 特徴iのブロックを抽出
-        pattern = rf'### 特徴 ?{i}[\s\S]+?GPT ?の判定：([01])[\s\S]+?\[ ?([ xX])? ?\] 判定が不適切な場合はチェック[\s\S]+?#### コメント\n```\n([\s\S]*?)\n```'
+        pattern = rf'### 特徴 ?{i}\s*\n[\s\S]+?- GPT ?の判定：([01])\s*\n- \[ ?([ xX])? ?\] 判定が不適切な場合はチェック\s*\n[\s\S]+?#### コメント\s*\n```\s*([\s\S]*?)```'
         m = re.search(pattern, text)
         if m:
             gpt_value = int(m.group(1))
@@ -49,10 +55,20 @@ def parse_review_md(md_path):
             # 最終判定値: チェックがONなら値を反転、OFFならGPT値
             final_value = 1 - gpt_value if checked else gpt_value
         else:
-            gpt_value = ''
-            checked = ''
-            comment = ''
-            final_value = ''
+            # 別のパターンも試す（フォーマットのバリエーション対応）
+            alt_pattern = rf'### 特徴 ?{i}[\s\S]+?GPT ?の判定：([01])[\s\S]+?\[ ?([ xX])? ?\] 判定が不適切な場合はチェック[\s\S]+?コメント\s*\n```\s*([\s\S]*?)```'
+            m = re.search(alt_pattern, text)
+            if m:
+                gpt_value = int(m.group(1))
+                checked = 1 if m.group(2) else 0
+                comment = m.group(3).strip()
+                final_value = 1 - gpt_value if checked else gpt_value
+            else:
+                gpt_value = ''
+                checked = ''
+                comment = ''
+                final_value = ''
+        
         features[i] = {
             'gpt_judgement': gpt_value,
             'human_check': checked,
@@ -96,7 +112,7 @@ def main():
 
     output_path = OUTPUT_CSV
     with output_path.open('w', encoding='utf-8', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()
         for row in rows:
             writer.writerow(row)
