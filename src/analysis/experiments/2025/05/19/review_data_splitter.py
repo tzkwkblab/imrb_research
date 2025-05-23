@@ -190,7 +190,7 @@ def split_reviews_by_feature_index(
     
     return results
 
-if __name__ == '__main__':
+def main():
     test_csv_path = 'src/analysis/experiments/2025/05/15/processed_reviews.csv'
     
     # 新しい分割方法を使用
@@ -251,3 +251,6 @@ if __name__ == '__main__':
         print("No results to display.")
     """
 
+# デバッグ用にコメントアウト
+#if __name__ == '__main__':
+#    main()
