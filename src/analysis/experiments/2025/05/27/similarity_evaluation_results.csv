@@ -1,0 +1,5 @@
+feature_number,gpt_response,original_description,bert_similarity,bleu_similarity
+2,Mentions detailed technical features and usage examples,Includes technical details or specifications,0.8185797929763794,0.036015288308423515
+3,Contains detailed personal experience and specific product comparisons,Contains comparisons with competing products,0.7675116062164307,0.035065941041239286
+4,Mentions detailed product features and user experience,Mentions long-term usage experience,0.7461353540420532,0.045131921809482646
+5,Contains detailed technical usage and installation advice,Explains specific use cases or purposes,0.7051589787006378,0.0

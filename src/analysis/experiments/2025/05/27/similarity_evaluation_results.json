@@ -1,0 +1,30 @@
+[
+  {
+    "feature_number": 2,
+    "gpt_response": "Mentions detailed technical features and usage examples",
+    "original_description": "Includes technical details or specifications",
+    "bert_similarity": 0.8185797929763794,
+    "bleu_similarity": 0.036015288308423515
+  },
+  {
+    "feature_number": 3,
+    "gpt_response": "Contains detailed personal experience and specific product comparisons",
+    "original_description": "Contains comparisons with competing products",
+    "bert_similarity": 0.7675116062164307,
+    "bleu_similarity": 0.035065941041239286
+  },
+  {
+    "feature_number": 4,
+    "gpt_response": "Mentions detailed product features and user experience",
+    "original_description": "Mentions long-term usage experience",
+    "bert_similarity": 0.7461353540420532,
+    "bleu_similarity": 0.045131921809482646
+  },
+  {
+    "feature_number": 5,
+    "gpt_response": "Contains detailed technical usage and installation advice",
+    "original_description": "Explains specific use cases or purposes",
+    "bert_similarity": 0.7051589787006378,
+    "bleu_similarity": 0.0
+  }
+]

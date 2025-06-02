@@ -1,0 +1,6 @@
+Feature,GPT生成説明,元の特徴記述,BERT類似度,BLEU類似度
+2,"Mentions detailed technical features and usage examples","Includes technical details or specifications",0.819,0.036
+3,"Contains detailed personal experience and specific product comparisons","Contains comparisons with competing products",0.768,0.035
+4,"Mentions detailed product features and user experience","Mentions long-term usage experience",0.746,0.045
+5,"Contains detailed technical usage and installation advice","Explains specific use cases or purposes",0.705,0.000
+平均,,,0.759,0.029
