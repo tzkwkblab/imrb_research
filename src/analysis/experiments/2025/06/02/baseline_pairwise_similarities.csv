@@ -1,0 +1,191 @@
+feature1_id,feature1_desc,feature2_id,feature2_desc,bert_similarity,bleu_similarity
+1,Contains mentions of price or cost,2,Includes technical details or specifications,0.6790235638618469,0.0439891724758422
+1,Contains mentions of price or cost,3,Contains comparisons with competing products,0.6948331743478775,0.0439891724758422
+1,Contains mentions of price or cost,4,Mentions long-term usage experience,0.6632831543684006,0.04873039689743777
+1,Contains mentions of price or cost,5,Explains specific use cases or purposes,0.6466412991285324,0.040824829046386304
+1,Contains mentions of price or cost,6,Describes initial setup or installation experience,0.5465878136456013,0.040824829046386304
+1,Contains mentions of price or cost,7,Specifically mentions product limitations or drawbacks,0.6918427795171738,0.048549177170732344
+1,Contains mentions of price or cost,8,Compares with previous similar products used,0.6452499032020569,0.0
+1,Contains mentions of price or cost,9,References brand reliability or reputation,0.6321890950202942,0.0439891724758422
+1,Contains mentions of price or cost,10,Explains purchase decision process,0.6758422702550888,0.0
+1,Contains mentions of price or cost,11,Reports unexpected issues or discoveries,0.5904399156570435,0.0439891724758422
+1,Contains mentions of price or cost,12,Mentions product durability or quality,0.7012482434511185,0.05231223689135342
+1,Contains mentions of price or cost,13,Indicates intention to return or exchange,0.5680579543113708,0.040824829046386304
+1,Contains mentions of price or cost,14,Contains suggestions for improvement,0.7004572451114655,0.04873039689743777
+1,Contains mentions of price or cost,15,Clearly indicates recommended user groups,0.5953978598117828,0.0
+1,Contains mentions of price or cost,16,Mentions packaging or included accessories,0.7240866422653198,0.05231223689135342
+1,Contains mentions of price or cost,17,Describes customer support experience,0.5995906740427017,0.0
+1,Contains mentions of price or cost,18,Explains product usage environment,0.6637791097164154,0.0
+1,Contains mentions of price or cost,19,References match/mismatch with expectations,0.5980276465415955,0.0
+1,Contains mentions of price or cost,20,Includes advice for other users,0.6424036473035812,0.0
+2,Includes technical details or specifications,3,Contains comparisons with competing products,0.5679421573877335,0.0
+2,Includes technical details or specifications,4,Mentions long-term usage experience,0.5681541413068771,0.0
+2,Includes technical details or specifications,5,Explains specific use cases or purposes,0.6934535503387451,0.040824829046386304
+2,Includes technical details or specifications,6,Describes initial setup or installation experience,0.6872440278530121,0.040824829046386304
+2,Includes technical details or specifications,7,Specifically mentions product limitations or drawbacks,0.7215599417686462,0.040824829046386304
+2,Includes technical details or specifications,8,Compares with previous similar products used,0.5579766482114792,0.0
+2,Includes technical details or specifications,9,References brand reliability or reputation,0.5754032656550407,0.05372849659117709
+2,Includes technical details or specifications,10,Explains purchase decision process,0.6403155773878098,0.0
+2,Includes technical details or specifications,11,Reports unexpected issues or discoveries,0.5856053084135056,0.05372849659117709
+2,Includes technical details or specifications,12,Mentions product durability or quality,0.6738796830177307,0.05372849659117709
+2,Includes technical details or specifications,13,Indicates intention to return or exchange,0.5339648611843586,0.040824829046386304
+2,Includes technical details or specifications,14,Contains suggestions for improvement,0.6025509983301163,0.0
+2,Includes technical details or specifications,15,Clearly indicates recommended user groups,0.5505191162228584,0.0
+2,Includes technical details or specifications,16,Mentions packaging or included accessories,0.7215083539485931,0.05372849659117709
+2,Includes technical details or specifications,17,Describes customer support experience,0.6619413197040558,0.0
+2,Includes technical details or specifications,18,Explains product usage environment,0.6595779359340668,0.0
+2,Includes technical details or specifications,19,References match/mismatch with expectations,0.5095984023064375,0.0
+2,Includes technical details or specifications,20,Includes advice for other users,0.6337220072746277,0.05372849659117709
+3,Contains comparisons with competing products,4,Mentions long-term usage experience,0.5265205893665552,0.0
+3,Contains comparisons with competing products,5,Explains specific use cases or purposes,0.5690054222941399,0.0
+3,Contains comparisons with competing products,6,Describes initial setup or installation experience,0.48578493669629097,0.0
+3,Contains comparisons with competing products,7,Specifically mentions product limitations or drawbacks,0.6580563336610794,0.0
+3,Contains comparisons with competing products,8,Compares with previous similar products used,0.8207509517669678,0.048549177170732344
+3,Contains comparisons with competing products,9,References brand reliability or reputation,0.6383253633975983,0.0
+3,Contains comparisons with competing products,10,Explains purchase decision process,0.5828845053911209,0.0
+3,Contains comparisons with competing products,11,Reports unexpected issues or discoveries,0.5605931468307972,0.0
+3,Contains comparisons with competing products,12,Mentions product durability or quality,0.6730557978153229,0.0
+3,Contains comparisons with competing products,13,Indicates intention to return or exchange,0.5360410585999489,0.0
+3,Contains comparisons with competing products,14,Contains suggestions for improvement,0.7347103953361511,0.06257106818159155
+3,Contains comparisons with competing products,15,Clearly indicates recommended user groups,0.5553211197257042,0.0
+3,Contains comparisons with competing products,16,Mentions packaging or included accessories,0.5639723464846611,0.0
+3,Contains comparisons with competing products,17,Describes customer support experience,0.5110337166115642,0.0
+3,Contains comparisons with competing products,18,Explains product usage environment,0.6177956312894821,0.0
+3,Contains comparisons with competing products,19,References match/mismatch with expectations,0.6516838222742081,0.06257106818159155
+3,Contains comparisons with competing products,20,Includes advice for other users,0.5540861673653126,0.0
+4,Mentions long-term usage experience,5,Explains specific use cases or purposes,0.7265041321516037,0.0
+4,Mentions long-term usage experience,6,Describes initial setup or installation experience,0.595320850610733,0.040824829046386304
+4,Mentions long-term usage experience,7,Specifically mentions product limitations or drawbacks,0.6793692111968994,0.040824829046386304
+4,Mentions long-term usage experience,8,Compares with previous similar products used,0.632718414068222,0.0
+4,Mentions long-term usage experience,9,References brand reliability or reputation,0.6530163288116455,0.0
+4,Mentions long-term usage experience,10,Explains purchase decision process,0.5323479436337948,0.0
+4,Mentions long-term usage experience,11,Reports unexpected issues or discoveries,0.6101796925067902,0.0
+4,Mentions long-term usage experience,12,Mentions product durability or quality,0.695761576294899,0.05372849659117709
+4,Mentions long-term usage experience,13,Indicates intention to return or exchange,0.5299785789102316,0.0
+4,Mentions long-term usage experience,14,Contains suggestions for improvement,0.6665839403867722,0.0
+4,Mentions long-term usage experience,15,Clearly indicates recommended user groups,0.6376455277204514,0.0
+4,Mentions long-term usage experience,16,Mentions packaging or included accessories,0.615728422999382,0.05372849659117709
+4,Mentions long-term usage experience,17,Describes customer support experience,0.7019855976104736,0.08034284189446518
+4,Mentions long-term usage experience,18,Explains product usage environment,0.6920956671237946,0.08034284189446518
+4,Mentions long-term usage experience,19,References match/mismatch with expectations,0.5646868571639061,0.0
+4,Mentions long-term usage experience,20,Includes advice for other users,0.68345707654953,0.0
+5,Explains specific use cases or purposes,6,Describes initial setup or installation experience,0.6267090141773224,0.040824829046386304
+5,Explains specific use cases or purposes,7,Specifically mentions product limitations or drawbacks,0.7716823816299438,0.040824829046386304
+5,Explains specific use cases or purposes,8,Compares with previous similar products used,0.6197185143828392,0.0
+5,Explains specific use cases or purposes,9,References brand reliability or reputation,0.5792298540472984,0.0439891724758422
+5,Explains specific use cases or purposes,10,Explains purchase decision process,0.6427614986896515,0.04873039689743777
+5,Explains specific use cases or purposes,11,Reports unexpected issues or discoveries,0.6325434148311615,0.0439891724758422
+5,Explains specific use cases or purposes,12,Mentions product durability or quality,0.6763763874769211,0.0439891724758422
+5,Explains specific use cases or purposes,13,Indicates intention to return or exchange,0.5768444612622261,0.040824829046386304
+5,Explains specific use cases or purposes,14,Contains suggestions for improvement,0.6180554777383804,0.0
+5,Explains specific use cases or purposes,15,Clearly indicates recommended user groups,0.5981026142835617,0.0
+5,Explains specific use cases or purposes,16,Mentions packaging or included accessories,0.6205260455608368,0.0439891724758422
+5,Explains specific use cases or purposes,17,Describes customer support experience,0.6400531679391861,0.0
+5,Explains specific use cases or purposes,18,Explains product usage environment,0.7747263312339783,0.04873039689743777
+5,Explains specific use cases or purposes,19,References match/mismatch with expectations,0.5298665501177311,0.0
+5,Explains specific use cases or purposes,20,Includes advice for other users,0.6264813840389252,0.0
+6,Describes initial setup or installation experience,7,Specifically mentions product limitations or drawbacks,0.5804680809378624,0.040824829046386304
+6,Describes initial setup or installation experience,8,Compares with previous similar products used,0.5361854732036591,0.0
+6,Describes initial setup or installation experience,9,References brand reliability or reputation,0.5735132843255997,0.0439891724758422
+6,Describes initial setup or installation experience,10,Explains purchase decision process,0.6333196759223938,0.0
+6,Describes initial setup or installation experience,11,Reports unexpected issues or discoveries,0.5735635682940483,0.0439891724758422
+6,Describes initial setup or installation experience,12,Mentions product durability or quality,0.6150103658437729,0.0439891724758422
+6,Describes initial setup or installation experience,13,Indicates intention to return or exchange,0.5642440095543861,0.040824829046386304
+6,Describes initial setup or installation experience,14,Contains suggestions for improvement,0.5448729693889618,0.0
+6,Describes initial setup or installation experience,15,Clearly indicates recommended user groups,0.5781688168644905,0.0
+6,Describes initial setup or installation experience,16,Mentions packaging or included accessories,0.6296029835939407,0.0439891724758422
+6,Describes initial setup or installation experience,17,Describes customer support experience,0.7014173865318298,0.05795053470733952
+6,Describes initial setup or installation experience,18,Explains product usage environment,0.6681238263845444,0.0
+6,Describes initial setup or installation experience,19,References match/mismatch with expectations,0.4798068180680275,0.0
+6,Describes initial setup or installation experience,20,Includes advice for other users,0.5613388642668724,0.0
+7,Specifically mentions product limitations or drawbacks,8,Compares with previous similar products used,0.6641407310962677,0.0
+7,Specifically mentions product limitations or drawbacks,9,References brand reliability or reputation,0.6733976006507874,0.0439891724758422
+7,Specifically mentions product limitations or drawbacks,10,Explains purchase decision process,0.6381286978721619,0.0
+7,Specifically mentions product limitations or drawbacks,11,Reports unexpected issues or discoveries,0.6425195038318634,0.0439891724758422
+7,Specifically mentions product limitations or drawbacks,12,Mentions product durability or quality,0.7694821655750275,0.10294994188297393
+7,Specifically mentions product limitations or drawbacks,13,Indicates intention to return or exchange,0.5045373104512691,0.040824829046386304
+7,Specifically mentions product limitations or drawbacks,14,Contains suggestions for improvement,0.6254208832979202,0.0
+7,Specifically mentions product limitations or drawbacks,15,Clearly indicates recommended user groups,0.5955750197172165,0.0
+7,Specifically mentions product limitations or drawbacks,16,Mentions packaging or included accessories,0.6504442095756531,0.05231223689135342
+7,Specifically mentions product limitations or drawbacks,17,Describes customer support experience,0.6410720646381378,0.0
+7,Specifically mentions product limitations or drawbacks,18,Explains product usage environment,0.750840961933136,0.04873039689743777
+7,Specifically mentions product limitations or drawbacks,19,References match/mismatch with expectations,0.5190695598721504,0.0
+7,Specifically mentions product limitations or drawbacks,20,Includes advice for other users,0.6407388150691986,0.0
+8,Compares with previous similar products used,9,References brand reliability or reputation,0.7058523297309875,0.0
+8,Compares with previous similar products used,10,Explains purchase decision process,0.5612239837646484,0.0
+8,Compares with previous similar products used,11,Reports unexpected issues or discoveries,0.5937403291463852,0.0
+8,Compares with previous similar products used,12,Mentions product durability or quality,0.7689126431941986,0.0
+8,Compares with previous similar products used,13,Indicates intention to return or exchange,0.5355840548872948,0.0
+8,Compares with previous similar products used,14,Contains suggestions for improvement,0.6847978830337524,0.0
+8,Compares with previous similar products used,15,Clearly indicates recommended user groups,0.5662300735712051,0.0
+8,Compares with previous similar products used,16,Mentions packaging or included accessories,0.5847053229808807,0.0
+8,Compares with previous similar products used,17,Describes customer support experience,0.5707509741187096,0.0
+8,Compares with previous similar products used,18,Explains product usage environment,0.6865901350975037,0.0
+8,Compares with previous similar products used,19,References match/mismatch with expectations,0.6076604425907135,0.04873039689743777
+8,Compares with previous similar products used,20,Includes advice for other users,0.5718124285340309,0.0
+9,References brand reliability or reputation,10,Explains purchase decision process,0.6243162453174591,0.0
+9,References brand reliability or reputation,11,Reports unexpected issues or discoveries,0.5898812264204025,0.05372849659117709
+9,References brand reliability or reputation,12,Mentions product durability or quality,0.8171859383583069,0.05372849659117709
+9,References brand reliability or reputation,13,Indicates intention to return or exchange,0.553769439458847,0.040824829046386304
+9,References brand reliability or reputation,14,Contains suggestions for improvement,0.591733768582344,0.0
+9,References brand reliability or reputation,15,Clearly indicates recommended user groups,0.6107586175203323,0.0
+9,References brand reliability or reputation,16,Mentions packaging or included accessories,0.6080504432320595,0.05372849659117709
+9,References brand reliability or reputation,17,Describes customer support experience,0.648796483874321,0.0
+9,References brand reliability or reputation,18,Explains product usage environment,0.6233741641044617,0.0
+9,References brand reliability or reputation,19,References match/mismatch with expectations,0.6890868246555328,0.06257106818159155
+9,References brand reliability or reputation,20,Includes advice for other users,0.5502090901136398,0.0
+10,Explains purchase decision process,11,Reports unexpected issues or discoveries,0.5390670113265514,0.0
+10,Explains purchase decision process,12,Mentions product durability or quality,0.6252705156803131,0.0
+10,Explains purchase decision process,13,Indicates intention to return or exchange,0.694832906126976,0.0
+10,Explains purchase decision process,14,Contains suggestions for improvement,0.5677930414676666,0.0
+10,Explains purchase decision process,15,Clearly indicates recommended user groups,0.5581522509455681,0.0
+10,Explains purchase decision process,16,Mentions packaging or included accessories,0.6457200795412064,0.0
+10,Explains purchase decision process,17,Describes customer support experience,0.6397296190261841,0.0
+10,Explains purchase decision process,18,Explains product usage environment,0.6931029707193375,0.08034284189446518
+10,Explains purchase decision process,19,References match/mismatch with expectations,0.56391741335392,0.0
+10,Explains purchase decision process,20,Includes advice for other users,0.5813476741313934,0.0
+11,Reports unexpected issues or discoveries,12,Mentions product durability or quality,0.610765129327774,0.05372849659117709
+11,Reports unexpected issues or discoveries,13,Indicates intention to return or exchange,0.536090575158596,0.040824829046386304
+11,Reports unexpected issues or discoveries,14,Contains suggestions for improvement,0.6548152565956116,0.0
+11,Reports unexpected issues or discoveries,15,Clearly indicates recommended user groups,0.5466077327728271,0.0
+11,Reports unexpected issues or discoveries,16,Mentions packaging or included accessories,0.6180683374404907,0.05372849659117709
+11,Reports unexpected issues or discoveries,17,Describes customer support experience,0.5931658446788788,0.0
+11,Reports unexpected issues or discoveries,18,Explains product usage environment,0.5846015885472298,0.0
+11,Reports unexpected issues or discoveries,19,References match/mismatch with expectations,0.5788778364658356,0.0
+11,Reports unexpected issues or discoveries,20,Includes advice for other users,0.5803878754377365,0.0
+12,Mentions product durability or quality,13,Indicates intention to return or exchange,0.5375891551375389,0.040824829046386304
+12,Mentions product durability or quality,14,Contains suggestions for improvement,0.6775303184986115,0.0
+12,Mentions product durability or quality,15,Clearly indicates recommended user groups,0.6093686670064926,0.0
+12,Mentions product durability or quality,16,Mentions packaging or included accessories,0.6922631859779358,0.06389431042462725
+12,Mentions product durability or quality,17,Describes customer support experience,0.6725181043148041,0.0
+12,Mentions product durability or quality,18,Explains product usage environment,0.7252888381481171,0.06257106818159155
+12,Mentions product durability or quality,19,References match/mismatch with expectations,0.5731705874204636,0.0
+12,Mentions product durability or quality,20,Includes advice for other users,0.6074971631169319,0.0
+13,Indicates intention to return or exchange,14,Contains suggestions for improvement,0.4705353807657957,0.0
+13,Indicates intention to return or exchange,15,Clearly indicates recommended user groups,0.5740932077169418,0.0439891724758422
+13,Indicates intention to return or exchange,16,Mentions packaging or included accessories,0.5665739998221397,0.0439891724758422
+13,Indicates intention to return or exchange,17,Describes customer support experience,0.5810685604810715,0.0
+13,Indicates intention to return or exchange,18,Explains product usage environment,0.5760417431592941,0.0
+13,Indicates intention to return or exchange,19,References match/mismatch with expectations,0.6366396248340607,0.0
+13,Indicates intention to return or exchange,20,Includes advice for other users,0.5073750554583967,0.0
+14,Contains suggestions for improvement,15,Clearly indicates recommended user groups,0.6433194279670715,0.0
+14,Contains suggestions for improvement,16,Mentions packaging or included accessories,0.6358743458986282,0.0
+14,Contains suggestions for improvement,17,Describes customer support experience,0.631245881319046,0.0
+14,Contains suggestions for improvement,18,Explains product usage environment,0.5986163020133972,0.0
+14,Contains suggestions for improvement,19,References match/mismatch with expectations,0.5873205959796906,0.0
+14,Contains suggestions for improvement,20,Includes advice for other users,0.694425031542778,0.05372849659117709
+15,Clearly indicates recommended user groups,16,Mentions packaging or included accessories,0.6161386296153069,0.0
+15,Clearly indicates recommended user groups,17,Describes customer support experience,0.6194899901747704,0.0
+15,Clearly indicates recommended user groups,18,Explains product usage environment,0.6063452884554863,0.0
+15,Clearly indicates recommended user groups,19,References match/mismatch with expectations,0.5499638542532921,0.0
+15,Clearly indicates recommended user groups,20,Includes advice for other users,0.7287993729114532,0.0
+16,Mentions packaging or included accessories,17,Describes customer support experience,0.6267604827880859,0.0
+16,Mentions packaging or included accessories,18,Explains product usage environment,0.6738593280315399,0.0
+16,Mentions packaging or included accessories,19,References match/mismatch with expectations,0.5497267954051495,0.0
+16,Mentions packaging or included accessories,20,Includes advice for other users,0.6759049445390701,0.0
+17,Describes customer support experience,18,Explains product usage environment,0.6606975197792053,0.0
+17,Describes customer support experience,19,References match/mismatch with expectations,0.5378289818763733,0.0
+17,Describes customer support experience,20,Includes advice for other users,0.6721758544445038,0.0
+18,Explains product usage environment,19,References match/mismatch with expectations,0.5158490855246782,0.0
+18,Explains product usage environment,20,Includes advice for other users,0.5980490893125534,0.0
+19,References match/mismatch with expectations,20,Includes advice for other users,0.5345999002456665,0.0

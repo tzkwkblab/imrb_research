@@ -1,0 +1,1922 @@
+{
+  "statistics": {
+    "total_pairs": 190,
+    "bert_mean": 0.6193234839452136,
+    "bert_std": 0.0652879071709669,
+    "bert_min": 0.4705353807657957,
+    "bert_max": 0.8207509517669678,
+    "bert_median": 0.6179255545139313,
+    "bleu_mean": 0.017892995631360976,
+    "bleu_std": 0.024909819732815402,
+    "bleu_min": 0.0,
+    "bleu_max": 0.10294994188297393,
+    "bleu_median": 0.0,
+    "calculation_timestamp": "2025-06-02T12:43:14.744316"
+  },
+  "pairwise_results": [
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 2,
+      "feature2_desc": "Includes technical details or specifications",
+      "bert_similarity": 0.6790235638618469,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 3,
+      "feature2_desc": "Contains comparisons with competing products",
+      "bert_similarity": 0.6948331743478775,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 4,
+      "feature2_desc": "Mentions long-term usage experience",
+      "bert_similarity": 0.6632831543684006,
+      "bleu_similarity": 0.04873039689743777
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 5,
+      "feature2_desc": "Explains specific use cases or purposes",
+      "bert_similarity": 0.6466412991285324,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 6,
+      "feature2_desc": "Describes initial setup or installation experience",
+      "bert_similarity": 0.5465878136456013,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 7,
+      "feature2_desc": "Specifically mentions product limitations or drawbacks",
+      "bert_similarity": 0.6918427795171738,
+      "bleu_similarity": 0.048549177170732344
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 8,
+      "feature2_desc": "Compares with previous similar products used",
+      "bert_similarity": 0.6452499032020569,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 9,
+      "feature2_desc": "References brand reliability or reputation",
+      "bert_similarity": 0.6321890950202942,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 10,
+      "feature2_desc": "Explains purchase decision process",
+      "bert_similarity": 0.6758422702550888,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 11,
+      "feature2_desc": "Reports unexpected issues or discoveries",
+      "bert_similarity": 0.5904399156570435,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 12,
+      "feature2_desc": "Mentions product durability or quality",
+      "bert_similarity": 0.7012482434511185,
+      "bleu_similarity": 0.05231223689135342
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 13,
+      "feature2_desc": "Indicates intention to return or exchange",
+      "bert_similarity": 0.5680579543113708,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.7004572451114655,
+      "bleu_similarity": 0.04873039689743777
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.5953978598117828,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.7240866422653198,
+      "bleu_similarity": 0.05231223689135342
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.5995906740427017,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.6637791097164154,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.5980276465415955,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 1,
+      "feature1_desc": "Contains mentions of price or cost",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.6424036473035812,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 3,
+      "feature2_desc": "Contains comparisons with competing products",
+      "bert_similarity": 0.5679421573877335,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 4,
+      "feature2_desc": "Mentions long-term usage experience",
+      "bert_similarity": 0.5681541413068771,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 5,
+      "feature2_desc": "Explains specific use cases or purposes",
+      "bert_similarity": 0.6934535503387451,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 6,
+      "feature2_desc": "Describes initial setup or installation experience",
+      "bert_similarity": 0.6872440278530121,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 7,
+      "feature2_desc": "Specifically mentions product limitations or drawbacks",
+      "bert_similarity": 0.7215599417686462,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 8,
+      "feature2_desc": "Compares with previous similar products used",
+      "bert_similarity": 0.5579766482114792,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 9,
+      "feature2_desc": "References brand reliability or reputation",
+      "bert_similarity": 0.5754032656550407,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 10,
+      "feature2_desc": "Explains purchase decision process",
+      "bert_similarity": 0.6403155773878098,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 11,
+      "feature2_desc": "Reports unexpected issues or discoveries",
+      "bert_similarity": 0.5856053084135056,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 12,
+      "feature2_desc": "Mentions product durability or quality",
+      "bert_similarity": 0.6738796830177307,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 13,
+      "feature2_desc": "Indicates intention to return or exchange",
+      "bert_similarity": 0.5339648611843586,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.6025509983301163,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.5505191162228584,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.7215083539485931,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.6619413197040558,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.6595779359340668,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.5095984023064375,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 2,
+      "feature1_desc": "Includes technical details or specifications",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.6337220072746277,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 4,
+      "feature2_desc": "Mentions long-term usage experience",
+      "bert_similarity": 0.5265205893665552,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 5,
+      "feature2_desc": "Explains specific use cases or purposes",
+      "bert_similarity": 0.5690054222941399,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 6,
+      "feature2_desc": "Describes initial setup or installation experience",
+      "bert_similarity": 0.48578493669629097,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 7,
+      "feature2_desc": "Specifically mentions product limitations or drawbacks",
+      "bert_similarity": 0.6580563336610794,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 8,
+      "feature2_desc": "Compares with previous similar products used",
+      "bert_similarity": 0.8207509517669678,
+      "bleu_similarity": 0.048549177170732344
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 9,
+      "feature2_desc": "References brand reliability or reputation",
+      "bert_similarity": 0.6383253633975983,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 10,
+      "feature2_desc": "Explains purchase decision process",
+      "bert_similarity": 0.5828845053911209,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 11,
+      "feature2_desc": "Reports unexpected issues or discoveries",
+      "bert_similarity": 0.5605931468307972,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 12,
+      "feature2_desc": "Mentions product durability or quality",
+      "bert_similarity": 0.6730557978153229,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 13,
+      "feature2_desc": "Indicates intention to return or exchange",
+      "bert_similarity": 0.5360410585999489,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.7347103953361511,
+      "bleu_similarity": 0.06257106818159155
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.5553211197257042,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.5639723464846611,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.5110337166115642,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.6177956312894821,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.6516838222742081,
+      "bleu_similarity": 0.06257106818159155
+    },
+    {
+      "feature1_id": 3,
+      "feature1_desc": "Contains comparisons with competing products",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.5540861673653126,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 5,
+      "feature2_desc": "Explains specific use cases or purposes",
+      "bert_similarity": 0.7265041321516037,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 6,
+      "feature2_desc": "Describes initial setup or installation experience",
+      "bert_similarity": 0.595320850610733,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 7,
+      "feature2_desc": "Specifically mentions product limitations or drawbacks",
+      "bert_similarity": 0.6793692111968994,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 8,
+      "feature2_desc": "Compares with previous similar products used",
+      "bert_similarity": 0.632718414068222,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 9,
+      "feature2_desc": "References brand reliability or reputation",
+      "bert_similarity": 0.6530163288116455,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 10,
+      "feature2_desc": "Explains purchase decision process",
+      "bert_similarity": 0.5323479436337948,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 11,
+      "feature2_desc": "Reports unexpected issues or discoveries",
+      "bert_similarity": 0.6101796925067902,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 12,
+      "feature2_desc": "Mentions product durability or quality",
+      "bert_similarity": 0.695761576294899,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 13,
+      "feature2_desc": "Indicates intention to return or exchange",
+      "bert_similarity": 0.5299785789102316,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.6665839403867722,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.6376455277204514,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.615728422999382,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.7019855976104736,
+      "bleu_similarity": 0.08034284189446518
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.6920956671237946,
+      "bleu_similarity": 0.08034284189446518
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.5646868571639061,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 4,
+      "feature1_desc": "Mentions long-term usage experience",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.68345707654953,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 6,
+      "feature2_desc": "Describes initial setup or installation experience",
+      "bert_similarity": 0.6267090141773224,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 7,
+      "feature2_desc": "Specifically mentions product limitations or drawbacks",
+      "bert_similarity": 0.7716823816299438,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 8,
+      "feature2_desc": "Compares with previous similar products used",
+      "bert_similarity": 0.6197185143828392,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 9,
+      "feature2_desc": "References brand reliability or reputation",
+      "bert_similarity": 0.5792298540472984,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 10,
+      "feature2_desc": "Explains purchase decision process",
+      "bert_similarity": 0.6427614986896515,
+      "bleu_similarity": 0.04873039689743777
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 11,
+      "feature2_desc": "Reports unexpected issues or discoveries",
+      "bert_similarity": 0.6325434148311615,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 12,
+      "feature2_desc": "Mentions product durability or quality",
+      "bert_similarity": 0.6763763874769211,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 13,
+      "feature2_desc": "Indicates intention to return or exchange",
+      "bert_similarity": 0.5768444612622261,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.6180554777383804,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.5981026142835617,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.6205260455608368,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.6400531679391861,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.7747263312339783,
+      "bleu_similarity": 0.04873039689743777
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.5298665501177311,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 5,
+      "feature1_desc": "Explains specific use cases or purposes",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.6264813840389252,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 7,
+      "feature2_desc": "Specifically mentions product limitations or drawbacks",
+      "bert_similarity": 0.5804680809378624,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 8,
+      "feature2_desc": "Compares with previous similar products used",
+      "bert_similarity": 0.5361854732036591,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 9,
+      "feature2_desc": "References brand reliability or reputation",
+      "bert_similarity": 0.5735132843255997,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 10,
+      "feature2_desc": "Explains purchase decision process",
+      "bert_similarity": 0.6333196759223938,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 11,
+      "feature2_desc": "Reports unexpected issues or discoveries",
+      "bert_similarity": 0.5735635682940483,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 12,
+      "feature2_desc": "Mentions product durability or quality",
+      "bert_similarity": 0.6150103658437729,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 13,
+      "feature2_desc": "Indicates intention to return or exchange",
+      "bert_similarity": 0.5642440095543861,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.5448729693889618,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.5781688168644905,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.6296029835939407,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.7014173865318298,
+      "bleu_similarity": 0.05795053470733952
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.6681238263845444,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.4798068180680275,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 6,
+      "feature1_desc": "Describes initial setup or installation experience",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.5613388642668724,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 8,
+      "feature2_desc": "Compares with previous similar products used",
+      "bert_similarity": 0.6641407310962677,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 9,
+      "feature2_desc": "References brand reliability or reputation",
+      "bert_similarity": 0.6733976006507874,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 10,
+      "feature2_desc": "Explains purchase decision process",
+      "bert_similarity": 0.6381286978721619,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 11,
+      "feature2_desc": "Reports unexpected issues or discoveries",
+      "bert_similarity": 0.6425195038318634,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 12,
+      "feature2_desc": "Mentions product durability or quality",
+      "bert_similarity": 0.7694821655750275,
+      "bleu_similarity": 0.10294994188297393
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 13,
+      "feature2_desc": "Indicates intention to return or exchange",
+      "bert_similarity": 0.5045373104512691,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.6254208832979202,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.5955750197172165,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.6504442095756531,
+      "bleu_similarity": 0.05231223689135342
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.6410720646381378,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.750840961933136,
+      "bleu_similarity": 0.04873039689743777
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.5190695598721504,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 7,
+      "feature1_desc": "Specifically mentions product limitations or drawbacks",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.6407388150691986,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 8,
+      "feature1_desc": "Compares with previous similar products used",
+      "feature2_id": 9,
+      "feature2_desc": "References brand reliability or reputation",
+      "bert_similarity": 0.7058523297309875,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 8,
+      "feature1_desc": "Compares with previous similar products used",
+      "feature2_id": 10,
+      "feature2_desc": "Explains purchase decision process",
+      "bert_similarity": 0.5612239837646484,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 8,
+      "feature1_desc": "Compares with previous similar products used",
+      "feature2_id": 11,
+      "feature2_desc": "Reports unexpected issues or discoveries",
+      "bert_similarity": 0.5937403291463852,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 8,
+      "feature1_desc": "Compares with previous similar products used",
+      "feature2_id": 12,
+      "feature2_desc": "Mentions product durability or quality",
+      "bert_similarity": 0.7689126431941986,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 8,
+      "feature1_desc": "Compares with previous similar products used",
+      "feature2_id": 13,
+      "feature2_desc": "Indicates intention to return or exchange",
+      "bert_similarity": 0.5355840548872948,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 8,
+      "feature1_desc": "Compares with previous similar products used",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.6847978830337524,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 8,
+      "feature1_desc": "Compares with previous similar products used",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.5662300735712051,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 8,
+      "feature1_desc": "Compares with previous similar products used",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.5847053229808807,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 8,
+      "feature1_desc": "Compares with previous similar products used",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.5707509741187096,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 8,
+      "feature1_desc": "Compares with previous similar products used",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.6865901350975037,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 8,
+      "feature1_desc": "Compares with previous similar products used",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.6076604425907135,
+      "bleu_similarity": 0.04873039689743777
+    },
+    {
+      "feature1_id": 8,
+      "feature1_desc": "Compares with previous similar products used",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.5718124285340309,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 9,
+      "feature1_desc": "References brand reliability or reputation",
+      "feature2_id": 10,
+      "feature2_desc": "Explains purchase decision process",
+      "bert_similarity": 0.6243162453174591,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 9,
+      "feature1_desc": "References brand reliability or reputation",
+      "feature2_id": 11,
+      "feature2_desc": "Reports unexpected issues or discoveries",
+      "bert_similarity": 0.5898812264204025,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 9,
+      "feature1_desc": "References brand reliability or reputation",
+      "feature2_id": 12,
+      "feature2_desc": "Mentions product durability or quality",
+      "bert_similarity": 0.8171859383583069,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 9,
+      "feature1_desc": "References brand reliability or reputation",
+      "feature2_id": 13,
+      "feature2_desc": "Indicates intention to return or exchange",
+      "bert_similarity": 0.553769439458847,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 9,
+      "feature1_desc": "References brand reliability or reputation",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.591733768582344,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 9,
+      "feature1_desc": "References brand reliability or reputation",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.6107586175203323,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 9,
+      "feature1_desc": "References brand reliability or reputation",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.6080504432320595,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 9,
+      "feature1_desc": "References brand reliability or reputation",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.648796483874321,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 9,
+      "feature1_desc": "References brand reliability or reputation",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.6233741641044617,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 9,
+      "feature1_desc": "References brand reliability or reputation",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.6890868246555328,
+      "bleu_similarity": 0.06257106818159155
+    },
+    {
+      "feature1_id": 9,
+      "feature1_desc": "References brand reliability or reputation",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.5502090901136398,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 10,
+      "feature1_desc": "Explains purchase decision process",
+      "feature2_id": 11,
+      "feature2_desc": "Reports unexpected issues or discoveries",
+      "bert_similarity": 0.5390670113265514,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 10,
+      "feature1_desc": "Explains purchase decision process",
+      "feature2_id": 12,
+      "feature2_desc": "Mentions product durability or quality",
+      "bert_similarity": 0.6252705156803131,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 10,
+      "feature1_desc": "Explains purchase decision process",
+      "feature2_id": 13,
+      "feature2_desc": "Indicates intention to return or exchange",
+      "bert_similarity": 0.694832906126976,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 10,
+      "feature1_desc": "Explains purchase decision process",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.5677930414676666,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 10,
+      "feature1_desc": "Explains purchase decision process",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.5581522509455681,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 10,
+      "feature1_desc": "Explains purchase decision process",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.6457200795412064,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 10,
+      "feature1_desc": "Explains purchase decision process",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.6397296190261841,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 10,
+      "feature1_desc": "Explains purchase decision process",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.6931029707193375,
+      "bleu_similarity": 0.08034284189446518
+    },
+    {
+      "feature1_id": 10,
+      "feature1_desc": "Explains purchase decision process",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.56391741335392,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 10,
+      "feature1_desc": "Explains purchase decision process",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.5813476741313934,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 11,
+      "feature1_desc": "Reports unexpected issues or discoveries",
+      "feature2_id": 12,
+      "feature2_desc": "Mentions product durability or quality",
+      "bert_similarity": 0.610765129327774,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 11,
+      "feature1_desc": "Reports unexpected issues or discoveries",
+      "feature2_id": 13,
+      "feature2_desc": "Indicates intention to return or exchange",
+      "bert_similarity": 0.536090575158596,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 11,
+      "feature1_desc": "Reports unexpected issues or discoveries",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.6548152565956116,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 11,
+      "feature1_desc": "Reports unexpected issues or discoveries",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.5466077327728271,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 11,
+      "feature1_desc": "Reports unexpected issues or discoveries",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.6180683374404907,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 11,
+      "feature1_desc": "Reports unexpected issues or discoveries",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.5931658446788788,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 11,
+      "feature1_desc": "Reports unexpected issues or discoveries",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.5846015885472298,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 11,
+      "feature1_desc": "Reports unexpected issues or discoveries",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.5788778364658356,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 11,
+      "feature1_desc": "Reports unexpected issues or discoveries",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.5803878754377365,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 12,
+      "feature1_desc": "Mentions product durability or quality",
+      "feature2_id": 13,
+      "feature2_desc": "Indicates intention to return or exchange",
+      "bert_similarity": 0.5375891551375389,
+      "bleu_similarity": 0.040824829046386304
+    },
+    {
+      "feature1_id": 12,
+      "feature1_desc": "Mentions product durability or quality",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.6775303184986115,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 12,
+      "feature1_desc": "Mentions product durability or quality",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.6093686670064926,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 12,
+      "feature1_desc": "Mentions product durability or quality",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.6922631859779358,
+      "bleu_similarity": 0.06389431042462725
+    },
+    {
+      "feature1_id": 12,
+      "feature1_desc": "Mentions product durability or quality",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.6725181043148041,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 12,
+      "feature1_desc": "Mentions product durability or quality",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.7252888381481171,
+      "bleu_similarity": 0.06257106818159155
+    },
+    {
+      "feature1_id": 12,
+      "feature1_desc": "Mentions product durability or quality",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.5731705874204636,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 12,
+      "feature1_desc": "Mentions product durability or quality",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.6074971631169319,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 13,
+      "feature1_desc": "Indicates intention to return or exchange",
+      "feature2_id": 14,
+      "feature2_desc": "Contains suggestions for improvement",
+      "bert_similarity": 0.4705353807657957,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 13,
+      "feature1_desc": "Indicates intention to return or exchange",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.5740932077169418,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 13,
+      "feature1_desc": "Indicates intention to return or exchange",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.5665739998221397,
+      "bleu_similarity": 0.0439891724758422
+    },
+    {
+      "feature1_id": 13,
+      "feature1_desc": "Indicates intention to return or exchange",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.5810685604810715,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 13,
+      "feature1_desc": "Indicates intention to return or exchange",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.5760417431592941,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 13,
+      "feature1_desc": "Indicates intention to return or exchange",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.6366396248340607,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 13,
+      "feature1_desc": "Indicates intention to return or exchange",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.5073750554583967,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 14,
+      "feature1_desc": "Contains suggestions for improvement",
+      "feature2_id": 15,
+      "feature2_desc": "Clearly indicates recommended user groups",
+      "bert_similarity": 0.6433194279670715,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 14,
+      "feature1_desc": "Contains suggestions for improvement",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.6358743458986282,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 14,
+      "feature1_desc": "Contains suggestions for improvement",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.631245881319046,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 14,
+      "feature1_desc": "Contains suggestions for improvement",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.5986163020133972,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 14,
+      "feature1_desc": "Contains suggestions for improvement",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.5873205959796906,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 14,
+      "feature1_desc": "Contains suggestions for improvement",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.694425031542778,
+      "bleu_similarity": 0.05372849659117709
+    },
+    {
+      "feature1_id": 15,
+      "feature1_desc": "Clearly indicates recommended user groups",
+      "feature2_id": 16,
+      "feature2_desc": "Mentions packaging or included accessories",
+      "bert_similarity": 0.6161386296153069,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 15,
+      "feature1_desc": "Clearly indicates recommended user groups",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.6194899901747704,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 15,
+      "feature1_desc": "Clearly indicates recommended user groups",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.6063452884554863,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 15,
+      "feature1_desc": "Clearly indicates recommended user groups",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.5499638542532921,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 15,
+      "feature1_desc": "Clearly indicates recommended user groups",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.7287993729114532,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 16,
+      "feature1_desc": "Mentions packaging or included accessories",
+      "feature2_id": 17,
+      "feature2_desc": "Describes customer support experience",
+      "bert_similarity": 0.6267604827880859,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 16,
+      "feature1_desc": "Mentions packaging or included accessories",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.6738593280315399,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 16,
+      "feature1_desc": "Mentions packaging or included accessories",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.5497267954051495,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 16,
+      "feature1_desc": "Mentions packaging or included accessories",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.6759049445390701,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 17,
+      "feature1_desc": "Describes customer support experience",
+      "feature2_id": 18,
+      "feature2_desc": "Explains product usage environment",
+      "bert_similarity": 0.6606975197792053,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 17,
+      "feature1_desc": "Describes customer support experience",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.5378289818763733,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 17,
+      "feature1_desc": "Describes customer support experience",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.6721758544445038,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 18,
+      "feature1_desc": "Explains product usage environment",
+      "feature2_id": 19,
+      "feature2_desc": "References match/mismatch with expectations",
+      "bert_similarity": 0.5158490855246782,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 18,
+      "feature1_desc": "Explains product usage environment",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.5980490893125534,
+      "bleu_similarity": 0.0
+    },
+    {
+      "feature1_id": 19,
+      "feature1_desc": "References match/mismatch with expectations",
+      "feature2_id": 20,
+      "feature2_desc": "Includes advice for other users",
+      "bert_similarity": 0.5345999002456665,
+      "bleu_similarity": 0.0
+    }
+  ],
+  "bert_scores": [
+    0.6790235638618469,
+    0.6948331743478775,
+    0.6632831543684006,
+    0.6466412991285324,
+    0.5465878136456013,
+    0.6918427795171738,
+    0.6452499032020569,
+    0.6321890950202942,
+    0.6758422702550888,
+    0.5904399156570435,
+    0.7012482434511185,
+    0.5680579543113708,
+    0.7004572451114655,
+    0.5953978598117828,
+    0.7240866422653198,
+    0.5995906740427017,
+    0.6637791097164154,
+    0.5980276465415955,
+    0.6424036473035812,
+    0.5679421573877335,
+    0.5681541413068771,
+    0.6934535503387451,
+    0.6872440278530121,
+    0.7215599417686462,
+    0.5579766482114792,
+    0.5754032656550407,
+    0.6403155773878098,
+    0.5856053084135056,
+    0.6738796830177307,
+    0.5339648611843586,
+    0.6025509983301163,
+    0.5505191162228584,
+    0.7215083539485931,
+    0.6619413197040558,
+    0.6595779359340668,
+    0.5095984023064375,
+    0.6337220072746277,
+    0.5265205893665552,
+    0.5690054222941399,
+    0.48578493669629097,
+    0.6580563336610794,
+    0.8207509517669678,
+    0.6383253633975983,
+    0.5828845053911209,
+    0.5605931468307972,
+    0.6730557978153229,
+    0.5360410585999489,
+    0.7347103953361511,
+    0.5553211197257042,
+    0.5639723464846611,
+    0.5110337166115642,
+    0.6177956312894821,
+    0.6516838222742081,
+    0.5540861673653126,
+    0.7265041321516037,
+    0.595320850610733,
+    0.6793692111968994,
+    0.632718414068222,
+    0.6530163288116455,
+    0.5323479436337948,
+    0.6101796925067902,
+    0.695761576294899,
+    0.5299785789102316,
+    0.6665839403867722,
+    0.6376455277204514,
+    0.615728422999382,
+    0.7019855976104736,
+    0.6920956671237946,
+    0.5646868571639061,
+    0.68345707654953,
+    0.6267090141773224,
+    0.7716823816299438,
+    0.6197185143828392,
+    0.5792298540472984,
+    0.6427614986896515,
+    0.6325434148311615,
+    0.6763763874769211,
+    0.5768444612622261,
+    0.6180554777383804,
+    0.5981026142835617,
+    0.6205260455608368,
+    0.6400531679391861,
+    0.7747263312339783,
+    0.5298665501177311,
+    0.6264813840389252,
+    0.5804680809378624,
+    0.5361854732036591,
+    0.5735132843255997,
+    0.6333196759223938,
+    0.5735635682940483,
+    0.6150103658437729,
+    0.5642440095543861,
+    0.5448729693889618,
+    0.5781688168644905,
+    0.6296029835939407,
+    0.7014173865318298,
+    0.6681238263845444,
+    0.4798068180680275,
+    0.5613388642668724,
+    0.6641407310962677,
+    0.6733976006507874,
+    0.6381286978721619,
+    0.6425195038318634,
+    0.7694821655750275,
+    0.5045373104512691,
+    0.6254208832979202,
+    0.5955750197172165,
+    0.6504442095756531,
+    0.6410720646381378,
+    0.750840961933136,
+    0.5190695598721504,
+    0.6407388150691986,
+    0.7058523297309875,
+    0.5612239837646484,
+    0.5937403291463852,
+    0.7689126431941986,
+    0.5355840548872948,
+    0.6847978830337524,
+    0.5662300735712051,
+    0.5847053229808807,
+    0.5707509741187096,
+    0.6865901350975037,
+    0.6076604425907135,
+    0.5718124285340309,
+    0.6243162453174591,
+    0.5898812264204025,
+    0.8171859383583069,
+    0.553769439458847,
+    0.591733768582344,
+    0.6107586175203323,
+    0.6080504432320595,
+    0.648796483874321,
+    0.6233741641044617,
+    0.6890868246555328,
+    0.5502090901136398,
+    0.5390670113265514,
+    0.6252705156803131,
+    0.694832906126976,
+    0.5677930414676666,
+    0.5581522509455681,
+    0.6457200795412064,
+    0.6397296190261841,
+    0.6931029707193375,
+    0.56391741335392,
+    0.5813476741313934,
+    0.610765129327774,
+    0.536090575158596,
+    0.6548152565956116,
+    0.5466077327728271,
+    0.6180683374404907,
+    0.5931658446788788,
+    0.5846015885472298,
+    0.5788778364658356,
+    0.5803878754377365,
+    0.5375891551375389,
+    0.6775303184986115,
+    0.6093686670064926,
+    0.6922631859779358,
+    0.6725181043148041,
+    0.7252888381481171,
+    0.5731705874204636,
+    0.6074971631169319,
+    0.4705353807657957,
+    0.5740932077169418,
+    0.5665739998221397,
+    0.5810685604810715,
+    0.5760417431592941,
+    0.6366396248340607,
+    0.5073750554583967,
+    0.6433194279670715,
+    0.6358743458986282,
+    0.631245881319046,
+    0.5986163020133972,
+    0.5873205959796906,
+    0.694425031542778,
+    0.6161386296153069,
+    0.6194899901747704,
+    0.6063452884554863,
+    0.5499638542532921,
+    0.7287993729114532,
+    0.6267604827880859,
+    0.6738593280315399,
+    0.5497267954051495,
+    0.6759049445390701,
+    0.6606975197792053,
+    0.5378289818763733,
+    0.6721758544445038,
+    0.5158490855246782,
+    0.5980490893125534,
+    0.5345999002456665
+  ],
+  "bleu_scores": [
+    0.0439891724758422,
+    0.0439891724758422,
+    0.04873039689743777,
+    0.040824829046386304,
+    0.040824829046386304,
+    0.048549177170732344,
+    0.0,
+    0.0439891724758422,
+    0.0,
+    0.0439891724758422,
+    0.05231223689135342,
+    0.040824829046386304,
+    0.04873039689743777,
+    0.0,
+    0.05231223689135342,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.040824829046386304,
+    0.040824829046386304,
+    0.040824829046386304,
+    0.0,
+    0.05372849659117709,
+    0.0,
+    0.05372849659117709,
+    0.05372849659117709,
+    0.040824829046386304,
+    0.0,
+    0.0,
+    0.05372849659117709,
+    0.0,
+    0.0,
+    0.0,
+    0.05372849659117709,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.048549177170732344,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.06257106818159155,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.06257106818159155,
+    0.0,
+    0.0,
+    0.040824829046386304,
+    0.040824829046386304,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.05372849659117709,
+    0.0,
+    0.0,
+    0.0,
+    0.05372849659117709,
+    0.08034284189446518,
+    0.08034284189446518,
+    0.0,
+    0.0,
+    0.040824829046386304,
+    0.040824829046386304,
+    0.0,
+    0.0439891724758422,
+    0.04873039689743777,
+    0.0439891724758422,
+    0.0439891724758422,
+    0.040824829046386304,
+    0.0,
+    0.0,
+    0.0439891724758422,
+    0.0,
+    0.04873039689743777,
+    0.0,
+    0.0,
+    0.040824829046386304,
+    0.0,
+    0.0439891724758422,
+    0.0,
+    0.0439891724758422,
+    0.0439891724758422,
+    0.040824829046386304,
+    0.0,
+    0.0,
+    0.0439891724758422,
+    0.05795053470733952,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0439891724758422,
+    0.0,
+    0.0439891724758422,
+    0.10294994188297393,
+    0.040824829046386304,
+    0.0,
+    0.0,
+    0.05231223689135342,
+    0.0,
+    0.04873039689743777,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.04873039689743777,
+    0.0,
+    0.0,
+    0.05372849659117709,
+    0.05372849659117709,
+    0.040824829046386304,
+    0.0,
+    0.0,
+    0.05372849659117709,
+    0.0,
+    0.0,
+    0.06257106818159155,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.08034284189446518,
+    0.0,
+    0.0,
+    0.05372849659117709,
+    0.040824829046386304,
+    0.0,
+    0.0,
+    0.05372849659117709,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.040824829046386304,
+    0.0,
+    0.0,
+    0.06389431042462725,
+    0.0,
+    0.06257106818159155,
+    0.0,
+    0.0,
+    0.0,
+    0.0439891724758422,
+    0.0439891724758422,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.05372849659117709,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

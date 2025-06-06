@@ -1,0 +1,184 @@
+{
+  "analysis": {
+    "total_features": 20,
+    "split_options": [
+      {
+        "train_ratio": 0.2,
+        "test_ratio": 0.8,
+        "train_size": 4,
+        "test_size": 16,
+        "is_feasible": true,
+        "evaluation_power": 16,
+        "efficiency_score": 4.0
+      },
+      {
+        "train_ratio": 0.3,
+        "test_ratio": 0.7,
+        "train_size": 6,
+        "test_size": 14,
+        "is_feasible": true,
+        "evaluation_power": 14,
+        "efficiency_score": 2.3333333333333335
+      },
+      {
+        "train_ratio": 0.4,
+        "test_ratio": 0.6,
+        "train_size": 8,
+        "test_size": 12,
+        "is_feasible": true,
+        "evaluation_power": 12,
+        "efficiency_score": 1.5
+      },
+      {
+        "train_ratio": 0.5,
+        "test_ratio": 0.5,
+        "train_size": 10,
+        "test_size": 10,
+        "is_feasible": true,
+        "evaluation_power": 10,
+        "efficiency_score": 1.0
+      },
+      {
+        "train_ratio": 0.6,
+        "test_ratio": 0.4,
+        "train_size": 12,
+        "test_size": 8,
+        "is_feasible": true,
+        "evaluation_power": 8,
+        "efficiency_score": 0.6666666666666666
+      },
+      {
+        "train_ratio": 0.8,
+        "test_ratio": 0.2,
+        "train_size": 16,
+        "test_size": 4,
+        "is_feasible": true,
+        "evaluation_power": 4,
+        "efficiency_score": 0.25
+      }
+    ],
+    "recommendation": {
+      "recommended_train_ratio": 0.2,
+      "recommended_test_ratio": 0.8,
+      "recommended_train_size": 4,
+      "recommended_test_size": 16,
+      "efficiency_score": 4.0,
+      "reasoning": "テストセット16件で最大の評価力を確保"
+    }
+  },
+  "optimized_split": {
+    "train_ratio": 0.3,
+    "test_ratio": 0.7,
+    "train_size": 6,
+    "test_size": 14,
+    "train_features": [
+      {
+        "id": 1,
+        "description": "Contains mentions of price or cost"
+      },
+      {
+        "id": 18,
+        "description": "Explains product usage environment"
+      },
+      {
+        "id": 16,
+        "description": "Mentions packaging or included accessories"
+      },
+      {
+        "id": 2,
+        "description": "Includes technical details or specifications"
+      },
+      {
+        "id": 9,
+        "description": "References brand reliability or reputation"
+      },
+      {
+        "id": 6,
+        "description": "Describes initial setup or installation experience"
+      }
+    ],
+    "test_features": [
+      {
+        "id": 12,
+        "description": "Mentions product durability or quality"
+      },
+      {
+        "id": 4,
+        "description": "Mentions long-term usage experience"
+      },
+      {
+        "id": 19,
+        "description": "References match/mismatch with expectations"
+      },
+      {
+        "id": 17,
+        "description": "Describes customer support experience"
+      },
+      {
+        "id": 14,
+        "description": "Contains suggestions for improvement"
+      },
+      {
+        "id": 3,
+        "description": "Contains comparisons with competing products"
+      },
+      {
+        "id": 10,
+        "description": "Explains purchase decision process"
+      },
+      {
+        "id": 20,
+        "description": "Includes advice for other users"
+      },
+      {
+        "id": 5,
+        "description": "Explains specific use cases or purposes"
+      },
+      {
+        "id": 13,
+        "description": "Indicates intention to return or exchange"
+      },
+      {
+        "id": 8,
+        "description": "Compares with previous similar products used"
+      },
+      {
+        "id": 11,
+        "description": "Reports unexpected issues or discoveries"
+      },
+      {
+        "id": 15,
+        "description": "Clearly indicates recommended user groups"
+      },
+      {
+        "id": 7,
+        "description": "Specifically mentions product limitations or drawbacks"
+      }
+    ],
+    "train_feature_ids": [
+      1,
+      18,
+      16,
+      2,
+      9,
+      6
+    ],
+    "test_feature_ids": [
+      12,
+      4,
+      19,
+      17,
+      14,
+      3,
+      10,
+      20,
+      5,
+      13,
+      8,
+      11,
+      15,
+      7
+    ],
+    "split_timestamp": "2025-06-02T12:43:22.008382"
+  }
+}
