@@ -1,0 +1,83 @@
+---
+description: データディレクトリ構造とファイル管理のルール
+globs:
+  - "data/**/*"
+  - "src/data/**/*"
+  - "src/analysis/**/*"
+alwaysApply: true
+---
+
+# データ管理構造ルール
+
+このプロジェクトのデータ管理に関する重要なルールです。
+
+## データディレクトリ構造
+
+プロジェクトのデータ構造は [data/README.md](mdc:data/README.md) で定義されています。
+
+### 必須ディレクトリ構造
+
+```
+data/
+├── external/                          # 外部データセット（読み取り専用）
+├── processed/                         # 前処理済みデータ
+├── analysis-workspace/               # 分析作業用
+└── cache/                           # 一時キャッシュファイル
+```
+
+## ファイル配置ルール
+
+### 外部データセット
+- **配置場所**: `data/external/{データセット名}/{ソース-作者}/{バージョン}/`
+- **命名規則**: 英語、小文字、ハイフン区切り
+- **バージョニング**: `v{major}.{minor}_{YYYY-MM-DD}` 形式
+- **必須ファイル**: 各バージョンに `dataset_info.json` を含める
+- **アクセス**: `current` シンボリックリンクで最新版を指す
+
+### データ処理スクリプト
+- **配置場所**: `src/data/` ディレクトリ
+- **ダウンロードスクリプト**: データセット取得用
+- **前処理スクリプト**: `src/data/preprocessing/`
+
+### 分析スクリプト
+- **配置場所**: `src/analysis/` ディレクトリ
+- **実験管理**: `src/analysis/experiments/{YYYY}/{MM}/{DD-実験番号}/`
+
+## コーディング規則
+
+### データアクセス
+```python
+# 推奨: currentリンクを使用
+data_path = "data/external/amazon-product-reviews/kaggle-bittlingmayer/current/"
+
+# 特定バージョンが必要な場合のみ
+data_path = "data/external/amazon-product-reviews/kaggle-bittlingmayer/v1.0_2025-06-09/"
+```
+
+### ファイル保存
+```python
+# 処理済みデータの保存
+output_path = "data/processed/amazon-reviews/cleaned/"
+
+# 一時ファイルの保存
+cache_path = "data/cache/"
+```
+
+## 禁止事項
+
+1. **external/** ディレクトリ内のファイルを直接編集・削除することは禁止
+2. バージョン管理されたディレクトリ名を変更することは禁止
+3. `dataset_info.json` ファイルを手動編集することは禁止（スクリプトで生成）
+
+## 新しいデータセット追加時の手順
+
+1. 適切なディレクトリ構造を作成
+2. `dataset_info.json` を生成
+3. `current` シンボリックリンクを設定
+4. `.gitignore` で大容量ファイルを除外設定済み
+
+## 関連ファイル
+
+- データ構造説明: [data/README.md](mdc:data/README.md)
+- Amazonレビューダウンロード: [src/data/download_amazon_reviews.py](mdc:src/data/download_amazon_reviews.py)
+- Git除外設定: [.gitignore](mdc:.gitignore)

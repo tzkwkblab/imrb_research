@@ -1,0 +1,166 @@
+---
+description: 外部データソース統合とAPI使用のルール
+globs:
+  - "src/data/**/*"
+  - "*.env*"
+  - "kaggle.json"
+alwaysApply: true
+---
+
+# 外部データソース統合ルール
+
+## API認証管理
+
+### 環境変数の使用
+```python
+import os
+from dotenv import load_dotenv
+
+# .envファイルから環境変数を読み込み
+load_dotenv()
+
+# 認証情報の取得
+kaggle_username = os.getenv('KAGGLE_USERNAME')
+kaggle_key = os.getenv('KAGGLE_KEY')
+```
+
+### 認証情報の保存場所
+- **Kaggle API**: `~/.kaggle/kaggle.json` または環境変数
+- **HuggingFace**: 環境変数 `HUGGINGFACE_TOKEN`
+- **OpenAI**: 環境変数 `OPENAI_API_KEY`
+
+## データダウンロードの実装パターン
+
+### クラス設計
+```python
+class DatasetDownloader:
+    def __init__(self, dataset_name, output_dir):
+        self.dataset_name = dataset_name
+        self.output_dir = output_dir
+        
+    def download(self):
+        """ダウンロード実行"""
+        pass
+        
+    def validate_data(self):
+        """データ整合性チェック"""
+        pass
+        
+    def create_metadata(self):
+        """メタデータファイル生成"""
+        pass
+```
+
+### 必須機能
+1. **進捗表示**: tqdmによる進捗バー
+2. **中断・再開**: セーブ&ロード機能
+3. **エラーハンドリング**: 詳細なエラーログ
+4. **メタデータ生成**: dataset_info.json
+5. **バージョン管理**: 日付付きディレクトリ
+
+## ダウンロードスクリプトの構造
+
+### ファイル配置
+- `src/data/download_{データソース}_{データセット名}.py`
+- 例: `src/data/download_kaggle_amazon_reviews.py`
+- 例: `src/data/download_huggingface_sentiment_data.py`
+
+### 共通インターフェース
+```python
+def main():
+    """メイン関数：共通のエントリーポイント"""
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--force', action='store_true', help='Force re-download')
+    parser.add_argument('--output-dir', default='data/external', help='Output directory')
+    args = parser.parse_args()
+    
+    downloader = DatasetDownloader(args.output_dir)
+    downloader.download(force=args.force)
+```
+
+## データ検証ルール
+
+### ダウンロード後チェック
+1. ファイルサイズ確認
+2. ファイル形式検証
+3. 内容サンプリングチェック
+4. エンコーディング確認
+
+### メタデータ必須項目
+```json
+{
+  "dataset_name": "データセット名",
+  "source": "Kaggle/HuggingFace/etc",
+  "download_date": "2025-06-09T10:30:00Z",
+  "version": "v1.0_2025-06-09",
+  "files": [
+    {
+      "filename": "train.ft.txt.bz2",
+      "size_bytes": 464234567,
+      "format": "fasttext",
+      "records": 3600000
+    }
+  ],
+  "license": "ライセンス情報",
+  "description": "データセットの説明"
+}
+```
+
+## エラー処理パターン
+
+### ネットワークエラー
+```python
+import time
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+def create_robust_session():
+    session = requests.Session()
+    retry_strategy = Retry(
+        total=3,
+        backoff_factor=1,
+        status_forcelist=[429, 500, 502, 503, 504]
+    )
+    adapter = HTTPAdapter(max_retries=retry_strategy)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
+    return session
+```
+
+### ファイルI/Oエラー
+```python
+import os
+import shutil
+
+def safe_file_operation(src, dst):
+    try:
+        # 一時ファイルに書き込み
+        temp_file = f"{dst}.tmp"
+        shutil.copy2(src, temp_file)
+        # 成功したら正式ファイル名に変更
+        os.rename(temp_file, dst)
+    except Exception as e:
+        # 一時ファイルをクリーンアップ
+        if os.path.exists(temp_file):
+            os.remove(temp_file)
+        raise e
+```
+
+## セキュリティ考慮事項
+
+### 認証情報の扱い
+1. **Never commit**: APIキーや認証ファイルは絶対にGitに含めない
+2. **環境変数**: 本番環境では環境変数を使用
+3. **権限設定**: `kaggle.json` は600権限で保存
+
+### データ保護
+1. **読み取り専用**: external/ディレクトリは読み取り専用として扱う
+2. **バックアップ**: 重要なデータは複数の場所に保存検討
+3. **アクセス制御**: 必要最小限の権限でアクセス
+
+## 関連ファイル
+
+- Amazonレビューダウンロード: [src/data/download_amazon_reviews.py](mdc:src/data/download_amazon_reviews.py)
+- 依存関係: [requirements.txt](mdc:requirements.txt)
+- Git除外設定: [.gitignore](mdc:.gitignore)
