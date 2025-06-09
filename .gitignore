@@ -23,6 +23,7 @@ wheels/
 # Virtual Environment
 .env
 .venv
+.venv*
 env/
 venv/
 ENV/
@@ -59,3 +60,6 @@ data/analysis-workspace/*
 
 # 分析結果
 src/analysis/results_batch_analysis/*
+requirements.txt
+requirements.txt
+requirements.txt

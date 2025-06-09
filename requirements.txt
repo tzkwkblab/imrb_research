@@ -1,30 +1,49 @@
-# 基本的なデータ処理・分析
-numpy>=1.26.0
-pandas>=2.0.3
-scipy>=1.11.3
-
-# 機械学習・深層学習
-torch>=2.1.0
-transformers>=4.34.0
-sentence-transformers>=2.2.2
-
-# NLP関連
-nltk>=3.8.1
-sacrebleu>=2.3.1
-
-# OpenAI API
-openai>=0.28.0
-
-# 翻訳API
-deepl>=1.16.1
-
-# ユーティリティ
-tqdm>=4.66.1
-python-dotenv>=1.0.0
-requests>=2.31.0
-
-# 開発用ツール
-jupyter>=1.0.0
-black>=23.9.1
-flake8>=6.1.0
-pytest>=7.4.2
+beautifulsoup4==4.13.4
+bidict==0.23.1
+bleach==6.2.0
+blinker==1.9.0
+certifi==2025.4.26
+cffi==1.17.1
+charset-normalizer==3.4.2
+click==8.2.1
+cryptography==45.0.3
+Flask==3.1.1
+Flask-SocketIO==5.5.1
+h11==0.16.0
+idna==3.10
+itsdangerous==2.2.0
+Jinja2==3.1.6
+kaggle==1.7.4.5
+lxml==5.4.0
+Markdown==3.8
+MarkupSafe==3.0.2
+narwhals==1.41.1
+numpy==2.2.6
+packaging==25.0
+pandas==2.3.0
+pdfminer.six==20250327
+pdfplumber==0.11.6
+pillow==11.2.1
+plotly==6.1.2
+protobuf==6.31.1
+pycparser==2.22
+pypdfium2==4.30.1
+python-dateutil==2.9.0.post0
+python-dotenv==1.1.0
+python-engineio==4.12.2
+python-slugify==8.0.4
+python-socketio==5.13.0
+pytz==2025.2
+requests==2.32.3
+setuptools==80.9.0
+simple-websocket==1.1.0
+six==1.17.0
+soupsieve==2.7
+text-unidecode==1.3
+tqdm==4.67.1
+typing_extensions==4.14.0
+tzdata==2025.2
+urllib3==2.4.0
+webencodings==0.5.1
+Werkzeug==3.1.3
+wsproto==1.2.0
