@@ -1,0 +1,3475 @@
+{
+  "timestamp": "2025-06-12T15:01:35.683455",
+  "target_domains": [
+    "laptop"
+  ],
+  "target_features": {
+    "laptop": [
+      "price",
+      "screen",
+      "battery",
+      "keyboard"
+    ]
+  },
+  "domain_results": {
+    "laptop": {
+      "domain": "laptop",
+      "total_samples": 11226,
+      "feature_analysis": {
+        "cord": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "battery life": {
+          "total_count": 218,
+          "sentiment_distribution": {
+            "Positive": 146,
+            "Negative": 60,
+            "Neutral": 12
+          },
+          "positive_ratio": 0.6697247706422018,
+          "negative_ratio": 0.27522935779816515,
+          "neutral_ratio": 0.05504587155963303
+        },
+        "service center": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Negative": 12,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.75,
+          "neutral_ratio": 0.25
+        },
+        "quality": {
+          "total_count": 94,
+          "sentiment_distribution": {
+            "Positive": 66,
+            "Negative": 28
+          },
+          "positive_ratio": 0.7021276595744681,
+          "negative_ratio": 0.2978723404255319,
+          "neutral_ratio": 0.0
+        },
+        "GUI": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "applications": {
+          "total_count": 67,
+          "sentiment_distribution": {
+            "Positive": 36,
+            "Neutral": 27,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5373134328358209,
+          "negative_ratio": 0.05970149253731343,
+          "neutral_ratio": 0.40298507462686567
+        },
+        "use": {
+          "total_count": 243,
+          "sentiment_distribution": {
+            "Positive": 227,
+            "Neutral": 4,
+            "Negative": 12
+          },
+          "positive_ratio": 0.934156378600823,
+          "negative_ratio": 0.04938271604938271,
+          "neutral_ratio": 0.01646090534979424
+        },
+        "start up": {
+          "total_count": 17,
+          "sentiment_distribution": {
+            "Positive": 14,
+            "Negative": 3
+          },
+          "positive_ratio": 0.8235294117647058,
+          "negative_ratio": 0.17647058823529413,
+          "neutral_ratio": 0.0
+        },
+        "features": {
+          "total_count": 161,
+          "sentiment_distribution": {
+            "Positive": 109,
+            "Neutral": 33,
+            "Negative": 19
+          },
+          "positive_ratio": 0.6770186335403726,
+          "negative_ratio": 0.11801242236024845,
+          "neutral_ratio": 0.20496894409937888
+        },
+        "garage band": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.42857142857142855
+        },
+        "screen": {
+          "total_count": 249,
+          "sentiment_distribution": {
+            "Negative": 92,
+            "Neutral": 23,
+            "Positive": 134
+          },
+          "positive_ratio": 0.5381526104417671,
+          "negative_ratio": 0.36947791164658633,
+          "neutral_ratio": 0.09236947791164658
+        },
+        "processor": {
+          "total_count": 40,
+          "sentiment_distribution": {
+            "Negative": 12,
+            "Neutral": 4,
+            "Positive": 24
+          },
+          "positive_ratio": 0.6,
+          "negative_ratio": 0.3,
+          "neutral_ratio": 0.1
+        },
+        "graphics cards": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "battery": {
+          "total_count": 194,
+          "sentiment_distribution": {
+            "Neutral": 22,
+            "Negative": 126,
+            "Positive": 46
+          },
+          "positive_ratio": 0.23711340206185566,
+          "negative_ratio": 0.6494845360824743,
+          "neutral_ratio": 0.1134020618556701
+        },
+        "edge": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "external mouse": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Neutral": 12
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "gaming": {
+          "total_count": 64,
+          "sentiment_distribution": {
+            "Neutral": 26,
+            "Negative": 15,
+            "Positive": 23
+          },
+          "positive_ratio": 0.359375,
+          "negative_ratio": 0.234375,
+          "neutral_ratio": 0.40625
+        },
+        "speed": {
+          "total_count": 99,
+          "sentiment_distribution": {
+            "Positive": 87,
+            "Negative": 8,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.8787878787878788,
+          "negative_ratio": 0.08080808080808081,
+          "neutral_ratio": 0.04040404040404041
+        },
+        "Windows 7": {
+          "total_count": 52,
+          "sentiment_distribution": {
+            "Positive": 34,
+            "Neutral": 15,
+            "Negative": 3
+          },
+          "positive_ratio": 0.6538461538461539,
+          "negative_ratio": 0.057692307692307696,
+          "neutral_ratio": 0.28846153846153844
+        },
+        "software": {
+          "total_count": 140,
+          "sentiment_distribution": {
+            "Neutral": 31,
+            "Positive": 45,
+            "Negative": 64
+          },
+          "positive_ratio": 0.32142857142857145,
+          "negative_ratio": 0.45714285714285713,
+          "neutral_ratio": 0.22142857142857142
+        },
+        "system": {
+          "total_count": 58,
+          "sentiment_distribution": {
+            "Negative": 23,
+            "Positive": 20,
+            "Neutral": 15
+          },
+          "positive_ratio": 0.3448275862068966,
+          "negative_ratio": 0.39655172413793105,
+          "neutral_ratio": 0.25862068965517243
+        },
+        "boot up": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Negative": 16,
+            "Positive": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.16666666666666666,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.16666666666666666
+        },
+        "service": {
+          "total_count": 49,
+          "sentiment_distribution": {
+            "Negative": 20,
+            "Positive": 25,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5102040816326531,
+          "negative_ratio": 0.40816326530612246,
+          "neutral_ratio": 0.08163265306122448
+        },
+        "operating system": {
+          "total_count": 55,
+          "sentiment_distribution": {
+            "Positive": 39,
+            "Neutral": 12,
+            "Negative": 4
+          },
+          "positive_ratio": 0.7090909090909091,
+          "negative_ratio": 0.07272727272727272,
+          "neutral_ratio": 0.21818181818181817
+        },
+        "preloaded software": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "price": {
+          "total_count": 251,
+          "sentiment_distribution": {
+            "Positive": 206,
+            "Negative": 34,
+            "Neutral": 11
+          },
+          "positive_ratio": 0.8207171314741036,
+          "negative_ratio": 0.13545816733067728,
+          "neutral_ratio": 0.043824701195219126
+        },
+        "brand": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "warranty": {
+          "total_count": 131,
+          "sentiment_distribution": {
+            "Positive": 23,
+            "Negative": 56,
+            "Neutral": 52
+          },
+          "positive_ratio": 0.17557251908396945,
+          "negative_ratio": 0.42748091603053434,
+          "neutral_ratio": 0.3969465648854962
+        },
+        "fan": {
+          "total_count": 28,
+          "sentiment_distribution": {
+            "Negative": 16,
+            "Neutral": 8,
+            "Positive": 4
+          },
+          "positive_ratio": 0.14285714285714285,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.2857142857142857
+        },
+        "hard disc": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "windows": {
+          "total_count": 52,
+          "sentiment_distribution": {
+            "Negative": 24,
+            "Neutral": 18,
+            "Positive": 10
+          },
+          "positive_ratio": 0.19230769230769232,
+          "negative_ratio": 0.46153846153846156,
+          "neutral_ratio": 0.34615384615384615
+        },
+        "drivers": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Negative": 12
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.6,
+          "neutral_ratio": 0.4
+        },
+        "browser": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "keyboard": {
+          "total_count": 182,
+          "sentiment_distribution": {
+            "Negative": 63,
+            "Positive": 87,
+            "Neutral": 32
+          },
+          "positive_ratio": 0.47802197802197804,
+          "negative_ratio": 0.34615384615384615,
+          "neutral_ratio": 0.17582417582417584
+        },
+        "program": {
+          "total_count": 52,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Positive": 44
+          },
+          "positive_ratio": 0.8461538461538461,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.15384615384615385
+        },
+        "warrenty": {
+          "total_count": 40,
+          "sentiment_distribution": {
+            "Negative": 32,
+            "Positive": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.1,
+          "negative_ratio": 0.8,
+          "neutral_ratio": 0.1
+        },
+        "Quality": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "webcam": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Negative": 12,
+            "Positive": 4
+          },
+          "positive_ratio": 0.16666666666666666,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "value": {
+          "total_count": 43,
+          "sentiment_distribution": {
+            "Positive": 43
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "internet": {
+          "total_count": 27,
+          "sentiment_distribution": {
+            "Neutral": 12,
+            "Positive": 7,
+            "Negative": 8
+          },
+          "positive_ratio": 0.25925925925925924,
+          "negative_ratio": 0.2962962962962963,
+          "neutral_ratio": 0.4444444444444444
+        },
+        "motherboard": {
+          "total_count": 60,
+          "sentiment_distribution": {
+            "Negative": 40,
+            "Neutral": 20
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "charger": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 12
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "hardware": {
+          "total_count": 41,
+          "sentiment_distribution": {
+            "Negative": 27,
+            "Neutral": 8,
+            "Positive": 6
+          },
+          "positive_ratio": 0.14634146341463414,
+          "negative_ratio": 0.6585365853658537,
+          "neutral_ratio": 0.1951219512195122
+        },
+        "works": {
+          "total_count": 91,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 87
+          },
+          "positive_ratio": 0.9560439560439561,
+          "negative_ratio": 0.04395604395604396,
+          "neutral_ratio": 0.0
+        },
+        "runs": {
+          "total_count": 62,
+          "sentiment_distribution": {
+            "Positive": 58,
+            "Negative": 4
+          },
+          "positive_ratio": 0.9354838709677419,
+          "negative_ratio": 0.06451612903225806,
+          "neutral_ratio": 0.0
+        },
+        "navigate": {
+          "total_count": 23,
+          "sentiment_distribution": {
+            "Positive": 19,
+            "Negative": 4
+          },
+          "positive_ratio": 0.8260869565217391,
+          "negative_ratio": 0.17391304347826086,
+          "neutral_ratio": 0.0
+        },
+        "extended warranty": {
+          "total_count": 36,
+          "sentiment_distribution": {
+            "Neutral": 24,
+            "Negative": 8,
+            "Positive": 4
+          },
+          "positive_ratio": 0.1111111111111111,
+          "negative_ratio": 0.2222222222222222,
+          "neutral_ratio": 0.6666666666666666
+        },
+        "memory": {
+          "total_count": 77,
+          "sentiment_distribution": {
+            "Neutral": 27,
+            "Negative": 27,
+            "Positive": 23
+          },
+          "positive_ratio": 0.2987012987012987,
+          "negative_ratio": 0.35064935064935066,
+          "neutral_ratio": 0.35064935064935066
+        },
+        "operating systems": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "hard drive": {
+          "total_count": 132,
+          "sentiment_distribution": {
+            "Negative": 64,
+            "Neutral": 53,
+            "Positive": 15
+          },
+          "positive_ratio": 0.11363636363636363,
+          "negative_ratio": 0.48484848484848486,
+          "neutral_ratio": 0.4015151515151515
+        },
+        "mother board": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Negative": 12,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.75,
+          "neutral_ratio": 0.25
+        },
+        "sound": {
+          "total_count": 33,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Negative": 26
+          },
+          "positive_ratio": 0.21212121212121213,
+          "negative_ratio": 0.7878787878787878,
+          "neutral_ratio": 0.0
+        },
+        "shipping": {
+          "total_count": 45,
+          "sentiment_distribution": {
+            "Negative": 23,
+            "Positive": 22
+          },
+          "positive_ratio": 0.4888888888888889,
+          "negative_ratio": 0.5111111111111111,
+          "neutral_ratio": 0.0
+        },
+        "Mac software": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "web browsing": {
+          "total_count": 19,
+          "sentiment_distribution": {
+            "Neutral": 11,
+            "Positive": 8
+          },
+          "positive_ratio": 0.42105263157894735,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5789473684210527
+        },
+        "recovery discs": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "USB": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "bluetooth": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "hinge": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Negative": 12,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.6,
+          "neutral_ratio": 0.4
+        },
+        "games": {
+          "total_count": 39,
+          "sentiment_distribution": {
+            "Neutral": 31,
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.10256410256410256,
+          "negative_ratio": 0.10256410256410256,
+          "neutral_ratio": 0.7948717948717948
+        },
+        "XP": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.7272727272727273,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.2727272727272727
+        },
+        "Vista": {
+          "total_count": 56,
+          "sentiment_distribution": {
+            "Negative": 48,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.8571428571428571,
+          "neutral_ratio": 0.14285714285714285
+        },
+        "Keyboard": {
+          "total_count": 31,
+          "sentiment_distribution": {
+            "Positive": 23,
+            "Negative": 8
+          },
+          "positive_ratio": 0.7419354838709677,
+          "negative_ratio": 0.25806451612903225,
+          "neutral_ratio": 0.0
+        },
+        "cooling system": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 4
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.0
+        },
+        "color": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "keys": {
+          "total_count": 43,
+          "sentiment_distribution": {
+            "Negative": 20,
+            "Positive": 12,
+            "Neutral": 11
+          },
+          "positive_ratio": 0.27906976744186046,
+          "negative_ratio": 0.46511627906976744,
+          "neutral_ratio": 0.2558139534883721
+        },
+        "designed": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 7
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.36363636363636365,
+          "neutral_ratio": 0.0
+        },
+        "mousepad": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Negative": 8,
+            "Positive": 4
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.4,
+          "neutral_ratio": 0.4
+        },
+        "construction quality": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "longevity": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "touch pad": {
+          "total_count": 27,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Positive": 15,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5555555555555556,
+          "negative_ratio": 0.14814814814814814,
+          "neutral_ratio": 0.2962962962962963
+        },
+        "security": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 11
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "work": {
+          "total_count": 39,
+          "sentiment_distribution": {
+            "Negative": 35,
+            "Positive": 4
+          },
+          "positive_ratio": 0.10256410256410256,
+          "negative_ratio": 0.8974358974358975,
+          "neutral_ratio": 0.0
+        },
+        "volume": {
+          "total_count": 13,
+          "sentiment_distribution": {
+            "Negative": 13
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "mouse": {
+          "total_count": 45,
+          "sentiment_distribution": {
+            "Negative": 16,
+            "Positive": 7,
+            "Neutral": 22
+          },
+          "positive_ratio": 0.15555555555555556,
+          "negative_ratio": 0.35555555555555557,
+          "neutral_ratio": 0.4888888888888889
+        },
+        "touchpad": {
+          "total_count": 34,
+          "sentiment_distribution": {
+            "Positive": 16,
+            "Negative": 18
+          },
+          "positive_ratio": 0.47058823529411764,
+          "negative_ratio": 0.5294117647058824,
+          "neutral_ratio": 0.0
+        },
+        "boots up": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 11
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "safari": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "Bluetooth": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "display": {
+          "total_count": 47,
+          "sentiment_distribution": {
+            "Positive": 35,
+            "Negative": 12
+          },
+          "positive_ratio": 0.7446808510638298,
+          "negative_ratio": 0.2553191489361702,
+          "neutral_ratio": 0.0
+        },
+        "delivery": {
+          "total_count": 18,
+          "sentiment_distribution": {
+            "Positive": 14,
+            "Negative": 4
+          },
+          "positive_ratio": 0.7777777777777778,
+          "negative_ratio": 0.2222222222222222,
+          "neutral_ratio": 0.0
+        },
+        "performance": {
+          "total_count": 124,
+          "sentiment_distribution": {
+            "Positive": 79,
+            "Negative": 30,
+            "Neutral": 15
+          },
+          "positive_ratio": 0.6370967741935484,
+          "negative_ratio": 0.24193548387096775,
+          "neutral_ratio": 0.12096774193548387
+        },
+        "appearance": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 11
+          },
+          "positive_ratio": 0.7333333333333333,
+          "negative_ratio": 0.26666666666666666,
+          "neutral_ratio": 0.0
+        },
+        "graphics card": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Negative": 7,
+            "Positive": 8
+          },
+          "positive_ratio": 0.5333333333333333,
+          "negative_ratio": 0.4666666666666667,
+          "neutral_ratio": 0.0
+        },
+        "built-in webcam": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "built-in mic": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.42857142857142855
+        },
+        "mic": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 12
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "Windows Vista": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "power supply": {
+          "total_count": 44,
+          "sentiment_distribution": {
+            "Negative": 32,
+            "Neutral": 8,
+            "Positive": 4
+          },
+          "positive_ratio": 0.09090909090909091,
+          "negative_ratio": 0.7272727272727273,
+          "neutral_ratio": 0.18181818181818182
+        },
+        "ethernet": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.42857142857142855
+        },
+        "iWork": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 8,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "GarageBand": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "iMovie": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Positive": 12,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.75,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.25
+        },
+        "colors": {
+          "total_count": 18,
+          "sentiment_distribution": {
+            "Positive": 18
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "resolution": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Positive": 11,
+            "Negative": 4
+          },
+          "positive_ratio": 0.7333333333333333,
+          "negative_ratio": 0.26666666666666666,
+          "neutral_ratio": 0.0
+        },
+        "monitor": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.25,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.25
+        },
+        "iTunes": {
+          "total_count": 23,
+          "sentiment_distribution": {
+            "Positive": 19,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.8260869565217391,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.17391304347826086
+        },
+        "start menu": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.42857142857142855
+        },
+        "iLife": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Positive": 12,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.75,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.25
+        },
+        "price tag": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 3,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.3,
+          "negative_ratio": 0.4,
+          "neutral_ratio": 0.3
+        },
+        "Mac OS": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Positive": 15,
+            "Negative": 9
+          },
+          "positive_ratio": 0.625,
+          "negative_ratio": 0.375,
+          "neutral_ratio": 0.0
+        },
+        "ports": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Neutral": 10,
+            "Negative": 4,
+            "Positive": 6
+          },
+          "positive_ratio": 0.3,
+          "negative_ratio": 0.2,
+          "neutral_ratio": 0.5
+        },
+        "look": {
+          "total_count": 39,
+          "sentiment_distribution": {
+            "Positive": 39
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "graphics": {
+          "total_count": 70,
+          "sentiment_distribution": {
+            "Positive": 58,
+            "Negative": 8,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.8285714285714286,
+          "negative_ratio": 0.11428571428571428,
+          "neutral_ratio": 0.05714285714285714
+        },
+        "support": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 11
+          },
+          "positive_ratio": 0.26666666666666666,
+          "negative_ratio": 0.7333333333333333,
+          "neutral_ratio": 0.0
+        },
+        "Appleworks": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.7272727272727273,
+          "neutral_ratio": 0.2727272727272727
+        },
+        "paint": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "hard disk": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "running": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "screen size": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 8,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "loads": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 8
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "trackpad": {
+          "total_count": 31,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 23
+          },
+          "positive_ratio": 0.7419354838709677,
+          "negative_ratio": 0.25806451612903225,
+          "neutral_ratio": 0.0
+        },
+        "body": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.0
+        },
+        "i5": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 7
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "antivirus software": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "Fan": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.36363636363636365,
+          "negative_ratio": 0.36363636363636365,
+          "neutral_ratio": 0.2727272727272727
+        },
+        "cooling pad": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "feature": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Positive": 24
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "power": {
+          "total_count": 32,
+          "sentiment_distribution": {
+            "Positive": 24,
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.75,
+          "negative_ratio": 0.125,
+          "neutral_ratio": 0.125
+        },
+        "storage": {
+          "total_count": 18,
+          "sentiment_distribution": {
+            "Positive": 15,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.8333333333333334,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.16666666666666666
+        },
+        "OS": {
+          "total_count": 68,
+          "sentiment_distribution": {
+            "Positive": 38,
+            "Neutral": 24,
+            "Negative": 6
+          },
+          "positive_ratio": 0.5588235294117647,
+          "negative_ratio": 0.08823529411764706,
+          "neutral_ratio": 0.35294117647058826
+        },
+        "techs": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "programs": {
+          "total_count": 144,
+          "sentiment_distribution": {
+            "Positive": 76,
+            "Negative": 32,
+            "Neutral": 36
+          },
+          "positive_ratio": 0.5277777777777778,
+          "negative_ratio": 0.2222222222222222,
+          "neutral_ratio": 0.25
+        },
+        "size": {
+          "total_count": 116,
+          "sentiment_distribution": {
+            "Positive": 81,
+            "Negative": 24,
+            "Neutral": 11
+          },
+          "positive_ratio": 0.6982758620689655,
+          "negative_ratio": 0.20689655172413793,
+          "neutral_ratio": 0.09482758620689655
+        },
+        "Windows 7 Ultimate": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "video card": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "set up": {
+          "total_count": 28,
+          "sentiment_distribution": {
+            "Positive": 28
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "word processing": {
+          "total_count": 18,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Neutral": 11
+          },
+          "positive_ratio": 0.3888888888888889,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.6111111111111112
+        },
+        "spec": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.0
+        },
+        "HD": {
+          "total_count": 19,
+          "sentiment_distribution": {
+            "Positive": 12,
+            "Negative": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.631578947368421,
+          "negative_ratio": 0.21052631578947367,
+          "neutral_ratio": 0.15789473684210525
+        },
+        "components": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 7
+          },
+          "positive_ratio": 0.5333333333333333,
+          "negative_ratio": 0.4666666666666667,
+          "neutral_ratio": 0.0
+        },
+        "DVD burner": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 12
+          },
+          "positive_ratio": 0.25,
+          "negative_ratio": 0.75,
+          "neutral_ratio": 0.0
+        },
+        "USB ports": {
+          "total_count": 28,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Negative": 14,
+            "Neutral": 7
+          },
+          "positive_ratio": 0.25,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.25
+        },
+        "ran": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "operation": {
+          "total_count": 22,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Negative": 15
+          },
+          "positive_ratio": 0.3181818181818182,
+          "negative_ratio": 0.6818181818181818,
+          "neutral_ratio": 0.0
+        },
+        "windows 7": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Positive": 15
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "twin packing": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "functions": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 12
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "customer support": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 8
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "cd drive": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Negative": 12,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.75,
+          "neutral_ratio": 0.25
+        },
+        "design": {
+          "total_count": 63,
+          "sentiment_distribution": {
+            "Negative": 12,
+            "Positive": 48,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.7619047619047619,
+          "negative_ratio": 0.19047619047619047,
+          "neutral_ratio": 0.047619047619047616
+        },
+        "pad": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 11
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "batteries": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "virus protection": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "HDMI port": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Neutral": 7,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.36363636363636365,
+          "neutral_ratio": 0.6363636363636364
+        },
+        "staff": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 12
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "usb ports": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 3
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.5714285714285714
+        },
+        "boot": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.36363636363636365,
+          "negative_ratio": 0.36363636363636365,
+          "neutral_ratio": 0.2727272727272727
+        },
+        "shut down": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "cost": {
+          "total_count": 31,
+          "sentiment_distribution": {
+            "Positive": 12,
+            "Negative": 16,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.3870967741935484,
+          "negative_ratio": 0.5161290322580645,
+          "neutral_ratio": 0.0967741935483871
+        },
+        "Windows 7 Starter": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Neutral": 12,
+            "Positive": 8,
+            "Negative": 4
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.16666666666666666,
+          "neutral_ratio": 0.5
+        },
+        "Windows 7 Home Premium": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "specifications": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "Windows": {
+          "total_count": 83,
+          "sentiment_distribution": {
+            "Negative": 51,
+            "Positive": 12,
+            "Neutral": 20
+          },
+          "positive_ratio": 0.14457831325301204,
+          "negative_ratio": 0.6144578313253012,
+          "neutral_ratio": 0.24096385542168675
+        },
+        "Features": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.6666666666666666
+        },
+        "run": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4,
+            "Positive": 8
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.25,
+          "neutral_ratio": 0.25
+        },
+        "weight": {
+          "total_count": 34,
+          "sentiment_distribution": {
+            "Negative": 12,
+            "Neutral": 4,
+            "Positive": 18
+          },
+          "positive_ratio": 0.5294117647058824,
+          "negative_ratio": 0.35294117647058826,
+          "neutral_ratio": 0.11764705882352941
+        },
+        "aluminum body": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "watching movies": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "build quality": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "working": {
+          "total_count": 13,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 9
+          },
+          "positive_ratio": 0.6923076923076923,
+          "negative_ratio": 0.3076923076923077,
+          "neutral_ratio": 0.0
+        },
+        "costing": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "driver": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "tech support": {
+          "total_count": 27,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Negative": 19
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.7037037037037037,
+          "neutral_ratio": 0.2962962962962963
+        },
+        "BIOS": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Negative": 16
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "space": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 12
+          },
+          "positive_ratio": 0.6,
+          "negative_ratio": 0.4,
+          "neutral_ratio": 0.0
+        },
+        "priced": {
+          "total_count": 17,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 7,
+            "Neutral": 6
+          },
+          "positive_ratio": 0.4117647058823529,
+          "negative_ratio": 0.23529411764705882,
+          "neutral_ratio": 0.35294117647058826
+        },
+        "internet speed": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Garageband": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Positive": 8
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "iPhoto": {
+          "total_count": 26,
+          "sentiment_distribution": {
+            "Neutral": 7,
+            "Positive": 19
+          },
+          "positive_ratio": 0.7307692307692307,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.2692307692307692
+        },
+        "Pages": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Neutral": 12,
+            "Positive": 4
+          },
+          "positive_ratio": 0.25,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.75
+        },
+        "Numbers": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "Keynote": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Neutral": 12
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "web cam": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "technical support": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Negative": 7,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.7,
+          "neutral_ratio": 0.3
+        },
+        "Skype": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "HDD": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "updates": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.36363636363636365,
+          "negative_ratio": 0.36363636363636365,
+          "neutral_ratio": 0.2727272727272727
+        },
+        "Wireless": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "speakers": {
+          "total_count": 43,
+          "sentiment_distribution": {
+            "Positive": 12,
+            "Negative": 31
+          },
+          "positive_ratio": 0.27906976744186046,
+          "negative_ratio": 0.7209302325581395,
+          "neutral_ratio": 0.0
+        },
+        "subwoofer": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "built in camera": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "hard drive space": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "picture": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "extended warranties": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "Screen": {
+          "total_count": 22,
+          "sentiment_distribution": {
+            "Positive": 18,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.8181818181818182,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.18181818181818182
+        },
+        "case": {
+          "total_count": 22,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 7,
+            "Negative": 11
+          },
+          "positive_ratio": 0.18181818181818182,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.3181818181818182
+        },
+        "Photoshop": {
+          "total_count": 18,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Neutral": 10
+          },
+          "positive_ratio": 0.4444444444444444,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5555555555555556
+        },
+        "ram": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Positive": 8
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "RAM": {
+          "total_count": 26,
+          "sentiment_distribution": {
+            "Negative": 11,
+            "Neutral": 4,
+            "Positive": 11
+          },
+          "positive_ratio": 0.4230769230769231,
+          "negative_ratio": 0.4230769230769231,
+          "neutral_ratio": 0.15384615384615385
+        },
+        "right speaker": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "shipped": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 4
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.0
+        },
+        "recovery disk": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "Office": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.36363636363636365,
+          "negative_ratio": 0.36363636363636365,
+          "neutral_ratio": 0.2727272727272727
+        },
+        "thunderbolt port": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Windows update": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "switch": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "hardrive": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "iLife software": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "LCD": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "Safari": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "Firefox": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "Quality Display": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "video": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 3
+          },
+          "positive_ratio": 0.2727272727272727,
+          "negative_ratio": 0.7272727272727273,
+          "neutral_ratio": 0.0
+        },
+        "wireless mouse": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Neutral": 7
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "Linux": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "company": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "carry": {
+          "total_count": 35,
+          "sentiment_distribution": {
+            "Positive": 23,
+            "Negative": 8,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.6571428571428571,
+          "negative_ratio": 0.22857142857142856,
+          "neutral_ratio": 0.11428571428571428
+        },
+        "edges": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Negative": 20
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "iPhotos": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "built": {
+          "total_count": 19,
+          "sentiment_distribution": {
+            "Positive": 19
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "CPU": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "Word": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "Runs": {
+          "total_count": 28,
+          "sentiment_distribution": {
+            "Positive": 24,
+            "Negative": 4
+          },
+          "positive_ratio": 0.8571428571428571,
+          "negative_ratio": 0.14285714285714285,
+          "neutral_ratio": 0.0
+        },
+        "OS X": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "buttons": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 16
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.8,
+          "neutral_ratio": 0.2
+        },
+        "OpenOffice": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5714285714285714
+        },
+        "specs": {
+          "total_count": 22,
+          "sentiment_distribution": {
+            "Neutral": 7,
+            "Positive": 15
+          },
+          "positive_ratio": 0.6818181818181818,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.3181818181818182
+        },
+        "SATA controller": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "bluetooth mouse": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "customer service": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 6
+          },
+          "positive_ratio": 0.6,
+          "negative_ratio": 0.4,
+          "neutral_ratio": 0.0
+        },
+        "plug": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "iphoto": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 12
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "videocard": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "transport": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "repair depot": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 12
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.25,
+          "neutral_ratio": 0.75
+        },
+        "charging": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "Webcam": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "processing power": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "install": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 6
+          },
+          "positive_ratio": 0.6,
+          "negative_ratio": 0.4,
+          "neutral_ratio": 0.0
+        },
+        "MS Office": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 4,
+            "Negative": 8
+          },
+          "positive_ratio": 0.25,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.25
+        },
+        "application": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 3,
+            "Positive": 3
+          },
+          "positive_ratio": 0.3,
+          "negative_ratio": 0.3,
+          "neutral_ratio": 0.4
+        },
+        "tutorials": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "mouse pad": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 4
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.0
+        },
+        "charged": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "speaker grill": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "build": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 11
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "portability": {
+          "total_count": 25,
+          "sentiment_distribution": {
+            "Positive": 25
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "aesthetics": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "touch-pad": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "headphones": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.7272727272727273,
+          "neutral_ratio": 0.2727272727272727
+        },
+        "OSX": {
+          "total_count": 14,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 6
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.0
+        },
+        "KEYS": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "KEYBOARD": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "charge": {
+          "total_count": 52,
+          "sentiment_distribution": {
+            "Negative": 36,
+            "Neutral": 8,
+            "Positive": 8
+          },
+          "positive_ratio": 0.15384615384615385,
+          "negative_ratio": 0.6923076923076923,
+          "neutral_ratio": 0.15384615384615385
+        },
+        "internet connection": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "functionality": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Positive": 10
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "simplicity": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "looking": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Graphics": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "port": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "instructions": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 7
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "cursor": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "operate": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "track pad": {
+          "total_count": 14,
+          "sentiment_distribution": {
+            "Positive": 11,
+            "Negative": 3
+          },
+          "positive_ratio": 0.7857142857142857,
+          "negative_ratio": 0.21428571428571427,
+          "neutral_ratio": 0.0
+        },
+        "disc drive": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.7272727272727273,
+          "neutral_ratio": 0.2727272727272727
+        },
+        "drive": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "word processing program": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.42857142857142855
+        },
+        "Battery": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "Microsoft Office": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Positive": 3
+          },
+          "positive_ratio": 0.2727272727272727,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.7272727272727273
+        },
+        "performed": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "recovery DVDs": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "fans": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5714285714285714
+        },
+        "user interface": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "iDVD": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.0
+        },
+        "surfing": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 7
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.36363636363636365
+        },
+        "budget": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 12
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "expense": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "System": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.0
+        },
+        "performs": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 11
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "power adapter": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "apps": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 11
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "hard drives": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.6666666666666666
+        },
+        "sized": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "flexibility": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "surfing the web": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "sound quality": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 7
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "shortcuts": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Neutral": 7
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "DC jack": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "backlit keys": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.0
+        },
+        "shipment": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.0
+        },
+        "built-in camera": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.42857142857142855
+        },
+        "bios": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "call center": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "cords": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 8
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.0
+        },
+        "key board": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.42857142857142855
+        },
+        "Touchpad": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "setup": {
+          "total_count": 14,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 6
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.0
+        },
+        "lid": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Neutral": 7
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "word processor": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "handle": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 3
+          },
+          "positive_ratio": 0.2727272727272727,
+          "negative_ratio": 0.7272727272727273,
+          "neutral_ratio": 0.0
+        },
+        "Speakers": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "power plug": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 7
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "durability": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Positive": 10
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "surf the web": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "programming": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.42857142857142855
+        },
+        "Battery life": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "casing": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "backlit keyboard": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "brightness": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Neutral": 7,
+            "Positive": 3
+          },
+          "positive_ratio": 0.3,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.7
+        },
+        "Applications": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "feel": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Positive": 12,
+            "Negative": 4
+          },
+          "positive_ratio": 0.75,
+          "negative_ratio": 0.25,
+          "neutral_ratio": 0.0
+        },
+        "HDMI": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Neutral": 10
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "Customer Service": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 8
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.0
+        },
+        "looks": {
+          "total_count": 13,
+          "sentiment_distribution": {
+            "Positive": 13
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "memory stick": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "Performance": {
+          "total_count": 13,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 9
+          },
+          "positive_ratio": 0.6923076923076923,
+          "negative_ratio": 0.3076923076923077,
+          "neutral_ratio": 0.0
+        },
+        "Price": {
+          "total_count": 14,
+          "sentiment_distribution": {
+            "Negative": 10,
+            "Positive": 4
+          },
+          "positive_ratio": 0.2857142857142857,
+          "negative_ratio": 0.7142857142857143,
+          "neutral_ratio": 0.0
+        },
+        "function": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Negative": 7,
+            "Positive": 3
+          },
+          "positive_ratio": 0.3,
+          "negative_ratio": 0.7,
+          "neutral_ratio": 0.0
+        },
+        "Set up": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 6
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Windows 8": {
+          "total_count": 27,
+          "sentiment_distribution": {
+            "Negative": 18,
+            "Positive": 3,
+            "Neutral": 6
+          },
+          "positive_ratio": 0.1111111111111111,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.2222222222222222
+        },
+        "retina display": {
+          "total_count": 9,
+          "sentiment_distribution": {
+            "Neutral": 9
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "adapter": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Neutral": 6
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "windows 8": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 3,
+            "Negative": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "mobility": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 6
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "USB3": {
+          "total_count": 9,
+          "sentiment_distribution": {
+            "Positive": 3,
+            "Negative": 3,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "settings": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Negative": 3,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "form factor": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 6
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Mavericks": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 3,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "aluminum": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Negative": 3,
+            "Positive": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "graphic design": {
+          "total_count": 9,
+          "sentiment_distribution": {
+            "Neutral": 3,
+            "Positive": 6
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "SSD": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Neutral": 6,
+            "Positive": 6
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "unibody construction": {
+          "total_count": 9,
+          "sentiment_distribution": {
+            "Positive": 9
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "disk drive": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Neutral": 3,
+            "Positive": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "slot": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Negative": 6
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "packing": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 6
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "MAC OS": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 3,
+            "Negative": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "CD/DVD player": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 3,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        }
+      },
+      "split_statistics": {
+        "domain": "laptop",
+        "timestamp": "20250612_150135",
+        "features": {
+          "price": {
+            "group_a_count": 327,
+            "group_b_count": 10899,
+            "group_a_sentiment": {
+              "Positive": 228,
+              "Negative": 72,
+              "Neutral": 27
+            },
+            "group_b_sentiment": {
+              "Neutral": 2336,
+              "Positive": 4771,
+              "Negative": 3792
+            },
+            "feature_name": "price",
+            "matching_aspects": [
+              "price point",
+              "price range",
+              "price premium",
+              "price",
+              "priced",
+              "over priced",
+              "price-point",
+              "retail price",
+              "overpriced",
+              "prices",
+              "price tag"
+            ]
+          },
+          "screen": {
+            "group_a_count": 407,
+            "group_b_count": 10819,
+            "group_a_sentiment": {
+              "Negative": 146,
+              "Neutral": 59,
+              "Positive": 202
+            },
+            "group_b_sentiment": {
+              "Neutral": 2304,
+              "Positive": 4797,
+              "Negative": 3718
+            },
+            "feature_name": "screen",
+            "matching_aspects": [
+              "built in screen size",
+              "size of the screen",
+              "acer screen",
+              "screen resolutions",
+              "touchscreen functions",
+              "lcd screen",
+              "21\" led screen",
+              "screen graphics",
+              "screen hinges",
+              "17-inch screen",
+              "screen",
+              "external 24\" lcd screen",
+              "screen size",
+              "screen display",
+              "display screen",
+              "screen quality",
+              "screen resolution",
+              "resolution on the screen",
+              "17 ince screen",
+              "resolution of the screen",
+              "17\" inch screen",
+              "stock screen",
+              "glass screen",
+              "lighted screen",
+              "17 inch screen",
+              "led backlit screen.",
+              "touch screen",
+              "screen/video resolution",
+              "screens",
+              "screen brightness"
+            ]
+          },
+          "battery": {
+            "group_a_count": 457,
+            "group_b_count": 10769,
+            "group_a_sentiment": {
+              "Positive": 206,
+              "Neutral": 42,
+              "Negative": 209
+            },
+            "group_b_sentiment": {
+              "Neutral": 2321,
+              "Negative": 3655,
+              "Positive": 4793
+            },
+            "feature_name": "battery",
+            "matching_aspects": [
+              "extended life battery",
+              "battery lifetime",
+              "battery timer",
+              "battery life",
+              "12 cell battery",
+              "durability of the battery",
+              "battery cycle count",
+              "battery"
+            ]
+          },
+          "keyboard": {
+            "group_a_count": 5292,
+            "group_b_count": 5934,
+            "group_a_sentiment": {
+              "Neutral": 1301,
+              "Positive": 2104,
+              "Negative": 1887
+            },
+            "group_b_sentiment": {
+              "Positive": 2895,
+              "Negative": 1977,
+              "Neutral": 1062
+            },
+            "feature_name": "keyboard",
+            "matching_aspects": [
+              "external keyboard",
+              "hardware (keyboard)",
+              "board",
+              "wireless keyboard / mouse",
+              "desktop keyboard",
+              "lighted keyboard",
+              "keyboard shortcuts",
+              "keyboard function",
+              "o",
+              "black keyboard",
+              "flatline keyboard",
+              "wireless apple keyboard and mouse",
+              "regular layout keyboard",
+              "keyboard functions",
+              "pc's keyboard",
+              "backlit keyboard",
+              "number pad on the keyboard",
+              "apple keyboard",
+              "island backlit keyboard",
+              "keyboard"
+            ]
+          }
+        }
+      },
+      "comparative_analysis": {
+        "domain": "laptop",
+        "features": {
+          "price": {
+            "avg_review_length_a": 20.232415902140673,
+            "avg_review_length_b": 20.94403156252867,
+            "length_difference": -0.7116156603879986,
+            "positive_ratio_a": 0.6972477064220184,
+            "positive_ratio_b": 0.43774658225525276,
+            "positive_ratio_difference": 0.25950112416676563,
+            "negative_ratio_a": 0.22018348623853212,
+            "negative_ratio_b": 0.3479218276906138,
+            "negative_ratio_difference": -0.12773834145208168,
+            "sample_count_a": 327,
+            "sample_count_b": 10899,
+            "balance_ratio": 0.029128808123997863
+          },
+          "screen": {
+            "avg_review_length_a": 20.646191646191646,
+            "avg_review_length_b": 20.933727701266292,
+            "length_difference": -0.2875360550746464,
+            "positive_ratio_a": 0.4963144963144963,
+            "positive_ratio_b": 0.44338663462427214,
+            "positive_ratio_difference": 0.052927861690224176,
+            "negative_ratio_a": 0.35872235872235875,
+            "negative_ratio_b": 0.34365468157870416,
+            "negative_ratio_difference": 0.01506767714365459,
+            "sample_count_a": 407,
+            "sample_count_b": 10819,
+            "balance_ratio": 0.03625512203812578
+          },
+          "battery": {
+            "avg_review_length_a": 18.805251641137854,
+            "avg_review_length_b": 21.01318599684279,
+            "length_difference": -2.2079343557049356,
+            "positive_ratio_a": 0.45076586433260396,
+            "positive_ratio_b": 0.4450738230104931,
+            "positive_ratio_difference": 0.0056920413221108745,
+            "negative_ratio_a": 0.4573304157549234,
+            "negative_ratio_b": 0.3394001300027858,
+            "negative_ratio_difference": 0.1179302857521376,
+            "sample_count_a": 457,
+            "sample_count_b": 10769,
+            "balance_ratio": 0.04070906823445573
+          },
+          "keyboard": {
+            "avg_review_length_a": 20.796485260770975,
+            "avg_review_length_b": 21.036400404448937,
+            "length_difference": -0.23991514367796185,
+            "positive_ratio_a": 0.3975812547241119,
+            "positive_ratio_b": 0.4878665318503539,
+            "positive_ratio_difference": -0.09028527712624201,
+            "negative_ratio_a": 0.3565759637188209,
+            "negative_ratio_b": 0.33316481294236605,
+            "negative_ratio_difference": 0.023411150776454837,
+            "sample_count_a": 5292,
+            "sample_count_b": 5934,
+            "balance_ratio": 0.47140566541956175
+          }
+        }
+      },
+      "target_features": [
+        "price",
+        "screen",
+        "battery",
+        "keyboard"
+      ]
+    }
+  },
+  "summary": {
+    "total_domains_processed": 1,
+    "total_samples_across_domains": 11226
+  }
+}

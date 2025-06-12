@@ -1,0 +1,3658 @@
+[
+  {
+    "review_text": "I charge it at night and skip taking the cord with me because of the good $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1,
+    "format": "apc"
+  },
+  {
+    "review_text": "My only disappointment with the 13 '' model is that they 're the only ones in the MacBook Pro line up without an i5 or i7 processor and dual graphics cards , however the trade-off is that you achieve a longer $T$ -LRB- of about 2 more hours -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 21,
+    "format": "apc"
+  },
+  {
+    "review_text": "I took it back for an Asus and same thing - blue screen which required me to remove the $T$ to reset .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 22,
+    "format": "apc"
+  },
+  {
+    "review_text": "still testing the $T$ as i thought it would be better , but am very happy with the upgrade .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 99,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has a 10 hour $T$ when you 're doing web browsing and word editing , making it perfect for the classroom or office , and in terms of gaming and movie playing it 'll have a battery life of just over 5 hours .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 111,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has a 10 hour battery life when you 're doing web browsing and word editing , making it perfect for the classroom or office , and in terms of gaming and movie playing it 'll have a $T$ of just over 5 hours .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 112,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ seems to be very good , and have had no issues with it .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 121,
+    "format": "apc"
+  },
+  {
+    "review_text": "Enabling the $T$ is useless .",
+    "aspect": "battery timer",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 122,
+    "format": "apc"
+  },
+  {
+    "review_text": "2 months later , the $T$ went .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 153,
+    "format": "apc"
+  },
+  {
+    "review_text": "And not to mention after using it for a few months or so , the $T$ will slowly less and less hold a charge until you ca n't leave it unplugged for more than 5 minutes without the thing dying .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 162,
+    "format": "apc"
+  },
+  {
+    "review_text": "Another thing I might add is the $T$ is excellent .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 183,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great $T$ , speed , display .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 198,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 've been impressed with the $T$ and the performance for such a small amount of memory .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 202,
+    "format": "apc"
+  },
+  {
+    "review_text": "Suffice it to say , my MacBook Pro keeps me going with its long $T$ and blazing speed .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 332,
+    "format": "apc"
+  },
+  {
+    "review_text": "Well I spilled something on it and they replaced it with this model , which gets hot and the $T$ does n't make it through 1 DVD .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 339,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was shorter than expected .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 450,
+    "format": "apc"
+  },
+  {
+    "review_text": "Not to mention , the $T$ is absolutely amazing .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 472,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's fast and has excellent $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 477,
+    "format": "apc"
+  },
+  {
+    "review_text": "The little $T$ that it did have would only last about an hour while just having it on the desktop .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 491,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has not decreased since I bought it , so i 'm thrilled with that .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 557,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is amazingly long at 7hrs and 5hrs if you use it .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 583,
+    "format": "apc"
+  },
+  {
+    "review_text": "lightweight , long $T$ , excellent transition from PC ;",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 584,
+    "format": "apc"
+  },
+  {
+    "review_text": "I would like at least a 4 hr . $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 601,
+    "format": "apc"
+  },
+  {
+    "review_text": "MacBook Notebooks quickly die out because of their short $T$ , as well as the many background programs that run without the user 's knowlede .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 604,
+    "format": "apc"
+  },
+  {
+    "review_text": "Very long-life $T$ -LRB- up to 10-11 hours depending on how you configure power level settings -RRB- .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 621,
+    "format": "apc"
+  },
+  {
+    "review_text": "Screen is awesome , $T$ is good .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 623,
+    "format": "apc"
+  },
+  {
+    "review_text": "They gave me a hard time yet again , but their was a malfunction in the $T$ itself , it did n't die .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 628,
+    "format": "apc"
+  },
+  {
+    "review_text": "Has a 5-6 hour $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 722,
+    "format": "apc"
+  },
+  {
+    "review_text": "Despite the inconvenient weight , I opted for the $T$ .",
+    "aspect": "12 cell battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 746,
+    "format": "apc"
+  },
+  {
+    "review_text": "A SECOND PROBLEM INVOLVES THE $T$ WHICH IS ADVERTISED AS HAVING A STORAGE LIFE OF 11 HOURS BUT WHEN FULLY CHARGED SHOWS ONLY 7 HOURS OF SERVICE .",
+    "aspect": "BATTERY",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 769,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has never worked well .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 816,
+    "format": "apc"
+  },
+  {
+    "review_text": "10 hours of $T$ is really something else ...",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 844,
+    "format": "apc"
+  },
+  {
+    "review_text": "My laptop now has no $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 856,
+    "format": "apc"
+  },
+  {
+    "review_text": ": - -RRB- If you buy this - do n't go into it expecting 7 hrs of $T$ , and you 'll be perfectly satisfied .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 859,
+    "format": "apc"
+  },
+  {
+    "review_text": "Needs longer lasting $T$ , More than 1 to 2 Hrs .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 860,
+    "format": "apc"
+  },
+  {
+    "review_text": "10 plus hours of $T$ ...",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 862,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's so bad that I 'm thinking I only got half a $T$ or something .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 896,
+    "format": "apc"
+  },
+  {
+    "review_text": "Good keyboard , long $T$ , largest hard drive and windows 7 .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 898,
+    "format": "apc"
+  },
+  {
+    "review_text": "My $T$ went bad about a year and a half after having it and it cost around eighty to a hundred dollars !",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 905,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall I feel this netbook was poor quality , had poor performance , although it did have great $T$ when it did work .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 914,
+    "format": "apc"
+  },
+  {
+    "review_text": "great $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 920,
+    "format": "apc"
+  },
+  {
+    "review_text": "Laptops are usually used on the go , so why not give you a better $T$ ?",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 936,
+    "format": "apc"
+  },
+  {
+    "review_text": "My real problem with it ? The statement of 7 hour $T$ is not just mere exaggeration -- it 's a lie .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 960,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is also relatively good .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 961,
+    "format": "apc"
+  },
+  {
+    "review_text": "The first full charge of this $T$ got me only about 2 full hours .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1092,
+    "format": "apc"
+  },
+  {
+    "review_text": "I use this for my tutoring business , and since I 'm always bouncing from student to student , it is ideal for portability and $T$ -LRB- yes , it gets the 8 hours as advertised ! -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1120,
+    "format": "apc"
+  },
+  {
+    "review_text": "The downside to this netbook is pretty much the same for any netbook : screen size is not something I 'd stare at for the entire 10-11 hours of $T$ five days a week .",
+    "aspect": "battery life",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1131,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is great .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1149,
+    "format": "apc"
+  },
+  {
+    "review_text": "I sent it back and found this time that the $T$ was faulty , so I got a new one and some other fixes they found .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1164,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only thing is that the $T$ wo n't last more than 1/2 an hour .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1174,
+    "format": "apc"
+  },
+  {
+    "review_text": "They went through asking me open up various components , taking $T$ out , hard disk apart , and after 2 hours on phone could not fix it .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1178,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ does n't last long but I 'm sure an upgrade battery would solve that problem .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1180,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery does n't last long but I 'm sure an upgrade $T$ would solve that problem .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1181,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is amazing , the versitility is outstanding .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1195,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , the $T$ does not last very long at all .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1218,
+    "format": "apc"
+  },
+  {
+    "review_text": "- When $T$ went to 4 hours or less , took it to the MacHouse Amsterdam for repair -LRB- 26th of August -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1239,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ gets so HOT it is scary .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1240,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only downfall is the $T$ only last 1.5-2 .0 hrs when not plugged in .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1268,
+    "format": "apc"
+  },
+  {
+    "review_text": "Aside from the trial software and the short $T$ , lack of a webcam , its great .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1271,
+    "format": "apc"
+  },
+  {
+    "review_text": "also the $T$ is completely shot .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1290,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is not upgradable to a longer life battery .",
+    "aspect": "Battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1317,
+    "format": "apc"
+  },
+  {
+    "review_text": "Battery is not upgradable to a longer life $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1318,
+    "format": "apc"
+  },
+  {
+    "review_text": "After replacing the hard drive the $T$ stopped working -LRB- 3 months of use -RRB- which was frustrating .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1386,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ sucked the juice from my laptop and when the extended life battery went out we were SOL there to , so much for that warranty covering all the products we purchased .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1400,
+    "format": "apc"
+  },
+  {
+    "review_text": "Eventually my $T$ would n't charge , so unless I had it plugged in it would n't even power on .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1413,
+    "format": "apc"
+  },
+  {
+    "review_text": "Another issue I have with it is the $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1434,
+    "format": "apc"
+  },
+  {
+    "review_text": "That included the extra Sony Sonic Stage software , the speakers and the subwoofer I got -LRB- that WAS worth the money -RRB- , the bluetooth mouse for my supposedly bluetooth enabled computer , the $T$ and the Docking port .",
+    "aspect": "extended life battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1440,
+    "format": "apc"
+  },
+  {
+    "review_text": "I would recommend this computer to anyone searching for the perfect laptop , and the $T$ is amazing .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1473,
+    "format": "apc"
+  },
+  {
+    "review_text": "I love its solid build , light wt and excellent $T$ -LRB- for now -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1526,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ holds up well , it 's built very solidly , and runs fast .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1531,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is a nicely sized laptop with lots of processing power and long $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1536,
+    "format": "apc"
+  },
+  {
+    "review_text": "- Computer crashed frequently and $T$ decreased very quickly .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1544,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is lasting about 6 hours as I am surfing the web on Sundays while checking football scores and watching funny Youtube videos .",
+    "aspect": "Battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1571,
+    "format": "apc"
+  },
+  {
+    "review_text": "After a couple of years , my battery life began to diminish but was replaced for free due to a company-wide recall of my particular $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1583,
+    "format": "apc"
+  },
+  {
+    "review_text": "The system constantly overheats , the $T$ is too short , the case is coming apart , and my core applications that I use every day in my work as a graphic artist run poorly .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1584,
+    "format": "apc"
+  },
+  {
+    "review_text": "There is a small red circle next to it with a x in the middle , and when I click on it it says : '' Consider replacing your $T$ '' and it does not hold full charge .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1608,
+    "format": "apc"
+  },
+  {
+    "review_text": "I bought it for my mom and she reports that the $T$ lasts all day for her , it 's very lightweight , and the response for the computing she 's doing -LRB- Internet focused activity : mail , research , etc. -RRB- is excellent ;",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1613,
+    "format": "apc"
+  },
+  {
+    "review_text": "pros : the macbook pro notebook has a large $T$ and you wont have to worry to charge your laptop every five hours or so .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1670,
+    "format": "apc"
+  },
+  {
+    "review_text": "I could n't believe how long the $T$ lasted on a single charge .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1686,
+    "format": "apc"
+  },
+  {
+    "review_text": "I know what 7 hrs of $T$ looks like .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1697,
+    "format": "apc"
+  },
+  {
+    "review_text": "The display on this computer is the best I 've seen in a very long time , the $T$ is very long and very convienent .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1751,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ also does n't keep up with the claim but still I think macbook is much ahead from the rest of the pack .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1815,
+    "format": "apc"
+  },
+  {
+    "review_text": "Everything I have tried has worked and I never have to carry the wall charger cause the $T$ is so awesome .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1821,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is probably an hour at best .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1822,
+    "format": "apc"
+  },
+  {
+    "review_text": "After replacing the hard drive the $T$ stopped working -LRB- 3 months of use -RRB- which was frustrating .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1844,
+    "format": "apc"
+  },
+  {
+    "review_text": "the $T$ is irreplaceable .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1924,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ could be better but overall for the price and Toshiba 's reputation for laptops it 's great !",
+    "aspect": "Battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1940,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ never held a charge longer than one hour and within two months , stopped holding a charge for more than ten minutes .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1942,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ never held a charge longer than one hour and within two months , stopped holding a charge for more than ten minutes .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1972,
+    "format": "apc"
+  },
+  {
+    "review_text": "very convenient when you travel and the $T$ is excellent ...",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1981,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was supposed to be 6 hours , but even if I ran off the battery with the high effeciency setting the battery would only last me on average about 2.5 to 3 hours .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1995,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery life was supposed to be 6 hours , but even if I ran off the $T$ with the high effeciency setting the battery would only last me on average about 2.5 to 3 hours .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1996,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery life was supposed to be 6 hours , but even if I ran off the battery with the high effeciency setting the $T$ would only last me on average about 2.5 to 3 hours .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1997,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ also does n't keep up with the claim but still I think macbook is much ahead from the rest of the pack .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2001,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ needs more life .",
+    "aspect": "Battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2036,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is light and the $T$ last a very long time .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2135,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall : Poor , Features : Average , Performance : Poor , $T$ : Excellent , Price-Value : Poor",
+    "aspect": "Battery Life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2169,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is good to know that I can mobilize without having to worry about the $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2204,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is really long .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2229,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ , before the battery completely died of course , left much to be desired .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2258,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery life , before the $T$ completely died of course , left much to be desired .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2259,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has a lot of memory and a great $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2275,
+    "format": "apc"
+  },
+  {
+    "review_text": "Crisp screen , great $T$ , and plenty of storage .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2294,
+    "format": "apc"
+  },
+  {
+    "review_text": "I am pleased with the fast log on , speedy WiFi connection and the long $T$ -LRB- > 6 hrs -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 15,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is excellent - 6-7 hours without charging .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 25,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is really thick around the $T$ .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 106,
+    "format": "apc"
+  },
+  {
+    "review_text": "Awesome form factor , great $T$ , wonderful UX .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 127,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's so nice that the $T$ last so long and that this machine has the snow lion !",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 147,
+    "format": "apc"
+  },
+  {
+    "review_text": "Does everything I need it to , has a wonderful $T$ and I could n't be happier .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 155,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ lasts as advertised -LRB- give or take 15-20 minutes -RRB- , and the entire user experience is very elegant .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 237,
+    "format": "apc"
+  },
+  {
+    "review_text": "It was also suffering from hardware -LRB- keyboard -RRB- issues , relatively slow performance and shortening $T$ .",
+    "aspect": "battery lifetime",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 290,
+    "format": "apc"
+  },
+  {
+    "review_text": "However , it did not have any scratches , ZERO $T$ -LRB- pretty surprised -RRB- , and all the hardware seemed to be working perfectly .",
+    "aspect": "battery cycle count",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 307,
+    "format": "apc"
+  },
+  {
+    "review_text": "The power plug has to be connected to the power adaptor to charge the $T$ but wo n't stay connected .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 450,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was completely dead , in fact it had grown about a quarter inch thick lump on the underside .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 451,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is not as shown in the product photos .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 488,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is excellent , the display is excellent , and downloading apps is a breeze .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 575,
+    "format": "apc"
+  },
+  {
+    "review_text": "This by far beats any computer out on the market today built well , $T$ AMAZING .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 598,
+    "format": "apc"
+  },
+  {
+    "review_text": "also ... - excellent operating system - size and weight for optimal mobility - excellent $T$ - the functions provided by the trackpad is unmatched by any other brand -",
+    "aspect": "durability of the battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 630,
+    "format": "apc"
+  },
+  {
+    "review_text": "I am pleased with the fast log on , speedy WiFi connection and the long $T$ -LRB- > 6 hrs -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 15,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is excellent - 6-7 hours without charging .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 25,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is really thick around the $T$ .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 106,
+    "format": "apc"
+  },
+  {
+    "review_text": "Awesome form factor , great $T$ , wonderful UX .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 127,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's so nice that the $T$ last so long and that this machine has the snow lion !",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 147,
+    "format": "apc"
+  },
+  {
+    "review_text": "Does everything I need it to , has a wonderful $T$ and I could n't be happier .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 155,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ lasts as advertised -LRB- give or take 15-20 minutes -RRB- , and the entire user experience is very elegant .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 237,
+    "format": "apc"
+  },
+  {
+    "review_text": "It was also suffering from hardware -LRB- keyboard -RRB- issues , relatively slow performance and shortening $T$ .",
+    "aspect": "battery lifetime",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 290,
+    "format": "apc"
+  },
+  {
+    "review_text": "However , it did not have any scratches , ZERO $T$ -LRB- pretty surprised -RRB- , and all the hardware seemed to be working perfectly .",
+    "aspect": "battery cycle count",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 307,
+    "format": "apc"
+  },
+  {
+    "review_text": "The power plug has to be connected to the power adaptor to charge the $T$ but wo n't stay connected .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 450,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was completely dead , in fact it had grown about a quarter inch thick lump on the underside .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 451,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is not as shown in the product photos .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 488,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is excellent , the display is excellent , and downloading apps is a breeze .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 575,
+    "format": "apc"
+  },
+  {
+    "review_text": "This by far beats any computer out on the market today built well , $T$ AMAZING .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 598,
+    "format": "apc"
+  },
+  {
+    "review_text": "also ... - excellent operating system - size and weight for optimal mobility - excellent $T$ - the functions provided by the trackpad is unmatched by any other brand -",
+    "aspect": "durability of the battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 630,
+    "format": "apc"
+  },
+  {
+    "review_text": "I charge it at night and skip taking the cord with me because of the good $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1,
+    "format": "apc"
+  },
+  {
+    "review_text": "My only disappointment with the 13 '' model is that they 're the only ones in the MacBook Pro line up without an i5 or i7 processor and dual graphics cards , however the trade-off is that you achieve a longer $T$ -LRB- of about 2 more hours -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 21,
+    "format": "apc"
+  },
+  {
+    "review_text": "I took it back for an Asus and same thing - blue screen which required me to remove the $T$ to reset .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 22,
+    "format": "apc"
+  },
+  {
+    "review_text": "still testing the $T$ as i thought it would be better , but am very happy with the upgrade .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 99,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has a 10 hour $T$ when you 're doing web browsing and word editing , making it perfect for the classroom or office , and in terms of gaming and movie playing it 'll have a battery life of just over 5 hours .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 111,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has a 10 hour battery life when you 're doing web browsing and word editing , making it perfect for the classroom or office , and in terms of gaming and movie playing it 'll have a $T$ of just over 5 hours .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 112,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ seems to be very good , and have had no issues with it .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 121,
+    "format": "apc"
+  },
+  {
+    "review_text": "Enabling the $T$ is useless .",
+    "aspect": "battery timer",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 122,
+    "format": "apc"
+  },
+  {
+    "review_text": "2 months later , the $T$ went .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 153,
+    "format": "apc"
+  },
+  {
+    "review_text": "And not to mention after using it for a few months or so , the $T$ will slowly less and less hold a charge until you ca n't leave it unplugged for more than 5 minutes without the thing dying .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 162,
+    "format": "apc"
+  },
+  {
+    "review_text": "Another thing I might add is the $T$ is excellent .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 183,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great $T$ , speed , display .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 198,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 've been impressed with the $T$ and the performance for such a small amount of memory .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 202,
+    "format": "apc"
+  },
+  {
+    "review_text": "Suffice it to say , my MacBook Pro keeps me going with its long $T$ and blazing speed .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 332,
+    "format": "apc"
+  },
+  {
+    "review_text": "Well I spilled something on it and they replaced it with this model , which gets hot and the $T$ does n't make it through 1 DVD .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 339,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was shorter than expected .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 450,
+    "format": "apc"
+  },
+  {
+    "review_text": "Not to mention , the $T$ is absolutely amazing .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 472,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's fast and has excellent $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 477,
+    "format": "apc"
+  },
+  {
+    "review_text": "The little $T$ that it did have would only last about an hour while just having it on the desktop .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 491,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has not decreased since I bought it , so i 'm thrilled with that .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 557,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is amazingly long at 7hrs and 5hrs if you use it .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 583,
+    "format": "apc"
+  },
+  {
+    "review_text": "lightweight , long $T$ , excellent transition from PC ;",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 584,
+    "format": "apc"
+  },
+  {
+    "review_text": "I would like at least a 4 hr . $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 601,
+    "format": "apc"
+  },
+  {
+    "review_text": "MacBook Notebooks quickly die out because of their short $T$ , as well as the many background programs that run without the user 's knowlede .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 604,
+    "format": "apc"
+  },
+  {
+    "review_text": "Very long-life $T$ -LRB- up to 10-11 hours depending on how you configure power level settings -RRB- .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 621,
+    "format": "apc"
+  },
+  {
+    "review_text": "Screen is awesome , $T$ is good .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 623,
+    "format": "apc"
+  },
+  {
+    "review_text": "They gave me a hard time yet again , but their was a malfunction in the $T$ itself , it did n't die .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 628,
+    "format": "apc"
+  },
+  {
+    "review_text": "Has a 5-6 hour $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 722,
+    "format": "apc"
+  },
+  {
+    "review_text": "Despite the inconvenient weight , I opted for the $T$ .",
+    "aspect": "12 cell battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 746,
+    "format": "apc"
+  },
+  {
+    "review_text": "A SECOND PROBLEM INVOLVES THE $T$ WHICH IS ADVERTISED AS HAVING A STORAGE LIFE OF 11 HOURS BUT WHEN FULLY CHARGED SHOWS ONLY 7 HOURS OF SERVICE .",
+    "aspect": "BATTERY",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 769,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has never worked well .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 816,
+    "format": "apc"
+  },
+  {
+    "review_text": "10 hours of $T$ is really something else ...",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 844,
+    "format": "apc"
+  },
+  {
+    "review_text": "My laptop now has no $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 856,
+    "format": "apc"
+  },
+  {
+    "review_text": ": - -RRB- If you buy this - do n't go into it expecting 7 hrs of $T$ , and you 'll be perfectly satisfied .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 859,
+    "format": "apc"
+  },
+  {
+    "review_text": "Needs longer lasting $T$ , More than 1 to 2 Hrs .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 860,
+    "format": "apc"
+  },
+  {
+    "review_text": "10 plus hours of $T$ ...",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 862,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's so bad that I 'm thinking I only got half a $T$ or something .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 896,
+    "format": "apc"
+  },
+  {
+    "review_text": "Good keyboard , long $T$ , largest hard drive and windows 7 .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 898,
+    "format": "apc"
+  },
+  {
+    "review_text": "My $T$ went bad about a year and a half after having it and it cost around eighty to a hundred dollars !",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 905,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall I feel this netbook was poor quality , had poor performance , although it did have great $T$ when it did work .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 914,
+    "format": "apc"
+  },
+  {
+    "review_text": "great $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 920,
+    "format": "apc"
+  },
+  {
+    "review_text": "Laptops are usually used on the go , so why not give you a better $T$ ?",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 936,
+    "format": "apc"
+  },
+  {
+    "review_text": "My real problem with it ? The statement of 7 hour $T$ is not just mere exaggeration -- it 's a lie .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 960,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is also relatively good .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 961,
+    "format": "apc"
+  },
+  {
+    "review_text": "The first full charge of this $T$ got me only about 2 full hours .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1092,
+    "format": "apc"
+  },
+  {
+    "review_text": "I use this for my tutoring business , and since I 'm always bouncing from student to student , it is ideal for portability and $T$ -LRB- yes , it gets the 8 hours as advertised ! -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1120,
+    "format": "apc"
+  },
+  {
+    "review_text": "The downside to this netbook is pretty much the same for any netbook : screen size is not something I 'd stare at for the entire 10-11 hours of $T$ five days a week .",
+    "aspect": "battery life",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1131,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is great .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1149,
+    "format": "apc"
+  },
+  {
+    "review_text": "I sent it back and found this time that the $T$ was faulty , so I got a new one and some other fixes they found .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1164,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only thing is that the $T$ wo n't last more than 1/2 an hour .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1174,
+    "format": "apc"
+  },
+  {
+    "review_text": "They went through asking me open up various components , taking $T$ out , hard disk apart , and after 2 hours on phone could not fix it .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1178,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ does n't last long but I 'm sure an upgrade battery would solve that problem .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1180,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery does n't last long but I 'm sure an upgrade $T$ would solve that problem .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1181,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is amazing , the versitility is outstanding .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1195,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , the $T$ does not last very long at all .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1218,
+    "format": "apc"
+  },
+  {
+    "review_text": "- When $T$ went to 4 hours or less , took it to the MacHouse Amsterdam for repair -LRB- 26th of August -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1239,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ gets so HOT it is scary .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1240,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only downfall is the $T$ only last 1.5-2 .0 hrs when not plugged in .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1268,
+    "format": "apc"
+  },
+  {
+    "review_text": "Aside from the trial software and the short $T$ , lack of a webcam , its great .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1271,
+    "format": "apc"
+  },
+  {
+    "review_text": "also the $T$ is completely shot .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1290,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is not upgradable to a longer life battery .",
+    "aspect": "Battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1317,
+    "format": "apc"
+  },
+  {
+    "review_text": "Battery is not upgradable to a longer life $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1318,
+    "format": "apc"
+  },
+  {
+    "review_text": "After replacing the hard drive the $T$ stopped working -LRB- 3 months of use -RRB- which was frustrating .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1386,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ sucked the juice from my laptop and when the extended life battery went out we were SOL there to , so much for that warranty covering all the products we purchased .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1400,
+    "format": "apc"
+  },
+  {
+    "review_text": "Eventually my $T$ would n't charge , so unless I had it plugged in it would n't even power on .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1413,
+    "format": "apc"
+  },
+  {
+    "review_text": "Another issue I have with it is the $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1434,
+    "format": "apc"
+  },
+  {
+    "review_text": "That included the extra Sony Sonic Stage software , the speakers and the subwoofer I got -LRB- that WAS worth the money -RRB- , the bluetooth mouse for my supposedly bluetooth enabled computer , the $T$ and the Docking port .",
+    "aspect": "extended life battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1440,
+    "format": "apc"
+  },
+  {
+    "review_text": "I would recommend this computer to anyone searching for the perfect laptop , and the $T$ is amazing .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1473,
+    "format": "apc"
+  },
+  {
+    "review_text": "I love its solid build , light wt and excellent $T$ -LRB- for now -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1526,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ holds up well , it 's built very solidly , and runs fast .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1531,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is a nicely sized laptop with lots of processing power and long $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1536,
+    "format": "apc"
+  },
+  {
+    "review_text": "- Computer crashed frequently and $T$ decreased very quickly .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1544,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is lasting about 6 hours as I am surfing the web on Sundays while checking football scores and watching funny Youtube videos .",
+    "aspect": "Battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1571,
+    "format": "apc"
+  },
+  {
+    "review_text": "After a couple of years , my battery life began to diminish but was replaced for free due to a company-wide recall of my particular $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1583,
+    "format": "apc"
+  },
+  {
+    "review_text": "The system constantly overheats , the $T$ is too short , the case is coming apart , and my core applications that I use every day in my work as a graphic artist run poorly .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1584,
+    "format": "apc"
+  },
+  {
+    "review_text": "There is a small red circle next to it with a x in the middle , and when I click on it it says : '' Consider replacing your $T$ '' and it does not hold full charge .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1608,
+    "format": "apc"
+  },
+  {
+    "review_text": "I bought it for my mom and she reports that the $T$ lasts all day for her , it 's very lightweight , and the response for the computing she 's doing -LRB- Internet focused activity : mail , research , etc. -RRB- is excellent ;",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1613,
+    "format": "apc"
+  },
+  {
+    "review_text": "pros : the macbook pro notebook has a large $T$ and you wont have to worry to charge your laptop every five hours or so .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1670,
+    "format": "apc"
+  },
+  {
+    "review_text": "I could n't believe how long the $T$ lasted on a single charge .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1686,
+    "format": "apc"
+  },
+  {
+    "review_text": "I know what 7 hrs of $T$ looks like .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1697,
+    "format": "apc"
+  },
+  {
+    "review_text": "The display on this computer is the best I 've seen in a very long time , the $T$ is very long and very convienent .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1751,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ also does n't keep up with the claim but still I think macbook is much ahead from the rest of the pack .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1815,
+    "format": "apc"
+  },
+  {
+    "review_text": "Everything I have tried has worked and I never have to carry the wall charger cause the $T$ is so awesome .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1821,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is probably an hour at best .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1822,
+    "format": "apc"
+  },
+  {
+    "review_text": "After replacing the hard drive the $T$ stopped working -LRB- 3 months of use -RRB- which was frustrating .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1844,
+    "format": "apc"
+  },
+  {
+    "review_text": "the $T$ is irreplaceable .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1924,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ could be better but overall for the price and Toshiba 's reputation for laptops it 's great !",
+    "aspect": "Battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1940,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ never held a charge longer than one hour and within two months , stopped holding a charge for more than ten minutes .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1942,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ never held a charge longer than one hour and within two months , stopped holding a charge for more than ten minutes .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1972,
+    "format": "apc"
+  },
+  {
+    "review_text": "very convenient when you travel and the $T$ is excellent ...",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1981,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was supposed to be 6 hours , but even if I ran off the battery with the high effeciency setting the battery would only last me on average about 2.5 to 3 hours .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1995,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery life was supposed to be 6 hours , but even if I ran off the $T$ with the high effeciency setting the battery would only last me on average about 2.5 to 3 hours .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1996,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery life was supposed to be 6 hours , but even if I ran off the battery with the high effeciency setting the $T$ would only last me on average about 2.5 to 3 hours .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1997,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ also does n't keep up with the claim but still I think macbook is much ahead from the rest of the pack .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2001,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ needs more life .",
+    "aspect": "Battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2036,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is light and the $T$ last a very long time .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2135,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall : Poor , Features : Average , Performance : Poor , $T$ : Excellent , Price-Value : Poor",
+    "aspect": "Battery Life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2169,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is good to know that I can mobilize without having to worry about the $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2204,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is really long .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2229,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ , before the battery completely died of course , left much to be desired .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2258,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery life , before the $T$ completely died of course , left much to be desired .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2259,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has a lot of memory and a great $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2275,
+    "format": "apc"
+  },
+  {
+    "review_text": "Crisp screen , great $T$ , and plenty of storage .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2294,
+    "format": "apc"
+  },
+  {
+    "review_text": "I charge it at night and skip taking the cord with me because of the good $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1,
+    "format": "apc"
+  },
+  {
+    "review_text": "My only disappointment with the 13 '' model is that they 're the only ones in the MacBook Pro line up without an i5 or i7 processor and dual graphics cards , however the trade-off is that you achieve a longer $T$ -LRB- of about 2 more hours -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 21,
+    "format": "apc"
+  },
+  {
+    "review_text": "I took it back for an Asus and same thing - blue screen which required me to remove the $T$ to reset .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 22,
+    "format": "apc"
+  },
+  {
+    "review_text": "still testing the $T$ as i thought it would be better , but am very happy with the upgrade .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 99,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has a 10 hour $T$ when you 're doing web browsing and word editing , making it perfect for the classroom or office , and in terms of gaming and movie playing it 'll have a battery life of just over 5 hours .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 111,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has a 10 hour battery life when you 're doing web browsing and word editing , making it perfect for the classroom or office , and in terms of gaming and movie playing it 'll have a $T$ of just over 5 hours .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 112,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ seems to be very good , and have had no issues with it .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 121,
+    "format": "apc"
+  },
+  {
+    "review_text": "Enabling the $T$ is useless .",
+    "aspect": "battery timer",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 122,
+    "format": "apc"
+  },
+  {
+    "review_text": "2 months later , the $T$ went .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 153,
+    "format": "apc"
+  },
+  {
+    "review_text": "And not to mention after using it for a few months or so , the $T$ will slowly less and less hold a charge until you ca n't leave it unplugged for more than 5 minutes without the thing dying .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 162,
+    "format": "apc"
+  },
+  {
+    "review_text": "Another thing I might add is the $T$ is excellent .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 183,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great $T$ , speed , display .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 198,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 've been impressed with the $T$ and the performance for such a small amount of memory .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 202,
+    "format": "apc"
+  },
+  {
+    "review_text": "Suffice it to say , my MacBook Pro keeps me going with its long $T$ and blazing speed .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 332,
+    "format": "apc"
+  },
+  {
+    "review_text": "Well I spilled something on it and they replaced it with this model , which gets hot and the $T$ does n't make it through 1 DVD .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 339,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was shorter than expected .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 450,
+    "format": "apc"
+  },
+  {
+    "review_text": "Not to mention , the $T$ is absolutely amazing .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 472,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's fast and has excellent $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 477,
+    "format": "apc"
+  },
+  {
+    "review_text": "The little $T$ that it did have would only last about an hour while just having it on the desktop .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 491,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has not decreased since I bought it , so i 'm thrilled with that .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 557,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is amazingly long at 7hrs and 5hrs if you use it .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 583,
+    "format": "apc"
+  },
+  {
+    "review_text": "lightweight , long $T$ , excellent transition from PC ;",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 584,
+    "format": "apc"
+  },
+  {
+    "review_text": "I would like at least a 4 hr . $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 601,
+    "format": "apc"
+  },
+  {
+    "review_text": "MacBook Notebooks quickly die out because of their short $T$ , as well as the many background programs that run without the user 's knowlede .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 604,
+    "format": "apc"
+  },
+  {
+    "review_text": "Very long-life $T$ -LRB- up to 10-11 hours depending on how you configure power level settings -RRB- .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 621,
+    "format": "apc"
+  },
+  {
+    "review_text": "Screen is awesome , $T$ is good .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 623,
+    "format": "apc"
+  },
+  {
+    "review_text": "They gave me a hard time yet again , but their was a malfunction in the $T$ itself , it did n't die .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 628,
+    "format": "apc"
+  },
+  {
+    "review_text": "Has a 5-6 hour $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 722,
+    "format": "apc"
+  },
+  {
+    "review_text": "Despite the inconvenient weight , I opted for the $T$ .",
+    "aspect": "12 cell battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 746,
+    "format": "apc"
+  },
+  {
+    "review_text": "A SECOND PROBLEM INVOLVES THE $T$ WHICH IS ADVERTISED AS HAVING A STORAGE LIFE OF 11 HOURS BUT WHEN FULLY CHARGED SHOWS ONLY 7 HOURS OF SERVICE .",
+    "aspect": "BATTERY",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 769,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has never worked well .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 816,
+    "format": "apc"
+  },
+  {
+    "review_text": "10 hours of $T$ is really something else ...",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 844,
+    "format": "apc"
+  },
+  {
+    "review_text": "My laptop now has no $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 856,
+    "format": "apc"
+  },
+  {
+    "review_text": ": - -RRB- If you buy this - do n't go into it expecting 7 hrs of $T$ , and you 'll be perfectly satisfied .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 859,
+    "format": "apc"
+  },
+  {
+    "review_text": "Needs longer lasting $T$ , More than 1 to 2 Hrs .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 860,
+    "format": "apc"
+  },
+  {
+    "review_text": "10 plus hours of $T$ ...",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 862,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's so bad that I 'm thinking I only got half a $T$ or something .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 896,
+    "format": "apc"
+  },
+  {
+    "review_text": "Good keyboard , long $T$ , largest hard drive and windows 7 .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 898,
+    "format": "apc"
+  },
+  {
+    "review_text": "My $T$ went bad about a year and a half after having it and it cost around eighty to a hundred dollars !",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 905,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall I feel this netbook was poor quality , had poor performance , although it did have great $T$ when it did work .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 914,
+    "format": "apc"
+  },
+  {
+    "review_text": "great $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 920,
+    "format": "apc"
+  },
+  {
+    "review_text": "Laptops are usually used on the go , so why not give you a better $T$ ?",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 936,
+    "format": "apc"
+  },
+  {
+    "review_text": "My real problem with it ? The statement of 7 hour $T$ is not just mere exaggeration -- it 's a lie .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 960,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is also relatively good .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 961,
+    "format": "apc"
+  },
+  {
+    "review_text": "The first full charge of this $T$ got me only about 2 full hours .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1092,
+    "format": "apc"
+  },
+  {
+    "review_text": "I use this for my tutoring business , and since I 'm always bouncing from student to student , it is ideal for portability and $T$ -LRB- yes , it gets the 8 hours as advertised ! -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1120,
+    "format": "apc"
+  },
+  {
+    "review_text": "The downside to this netbook is pretty much the same for any netbook : screen size is not something I 'd stare at for the entire 10-11 hours of $T$ five days a week .",
+    "aspect": "battery life",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1131,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is great .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1149,
+    "format": "apc"
+  },
+  {
+    "review_text": "I sent it back and found this time that the $T$ was faulty , so I got a new one and some other fixes they found .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1164,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only thing is that the $T$ wo n't last more than 1/2 an hour .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1174,
+    "format": "apc"
+  },
+  {
+    "review_text": "They went through asking me open up various components , taking $T$ out , hard disk apart , and after 2 hours on phone could not fix it .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1178,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ does n't last long but I 'm sure an upgrade battery would solve that problem .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1180,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery does n't last long but I 'm sure an upgrade $T$ would solve that problem .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1181,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is amazing , the versitility is outstanding .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1195,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , the $T$ does not last very long at all .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1218,
+    "format": "apc"
+  },
+  {
+    "review_text": "- When $T$ went to 4 hours or less , took it to the MacHouse Amsterdam for repair -LRB- 26th of August -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1239,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ gets so HOT it is scary .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1240,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only downfall is the $T$ only last 1.5-2 .0 hrs when not plugged in .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1268,
+    "format": "apc"
+  },
+  {
+    "review_text": "Aside from the trial software and the short $T$ , lack of a webcam , its great .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1271,
+    "format": "apc"
+  },
+  {
+    "review_text": "also the $T$ is completely shot .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1290,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is not upgradable to a longer life battery .",
+    "aspect": "Battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1317,
+    "format": "apc"
+  },
+  {
+    "review_text": "Battery is not upgradable to a longer life $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1318,
+    "format": "apc"
+  },
+  {
+    "review_text": "After replacing the hard drive the $T$ stopped working -LRB- 3 months of use -RRB- which was frustrating .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1386,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ sucked the juice from my laptop and when the extended life battery went out we were SOL there to , so much for that warranty covering all the products we purchased .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1400,
+    "format": "apc"
+  },
+  {
+    "review_text": "Eventually my $T$ would n't charge , so unless I had it plugged in it would n't even power on .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1413,
+    "format": "apc"
+  },
+  {
+    "review_text": "Another issue I have with it is the $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1434,
+    "format": "apc"
+  },
+  {
+    "review_text": "That included the extra Sony Sonic Stage software , the speakers and the subwoofer I got -LRB- that WAS worth the money -RRB- , the bluetooth mouse for my supposedly bluetooth enabled computer , the $T$ and the Docking port .",
+    "aspect": "extended life battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1440,
+    "format": "apc"
+  },
+  {
+    "review_text": "I would recommend this computer to anyone searching for the perfect laptop , and the $T$ is amazing .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1473,
+    "format": "apc"
+  },
+  {
+    "review_text": "I love its solid build , light wt and excellent $T$ -LRB- for now -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1526,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ holds up well , it 's built very solidly , and runs fast .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1531,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is a nicely sized laptop with lots of processing power and long $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1536,
+    "format": "apc"
+  },
+  {
+    "review_text": "- Computer crashed frequently and $T$ decreased very quickly .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1544,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is lasting about 6 hours as I am surfing the web on Sundays while checking football scores and watching funny Youtube videos .",
+    "aspect": "Battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1571,
+    "format": "apc"
+  },
+  {
+    "review_text": "After a couple of years , my battery life began to diminish but was replaced for free due to a company-wide recall of my particular $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1583,
+    "format": "apc"
+  },
+  {
+    "review_text": "The system constantly overheats , the $T$ is too short , the case is coming apart , and my core applications that I use every day in my work as a graphic artist run poorly .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1584,
+    "format": "apc"
+  },
+  {
+    "review_text": "There is a small red circle next to it with a x in the middle , and when I click on it it says : '' Consider replacing your $T$ '' and it does not hold full charge .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1608,
+    "format": "apc"
+  },
+  {
+    "review_text": "I bought it for my mom and she reports that the $T$ lasts all day for her , it 's very lightweight , and the response for the computing she 's doing -LRB- Internet focused activity : mail , research , etc. -RRB- is excellent ;",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1613,
+    "format": "apc"
+  },
+  {
+    "review_text": "pros : the macbook pro notebook has a large $T$ and you wont have to worry to charge your laptop every five hours or so .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1670,
+    "format": "apc"
+  },
+  {
+    "review_text": "I could n't believe how long the $T$ lasted on a single charge .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1686,
+    "format": "apc"
+  },
+  {
+    "review_text": "I know what 7 hrs of $T$ looks like .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1697,
+    "format": "apc"
+  },
+  {
+    "review_text": "The display on this computer is the best I 've seen in a very long time , the $T$ is very long and very convienent .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1751,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ also does n't keep up with the claim but still I think macbook is much ahead from the rest of the pack .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1815,
+    "format": "apc"
+  },
+  {
+    "review_text": "Everything I have tried has worked and I never have to carry the wall charger cause the $T$ is so awesome .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1821,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is probably an hour at best .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1822,
+    "format": "apc"
+  },
+  {
+    "review_text": "After replacing the hard drive the $T$ stopped working -LRB- 3 months of use -RRB- which was frustrating .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1844,
+    "format": "apc"
+  },
+  {
+    "review_text": "the $T$ is irreplaceable .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1924,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ could be better but overall for the price and Toshiba 's reputation for laptops it 's great !",
+    "aspect": "Battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1940,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ never held a charge longer than one hour and within two months , stopped holding a charge for more than ten minutes .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1942,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ never held a charge longer than one hour and within two months , stopped holding a charge for more than ten minutes .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1972,
+    "format": "apc"
+  },
+  {
+    "review_text": "very convenient when you travel and the $T$ is excellent ...",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1981,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was supposed to be 6 hours , but even if I ran off the battery with the high effeciency setting the battery would only last me on average about 2.5 to 3 hours .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1995,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery life was supposed to be 6 hours , but even if I ran off the $T$ with the high effeciency setting the battery would only last me on average about 2.5 to 3 hours .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1996,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery life was supposed to be 6 hours , but even if I ran off the battery with the high effeciency setting the $T$ would only last me on average about 2.5 to 3 hours .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1997,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ also does n't keep up with the claim but still I think macbook is much ahead from the rest of the pack .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2001,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ needs more life .",
+    "aspect": "Battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2036,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is light and the $T$ last a very long time .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2135,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall : Poor , Features : Average , Performance : Poor , $T$ : Excellent , Price-Value : Poor",
+    "aspect": "Battery Life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2169,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is good to know that I can mobilize without having to worry about the $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2204,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is really long .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2229,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ , before the battery completely died of course , left much to be desired .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2258,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery life , before the $T$ completely died of course , left much to be desired .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2259,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has a lot of memory and a great $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2275,
+    "format": "apc"
+  },
+  {
+    "review_text": "Crisp screen , great $T$ , and plenty of storage .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2294,
+    "format": "apc"
+  },
+  {
+    "review_text": "I am pleased with the fast log on , speedy WiFi connection and the long $T$ -LRB- > 6 hrs -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 15,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is excellent - 6-7 hours without charging .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 25,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is really thick around the $T$ .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 106,
+    "format": "apc"
+  },
+  {
+    "review_text": "Awesome form factor , great $T$ , wonderful UX .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 127,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's so nice that the $T$ last so long and that this machine has the snow lion !",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 147,
+    "format": "apc"
+  },
+  {
+    "review_text": "Does everything I need it to , has a wonderful $T$ and I could n't be happier .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 155,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ lasts as advertised -LRB- give or take 15-20 minutes -RRB- , and the entire user experience is very elegant .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 237,
+    "format": "apc"
+  },
+  {
+    "review_text": "It was also suffering from hardware -LRB- keyboard -RRB- issues , relatively slow performance and shortening $T$ .",
+    "aspect": "battery lifetime",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 290,
+    "format": "apc"
+  },
+  {
+    "review_text": "However , it did not have any scratches , ZERO $T$ -LRB- pretty surprised -RRB- , and all the hardware seemed to be working perfectly .",
+    "aspect": "battery cycle count",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 307,
+    "format": "apc"
+  },
+  {
+    "review_text": "The power plug has to be connected to the power adaptor to charge the $T$ but wo n't stay connected .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 450,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was completely dead , in fact it had grown about a quarter inch thick lump on the underside .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 451,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is not as shown in the product photos .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 488,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is excellent , the display is excellent , and downloading apps is a breeze .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 575,
+    "format": "apc"
+  },
+  {
+    "review_text": "This by far beats any computer out on the market today built well , $T$ AMAZING .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 598,
+    "format": "apc"
+  },
+  {
+    "review_text": "also ... - excellent operating system - size and weight for optimal mobility - excellent $T$ - the functions provided by the trackpad is unmatched by any other brand -",
+    "aspect": "durability of the battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 630,
+    "format": "apc"
+  },
+  {
+    "review_text": "I charge it at night and skip taking the cord with me because of the good $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1,
+    "format": "apc"
+  },
+  {
+    "review_text": "My only disappointment with the 13 '' model is that they 're the only ones in the MacBook Pro line up without an i5 or i7 processor and dual graphics cards , however the trade-off is that you achieve a longer $T$ -LRB- of about 2 more hours -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 21,
+    "format": "apc"
+  },
+  {
+    "review_text": "I took it back for an Asus and same thing - blue screen which required me to remove the $T$ to reset .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 22,
+    "format": "apc"
+  },
+  {
+    "review_text": "still testing the $T$ as i thought it would be better , but am very happy with the upgrade .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 99,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has a 10 hour $T$ when you 're doing web browsing and word editing , making it perfect for the classroom or office , and in terms of gaming and movie playing it 'll have a battery life of just over 5 hours .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 111,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has a 10 hour battery life when you 're doing web browsing and word editing , making it perfect for the classroom or office , and in terms of gaming and movie playing it 'll have a $T$ of just over 5 hours .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 112,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ seems to be very good , and have had no issues with it .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 121,
+    "format": "apc"
+  },
+  {
+    "review_text": "Enabling the $T$ is useless .",
+    "aspect": "battery timer",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 122,
+    "format": "apc"
+  },
+  {
+    "review_text": "2 months later , the $T$ went .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 153,
+    "format": "apc"
+  },
+  {
+    "review_text": "And not to mention after using it for a few months or so , the $T$ will slowly less and less hold a charge until you ca n't leave it unplugged for more than 5 minutes without the thing dying .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 162,
+    "format": "apc"
+  },
+  {
+    "review_text": "Another thing I might add is the $T$ is excellent .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 183,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great $T$ , speed , display .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 198,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 've been impressed with the $T$ and the performance for such a small amount of memory .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 202,
+    "format": "apc"
+  },
+  {
+    "review_text": "Suffice it to say , my MacBook Pro keeps me going with its long $T$ and blazing speed .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 332,
+    "format": "apc"
+  },
+  {
+    "review_text": "Well I spilled something on it and they replaced it with this model , which gets hot and the $T$ does n't make it through 1 DVD .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 339,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was shorter than expected .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 450,
+    "format": "apc"
+  },
+  {
+    "review_text": "Not to mention , the $T$ is absolutely amazing .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 472,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's fast and has excellent $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 477,
+    "format": "apc"
+  },
+  {
+    "review_text": "The little $T$ that it did have would only last about an hour while just having it on the desktop .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 491,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has not decreased since I bought it , so i 'm thrilled with that .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 557,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is amazingly long at 7hrs and 5hrs if you use it .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 583,
+    "format": "apc"
+  },
+  {
+    "review_text": "lightweight , long $T$ , excellent transition from PC ;",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 584,
+    "format": "apc"
+  },
+  {
+    "review_text": "I would like at least a 4 hr . $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 601,
+    "format": "apc"
+  },
+  {
+    "review_text": "MacBook Notebooks quickly die out because of their short $T$ , as well as the many background programs that run without the user 's knowlede .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 604,
+    "format": "apc"
+  },
+  {
+    "review_text": "Very long-life $T$ -LRB- up to 10-11 hours depending on how you configure power level settings -RRB- .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 621,
+    "format": "apc"
+  },
+  {
+    "review_text": "Screen is awesome , $T$ is good .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 623,
+    "format": "apc"
+  },
+  {
+    "review_text": "They gave me a hard time yet again , but their was a malfunction in the $T$ itself , it did n't die .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 628,
+    "format": "apc"
+  },
+  {
+    "review_text": "Has a 5-6 hour $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 722,
+    "format": "apc"
+  },
+  {
+    "review_text": "Despite the inconvenient weight , I opted for the $T$ .",
+    "aspect": "12 cell battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 746,
+    "format": "apc"
+  },
+  {
+    "review_text": "A SECOND PROBLEM INVOLVES THE $T$ WHICH IS ADVERTISED AS HAVING A STORAGE LIFE OF 11 HOURS BUT WHEN FULLY CHARGED SHOWS ONLY 7 HOURS OF SERVICE .",
+    "aspect": "BATTERY",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 769,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has never worked well .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 816,
+    "format": "apc"
+  },
+  {
+    "review_text": "10 hours of $T$ is really something else ...",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 844,
+    "format": "apc"
+  },
+  {
+    "review_text": "My laptop now has no $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 856,
+    "format": "apc"
+  },
+  {
+    "review_text": ": - -RRB- If you buy this - do n't go into it expecting 7 hrs of $T$ , and you 'll be perfectly satisfied .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 859,
+    "format": "apc"
+  },
+  {
+    "review_text": "Needs longer lasting $T$ , More than 1 to 2 Hrs .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 860,
+    "format": "apc"
+  },
+  {
+    "review_text": "10 plus hours of $T$ ...",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 862,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's so bad that I 'm thinking I only got half a $T$ or something .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 896,
+    "format": "apc"
+  },
+  {
+    "review_text": "Good keyboard , long $T$ , largest hard drive and windows 7 .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 898,
+    "format": "apc"
+  },
+  {
+    "review_text": "My $T$ went bad about a year and a half after having it and it cost around eighty to a hundred dollars !",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 905,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall I feel this netbook was poor quality , had poor performance , although it did have great $T$ when it did work .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 914,
+    "format": "apc"
+  },
+  {
+    "review_text": "great $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 920,
+    "format": "apc"
+  },
+  {
+    "review_text": "Laptops are usually used on the go , so why not give you a better $T$ ?",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 936,
+    "format": "apc"
+  },
+  {
+    "review_text": "My real problem with it ? The statement of 7 hour $T$ is not just mere exaggeration -- it 's a lie .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 960,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is also relatively good .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 961,
+    "format": "apc"
+  },
+  {
+    "review_text": "The first full charge of this $T$ got me only about 2 full hours .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1092,
+    "format": "apc"
+  },
+  {
+    "review_text": "I use this for my tutoring business , and since I 'm always bouncing from student to student , it is ideal for portability and $T$ -LRB- yes , it gets the 8 hours as advertised ! -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1120,
+    "format": "apc"
+  },
+  {
+    "review_text": "The downside to this netbook is pretty much the same for any netbook : screen size is not something I 'd stare at for the entire 10-11 hours of $T$ five days a week .",
+    "aspect": "battery life",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1131,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is great .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1149,
+    "format": "apc"
+  },
+  {
+    "review_text": "I sent it back and found this time that the $T$ was faulty , so I got a new one and some other fixes they found .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1164,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only thing is that the $T$ wo n't last more than 1/2 an hour .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1174,
+    "format": "apc"
+  },
+  {
+    "review_text": "They went through asking me open up various components , taking $T$ out , hard disk apart , and after 2 hours on phone could not fix it .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1178,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ does n't last long but I 'm sure an upgrade battery would solve that problem .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1180,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery does n't last long but I 'm sure an upgrade $T$ would solve that problem .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1181,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is amazing , the versitility is outstanding .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1195,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , the $T$ does not last very long at all .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1218,
+    "format": "apc"
+  },
+  {
+    "review_text": "- When $T$ went to 4 hours or less , took it to the MacHouse Amsterdam for repair -LRB- 26th of August -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1239,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ gets so HOT it is scary .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1240,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only downfall is the $T$ only last 1.5-2 .0 hrs when not plugged in .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1268,
+    "format": "apc"
+  },
+  {
+    "review_text": "Aside from the trial software and the short $T$ , lack of a webcam , its great .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1271,
+    "format": "apc"
+  },
+  {
+    "review_text": "also the $T$ is completely shot .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1290,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is not upgradable to a longer life battery .",
+    "aspect": "Battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1317,
+    "format": "apc"
+  },
+  {
+    "review_text": "Battery is not upgradable to a longer life $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1318,
+    "format": "apc"
+  },
+  {
+    "review_text": "After replacing the hard drive the $T$ stopped working -LRB- 3 months of use -RRB- which was frustrating .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1386,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ sucked the juice from my laptop and when the extended life battery went out we were SOL there to , so much for that warranty covering all the products we purchased .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1400,
+    "format": "apc"
+  },
+  {
+    "review_text": "Eventually my $T$ would n't charge , so unless I had it plugged in it would n't even power on .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1413,
+    "format": "apc"
+  },
+  {
+    "review_text": "Another issue I have with it is the $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1434,
+    "format": "apc"
+  },
+  {
+    "review_text": "That included the extra Sony Sonic Stage software , the speakers and the subwoofer I got -LRB- that WAS worth the money -RRB- , the bluetooth mouse for my supposedly bluetooth enabled computer , the $T$ and the Docking port .",
+    "aspect": "extended life battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1440,
+    "format": "apc"
+  },
+  {
+    "review_text": "I would recommend this computer to anyone searching for the perfect laptop , and the $T$ is amazing .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1473,
+    "format": "apc"
+  },
+  {
+    "review_text": "I love its solid build , light wt and excellent $T$ -LRB- for now -RRB- .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1526,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ holds up well , it 's built very solidly , and runs fast .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1531,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is a nicely sized laptop with lots of processing power and long $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1536,
+    "format": "apc"
+  },
+  {
+    "review_text": "- Computer crashed frequently and $T$ decreased very quickly .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1544,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is lasting about 6 hours as I am surfing the web on Sundays while checking football scores and watching funny Youtube videos .",
+    "aspect": "Battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1571,
+    "format": "apc"
+  },
+  {
+    "review_text": "After a couple of years , my battery life began to diminish but was replaced for free due to a company-wide recall of my particular $T$ .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1583,
+    "format": "apc"
+  },
+  {
+    "review_text": "The system constantly overheats , the $T$ is too short , the case is coming apart , and my core applications that I use every day in my work as a graphic artist run poorly .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1584,
+    "format": "apc"
+  },
+  {
+    "review_text": "There is a small red circle next to it with a x in the middle , and when I click on it it says : '' Consider replacing your $T$ '' and it does not hold full charge .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1608,
+    "format": "apc"
+  },
+  {
+    "review_text": "I bought it for my mom and she reports that the $T$ lasts all day for her , it 's very lightweight , and the response for the computing she 's doing -LRB- Internet focused activity : mail , research , etc. -RRB- is excellent ;",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1613,
+    "format": "apc"
+  },
+  {
+    "review_text": "pros : the macbook pro notebook has a large $T$ and you wont have to worry to charge your laptop every five hours or so .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1670,
+    "format": "apc"
+  },
+  {
+    "review_text": "I could n't believe how long the $T$ lasted on a single charge .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1686,
+    "format": "apc"
+  },
+  {
+    "review_text": "I know what 7 hrs of $T$ looks like .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1697,
+    "format": "apc"
+  },
+  {
+    "review_text": "The display on this computer is the best I 've seen in a very long time , the $T$ is very long and very convienent .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1751,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ also does n't keep up with the claim but still I think macbook is much ahead from the rest of the pack .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1815,
+    "format": "apc"
+  },
+  {
+    "review_text": "Everything I have tried has worked and I never have to carry the wall charger cause the $T$ is so awesome .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1821,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is probably an hour at best .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1822,
+    "format": "apc"
+  },
+  {
+    "review_text": "After replacing the hard drive the $T$ stopped working -LRB- 3 months of use -RRB- which was frustrating .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1844,
+    "format": "apc"
+  },
+  {
+    "review_text": "the $T$ is irreplaceable .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1924,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ could be better but overall for the price and Toshiba 's reputation for laptops it 's great !",
+    "aspect": "Battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1940,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ never held a charge longer than one hour and within two months , stopped holding a charge for more than ten minutes .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1942,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ never held a charge longer than one hour and within two months , stopped holding a charge for more than ten minutes .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1972,
+    "format": "apc"
+  },
+  {
+    "review_text": "very convenient when you travel and the $T$ is excellent ...",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1981,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was supposed to be 6 hours , but even if I ran off the battery with the high effeciency setting the battery would only last me on average about 2.5 to 3 hours .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1995,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery life was supposed to be 6 hours , but even if I ran off the $T$ with the high effeciency setting the battery would only last me on average about 2.5 to 3 hours .",
+    "aspect": "battery",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1996,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery life was supposed to be 6 hours , but even if I ran off the battery with the high effeciency setting the $T$ would only last me on average about 2.5 to 3 hours .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1997,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ also does n't keep up with the claim but still I think macbook is much ahead from the rest of the pack .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2001,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ needs more life .",
+    "aspect": "Battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2036,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is light and the $T$ last a very long time .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2135,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall : Poor , Features : Average , Performance : Poor , $T$ : Excellent , Price-Value : Poor",
+    "aspect": "Battery Life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2169,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is good to know that I can mobilize without having to worry about the $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2204,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is really long .",
+    "aspect": "battery",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2229,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ , before the battery completely died of course , left much to be desired .",
+    "aspect": "battery life",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2258,
+    "format": "apc"
+  },
+  {
+    "review_text": "The battery life , before the $T$ completely died of course , left much to be desired .",
+    "aspect": "battery",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2259,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has a lot of memory and a great $T$ .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2275,
+    "format": "apc"
+  },
+  {
+    "review_text": "Crisp screen , great $T$ , and plenty of storage .",
+    "aspect": "battery life",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2294,
+    "format": "apc"
+  }
+]

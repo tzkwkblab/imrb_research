@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-06-12T15:00:21.191307",
+  "target_domains": [
+    "unknown",
+    "car",
+    "camera",
+    "television",
+    "restaurant",
+    "laptop"
+  ],
+  "target_features": {},
+  "domain_results": {},
+  "summary": {
+    "total_domains_processed": 0,
+    "total_samples_across_domains": 0
+  }
+}

@@ -1,0 +1,2618 @@
+[
+  {
+    "review_text": "The best thing about this laptop is the $T$ along with some of the newer features .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 43,
+    "format": "apc"
+  },
+  {
+    "review_text": "High $T$ , however .",
+    "aspect": "price tag",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 254,
+    "format": "apc"
+  },
+  {
+    "review_text": "This laptop is a great $T$ and has a sleek look .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 263,
+    "format": "apc"
+  },
+  {
+    "review_text": "Am very glad I bought it , great netbook , low $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 311,
+    "format": "apc"
+  },
+  {
+    "review_text": "Like the $T$ and operation .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 380,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is likely due to poor grounding and isolation between the components , and I 'm hoping that it can be fixed with a ground loop isolator , but I still expected better product quality for this $T$ .",
+    "aspect": "price range",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 385,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great Laptop for the $T$ , works well with action pack games .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 393,
+    "format": "apc"
+  },
+  {
+    "review_text": "Although the $T$ is higher then Dell laptops , the Macbooks are worth the dough .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 396,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's super fast and a great value for the $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 416,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is a little much , but when you start looking at the features it is worth the added cash .",
+    "aspect": "price premium",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 434,
+    "format": "apc"
+  },
+  {
+    "review_text": "Waiting for the i7 was well worth it , great value for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 502,
+    "format": "apc"
+  },
+  {
+    "review_text": "I bought this laptop because of the performance to $T$ ratio .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 517,
+    "format": "apc"
+  },
+  {
+    "review_text": "Have had many higher $T$ computers crash and burn long before ever got to use all that great memory and speed , etc. .",
+    "aspect": "priced",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 526,
+    "format": "apc"
+  },
+  {
+    "review_text": "Reason why ? It 's because when you buy it , you know first thing that you will not lose any value for that laptop , the $T$ will stay the same for the next year , and even if Apple does decides to change mode , your laptop value will only drop 10-20 % , unlike PC laptops which drop more than 80 % .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 544,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ and features more than met my needs .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 561,
+    "format": "apc"
+  },
+  {
+    "review_text": "and looks very sexyy :D really the mac book pro is the best laptop specially for students in college if you are not caring about $T$ .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 574,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is another driving influence that made me purchase this laptop .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 585,
+    "format": "apc"
+  },
+  {
+    "review_text": "All for such a great $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 612,
+    "format": "apc"
+  },
+  {
+    "review_text": "you can find many laptops with the same performance and even better with lower $T$ , but you can not find the look , easy , applications , and the experience in mac .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 631,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's a great product for a great $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 660,
+    "format": "apc"
+  },
+  {
+    "review_text": "I wiped nearly everything off of it , installed OpenOffice and Firefox , and I am operating an incredibly efficient and useful machine for a great $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 911,
+    "format": "apc"
+  },
+  {
+    "review_text": "At first , the computer seemed a great deal -- seemingly high-end specs for a low , low $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 924,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the $T$ and what I get out of it has exceeded my expectations .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 987,
+    "format": "apc"
+  },
+  {
+    "review_text": "I thought the $T$ was great for the specs .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1013,
+    "format": "apc"
+  },
+  {
+    "review_text": "I finally decided on this laptop because it was the right $T$ for what I need it .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1029,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only downfall is a lot of the software I have wo n't work with Mac and iWork is not worth the $T$ of it .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1071,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the same $T$ , you get a lot more in the Asus ... 1920x1080 res .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1117,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the -LSB- $ -RSB- $T$ -LRB- special offer -RRB- this is a great laptop .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1141,
+    "format": "apc"
+  },
+  {
+    "review_text": "I looked around and based off my $T$ / features comparison from a brand I trusted I landed here .",
+    "aspect": "price",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1220,
+    "format": "apc"
+  },
+  {
+    "review_text": "The MacBook is way too $T$ for something so simple and chaotic .",
+    "aspect": "overpriced",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1336,
+    "format": "apc"
+  },
+  {
+    "review_text": "LOVE THIS LAPTOP WONDERFUL $T$ FOR WHAT YOU GET !",
+    "aspect": "PRICE",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1410,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is easy to use , good quality and good $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1426,
+    "format": "apc"
+  },
+  {
+    "review_text": "True quality at a great $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1478,
+    "format": "apc"
+  },
+  {
+    "review_text": "After doing extensive research , macconnection had the lowest $T$ on the 15 '' MBP i5 .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1488,
+    "format": "apc"
+  },
+  {
+    "review_text": "I saw walmart had the same computer for about $ 650 but still knowing what I know now , I would not buy it at that $T$ .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1504,
+    "format": "apc"
+  },
+  {
+    "review_text": "Peformance is good for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1554,
+    "format": "apc"
+  },
+  {
+    "review_text": "The 13 '' Macbook Pro just fits in my budget and with free shipping and no tax to CA this is the best $T$ we can get for a great product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1564,
+    "format": "apc"
+  },
+  {
+    "review_text": "A cheaper $T$ should not equal a `` cheap '' product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1578,
+    "format": "apc"
+  },
+  {
+    "review_text": "I know there are way better laptops out there for the same $T$ , and why spend money on shit when you can go out and get yourself a perfectly decent laptop that doesnt suck total monkey balls .",
+    "aspect": "price",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1604,
+    "format": "apc"
+  },
+  {
+    "review_text": "It did n't come with any software installed outside of windows media , but for the $T$ , I was very pleased with the condition and the overall product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1633,
+    "format": "apc"
+  },
+  {
+    "review_text": "This laptop looks great on the surface : 17 '' inch screen , good $T$ , nice appearance , boots up quickly , runs fast etc. .",
+    "aspect": "price-point",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1664,
+    "format": "apc"
+  },
+  {
+    "review_text": "The apple systems are $T$ luxurys that ar n't worth what they are being charged for , this model 's specifications are far from being impressive and they only thing you get out of this is the apple name .",
+    "aspect": "over priced",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1669,
+    "format": "apc"
+  },
+  {
+    "review_text": "Disappointing for such a lovely screen and at a reasonable $T$",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1672,
+    "format": "apc"
+  },
+  {
+    "review_text": "Good $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1674,
+    "format": "apc"
+  },
+  {
+    "review_text": "Hmmm - that high failure rate sure is n't reflected in the $T$ .",
+    "aspect": "retail price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1677,
+    "format": "apc"
+  },
+  {
+    "review_text": "I took 3-4 years researching brands and $T$ of laptops .",
+    "aspect": "prices",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1728,
+    "format": "apc"
+  },
+  {
+    "review_text": "We researched and found the best $T$ at MacConnection .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1729,
+    "format": "apc"
+  },
+  {
+    "review_text": "Again , decent comp for the $T$ , and I was in need of one quickly as my other laptop died on me .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1808,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was very good , and the product is top quality .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1839,
+    "format": "apc"
+  },
+  {
+    "review_text": "Battery life could be better but overall for the $T$ and Toshiba 's reputation for laptops it 's great !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1941,
+    "format": "apc"
+  },
+  {
+    "review_text": "Apparently well-built and gorgeous to look at , the i5 MacBook Pro is a winning combination of $T$ and performance .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1951,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's $T$ very reasonable and works very well right out of the box .",
+    "aspect": "priced",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2023,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 'm really impressed with the quality and performance for the $T$ of the computer .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2075,
+    "format": "apc"
+  },
+  {
+    "review_text": "So then you may be lucky to get ahold to someone who understands that its no good and they will let you send it back , but of course you are taking a chance of them testing it out to see what has happened , and they tell you that it was not on their side , then you are stuck paying for the repair -LRB- the $T$ of a new one -RRB- .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2080,
+    "format": "apc"
+  },
+  {
+    "review_text": "The best thing to do is build your own computer , but if u ca n't company 's like dell who allow you to choose the components are better and for the same $T$ you can get a computer who compares to one of apple $ 2000 systems and if you google `` dell coupons '' you can find codes that take a signifant amount off the price .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2108,
+    "format": "apc"
+  },
+  {
+    "review_text": "The best thing to do is build your own computer , but if u ca n't company 's like dell who allow you to choose the components are better and for the same price you can get a computer who compares to one of apple $ 2000 systems and if you google `` dell coupons '' you can find codes that take a signifant amount off the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2109,
+    "format": "apc"
+  },
+  {
+    "review_text": "For me I was lucky and a local store was selling them for $ 2000 off and Best Buy matched their $T$ so I was able to buy one for under $ 100Negative",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2111,
+    "format": "apc"
+  },
+  {
+    "review_text": "I believe that the quality of a mac is worth the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2114,
+    "format": "apc"
+  },
+  {
+    "review_text": "The 13 '' Macbook Pro just fits in my budget and with free shipping and no tax to CA this is the best $T$ we can get for a great product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2117,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall : Poor , Features : Average , Performance : Poor , Battery Life : Excellent , $T$ - Value : Poor",
+    "aspect": "Price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2170,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ and purpose is awesome !",
+    "aspect": "Price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2262,
+    "format": "apc"
+  },
+  {
+    "review_text": "Worse , for the $T$ I could get a * netbook * that outperforms this machine .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2267,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is great for this model , I only plan on using it for media in the entertainment room .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2284,
+    "format": "apc"
+  },
+  {
+    "review_text": "Was very much worth the $T$ i paid .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2290,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is a great little computer for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2292,
+    "format": "apc"
+  },
+  {
+    "review_text": "The Toshiba Satellite has been more than I expected for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2298,
+    "format": "apc"
+  },
+  {
+    "review_text": "Other than not being a fan of click pads -LRB- industry standard these days -RRB- and the lousy internal speakers , it 's hard for me to find things about this notebook I do n't like , especially considering the $ 350 $T$ .",
+    "aspect": "price tag",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 6,
+    "format": "apc"
+  },
+  {
+    "review_text": "Luckily , for all of us contemplating the decision , the Mac Mini is $T$ just right .",
+    "aspect": "priced",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 18,
+    "format": "apc"
+  },
+  {
+    "review_text": "Everything I wanted and everything I needed and the $T$ was great !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 35,
+    "format": "apc"
+  },
+  {
+    "review_text": "great $T$ free shipping what else can i ask for !!",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 103,
+    "format": "apc"
+  },
+  {
+    "review_text": ":-RRB- Great product , great $T$ , great delivery , and great service .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 108,
+    "format": "apc"
+  },
+  {
+    "review_text": "I had the same reasons as most PC users : the $T$ , the overbearing restrictions of OSX and lack of support for games .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 116,
+    "format": "apc"
+  },
+  {
+    "review_text": "it has all the features that we expected and the $T$ was good , working well so far .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 179,
+    "format": "apc"
+  },
+  {
+    "review_text": "I think this is about as good as it gets at anything close to this $T$ .",
+    "aspect": "price point",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 187,
+    "format": "apc"
+  },
+  {
+    "review_text": "Thanks for the fast shipment and great $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 240,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ was higher when purchased on MAC when compared to price showing on PC when I bought this product .",
+    "aspect": "Price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 274,
+    "format": "apc"
+  },
+  {
+    "review_text": "Price was higher when purchased on MAC when compared to $T$ showing on PC when I bought this product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 275,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's absolutely wonderful and worth the $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 342,
+    "format": "apc"
+  },
+  {
+    "review_text": "fast , great screen , beautiful apps for a laptop ; $T$ at 1100 on the apple website ; amazon had it for 1098 + tax - plus i had a 10 % off coupon from amazon-cost me 998 plus tax - 1070 - OTD !",
+    "aspect": "priced",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 379,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was having a though time deciding between the 13 '' MacBook Air or the MacBook Pro 13 '' -LRB- Both baseline models , $T$ at 1,200 $ retail -RRB-",
+    "aspect": "priced",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 398,
+    "format": "apc"
+  },
+  {
+    "review_text": "CONS : $T$ is a bit ridiculous , kinda heavy .",
+    "aspect": "Price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 456,
+    "format": "apc"
+  },
+  {
+    "review_text": "Premium $T$ for the OS more than anything else .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 481,
+    "format": "apc"
+  },
+  {
+    "review_text": "If you ask me , for this $T$ it should be included .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 487,
+    "format": "apc"
+  },
+  {
+    "review_text": "I got this at an amazing $T$ from Amazon and it arrived just in time .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 529,
+    "format": "apc"
+  },
+  {
+    "review_text": "When considering a Mac , look at the total cost of ownership and not just the initial $T$ .",
+    "aspect": "price tag",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 541,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's a decent computer for the $T$ and hopefully it will last a long time .",
+    "aspect": "price",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 548,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is 200 dollars down .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 552,
+    "format": "apc"
+  },
+  {
+    "review_text": "Other than not being a fan of click pads -LRB- industry standard these days -RRB- and the lousy internal speakers , it 's hard for me to find things about this notebook I do n't like , especially considering the $ 350 $T$ .",
+    "aspect": "price tag",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 6,
+    "format": "apc"
+  },
+  {
+    "review_text": "Luckily , for all of us contemplating the decision , the Mac Mini is $T$ just right .",
+    "aspect": "priced",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 18,
+    "format": "apc"
+  },
+  {
+    "review_text": "Everything I wanted and everything I needed and the $T$ was great !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 35,
+    "format": "apc"
+  },
+  {
+    "review_text": "great $T$ free shipping what else can i ask for !!",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 103,
+    "format": "apc"
+  },
+  {
+    "review_text": ":-RRB- Great product , great $T$ , great delivery , and great service .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 108,
+    "format": "apc"
+  },
+  {
+    "review_text": "I had the same reasons as most PC users : the $T$ , the overbearing restrictions of OSX and lack of support for games .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 116,
+    "format": "apc"
+  },
+  {
+    "review_text": "it has all the features that we expected and the $T$ was good , working well so far .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 179,
+    "format": "apc"
+  },
+  {
+    "review_text": "I think this is about as good as it gets at anything close to this $T$ .",
+    "aspect": "price point",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 187,
+    "format": "apc"
+  },
+  {
+    "review_text": "Thanks for the fast shipment and great $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 240,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ was higher when purchased on MAC when compared to price showing on PC when I bought this product .",
+    "aspect": "Price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 274,
+    "format": "apc"
+  },
+  {
+    "review_text": "Price was higher when purchased on MAC when compared to $T$ showing on PC when I bought this product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 275,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's absolutely wonderful and worth the $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 342,
+    "format": "apc"
+  },
+  {
+    "review_text": "fast , great screen , beautiful apps for a laptop ; $T$ at 1100 on the apple website ; amazon had it for 1098 + tax - plus i had a 10 % off coupon from amazon-cost me 998 plus tax - 1070 - OTD !",
+    "aspect": "priced",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 379,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was having a though time deciding between the 13 '' MacBook Air or the MacBook Pro 13 '' -LRB- Both baseline models , $T$ at 1,200 $ retail -RRB-",
+    "aspect": "priced",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 398,
+    "format": "apc"
+  },
+  {
+    "review_text": "CONS : $T$ is a bit ridiculous , kinda heavy .",
+    "aspect": "Price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 456,
+    "format": "apc"
+  },
+  {
+    "review_text": "Premium $T$ for the OS more than anything else .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 481,
+    "format": "apc"
+  },
+  {
+    "review_text": "If you ask me , for this $T$ it should be included .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 487,
+    "format": "apc"
+  },
+  {
+    "review_text": "I got this at an amazing $T$ from Amazon and it arrived just in time .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 529,
+    "format": "apc"
+  },
+  {
+    "review_text": "When considering a Mac , look at the total cost of ownership and not just the initial $T$ .",
+    "aspect": "price tag",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 541,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's a decent computer for the $T$ and hopefully it will last a long time .",
+    "aspect": "price",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 548,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is 200 dollars down .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 552,
+    "format": "apc"
+  },
+  {
+    "review_text": "The best thing about this laptop is the $T$ along with some of the newer features .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 43,
+    "format": "apc"
+  },
+  {
+    "review_text": "High $T$ , however .",
+    "aspect": "price tag",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 254,
+    "format": "apc"
+  },
+  {
+    "review_text": "This laptop is a great $T$ and has a sleek look .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 263,
+    "format": "apc"
+  },
+  {
+    "review_text": "Am very glad I bought it , great netbook , low $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 311,
+    "format": "apc"
+  },
+  {
+    "review_text": "Like the $T$ and operation .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 380,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is likely due to poor grounding and isolation between the components , and I 'm hoping that it can be fixed with a ground loop isolator , but I still expected better product quality for this $T$ .",
+    "aspect": "price range",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 385,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great Laptop for the $T$ , works well with action pack games .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 393,
+    "format": "apc"
+  },
+  {
+    "review_text": "Although the $T$ is higher then Dell laptops , the Macbooks are worth the dough .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 396,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's super fast and a great value for the $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 416,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is a little much , but when you start looking at the features it is worth the added cash .",
+    "aspect": "price premium",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 434,
+    "format": "apc"
+  },
+  {
+    "review_text": "Waiting for the i7 was well worth it , great value for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 502,
+    "format": "apc"
+  },
+  {
+    "review_text": "I bought this laptop because of the performance to $T$ ratio .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 517,
+    "format": "apc"
+  },
+  {
+    "review_text": "Have had many higher $T$ computers crash and burn long before ever got to use all that great memory and speed , etc. .",
+    "aspect": "priced",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 526,
+    "format": "apc"
+  },
+  {
+    "review_text": "Reason why ? It 's because when you buy it , you know first thing that you will not lose any value for that laptop , the $T$ will stay the same for the next year , and even if Apple does decides to change mode , your laptop value will only drop 10-20 % , unlike PC laptops which drop more than 80 % .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 544,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ and features more than met my needs .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 561,
+    "format": "apc"
+  },
+  {
+    "review_text": "and looks very sexyy :D really the mac book pro is the best laptop specially for students in college if you are not caring about $T$ .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 574,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is another driving influence that made me purchase this laptop .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 585,
+    "format": "apc"
+  },
+  {
+    "review_text": "All for such a great $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 612,
+    "format": "apc"
+  },
+  {
+    "review_text": "you can find many laptops with the same performance and even better with lower $T$ , but you can not find the look , easy , applications , and the experience in mac .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 631,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's a great product for a great $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 660,
+    "format": "apc"
+  },
+  {
+    "review_text": "I wiped nearly everything off of it , installed OpenOffice and Firefox , and I am operating an incredibly efficient and useful machine for a great $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 911,
+    "format": "apc"
+  },
+  {
+    "review_text": "At first , the computer seemed a great deal -- seemingly high-end specs for a low , low $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 924,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the $T$ and what I get out of it has exceeded my expectations .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 987,
+    "format": "apc"
+  },
+  {
+    "review_text": "I thought the $T$ was great for the specs .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1013,
+    "format": "apc"
+  },
+  {
+    "review_text": "I finally decided on this laptop because it was the right $T$ for what I need it .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1029,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only downfall is a lot of the software I have wo n't work with Mac and iWork is not worth the $T$ of it .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1071,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the same $T$ , you get a lot more in the Asus ... 1920x1080 res .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1117,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the -LSB- $ -RSB- $T$ -LRB- special offer -RRB- this is a great laptop .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1141,
+    "format": "apc"
+  },
+  {
+    "review_text": "I looked around and based off my $T$ / features comparison from a brand I trusted I landed here .",
+    "aspect": "price",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1220,
+    "format": "apc"
+  },
+  {
+    "review_text": "The MacBook is way too $T$ for something so simple and chaotic .",
+    "aspect": "overpriced",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1336,
+    "format": "apc"
+  },
+  {
+    "review_text": "LOVE THIS LAPTOP WONDERFUL $T$ FOR WHAT YOU GET !",
+    "aspect": "PRICE",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1410,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is easy to use , good quality and good $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1426,
+    "format": "apc"
+  },
+  {
+    "review_text": "True quality at a great $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1478,
+    "format": "apc"
+  },
+  {
+    "review_text": "After doing extensive research , macconnection had the lowest $T$ on the 15 '' MBP i5 .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1488,
+    "format": "apc"
+  },
+  {
+    "review_text": "I saw walmart had the same computer for about $ 650 but still knowing what I know now , I would not buy it at that $T$ .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1504,
+    "format": "apc"
+  },
+  {
+    "review_text": "Peformance is good for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1554,
+    "format": "apc"
+  },
+  {
+    "review_text": "The 13 '' Macbook Pro just fits in my budget and with free shipping and no tax to CA this is the best $T$ we can get for a great product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1564,
+    "format": "apc"
+  },
+  {
+    "review_text": "A cheaper $T$ should not equal a `` cheap '' product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1578,
+    "format": "apc"
+  },
+  {
+    "review_text": "I know there are way better laptops out there for the same $T$ , and why spend money on shit when you can go out and get yourself a perfectly decent laptop that doesnt suck total monkey balls .",
+    "aspect": "price",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1604,
+    "format": "apc"
+  },
+  {
+    "review_text": "It did n't come with any software installed outside of windows media , but for the $T$ , I was very pleased with the condition and the overall product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1633,
+    "format": "apc"
+  },
+  {
+    "review_text": "This laptop looks great on the surface : 17 '' inch screen , good $T$ , nice appearance , boots up quickly , runs fast etc. .",
+    "aspect": "price-point",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1664,
+    "format": "apc"
+  },
+  {
+    "review_text": "The apple systems are $T$ luxurys that ar n't worth what they are being charged for , this model 's specifications are far from being impressive and they only thing you get out of this is the apple name .",
+    "aspect": "over priced",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1669,
+    "format": "apc"
+  },
+  {
+    "review_text": "Disappointing for such a lovely screen and at a reasonable $T$",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1672,
+    "format": "apc"
+  },
+  {
+    "review_text": "Good $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1674,
+    "format": "apc"
+  },
+  {
+    "review_text": "Hmmm - that high failure rate sure is n't reflected in the $T$ .",
+    "aspect": "retail price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1677,
+    "format": "apc"
+  },
+  {
+    "review_text": "I took 3-4 years researching brands and $T$ of laptops .",
+    "aspect": "prices",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1728,
+    "format": "apc"
+  },
+  {
+    "review_text": "We researched and found the best $T$ at MacConnection .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1729,
+    "format": "apc"
+  },
+  {
+    "review_text": "Again , decent comp for the $T$ , and I was in need of one quickly as my other laptop died on me .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1808,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was very good , and the product is top quality .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1839,
+    "format": "apc"
+  },
+  {
+    "review_text": "Battery life could be better but overall for the $T$ and Toshiba 's reputation for laptops it 's great !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1941,
+    "format": "apc"
+  },
+  {
+    "review_text": "Apparently well-built and gorgeous to look at , the i5 MacBook Pro is a winning combination of $T$ and performance .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1951,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's $T$ very reasonable and works very well right out of the box .",
+    "aspect": "priced",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2023,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 'm really impressed with the quality and performance for the $T$ of the computer .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2075,
+    "format": "apc"
+  },
+  {
+    "review_text": "So then you may be lucky to get ahold to someone who understands that its no good and they will let you send it back , but of course you are taking a chance of them testing it out to see what has happened , and they tell you that it was not on their side , then you are stuck paying for the repair -LRB- the $T$ of a new one -RRB- .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2080,
+    "format": "apc"
+  },
+  {
+    "review_text": "The best thing to do is build your own computer , but if u ca n't company 's like dell who allow you to choose the components are better and for the same $T$ you can get a computer who compares to one of apple $ 2000 systems and if you google `` dell coupons '' you can find codes that take a signifant amount off the price .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2108,
+    "format": "apc"
+  },
+  {
+    "review_text": "The best thing to do is build your own computer , but if u ca n't company 's like dell who allow you to choose the components are better and for the same price you can get a computer who compares to one of apple $ 2000 systems and if you google `` dell coupons '' you can find codes that take a signifant amount off the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2109,
+    "format": "apc"
+  },
+  {
+    "review_text": "For me I was lucky and a local store was selling them for $ 2000 off and Best Buy matched their $T$ so I was able to buy one for under $ 100Negative",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2111,
+    "format": "apc"
+  },
+  {
+    "review_text": "I believe that the quality of a mac is worth the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2114,
+    "format": "apc"
+  },
+  {
+    "review_text": "The 13 '' Macbook Pro just fits in my budget and with free shipping and no tax to CA this is the best $T$ we can get for a great product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2117,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall : Poor , Features : Average , Performance : Poor , Battery Life : Excellent , $T$ - Value : Poor",
+    "aspect": "Price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2170,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ and purpose is awesome !",
+    "aspect": "Price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2262,
+    "format": "apc"
+  },
+  {
+    "review_text": "Worse , for the $T$ I could get a * netbook * that outperforms this machine .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2267,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is great for this model , I only plan on using it for media in the entertainment room .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2284,
+    "format": "apc"
+  },
+  {
+    "review_text": "Was very much worth the $T$ i paid .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2290,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is a great little computer for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2292,
+    "format": "apc"
+  },
+  {
+    "review_text": "The Toshiba Satellite has been more than I expected for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2298,
+    "format": "apc"
+  },
+  {
+    "review_text": "The best thing about this laptop is the $T$ along with some of the newer features .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 43,
+    "format": "apc"
+  },
+  {
+    "review_text": "High $T$ , however .",
+    "aspect": "price tag",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 254,
+    "format": "apc"
+  },
+  {
+    "review_text": "This laptop is a great $T$ and has a sleek look .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 263,
+    "format": "apc"
+  },
+  {
+    "review_text": "Am very glad I bought it , great netbook , low $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 311,
+    "format": "apc"
+  },
+  {
+    "review_text": "Like the $T$ and operation .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 380,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is likely due to poor grounding and isolation between the components , and I 'm hoping that it can be fixed with a ground loop isolator , but I still expected better product quality for this $T$ .",
+    "aspect": "price range",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 385,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great Laptop for the $T$ , works well with action pack games .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 393,
+    "format": "apc"
+  },
+  {
+    "review_text": "Although the $T$ is higher then Dell laptops , the Macbooks are worth the dough .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 396,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's super fast and a great value for the $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 416,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is a little much , but when you start looking at the features it is worth the added cash .",
+    "aspect": "price premium",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 434,
+    "format": "apc"
+  },
+  {
+    "review_text": "Waiting for the i7 was well worth it , great value for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 502,
+    "format": "apc"
+  },
+  {
+    "review_text": "I bought this laptop because of the performance to $T$ ratio .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 517,
+    "format": "apc"
+  },
+  {
+    "review_text": "Have had many higher $T$ computers crash and burn long before ever got to use all that great memory and speed , etc. .",
+    "aspect": "priced",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 526,
+    "format": "apc"
+  },
+  {
+    "review_text": "Reason why ? It 's because when you buy it , you know first thing that you will not lose any value for that laptop , the $T$ will stay the same for the next year , and even if Apple does decides to change mode , your laptop value will only drop 10-20 % , unlike PC laptops which drop more than 80 % .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 544,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ and features more than met my needs .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 561,
+    "format": "apc"
+  },
+  {
+    "review_text": "and looks very sexyy :D really the mac book pro is the best laptop specially for students in college if you are not caring about $T$ .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 574,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is another driving influence that made me purchase this laptop .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 585,
+    "format": "apc"
+  },
+  {
+    "review_text": "All for such a great $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 612,
+    "format": "apc"
+  },
+  {
+    "review_text": "you can find many laptops with the same performance and even better with lower $T$ , but you can not find the look , easy , applications , and the experience in mac .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 631,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's a great product for a great $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 660,
+    "format": "apc"
+  },
+  {
+    "review_text": "I wiped nearly everything off of it , installed OpenOffice and Firefox , and I am operating an incredibly efficient and useful machine for a great $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 911,
+    "format": "apc"
+  },
+  {
+    "review_text": "At first , the computer seemed a great deal -- seemingly high-end specs for a low , low $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 924,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the $T$ and what I get out of it has exceeded my expectations .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 987,
+    "format": "apc"
+  },
+  {
+    "review_text": "I thought the $T$ was great for the specs .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1013,
+    "format": "apc"
+  },
+  {
+    "review_text": "I finally decided on this laptop because it was the right $T$ for what I need it .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1029,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only downfall is a lot of the software I have wo n't work with Mac and iWork is not worth the $T$ of it .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1071,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the same $T$ , you get a lot more in the Asus ... 1920x1080 res .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1117,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the -LSB- $ -RSB- $T$ -LRB- special offer -RRB- this is a great laptop .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1141,
+    "format": "apc"
+  },
+  {
+    "review_text": "I looked around and based off my $T$ / features comparison from a brand I trusted I landed here .",
+    "aspect": "price",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1220,
+    "format": "apc"
+  },
+  {
+    "review_text": "The MacBook is way too $T$ for something so simple and chaotic .",
+    "aspect": "overpriced",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1336,
+    "format": "apc"
+  },
+  {
+    "review_text": "LOVE THIS LAPTOP WONDERFUL $T$ FOR WHAT YOU GET !",
+    "aspect": "PRICE",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1410,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is easy to use , good quality and good $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1426,
+    "format": "apc"
+  },
+  {
+    "review_text": "True quality at a great $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1478,
+    "format": "apc"
+  },
+  {
+    "review_text": "After doing extensive research , macconnection had the lowest $T$ on the 15 '' MBP i5 .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1488,
+    "format": "apc"
+  },
+  {
+    "review_text": "I saw walmart had the same computer for about $ 650 but still knowing what I know now , I would not buy it at that $T$ .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1504,
+    "format": "apc"
+  },
+  {
+    "review_text": "Peformance is good for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1554,
+    "format": "apc"
+  },
+  {
+    "review_text": "The 13 '' Macbook Pro just fits in my budget and with free shipping and no tax to CA this is the best $T$ we can get for a great product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1564,
+    "format": "apc"
+  },
+  {
+    "review_text": "A cheaper $T$ should not equal a `` cheap '' product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1578,
+    "format": "apc"
+  },
+  {
+    "review_text": "I know there are way better laptops out there for the same $T$ , and why spend money on shit when you can go out and get yourself a perfectly decent laptop that doesnt suck total monkey balls .",
+    "aspect": "price",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1604,
+    "format": "apc"
+  },
+  {
+    "review_text": "It did n't come with any software installed outside of windows media , but for the $T$ , I was very pleased with the condition and the overall product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1633,
+    "format": "apc"
+  },
+  {
+    "review_text": "This laptop looks great on the surface : 17 '' inch screen , good $T$ , nice appearance , boots up quickly , runs fast etc. .",
+    "aspect": "price-point",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1664,
+    "format": "apc"
+  },
+  {
+    "review_text": "The apple systems are $T$ luxurys that ar n't worth what they are being charged for , this model 's specifications are far from being impressive and they only thing you get out of this is the apple name .",
+    "aspect": "over priced",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1669,
+    "format": "apc"
+  },
+  {
+    "review_text": "Disappointing for such a lovely screen and at a reasonable $T$",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1672,
+    "format": "apc"
+  },
+  {
+    "review_text": "Good $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1674,
+    "format": "apc"
+  },
+  {
+    "review_text": "Hmmm - that high failure rate sure is n't reflected in the $T$ .",
+    "aspect": "retail price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1677,
+    "format": "apc"
+  },
+  {
+    "review_text": "I took 3-4 years researching brands and $T$ of laptops .",
+    "aspect": "prices",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1728,
+    "format": "apc"
+  },
+  {
+    "review_text": "We researched and found the best $T$ at MacConnection .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1729,
+    "format": "apc"
+  },
+  {
+    "review_text": "Again , decent comp for the $T$ , and I was in need of one quickly as my other laptop died on me .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1808,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was very good , and the product is top quality .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1839,
+    "format": "apc"
+  },
+  {
+    "review_text": "Battery life could be better but overall for the $T$ and Toshiba 's reputation for laptops it 's great !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1941,
+    "format": "apc"
+  },
+  {
+    "review_text": "Apparently well-built and gorgeous to look at , the i5 MacBook Pro is a winning combination of $T$ and performance .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1951,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's $T$ very reasonable and works very well right out of the box .",
+    "aspect": "priced",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2023,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 'm really impressed with the quality and performance for the $T$ of the computer .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2075,
+    "format": "apc"
+  },
+  {
+    "review_text": "So then you may be lucky to get ahold to someone who understands that its no good and they will let you send it back , but of course you are taking a chance of them testing it out to see what has happened , and they tell you that it was not on their side , then you are stuck paying for the repair -LRB- the $T$ of a new one -RRB- .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2080,
+    "format": "apc"
+  },
+  {
+    "review_text": "The best thing to do is build your own computer , but if u ca n't company 's like dell who allow you to choose the components are better and for the same $T$ you can get a computer who compares to one of apple $ 2000 systems and if you google `` dell coupons '' you can find codes that take a signifant amount off the price .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2108,
+    "format": "apc"
+  },
+  {
+    "review_text": "The best thing to do is build your own computer , but if u ca n't company 's like dell who allow you to choose the components are better and for the same price you can get a computer who compares to one of apple $ 2000 systems and if you google `` dell coupons '' you can find codes that take a signifant amount off the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2109,
+    "format": "apc"
+  },
+  {
+    "review_text": "For me I was lucky and a local store was selling them for $ 2000 off and Best Buy matched their $T$ so I was able to buy one for under $ 100Negative",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2111,
+    "format": "apc"
+  },
+  {
+    "review_text": "I believe that the quality of a mac is worth the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2114,
+    "format": "apc"
+  },
+  {
+    "review_text": "The 13 '' Macbook Pro just fits in my budget and with free shipping and no tax to CA this is the best $T$ we can get for a great product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2117,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall : Poor , Features : Average , Performance : Poor , Battery Life : Excellent , $T$ - Value : Poor",
+    "aspect": "Price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2170,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ and purpose is awesome !",
+    "aspect": "Price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2262,
+    "format": "apc"
+  },
+  {
+    "review_text": "Worse , for the $T$ I could get a * netbook * that outperforms this machine .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2267,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is great for this model , I only plan on using it for media in the entertainment room .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2284,
+    "format": "apc"
+  },
+  {
+    "review_text": "Was very much worth the $T$ i paid .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2290,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is a great little computer for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2292,
+    "format": "apc"
+  },
+  {
+    "review_text": "The Toshiba Satellite has been more than I expected for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2298,
+    "format": "apc"
+  },
+  {
+    "review_text": "Other than not being a fan of click pads -LRB- industry standard these days -RRB- and the lousy internal speakers , it 's hard for me to find things about this notebook I do n't like , especially considering the $ 350 $T$ .",
+    "aspect": "price tag",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 6,
+    "format": "apc"
+  },
+  {
+    "review_text": "Luckily , for all of us contemplating the decision , the Mac Mini is $T$ just right .",
+    "aspect": "priced",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 18,
+    "format": "apc"
+  },
+  {
+    "review_text": "Everything I wanted and everything I needed and the $T$ was great !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 35,
+    "format": "apc"
+  },
+  {
+    "review_text": "great $T$ free shipping what else can i ask for !!",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 103,
+    "format": "apc"
+  },
+  {
+    "review_text": ":-RRB- Great product , great $T$ , great delivery , and great service .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 108,
+    "format": "apc"
+  },
+  {
+    "review_text": "I had the same reasons as most PC users : the $T$ , the overbearing restrictions of OSX and lack of support for games .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 116,
+    "format": "apc"
+  },
+  {
+    "review_text": "it has all the features that we expected and the $T$ was good , working well so far .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 179,
+    "format": "apc"
+  },
+  {
+    "review_text": "I think this is about as good as it gets at anything close to this $T$ .",
+    "aspect": "price point",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 187,
+    "format": "apc"
+  },
+  {
+    "review_text": "Thanks for the fast shipment and great $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 240,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ was higher when purchased on MAC when compared to price showing on PC when I bought this product .",
+    "aspect": "Price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 274,
+    "format": "apc"
+  },
+  {
+    "review_text": "Price was higher when purchased on MAC when compared to $T$ showing on PC when I bought this product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 275,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's absolutely wonderful and worth the $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 342,
+    "format": "apc"
+  },
+  {
+    "review_text": "fast , great screen , beautiful apps for a laptop ; $T$ at 1100 on the apple website ; amazon had it for 1098 + tax - plus i had a 10 % off coupon from amazon-cost me 998 plus tax - 1070 - OTD !",
+    "aspect": "priced",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 379,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was having a though time deciding between the 13 '' MacBook Air or the MacBook Pro 13 '' -LRB- Both baseline models , $T$ at 1,200 $ retail -RRB-",
+    "aspect": "priced",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 398,
+    "format": "apc"
+  },
+  {
+    "review_text": "CONS : $T$ is a bit ridiculous , kinda heavy .",
+    "aspect": "Price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 456,
+    "format": "apc"
+  },
+  {
+    "review_text": "Premium $T$ for the OS more than anything else .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 481,
+    "format": "apc"
+  },
+  {
+    "review_text": "If you ask me , for this $T$ it should be included .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 487,
+    "format": "apc"
+  },
+  {
+    "review_text": "I got this at an amazing $T$ from Amazon and it arrived just in time .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 529,
+    "format": "apc"
+  },
+  {
+    "review_text": "When considering a Mac , look at the total cost of ownership and not just the initial $T$ .",
+    "aspect": "price tag",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 541,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's a decent computer for the $T$ and hopefully it will last a long time .",
+    "aspect": "price",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 548,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is 200 dollars down .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 552,
+    "format": "apc"
+  },
+  {
+    "review_text": "The best thing about this laptop is the $T$ along with some of the newer features .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 43,
+    "format": "apc"
+  },
+  {
+    "review_text": "High $T$ , however .",
+    "aspect": "price tag",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 254,
+    "format": "apc"
+  },
+  {
+    "review_text": "This laptop is a great $T$ and has a sleek look .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 263,
+    "format": "apc"
+  },
+  {
+    "review_text": "Am very glad I bought it , great netbook , low $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 311,
+    "format": "apc"
+  },
+  {
+    "review_text": "Like the $T$ and operation .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 380,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is likely due to poor grounding and isolation between the components , and I 'm hoping that it can be fixed with a ground loop isolator , but I still expected better product quality for this $T$ .",
+    "aspect": "price range",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 385,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great Laptop for the $T$ , works well with action pack games .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 393,
+    "format": "apc"
+  },
+  {
+    "review_text": "Although the $T$ is higher then Dell laptops , the Macbooks are worth the dough .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 396,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's super fast and a great value for the $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 416,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is a little much , but when you start looking at the features it is worth the added cash .",
+    "aspect": "price premium",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 434,
+    "format": "apc"
+  },
+  {
+    "review_text": "Waiting for the i7 was well worth it , great value for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 502,
+    "format": "apc"
+  },
+  {
+    "review_text": "I bought this laptop because of the performance to $T$ ratio .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 517,
+    "format": "apc"
+  },
+  {
+    "review_text": "Have had many higher $T$ computers crash and burn long before ever got to use all that great memory and speed , etc. .",
+    "aspect": "priced",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 526,
+    "format": "apc"
+  },
+  {
+    "review_text": "Reason why ? It 's because when you buy it , you know first thing that you will not lose any value for that laptop , the $T$ will stay the same for the next year , and even if Apple does decides to change mode , your laptop value will only drop 10-20 % , unlike PC laptops which drop more than 80 % .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 544,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ and features more than met my needs .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 561,
+    "format": "apc"
+  },
+  {
+    "review_text": "and looks very sexyy :D really the mac book pro is the best laptop specially for students in college if you are not caring about $T$ .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 574,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is another driving influence that made me purchase this laptop .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 585,
+    "format": "apc"
+  },
+  {
+    "review_text": "All for such a great $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 612,
+    "format": "apc"
+  },
+  {
+    "review_text": "you can find many laptops with the same performance and even better with lower $T$ , but you can not find the look , easy , applications , and the experience in mac .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 631,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's a great product for a great $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 660,
+    "format": "apc"
+  },
+  {
+    "review_text": "I wiped nearly everything off of it , installed OpenOffice and Firefox , and I am operating an incredibly efficient and useful machine for a great $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 911,
+    "format": "apc"
+  },
+  {
+    "review_text": "At first , the computer seemed a great deal -- seemingly high-end specs for a low , low $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 924,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the $T$ and what I get out of it has exceeded my expectations .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 987,
+    "format": "apc"
+  },
+  {
+    "review_text": "I thought the $T$ was great for the specs .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1013,
+    "format": "apc"
+  },
+  {
+    "review_text": "I finally decided on this laptop because it was the right $T$ for what I need it .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1029,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only downfall is a lot of the software I have wo n't work with Mac and iWork is not worth the $T$ of it .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1071,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the same $T$ , you get a lot more in the Asus ... 1920x1080 res .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1117,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the -LSB- $ -RSB- $T$ -LRB- special offer -RRB- this is a great laptop .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1141,
+    "format": "apc"
+  },
+  {
+    "review_text": "I looked around and based off my $T$ / features comparison from a brand I trusted I landed here .",
+    "aspect": "price",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1220,
+    "format": "apc"
+  },
+  {
+    "review_text": "The MacBook is way too $T$ for something so simple and chaotic .",
+    "aspect": "overpriced",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1336,
+    "format": "apc"
+  },
+  {
+    "review_text": "LOVE THIS LAPTOP WONDERFUL $T$ FOR WHAT YOU GET !",
+    "aspect": "PRICE",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1410,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is easy to use , good quality and good $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1426,
+    "format": "apc"
+  },
+  {
+    "review_text": "True quality at a great $T$ !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1478,
+    "format": "apc"
+  },
+  {
+    "review_text": "After doing extensive research , macconnection had the lowest $T$ on the 15 '' MBP i5 .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1488,
+    "format": "apc"
+  },
+  {
+    "review_text": "I saw walmart had the same computer for about $ 650 but still knowing what I know now , I would not buy it at that $T$ .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1504,
+    "format": "apc"
+  },
+  {
+    "review_text": "Peformance is good for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1554,
+    "format": "apc"
+  },
+  {
+    "review_text": "The 13 '' Macbook Pro just fits in my budget and with free shipping and no tax to CA this is the best $T$ we can get for a great product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1564,
+    "format": "apc"
+  },
+  {
+    "review_text": "A cheaper $T$ should not equal a `` cheap '' product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1578,
+    "format": "apc"
+  },
+  {
+    "review_text": "I know there are way better laptops out there for the same $T$ , and why spend money on shit when you can go out and get yourself a perfectly decent laptop that doesnt suck total monkey balls .",
+    "aspect": "price",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1604,
+    "format": "apc"
+  },
+  {
+    "review_text": "It did n't come with any software installed outside of windows media , but for the $T$ , I was very pleased with the condition and the overall product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1633,
+    "format": "apc"
+  },
+  {
+    "review_text": "This laptop looks great on the surface : 17 '' inch screen , good $T$ , nice appearance , boots up quickly , runs fast etc. .",
+    "aspect": "price-point",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1664,
+    "format": "apc"
+  },
+  {
+    "review_text": "The apple systems are $T$ luxurys that ar n't worth what they are being charged for , this model 's specifications are far from being impressive and they only thing you get out of this is the apple name .",
+    "aspect": "over priced",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1669,
+    "format": "apc"
+  },
+  {
+    "review_text": "Disappointing for such a lovely screen and at a reasonable $T$",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1672,
+    "format": "apc"
+  },
+  {
+    "review_text": "Good $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1674,
+    "format": "apc"
+  },
+  {
+    "review_text": "Hmmm - that high failure rate sure is n't reflected in the $T$ .",
+    "aspect": "retail price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1677,
+    "format": "apc"
+  },
+  {
+    "review_text": "I took 3-4 years researching brands and $T$ of laptops .",
+    "aspect": "prices",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1728,
+    "format": "apc"
+  },
+  {
+    "review_text": "We researched and found the best $T$ at MacConnection .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1729,
+    "format": "apc"
+  },
+  {
+    "review_text": "Again , decent comp for the $T$ , and I was in need of one quickly as my other laptop died on me .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1808,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was very good , and the product is top quality .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1839,
+    "format": "apc"
+  },
+  {
+    "review_text": "Battery life could be better but overall for the $T$ and Toshiba 's reputation for laptops it 's great !",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1941,
+    "format": "apc"
+  },
+  {
+    "review_text": "Apparently well-built and gorgeous to look at , the i5 MacBook Pro is a winning combination of $T$ and performance .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1951,
+    "format": "apc"
+  },
+  {
+    "review_text": "It 's $T$ very reasonable and works very well right out of the box .",
+    "aspect": "priced",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2023,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 'm really impressed with the quality and performance for the $T$ of the computer .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2075,
+    "format": "apc"
+  },
+  {
+    "review_text": "So then you may be lucky to get ahold to someone who understands that its no good and they will let you send it back , but of course you are taking a chance of them testing it out to see what has happened , and they tell you that it was not on their side , then you are stuck paying for the repair -LRB- the $T$ of a new one -RRB- .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2080,
+    "format": "apc"
+  },
+  {
+    "review_text": "The best thing to do is build your own computer , but if u ca n't company 's like dell who allow you to choose the components are better and for the same $T$ you can get a computer who compares to one of apple $ 2000 systems and if you google `` dell coupons '' you can find codes that take a signifant amount off the price .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2108,
+    "format": "apc"
+  },
+  {
+    "review_text": "The best thing to do is build your own computer , but if u ca n't company 's like dell who allow you to choose the components are better and for the same price you can get a computer who compares to one of apple $ 2000 systems and if you google `` dell coupons '' you can find codes that take a signifant amount off the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2109,
+    "format": "apc"
+  },
+  {
+    "review_text": "For me I was lucky and a local store was selling them for $ 2000 off and Best Buy matched their $T$ so I was able to buy one for under $ 100Negative",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2111,
+    "format": "apc"
+  },
+  {
+    "review_text": "I believe that the quality of a mac is worth the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2114,
+    "format": "apc"
+  },
+  {
+    "review_text": "The 13 '' Macbook Pro just fits in my budget and with free shipping and no tax to CA this is the best $T$ we can get for a great product .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2117,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall : Poor , Features : Average , Performance : Poor , Battery Life : Excellent , $T$ - Value : Poor",
+    "aspect": "Price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2170,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ and purpose is awesome !",
+    "aspect": "Price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2262,
+    "format": "apc"
+  },
+  {
+    "review_text": "Worse , for the $T$ I could get a * netbook * that outperforms this machine .",
+    "aspect": "price",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2267,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is great for this model , I only plan on using it for media in the entertainment room .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2284,
+    "format": "apc"
+  },
+  {
+    "review_text": "Was very much worth the $T$ i paid .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2290,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is a great little computer for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2292,
+    "format": "apc"
+  },
+  {
+    "review_text": "The Toshiba Satellite has been more than I expected for the $T$ .",
+    "aspect": "price",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2298,
+    "format": "apc"
+  }
+]

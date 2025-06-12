@@ -1,0 +1,4365 @@
+{
+  "timestamp": "2025-06-12T15:02:04.400630",
+  "target_domains": [
+    "restaurant"
+  ],
+  "target_features": {
+    "restaurant": [
+      "food",
+      "service",
+      "staff",
+      "atmosphere"
+    ]
+  },
+  "domain_results": {
+    "restaurant": {
+      "domain": "restaurant",
+      "total_samples": 18845,
+      "feature_analysis": {
+        "Waitstaff": {
+          "total_count": 13,
+          "sentiment_distribution": {
+            "Positive": 13
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "dining room": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 5
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "food": {
+          "total_count": 1839,
+          "sentiment_distribution": {
+            "Positive": 1276,
+            "Neutral": 246,
+            "Negative": 317
+          },
+          "positive_ratio": 0.6938553561718325,
+          "negative_ratio": 0.1723762914627515,
+          "neutral_ratio": 0.13376835236541598
+        },
+        "staff": {
+          "total_count": 303,
+          "sentiment_distribution": {
+            "Positive": 240,
+            "Negative": 59,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.7920792079207921,
+          "negative_ratio": 0.19471947194719472,
+          "neutral_ratio": 0.013201320132013201
+        },
+        "service": {
+          "total_count": 1069,
+          "sentiment_distribution": {
+            "Positive": 695,
+            "Negative": 306,
+            "Neutral": 68
+          },
+          "positive_ratio": 0.6501403180542563,
+          "negative_ratio": 0.2862488306828812,
+          "neutral_ratio": 0.06361085126286249
+        },
+        "setting": {
+          "total_count": 28,
+          "sentiment_distribution": {
+            "Positive": 28
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "bread": {
+          "total_count": 45,
+          "sentiment_distribution": {
+            "Positive": 27,
+            "Neutral": 1,
+            "Negative": 17
+          },
+          "positive_ratio": 0.6,
+          "negative_ratio": 0.37777777777777777,
+          "neutral_ratio": 0.022222222222222223
+        },
+        "place": {
+          "total_count": 305,
+          "sentiment_distribution": {
+            "Positive": 222,
+            "Neutral": 4,
+            "Negative": 79
+          },
+          "positive_ratio": 0.7278688524590164,
+          "negative_ratio": 0.25901639344262295,
+          "neutral_ratio": 0.013114754098360656
+        },
+        "order": {
+          "total_count": 13,
+          "sentiment_distribution": {
+            "Negative": 12,
+            "Positive": 1
+          },
+          "positive_ratio": 0.07692307692307693,
+          "negative_ratio": 0.9230769230769231,
+          "neutral_ratio": 0.0
+        },
+        "atmosphere": {
+          "total_count": 263,
+          "sentiment_distribution": {
+            "Negative": 15,
+            "Positive": 231,
+            "Neutral": 17
+          },
+          "positive_ratio": 0.8783269961977186,
+          "negative_ratio": 0.057034220532319393,
+          "neutral_ratio": 0.06463878326996197
+        },
+        "burgers": {
+          "total_count": 22,
+          "sentiment_distribution": {
+            "Negative": 6,
+            "Positive": 13,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5909090909090909,
+          "negative_ratio": 0.2727272727272727,
+          "neutral_ratio": 0.13636363636363635
+        },
+        "waiter": {
+          "total_count": 151,
+          "sentiment_distribution": {
+            "Positive": 54,
+            "Negative": 76,
+            "Neutral": 21
+          },
+          "positive_ratio": 0.3576158940397351,
+          "negative_ratio": 0.5033112582781457,
+          "neutral_ratio": 0.1390728476821192
+        },
+        "bartender": {
+          "total_count": 62,
+          "sentiment_distribution": {
+            "Positive": 29,
+            "Negative": 18,
+            "Neutral": 15
+          },
+          "positive_ratio": 0.46774193548387094,
+          "negative_ratio": 0.2903225806451613,
+          "neutral_ratio": 0.24193548387096775
+        },
+        "cake": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 7
+          },
+          "positive_ratio": 0.36363636363636365,
+          "negative_ratio": 0.6363636363636364,
+          "neutral_ratio": 0.0
+        },
+        "coffee": {
+          "total_count": 26,
+          "sentiment_distribution": {
+            "Positive": 21,
+            "Negative": 3,
+            "Neutral": 2
+          },
+          "positive_ratio": 0.8076923076923077,
+          "negative_ratio": 0.11538461538461539,
+          "neutral_ratio": 0.07692307692307693
+        },
+        "pastries": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 6
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "donuts": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 5,
+            "Negative": 2
+          },
+          "positive_ratio": 0.7142857142857143,
+          "negative_ratio": 0.2857142857142857,
+          "neutral_ratio": 0.0
+        },
+        "They": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 6,
+            "Negative": 2
+          },
+          "positive_ratio": 0.75,
+          "negative_ratio": 0.25,
+          "neutral_ratio": 0.0
+        },
+        "lunch special": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 5
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "sandwiches": {
+          "total_count": 25,
+          "sentiment_distribution": {
+            "Positive": 10,
+            "Negative": 12,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.4,
+          "negative_ratio": 0.48,
+          "neutral_ratio": 0.12
+        },
+        "spring rolls": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 9,
+            "Negative": 1,
+            "Neutral": 1
+          },
+          "positive_ratio": 0.8181818181818182,
+          "negative_ratio": 0.09090909090909091,
+          "neutral_ratio": 0.09090909090909091
+        },
+        "soup": {
+          "total_count": 30,
+          "sentiment_distribution": {
+            "Positive": 23,
+            "Negative": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.7666666666666667,
+          "negative_ratio": 0.13333333333333333,
+          "neutral_ratio": 0.1
+        },
+        "manager": {
+          "total_count": 59,
+          "sentiment_distribution": {
+            "Negative": 38,
+            "Positive": 18,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.3050847457627119,
+          "negative_ratio": 0.6440677966101694,
+          "neutral_ratio": 0.05084745762711865
+        },
+        "reservation": {
+          "total_count": 80,
+          "sentiment_distribution": {
+            "Neutral": 40,
+            "Negative": 20,
+            "Positive": 20
+          },
+          "positive_ratio": 0.25,
+          "negative_ratio": 0.25,
+          "neutral_ratio": 0.5
+        },
+        "margarita": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.42857142857142855
+        },
+        "management": {
+          "total_count": 21,
+          "sentiment_distribution": {
+            "Negative": 9,
+            "Neutral": 4,
+            "Positive": 8
+          },
+          "positive_ratio": 0.38095238095238093,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.19047619047619047
+        },
+        "steak": {
+          "total_count": 43,
+          "sentiment_distribution": {
+            "Negative": 6,
+            "Neutral": 10,
+            "Positive": 27
+          },
+          "positive_ratio": 0.627906976744186,
+          "negative_ratio": 0.13953488372093023,
+          "neutral_ratio": 0.23255813953488372
+        },
+        "Food": {
+          "total_count": 71,
+          "sentiment_distribution": {
+            "Neutral": 22,
+            "Positive": 49
+          },
+          "positive_ratio": 0.6901408450704225,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.30985915492957744
+        },
+        "fries": {
+          "total_count": 28,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 13,
+            "Neutral": 7
+          },
+          "positive_ratio": 0.4642857142857143,
+          "negative_ratio": 0.2857142857142857,
+          "neutral_ratio": 0.25
+        },
+        "prices": {
+          "total_count": 306,
+          "sentiment_distribution": {
+            "Positive": 191,
+            "Negative": 86,
+            "Neutral": 29
+          },
+          "positive_ratio": 0.6241830065359477,
+          "negative_ratio": 0.28104575163398693,
+          "neutral_ratio": 0.09477124183006536
+        },
+        "line": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Neutral": 1,
+            "Positive": 2
+          },
+          "positive_ratio": 0.18181818181818182,
+          "negative_ratio": 0.7272727272727273,
+          "neutral_ratio": 0.09090909090909091
+        },
+        "people": {
+          "total_count": 44,
+          "sentiment_distribution": {
+            "Negative": 16,
+            "Positive": 28
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.36363636363636365,
+          "neutral_ratio": 0.0
+        },
+        "Service": {
+          "total_count": 142,
+          "sentiment_distribution": {
+            "Negative": 27,
+            "Neutral": 11,
+            "Positive": 104
+          },
+          "positive_ratio": 0.7323943661971831,
+          "negative_ratio": 0.19014084507042253,
+          "neutral_ratio": 0.07746478873239436
+        },
+        "pizza": {
+          "total_count": 202,
+          "sentiment_distribution": {
+            "Positive": 154,
+            "Neutral": 20,
+            "Negative": 28
+          },
+          "positive_ratio": 0.7623762376237624,
+          "negative_ratio": 0.13861386138613863,
+          "neutral_ratio": 0.09900990099009901
+        },
+        "$": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Negative": 5
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "flavors": {
+          "total_count": 21,
+          "sentiment_distribution": {
+            "Positive": 18,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.8571428571428571,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.14285714285714285
+        },
+        "sandwich": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 1,
+            "Positive": 6,
+            "Neutral": 5
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.08333333333333333,
+          "neutral_ratio": 0.4166666666666667
+        },
+        "wait": {
+          "total_count": 91,
+          "sentiment_distribution": {
+            "Positive": 21,
+            "Negative": 64,
+            "Neutral": 6
+          },
+          "positive_ratio": 0.23076923076923078,
+          "negative_ratio": 0.7032967032967034,
+          "neutral_ratio": 0.06593406593406594
+        },
+        "waitress": {
+          "total_count": 82,
+          "sentiment_distribution": {
+            "Negative": 48,
+            "Positive": 27,
+            "Neutral": 7
+          },
+          "positive_ratio": 0.32926829268292684,
+          "negative_ratio": 0.5853658536585366,
+          "neutral_ratio": 0.08536585365853659
+        },
+        "portions": {
+          "total_count": 131,
+          "sentiment_distribution": {
+            "Negative": 57,
+            "Positive": 74
+          },
+          "positive_ratio": 0.5648854961832062,
+          "negative_ratio": 0.4351145038167939,
+          "neutral_ratio": 0.0
+        },
+        "burger": {
+          "total_count": 33,
+          "sentiment_distribution": {
+            "Negative": 3,
+            "Positive": 21,
+            "Neutral": 9
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.09090909090909091,
+          "neutral_ratio": 0.2727272727272727
+        },
+        "they": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 1,
+            "Neutral": 1
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.16666666666666666,
+          "neutral_ratio": 0.16666666666666666
+        },
+        "pizzas": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Positive": 15
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "price": {
+          "total_count": 192,
+          "sentiment_distribution": {
+            "Negative": 51,
+            "Positive": 126,
+            "Neutral": 15
+          },
+          "positive_ratio": 0.65625,
+          "negative_ratio": 0.265625,
+          "neutral_ratio": 0.078125
+        },
+        "owner": {
+          "total_count": 72,
+          "sentiment_distribution": {
+            "Positive": 56,
+            "Negative": 8,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.7777777777777778,
+          "negative_ratio": 0.1111111111111111,
+          "neutral_ratio": 0.1111111111111111
+        },
+        "cheese": {
+          "total_count": 50,
+          "sentiment_distribution": {
+            "Positive": 18,
+            "Neutral": 12,
+            "Negative": 20
+          },
+          "positive_ratio": 0.36,
+          "negative_ratio": 0.4,
+          "neutral_ratio": 0.24
+        },
+        "privacy": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 5
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "chips": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Negative": 1,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.2,
+          "neutral_ratio": 0.8
+        },
+        "plate": {
+          "total_count": 13,
+          "sentiment_distribution": {
+            "Positive": 9,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.6923076923076923,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.3076923076923077
+        },
+        "dishes": {
+          "total_count": 128,
+          "sentiment_distribution": {
+            "Positive": 95,
+            "Negative": 21,
+            "Neutral": 12
+          },
+          "positive_ratio": 0.7421875,
+          "negative_ratio": 0.1640625,
+          "neutral_ratio": 0.09375
+        },
+        "spices": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "music": {
+          "total_count": 72,
+          "sentiment_distribution": {
+            "Positive": 43,
+            "Neutral": 10,
+            "Negative": 19
+          },
+          "positive_ratio": 0.5972222222222222,
+          "negative_ratio": 0.2638888888888889,
+          "neutral_ratio": 0.1388888888888889
+        },
+        "Sushi": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Negative": 1,
+            "Neutral": 4,
+            "Positive": 10
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.06666666666666667,
+          "neutral_ratio": 0.26666666666666666
+        },
+        "waiting": {
+          "total_count": 26,
+          "sentiment_distribution": {
+            "Negative": 26
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "dessert": {
+          "total_count": 81,
+          "sentiment_distribution": {
+            "Positive": 33,
+            "Negative": 20,
+            "Neutral": 28
+          },
+          "positive_ratio": 0.4074074074074074,
+          "negative_ratio": 0.24691358024691357,
+          "neutral_ratio": 0.345679012345679
+        },
+        "drink": {
+          "total_count": 56,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Neutral": 44,
+            "Negative": 4
+          },
+          "positive_ratio": 0.14285714285714285,
+          "negative_ratio": 0.07142857142857142,
+          "neutral_ratio": 0.7857142857142857
+        },
+        "server": {
+          "total_count": 50,
+          "sentiment_distribution": {
+            "Negative": 21,
+            "Positive": 29
+          },
+          "positive_ratio": 0.58,
+          "negative_ratio": 0.42,
+          "neutral_ratio": 0.0
+        },
+        "beer": {
+          "total_count": 42,
+          "sentiment_distribution": {
+            "Neutral": 9,
+            "Positive": 29,
+            "Negative": 4
+          },
+          "positive_ratio": 0.6904761904761905,
+          "negative_ratio": 0.09523809523809523,
+          "neutral_ratio": 0.21428571428571427
+        },
+        "seated": {
+          "total_count": 23,
+          "sentiment_distribution": {
+            "Positive": 18,
+            "Negative": 5
+          },
+          "positive_ratio": 0.782608695652174,
+          "negative_ratio": 0.21739130434782608,
+          "neutral_ratio": 0.0
+        },
+        "fried chicken": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 2,
+            "Neutral": 5
+          },
+          "positive_ratio": 0.2857142857142857,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.7142857142857143
+        },
+        "salad": {
+          "total_count": 31,
+          "sentiment_distribution": {
+            "Neutral": 11,
+            "Negative": 10,
+            "Positive": 10
+          },
+          "positive_ratio": 0.3225806451612903,
+          "negative_ratio": 0.3225806451612903,
+          "neutral_ratio": 0.3548387096774194
+        },
+        "hostess": {
+          "total_count": 39,
+          "sentiment_distribution": {
+            "Negative": 20,
+            "Positive": 19
+          },
+          "positive_ratio": 0.48717948717948717,
+          "negative_ratio": 0.5128205128205128,
+          "neutral_ratio": 0.0
+        },
+        "portion": {
+          "total_count": 27,
+          "sentiment_distribution": {
+            "Negative": 2,
+            "Positive": 17,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.6296296296296297,
+          "negative_ratio": 0.07407407407407407,
+          "neutral_ratio": 0.2962962962962963
+        },
+        "value": {
+          "total_count": 42,
+          "sentiment_distribution": {
+            "Neutral": 5,
+            "Positive": 33,
+            "Negative": 4
+          },
+          "positive_ratio": 0.7857142857142857,
+          "negative_ratio": 0.09523809523809523,
+          "neutral_ratio": 0.11904761904761904
+        },
+        "chef": {
+          "total_count": 58,
+          "sentiment_distribution": {
+            "Positive": 30,
+            "Negative": 13,
+            "Neutral": 15
+          },
+          "positive_ratio": 0.5172413793103449,
+          "negative_ratio": 0.22413793103448276,
+          "neutral_ratio": 0.25862068965517243
+        },
+        "duck": {
+          "total_count": 9,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Neutral": 1
+          },
+          "positive_ratio": 0.8888888888888888,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.1111111111111111
+        },
+        "drinks": {
+          "total_count": 179,
+          "sentiment_distribution": {
+            "Positive": 109,
+            "Negative": 12,
+            "Neutral": 58
+          },
+          "positive_ratio": 0.6089385474860335,
+          "negative_ratio": 0.0670391061452514,
+          "neutral_ratio": 0.3240223463687151
+        },
+        "tapas": {
+          "total_count": 14,
+          "sentiment_distribution": {
+            "Positive": 14
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "wine": {
+          "total_count": 126,
+          "sentiment_distribution": {
+            "Positive": 87,
+            "Neutral": 31,
+            "Negative": 8
+          },
+          "positive_ratio": 0.6904761904761905,
+          "negative_ratio": 0.06349206349206349,
+          "neutral_ratio": 0.24603174603174602
+        },
+        "decor": {
+          "total_count": 99,
+          "sentiment_distribution": {
+            "Positive": 80,
+            "Neutral": 7,
+            "Negative": 12
+          },
+          "positive_ratio": 0.8080808080808081,
+          "negative_ratio": 0.12121212121212122,
+          "neutral_ratio": 0.0707070707070707
+        },
+        "waiting area": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Negative": 5
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "bartenders": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 7
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.36363636363636365,
+          "neutral_ratio": 0.0
+        },
+        "sushi": {
+          "total_count": 182,
+          "sentiment_distribution": {
+            "Positive": 128,
+            "Negative": 27,
+            "Neutral": 27
+          },
+          "positive_ratio": 0.7032967032967034,
+          "negative_ratio": 0.14835164835164835,
+          "neutral_ratio": 0.14835164835164835
+        },
+        "money": {
+          "total_count": 25,
+          "sentiment_distribution": {
+            "Negative": 13,
+            "Positive": 8,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.32,
+          "negative_ratio": 0.52,
+          "neutral_ratio": 0.16
+        },
+        "serve": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Negative": 1,
+            "Positive": 5
+          },
+          "positive_ratio": 0.8333333333333334,
+          "negative_ratio": 0.16666666666666666,
+          "neutral_ratio": 0.0
+        },
+        "meals": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 5,
+            "Neutral": 7
+          },
+          "positive_ratio": 0.25,
+          "negative_ratio": 0.4,
+          "neutral_ratio": 0.35
+        },
+        "cost": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Positive": 9,
+            "Negative": 15
+          },
+          "positive_ratio": 0.375,
+          "negative_ratio": 0.625,
+          "neutral_ratio": 0.0
+        },
+        "salads": {
+          "total_count": 49,
+          "sentiment_distribution": {
+            "Positive": 42,
+            "Negative": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.8571428571428571,
+          "negative_ratio": 0.08163265306122448,
+          "neutral_ratio": 0.061224489795918366
+        },
+        "servers": {
+          "total_count": 36,
+          "sentiment_distribution": {
+            "Positive": 19,
+            "Negative": 17
+          },
+          "positive_ratio": 0.5277777777777778,
+          "negative_ratio": 0.4722222222222222,
+          "neutral_ratio": 0.0
+        },
+        "brisket": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Negative": 1,
+            "Positive": 4
+          },
+          "positive_ratio": 0.8,
+          "negative_ratio": 0.2,
+          "neutral_ratio": 0.0
+        },
+        "it": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Negative": 3,
+            "Positive": 7
+          },
+          "positive_ratio": 0.7,
+          "negative_ratio": 0.3,
+          "neutral_ratio": 0.0
+        },
+        "wings": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Negative": 1,
+            "Positive": 4
+          },
+          "positive_ratio": 0.8,
+          "negative_ratio": 0.2,
+          "neutral_ratio": 0.0
+        },
+        "waitresses": {
+          "total_count": 14,
+          "sentiment_distribution": {
+            "Positive": 12,
+            "Negative": 2
+          },
+          "positive_ratio": 0.8571428571428571,
+          "negative_ratio": 0.14285714285714285,
+          "neutral_ratio": 0.0
+        },
+        "appetizers": {
+          "total_count": 71,
+          "sentiment_distribution": {
+            "Positive": 29,
+            "Neutral": 38,
+            "Negative": 4
+          },
+          "positive_ratio": 0.4084507042253521,
+          "negative_ratio": 0.056338028169014086,
+          "neutral_ratio": 0.5352112676056338
+        },
+        "delivery": {
+          "total_count": 33,
+          "sentiment_distribution": {
+            "Positive": 12,
+            "Neutral": 1,
+            "Negative": 20
+          },
+          "positive_ratio": 0.36363636363636365,
+          "negative_ratio": 0.6060606060606061,
+          "neutral_ratio": 0.030303030303030304
+        },
+        "Price": {
+          "total_count": 13,
+          "sentiment_distribution": {
+            "Positive": 9,
+            "Negative": 4
+          },
+          "positive_ratio": 0.6923076923076923,
+          "negative_ratio": 0.3076923076923077,
+          "neutral_ratio": 0.0
+        },
+        "area": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Positive": 2,
+            "Negative": 8
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.8,
+          "neutral_ratio": 0.0
+        },
+        "Staff": {
+          "total_count": 13,
+          "sentiment_distribution": {
+            "Positive": 13
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "serving": {
+          "total_count": 14,
+          "sentiment_distribution": {
+            "Negative": 5,
+            "Positive": 5,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.35714285714285715,
+          "negative_ratio": 0.35714285714285715,
+          "neutral_ratio": 0.2857142857142857
+        },
+        "meat": {
+          "total_count": 19,
+          "sentiment_distribution": {
+            "Positive": 9,
+            "Negative": 6,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.47368421052631576,
+          "negative_ratio": 0.3157894736842105,
+          "neutral_ratio": 0.21052631578947367
+        },
+        "wines": {
+          "total_count": 21,
+          "sentiment_distribution": {
+            "Positive": 9,
+            "Neutral": 8,
+            "Negative": 4
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.19047619047619047,
+          "neutral_ratio": 0.38095238095238093
+        },
+        "gnocchi": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "side": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.8
+        },
+        "Margarita": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Negative": 1,
+            "Positive": 4
+          },
+          "positive_ratio": 0.8,
+          "negative_ratio": 0.2,
+          "neutral_ratio": 0.0
+        },
+        "chocolate": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 5
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "servings": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Negative": 4
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.8,
+          "neutral_ratio": 0.0
+        },
+        "ladies": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 5
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "appetizer": {
+          "total_count": 60,
+          "sentiment_distribution": {
+            "Positive": 24,
+            "Negative": 9,
+            "Neutral": 27
+          },
+          "positive_ratio": 0.4,
+          "negative_ratio": 0.15,
+          "neutral_ratio": 0.45
+        },
+        "bar": {
+          "total_count": 146,
+          "sentiment_distribution": {
+            "Positive": 48,
+            "Neutral": 86,
+            "Negative": 12
+          },
+          "positive_ratio": 0.3287671232876712,
+          "negative_ratio": 0.0821917808219178,
+          "neutral_ratio": 0.589041095890411
+        },
+        "fast food": {
+          "total_count": 9,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.1111111111111111,
+          "negative_ratio": 0.4444444444444444,
+          "neutral_ratio": 0.4444444444444444
+        },
+        "cookie": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 2,
+            "Negative": 3
+          },
+          "positive_ratio": 0.4,
+          "negative_ratio": 0.6,
+          "neutral_ratio": 0.0
+        },
+        "mushrooms": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 5
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Quality": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 5
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "tacos": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Negative": 1
+          },
+          "positive_ratio": 0.875,
+          "negative_ratio": 0.125,
+          "neutral_ratio": 0.0
+        },
+        "toast": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Negative": 4
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.8,
+          "neutral_ratio": 0.0
+        },
+        "ambience": {
+          "total_count": 106,
+          "sentiment_distribution": {
+            "Positive": 78,
+            "Neutral": 12,
+            "Negative": 16
+          },
+          "positive_ratio": 0.7358490566037735,
+          "negative_ratio": 0.1509433962264151,
+          "neutral_ratio": 0.11320754716981132
+        },
+        "ambiance": {
+          "total_count": 86,
+          "sentiment_distribution": {
+            "Positive": 69,
+            "Negative": 9,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.8023255813953488,
+          "negative_ratio": 0.10465116279069768,
+          "neutral_ratio": 0.09302325581395349
+        },
+        "flavor": {
+          "total_count": 51,
+          "sentiment_distribution": {
+            "Negative": 31,
+            "Neutral": 5,
+            "Positive": 15
+          },
+          "positive_ratio": 0.29411764705882354,
+          "negative_ratio": 0.6078431372549019,
+          "neutral_ratio": 0.09803921568627451
+        },
+        "water": {
+          "total_count": 22,
+          "sentiment_distribution": {
+            "Negative": 1,
+            "Positive": 1,
+            "Neutral": 20
+          },
+          "positive_ratio": 0.045454545454545456,
+          "negative_ratio": 0.045454545454545456,
+          "neutral_ratio": 0.9090909090909091
+        },
+        "waiters": {
+          "total_count": 55,
+          "sentiment_distribution": {
+            "Negative": 18,
+            "Positive": 33,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.6,
+          "negative_ratio": 0.32727272727272727,
+          "neutral_ratio": 0.07272727272727272
+        },
+        "Prices": {
+          "total_count": 21,
+          "sentiment_distribution": {
+            "Negative": 9,
+            "Neutral": 5,
+            "Positive": 7
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.23809523809523808
+        },
+        "meal": {
+          "total_count": 195,
+          "sentiment_distribution": {
+            "Positive": 135,
+            "Neutral": 42,
+            "Negative": 18
+          },
+          "positive_ratio": 0.6923076923076923,
+          "negative_ratio": 0.09230769230769231,
+          "neutral_ratio": 0.2153846153846154
+        },
+        "menu": {
+          "total_count": 295,
+          "sentiment_distribution": {
+            "Positive": 131,
+            "Negative": 69,
+            "Neutral": 95
+          },
+          "positive_ratio": 0.4440677966101695,
+          "negative_ratio": 0.23389830508474577,
+          "neutral_ratio": 0.3220338983050847
+        },
+        "dinner": {
+          "total_count": 244,
+          "sentiment_distribution": {
+            "Positive": 87,
+            "Neutral": 145,
+            "Negative": 12
+          },
+          "positive_ratio": 0.35655737704918034,
+          "negative_ratio": 0.04918032786885246,
+          "neutral_ratio": 0.5942622950819673
+        },
+        "sides": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Positive": 11,
+            "Neutral": 5,
+            "Negative": 4
+          },
+          "positive_ratio": 0.55,
+          "negative_ratio": 0.2,
+          "neutral_ratio": 0.25
+        },
+        "noodles": {
+          "total_count": 23,
+          "sentiment_distribution": {
+            "Positive": 6,
+            "Negative": 9,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.2608695652173913,
+          "negative_ratio": 0.391304347826087,
+          "neutral_ratio": 0.34782608695652173
+        },
+        "pork": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Negative": 1,
+            "Positive": 9
+          },
+          "positive_ratio": 0.9,
+          "negative_ratio": 0.1,
+          "neutral_ratio": 0.0
+        },
+        "fish": {
+          "total_count": 88,
+          "sentiment_distribution": {
+            "Negative": 24,
+            "Positive": 56,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.2727272727272727,
+          "neutral_ratio": 0.09090909090909091
+        },
+        "dumplings": {
+          "total_count": 28,
+          "sentiment_distribution": {
+            "Positive": 24,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.8571428571428571,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.14285714285714285
+        },
+        "food options": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 5
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Ambiance": {
+          "total_count": 17,
+          "sentiment_distribution": {
+            "Positive": 9,
+            "Negative": 8
+          },
+          "positive_ratio": 0.5294117647058824,
+          "negative_ratio": 0.47058823529411764,
+          "neutral_ratio": 0.0
+        },
+        "chicken": {
+          "total_count": 54,
+          "sentiment_distribution": {
+            "Negative": 24,
+            "Positive": 27,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.4444444444444444,
+          "neutral_ratio": 0.05555555555555555
+        },
+        "view": {
+          "total_count": 25,
+          "sentiment_distribution": {
+            "Positive": 25
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "wait time": {
+          "total_count": 9,
+          "sentiment_distribution": {
+            "Negative": 5,
+            "Positive": 4
+          },
+          "positive_ratio": 0.4444444444444444,
+          "negative_ratio": 0.5555555555555556,
+          "neutral_ratio": 0.0
+        },
+        "choices": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Negative": 4
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.8,
+          "neutral_ratio": 0.0
+        },
+        "spot": {
+          "total_count": 39,
+          "sentiment_distribution": {
+            "Positive": 35,
+            "Negative": 4
+          },
+          "positive_ratio": 0.8974358974358975,
+          "negative_ratio": 0.10256410256410256,
+          "neutral_ratio": 0.0
+        },
+        "seaweed": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 5
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "It": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 6,
+            "Negative": 1
+          },
+          "positive_ratio": 0.8571428571428571,
+          "negative_ratio": 0.14285714285714285,
+          "neutral_ratio": 0.0
+        },
+        "roll": {
+          "total_count": 17,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Negative": 16
+          },
+          "positive_ratio": 0.058823529411764705,
+          "negative_ratio": 0.9411764705882353,
+          "neutral_ratio": 0.0
+        },
+        "cocktails": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Positive": 10
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "bacon": {
+          "total_count": 9,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Negative": 8
+          },
+          "positive_ratio": 0.1111111111111111,
+          "negative_ratio": 0.8888888888888888,
+          "neutral_ratio": 0.0
+        },
+        "miso soup": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Negative": 4
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.8,
+          "neutral_ratio": 0.0
+        },
+        "diner": {
+          "total_count": 9,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.1111111111111111,
+          "negative_ratio": 0.4444444444444444,
+          "neutral_ratio": 0.4444444444444444
+        },
+        "ice cream": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 6
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "ribs": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "owners": {
+          "total_count": 34,
+          "sentiment_distribution": {
+            "Positive": 23,
+            "Neutral": 4,
+            "Negative": 7
+          },
+          "positive_ratio": 0.6764705882352942,
+          "negative_ratio": 0.20588235294117646,
+          "neutral_ratio": 0.11764705882352941
+        },
+        "seafood": {
+          "total_count": 51,
+          "sentiment_distribution": {
+            "Positive": 39,
+            "Negative": 8,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.7647058823529411,
+          "negative_ratio": 0.1568627450980392,
+          "neutral_ratio": 0.0784313725490196
+        },
+        "eggplant": {
+          "total_count": 9,
+          "sentiment_distribution": {
+            "Positive": 9
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "workers": {
+          "total_count": 9,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.1111111111111111,
+          "negative_ratio": 0.4444444444444444,
+          "neutral_ratio": 0.4444444444444444
+        },
+        "apps": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.8
+        },
+        "location": {
+          "total_count": 28,
+          "sentiment_distribution": {
+            "Positive": 17,
+            "Neutral": 8,
+            "Negative": 3
+          },
+          "positive_ratio": 0.6071428571428571,
+          "negative_ratio": 0.10714285714285714,
+          "neutral_ratio": 0.2857142857142857
+        },
+        "crust": {
+          "total_count": 35,
+          "sentiment_distribution": {
+            "Positive": 24,
+            "Neutral": 4,
+            "Negative": 7
+          },
+          "positive_ratio": 0.6857142857142857,
+          "negative_ratio": 0.2,
+          "neutral_ratio": 0.11428571428571428
+        },
+        "sauce": {
+          "total_count": 51,
+          "sentiment_distribution": {
+            "Positive": 25,
+            "Negative": 23,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.49019607843137253,
+          "negative_ratio": 0.45098039215686275,
+          "neutral_ratio": 0.058823529411764705
+        },
+        "stuff": {
+          "total_count": 17,
+          "sentiment_distribution": {
+            "Positive": 17
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "ingredients": {
+          "total_count": 51,
+          "sentiment_distribution": {
+            "Negative": 9,
+            "Neutral": 4,
+            "Positive": 38
+          },
+          "positive_ratio": 0.7450980392156863,
+          "negative_ratio": 0.17647058823529413,
+          "neutral_ratio": 0.0784313725490196
+        },
+        "table": {
+          "total_count": 174,
+          "sentiment_distribution": {
+            "Negative": 65,
+            "Neutral": 61,
+            "Positive": 48
+          },
+          "positive_ratio": 0.27586206896551724,
+          "negative_ratio": 0.3735632183908046,
+          "neutral_ratio": 0.3505747126436782
+        },
+        "quality": {
+          "total_count": 56,
+          "sentiment_distribution": {
+            "Positive": 32,
+            "Negative": 24
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.0
+        },
+        "dish": {
+          "total_count": 94,
+          "sentiment_distribution": {
+            "Negative": 24,
+            "Positive": 42,
+            "Neutral": 28
+          },
+          "positive_ratio": 0.44680851063829785,
+          "negative_ratio": 0.2553191489361702,
+          "neutral_ratio": 0.2978723404255319
+        },
+        "mussels": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Negative": 1,
+            "Positive": 15
+          },
+          "positive_ratio": 0.9375,
+          "negative_ratio": 0.0625,
+          "neutral_ratio": 0.0
+        },
+        "patio": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 5
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "beers": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Positive": 13,
+            "Neutral": 7
+          },
+          "positive_ratio": 0.65,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.35
+        },
+        "avocado": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Negative": 5,
+            "Positive": 1
+          },
+          "positive_ratio": 0.16666666666666666,
+          "negative_ratio": 0.8333333333333334,
+          "neutral_ratio": 0.0
+        },
+        "pho": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Neutral": 1,
+            "Positive": 4
+          },
+          "positive_ratio": 0.8,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.2
+        },
+        "shrimp": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Negative": 6
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "pasta": {
+          "total_count": 34,
+          "sentiment_distribution": {
+            "Positive": 26,
+            "Negative": 8
+          },
+          "positive_ratio": 0.7647058823529411,
+          "negative_ratio": 0.23529411764705882,
+          "neutral_ratio": 0.0
+        },
+        "vibe": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Positive": 24
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "bun": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.8
+        },
+        "french fries": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 1,
+            "Positive": 7
+          },
+          "positive_ratio": 0.875,
+          "negative_ratio": 0.125,
+          "neutral_ratio": 0.0
+        },
+        "soups": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Positive": 13,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.8125,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.1875
+        },
+        "desserts": {
+          "total_count": 58,
+          "sentiment_distribution": {
+            "Positive": 43,
+            "Neutral": 7,
+            "Negative": 8
+          },
+          "positive_ratio": 0.7413793103448276,
+          "negative_ratio": 0.13793103448275862,
+          "neutral_ratio": 0.1206896551724138
+        },
+        "lunch": {
+          "total_count": 137,
+          "sentiment_distribution": {
+            "Positive": 48,
+            "Neutral": 82,
+            "Negative": 7
+          },
+          "positive_ratio": 0.35036496350364965,
+          "negative_ratio": 0.051094890510948905,
+          "neutral_ratio": 0.5985401459854015
+        },
+        "chicken tikka": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 5
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "entree": {
+          "total_count": 39,
+          "sentiment_distribution": {
+            "Positive": 20,
+            "Negative": 12,
+            "Neutral": 7
+          },
+          "positive_ratio": 0.5128205128205128,
+          "negative_ratio": 0.3076923076923077,
+          "neutral_ratio": 0.1794871794871795
+        },
+        "mashed potatoes": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 5
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Decor": {
+          "total_count": 21,
+          "sentiment_distribution": {
+            "Positive": 13,
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.6190476190476191,
+          "negative_ratio": 0.19047619047619047,
+          "neutral_ratio": 0.19047619047619047
+        },
+        "tuna melt": {
+          "total_count": 5,
+          "sentiment_distribution": {
+            "Positive": 1,
+            "Negative": 4
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.8,
+          "neutral_ratio": 0.0
+        },
+        "pad thai": {
+          "total_count": 13,
+          "sentiment_distribution": {
+            "Positive": 5,
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.38461538461538464,
+          "negative_ratio": 0.3076923076923077,
+          "neutral_ratio": 0.3076923076923077
+        },
+        "kitchen": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5333333333333333,
+          "negative_ratio": 0.26666666666666666,
+          "neutral_ratio": 0.2
+        },
+        "meats": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Negative": 3
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.2727272727272727,
+          "neutral_ratio": 0.7272727272727273
+        },
+        "Bagels": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "check": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Neutral": 20,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.16666666666666666,
+          "neutral_ratio": 0.8333333333333334
+        },
+        "design": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 11
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "cuisine": {
+          "total_count": 46,
+          "sentiment_distribution": {
+            "Positive": 30,
+            "Neutral": 12,
+            "Negative": 4
+          },
+          "positive_ratio": 0.6521739130434783,
+          "negative_ratio": 0.08695652173913043,
+          "neutral_ratio": 0.2608695652173913
+        },
+        "chefs": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "seats": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Neutral": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.5333333333333333,
+          "neutral_ratio": 0.26666666666666666
+        },
+        "pickles": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 12
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "quantity": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Positive": 16,
+            "Negative": 4
+          },
+          "positive_ratio": 0.8,
+          "negative_ratio": 0.2,
+          "neutral_ratio": 0.0
+        },
+        "sushi bar": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Neutral": 12
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "fried rice": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 11
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "courses": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Neutral": 7,
+            "Positive": 8
+          },
+          "positive_ratio": 0.5333333333333333,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.4666666666666667
+        },
+        "indian food": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.36363636363636365
+        },
+        "wine list": {
+          "total_count": 84,
+          "sentiment_distribution": {
+            "Positive": 69,
+            "Neutral": 4,
+            "Negative": 11
+          },
+          "positive_ratio": 0.8214285714285714,
+          "negative_ratio": 0.13095238095238096,
+          "neutral_ratio": 0.047619047619047616
+        },
+        "Thai food": {
+          "total_count": 40,
+          "sentiment_distribution": {
+            "Positive": 32,
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.8,
+          "negative_ratio": 0.1,
+          "neutral_ratio": 0.1
+        },
+        "glass of wine": {
+          "total_count": 26,
+          "sentiment_distribution": {
+            "Neutral": 22,
+            "Positive": 4
+          },
+          "positive_ratio": 0.15384615384615385,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.8461538461538461
+        },
+        "specials": {
+          "total_count": 51,
+          "sentiment_distribution": {
+            "Neutral": 20,
+            "Positive": 27,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5294117647058824,
+          "negative_ratio": 0.0784313725490196,
+          "neutral_ratio": 0.39215686274509803
+        },
+        "environment": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "beer selection": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "dining": {
+          "total_count": 30,
+          "sentiment_distribution": {
+            "Positive": 20,
+            "Neutral": 7,
+            "Negative": 3
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.1,
+          "neutral_ratio": 0.23333333333333334
+        },
+        "Dosa": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "entrees": {
+          "total_count": 47,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Neutral": 14,
+            "Positive": 25
+          },
+          "positive_ratio": 0.5319148936170213,
+          "negative_ratio": 0.1702127659574468,
+          "neutral_ratio": 0.2978723404255319
+        },
+        "sake martini": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "bagels": {
+          "total_count": 64,
+          "sentiment_distribution": {
+            "Positive": 48,
+            "Neutral": 16
+          },
+          "positive_ratio": 0.75,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.25
+        },
+        "spreads": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "wait staff": {
+          "total_count": 52,
+          "sentiment_distribution": {
+            "Positive": 34,
+            "Negative": 18
+          },
+          "positive_ratio": 0.6538461538461539,
+          "negative_ratio": 0.34615384615384615,
+          "neutral_ratio": 0.0
+        },
+        "French food": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 12
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "pre-theater menu": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "lobster sandwich": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "reservations": {
+          "total_count": 59,
+          "sentiment_distribution": {
+            "Neutral": 27,
+            "Positive": 12,
+            "Negative": 20
+          },
+          "positive_ratio": 0.2033898305084746,
+          "negative_ratio": 0.3389830508474576,
+          "neutral_ratio": 0.4576271186440678
+        },
+        "rice dishes": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.36363636363636365
+        },
+        "Indian food": {
+          "total_count": 35,
+          "sentiment_distribution": {
+            "Positive": 32,
+            "Negative": 3
+          },
+          "positive_ratio": 0.9142857142857143,
+          "negative_ratio": 0.08571428571428572,
+          "neutral_ratio": 0.0
+        },
+        "baby pizzas": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "managers": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.0
+        },
+        "dining experience": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Positive": 10,
+            "Negative": 14
+          },
+          "positive_ratio": 0.4166666666666667,
+          "negative_ratio": 0.5833333333333334,
+          "neutral_ratio": 0.0
+        },
+        "wine selection": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Positive": 16,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.8,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.2
+        },
+        "Indian": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "taste": {
+          "total_count": 56,
+          "sentiment_distribution": {
+            "Positive": 31,
+            "Negative": 21,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5535714285714286,
+          "negative_ratio": 0.375,
+          "neutral_ratio": 0.07142857142857142
+        },
+        "creme brulee": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 7
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.36363636363636365,
+          "neutral_ratio": 0.0
+        },
+        "sugar": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "served": {
+          "total_count": 75,
+          "sentiment_distribution": {
+            "Positive": 30,
+            "Negative": 27,
+            "Neutral": 18
+          },
+          "positive_ratio": 0.4,
+          "negative_ratio": 0.36,
+          "neutral_ratio": 0.24
+        },
+        "Pizza": {
+          "total_count": 32,
+          "sentiment_distribution": {
+            "Positive": 28,
+            "Negative": 4
+          },
+          "positive_ratio": 0.875,
+          "negative_ratio": 0.125,
+          "neutral_ratio": 0.0
+        },
+        "garlic knots": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "chinese food": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 3
+          },
+          "positive_ratio": 0.7272727272727273,
+          "negative_ratio": 0.2727272727272727,
+          "neutral_ratio": 0.0
+        },
+        "getting a table": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 4
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.0
+        },
+        "tables": {
+          "total_count": 62,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Negative": 34,
+            "Positive": 20
+          },
+          "positive_ratio": 0.3225806451612903,
+          "negative_ratio": 0.5483870967741935,
+          "neutral_ratio": 0.12903225806451613
+        },
+        "pesto pizza": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "house salad": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "bottle of wine": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 7,
+            "Negative": 4
+          },
+          "positive_ratio": 0.26666666666666666,
+          "negative_ratio": 0.26666666666666666,
+          "neutral_ratio": 0.4666666666666667
+        },
+        "foods": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 8
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "tastes": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "space": {
+          "total_count": 41,
+          "sentiment_distribution": {
+            "Negative": 15,
+            "Positive": 19,
+            "Neutral": 7
+          },
+          "positive_ratio": 0.4634146341463415,
+          "negative_ratio": 0.36585365853658536,
+          "neutral_ratio": 0.17073170731707318
+        },
+        "menu items": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 4
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.0
+        },
+        "three course meal": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Pad Thai": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 8
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.0
+        },
+        "delivered": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "counter": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Negative": 12,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.8,
+          "neutral_ratio": 0.2
+        },
+        "steaks": {
+          "total_count": 13,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Negative": 3,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5384615384615384,
+          "negative_ratio": 0.23076923076923078,
+          "neutral_ratio": 0.23076923076923078
+        },
+        "soy sauce": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Neutral": 7,
+            "Positive": 4
+          },
+          "positive_ratio": 0.36363636363636365,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.6363636363636364
+        },
+        "calamari": {
+          "total_count": 18,
+          "sentiment_distribution": {
+            "Positive": 14,
+            "Negative": 4
+          },
+          "positive_ratio": 0.7777777777777778,
+          "negative_ratio": 0.2222222222222222,
+          "neutral_ratio": 0.0
+        },
+        "glasses of wine": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "rolls": {
+          "total_count": 23,
+          "sentiment_distribution": {
+            "Positive": 15,
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.6521739130434783,
+          "negative_ratio": 0.17391304347826086,
+          "neutral_ratio": 0.17391304347826086
+        },
+        "sake": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Positive": 16,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.8,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.2
+        },
+        "plain pizza": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "garlic": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 12
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "dinner special": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "tiramisu": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 4
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.0
+        },
+        "bagel": {
+          "total_count": 52,
+          "sentiment_distribution": {
+            "Positive": 16,
+            "Neutral": 24,
+            "Negative": 12
+          },
+          "positive_ratio": 0.3076923076923077,
+          "negative_ratio": 0.23076923076923078,
+          "neutral_ratio": 0.46153846153846156
+        },
+        "sangria": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 4,
+            "Negative": 3
+          },
+          "positive_ratio": 0.36363636363636365,
+          "negative_ratio": 0.2727272727272727,
+          "neutral_ratio": 0.36363636363636365
+        },
+        "beef cubes": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "eggs benedict": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.0
+        },
+        "brunch": {
+          "total_count": 37,
+          "sentiment_distribution": {
+            "Neutral": 29,
+            "Positive": 8
+          },
+          "positive_ratio": 0.21621621621621623,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.7837837837837838
+        },
+        "Dim Sum": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "rice": {
+          "total_count": 70,
+          "sentiment_distribution": {
+            "Neutral": 27,
+            "Positive": 15,
+            "Negative": 28
+          },
+          "positive_ratio": 0.21428571428571427,
+          "negative_ratio": 0.4,
+          "neutral_ratio": 0.38571428571428573
+        },
+        "dim sum": {
+          "total_count": 32,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 12,
+            "Neutral": 12
+          },
+          "positive_ratio": 0.375,
+          "negative_ratio": 0.25,
+          "neutral_ratio": 0.375
+        },
+        "tip": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 12,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.16666666666666666
+        },
+        "hot dogs": {
+          "total_count": 18,
+          "sentiment_distribution": {
+            "Positive": 10,
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5555555555555556,
+          "negative_ratio": 0.2222222222222222,
+          "neutral_ratio": 0.2222222222222222
+        },
+        "Delivery": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "noise level": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "FOOD": {
+          "total_count": 14,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 7,
+            "Positive": 3
+          },
+          "positive_ratio": 0.21428571428571427,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.2857142857142857
+        },
+        "food quality": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "cheesecake": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "employees": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Negative": 11,
+            "Positive": 4
+          },
+          "positive_ratio": 0.26666666666666666,
+          "negative_ratio": 0.7333333333333333,
+          "neutral_ratio": 0.0
+        },
+        "naan": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.4666666666666667,
+          "negative_ratio": 0.26666666666666666,
+          "neutral_ratio": 0.26666666666666666
+        },
+        "bill": {
+          "total_count": 64,
+          "sentiment_distribution": {
+            "Negative": 37,
+            "Neutral": 20,
+            "Positive": 7
+          },
+          "positive_ratio": 0.109375,
+          "negative_ratio": 0.578125,
+          "neutral_ratio": 0.3125
+        },
+        "thai food": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 8,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "pie": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.7272727272727273,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.2727272727272727
+        },
+        "Fish": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "ceiling": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 4
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.0
+        },
+        "menu selections": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "establishment": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "pastas": {
+          "total_count": 19,
+          "sentiment_distribution": {
+            "Positive": 19
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "seating": {
+          "total_count": 24,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 16
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.0
+        },
+        "attitude": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "pastrami": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "quality of food": {
+          "total_count": 19,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 11
+          },
+          "positive_ratio": 0.5789473684210527,
+          "negative_ratio": 0.42105263157894735,
+          "neutral_ratio": 0.0
+        },
+        "Italian food": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 12
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "lobster ravioli": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.0
+        },
+        "seasoning": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 12
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "main dishes": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "eats": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Positive": 16
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "bruschetta": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "panini": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "starter": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.42857142857142855
+        },
+        "door": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "priced": {
+          "total_count": 86,
+          "sentiment_distribution": {
+            "Positive": 71,
+            "Neutral": 8,
+            "Negative": 7
+          },
+          "positive_ratio": 0.8255813953488372,
+          "negative_ratio": 0.08139534883720931,
+          "neutral_ratio": 0.09302325581395349
+        },
+        "lunch specials": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "lamb": {
+          "total_count": 14,
+          "sentiment_distribution": {
+            "Positive": 14
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "escargot": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 3,
+            "Positive": 3
+          },
+          "positive_ratio": 0.3,
+          "negative_ratio": 0.3,
+          "neutral_ratio": 0.4
+        },
+        "look": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 7
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "coconut rice": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "vegetables": {
+          "total_count": 19,
+          "sentiment_distribution": {
+            "Positive": 11,
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5789473684210527,
+          "negative_ratio": 0.21052631578947367,
+          "neutral_ratio": 0.21052631578947367
+        },
+        "bar scene": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "room": {
+          "total_count": 26,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Neutral": 8,
+            "Negative": 11
+          },
+          "positive_ratio": 0.2692307692307692,
+          "negative_ratio": 0.4230769230769231,
+          "neutral_ratio": 0.3076923076923077
+        },
+        "thai cuisine": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "crew": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "host": {
+          "total_count": 18,
+          "sentiment_distribution": {
+            "Positive": 10,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.5555555555555556,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.4444444444444444
+        },
+        "plates": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "waitstaff": {
+          "total_count": 33,
+          "sentiment_distribution": {
+            "Positive": 21,
+            "Negative": 12
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.36363636363636365,
+          "neutral_ratio": 0.0
+        },
+        "diners": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "noodle dishes": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 7
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.36363636363636365
+        },
+        "squid": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "scallops": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Positive": 12,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.8,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.2
+        },
+        "Chef": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 6
+          },
+          "positive_ratio": 0.6,
+          "negative_ratio": 0.4,
+          "neutral_ratio": 0.0
+        },
+        "outdoor seating": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 12
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "salmon": {
+          "total_count": 19,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Negative": 11
+          },
+          "positive_ratio": 0.42105263157894735,
+          "negative_ratio": 0.5789473684210527,
+          "neutral_ratio": 0.0
+        },
+        "bistro fare": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "live jazz": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "toppings": {
+          "total_count": 23,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Positive": 15
+          },
+          "positive_ratio": 0.6521739130434783,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.34782608695652173
+        },
+        "fried dumplings": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.3333333333333333,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "dumpling": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "spice": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "garlic naan": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "live entertainment": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "dance floor": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.42857142857142855
+        },
+        "chocolate sampler": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "dessert wine": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "shows": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 12
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Sangria": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "main course": {
+          "total_count": 16,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Positive": 8
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "thai": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.6666666666666666,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "apetizers": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5714285714285714
+        },
+        "sauces": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Negative": 12
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "champagne": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "caviar": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 12
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "martini": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "back garden": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "fish and chips": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "bar service": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.0
+        },
+        "dessert menu": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5714285714285714
+        },
+        "shredded cheese": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "root vegetables": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "beef": {
+          "total_count": 27,
+          "sentiment_distribution": {
+            "Positive": 15,
+            "Negative": 8,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5555555555555556,
+          "negative_ratio": 0.2962962962962963,
+          "neutral_ratio": 0.14814814814814814
+        },
+        "oil": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Neutral": 8,
+            "Negative": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.3333333333333333,
+          "neutral_ratio": 0.6666666666666666
+        },
+        "Chinese food": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Neutral": 12,
+            "Positive": 3
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.8
+        },
+        "Waiters": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.0
+        },
+        "corned beef": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "crowd": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "lox": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "variety": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "seat": {
+          "total_count": 20,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 12,
+            "Positive": 4
+          },
+          "positive_ratio": 0.2,
+          "negative_ratio": 0.6,
+          "neutral_ratio": 0.2
+        },
+        "serves": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "french food": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "pepper": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "toaster": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "main courses": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.0
+        },
+        "cream cheeses": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "goat cheese": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Japanese food": {
+          "total_count": 14,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 7,
+            "Positive": 3
+          },
+          "positive_ratio": 0.21428571428571427,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.2857142857142857
+        },
+        "entertainment": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "interior": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Negative": 3
+          },
+          "positive_ratio": 0.7,
+          "negative_ratio": 0.3,
+          "neutral_ratio": 0.0
+        },
+        "noise": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "buffet": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "back patio": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "filet": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "course": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "congee": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "Ambience": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "AC": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.0
+        },
+        "atmoshere": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 11
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "spicy tuna roll": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Negative": 4
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.36363636363636365,
+          "neutral_ratio": 0.0
+        },
+        "Drinks": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "bathroom": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 7,
+            "Negative": 4
+          },
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.36363636363636365,
+          "neutral_ratio": 0.0
+        },
+        "pita": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "oysters": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Positive": 12
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "slice": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "fish tanks": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "Lobster Bisque": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "wines by the glass": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "cheese fondue": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "scenery": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.0
+        },
+        "selection": {
+          "total_count": 17,
+          "sentiment_distribution": {
+            "Positive": 13,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.7647058823529411,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.23529411764705882
+        },
+        "SHOWS": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "butter": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "eggs": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "guy": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "takeout": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 8,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.7272727272727273,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.2727272727272727
+        },
+        "Salads": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "portion size": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Negative": 8,
+            "Positive": 3
+          },
+          "positive_ratio": 0.2727272727272727,
+          "negative_ratio": 0.7272727272727273,
+          "neutral_ratio": 0.0
+        },
+        "busboy": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.5
+        },
+        "tuna": {
+          "total_count": 23,
+          "sentiment_distribution": {
+            "Positive": 19,
+            "Negative": 4
+          },
+          "positive_ratio": 0.8260869565217391,
+          "negative_ratio": 0.17391304347826086,
+          "neutral_ratio": 0.0
+        },
+        "coat check girls": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "tanks": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "cream cheese": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "sushi chef": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "sashimi": {
+          "total_count": 15,
+          "sentiment_distribution": {
+            "Negative": 7,
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.4666666666666667,
+          "neutral_ratio": 0.5333333333333333
+        },
+        "dinners": {
+          "total_count": 11,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Neutral": 4,
+            "Negative": 3
+          },
+          "positive_ratio": 0.36363636363636365,
+          "negative_ratio": 0.2727272727272727,
+          "neutral_ratio": 0.36363636363636365
+        },
+        "crab cakes": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "eggplant parmesan": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "curry": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5714285714285714
+        },
+        "portion sizes": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "lettuce": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 8
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0
+        },
+        "comfort food": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "atomosphere": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "italian food": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "scene": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.5714285714285714,
+          "neutral_ratio": 0.0
+        },
+        "Gnochi": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "lunch buffet": {
+          "total_count": 12,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 8
+          },
+          "positive_ratio": 0.6666666666666666,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.3333333333333333
+        },
+        "counter service": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "freshness": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 4
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "surroundings": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "dinner menu": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "martinis": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Meal": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 4,
+            "Negative": 3
+          },
+          "positive_ratio": 0.5714285714285714,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.0
+        },
+        "Dessert": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "mango chicken": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "outside": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Negative": 3
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.42857142857142855,
+          "neutral_ratio": 0.5714285714285714
+        },
+        "Owner": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Neutral": 4,
+            "Positive": 3
+          },
+          "positive_ratio": 0.42857142857142855,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5714285714285714
+        },
+        "summer rolls": {
+          "total_count": 8,
+          "sentiment_distribution": {
+            "Positive": 8
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "SERVICE": {
+          "total_count": 10,
+          "sentiment_distribution": {
+            "Negative": 4,
+            "Positive": 6
+          },
+          "positive_ratio": 0.6,
+          "negative_ratio": 0.4,
+          "neutral_ratio": 0.0
+        },
+        "dinner specials": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "garden": {
+          "total_count": 7,
+          "sentiment_distribution": {
+            "Positive": 7
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "Desserts": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 3,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "sweets": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 3,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "flan": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Neutral": 3,
+            "Positive": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "chairs": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 3,
+            "Neutral": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.5
+        },
+        "falafel": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 6
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "pizza's": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 6
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "deserts": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 6
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "smoothies": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 3,
+            "Negative": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        },
+        "fresh juices": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 6
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "slices": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Negative": 6
+          },
+          "positive_ratio": 0.0,
+          "negative_ratio": 1.0,
+          "neutral_ratio": 0.0
+        },
+        "cold sesame noodles": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 6
+          },
+          "positive_ratio": 1.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.0
+        },
+        "clientele": {
+          "total_count": 6,
+          "sentiment_distribution": {
+            "Positive": 3,
+            "Negative": 3
+          },
+          "positive_ratio": 0.5,
+          "negative_ratio": 0.5,
+          "neutral_ratio": 0.0
+        }
+      },
+      "split_statistics": {
+        "domain": "restaurant",
+        "timestamp": "20250612_150204",
+        "features": {
+          "food": {
+            "group_a_count": 2410,
+            "group_b_count": 16435,
+            "group_a_sentiment": {
+              "Positive": 1649,
+              "Neutral": 338,
+              "Negative": 423
+            },
+            "group_b_sentiment": {
+              "Positive": 9885,
+              "Negative": 3682,
+              "Neutral": 2868
+            },
+            "feature_name": "food",
+            "matching_aspects": [
+              "pakistani food",
+              "fettuccine with grilled seafood in a rosemary-orange sauce",
+              "taiwanese food",
+              "gourmet food",
+              "food's presentation",
+              "seafood dishes",
+              "food runners",
+              "ethnic food",
+              "indian restaurant food",
+              "mexican food",
+              "lunch food",
+              "soul food",
+              "comfort food",
+              "food spot",
+              "fried foods",
+              "food quality",
+              "food was",
+              "the food",
+              "greek food",
+              "thai food",
+              "seafood paella for two",
+              "foods",
+              "japanese food",
+              "indian food",
+              "french food",
+              "hot pot with seafood",
+              "food portion",
+              "portions of the food",
+              "fast food",
+              "breakfast food",
+              "food portions",
+              "bar food",
+              "kitchen food",
+              "food options",
+              "food and",
+              "cooked food",
+              "selection of food",
+              "indian fast food",
+              "people with carts of food",
+              "spicy food",
+              "italian food",
+              "food",
+              "chili signed food items",
+              "selection of meats and seafoods",
+              "food-quality",
+              "exotic food",
+              "sichuan food",
+              "food suggestions",
+              "chinese food",
+              "seafood",
+              "food order",
+              "latin food",
+              "thia food",
+              "japanese comfort food",
+              "hong kong-style food",
+              "display and quality of the food",
+              "spicy ethnic foods",
+              "quality of food",
+              "american chinese food",
+              "food art",
+              "seafood tagliatelle",
+              "brassiere food",
+              "bring food",
+              "snack foods"
+            ]
+          },
+          "service": {
+            "group_a_count": 1256,
+            "group_b_count": 17589,
+            "group_a_sentiment": {
+              "Positive": 821,
+              "Negative": 356,
+              "Neutral": 79
+            },
+            "group_b_sentiment": {
+              "Positive": 10713,
+              "Neutral": 3127,
+              "Negative": 3749
+            },
+            "feature_name": "service",
+            "matching_aspects": [
+              "customer service",
+              "service",
+              "bar service",
+              "service staff",
+              "wait service",
+              "delivery service",
+              "serviceable",
+              "counter service"
+            ]
+          },
+          "staff": {
+            "group_a_count": 447,
+            "group_b_count": 18398,
+            "group_a_sentiment": {
+              "Positive": 331,
+              "Negative": 109,
+              "Neutral": 7
+            },
+            "group_b_sentiment": {
+              "Positive": 11203,
+              "Neutral": 3199,
+              "Negative": 3996
+            },
+            "feature_name": "staff",
+            "matching_aspects": [
+              "staff person",
+              "service staff",
+              "staff memebers",
+              "hosting staff",
+              "wait-staff",
+              "staff member",
+              "staffs",
+              "wait staff",
+              "staff members",
+              "waitstaff",
+              "staff"
+            ]
+          },
+          "atmosphere": {
+            "group_a_count": 1180,
+            "group_b_count": 17665,
+            "group_a_sentiment": {
+              "Positive": 807,
+              "Negative": 173,
+              "Neutral": 200
+            },
+            "group_b_sentiment": {
+              "Positive": 10727,
+              "Neutral": 3006,
+              "Negative": 3932
+            },
+            "feature_name": "atmosphere",
+            "matching_aspects": [
+              "dim sum atmosphere",
+              "dining atmosphere",
+              "he",
+              "atmosphere",
+              "outdoor atmosphere"
+            ]
+          }
+        }
+      },
+      "comparative_analysis": {
+        "domain": "restaurant",
+        "features": {
+          "food": {
+            "avg_review_length_a": 21.740663900414937,
+            "avg_review_length_b": 26.02634621235169,
+            "length_difference": -4.285682311936753,
+            "positive_ratio_a": 0.6842323651452282,
+            "positive_ratio_b": 0.6014602981442044,
+            "positive_ratio_difference": 0.0827720670010238,
+            "negative_ratio_a": 0.1755186721991701,
+            "negative_ratio_b": 0.22403407362336478,
+            "negative_ratio_difference": -0.048515401424194665,
+            "sample_count_a": 2410,
+            "sample_count_b": 16435,
+            "balance_ratio": 0.12788538073759617
+          },
+          "service": {
+            "avg_review_length_a": 24.680732484076433,
+            "avg_review_length_b": 25.535220876684292,
+            "length_difference": -0.854488392607859,
+            "positive_ratio_a": 0.6536624203821656,
+            "positive_ratio_b": 0.609073852976292,
+            "positive_ratio_difference": 0.04458856740587358,
+            "negative_ratio_a": 0.28343949044585987,
+            "negative_ratio_b": 0.21314457899823752,
+            "negative_ratio_difference": 0.07029491144762234,
+            "sample_count_a": 1256,
+            "sample_count_b": 17589,
+            "balance_ratio": 0.0666489785088883
+          },
+          "staff": {
+            "avg_review_length_a": 24.70246085011186,
+            "avg_review_length_b": 25.49711925209262,
+            "length_difference": -0.7946584019807617,
+            "positive_ratio_a": 0.7404921700223713,
+            "positive_ratio_b": 0.6089248831394717,
+            "positive_ratio_difference": 0.13156728688289965,
+            "negative_ratio_a": 0.24384787472035793,
+            "negative_ratio_b": 0.21719752146972496,
+            "negative_ratio_difference": 0.026650353250632974,
+            "sample_count_a": 447,
+            "sample_count_b": 18398,
+            "balance_ratio": 0.02371981958079066
+          },
+          "atmosphere": {
+            "avg_review_length_a": 26.21864406779661,
+            "avg_review_length_b": 25.42881403906029,
+            "length_difference": 0.789830028736322,
+            "positive_ratio_a": 0.6838983050847458,
+            "positive_ratio_b": 0.6072459666006227,
+            "positive_ratio_difference": 0.07665233848412312,
+            "negative_ratio_a": 0.14661016949152542,
+            "negative_ratio_b": 0.22258703651287856,
+            "negative_ratio_difference": -0.07597686702135314,
+            "sample_count_a": 1180,
+            "sample_count_b": 17665,
+            "balance_ratio": 0.06261607853542053
+          }
+        }
+      },
+      "target_features": [
+        "food",
+        "service",
+        "staff",
+        "atmosphere"
+      ]
+    }
+  },
+  "summary": {
+    "total_domains_processed": 1,
+    "total_samples_across_domains": 18845
+  }
+}

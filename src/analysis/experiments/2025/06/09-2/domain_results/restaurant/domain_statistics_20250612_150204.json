@@ -1,0 +1,162 @@
+{
+  "domain": "restaurant",
+  "timestamp": "20250612_150204",
+  "features": {
+    "food": {
+      "group_a_count": 2410,
+      "group_b_count": 16435,
+      "group_a_sentiment": {
+        "Positive": 1649,
+        "Neutral": 338,
+        "Negative": 423
+      },
+      "group_b_sentiment": {
+        "Positive": 9885,
+        "Negative": 3682,
+        "Neutral": 2868
+      },
+      "feature_name": "food",
+      "matching_aspects": [
+        "pakistani food",
+        "fettuccine with grilled seafood in a rosemary-orange sauce",
+        "taiwanese food",
+        "gourmet food",
+        "food's presentation",
+        "seafood dishes",
+        "food runners",
+        "ethnic food",
+        "indian restaurant food",
+        "mexican food",
+        "lunch food",
+        "soul food",
+        "comfort food",
+        "food spot",
+        "fried foods",
+        "food quality",
+        "food was",
+        "the food",
+        "greek food",
+        "thai food",
+        "seafood paella for two",
+        "foods",
+        "japanese food",
+        "indian food",
+        "french food",
+        "hot pot with seafood",
+        "food portion",
+        "portions of the food",
+        "fast food",
+        "breakfast food",
+        "food portions",
+        "bar food",
+        "kitchen food",
+        "food options",
+        "food and",
+        "cooked food",
+        "selection of food",
+        "indian fast food",
+        "people with carts of food",
+        "spicy food",
+        "italian food",
+        "food",
+        "chili signed food items",
+        "selection of meats and seafoods",
+        "food-quality",
+        "exotic food",
+        "sichuan food",
+        "food suggestions",
+        "chinese food",
+        "seafood",
+        "food order",
+        "latin food",
+        "thia food",
+        "japanese comfort food",
+        "hong kong-style food",
+        "display and quality of the food",
+        "spicy ethnic foods",
+        "quality of food",
+        "american chinese food",
+        "food art",
+        "seafood tagliatelle",
+        "brassiere food",
+        "bring food",
+        "snack foods"
+      ]
+    },
+    "service": {
+      "group_a_count": 1256,
+      "group_b_count": 17589,
+      "group_a_sentiment": {
+        "Positive": 821,
+        "Negative": 356,
+        "Neutral": 79
+      },
+      "group_b_sentiment": {
+        "Positive": 10713,
+        "Neutral": 3127,
+        "Negative": 3749
+      },
+      "feature_name": "service",
+      "matching_aspects": [
+        "customer service",
+        "service",
+        "bar service",
+        "service staff",
+        "wait service",
+        "delivery service",
+        "serviceable",
+        "counter service"
+      ]
+    },
+    "staff": {
+      "group_a_count": 447,
+      "group_b_count": 18398,
+      "group_a_sentiment": {
+        "Positive": 331,
+        "Negative": 109,
+        "Neutral": 7
+      },
+      "group_b_sentiment": {
+        "Positive": 11203,
+        "Neutral": 3199,
+        "Negative": 3996
+      },
+      "feature_name": "staff",
+      "matching_aspects": [
+        "staff person",
+        "service staff",
+        "staff memebers",
+        "hosting staff",
+        "wait-staff",
+        "staff member",
+        "staffs",
+        "wait staff",
+        "staff members",
+        "waitstaff",
+        "staff"
+      ]
+    },
+    "atmosphere": {
+      "group_a_count": 1180,
+      "group_b_count": 17665,
+      "group_a_sentiment": {
+        "Positive": 807,
+        "Negative": 173,
+        "Neutral": 200
+      },
+      "group_b_sentiment": {
+        "Positive": 10727,
+        "Neutral": 3006,
+        "Negative": 3932
+      },
+      "feature_name": "atmosphere",
+      "matching_aspects": [
+        "dim sum atmosphere",
+        "dining atmosphere",
+        "he",
+        "atmosphere",
+        "outdoor atmosphere"
+      ]
+    }
+  }
+}

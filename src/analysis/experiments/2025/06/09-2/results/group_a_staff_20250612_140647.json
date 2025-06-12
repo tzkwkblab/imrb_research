@@ -1,0 +1,233 @@
+[
+  {
+    "review_text": "This store is pretty good. Not as great as Walmart( or my preferred, Milford Target), but closer and in a easier area to get to. The store itself is pretty clean and organized, the $T$ are friendly( most of the time), and BEST of all is the Self Checkout this store has! Great clearance sections throughout, and great prices on everything in the store, in general( they pricematch too!).Christian , Debbie , Jen and Hanna are all very friendly, helpful, sensitive to all customer needs. Definitely one of the better Target locations in the area, and they do a GREAT job assisting customers for being such a busy store. Located directly in the Framingham Mall on Cochituate Rd/ Route 30. 4 stars.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 4
+  },
+  {
+    "review_text": "Probably one of the better breakfast sandwiches I' ve ever had. I had the EGGMEATMUFFIN, the bread was toasted perfectly and the bacon was a real thick cut. Not that lame bacon we are more familiar with at your conventional breakfast diner. In addition, the place was clean and the $T$ was very helpful. The butcher had several different cuts available and was knowledgable as well as friendly. I left with some cuts of pork and beef and am excited to come back!",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 13
+  },
+  {
+    "review_text": "I work in the Pru and this is the most affordable and tasty place in the food court. deals where a meal is $ 5$ 7 and the chicken pesto is really good. I am not a chowda person but all there soups I have had are pretty damn good. Broccoli chicken is my favorite. Also, probably the most personable Food court $T$ I have ever had the pleasure of ordering from.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 17
+  },
+  {
+    "review_text": "Great coffee and pastries. Baristas are excellent. All the other $T$ are sooooo lost and vacant.",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 39
+  },
+  {
+    "review_text": "Even the mad Captain Ahab is touched by Starbuck' s goodness... Herman Melville The drive thru was jammed with vehicles when I pulled up, so I opted to park and go to the walk up window. The $T$ were super friendly! More then a few of them said hello to me while I ordered. Even though they were busy, they were all genuinely smiling. They look like they enjoy their job. Great teamwork! I think this is the friendliest Starbucks I' ve ever visited. The building is architecturally pleasing to me so it catches my eye every time I' ve driven past it. I' m glad I stopped this time. It' s close to my freeway entrance so I' ll be making this a regular stop from now on. If you' re in the area, you should too!",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 119
+  },
+  {
+    "review_text": "its the best pizza hut i' v found in florida always got great deals& offers the $T$ are very friendly& make you feel welcome and if you have children with you they make them feel extra special& welcome them in a huge way too",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 137
+  },
+  {
+    "review_text": "By no means is me giving Habaneros 3 stars a bad thing. This is my go to spot for Mexican food when my family comes to visit me from NY. It' s cheap, it' s quick and it' s surprisingly good. The establishment offers a wide selection of Mexican dinners and combination specials, common in other traditional Mexican restaurants. If you' re a fan of Mexican food, especially if you' re from out of town just go here and eat. Parking isn' t bad, your seated immediately and there is always a table available. Unfortunately there can sometimes be minor communication errors with your waitresses and the $T$ so make sure to be very clear with what you want when placing your Oder. The food is good, nothing amazing but it definitely hits the spot.",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 185
+  },
+  {
+    "review_text": "Nice $T$. Subpar food for the price.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 199
+  },
+  {
+    "review_text": "I just had a terrible experience here at the Shaking Crab in Quincy. The server brought us our crab and told us that the crackers were in the washer and would be out in a minute or two. Then 10 minutes passed, still no utensils, we asked again and a different server told us that they didn' t have any more, that they kept going missing. This went on for the rest of the time we were here. After 20 minutes of having our food the 3 of us were given one cracker. The crab was ice cold. The $T$ then avoided our table. We informed the manager and he did not seem to care. I normally would never post anything like this, but that was the worst experience I have had at a restaurant. I would give them a negative star if I could. The food was NOT worth the money it cost us.",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 253
+  },
+  {
+    "review_text": "Nice music, excellent service, reasonable prices. The $T$ is super friendly and food is delicious and fairly priced. Potstickers and Mac and cheese were amazing. The bacon jam burger is my favorite. I love this place. You should go!",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 296
+  },
+  {
+    "review_text": "This is the best place specially during summer evenings. They do provide outer dining area, which is really beautiful. $T$ is very friendly. food and  drinks are good",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 299
+  },
+  {
+    "review_text": "Great spot. Comfortable little joint smack dab in the middle of Harvard Square. Drop in on a hot day and grab a bubble tea while shootin' the breeze with the $T$. You can also challenge Harvard students to a game of Street Fighter 2 if you feel the need, but personally I like to just relax and keep the peace. The only place that rivals this is a bubble tea shop in Calgary that I walked into awkwardly while they were still under construction. They told me to come back in and gave me a free bubble tea though so they are scoring points stricly on being nice and not charging anything( I still tipped though, I' m not a scumbag.) Boston Tea Stop( clever name especially with the MBTA map on the wall) is a valuable addition to the ever diminishing Harvard Square area. Pretty soon that neighborhood will be nothing but boring chain restaurants and mediocre bars so try and support the little guys while you can. Also the staff deserves a shout out. They can talk about the Rival Mob with the best of them.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 342
+  },
+  {
+    "review_text": "Visited this restaurant today for their new weekday lunch hour and was immediately impressed by the friendliness of the $T$ and service. However, after my Caesar salad with grilled shrimp($ 8 additional) showed up, I was less than impressed. This dish comes with 4 pretty small grilled shrimp, that should really only be worth $ 4 at most. I even asked the waitress if that was all the shrimp it came with and she confirmed it was. Will not return to this restaurant as I don' t feel at all that I got a meal worth what I paid.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 369
+  },
+  {
+    "review_text": "First time here the $T$ was wonderful and the food was very well prepared and tasty. I am very particular about Italian restaurants and this one is very good. We will be back often I am sure. The only problem I see is they might need more room very quickly",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 441
+  },
+  {
+    "review_text": "Meatloaf was very good.... I had a very good meal here. $T$ was very friendly as well. Place was quiet and was very relaxing. Prices are fair. Something for everyone on the menu and breakfast all day. I' ll be back.",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 447
+  },
+  {
+    "review_text": "The food was good and the service was exceptional. There were a couple of snafus my soup was taken to the wrong table which the wait staff made up for with cups of another soup to tide me over. $T$ was also very sensitive to my food allergies, and made sure there was no cross contamination in the kitchen. I was pleasantly surprised at how well children are accommodated. There' s a dedicated child' s menu with low cost( around $ 5) entrees, and crayons for coloring.  ( The kids' food was great, too.)",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 489
+  },
+  {
+    "review_text": "Went there last night and was disappointed again! How hard is it to take and order and fill it? All we asked for was a salad and a pizza and for the second time in a row, no salad arrived. At least they didn' t put it on the bill this time. I can understand if the place is jamming, but it was dead in there at 8 PM. Maybe the $T$ should spend less time hanging out together behind the bar, flexing, talking about drinking and plans for later and spend some time doing their jobs. And the pizza was only fair, not the usual excellent. Not a good showing last night. It will be a long time before we return, if we do return. Great pizza can overcome poor service, but fair pizza and poor service? That' s a tough sell.",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 504
+  },
+  {
+    "review_text": "This place is amazing. From the $T$, to the food, and the decor. Went during lunch and the food options are amazing. The bakery goods look so delicious. Order the artichoke eggs Benedict. Every bite was worth it. The wait staff is great. Very helpful and friendly. Worth the stop.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 519
+  },
+  {
+    "review_text": "This place is amazing. From the staff, to the food, and the decor. Went during lunch and the food options are amazing. The bakery goods look so delicious. Order the artichoke eggs Benedict. Every bite was worth it. The wait $T$ is great. Very helpful and friendly. Worth the stop.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 523
+  },
+  {
+    "review_text": "Great comfortable place for wings and a beer. $T$ is super friendly and the whole place has a good vibe. All walks of life are welcomed here and fit in seamlessly. Wish this chain existed in Cincy.",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 536
+  },
+  {
+    "review_text": "El Paso Style Food huh... when I first saw this place, I thought to myself, hmm, I am originally from El Paso and your telling me you make food like mama did back home? Well, this I have to see.\" I took 4 friends to this restaurant and of course, I was very skeptical. We sat down and had the chips with salsa. T he salsa was spicy and tasty and I actually requested more. Our meals included Steak Tampiquena, Flautas, Original El Paso Enchiladas, The Texican dinner and of course, one of my favorite dishes, Carne Chile Colorado. I know what El Paso Chile Colorado should taste like so when I took a bite of The Texican' s Chile Colorado, my taste buds were the happiest they had been in a long time. I also tried the other plates and this is definitely the Chicano food from back in El Paso. All my guests enjoyed their meals as I did. The food tastes like grandma' s food back home. I was truly surprised and delighted. When I feel like eating a great meal from back home, you can bet I will come back here. The $T$ was friendly and knowledgeable. For all you original El Pasoens in Austin, this place is for you, but sorry they don' t serve Chico' s Tacos( El Paso humor) lol. I recommend this place for anyone, it is a great place to eat.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 542
+  },
+  {
+    "review_text": "At at this place for the first time today. I was in early. Coffee was perked... and tasty. Breakfast was very good. Had standard... eggs, bacon, hash browns and French toast. With coffee, still less than $ 10. $T$ was attentive even though they were busy. Coffee never ran out on me. My friend had the eggs Benedict. Well done, particularly for a diner. Hollandaise was homemade... not Sysco. Looking forward to going back. If u are at a swim meet at Harvard U... park the car and walk here... 5 minutes away.",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 662
+  },
+  {
+    "review_text": "Great burgers and vibes. The $T$ is always friendly and ready to assist however they can. The food is the real star of this place. I' ve thoroughly enjoyed the Lamb burger and the ribs so if you' d like some great flavor start there.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 676
+  },
+  {
+    "review_text": "We received terrible service when we ordered at Sweet Mamas today. We told the server we were on lunch break and we come from a company that is right down the road that always orders there so they usually work well with us and get us in and out in a timely manner.... but not today! They were incredibly rude and put our order in late, like 15 minutes after we ordered. Then we asked where our food was and that we needed to leave soon, and the waitress said\" well if you need to leave you need to leave. I will get to go boxes.\" We were in shock. We asked for the owners and they weren' t in, so we ffigure that' s why the $T$ was so terrible today, but my group and I decided to never go back there. So if you go and are served by a young girl that dresses like she' s going to a soccer match, run the other direction and eat somewhere else! We ended up taking our food in TO GO boxes and ate at work. Now we' re telling our whole company of over 4, 000 employees to stay away from it!",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 745
+  },
+  {
+    "review_text": "With a suggestion from a friend on a place to get some dessert we went to Random Order Pie Bar. The location is small and cozy. The $T$ was pleasant and friendly. Unfortunately, the one thing they are known for was a bit off. My son and I had a slice of banana cream and coconut cream. The banana cream was the better of the two. The coconut was a bit bland and the crust on both was hard and even down right hard to cut through. Maybe we came at a bad time and the pies weren' t freshly made. Time will tell if we get another chance to try.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 748
+  },
+  {
+    "review_text": "I' m not a huge fan of chains but I actually enjoy this one. The salad selection is always fresh and sometimes new.   ( I did finally have to admit I don' t care for quinoa after this visit but it was of no fault of the restaurant.) Each time I' ve been in the $T$ and been very friendly and helpful. I try to make it here at least once a month.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 772
+  },
+  {
+    "review_text": "I used to be literally the world' s biggest Milestones fan. I eat out 3 4 times a week and I came to this location very often. Unfortunately, they used to have a great menu but most of that is gone and even though the $T$ are great, the food has gotten consistently worse and worse. I had three bad meals here in a row before I finally decided to pack it in and say good bye. It doesn' t matter what you order, the quality of the ingredients has gotten worse and the kitchen staff seemingly doesn' t care. I' m not sure if I' m allowed to mention other restaurants, but there' s another chain restaurant a block away that has been improving their menu recently and they' ve earned my loyalty now. It' s a shame though because I often recommended Milestones to other people and now I' m forced to do the exact opposite.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 783
+  },
+  {
+    "review_text": "I love the low key vibe of this place. The $T$ is great, there aren' t any attitudes, and they have a good mix of regulars and first timers that are sure to come back. It' s pretty big, which is great for groups and on busy nights. There' s a large patio out back, and a little nook full of couches inside. Good beer selection, great prices.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 920
+  },
+  {
+    "review_text": "My favourite lunch place in the area. Big portions, good prices, and extremely friendly $T$. This is where I was first introduced to Filipino food, and it made a good impression. The menu is huge, and a lot of the dishes are best shared so go with friends.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 986
+  },
+  {
+    "review_text": "What' s not to love? Great food, no grease, clean dining room, friendly $T$, wel priced. Has the feel of a locals only diner without the attitude. You' ll love it!",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 1012
+  },
+  {
+    "review_text": "About a month after visiting Israel I got hit with a falafel craving and had the excuse to finally try this place out. I' m no culinary expert but the food is great for the value( seriously $ 5 falafel). I went on a Saturday night and it was busy but not crowded... interestingly enough they were playing some super geeky dubstep which I was fine with but I' m not sure about everyone else, haha. Decor is modern, well lit, place was clean and $T$ was friendly. Order was up in like 2 minutes, like, QSR fast. Plus I got a big spoonful of tzatziki sauce at no extra charge... mmmm. They also have some unique desserts like fruit tarts. A nice alternative on a Saturday night to the normal Norwood townie infested bars! :)",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 1026
+  },
+  {
+    "review_text": "Finally got a chance to check this place out. Decided to check out the happy hour. I was very happy to hear they have both drink and food specials including a ladies night on Thursday. The food and wait $T$ was great, i tried the tuna flat bread. Everything seemed very fresh. I will definitely be back. I do see the trouble with noise on real busy nights, but i wasn' t effected while on my visit.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 1033
+  },
+  {
+    "review_text": "Always a delightful experience. $T$ is attentive and helpful and the food excellent. We always look forward to eating at Gran Gusto when we' re in Cambridge.",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 1037
+  }
+]

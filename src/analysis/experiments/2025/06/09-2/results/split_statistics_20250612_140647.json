@@ -1,0 +1,61 @@
+{
+  "food": {
+    "group_a_count": 105,
+    "group_b_count": 948,
+    "group_a_sentiment": {
+      "Positive": 80,
+      "Neutral": 9,
+      "Negative": 16
+    },
+    "group_b_sentiment": {
+      "Positive": 614,
+      "Negative": 273,
+      "Neutral": 61
+    },
+    "feature_name": "food"
+  },
+  "service": {
+    "group_a_count": 99,
+    "group_b_count": 954,
+    "group_a_sentiment": {
+      "Positive": 60,
+      "Negative": 31,
+      "Neutral": 8
+    },
+    "group_b_sentiment": {
+      "Positive": 634,
+      "Neutral": 62,
+      "Negative": 258
+    },
+    "feature_name": "service"
+  },
+  "staff": {
+    "group_a_count": 33,
+    "group_b_count": 1020,
+    "group_a_sentiment": {
+      "Positive": 28,
+      "Negative": 5
+    },
+    "group_b_sentiment": {
+      "Positive": 666,
+      "Neutral": 70,
+      "Negative": 284
+    },
+    "feature_name": "staff"
+  },
+  "atmosphere": {
+    "group_a_count": 19,
+    "group_b_count": 1034,
+    "group_a_sentiment": {
+      "Negative": 3,
+      "Positive": 15,
+      "Neutral": 1
+    },
+    "group_b_sentiment": {
+      "Positive": 679,
+      "Neutral": 69,
+      "Negative": 286
+    },
+    "feature_name": "atmosphere"
+  }
+}

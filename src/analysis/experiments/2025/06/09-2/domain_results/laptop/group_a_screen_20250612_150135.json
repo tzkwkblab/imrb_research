@@ -1,0 +1,3258 @@
+[
+  {
+    "review_text": "One night I turned the freaking thing off after using it , the next day I turn it on , no GUI , $T$ all dark , power light steady , hard drive light steady and not flashing as it usually does .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 16,
+    "format": "apc"
+  },
+  {
+    "review_text": "I also got the added bonus of a 30 '' HD Monitor , which really helps to extend my $T$ and keep my eyes fresh !",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 38,
+    "format": "apc"
+  },
+  {
+    "review_text": "My favorite part of this computer is that it has a vga port so I can connect it to a bigger $T$ .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 182,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very large and crystal clear with amazing colors and resolution .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 230,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is bright and the keyboard is nice ;",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 250,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the not so good , I got the $T$ - which is VERY glossy .",
+    "aspect": "stock screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 268,
+    "format": "apc"
+  },
+  {
+    "review_text": "But the $T$ is not that bad for email and web browsing .",
+    "aspect": "screen size",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 295,
+    "format": "apc"
+  },
+  {
+    "review_text": "Sometimes the $T$ even goes black on this computer .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 367,
+    "format": "apc"
+  },
+  {
+    "review_text": "I hate the $T$ and I have done everything I could do the change it .",
+    "aspect": "display screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 402,
+    "format": "apc"
+  },
+  {
+    "review_text": "I gave it to my daughter because I just hated the $T$ , hated that it had no cd drive to at least play cd 's when I wanted to listen to music and do schoolwork .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 405,
+    "format": "apc"
+  },
+  {
+    "review_text": "Three weeks after I bought the netbook , the $T$ quit working .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 425,
+    "format": "apc"
+  },
+  {
+    "review_text": "The Aspire wont even boot past the $T$ with a Droid -LRB- I have tried both Motorola and HTC -RRB- plugged into the USB port .",
+    "aspect": "Acer screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 447,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is a little glary , and I hated the clicking buttons , but I got used to them .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 470,
+    "format": "apc"
+  },
+  {
+    "review_text": "Lightweight and the $T$ is beautiful !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 508,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ shows great colors .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 541,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very large , but the computer is very light .",
+    "aspect": "17 inch screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 548,
+    "format": "apc"
+  },
+  {
+    "review_text": "I also liked the $T$ .",
+    "aspect": "glass screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 553,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is awesome , battery life is good .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 622,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall the computer is very easy to use , the $T$ is perfect , great computer , my daughter loves .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 656,
+    "format": "apc"
+  },
+  {
+    "review_text": "Only a few days after I received the computer back , the $T$ froze again .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 678,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ stopped working on mine after 10 months .",
+    "aspect": "lcd screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 684,
+    "format": "apc"
+  },
+  {
+    "review_text": "My ONLY issues are : 1 -RRB- the $T$ wo n't increase to a higher resolution then 1024 x 6Negative",
+    "aspect": "screen/video resolution",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 723,
+    "format": "apc"
+  },
+  {
+    "review_text": "I paid for extra memory and the $T$ , as well as the top of the line DVD and CD burners .",
+    "aspect": "17-inch screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 738,
+    "format": "apc"
+  },
+  {
+    "review_text": "It was still working , but there was nothing on the $T$ .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 751,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is framed by half - to a full-inch margin that is obviously unnecessary , reduces the screen size and increases the bulk .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 757,
+    "format": "apc"
+  },
+  {
+    "review_text": "The screen is framed by half - to a full-inch margin that is obviously unnecessary , reduces the $T$ and increases the bulk .",
+    "aspect": "screen size",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 758,
+    "format": "apc"
+  },
+  {
+    "review_text": "I had to re-install Windows within two weeks of the purchase and soon discovered cracks in the $T$ .",
+    "aspect": "screen hinges",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 768,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is bright and clear , the operating system is solid and friendly to a novice .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 785,
+    "format": "apc"
+  },
+  {
+    "review_text": "-LRB- I had been a Windows/Linux user before this -RRB- I love the size because the $T$ is big enough for what I use it for -LRB- Internet , artwork -RRB- , and yet it is small enough to be reasonably portable .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 794,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only problem is a lack of $T$ !",
+    "aspect": "screen resolutions",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 818,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was exactly what I was looking for .",
+    "aspect": "screen resolution",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 830,
+    "format": "apc"
+  },
+  {
+    "review_text": "After 20-30 min the $T$ of the notebook switched off .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 839,
+    "format": "apc"
+  },
+  {
+    "review_text": "The large $T$ also helps when you are working in design based programs like Adobe Creative Suite .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 972,
+    "format": "apc"
+  },
+  {
+    "review_text": "Setting would change for some reason , the $T$ would change on it 's own , like the pixel sizes and whatnot .",
+    "aspect": "screen size",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 993,
+    "format": "apc"
+  },
+  {
+    "review_text": "This computer is exceptionally thin for it 's $T$ and processing power .",
+    "aspect": "screen size",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1050,
+    "format": "apc"
+  },
+  {
+    "review_text": "Maybe this is virus related , maybe not , but the computer has locked up many times , and on two occasions , the $T$ has simply gone black .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1053,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is bright and vivid and the keyboard is very easy to use , very important for use quick typers .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1061,
+    "format": "apc"
+  },
+  {
+    "review_text": "However the frozen $T$ kept happening .",
+    "aspect": "screens",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1123,
+    "format": "apc"
+  },
+  {
+    "review_text": "The downside to this netbook is pretty much the same for any netbook : $T$ is not something I 'd stare at for the entire 10-11 hours of battery life five days a week .",
+    "aspect": "screen size",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1130,
+    "format": "apc"
+  },
+  {
+    "review_text": "The big $T$ allows you to enjoy watching movies , pictures and etc !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1134,
+    "format": "apc"
+  },
+  {
+    "review_text": "Now the $T$ is going darker , darker , darker .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1157,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was loving this Netbook because it had an amazing $T$ and display and was small and light , but after 1 week it stopped openning web pages for me -LRB- even after installing new browsers -RRB- then eventually it just started giving me a blue screen and crashing everytime I booted it .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1201,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ and clarity , and sharpness are great .",
+    "aspect": "screen graphics",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1207,
+    "format": "apc"
+  },
+  {
+    "review_text": "The dv4 boasted a faster processor , more memory , and a bigger hard drive than my old computer , plus a better quality web cam , nicer $T$ , and many other features .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1266,
+    "format": "apc"
+  },
+  {
+    "review_text": "/ awesome cooling system / much better grafics card -LRB- ATI 5870 -RRB- / 8GB RAM / $T$ . .",
+    "aspect": "LED backlit screen.",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1293,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is crystal clear and the system is very responsive .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1300,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ , keyboard , and mouse : If you cant see yourself spending the extra money to jump up to a Mac the beautiful screen , responsive island backlit keyboard , and fun multi-touch mouse is worth the extra money to me alone .",
+    "aspect": "Screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1330,
+    "format": "apc"
+  },
+  {
+    "review_text": "Screen , keyboard , and mouse : If you cant see yourself spending the extra money to jump up to a Mac the beautiful $T$ , responsive island backlit keyboard , and fun multi-touch mouse is worth the extra money to me alone .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1332,
+    "format": "apc"
+  },
+  {
+    "review_text": "I love the easy to see $T$ , and It works well for work , persoal or just play .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1387,
+    "format": "apc"
+  },
+  {
+    "review_text": "Just a black $T$ !",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1411,
+    "format": "apc"
+  },
+  {
+    "review_text": "In fact , somehow -LRB- and I never opened it up -RRB- some specks of dust or something got inside the $T$ and are now there permanently , behind the front of the screen , in the way of the display .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1467,
+    "format": "apc"
+  },
+  {
+    "review_text": "In fact , somehow -LRB- and I never opened it up -RRB- some specks of dust or something got inside the screen and are now there permanently , behind the front of the $T$ , in the way of the display .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1468,
+    "format": "apc"
+  },
+  {
+    "review_text": "And the $T$ on this thing is absolutely amazing for high quality videos and movies and gaming .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1499,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is easy to use , has great $T$ , and every so light weight .",
+    "aspect": "screen quality",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1650,
+    "format": "apc"
+  },
+  {
+    "review_text": "This laptop looks great on the surface : $T$ , good price-point , nice appearance , boots up quickly , runs fast etc. .",
+    "aspect": "17\" inch screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1663,
+    "format": "apc"
+  },
+  {
+    "review_text": "Disappointing for such a lovely $T$ and at a reasonable price",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1671,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is the first time that I tried and owning a netbook although I have used 3 different laptops in the past 10 years , I find not much difference except of course for the $T$ .",
+    "aspect": "screen size",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1690,
+    "format": "apc"
+  },
+  {
+    "review_text": "I chose the iBookG4 , a laptop that is an attractive computer with a large $T$ big enough to please anyone .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1693,
+    "format": "apc"
+  },
+  {
+    "review_text": "First the $T$ goes completely out .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1719,
+    "format": "apc"
+  },
+  {
+    "review_text": "The graphics and $T$ are stunning and although I was a PC person , I was able to understand how to use a mac fairly quickly .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1756,
+    "format": "apc"
+  },
+  {
+    "review_text": "Apparently under the $T$ there are 2 little screws and when the screen gets moved back and forth , they come loose .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1768,
+    "format": "apc"
+  },
+  {
+    "review_text": "Apparently under the screen there are 2 little screws and when the $T$ gets moved back and forth , they come loose .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1769,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is gorgeous - yummy good .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1775,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is perfect for portable use in any environment .",
+    "aspect": "Screen size",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1827,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ almost looked like a barcode when it froze .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1845,
+    "format": "apc"
+  },
+  {
+    "review_text": "Its small enough where I can take it pretty much anywhere , but still has a big enough $T$ to get everything done .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1847,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ takes some getting use to , because it is smaller than the laptop .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1867,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is nice and the images comes very clear , the keyboard and the fit just feels right .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1881,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is almost pure HD .",
+    "aspect": "resolution on the screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1903,
+    "format": "apc"
+  },
+  {
+    "review_text": "We love the $T$ , although it is still lightweight and very easy to tote around .",
+    "aspect": "size of the screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1920,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , I issued a replacement RMA for a few dead pixels in the upper zone of the $T$ , which is noticable to me .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1965,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only thing I do n't understand is that the $T$ is n't high enough for some pages , such as Yahoo!Mail .",
+    "aspect": "resolution of the screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1979,
+    "format": "apc"
+  },
+  {
+    "review_text": "the $T$ automatically adjusts .",
+    "aspect": "screen brightness",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1985,
+    "format": "apc"
+  },
+  {
+    "review_text": "But with A WAY Bigger $T$ , and IS able to connect to an HDMI .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2063,
+    "format": "apc"
+  },
+  {
+    "review_text": "I also had a problem with the touchpad that caused the mouse pointer to jump all over the $T$ .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2083,
+    "format": "apc"
+  },
+  {
+    "review_text": "The large $T$ gives you the option to comfortably watch movies or TV shows on your computer instead of buying an additional TV for your dorm room .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2093,
+    "format": "apc"
+  },
+  {
+    "review_text": "Externally the keys on my keyboard are falling off , after a few uses the paint is rubbing off the button below the mouse pad and where the heals of my hands sit , and the $T$ has a terrible glare .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2142,
+    "format": "apc"
+  },
+  {
+    "review_text": "- Bluetooth -LRB- 2.1 -RRB- , Fingerprint Reader , Full 1920x1080 $T$ - Integrated Mic/Webcam * - Dual touchpad mode is interesting , and easy to use -5 USB ports - Runs about 38-41C on idle , Up to 65 -LRB- for me -RRB- on load - Very quiet - I could go on and on .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2151,
+    "format": "apc"
+  },
+  {
+    "review_text": "The acer one computer that I bought is $T$ and its hard to find lap top bags for it , but I like the big screen on it .",
+    "aspect": "17 ince screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2159,
+    "format": "apc"
+  },
+  {
+    "review_text": "The acer one computer that I bought is 17 ince screen and its hard to find lap top bags for it , but I like the big $T$ on it .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2160,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only drawback for me is how dirty the $T$ gets , and rather quickly too .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2182,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is nice , side view angles are pretty good .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2205,
+    "format": "apc"
+  },
+  {
+    "review_text": "The fact that the $T$ reacts to the lighting around you is an added luxury-when you are working around others in dark areas and want privacy or do n't want to bother them with bright lighting , it is very convenient to have a darker , softer lit screen .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2206,
+    "format": "apc"
+  },
+  {
+    "review_text": "The fact that the screen reacts to the lighting around you is an added luxury-when you are working around others in dark areas and want privacy or do n't want to bother them with bright lighting , it is very convenient to have a darker , softer lit $T$ .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2207,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ gets smeary and dusty very quickly and it 's very noticeable .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2254,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is huge and coloful , but no LED backlighting .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2264,
+    "format": "apc"
+  },
+  {
+    "review_text": "Crisp $T$ , great battery life , and plenty of storage .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2293,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , my sister got the exact same laptop -LRB- since they were so cheap -RRB- and after 8 months , the $T$ split in half just from everyday use .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2297,
+    "format": "apc"
+  },
+  {
+    "review_text": "Thus , when you carry it at a slanted angle , the $T$ will `` topple '' or `` slide '' down , if you understand what I mean .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2319,
+    "format": "apc"
+  },
+  {
+    "review_text": "Did not enjoy the new Windows 8 and $T$ .",
+    "aspect": "touchscreen functions",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 4,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has so much more speed and the $T$ is very sharp .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 34,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has all the expected features and more + plus a wide $T$ and more than roomy keyboard .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 46,
+    "format": "apc"
+  },
+  {
+    "review_text": "I have had it over a year now with out a Glitch of any kind . . I love the lit up keys and $T$ ... this thing is Fast and clear as can be .",
+    "aspect": "screen display",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 60,
+    "format": "apc"
+  },
+  {
+    "review_text": "Cons : $T$ .",
+    "aspect": "Screen resolution",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 68,
+    "format": "apc"
+  },
+  {
+    "review_text": "i love the keyboard and the $T$ .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 130,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is bright and gorgeous .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 209,
+    "format": "apc"
+  },
+  {
+    "review_text": "Nice $T$ , keyboard works great !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 216,
+    "format": "apc"
+  },
+  {
+    "review_text": "I like the $T$ at night .",
+    "aspect": "lighted screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 229,
+    "format": "apc"
+  },
+  {
+    "review_text": "I needed a laptop with big storage , a nice $T$ and fast so I can photoshop without any problem .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 313,
+    "format": "apc"
+  },
+  {
+    "review_text": "fast , great $T$ , beautiful apps for a laptop ; priced at 1100 on the apple website ; amazon had it for 1098 + tax - plus i had a 10 % off coupon from amazon-cost me 998 plus tax - 1070 - OTD !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 377,
+    "format": "apc"
+  },
+  {
+    "review_text": "At home and the office it gets plugged into an external 24 '' LCD screen , so $T$ is not terribly important .",
+    "aspect": "built in screen size",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 517,
+    "format": "apc"
+  },
+  {
+    "review_text": "At home and the office it gets plugged into an $T$ , so built in screen size is not terribly important .",
+    "aspect": "external 24\" LCD screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 518,
+    "format": "apc"
+  },
+  {
+    "review_text": "Put a SSD and use a $T$ , this set up is silky smooth !",
+    "aspect": "21\" LED screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 531,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ , the software and the smoothness of the operating system .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 578,
+    "format": "apc"
+  },
+  {
+    "review_text": "Fine if you have a $T$ .",
+    "aspect": "touch screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 592,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ - although some people might complain about low res which I think is ridiculous .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 636,
+    "format": "apc"
+  },
+  {
+    "review_text": "Did not enjoy the new Windows 8 and $T$ .",
+    "aspect": "touchscreen functions",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 4,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has so much more speed and the $T$ is very sharp .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 34,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has all the expected features and more + plus a wide $T$ and more than roomy keyboard .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 46,
+    "format": "apc"
+  },
+  {
+    "review_text": "I have had it over a year now with out a Glitch of any kind . . I love the lit up keys and $T$ ... this thing is Fast and clear as can be .",
+    "aspect": "screen display",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 60,
+    "format": "apc"
+  },
+  {
+    "review_text": "Cons : $T$ .",
+    "aspect": "Screen resolution",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 68,
+    "format": "apc"
+  },
+  {
+    "review_text": "i love the keyboard and the $T$ .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 130,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is bright and gorgeous .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 209,
+    "format": "apc"
+  },
+  {
+    "review_text": "Nice $T$ , keyboard works great !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 216,
+    "format": "apc"
+  },
+  {
+    "review_text": "I like the $T$ at night .",
+    "aspect": "lighted screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 229,
+    "format": "apc"
+  },
+  {
+    "review_text": "I needed a laptop with big storage , a nice $T$ and fast so I can photoshop without any problem .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 313,
+    "format": "apc"
+  },
+  {
+    "review_text": "fast , great $T$ , beautiful apps for a laptop ; priced at 1100 on the apple website ; amazon had it for 1098 + tax - plus i had a 10 % off coupon from amazon-cost me 998 plus tax - 1070 - OTD !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 377,
+    "format": "apc"
+  },
+  {
+    "review_text": "At home and the office it gets plugged into an external 24 '' LCD screen , so $T$ is not terribly important .",
+    "aspect": "built in screen size",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 517,
+    "format": "apc"
+  },
+  {
+    "review_text": "At home and the office it gets plugged into an $T$ , so built in screen size is not terribly important .",
+    "aspect": "external 24\" LCD screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 518,
+    "format": "apc"
+  },
+  {
+    "review_text": "Put a SSD and use a $T$ , this set up is silky smooth !",
+    "aspect": "21\" LED screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 531,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ , the software and the smoothness of the operating system .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 578,
+    "format": "apc"
+  },
+  {
+    "review_text": "Fine if you have a $T$ .",
+    "aspect": "touch screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 592,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ - although some people might complain about low res which I think is ridiculous .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Test_Gold.xml.seg",
+    "sample_id": 636,
+    "format": "apc"
+  },
+  {
+    "review_text": "One night I turned the freaking thing off after using it , the next day I turn it on , no GUI , $T$ all dark , power light steady , hard drive light steady and not flashing as it usually does .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 16,
+    "format": "apc"
+  },
+  {
+    "review_text": "I also got the added bonus of a 30 '' HD Monitor , which really helps to extend my $T$ and keep my eyes fresh !",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 38,
+    "format": "apc"
+  },
+  {
+    "review_text": "My favorite part of this computer is that it has a vga port so I can connect it to a bigger $T$ .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 182,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very large and crystal clear with amazing colors and resolution .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 230,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is bright and the keyboard is nice ;",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 250,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the not so good , I got the $T$ - which is VERY glossy .",
+    "aspect": "stock screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 268,
+    "format": "apc"
+  },
+  {
+    "review_text": "But the $T$ is not that bad for email and web browsing .",
+    "aspect": "screen size",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 295,
+    "format": "apc"
+  },
+  {
+    "review_text": "Sometimes the $T$ even goes black on this computer .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 367,
+    "format": "apc"
+  },
+  {
+    "review_text": "I hate the $T$ and I have done everything I could do the change it .",
+    "aspect": "display screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 402,
+    "format": "apc"
+  },
+  {
+    "review_text": "I gave it to my daughter because I just hated the $T$ , hated that it had no cd drive to at least play cd 's when I wanted to listen to music and do schoolwork .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 405,
+    "format": "apc"
+  },
+  {
+    "review_text": "Three weeks after I bought the netbook , the $T$ quit working .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 425,
+    "format": "apc"
+  },
+  {
+    "review_text": "The Aspire wont even boot past the $T$ with a Droid -LRB- I have tried both Motorola and HTC -RRB- plugged into the USB port .",
+    "aspect": "Acer screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 447,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is a little glary , and I hated the clicking buttons , but I got used to them .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 470,
+    "format": "apc"
+  },
+  {
+    "review_text": "Lightweight and the $T$ is beautiful !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 508,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ shows great colors .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 541,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very large , but the computer is very light .",
+    "aspect": "17 inch screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 548,
+    "format": "apc"
+  },
+  {
+    "review_text": "I also liked the $T$ .",
+    "aspect": "glass screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 553,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is awesome , battery life is good .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 622,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall the computer is very easy to use , the $T$ is perfect , great computer , my daughter loves .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 656,
+    "format": "apc"
+  },
+  {
+    "review_text": "Only a few days after I received the computer back , the $T$ froze again .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 678,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ stopped working on mine after 10 months .",
+    "aspect": "lcd screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 684,
+    "format": "apc"
+  },
+  {
+    "review_text": "My ONLY issues are : 1 -RRB- the $T$ wo n't increase to a higher resolution then 1024 x 6Negative",
+    "aspect": "screen/video resolution",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 723,
+    "format": "apc"
+  },
+  {
+    "review_text": "I paid for extra memory and the $T$ , as well as the top of the line DVD and CD burners .",
+    "aspect": "17-inch screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 738,
+    "format": "apc"
+  },
+  {
+    "review_text": "It was still working , but there was nothing on the $T$ .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 751,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is framed by half - to a full-inch margin that is obviously unnecessary , reduces the screen size and increases the bulk .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 757,
+    "format": "apc"
+  },
+  {
+    "review_text": "The screen is framed by half - to a full-inch margin that is obviously unnecessary , reduces the $T$ and increases the bulk .",
+    "aspect": "screen size",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 758,
+    "format": "apc"
+  },
+  {
+    "review_text": "I had to re-install Windows within two weeks of the purchase and soon discovered cracks in the $T$ .",
+    "aspect": "screen hinges",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 768,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is bright and clear , the operating system is solid and friendly to a novice .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 785,
+    "format": "apc"
+  },
+  {
+    "review_text": "-LRB- I had been a Windows/Linux user before this -RRB- I love the size because the $T$ is big enough for what I use it for -LRB- Internet , artwork -RRB- , and yet it is small enough to be reasonably portable .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 794,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only problem is a lack of $T$ !",
+    "aspect": "screen resolutions",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 818,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was exactly what I was looking for .",
+    "aspect": "screen resolution",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 830,
+    "format": "apc"
+  },
+  {
+    "review_text": "After 20-30 min the $T$ of the notebook switched off .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 839,
+    "format": "apc"
+  },
+  {
+    "review_text": "The large $T$ also helps when you are working in design based programs like Adobe Creative Suite .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 972,
+    "format": "apc"
+  },
+  {
+    "review_text": "Setting would change for some reason , the $T$ would change on it 's own , like the pixel sizes and whatnot .",
+    "aspect": "screen size",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 993,
+    "format": "apc"
+  },
+  {
+    "review_text": "This computer is exceptionally thin for it 's $T$ and processing power .",
+    "aspect": "screen size",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1050,
+    "format": "apc"
+  },
+  {
+    "review_text": "Maybe this is virus related , maybe not , but the computer has locked up many times , and on two occasions , the $T$ has simply gone black .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1053,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is bright and vivid and the keyboard is very easy to use , very important for use quick typers .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1061,
+    "format": "apc"
+  },
+  {
+    "review_text": "However the frozen $T$ kept happening .",
+    "aspect": "screens",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1123,
+    "format": "apc"
+  },
+  {
+    "review_text": "The downside to this netbook is pretty much the same for any netbook : $T$ is not something I 'd stare at for the entire 10-11 hours of battery life five days a week .",
+    "aspect": "screen size",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1130,
+    "format": "apc"
+  },
+  {
+    "review_text": "The big $T$ allows you to enjoy watching movies , pictures and etc !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1134,
+    "format": "apc"
+  },
+  {
+    "review_text": "Now the $T$ is going darker , darker , darker .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1157,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was loving this Netbook because it had an amazing $T$ and display and was small and light , but after 1 week it stopped openning web pages for me -LRB- even after installing new browsers -RRB- then eventually it just started giving me a blue screen and crashing everytime I booted it .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1201,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ and clarity , and sharpness are great .",
+    "aspect": "screen graphics",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1207,
+    "format": "apc"
+  },
+  {
+    "review_text": "The dv4 boasted a faster processor , more memory , and a bigger hard drive than my old computer , plus a better quality web cam , nicer $T$ , and many other features .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1266,
+    "format": "apc"
+  },
+  {
+    "review_text": "/ awesome cooling system / much better grafics card -LRB- ATI 5870 -RRB- / 8GB RAM / $T$ . .",
+    "aspect": "LED backlit screen.",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1293,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is crystal clear and the system is very responsive .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1300,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ , keyboard , and mouse : If you cant see yourself spending the extra money to jump up to a Mac the beautiful screen , responsive island backlit keyboard , and fun multi-touch mouse is worth the extra money to me alone .",
+    "aspect": "Screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1330,
+    "format": "apc"
+  },
+  {
+    "review_text": "Screen , keyboard , and mouse : If you cant see yourself spending the extra money to jump up to a Mac the beautiful $T$ , responsive island backlit keyboard , and fun multi-touch mouse is worth the extra money to me alone .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1332,
+    "format": "apc"
+  },
+  {
+    "review_text": "I love the easy to see $T$ , and It works well for work , persoal or just play .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1387,
+    "format": "apc"
+  },
+  {
+    "review_text": "Just a black $T$ !",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1411,
+    "format": "apc"
+  },
+  {
+    "review_text": "In fact , somehow -LRB- and I never opened it up -RRB- some specks of dust or something got inside the $T$ and are now there permanently , behind the front of the screen , in the way of the display .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1467,
+    "format": "apc"
+  },
+  {
+    "review_text": "In fact , somehow -LRB- and I never opened it up -RRB- some specks of dust or something got inside the screen and are now there permanently , behind the front of the $T$ , in the way of the display .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1468,
+    "format": "apc"
+  },
+  {
+    "review_text": "And the $T$ on this thing is absolutely amazing for high quality videos and movies and gaming .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1499,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is easy to use , has great $T$ , and every so light weight .",
+    "aspect": "screen quality",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1650,
+    "format": "apc"
+  },
+  {
+    "review_text": "This laptop looks great on the surface : $T$ , good price-point , nice appearance , boots up quickly , runs fast etc. .",
+    "aspect": "17\" inch screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1663,
+    "format": "apc"
+  },
+  {
+    "review_text": "Disappointing for such a lovely $T$ and at a reasonable price",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1671,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is the first time that I tried and owning a netbook although I have used 3 different laptops in the past 10 years , I find not much difference except of course for the $T$ .",
+    "aspect": "screen size",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1690,
+    "format": "apc"
+  },
+  {
+    "review_text": "I chose the iBookG4 , a laptop that is an attractive computer with a large $T$ big enough to please anyone .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1693,
+    "format": "apc"
+  },
+  {
+    "review_text": "First the $T$ goes completely out .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1719,
+    "format": "apc"
+  },
+  {
+    "review_text": "The graphics and $T$ are stunning and although I was a PC person , I was able to understand how to use a mac fairly quickly .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1756,
+    "format": "apc"
+  },
+  {
+    "review_text": "Apparently under the $T$ there are 2 little screws and when the screen gets moved back and forth , they come loose .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1768,
+    "format": "apc"
+  },
+  {
+    "review_text": "Apparently under the screen there are 2 little screws and when the $T$ gets moved back and forth , they come loose .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1769,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is gorgeous - yummy good .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1775,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is perfect for portable use in any environment .",
+    "aspect": "Screen size",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1827,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ almost looked like a barcode when it froze .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1845,
+    "format": "apc"
+  },
+  {
+    "review_text": "Its small enough where I can take it pretty much anywhere , but still has a big enough $T$ to get everything done .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1847,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ takes some getting use to , because it is smaller than the laptop .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1867,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is nice and the images comes very clear , the keyboard and the fit just feels right .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1881,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is almost pure HD .",
+    "aspect": "resolution on the screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1903,
+    "format": "apc"
+  },
+  {
+    "review_text": "We love the $T$ , although it is still lightweight and very easy to tote around .",
+    "aspect": "size of the screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1920,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , I issued a replacement RMA for a few dead pixels in the upper zone of the $T$ , which is noticable to me .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1965,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only thing I do n't understand is that the $T$ is n't high enough for some pages , such as Yahoo!Mail .",
+    "aspect": "resolution of the screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1979,
+    "format": "apc"
+  },
+  {
+    "review_text": "the $T$ automatically adjusts .",
+    "aspect": "screen brightness",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1985,
+    "format": "apc"
+  },
+  {
+    "review_text": "But with A WAY Bigger $T$ , and IS able to connect to an HDMI .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2063,
+    "format": "apc"
+  },
+  {
+    "review_text": "I also had a problem with the touchpad that caused the mouse pointer to jump all over the $T$ .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2083,
+    "format": "apc"
+  },
+  {
+    "review_text": "The large $T$ gives you the option to comfortably watch movies or TV shows on your computer instead of buying an additional TV for your dorm room .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2093,
+    "format": "apc"
+  },
+  {
+    "review_text": "Externally the keys on my keyboard are falling off , after a few uses the paint is rubbing off the button below the mouse pad and where the heals of my hands sit , and the $T$ has a terrible glare .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2142,
+    "format": "apc"
+  },
+  {
+    "review_text": "- Bluetooth -LRB- 2.1 -RRB- , Fingerprint Reader , Full 1920x1080 $T$ - Integrated Mic/Webcam * - Dual touchpad mode is interesting , and easy to use -5 USB ports - Runs about 38-41C on idle , Up to 65 -LRB- for me -RRB- on load - Very quiet - I could go on and on .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2151,
+    "format": "apc"
+  },
+  {
+    "review_text": "The acer one computer that I bought is $T$ and its hard to find lap top bags for it , but I like the big screen on it .",
+    "aspect": "17 ince screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2159,
+    "format": "apc"
+  },
+  {
+    "review_text": "The acer one computer that I bought is 17 ince screen and its hard to find lap top bags for it , but I like the big $T$ on it .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2160,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only drawback for me is how dirty the $T$ gets , and rather quickly too .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2182,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is nice , side view angles are pretty good .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2205,
+    "format": "apc"
+  },
+  {
+    "review_text": "The fact that the $T$ reacts to the lighting around you is an added luxury-when you are working around others in dark areas and want privacy or do n't want to bother them with bright lighting , it is very convenient to have a darker , softer lit screen .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2206,
+    "format": "apc"
+  },
+  {
+    "review_text": "The fact that the screen reacts to the lighting around you is an added luxury-when you are working around others in dark areas and want privacy or do n't want to bother them with bright lighting , it is very convenient to have a darker , softer lit $T$ .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2207,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ gets smeary and dusty very quickly and it 's very noticeable .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2254,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is huge and coloful , but no LED backlighting .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2264,
+    "format": "apc"
+  },
+  {
+    "review_text": "Crisp $T$ , great battery life , and plenty of storage .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2293,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , my sister got the exact same laptop -LRB- since they were so cheap -RRB- and after 8 months , the $T$ split in half just from everyday use .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2297,
+    "format": "apc"
+  },
+  {
+    "review_text": "Thus , when you carry it at a slanted angle , the $T$ will `` topple '' or `` slide '' down , if you understand what I mean .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2319,
+    "format": "apc"
+  },
+  {
+    "review_text": "One night I turned the freaking thing off after using it , the next day I turn it on , no GUI , $T$ all dark , power light steady , hard drive light steady and not flashing as it usually does .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 16,
+    "format": "apc"
+  },
+  {
+    "review_text": "I also got the added bonus of a 30 '' HD Monitor , which really helps to extend my $T$ and keep my eyes fresh !",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 38,
+    "format": "apc"
+  },
+  {
+    "review_text": "My favorite part of this computer is that it has a vga port so I can connect it to a bigger $T$ .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 182,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very large and crystal clear with amazing colors and resolution .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 230,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is bright and the keyboard is nice ;",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 250,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the not so good , I got the $T$ - which is VERY glossy .",
+    "aspect": "stock screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 268,
+    "format": "apc"
+  },
+  {
+    "review_text": "But the $T$ is not that bad for email and web browsing .",
+    "aspect": "screen size",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 295,
+    "format": "apc"
+  },
+  {
+    "review_text": "Sometimes the $T$ even goes black on this computer .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 367,
+    "format": "apc"
+  },
+  {
+    "review_text": "I hate the $T$ and I have done everything I could do the change it .",
+    "aspect": "display screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 402,
+    "format": "apc"
+  },
+  {
+    "review_text": "I gave it to my daughter because I just hated the $T$ , hated that it had no cd drive to at least play cd 's when I wanted to listen to music and do schoolwork .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 405,
+    "format": "apc"
+  },
+  {
+    "review_text": "Three weeks after I bought the netbook , the $T$ quit working .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 425,
+    "format": "apc"
+  },
+  {
+    "review_text": "The Aspire wont even boot past the $T$ with a Droid -LRB- I have tried both Motorola and HTC -RRB- plugged into the USB port .",
+    "aspect": "Acer screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 447,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is a little glary , and I hated the clicking buttons , but I got used to them .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 470,
+    "format": "apc"
+  },
+  {
+    "review_text": "Lightweight and the $T$ is beautiful !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 508,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ shows great colors .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 541,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very large , but the computer is very light .",
+    "aspect": "17 inch screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 548,
+    "format": "apc"
+  },
+  {
+    "review_text": "I also liked the $T$ .",
+    "aspect": "glass screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 553,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is awesome , battery life is good .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 622,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall the computer is very easy to use , the $T$ is perfect , great computer , my daughter loves .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 656,
+    "format": "apc"
+  },
+  {
+    "review_text": "Only a few days after I received the computer back , the $T$ froze again .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 678,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ stopped working on mine after 10 months .",
+    "aspect": "lcd screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 684,
+    "format": "apc"
+  },
+  {
+    "review_text": "My ONLY issues are : 1 -RRB- the $T$ wo n't increase to a higher resolution then 1024 x 6Negative",
+    "aspect": "screen/video resolution",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 723,
+    "format": "apc"
+  },
+  {
+    "review_text": "I paid for extra memory and the $T$ , as well as the top of the line DVD and CD burners .",
+    "aspect": "17-inch screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 738,
+    "format": "apc"
+  },
+  {
+    "review_text": "It was still working , but there was nothing on the $T$ .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 751,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is framed by half - to a full-inch margin that is obviously unnecessary , reduces the screen size and increases the bulk .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 757,
+    "format": "apc"
+  },
+  {
+    "review_text": "The screen is framed by half - to a full-inch margin that is obviously unnecessary , reduces the $T$ and increases the bulk .",
+    "aspect": "screen size",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 758,
+    "format": "apc"
+  },
+  {
+    "review_text": "I had to re-install Windows within two weeks of the purchase and soon discovered cracks in the $T$ .",
+    "aspect": "screen hinges",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 768,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is bright and clear , the operating system is solid and friendly to a novice .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 785,
+    "format": "apc"
+  },
+  {
+    "review_text": "-LRB- I had been a Windows/Linux user before this -RRB- I love the size because the $T$ is big enough for what I use it for -LRB- Internet , artwork -RRB- , and yet it is small enough to be reasonably portable .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 794,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only problem is a lack of $T$ !",
+    "aspect": "screen resolutions",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 818,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was exactly what I was looking for .",
+    "aspect": "screen resolution",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 830,
+    "format": "apc"
+  },
+  {
+    "review_text": "After 20-30 min the $T$ of the notebook switched off .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 839,
+    "format": "apc"
+  },
+  {
+    "review_text": "The large $T$ also helps when you are working in design based programs like Adobe Creative Suite .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 972,
+    "format": "apc"
+  },
+  {
+    "review_text": "Setting would change for some reason , the $T$ would change on it 's own , like the pixel sizes and whatnot .",
+    "aspect": "screen size",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 993,
+    "format": "apc"
+  },
+  {
+    "review_text": "This computer is exceptionally thin for it 's $T$ and processing power .",
+    "aspect": "screen size",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1050,
+    "format": "apc"
+  },
+  {
+    "review_text": "Maybe this is virus related , maybe not , but the computer has locked up many times , and on two occasions , the $T$ has simply gone black .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1053,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is bright and vivid and the keyboard is very easy to use , very important for use quick typers .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1061,
+    "format": "apc"
+  },
+  {
+    "review_text": "However the frozen $T$ kept happening .",
+    "aspect": "screens",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1123,
+    "format": "apc"
+  },
+  {
+    "review_text": "The downside to this netbook is pretty much the same for any netbook : $T$ is not something I 'd stare at for the entire 10-11 hours of battery life five days a week .",
+    "aspect": "screen size",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1130,
+    "format": "apc"
+  },
+  {
+    "review_text": "The big $T$ allows you to enjoy watching movies , pictures and etc !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1134,
+    "format": "apc"
+  },
+  {
+    "review_text": "Now the $T$ is going darker , darker , darker .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1157,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was loving this Netbook because it had an amazing $T$ and display and was small and light , but after 1 week it stopped openning web pages for me -LRB- even after installing new browsers -RRB- then eventually it just started giving me a blue screen and crashing everytime I booted it .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1201,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ and clarity , and sharpness are great .",
+    "aspect": "screen graphics",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1207,
+    "format": "apc"
+  },
+  {
+    "review_text": "The dv4 boasted a faster processor , more memory , and a bigger hard drive than my old computer , plus a better quality web cam , nicer $T$ , and many other features .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1266,
+    "format": "apc"
+  },
+  {
+    "review_text": "/ awesome cooling system / much better grafics card -LRB- ATI 5870 -RRB- / 8GB RAM / $T$ . .",
+    "aspect": "LED backlit screen.",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1293,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is crystal clear and the system is very responsive .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1300,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ , keyboard , and mouse : If you cant see yourself spending the extra money to jump up to a Mac the beautiful screen , responsive island backlit keyboard , and fun multi-touch mouse is worth the extra money to me alone .",
+    "aspect": "Screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1330,
+    "format": "apc"
+  },
+  {
+    "review_text": "Screen , keyboard , and mouse : If you cant see yourself spending the extra money to jump up to a Mac the beautiful $T$ , responsive island backlit keyboard , and fun multi-touch mouse is worth the extra money to me alone .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1332,
+    "format": "apc"
+  },
+  {
+    "review_text": "I love the easy to see $T$ , and It works well for work , persoal or just play .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1387,
+    "format": "apc"
+  },
+  {
+    "review_text": "Just a black $T$ !",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1411,
+    "format": "apc"
+  },
+  {
+    "review_text": "In fact , somehow -LRB- and I never opened it up -RRB- some specks of dust or something got inside the $T$ and are now there permanently , behind the front of the screen , in the way of the display .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1467,
+    "format": "apc"
+  },
+  {
+    "review_text": "In fact , somehow -LRB- and I never opened it up -RRB- some specks of dust or something got inside the screen and are now there permanently , behind the front of the $T$ , in the way of the display .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1468,
+    "format": "apc"
+  },
+  {
+    "review_text": "And the $T$ on this thing is absolutely amazing for high quality videos and movies and gaming .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1499,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is easy to use , has great $T$ , and every so light weight .",
+    "aspect": "screen quality",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1650,
+    "format": "apc"
+  },
+  {
+    "review_text": "This laptop looks great on the surface : $T$ , good price-point , nice appearance , boots up quickly , runs fast etc. .",
+    "aspect": "17\" inch screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1663,
+    "format": "apc"
+  },
+  {
+    "review_text": "Disappointing for such a lovely $T$ and at a reasonable price",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1671,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is the first time that I tried and owning a netbook although I have used 3 different laptops in the past 10 years , I find not much difference except of course for the $T$ .",
+    "aspect": "screen size",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1690,
+    "format": "apc"
+  },
+  {
+    "review_text": "I chose the iBookG4 , a laptop that is an attractive computer with a large $T$ big enough to please anyone .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1693,
+    "format": "apc"
+  },
+  {
+    "review_text": "First the $T$ goes completely out .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1719,
+    "format": "apc"
+  },
+  {
+    "review_text": "The graphics and $T$ are stunning and although I was a PC person , I was able to understand how to use a mac fairly quickly .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1756,
+    "format": "apc"
+  },
+  {
+    "review_text": "Apparently under the $T$ there are 2 little screws and when the screen gets moved back and forth , they come loose .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1768,
+    "format": "apc"
+  },
+  {
+    "review_text": "Apparently under the screen there are 2 little screws and when the $T$ gets moved back and forth , they come loose .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1769,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is gorgeous - yummy good .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1775,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is perfect for portable use in any environment .",
+    "aspect": "Screen size",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1827,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ almost looked like a barcode when it froze .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1845,
+    "format": "apc"
+  },
+  {
+    "review_text": "Its small enough where I can take it pretty much anywhere , but still has a big enough $T$ to get everything done .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1847,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ takes some getting use to , because it is smaller than the laptop .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1867,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is nice and the images comes very clear , the keyboard and the fit just feels right .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1881,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is almost pure HD .",
+    "aspect": "resolution on the screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1903,
+    "format": "apc"
+  },
+  {
+    "review_text": "We love the $T$ , although it is still lightweight and very easy to tote around .",
+    "aspect": "size of the screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1920,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , I issued a replacement RMA for a few dead pixels in the upper zone of the $T$ , which is noticable to me .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1965,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only thing I do n't understand is that the $T$ is n't high enough for some pages , such as Yahoo!Mail .",
+    "aspect": "resolution of the screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1979,
+    "format": "apc"
+  },
+  {
+    "review_text": "the $T$ automatically adjusts .",
+    "aspect": "screen brightness",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1985,
+    "format": "apc"
+  },
+  {
+    "review_text": "But with A WAY Bigger $T$ , and IS able to connect to an HDMI .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2063,
+    "format": "apc"
+  },
+  {
+    "review_text": "I also had a problem with the touchpad that caused the mouse pointer to jump all over the $T$ .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2083,
+    "format": "apc"
+  },
+  {
+    "review_text": "The large $T$ gives you the option to comfortably watch movies or TV shows on your computer instead of buying an additional TV for your dorm room .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2093,
+    "format": "apc"
+  },
+  {
+    "review_text": "Externally the keys on my keyboard are falling off , after a few uses the paint is rubbing off the button below the mouse pad and where the heals of my hands sit , and the $T$ has a terrible glare .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2142,
+    "format": "apc"
+  },
+  {
+    "review_text": "- Bluetooth -LRB- 2.1 -RRB- , Fingerprint Reader , Full 1920x1080 $T$ - Integrated Mic/Webcam * - Dual touchpad mode is interesting , and easy to use -5 USB ports - Runs about 38-41C on idle , Up to 65 -LRB- for me -RRB- on load - Very quiet - I could go on and on .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2151,
+    "format": "apc"
+  },
+  {
+    "review_text": "The acer one computer that I bought is $T$ and its hard to find lap top bags for it , but I like the big screen on it .",
+    "aspect": "17 ince screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2159,
+    "format": "apc"
+  },
+  {
+    "review_text": "The acer one computer that I bought is 17 ince screen and its hard to find lap top bags for it , but I like the big $T$ on it .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2160,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only drawback for me is how dirty the $T$ gets , and rather quickly too .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2182,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is nice , side view angles are pretty good .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2205,
+    "format": "apc"
+  },
+  {
+    "review_text": "The fact that the $T$ reacts to the lighting around you is an added luxury-when you are working around others in dark areas and want privacy or do n't want to bother them with bright lighting , it is very convenient to have a darker , softer lit screen .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2206,
+    "format": "apc"
+  },
+  {
+    "review_text": "The fact that the screen reacts to the lighting around you is an added luxury-when you are working around others in dark areas and want privacy or do n't want to bother them with bright lighting , it is very convenient to have a darker , softer lit $T$ .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2207,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ gets smeary and dusty very quickly and it 's very noticeable .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2254,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is huge and coloful , but no LED backlighting .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2264,
+    "format": "apc"
+  },
+  {
+    "review_text": "Crisp $T$ , great battery life , and plenty of storage .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2293,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , my sister got the exact same laptop -LRB- since they were so cheap -RRB- and after 8 months , the $T$ split in half just from everyday use .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2297,
+    "format": "apc"
+  },
+  {
+    "review_text": "Thus , when you carry it at a slanted angle , the $T$ will `` topple '' or `` slide '' down , if you understand what I mean .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2319,
+    "format": "apc"
+  },
+  {
+    "review_text": "Did not enjoy the new Windows 8 and $T$ .",
+    "aspect": "touchscreen functions",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 4,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has so much more speed and the $T$ is very sharp .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 34,
+    "format": "apc"
+  },
+  {
+    "review_text": "It has all the expected features and more + plus a wide $T$ and more than roomy keyboard .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 46,
+    "format": "apc"
+  },
+  {
+    "review_text": "I have had it over a year now with out a Glitch of any kind . . I love the lit up keys and $T$ ... this thing is Fast and clear as can be .",
+    "aspect": "screen display",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 60,
+    "format": "apc"
+  },
+  {
+    "review_text": "Cons : $T$ .",
+    "aspect": "Screen resolution",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 68,
+    "format": "apc"
+  },
+  {
+    "review_text": "i love the keyboard and the $T$ .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 130,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is bright and gorgeous .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 209,
+    "format": "apc"
+  },
+  {
+    "review_text": "Nice $T$ , keyboard works great !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 216,
+    "format": "apc"
+  },
+  {
+    "review_text": "I like the $T$ at night .",
+    "aspect": "lighted screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 229,
+    "format": "apc"
+  },
+  {
+    "review_text": "I needed a laptop with big storage , a nice $T$ and fast so I can photoshop without any problem .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 313,
+    "format": "apc"
+  },
+  {
+    "review_text": "fast , great $T$ , beautiful apps for a laptop ; priced at 1100 on the apple website ; amazon had it for 1098 + tax - plus i had a 10 % off coupon from amazon-cost me 998 plus tax - 1070 - OTD !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 377,
+    "format": "apc"
+  },
+  {
+    "review_text": "At home and the office it gets plugged into an external 24 '' LCD screen , so $T$ is not terribly important .",
+    "aspect": "built in screen size",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 517,
+    "format": "apc"
+  },
+  {
+    "review_text": "At home and the office it gets plugged into an $T$ , so built in screen size is not terribly important .",
+    "aspect": "external 24\" LCD screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 518,
+    "format": "apc"
+  },
+  {
+    "review_text": "Put a SSD and use a $T$ , this set up is silky smooth !",
+    "aspect": "21\" LED screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 531,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ , the software and the smoothness of the operating system .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 578,
+    "format": "apc"
+  },
+  {
+    "review_text": "Fine if you have a $T$ .",
+    "aspect": "touch screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 592,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ - although some people might complain about low res which I think is ridiculous .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Valid_Gold.xml.seg",
+    "sample_id": 636,
+    "format": "apc"
+  },
+  {
+    "review_text": "One night I turned the freaking thing off after using it , the next day I turn it on , no GUI , $T$ all dark , power light steady , hard drive light steady and not flashing as it usually does .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 16,
+    "format": "apc"
+  },
+  {
+    "review_text": "I also got the added bonus of a 30 '' HD Monitor , which really helps to extend my $T$ and keep my eyes fresh !",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 38,
+    "format": "apc"
+  },
+  {
+    "review_text": "My favorite part of this computer is that it has a vga port so I can connect it to a bigger $T$ .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 182,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very large and crystal clear with amazing colors and resolution .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 230,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is bright and the keyboard is nice ;",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 250,
+    "format": "apc"
+  },
+  {
+    "review_text": "For the not so good , I got the $T$ - which is VERY glossy .",
+    "aspect": "stock screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 268,
+    "format": "apc"
+  },
+  {
+    "review_text": "But the $T$ is not that bad for email and web browsing .",
+    "aspect": "screen size",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 295,
+    "format": "apc"
+  },
+  {
+    "review_text": "Sometimes the $T$ even goes black on this computer .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 367,
+    "format": "apc"
+  },
+  {
+    "review_text": "I hate the $T$ and I have done everything I could do the change it .",
+    "aspect": "display screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 402,
+    "format": "apc"
+  },
+  {
+    "review_text": "I gave it to my daughter because I just hated the $T$ , hated that it had no cd drive to at least play cd 's when I wanted to listen to music and do schoolwork .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 405,
+    "format": "apc"
+  },
+  {
+    "review_text": "Three weeks after I bought the netbook , the $T$ quit working .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 425,
+    "format": "apc"
+  },
+  {
+    "review_text": "The Aspire wont even boot past the $T$ with a Droid -LRB- I have tried both Motorola and HTC -RRB- plugged into the USB port .",
+    "aspect": "Acer screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 447,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is a little glary , and I hated the clicking buttons , but I got used to them .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 470,
+    "format": "apc"
+  },
+  {
+    "review_text": "Lightweight and the $T$ is beautiful !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 508,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ shows great colors .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 541,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very large , but the computer is very light .",
+    "aspect": "17 inch screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 548,
+    "format": "apc"
+  },
+  {
+    "review_text": "I also liked the $T$ .",
+    "aspect": "glass screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 553,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is awesome , battery life is good .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 622,
+    "format": "apc"
+  },
+  {
+    "review_text": "Overall the computer is very easy to use , the $T$ is perfect , great computer , my daughter loves .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 656,
+    "format": "apc"
+  },
+  {
+    "review_text": "Only a few days after I received the computer back , the $T$ froze again .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 678,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ stopped working on mine after 10 months .",
+    "aspect": "lcd screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 684,
+    "format": "apc"
+  },
+  {
+    "review_text": "My ONLY issues are : 1 -RRB- the $T$ wo n't increase to a higher resolution then 1024 x 6Negative",
+    "aspect": "screen/video resolution",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 723,
+    "format": "apc"
+  },
+  {
+    "review_text": "I paid for extra memory and the $T$ , as well as the top of the line DVD and CD burners .",
+    "aspect": "17-inch screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 738,
+    "format": "apc"
+  },
+  {
+    "review_text": "It was still working , but there was nothing on the $T$ .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 751,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is framed by half - to a full-inch margin that is obviously unnecessary , reduces the screen size and increases the bulk .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 757,
+    "format": "apc"
+  },
+  {
+    "review_text": "The screen is framed by half - to a full-inch margin that is obviously unnecessary , reduces the $T$ and increases the bulk .",
+    "aspect": "screen size",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 758,
+    "format": "apc"
+  },
+  {
+    "review_text": "I had to re-install Windows within two weeks of the purchase and soon discovered cracks in the $T$ .",
+    "aspect": "screen hinges",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 768,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is bright and clear , the operating system is solid and friendly to a novice .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 785,
+    "format": "apc"
+  },
+  {
+    "review_text": "-LRB- I had been a Windows/Linux user before this -RRB- I love the size because the $T$ is big enough for what I use it for -LRB- Internet , artwork -RRB- , and yet it is small enough to be reasonably portable .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 794,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only problem is a lack of $T$ !",
+    "aspect": "screen resolutions",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 818,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was exactly what I was looking for .",
+    "aspect": "screen resolution",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 830,
+    "format": "apc"
+  },
+  {
+    "review_text": "After 20-30 min the $T$ of the notebook switched off .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 839,
+    "format": "apc"
+  },
+  {
+    "review_text": "The large $T$ also helps when you are working in design based programs like Adobe Creative Suite .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 972,
+    "format": "apc"
+  },
+  {
+    "review_text": "Setting would change for some reason , the $T$ would change on it 's own , like the pixel sizes and whatnot .",
+    "aspect": "screen size",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 993,
+    "format": "apc"
+  },
+  {
+    "review_text": "This computer is exceptionally thin for it 's $T$ and processing power .",
+    "aspect": "screen size",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1050,
+    "format": "apc"
+  },
+  {
+    "review_text": "Maybe this is virus related , maybe not , but the computer has locked up many times , and on two occasions , the $T$ has simply gone black .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1053,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is bright and vivid and the keyboard is very easy to use , very important for use quick typers .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1061,
+    "format": "apc"
+  },
+  {
+    "review_text": "However the frozen $T$ kept happening .",
+    "aspect": "screens",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1123,
+    "format": "apc"
+  },
+  {
+    "review_text": "The downside to this netbook is pretty much the same for any netbook : $T$ is not something I 'd stare at for the entire 10-11 hours of battery life five days a week .",
+    "aspect": "screen size",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1130,
+    "format": "apc"
+  },
+  {
+    "review_text": "The big $T$ allows you to enjoy watching movies , pictures and etc !",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1134,
+    "format": "apc"
+  },
+  {
+    "review_text": "Now the $T$ is going darker , darker , darker .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1157,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was loving this Netbook because it had an amazing $T$ and display and was small and light , but after 1 week it stopped openning web pages for me -LRB- even after installing new browsers -RRB- then eventually it just started giving me a blue screen and crashing everytime I booted it .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1201,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ and clarity , and sharpness are great .",
+    "aspect": "screen graphics",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1207,
+    "format": "apc"
+  },
+  {
+    "review_text": "The dv4 boasted a faster processor , more memory , and a bigger hard drive than my old computer , plus a better quality web cam , nicer $T$ , and many other features .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1266,
+    "format": "apc"
+  },
+  {
+    "review_text": "/ awesome cooling system / much better grafics card -LRB- ATI 5870 -RRB- / 8GB RAM / $T$ . .",
+    "aspect": "LED backlit screen.",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1293,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is crystal clear and the system is very responsive .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1300,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ , keyboard , and mouse : If you cant see yourself spending the extra money to jump up to a Mac the beautiful screen , responsive island backlit keyboard , and fun multi-touch mouse is worth the extra money to me alone .",
+    "aspect": "Screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1330,
+    "format": "apc"
+  },
+  {
+    "review_text": "Screen , keyboard , and mouse : If you cant see yourself spending the extra money to jump up to a Mac the beautiful $T$ , responsive island backlit keyboard , and fun multi-touch mouse is worth the extra money to me alone .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1332,
+    "format": "apc"
+  },
+  {
+    "review_text": "I love the easy to see $T$ , and It works well for work , persoal or just play .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1387,
+    "format": "apc"
+  },
+  {
+    "review_text": "Just a black $T$ !",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1411,
+    "format": "apc"
+  },
+  {
+    "review_text": "In fact , somehow -LRB- and I never opened it up -RRB- some specks of dust or something got inside the $T$ and are now there permanently , behind the front of the screen , in the way of the display .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1467,
+    "format": "apc"
+  },
+  {
+    "review_text": "In fact , somehow -LRB- and I never opened it up -RRB- some specks of dust or something got inside the screen and are now there permanently , behind the front of the $T$ , in the way of the display .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1468,
+    "format": "apc"
+  },
+  {
+    "review_text": "And the $T$ on this thing is absolutely amazing for high quality videos and movies and gaming .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1499,
+    "format": "apc"
+  },
+  {
+    "review_text": "It is easy to use , has great $T$ , and every so light weight .",
+    "aspect": "screen quality",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1650,
+    "format": "apc"
+  },
+  {
+    "review_text": "This laptop looks great on the surface : $T$ , good price-point , nice appearance , boots up quickly , runs fast etc. .",
+    "aspect": "17\" inch screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1663,
+    "format": "apc"
+  },
+  {
+    "review_text": "Disappointing for such a lovely $T$ and at a reasonable price",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1671,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is the first time that I tried and owning a netbook although I have used 3 different laptops in the past 10 years , I find not much difference except of course for the $T$ .",
+    "aspect": "screen size",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1690,
+    "format": "apc"
+  },
+  {
+    "review_text": "I chose the iBookG4 , a laptop that is an attractive computer with a large $T$ big enough to please anyone .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1693,
+    "format": "apc"
+  },
+  {
+    "review_text": "First the $T$ goes completely out .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1719,
+    "format": "apc"
+  },
+  {
+    "review_text": "The graphics and $T$ are stunning and although I was a PC person , I was able to understand how to use a mac fairly quickly .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1756,
+    "format": "apc"
+  },
+  {
+    "review_text": "Apparently under the $T$ there are 2 little screws and when the screen gets moved back and forth , they come loose .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1768,
+    "format": "apc"
+  },
+  {
+    "review_text": "Apparently under the screen there are 2 little screws and when the $T$ gets moved back and forth , they come loose .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1769,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is gorgeous - yummy good .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1775,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is perfect for portable use in any environment .",
+    "aspect": "Screen size",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1827,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ almost looked like a barcode when it froze .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1845,
+    "format": "apc"
+  },
+  {
+    "review_text": "Its small enough where I can take it pretty much anywhere , but still has a big enough $T$ to get everything done .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1847,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ takes some getting use to , because it is smaller than the laptop .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1867,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is nice and the images comes very clear , the keyboard and the fit just feels right .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1881,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is almost pure HD .",
+    "aspect": "resolution on the screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1903,
+    "format": "apc"
+  },
+  {
+    "review_text": "We love the $T$ , although it is still lightweight and very easy to tote around .",
+    "aspect": "size of the screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1920,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , I issued a replacement RMA for a few dead pixels in the upper zone of the $T$ , which is noticable to me .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1965,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only thing I do n't understand is that the $T$ is n't high enough for some pages , such as Yahoo!Mail .",
+    "aspect": "resolution of the screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1979,
+    "format": "apc"
+  },
+  {
+    "review_text": "the $T$ automatically adjusts .",
+    "aspect": "screen brightness",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 1985,
+    "format": "apc"
+  },
+  {
+    "review_text": "But with A WAY Bigger $T$ , and IS able to connect to an HDMI .",
+    "aspect": "Screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2063,
+    "format": "apc"
+  },
+  {
+    "review_text": "I also had a problem with the touchpad that caused the mouse pointer to jump all over the $T$ .",
+    "aspect": "screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2083,
+    "format": "apc"
+  },
+  {
+    "review_text": "The large $T$ gives you the option to comfortably watch movies or TV shows on your computer instead of buying an additional TV for your dorm room .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2093,
+    "format": "apc"
+  },
+  {
+    "review_text": "Externally the keys on my keyboard are falling off , after a few uses the paint is rubbing off the button below the mouse pad and where the heals of my hands sit , and the $T$ has a terrible glare .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2142,
+    "format": "apc"
+  },
+  {
+    "review_text": "- Bluetooth -LRB- 2.1 -RRB- , Fingerprint Reader , Full 1920x1080 $T$ - Integrated Mic/Webcam * - Dual touchpad mode is interesting , and easy to use -5 USB ports - Runs about 38-41C on idle , Up to 65 -LRB- for me -RRB- on load - Very quiet - I could go on and on .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2151,
+    "format": "apc"
+  },
+  {
+    "review_text": "The acer one computer that I bought is $T$ and its hard to find lap top bags for it , but I like the big screen on it .",
+    "aspect": "17 ince screen",
+    "sentiment": "Neutral",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2159,
+    "format": "apc"
+  },
+  {
+    "review_text": "The acer one computer that I bought is 17 ince screen and its hard to find lap top bags for it , but I like the big $T$ on it .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2160,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only drawback for me is how dirty the $T$ gets , and rather quickly too .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2182,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is nice , side view angles are pretty good .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2205,
+    "format": "apc"
+  },
+  {
+    "review_text": "The fact that the $T$ reacts to the lighting around you is an added luxury-when you are working around others in dark areas and want privacy or do n't want to bother them with bright lighting , it is very convenient to have a darker , softer lit screen .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2206,
+    "format": "apc"
+  },
+  {
+    "review_text": "The fact that the screen reacts to the lighting around you is an added luxury-when you are working around others in dark areas and want privacy or do n't want to bother them with bright lighting , it is very convenient to have a darker , softer lit $T$ .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2207,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ gets smeary and dusty very quickly and it 's very noticeable .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2254,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is huge and coloful , but no LED backlighting .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2264,
+    "format": "apc"
+  },
+  {
+    "review_text": "Crisp $T$ , great battery life , and plenty of storage .",
+    "aspect": "screen",
+    "sentiment": "Positive",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2293,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , my sister got the exact same laptop -LRB- since they were so cheap -RRB- and after 8 months , the $T$ split in half just from everyday use .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2297,
+    "format": "apc"
+  },
+  {
+    "review_text": "Thus , when you carry it at a slanted angle , the $T$ will `` topple '' or `` slide '' down , if you understand what I mean .",
+    "aspect": "screen",
+    "sentiment": "Negative",
+    "source_file": "Laptops_Train.xml.seg",
+    "sample_id": 2319,
+    "format": "apc"
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "review_text": "I have been here twice and have had really good food and service both times. I got a burger with caramelized onions, a red wine sauce and I believe blue cheese the first time. It was excellent and just the right size for me. I hate going out and ordering a burger that is bigger than my head that I can' t even finish half of! Flip' s burgers are about the same size I would make for myself at home. The second time I went I had a limited time seasonal offering which was a venison burger with pea shoots, some kind of cheese that reminded me of brie, and a very sweet syrupy sauce which I could have done without, but overall it was very good. I also had onion rings and they were possibly the best onion rings I' ve had ever. The only thing I don' t really like about Flip is the $T$ and layout of the tables. I guess they were going for trendy upscale or whatever, but it makes me feel as if I am in a school cafeteria back in high school. I don' t like it. There are long white tables shoved up against each other with uncomfortable modern looking plastic chairs that kind of look like they came from Ikea. It' s also pretty loud in there because there is nothing to absorb the sound, like a school cafeteria. The last time I was in there there were a couple of women with small children. I have no idea why someone would bring a child to Flip unless that child was a very adventerous eater. They don' t make anything plain. Everything on the menu has some pretty exotic ingredients. It' s also very pricy for burgers. This is the last place on Earth I would bring kids to eat. Burger King is right down the street.",
+    "aspect": "atmosphere",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 23
+  },
+  {
+    "review_text": "Perfect spices, nice $T$& music, great lighting and decor. Even the restroom area is pretty cool. Will definitely come again.",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 152
+  },
+  {
+    "review_text": "Located in the German Village, this Cup o Joe is the best in the chain, in my opinion. A huge dessert selection and drink menu ensure that there' s something for everyone' s taste. The $T$ is casual, comfortable, and relaxing. Free WiFi and a location right next to the Book Loft ensure that this place will always be doing business, despite the Starbucks across the street.",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 167
+  },
+  {
+    "review_text": "Jacks is the place to be. The food is exceptional, I recommend the calzones! Or one of their funky pizza slice creations( hotdog pizza ect)! They have some good alcohol prices and a good $T$. During dinner it' s always packed though so be prepared to sit out back!",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 184
+  },
+  {
+    "review_text": "Went here on Sunday for first time. Plenty of parking which was nice. The jalapeno cornbread was very good! Mac n chz also good. Ordered the moist brisket because I thought it would be better since the lean is generally dry at times.. the brisket was super moist, fatty, and very greasy.. had alot of oil on the plate.. most of what I got was fat... next time ill try the lean.. the sausage was so so.. im still a bigger fan of pokejoes.. There was a guy who looked homeless playing guitar and singing very loud inside.. went to sit outside in the heat bc this guy was so loud and annoying.. he seemed kinda drunk too.. not sure why they let him do this bc ruined the $T$ for us.. I' ll give it another shot but it is pricey and wasn' t that great",
+    "aspect": "atmosphere",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 276
+  },
+  {
+    "review_text": "We ate at this place all three mornings we were in Orlando this past weekend. The food was awesome and the servings were large! The first and third day we had breakfast there the service was so amazing! The two different ladies were very attentive and super friendly. The second day( different lady) was not as great but she was busy and alone so I will give her that. The place was very clean and a great $T$. Definitely recommended!",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 332
+  },
+  {
+    "review_text": "I loved the tuna tacos... deep fried rolled in corn tortilla.. mmmmmmmm. Great with guac. And the migas were so yummy! My daughter always loves the breakfast tacos. On special occasions, I will get the chicken with mole sauce. SOOO good!!! Salsa is good too, fresh ingredients. I love all the fresh fruit drinks( frescas). My favorite is the white one( rice drink)... probably the worst for me. Great service, always friendly. I don' t mind the cheap prices either. I love the $T$ here, cool and hip. If you' re traveling down Congress, find this place!... It' s a diamond in the rough! Austinite now transpotted in FL but make going to Nueva Onda a priority every time I come home to visit.",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 368
+  },
+  {
+    "review_text": "Great $T$ and packaging... but the cupcake tasted really bad and the frosting even worse! I was very excited to try Sweet after it opened and the very cute atmosphere gave me hope that I would be in for a treat. I got my cupcakes to go and I was immediately enamored with the boxes and packaging. However when i got home and actually tried the cupcakes I was sorely disappointed. The cake was dry really, really dry. Stuck in my throat and felt like sandpaper dry. The frosting, by contrast was sweet really, really sweet. Cloyingly sweet really quite unpleasant. I ended up throwing 1/ 2 of each away it was really that bad. I think they have a great concept that is very on trend, great packaging and store design, a great location and a customer base who will pay through the nose for a cupcake but honestly... it isn' t all about marketing! You have to have cupcakes that actually taste good... or at least are not objectionably bad! I am not sure how they are going to make it... I hope for their sake they figure out how to actually make a product that people will enjoy eating!",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 412
+  },
+  {
+    "review_text": "The Barking Crab was a family tradition for us for years before I moved to Boston. Once a summer, when visiting our family in the city, we would go to the Barking Crab for some decent food and wonderful $T$. Sadly, once I became vegetarian, the menu became extremely limited for me, which made it much less appealing. But still, many happy memories from the Barking Crab! Great family place!",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 444
+  },
+  {
+    "review_text": "I went here this past weekend for their roast( first Saturday of every month). The food was wonderful. The $T$ was great. Beers and  cocktails were yummy! The menu was interesting.... BUT the portion was small. It was a ham roast with mashed sweet potatoes, turnips and brussel sprouts. The meal had about a 1/ 4 cup of sweet mashed potatoes and 2 1/ 2 brussel sprouts. I was there with 8 people and I don' t think anyone left satisfied. I' ll give it another try but it was not a good first impression.",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 451
+  },
+  {
+    "review_text": "Super fun bar with great beer and a lively $T$. I went on a Friday night with friends and saw multiple live music performances. We had to wait in line for a little while but the man at the front made it go by quicker by asking us trivia questions. There was a fair amount of seating and my group of 6 didn' t have trouble finding a table. I got the sour guava for my first drink which I enjoyed. The second I had was their milk stout. It was fine but I can say I' ve had better. I really liked their' bevi' station with sparkling and still water with different flavors, it was a nice touch. Some things I didn' t take advantage of was the chocolate bar, the arcade games, or the tasting room restaurant in the back, but definitely things I want to try next time I' m there!",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 475
+  },
+  {
+    "review_text": "Jerk chicken didn' t taste authentic. Chicken taco had bone in it. Restaurant is in food court of flea market so don' t expect $T$.",
+    "aspect": "atmosphere",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 534
+  },
+  {
+    "review_text": "Simple menu, reasonable prices. Delicious bacon, and the banana pancakes are awesome too. It' s a great go to breakfast/ brunch joint with the kind of $T$ you appreciate on a very lazy Sunday morning. Simple, straight forward breakfast option for anyone who lives in the area. I' ll be back.",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 651
+  },
+  {
+    "review_text": "The Cottonwood is mediocre. I ordered the Twice Stuffed Chicken and my boyfriend got the Seafood Gunpowder. Both were just ok; things I could make at home. The $T$ was nice, but the food was too pricey for a mediocre meal.",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 672
+  },
+  {
+    "review_text": "This is definitely a unique restaurant! We were here on a Friday night and were surprised to find people literally dancing on their tables with a DJ playing a mix of dance music and what I imagine was Greek pop music. The $T$ was very loud but overall the food was great and the service was excellent. Worth checking out!",
+    "aspect": "atmosphere",
+    "sentiment": "Neutral",
+    "source_file": "yelp.train.txt",
+    "sample_id": 687
+  },
+  {
+    "review_text": "SiP is one of my favorite spots in Boulder. The owners are two of the friendliest people I' ve ever met and the service couldn' t be better. It' s a great spot to stop and have a coffee or drink with friends. The flatbread pizzas are fantastic as well! SiP has a fun, laid back $T$ that is perfect for just about every occasion. I highly recommend to anyone nearby!",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 709
+  },
+  {
+    "review_text": "Charming $T$ in this hidden gem. Would really like to give 4. 5 stars due to comment below but definitely deserves more than 4 stars. Courteous service. Loved the look and California feel of inside being open to the\" patio\" area. Good all excellently prepared. Charcuterie plate was fun to explore. Yellow gazpacho was delicious although it' s smoothness isn' t what I know if as gazpacho. Duck entree perfectly cooked and tender. Swordfish great but the thick piece I was served seemed a little under done in center but outside edges not dry so understand the cost/ benefit. Only downside: three entrees served simultaneously but fourth( beet/ goat cheese ravioli) was 2 3 minutes later which allowed my accompaniments( delicious creamy polenta) to cool off to much. Delay was noticeable enough that a little mention/ apology would have been nice. Definitely worth going to and would return.",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 987
+  },
+  {
+    "review_text": "Went here last Sunday for brunch with a group of 4 and was able to get right in, even though I had heard reviews of groups waiting up to an hour for a table. I ordered the Eggs Benny and added the heirloom tomato slice which was an additional $ 2 fucking dollars. I thought it was an above average eggs benny, not the best I' ve ever had but not bad by any means. The potatoes that came with it were really well seasoned and crispy. I also shared the burger, which was really good and had Laurelhurst Market bacon, pickled zucchini, and heirloom tomatoes on it. The burger was good, but the bacon and veggies were what really made it. My only qualm was that the bun was way to big proportionally to the burger inside. The $T$ was pretty cool, it was kind of industrial with brick walls and in a partial basement. Service was good overall but I couldn' t hear the server at all, I just kind of nodded through our entire interaction until I left.",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 1006
+  },
+  {
+    "review_text": "I love Octane, pretty much all their locations, but Grant Park is my favourite. I love the light filled room the relaxed $T$, the Coffee, the cocktails, the pastries and the people who work there. After 6 the no laptop rule on the bar is great as it gives some room to sit and drink great cocktails. Plus I hate to worry I am going to knock someone' s books, laptop and ruin their whole life. I recommend the flat white, rooibos tea, and all the pastries!",
+    "aspect": "atmosphere",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 1028
+  }
+]

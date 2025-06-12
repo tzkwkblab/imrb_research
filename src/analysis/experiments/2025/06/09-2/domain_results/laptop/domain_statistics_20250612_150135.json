@@ -1,0 +1,143 @@
+{
+  "domain": "laptop",
+  "timestamp": "20250612_150135",
+  "features": {
+    "price": {
+      "group_a_count": 327,
+      "group_b_count": 10899,
+      "group_a_sentiment": {
+        "Positive": 228,
+        "Negative": 72,
+        "Neutral": 27
+      },
+      "group_b_sentiment": {
+        "Neutral": 2336,
+        "Positive": 4771,
+        "Negative": 3792
+      },
+      "feature_name": "price",
+      "matching_aspects": [
+        "price point",
+        "price range",
+        "price premium",
+        "price",
+        "priced",
+        "over priced",
+        "price-point",
+        "retail price",
+        "overpriced",
+        "prices",
+        "price tag"
+      ]
+    },
+    "screen": {
+      "group_a_count": 407,
+      "group_b_count": 10819,
+      "group_a_sentiment": {
+        "Negative": 146,
+        "Neutral": 59,
+        "Positive": 202
+      },
+      "group_b_sentiment": {
+        "Neutral": 2304,
+        "Positive": 4797,
+        "Negative": 3718
+      },
+      "feature_name": "screen",
+      "matching_aspects": [
+        "built in screen size",
+        "size of the screen",
+        "acer screen",
+        "screen resolutions",
+        "touchscreen functions",
+        "lcd screen",
+        "21\" led screen",
+        "screen graphics",
+        "screen hinges",
+        "17-inch screen",
+        "screen",
+        "external 24\" lcd screen",
+        "screen size",
+        "screen display",
+        "display screen",
+        "screen quality",
+        "screen resolution",
+        "resolution on the screen",
+        "17 ince screen",
+        "resolution of the screen",
+        "17\" inch screen",
+        "stock screen",
+        "glass screen",
+        "lighted screen",
+        "17 inch screen",
+        "led backlit screen.",
+        "touch screen",
+        "screen/video resolution",
+        "screens",
+        "screen brightness"
+      ]
+    },
+    "battery": {
+      "group_a_count": 457,
+      "group_b_count": 10769,
+      "group_a_sentiment": {
+        "Positive": 206,
+        "Neutral": 42,
+        "Negative": 209
+      },
+      "group_b_sentiment": {
+        "Neutral": 2321,
+        "Negative": 3655,
+        "Positive": 4793
+      },
+      "feature_name": "battery",
+      "matching_aspects": [
+        "extended life battery",
+        "battery lifetime",
+        "battery timer",
+        "battery life",
+        "12 cell battery",
+        "durability of the battery",
+        "battery cycle count",
+        "battery"
+      ]
+    },
+    "keyboard": {
+      "group_a_count": 5292,
+      "group_b_count": 5934,
+      "group_a_sentiment": {
+        "Neutral": 1301,
+        "Positive": 2104,
+        "Negative": 1887
+      },
+      "group_b_sentiment": {
+        "Positive": 2895,
+        "Negative": 1977,
+        "Neutral": 1062
+      },
+      "feature_name": "keyboard",
+      "matching_aspects": [
+        "external keyboard",
+        "hardware (keyboard)",
+        "board",
+        "wireless keyboard / mouse",
+        "desktop keyboard",
+        "lighted keyboard",
+        "keyboard shortcuts",
+        "keyboard function",
+        "o",
+        "black keyboard",
+        "flatline keyboard",
+        "wireless apple keyboard and mouse",
+        "regular layout keyboard",
+        "keyboard functions",
+        "pc's keyboard",
+        "backlit keyboard",
+        "number pad on the keyboard",
+        "apple keyboard",
+        "island backlit keyboard",
+        "keyboard"
+      ]
+    }
+  }
+}

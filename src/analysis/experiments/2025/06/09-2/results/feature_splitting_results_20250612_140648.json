@@ -1,0 +1,236 @@
+{
+  "timestamp": "2025-06-12T14:06:48.035738",
+  "target_features": [
+    "food",
+    "service",
+    "staff",
+    "atmosphere"
+  ],
+  "feature_analysis": {
+    "food": {
+      "total_count": 98,
+      "sentiment_distribution": {
+        "Positive": 75,
+        "Neutral": 7,
+        "Negative": 16
+      },
+      "positive_ratio": 0.7653061224489796,
+      "negative_ratio": 0.16326530612244897,
+      "neutral_ratio": 0.07142857142857142
+    },
+    "staff": {
+      "total_count": 27,
+      "sentiment_distribution": {
+        "Positive": 22,
+        "Negative": 5
+      },
+      "positive_ratio": 0.8148148148148148,
+      "negative_ratio": 0.18518518518518517,
+      "neutral_ratio": 0.0
+    },
+    "service": {
+      "total_count": 83,
+      "sentiment_distribution": {
+        "Positive": 51,
+        "Negative": 27,
+        "Neutral": 5
+      },
+      "positive_ratio": 0.6144578313253012,
+      "negative_ratio": 0.3253012048192771,
+      "neutral_ratio": 0.060240963855421686
+    },
+    "place": {
+      "total_count": 12,
+      "sentiment_distribution": {
+        "Positive": 11,
+        "Neutral": 1
+      },
+      "positive_ratio": 0.9166666666666666,
+      "negative_ratio": 0.0,
+      "neutral_ratio": 0.08333333333333333
+    },
+    "atmosphere": {
+      "total_count": 19,
+      "sentiment_distribution": {
+        "Negative": 3,
+        "Positive": 15,
+        "Neutral": 1
+      },
+      "positive_ratio": 0.7894736842105263,
+      "negative_ratio": 0.15789473684210525,
+      "neutral_ratio": 0.05263157894736842
+    },
+    "prices": {
+      "total_count": 23,
+      "sentiment_distribution": {
+        "Positive": 10,
+        "Negative": 4,
+        "Neutral": 9
+      },
+      "positive_ratio": 0.43478260869565216,
+      "negative_ratio": 0.17391304347826086,
+      "neutral_ratio": 0.391304347826087
+    },
+    "Service": {
+      "total_count": 16,
+      "sentiment_distribution": {
+        "Negative": 4,
+        "Neutral": 3,
+        "Positive": 9
+      },
+      "positive_ratio": 0.5625,
+      "negative_ratio": 0.25,
+      "neutral_ratio": 0.1875
+    },
+    "wait": {
+      "total_count": 10,
+      "sentiment_distribution": {
+        "Positive": 3,
+        "Negative": 5,
+        "Neutral": 2
+      },
+      "positive_ratio": 0.3,
+      "negative_ratio": 0.5,
+      "neutral_ratio": 0.2
+    },
+    "burger": {
+      "total_count": 14,
+      "sentiment_distribution": {
+        "Negative": 3,
+        "Positive": 9,
+        "Neutral": 2
+      },
+      "positive_ratio": 0.6428571428571429,
+      "negative_ratio": 0.21428571428571427,
+      "neutral_ratio": 0.14285714285714285
+    },
+    "server": {
+      "total_count": 15,
+      "sentiment_distribution": {
+        "Negative": 9,
+        "Positive": 6
+      },
+      "positive_ratio": 0.4,
+      "negative_ratio": 0.6,
+      "neutral_ratio": 0.0
+    },
+    "it": {
+      "total_count": 10,
+      "sentiment_distribution": {
+        "Negative": 3,
+        "Positive": 7
+      },
+      "positive_ratio": 0.7,
+      "negative_ratio": 0.3,
+      "neutral_ratio": 0.0
+    }
+  },
+  "split_statistics": {
+    "food": {
+      "group_a_count": 105,
+      "group_b_count": 948,
+      "group_a_sentiment": {
+        "Positive": 80,
+        "Neutral": 9,
+        "Negative": 16
+      },
+      "group_b_sentiment": {
+        "Positive": 614,
+        "Negative": 273,
+        "Neutral": 61
+      },
+      "feature_name": "food"
+    },
+    "service": {
+      "group_a_count": 99,
+      "group_b_count": 954,
+      "group_a_sentiment": {
+        "Positive": 60,
+        "Negative": 31,
+        "Neutral": 8
+      },
+      "group_b_sentiment": {
+        "Positive": 634,
+        "Neutral": 62,
+        "Negative": 258
+      },
+      "feature_name": "service"
+    },
+    "staff": {
+      "group_a_count": 33,
+      "group_b_count": 1020,
+      "group_a_sentiment": {
+        "Positive": 28,
+        "Negative": 5
+      },
+      "group_b_sentiment": {
+        "Positive": 666,
+        "Neutral": 70,
+        "Negative": 284
+      },
+      "feature_name": "staff"
+    },
+    "atmosphere": {
+      "group_a_count": 19,
+      "group_b_count": 1034,
+      "group_a_sentiment": {
+        "Negative": 3,
+        "Positive": 15,
+        "Neutral": 1
+      },
+      "group_b_sentiment": {
+        "Positive": 679,
+        "Neutral": 69,
+        "Negative": 286
+      },
+      "feature_name": "atmosphere"
+    }
+  },
+  "comparative_analysis": {
+    "food": {
+      "avg_review_length_a": 98.45714285714286,
+      "avg_review_length_b": 130.37130801687763,
+      "length_difference": -31.91416515973478,
+      "positive_ratio_a": 0.7619047619047619,
+      "positive_ratio_b": 0.6476793248945147,
+      "positive_ratio_difference": 0.11422543701024712,
+      "negative_ratio_a": 0.1523809523809524,
+      "negative_ratio_b": 0.2879746835443038,
+      "negative_ratio_difference": -0.13559373116335138
+    },
+    "service": {
+      "avg_review_length_a": 116.04040404040404,
+      "avg_review_length_b": 128.34591194968553,
+      "length_difference": -12.305507909281488,
+      "positive_ratio_a": 0.6060606060606061,
+      "positive_ratio_b": 0.6645702306079665,
+      "positive_ratio_difference": -0.05850962454736042,
+      "negative_ratio_a": 0.31313131313131315,
+      "negative_ratio_b": 0.27044025157232704,
+      "negative_ratio_difference": 0.04269106155898611
+    },
+    "staff": {
+      "avg_review_length_a": 87.9090909090909,
+      "avg_review_length_b": 128.45980392156864,
+      "length_difference": -40.55071301247773,
+      "positive_ratio_a": 0.8484848484848485,
+      "positive_ratio_b": 0.6529411764705882,
+      "positive_ratio_difference": 0.19554367201426026,
+      "negative_ratio_a": 0.15151515151515152,
+      "negative_ratio_b": 0.2784313725490196,
+      "negative_ratio_difference": -0.1269162210338681
+    },
+    "atmosphere": {
+      "avg_review_length_a": 104.6842105263158,
+      "avg_review_length_b": 127.60251450676982,
+      "length_difference": -22.918303980454027,
+      "positive_ratio_a": 0.7894736842105263,
+      "positive_ratio_b": 0.6566731141199227,
+      "positive_ratio_difference": 0.13280057009060364,
+      "negative_ratio_a": 0.15789473684210525,
+      "negative_ratio_b": 0.2765957446808511,
+      "negative_ratio_difference": -0.11870100783874582
+    }
+  },
+  "total_samples": 1053
+}

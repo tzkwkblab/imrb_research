@@ -1,0 +1,737 @@
+[
+  {
+    "review_text": "Apparently Prides Osteria had a rough summer as evidenced by the almost empty dining room at 6: 30 on a Friday night. However new blood in the kitchen seems to have revitalized the food from other customers recent visits. Waitstaff was warm but unobtrusive. By 8 pm or so when we left the bar was full and the dining room was much more lively than it had been. Perhaps Beverly residents prefer a later seating. After reading the mixed reviews of late I was a little tentative over our choice but luckily there was nothing to worry about in the $T$ department. We started with the fried dough, burrata and prosciutto which were all lovely. Then although they don' t offer half portions of pasta we each ordered the entree size and split them. We chose the tagliatelle bolognese and a four cheese filled pasta in a creamy sauce with bacon, asparagus and grana frita. Both were very good. We split a secondi which was the special Berkshire pork secreto, which was described as a pork skirt steak with garlic potato pur é e and romanesco broccoli( incorrectly described as a romanesco sauce). Some tables received bread before the meal but for some reason we did not. Management also seems capable for when the tenants in the apartment above began playing basketball she intervened and also comped the tables a dessert. We ordered the apple dumpling with gelato and it was also quite tasty. Portions are not huge which I particularly like because I prefer to order courses. If you are someone who orders just a meal you may leave hungry depending on you appetite. Dining room was mostly younger crowd while the bar was definitely the over 40 set. Would recommend that the naysayers return to see the improvement although I personally don' t know the former glory to be able to compare. Easy access to downtown Salem without the crowds on this month of October.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 2
+  },
+  {
+    "review_text": "The $T$ is always great here. The service from both the manager as well as the staff is super. Only draw back of this restaurant is it' s super loud. If you can, snag a patio table!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 6
+  },
+  {
+    "review_text": "The setting is perfectly adequate, and the $T$ comes close. The dining chains like Chilis and Victoria Station do barbecue better. It' s no surprise you can always pick up coupons for Linwood at restaurant. com.",
+    "aspect": "food",
+    "sentiment": "Neutral",
+    "source_file": "yelp.train.txt",
+    "sample_id": 9
+  },
+  {
+    "review_text": "They NEVER seem to get our order correct, service is crappy, $T$ is inconsistent and has gone down hill steadily in the last 6 9 months! WILL NEVER GO THERE AGAIN!",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 20
+  },
+  {
+    "review_text": "I have been here twice and have had really good $T$ and service both times. I got a burger with caramelized onions, a red wine sauce and I believe blue cheese the first time. It was excellent and just the right size for me. I hate going out and ordering a burger that is bigger than my head that I can' t even finish half of! Flip' s burgers are about the same size I would make for myself at home. The second time I went I had a limited time seasonal offering which was a venison burger with pea shoots, some kind of cheese that reminded me of brie, and a very sweet syrupy sauce which I could have done without, but overall it was very good. I also had onion rings and they were possibly the best onion rings I' ve had ever. The only thing I don' t really like about Flip is the atmosphere and layout of the tables. I guess they were going for trendy upscale or whatever, but it makes me feel as if I am in a school cafeteria back in high school. I don' t like it. There are long white tables shoved up against each other with uncomfortable modern looking plastic chairs that kind of look like they came from Ikea. It' s also pretty loud in there because there is nothing to absorb the sound, like a school cafeteria. The last time I was in there there were a couple of women with small children. I have no idea why someone would bring a child to Flip unless that child was a very adventerous eater. They don' t make anything plain. Everything on the menu has some pretty exotic ingredients. It' s also very pricy for burgers. This is the last place on Earth I would bring kids to eat. Burger King is right down the street.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 21
+  },
+  {
+    "review_text": "This is a five star restaurant if ever I have seen one! Maurice, one of the owners, met us at the front door, Daniel a seasoned waiter from Hawaii, took care of us and the $T$ was over the top delicious. This is not just a restaurant, it is an experience! My son recommended this to us and we are glad that we took his advice. I had the rack of lamb and my wife had the grouper with crab. Save room for dessert! We live in Tallahassee but the next time we are in Orlando it' s back to Chatham' s!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 26
+  },
+  {
+    "review_text": "This place is truly a hidden gem( literally hidden as you have to walk through a Chinese restaurant to get there). The place is small, cozy, and charming inside. And the $T$ is better than what you might find in the north end. The service is great and the servers do a great job at pronouncing the specials to you like a true Italian! Make sure you make a reservation as it does book up rather quickly.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 55
+  },
+  {
+    "review_text": "3. 5 stars! I got the avocado margarita and it was delicious! Customer service was OK, but they were busy. The $T$ was better than expected and the meat wasn' t overly salty. I will definitely return!!!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 60
+  },
+  {
+    "review_text": "This has not been a pleasant experience. According to our server, the restaurant is short on staff. This means our service has been frightfully slow. We have been here over an hour with receiving our food. Most of the $T$ was good, except for the steak that was tough. This is a trendy place. Great spot to be seen. Food is just okay.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 64
+  },
+  {
+    "review_text": "This has not been a pleasant experience. According to our server, the restaurant is short on staff. This means our service has been frightfully slow. We have been here over an hour with receiving our food. Most of the food was good, except for the steak that was tough. This is a trendy place. Great spot to be seen. $T$ is just okay.",
+    "aspect": "Food",
+    "sentiment": "Neutral",
+    "source_file": "yelp.train.txt",
+    "sample_id": 66
+  },
+  {
+    "review_text": "Just had Yalla for lunch today. I work on Krog Street, so figured I would give it a shot today. The line was VERY Long( about 10 people deep), which must mean it is good. I waited, and waited, and waited in line for about 20 minutes. My co workers went to Fred' s and had ordered and almost finished their food by the time I sat down at a table. I stuck it out in line though. The people behind the counter are very slow. Maybe because they have only been open for three weeks they are still working on the process. There is room for improvement on\" moving orders through the line.\" It' s basically like a burrito place, but Mediterranean food. I got the pita Shawarma($ 8) which was a little pricey considering this was their smallest size. One size up is basically a Mediterranean tortilla which was $ 14. That is VERY steep vs a burrito place being about $ 6. 50 or $ 7. They did a great job loading it up though with lots of sauces and vegis. $T$ wise, I would give them a 4 as everything tasted great. Service wise, I would have to give them a 2 as the wait was terrible! 20 minutes in line is crazy for only having about 10 people in line. Good food, but the prices are very high too.",
+    "aspect": "Food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 79
+  },
+  {
+    "review_text": "Overall is good, is worth the line up I don' t think so, mainly Instagram addict' s go here. Believe me the $T$ is great, service is ok, the hype about it I still dont get it.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 95
+  },
+  {
+    "review_text": "I just got done with lunch here. It has been okay in the past, but today, the service was a failure on multiple levels. First, it look a long time for my $T$ to come out, and the waitress initially brought the wrong order. Then, it look 20 minutes before I was able to chase down the waitress to pay my check. Finally, when I received my check, they charged dinner pricing for a lunch. I was running late to get back to the office, so I paid it, but all said, the service was inexcusable. I write in the hopes that you will take corrective action, whether in coaching your staff, or hiring more people for the lunch rush.",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 105
+  },
+  {
+    "review_text": "Brasserie zero zero... we were hoping for a ten based on how highly recommended it was however, we were very disappointed with the quality of the $T$. We ordered escargot and artichoke to start. Escargot was covered in a bitter green sauce butter and garlic would have really helped. The artichoke wasn' t cooked properly and was minimally seasoned. It was also small portions, about a fourth of an artichoke in size. Even after sending back the artichoke it still was tough and not fully cooked. We ordered the lamb chops for our main with a side of mashed potatoes. The potatoes were sour and not as creamy as expected. For $ 35 we received two lamb chops with a tasty mustard sauce but the accompanying vegetables were tasteless and again, disappointing. The ambiance and service was great and we had a yummy creme br < U + 00FB > l é e brought to our table for the birthday we were celebrating but we wished the rest of the meal had lived up to the hype.",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 110
+  },
+  {
+    "review_text": "For the price we paid( about $ 50 for 2 people) the $T$ was only so so and the service was AWFUL. Our waitress sounded like a robot, and we had to grab another waiter several times because she never came back to check on us. The food came out and it looked like it had been sitting in the back a while, it was barely warm and a film had formed over the top of my ravioli. Overall, very unimpressed and I don' t think I would go back or recommend this location to a friend.",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 124
+  },
+  {
+    "review_text": "For the price we paid( about $ 50 for 2 people) the food was only so so and the service was AWFUL. Our waitress sounded like a robot, and we had to grab another waiter several times because she never came back to check on us. The $T$ came out and it looked like it had been sitting in the back a while, it was barely warm and a film had formed over the top of my ravioli. Overall, very unimpressed and I don' t think I would go back or recommend this location to a friend.",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 128
+  },
+  {
+    "review_text": "If service is any indication, then I' m never going back. We were basically seated at a table by the host, then told quite rudely by the server that we couldn' t sit there. Then we proceeded to watch as the host and server fought over whether we could sit there or not( while we were trying to scurry away). Finally we were moved to another server' s section, who basically treated us like crap as well. I really can' t figure out why we stayed? Cheap beer, I guess. The $T$ is unremarkable( good wings, though), parking is a pain, and there are so many better places to go.",
+    "aspect": "food",
+    "sentiment": "Neutral",
+    "source_file": "yelp.train.txt",
+    "sample_id": 175
+  },
+  {
+    "review_text": "What a gorgeous restaurant! Three very different rooms to dine from three different parts of the world. Wow I am impressed, the $T$ was amazing. Animal kingdom is just getting better and better by adding this gem. Avatar( pandora) is set to open in May, can' t wait!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 180
+  },
+  {
+    "review_text": "Jacks is the place to be. The $T$ is exceptional, I recommend the calzones! Or one of their funky pizza slice creations( hotdog pizza ect)! They have some good alcohol prices and a good atmosphere. During dinner it' s always packed though so be prepared to sit out back!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 181
+  },
+  {
+    "review_text": "By no means is me giving Habaneros 3 stars a bad thing. This is my go to spot for Mexican food when my family comes to visit me from NY. It' s cheap, it' s quick and it' s surprisingly good. The establishment offers a wide selection of Mexican dinners and combination specials, common in other traditional Mexican restaurants. If you' re a fan of Mexican food, especially if you' re from out of town just go here and eat. Parking isn' t bad, your seated immediately and there is always a table available. Unfortunately there can sometimes be minor communication errors with your waitresses and the staff so make sure to be very clear with what you want when placing your Oder. The $T$ is good, nothing amazing but it definitely hits the spot.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 187
+  },
+  {
+    "review_text": "Nice staff. Subpar $T$ for the price.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 200
+  },
+  {
+    "review_text": "I was in Austin recently and searched for a place to eat on this fine website called Yelp. We were looking for hard tacos and came upon Evita' s Botanitas and the menu looked pretty great. So we GPS' d ourselves there and found ourselves in a small strip mall, nothing fancy. And the $T$ did not disappoint!! First of all, the salsa they give you is above and beyond. They bring a two tiered production with a basket of fresh tortilla chips and 5 or 6 different salsas, all of which were delicious and not at all' omg my mouth, it' s on fire' I ordered a house margarita( rocks with salt please!) which was ass kicking in a good way. For my dinner I ordered the vegetarian quesadillas, which I admit were served to me in a unfamilliar way. Maybe I was just Dumb White Girl but when they brought my food I thought they brought soft tacos instead of a quesadilla. Granted, I' d ordered the corn tortillas rather than flour, and it looked like a plate with several soft tacos. And oh man, were those some seriously delicious quesadillas! I don' t care what they looked like, they tasted like heaven. Our waitress was really friendly and I would highly recommend eating here. I will make it a point to come back the next time I' m in town.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 204
+  },
+  {
+    "review_text": "I used to love this place. The $T$ is very good, and thankfully that hasn' t changed. However, after eating there about 12 15 times( usually the same dish), I noticed the portions were smaller than ever. I asked the waitress, and she said it' s the same as always. She' s been there for a while, so she obviously knows the difference and is just denying it. It' s not my imagination because my wife noticed my plate and said the same thing. I ordered a combo plate that you can choose up to four items. I wanted three, and asked to just double up on the eggplant( which I ALWAYS do). The waitress said there would be a $ 2 up charge to double eggplant or babaganoush. I looked at the menu, and the appetizer portion( which is bigger than the combo portion) of eggplant is only $ 1 more than the other items. So where did the other dollar come from?? The babaganoush was the exact same price on the appetizer menu as the other items! So where did the $ 2 up charge come from?? It made no sense to me whatsoever, but I did' t feel like arguing about it. Even if there was a legitimate reason for the up charge, they should have it on the menu, like they do for grape leaves. The whole thing put a bad taste in my mouth. Like I said, the food is tasty, but I might boycott this place just for the principal of it.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 209
+  },
+  {
+    "review_text": "I used to love this place. The food is very good, and thankfully that hasn' t changed. However, after eating there about 12 15 times( usually the same dish), I noticed the portions were smaller than ever. I asked the waitress, and she said it' s the same as always. She' s been there for a while, so she obviously knows the difference and is just denying it. It' s not my imagination because my wife noticed my plate and said the same thing. I ordered a combo plate that you can choose up to four items. I wanted three, and asked to just double up on the eggplant( which I ALWAYS do). The waitress said there would be a $ 2 up charge to double eggplant or babaganoush. I looked at the menu, and the appetizer portion( which is bigger than the combo portion) of eggplant is only $ 1 more than the other items. So where did the other dollar come from?? The babaganoush was the exact same price on the appetizer menu as the other items! So where did the $ 2 up charge come from?? It made no sense to me whatsoever, but I did' t feel like arguing about it. Even if there was a legitimate reason for the up charge, they should have it on the menu, like they do for grape leaves. The whole thing put a bad taste in my mouth. Like I said, the $T$ is tasty, but I might boycott this place just for the principal of it.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 212
+  },
+  {
+    "review_text": "My brother in law suggested this place, and we came here right after arriving in Orlando, so we were starving. The service was good, the $T$ was absolutely terrible. Every single dish. I ordered the mofongo de camarones( shrimp with mashed plantain). The shrimp came separate, and the garlic sauce lacked any flavor it didn' t even taste like garlic! The sauce that typically comes with this dish( in a separate cup) looked and tasted like oil. So gross. I would never eat here again.",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 214
+  },
+  {
+    "review_text": "Will not be back!!! The service was just awful. We used a Scoutmob and they tried to act like we could not use it by saying they no longer accept it. However, I quickly let them know that the Scoutmob for this location was recently added. So, they decided to take it grudgingly. The $T$ was only decent. The location is in some shady strip mall. The value was just okay. When we were about to pay, the server handed us a bill and I reminded her that we were using the 1/ 2 off Scoutmob deal, so she took the bill back and came back with another that was pretty much the same except $ 8 difference... REALLY?!? She added the 18% tax but also a so called Scoutmob fee... RIDICULOUS!!!!",
+    "aspect": "food",
+    "sentiment": "Neutral",
+    "source_file": "yelp.train.txt",
+    "sample_id": 216
+  },
+  {
+    "review_text": "Good may have been good if my server Megan T actually used a pad and took people' s orders instead of guessing and just putting whatever she thought you wanted in front of you. Manager offered discounts because everyone else in my party ate but me, and still charged me for bad $T$. Stay away. Place next door( Hennessy' s) had great food and specials. Thanks for charging me for food I didn' t eat and trying to pacify me with discounts you never applied. Boo..... boo...... on the right side theTV' s are in good spots to watches you eat..... well try to eat",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 224
+  },
+  {
+    "review_text": "I ate here recently on the recommendations of some Muslim brothers at the Islamic Society of Boston( beautiful masjid). They said it was halal and the Arab owners confirmed that it was. This is a nice, downtown spot across the street from the park and right next to the Park Street subway station. We enjoyed the chicken kabob and baked haddock dinners, which both came with rice and salad. Very enjoyable, hot and fresh $T$. When I went to buy some rice pudding for dessert, the owner gave it to us for free. What a nice touch. InshaAllah my wife and I will return soon.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 231
+  },
+  {
+    "review_text": "Realize this is a small cafe local hang out. But wow the $T$ was a big surprise. Lots of flavor and tons of quality and great value to boot. Everything is made from scratch. Simple awesome and a place I will run back to.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 255
+  },
+  {
+    "review_text": "Stopped in for lunch, was pleasantly surprised! We ordered garlic cheese bread, the pizza lovers flatbread and chicken piccata. All were very delicious. The service was great, the $T$ was great, the music makes you feel like you are in Italy. We will be back for sure!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 259
+  },
+  {
+    "review_text": "Worst $T$ ever... It was my wife' s birthday and we were in Orlando celebrating by going to bunch of theme parks... She is so fond of indo Chinese cuisine, so I really wanted to eat out... Pulled out yelp and saw this place advertised so.... It was the most disappointing experiance.. That f' ing place does not even know what is indo Chinese, they even justified it is indo Chinese.... Pls avoid this place.... the server was an a' Hole who was suggesting all crap...",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 265
+  },
+  {
+    "review_text": "I dined at this restaurant before the most recent owner took over and the prices were never as high as they are now therefore I have not dined there until this past weekend, 3/ 16/ 13. Went with a group of friends and although the $T$ we ordered tasted fine, the price just does not justify it. They' re making a killing on food profit. My husband and I shared the pick two cold appetizers( we chose babaganoush and hummus). It came out on a small saucer and contained maybe a 1/ 2 c of each for $ 10. 75. I asked if it came with bread and they said no you have to pay for that separate so that was another $ 5 for the lavas bread( what was I suppose to eat with the dips). Then we split their house salad, which was priced at $ 10. 75( no protein added) and it was a basic sized salad with lettuce, some cous cous, 2 olives, some feta, tomato and cucumber. I know I will not come back to eat here. I can find the same type of food that taste just as great and pay the price that it should be.",
+    "aspect": "food",
+    "sentiment": "Neutral",
+    "source_file": "yelp.train.txt",
+    "sample_id": 268
+  },
+  {
+    "review_text": "Love this place! Their $T$ and drink menus are both very creative, which is perfect for me. The Pumpkin Martini is delicious( ask for it with a cinnamon sugar rim). The Keylime Pie Martini is also amazing. They have a lengthy beer list as well. As far as food is concerned, the mac and cheese is scrumtrulescent( half portion is definitely sufficient). Also, the Rialto is lovely, and the bread pudding is heaven( generous portion, good to share). The service is generally phenomenal. The waitresses are really sweet and easy going, which makes the experience that much better. I' ve only experienced poor service here once. The girl had a pissy attitude and was simply unpleasant, but don' t let that detour you from going to Parish; I' d give it 10 stars if that was an option.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 281
+  },
+  {
+    "review_text": "This place is just plain great. $T$ is great and very unique. Service is impeccable. The Vodka cocktail is a must try if you like vodka. I ended my dining experience with a chocolate pudding... I am in heaven. If you are in the area please do not miss this place. Cheers!!!",
+    "aspect": "Food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 291
+  },
+  {
+    "review_text": "Nice music, excellent service, reasonable prices. The staff is super friendly and $T$ is delicious and fairly priced. Potstickers and Mac and cheese were amazing. The bacon jam burger is my favorite. I love this place. You should go!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 297
+  },
+  {
+    "review_text": "We ate at this place all three mornings we were in Orlando this past weekend. The $T$ was awesome and the servings were large! The first and third day we had breakfast there the service was so amazing! The two different ladies were very attentive and super friendly. The second day( different lady) was not as great but she was busy and alone so I will give her that. The place was very clean and a great atmosphere. Definitely recommended!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 328
+  },
+  {
+    "review_text": "It was my very first visit the service was awesome and they assured me that I would love the food. And guess what I definitely love the $T$ hands down. It was very clean and also a nice bar you can even set outside for that summer fun. Try them for yourself. I' ll be a regular....",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 339
+  },
+  {
+    "review_text": "Out if the three burrito places on Huntington by Northeastern, this\" fast food\" is my favorite. They have pretty high quality amazing tasting $T$, and always change up their menu so you aren' t always ordering a normal burrito. I love the burrito bowls, personally.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 344
+  },
+  {
+    "review_text": "This place is pretty cool! The ambiance has more of a nightclub feel. Music playing, an older crowd( wouldn' t recommend for families since it was just so loud and dark). We ordered a variety of items and the $T$ was just ok. I was expecting more because of the price point and the location. The worst was the sushi. I don' t think I' ll be back. Just not my cup of tea.",
+    "aspect": "food",
+    "sentiment": "Neutral",
+    "source_file": "yelp.train.txt",
+    "sample_id": 387
+  },
+  {
+    "review_text": "My preferred Austin area restaurant. Quality $T$& servce. Great value. Consider spliting a meail to engae the Gumbo& dessert. Best in Austin. Check hours for lunch& dinner.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 390
+  },
+  {
+    "review_text": "Really tasty and very fresh $T$. We ordered a salad, a gyro, hummus and baklava and everything was delicious and really fresh. Only subtracted one star because they need a water filter on their drinks. They all have a funky taste. I will def be back often and just buy the Mexican cokes to go with.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 402
+  },
+  {
+    "review_text": "I found this Thai restaurant at yelp! Small, cozy restaurant. Service was good. $T$ was excellent!! Will visit again.",
+    "aspect": "Food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 421
+  },
+  {
+    "review_text": "Amazing. Tasty $T$, good waiter recommendations, good service, fair prices. If you' re in JP and craving Indian come here. Or if you' re in Brookline, Cambridge, Somerville... jump on the 39 and get over here. Get the chicken curry. Another recommendation is the duck on the chef' s special list.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 426
+  },
+  {
+    "review_text": "The $T$ has always been good, always. The service on he other hand has always always been bad. The waiters always leave you hanging, the owner is rude and, sad to say, ghetto in front of customers. Again, the food is spot on but the service is horrible. I have been coming here for years and it never changes. We are here today, the first time in a couple months and they have renovated. They have expanded into the unit next door. Good renovation, bigger space, better decor. Still a ways to go before it is finished but good. Wish the service was better, unfortunately I doubt I will return. I think today was it.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 431
+  },
+  {
+    "review_text": "Meh. Average Thai $T$ at above average prices. The menu offers nothing new or creative. Just the standard Thai fare. Prices are easily 50 100% higher than better quality food from restaurants in Woburn and Lowell. Next time I will drive an extra 5 minutes.",
+    "aspect": "food",
+    "sentiment": "Neutral",
+    "source_file": "yelp.train.txt",
+    "sample_id": 437
+  },
+  {
+    "review_text": "If you have driven past this place several times, you have missed a great opportunity for Costa Rican food those same several times. The $T$ is good, fresh, and it feels homemade. Check it out, and make sure to try things that are from Costa Rica, not just your comfortable Mexican fare. Family run, small location, super tasty.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 440
+  },
+  {
+    "review_text": "First time here the staff was wonderful and the $T$ was very well prepared and tasty. I am very particular about Italian restaurants and this one is very good. We will be back often I am sure. The only problem I see is they might need more room very quickly",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 442
+  },
+  {
+    "review_text": "The Barking Crab was a family tradition for us for years before I moved to Boston. Once a summer, when visiting our family in the city, we would go to the Barking Crab for some decent $T$ and wonderful atmosphere. Sadly, once I became vegetarian, the menu became extremely limited for me, which made it much less appealing. But still, many happy memories from the Barking Crab! Great family place!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 443
+  },
+  {
+    "review_text": "I went here this past weekend for their roast( first Saturday of every month). The $T$ was wonderful. The atmosphere was great. Beers and  cocktails were yummy! The menu was interesting.... BUT the portion was small. It was a ham roast with mashed sweet potatoes, turnips and brussel sprouts. The meal had about a 1/ 4 cup of sweet mashed potatoes and 2 1/ 2 brussel sprouts. I was there with 8 people and I don' t think anyone left satisfied. I' ll give it another try but it was not a good first impression.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 450
+  },
+  {
+    "review_text": "The $T$ was good and the service was exceptional. There were a couple of snafus my soup was taken to the wrong table which the wait staff made up for with cups of another soup to tide me over. Staff was also very sensitive to my food allergies, and made sure there was no cross contamination in the kitchen. I was pleasantly surprised at how well children are accommodated. There' s a dedicated child' s menu with low cost( around $ 5) entrees, and crayons for coloring.  ( The kids' food was great, too.)",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 486
+  },
+  {
+    "review_text": "I' m going up update my review to 5 stars. The restaurant has updated the menu and it is the best of both worlds more like the old Castle Hill with a lot of the new favorites still on the menu. The service is excellent with experienced professional servers. The $T$ is always consistent.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 493
+  },
+  {
+    "review_text": "Had a amazing dinner. Price was on point nothing over the top. $T$ quality was great. Only thing was they were so busy that service was hard but still wasn' t to a point that is bad. The lobster was yummy and so was the sides.",
+    "aspect": "Food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 494
+  },
+  {
+    "review_text": "This place is amazing. From the staff, to the $T$, and the decor. Went during lunch and the food options are amazing. The bakery goods look so delicious. Order the artichoke eggs Benedict. Every bite was worth it. The wait staff is great. Very helpful and friendly. Worth the stop.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 520
+  },
+  {
+    "review_text": "Went here with my family and friends( 4 adults 2 young children). The hostess and waiter were incredibly accommodating and kind to us. The service was fantastic and the $T$ was delicious and fresh! We all had a special pesto linguini with seafood( lobster, jumbo shrimp, and scallops). It was out of this world! We will definitely be coming back many times!! Totally recommend if you are looking for great food, great atmosphere, and amazing service!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 526
+  },
+  {
+    "review_text": "El Paso Style Food huh... when I first saw this place, I thought to myself, hmm, I am originally from El Paso and your telling me you make food like mama did back home? Well, this I have to see.\" I took 4 friends to this restaurant and of course, I was very skeptical. We sat down and had the chips with salsa. T he salsa was spicy and tasty and I actually requested more. Our meals included Steak Tampiquena, Flautas, Original El Paso Enchiladas, The Texican dinner and of course, one of my favorite dishes, Carne Chile Colorado. I know what El Paso Chile Colorado should taste like so when I took a bite of The Texican' s Chile Colorado, my taste buds were the happiest they had been in a long time. I also tried the other plates and this is definitely the Chicano food from back in El Paso. All my guests enjoyed their meals as I did. The $T$ tastes like grandma' s food back home. I was truly surprised and delighted. When I feel like eating a great meal from back home, you can bet I will come back here. The staff was friendly and knowledgeable. For all you original El Pasoens in Austin, this place is for you, but sorry they don' t serve Chico' s Tacos( El Paso humor) lol. I recommend this place for anyone, it is a great place to eat.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 541
+  },
+  {
+    "review_text": "3 stars just because the $T$ is good. Service is so slow, calling it fast food is misleading. 1st time: went to the restaurant to place an order wait time 20 mins. 2nd time: placed an order online to save time. Got to the place in 20 mins as per the online order, the ORDER NEVER WENT through. Guess what ANOTHER 20 mins to prepare the food. 40 MINS for Fast Food... Really!!???",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 555
+  },
+  {
+    "review_text": "Went to Haru with a bunch of old and new friends last night. it was part of my\" get me the f outta here\" regimen. By soaking myself in sushi goodness, I might forget that I have to pack still, have 10, 000 emails that piled up during my 5 days of death by powerpoint. Anyway, the sushi here was tremendous. The edamame was HUGE but could have used a little more salt on the top and a little less on the bottom( suggesting that it sat f or a while?) but overall the $T$ here was fantastic. We had a big party, split the tables and the other side had food coming all night long. We opted for a bit more conservative approach, ordering a big tray of about 5 rolls( including the Bostonian[?]  which was FANTASTIC). There really wasn' t anything there that wasn' t really quite delicious. Try the Kiss of Fire but I have to warn you, there' s a fuse on that fire. It hits you about your third piece in... The service was great. We ran that poor girl' s legs completely off. But again, order a Diet Coke and you' ll get\" is Diet Pepsi ok?\". My typical response is, \" well, is paying in Chinese Yen ok?\"... you get the idea. All in all, good friends, good times, good sushi. A solid 4.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 567
+  },
+  {
+    "review_text": "The $T$ at Lavaca street bar/ surf and turf restaurant is very tasty. The wait during lunch is tolerable; which is a rare find during the lunch hour.... however, me and several of my devoted co workers would appreciate if the full menu was served before 3 PM. There have been multiple occasions during which this location has lost service due to the lack of full menu during working hours. The tatted bartender has been incredibly welcoming and apologetic during( lack of lunch service) and at these times. He should be recognized for his great efforts for maintaining service at this establishment.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 573
+  },
+  {
+    "review_text": "I went to comedor with my boyfriend for date night. I' m a huge fan of small plates, and comedor is the perfect place for a unique and eclectic blend. The $T$ was DELICIOUS, but what was even more awesome was the ambiance. The place is small, dimly lit, but very lively. Tables were full, but we were able to immediately sit at the bar. I' m happy we did, because that' s where all the magic happens! The chefs cook right behind the bar. Admittedly, I drooled the entire time while waiting for our food. They do give complimentary bread to start, so I didn' t drool for too long. :) Overall, this is a cozy spot for an intimate date night.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 579
+  },
+  {
+    "review_text": "Consistently good mexican $T$. Not a super diverse menu, but not just a taco or burrito only menu either. Decent prices and friendly service.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 582
+  },
+  {
+    "review_text": "I had been coming here for years, but Habana' s has lost it ways. The $T$ was so bad and expensive. Bad food that cost a lot leaves you feeling more than a little ripped off. The drink menu does not have prices, this is because a glass of wine is 10 dollars. The $ 23 Lechon Asado could have been mistaken for bad jerky. There are NOW much better Cuban here in Austin, let this one fade away.",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 587
+  },
+  {
+    "review_text": "Fabulous!! We had dinner delivered, a gift for travelers!!! The $T$ was incredible!! And the price was very reasonable! Thanks! And the service, the delivery man, SO nice!! The wait, was long, but worth it!!!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 595
+  },
+  {
+    "review_text": "This tucked away spot in lenox square mall is an upbeat swanky communal seating new american cuisine restaurant. The location is great. But the location is the reason it is very pricey for what you get. Went there with my husband and son snd literally had 2 sandwiches, chicken with the bones in plate, 2 local brews and a artisan cheese and charcuterie app was 100 bucks. Tasty but not worth it. Love great $T$ as a chef and once owned my own restaurant but the service was mediocre at best. Waited 45 mins after our apps for our main course. Tuesday night and it wasn' t busy. < U + 200D > Too much good food around, wont be back.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 608
+  },
+  {
+    "review_text": "Enjoyed the $T$, just not so much the ordering style. Basically you order as if you are in a sushi joint. You check off what you' d like. But, there were quite a few options, more than I would like to see when I' m hungry. With that said, the food was good, the server was very nice and helpful( albeit very quite/ low voice), and I would definitely go back!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 623
+  },
+  {
+    "review_text": "Enjoyed the food, just not so much the ordering style. Basically you order as if you are in a sushi joint. You check off what you' d like. But, there were quite a few options, more than I would like to see when I' m hungry. With that said, the $T$ was good, the server was very nice and helpful( albeit very quite/ low voice), and I would definitely go back!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 624
+  },
+  {
+    "review_text": "LOVE THIS PLACE!! A true Foodie Favorite!!!! Always creative, always consistent! Great $T$ indeed!! The only reason I gave it 4 stars and not 5 is because of the servers. Some servers are very knowledgable and helpful about the ever changing menu items, while others are lacking and not service oriented. I know good help is hard to find, but this is something they can work on to help with the dining experience. Despite that minor tweak, LOVE this place!!!!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 634
+  },
+  {
+    "review_text": "Apparently it' s a requirement to have a TERRIBLE attitude to work here. Just moved in across the street and was excited to have a juice bar across so close! Went in the first day to be\" greeted\" by a young woman with the worst attitude ever. I felt like I was doing her a disservice by asking her to do her job. Went in the day after hoping she wouldn' t be working because the $T$ was quite good, only to find another young woman with an equally if not worse attitude working. Whoever owns or runs this establishment needs to find people who don' t suck life out of the room to represent their business. I would rather pay someone to go and get me a smoothie than go in myself.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 669
+  },
+  {
+    "review_text": "The Cottonwood is mediocre. I ordered the Twice Stuffed Chicken and my boyfriend got the Seafood Gunpowder. Both were just ok; things I could make at home. The atmosphere was nice, but the $T$ was too pricey for a mediocre meal.",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 673
+  },
+  {
+    "review_text": "Great burgers and vibes. The staff is always friendly and ready to assist however they can. The $T$ is the real star of this place. I' ve thoroughly enjoyed the Lamb burger and the ribs so if you' d like some great flavor start there.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 677
+  },
+  {
+    "review_text": "Affordable prices and really good $T$!! What else can I ask more?? Even tho I saw one guy taking care of the tables( it was lunch time so it was kind of busy) he came often to ask if I wanted something else and how I was doing.. Service is rely good he even recommended a desert.. Going back for sure and bringing some friends!! I highly recommend this place.. Do yourself a favor and check it out.. I had Lomo saltado Btw..",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 685
+  },
+  {
+    "review_text": "I think they opened one month ago( July 2014). Excellent Lebanese $T$ at very reasonable prices. Not a fancy place, simple. If you want fancy, go to Al Wadi, but you will pay double the price for food that you can get here. Easy to get to from Dedham and Rt. 1. Very good!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 700
+  },
+  {
+    "review_text": "Server was absolutely amazing tonight. $T$ and drink was amazing. Outshined our lousy shitty dinner at Bar Louie.",
+    "aspect": "Food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 703
+  },
+  {
+    "review_text": "I' ve gone in a couple of times over the past year for lunch, but I went in after 2pm and they have a very limited menu, which included nothing to my liking. I sat at the bar both times and the bartender gave me attitude when I complained that the menu was so limited. She wasn' t friendly at all and actually only served me after I had to flag her down( even though there were only four people at the bar at the time she was too busy doing prep work and playing on her phone). Coincidentally, it was the same bartender on both visits. By the way, I went in the second time because it was six months in between visits and I forgot that they only had a limited menu after 2pm. I should have remembered after the first visit, so the second visit was a mistake and only served to confirm my opinion of so so $T$ and lousy service.",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 713
+  },
+  {
+    "review_text": "I absolutely adore Fishbones! I haven' t eaten at the tourist I Drive location, but I' ve heard it sucks compared to the Lake Mary location. Everything here is excellent and it had some of the freshest seafood available. The sushi is pretty awesome, but I definitely suggest trying their oyster sampler appetizer. My favorite entree is the seared Ahi  tuna. But definitely check out their daily specials. Sometimes they get in gigantic stone crab claws. The wine selection is great and they poor stiff drinks. Always a plus. The $T$ is pricey but it' s excellent as well as the service. The decor is great too. My favorite is the outdoor patio and the bar that' s plastered with oyster shells.",
+    "aspect": "food",
+    "sentiment": "Neutral",
+    "source_file": "yelp.train.txt",
+    "sample_id": 722
+  },
+  {
+    "review_text": "I usually go into places like chilis with pretty low expectations. I worked at a chilis for many years so I understand the food quality and what to expect from a place like this. I' m not sure if this location is a franchise or not, but it was just horrible. From the service to the $T$ presentation to the taste, just ew! I always order a margarita, queso dip and a quesadilla explosion salad. Being that this is always my order, I' ve come to know what to expect, but this meal almost seemed like it was someone trying to replicate( unsuccessfully) the chilis' recipes. The queso dip was like warm and thick. The consistency was grainy instead of creamy and it just didn' t taste good. The quesadilla salad was thrown onto the place and looked like someone had bumped the plate or almost dropped it or something. The chicken was thick and rubbery. I know this place is in tourist central so maybe they don' t have to pay much attention to quality on account that people will come regardless because they won' t know, but we definitely won' t be back here! The chilis on I drive is much more consistent! It' s a little more of a drive, but it' s worth it.",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 753
+  },
+  {
+    "review_text": "The $T$ is amazing. Try the mixed grill with the yogurt garlic sauce. And you must get the hot puffed bread and hummus. We always have great food when we eat here and even though we live in Sarasota, we always make a point to eat here when we' re in town. I gave 4 stars because everything is great, food and service, but the restaurant really needs to be dusted. The dusty mirror and shelves were in great need of a thorough cleaning.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 776
+  },
+  {
+    "review_text": "The food is amazing. Try the mixed grill with the yogurt garlic sauce. And you must get the hot puffed bread and hummus. We always have great food when we eat here and even though we live in Sarasota, we always make a point to eat here when we' re in town. I gave 4 stars because everything is great, $T$ and service, but the restaurant really needs to be dusted. The dusty mirror and shelves were in great need of a thorough cleaning.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 777
+  },
+  {
+    "review_text": "I used to be literally the world' s biggest Milestones fan. I eat out 3 4 times a week and I came to this location very often. Unfortunately, they used to have a great menu but most of that is gone and even though the staff are great, the $T$ has gotten consistently worse and worse. I had three bad meals here in a row before I finally decided to pack it in and say good bye. It doesn' t matter what you order, the quality of the ingredients has gotten worse and the kitchen staff seemingly doesn' t care. I' m not sure if I' m allowed to mention other restaurants, but there' s another chain restaurant a block away that has been improving their menu recently and they' ve earned my loyalty now. It' s a shame though because I often recommended Milestones to other people and now I' m forced to do the exact opposite.",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 784
+  },
+  {
+    "review_text": "This place is an interesting combo. The chef, David is incredible. When he is cooking the $T$ is perfect and I have tasted few breakfast creations better than his. However, he is beyond overworked an on his day off the food quality suffers dramatically. The service is unprofessional and neglectful so you know how good the food must be because despite the large amount of cons the food that David( typically) constructs outweighs them. Hopefully the owner knows that whatever success she has achieved is because of this chef and she hangs on tight. However, for his sake I hope he flys where his talent can be surrounded with equal talents or at least basic professionalism.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 787
+  },
+  {
+    "review_text": "Great quick service despite the fact that every table was full, some with large groups. Huge portions, so be prepared to eat! Really good $T$, good coffee. Hash browns are really crispy on top, just the way I like them.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 791
+  },
+  {
+    "review_text": "I felt that the menu was limited to regional fare which has been made in a gourmet style in order to justify small portions at reasonably high prices. The actual $T$ was well prepared and tasty, but really, two small fish tacos with no accoutrements is an entree in Austin? My husband' s entree was a piece of chicken. Period. Sides are separate. Now, quality was good, but if I hadn' t had peanuts before we went, I' d have left hungry. I also thought the menu was limited.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 796
+  },
+  {
+    "review_text": "I have ventured over to Wahoo' s a few times for lunch and recently went on a Saturday with the family during SXSW. The $T$ is good and comes out pretty quickly. It seems like a good portion for the money which you would expect from Mexican, but isn' t always the case in Austin. We like the Burritos and the Fish Tacos. While you are there, you definitely need to try the Bulldog which is essentially a Margarita topped off with Corona. If you are looking for an inexpensive good meal while in SOCO, this is good place to visit.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 800
+  },
+  {
+    "review_text": "Phenomenal German cuisine! Best German $T$ in central Florida hands down. Try the German potato salad. You will not regret it.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 803
+  },
+  {
+    "review_text": "Phenomenal, is the only word I can use to describe the $T$ here. The ambiance, decor, beer and even service could be at its bottom and I would still drive through a Zombie Apocalypse to get here. However, everything is at epic proportions. Why is there not a line out the door at all times? I thank everyone' s hard work in making this one of my favourite restaurants I have been to. If you have not been here you must, the culinary expertise and beer mastery is a thing of beauty.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 805
+  },
+  {
+    "review_text": "Wanted to check out this establishment last Friday afternoon, as I live fairly close in Medford and it had descent reviews. Well I was quite pleased! Loved the variations on menu, prices were reasonable, $T$ was tasty! They were very kid friendly as I was with my active 2 year old it helps they have TVS by each booth. The ambiance very cool and sophisticated yet comfy. Bar scene was seemed fun professional and locals that were friendly having great time. We truly enjoyed our food. Loved the pulled pork sandwich and the nachos were fabulous! Will definitely come back! Our server Mark and the rest of the staff worked well together as a team! Thank you for a great time!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 813
+  },
+  {
+    "review_text": "Wanted to check out this establishment last Friday afternoon, as I live fairly close in Medford and it had descent reviews. Well I was quite pleased! Loved the variations on menu, prices were reasonable, food was tasty! They were very kid friendly as I was with my active 2 year old it helps they have TVS by each booth. The ambiance very cool and sophisticated yet comfy. Bar scene was seemed fun professional and locals that were friendly having great time. We truly enjoyed our $T$. Loved the pulled pork sandwich and the nachos were fabulous! Will definitely come back! Our server Mark and the rest of the staff worked well together as a team! Thank you for a great time!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 815
+  },
+  {
+    "review_text": "First: CASH ONLY! Shady stuff Second, this is in a lot of ways a classically American Chinese joint, replete with the metal teapot and Chinese zodiac placemats, but the manager' ll be quick to point out some more old school home style Chinese stuff posted on the desk. $T$ is pretty mediocre. The\" chicken velvet\" is some kind of egg concoction that everyone around us seemed to be ordering but was seriously undersalted. The dan dan noodles were cooked too al dente and they used too much vinegar. I did find the manager sweet though he was so excited to have Chinese people come. And he seemed so wistful as he stared out into the neon glow of the McDonalds opposite, hands loosely held behind his back like my old painting teacher. I suspect that he might' ve wanted this place to be so much more. And I think it could be, if they accepted credit. Seriously, it' s like a 7 minute walk one way to the closest BoA",
+    "aspect": "Food",
+    "sentiment": "Neutral",
+    "source_file": "yelp.test.txt",
+    "sample_id": 819
+  },
+  {
+    "review_text": "I don' t remember McCormick and Schmick' s food to be extremely second rate. The mussel, do not get, had no flavor and smelt fishy. That is not a good sign, mussels are suppose to smell fresh like the ocean... fishy means spoiled. What happened to the mushroom risotto? Why is it not on the menu anymore? I recalled that being delicious the last time I dined here years ago. The hassle of finding and paying to park was not worth it. I hardly noticed the view being distracted by the poor quality $T$.",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.test.txt",
+    "sample_id": 824
+  },
+  {
+    "review_text": "Great $T$ and service. Had the lobster and wife had the scallops. Both were very delicious. The dessert was the banana foster which was outstanding. Our sides were spinach and broccoli which was ok. Hard to give 5 stars but really great.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 828
+  },
+  {
+    "review_text": "This place is really good. Service was fast and efficient. No people screaming from the back which made our dine in experience even better. The $T$ was delicious and the prices were favorable. I would definitely recommend the sesame chicken and orange chicken when they have it. The inside of the restraunt was very calm, well lit and clean. Give these guys a visit.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 837
+  },
+  {
+    "review_text": "Been eating here since it opened. The thrill is now gone but the $T$ is still good and very affordable. Like that I can hit Lee' s and Com in one trip for a great selection of international treats.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 839
+  },
+  {
+    "review_text": "This a great hidden gem in Kerrsdale That amazing speciality rolls and one of my favourite sushi places in town and ice tried alms or every place Must haves are Red and white tuna stack with quail egg on top Sesame crusted tuna steak House special sumo mono One thing like most Japanese run places in town the the service is slow no idea why but Japanese run small sushi places the waitresses are so slow a But the $T$ is worth coming here for sure and worth the absent minded Japanese waitresses m The chef here is one of the best sushi chefs in town A must place for any sushi lover",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 859
+  },
+  {
+    "review_text": "My $T$ was delicious( salmon, mushrooms and mashed potatoes) but none of my friends seemed to like their meals. Our waiter was awesome though!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 880
+  },
+  {
+    "review_text": "My daughter loves this place. The quality of the $T$ is consistent and good. I normally just get the fried shrimp but she gets the shrimp/ crab legs combos and has never been disappointed. We have only had take out but my daughter says everyone has been nice to her each time she has gone. The only reason I didn' t give it more stars is because it has to be the best food ever for me to give it more than 3 stars.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 928
+  },
+  {
+    "review_text": "Kind of a\" mini\" Whole Foods. If you want a kick ass salad bar( and who doesn' t?) go to the one on Ponce. This place does make a mean sandwich, killer sushi, and takes care of most of your shopping needs. Just lacking on the salad bar... that' s pretty much it. Oh, and if you come during lunch, you are pretty lucky if you get a place to sit; unlike the other Whole Foods in the area, there is practically no where to sit and enjoy your recently purchased over priced $T$. HA!",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.test.txt",
+    "sample_id": 932
+  },
+  {
+    "review_text": "I am delighted to be the first to review the Wave. The Wave Restaurant opened in June 2008 in the Contemporary Resort at Walt Disney World. The restaurant is on the lobby level and features space for a couple hundred restaurant guests and a FANTASTIC 40 person bar with small side rooms off the main bar that are cool, blue, hip and excellent. The biggest key unique selling point here is the menu and the amazing food. The food was based on a background of restaurants in the pacific northwest for inspiration. In Oregon and Washington, sustainable eating is a bigger movement, and here at the Wave the focus is on fresh, seasonal $T$ with huge flavor frequent organic influences... and the like. Yes... I am writing this about the food at a major restaurant inside one of the icons of Walt Disney World. This place is a massive departure from what you would expect. No fries, no fried food. But don' t think it' s all healthy in a dull way. There' s an amazing pork tenderloin, freshly crafted creamy soups, excellent desserts, and... for my money... the single best margarita I have ever consumed. The fresh fish with edamame salsa and the citrus and avocado salad made me come back for a second visit. I ate there 4 times in a week at Disney. Not only is the food wonderful and the bar very attainable for dinner seating, but the prices are especially fair in the theme park context. They' d be fair in any context, in any city, on any block. This place is a serious contender for best food at WDW in my 8 day stay.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 938
+  },
+  {
+    "review_text": "I am delighted to be the first to review the Wave. The Wave Restaurant opened in June 2008 in the Contemporary Resort at Walt Disney World. The restaurant is on the lobby level and features space for a couple hundred restaurant guests and a FANTASTIC 40 person bar with small side rooms off the main bar that are cool, blue, hip and excellent. The biggest key unique selling point here is the menu and the amazing food. The food was based on a background of restaurants in the pacific northwest for inspiration. In Oregon and Washington, sustainable eating is a bigger movement, and here at the Wave the focus is on fresh, seasonal food with huge flavor frequent organic influences... and the like. Yes... I am writing this about the food at a major restaurant inside one of the icons of Walt Disney World. This place is a massive departure from what you would expect. No fries, no fried food. But don' t think it' s all healthy in a dull way. There' s an amazing pork tenderloin, freshly crafted creamy soups, excellent desserts, and... for my money... the single best margarita I have ever consumed. The fresh fish with edamame salsa and the citrus and avocado salad made me come back for a second visit. I ate there 4 times in a week at Disney. Not only is the $T$ wonderful and the bar very attainable for dinner seating, but the prices are especially fair in the theme park context. They' d be fair in any context, in any city, on any block. This place is a serious contender for best food at WDW in my 8 day stay.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 946
+  },
+  {
+    "review_text": "I am delighted to be the first to review the Wave. The Wave Restaurant opened in June 2008 in the Contemporary Resort at Walt Disney World. The restaurant is on the lobby level and features space for a couple hundred restaurant guests and a FANTASTIC 40 person bar with small side rooms off the main bar that are cool, blue, hip and excellent. The biggest key unique selling point here is the menu and the amazing food. The food was based on a background of restaurants in the pacific northwest for inspiration. In Oregon and Washington, sustainable eating is a bigger movement, and here at the Wave the focus is on fresh, seasonal food with huge flavor frequent organic influences... and the like. Yes... I am writing this about the food at a major restaurant inside one of the icons of Walt Disney World. This place is a massive departure from what you would expect. No fries, no fried food. But don' t think it' s all healthy in a dull way. There' s an amazing pork tenderloin, freshly crafted creamy soups, excellent desserts, and... for my money... the single best margarita I have ever consumed. The fresh fish with edamame salsa and the citrus and avocado salad made me come back for a second visit. I ate there 4 times in a week at Disney. Not only is the food wonderful and the bar very attainable for dinner seating, but the prices are especially fair in the theme park context. They' d be fair in any context, in any city, on any block. This place is a serious contender for best $T$ at WDW in my 8 day stay.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 948
+  },
+  {
+    "review_text": "I actually love Whole Bowl. But whoever they are hiring now, both at this location and the one on Williams are racist racist racist. I' ve watched myself be charged for things I never was before, even watching others not be charged the same. Literally watched the quote unquote bowler give me less, noticeably. And when my sisters have patronized the NE location the service was despicable hesitabt and racist. Even found hair in the $T$.... given the service who knows if it was purposeful or not. Yuck. I will not be coming back... and this was a fave. Just appalled",
+    "aspect": "food",
+    "sentiment": "Negative",
+    "source_file": "yelp.test.txt",
+    "sample_id": 961
+  },
+  {
+    "review_text": "Enjoyed a great lunch with colleagues this afternoon. The service was awesome as well as the $T$. I will definitely be back.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 969
+  },
+  {
+    "review_text": "Chex Machin was a wonderful French restaurant I would recommend to anyone. This cozy little spot definitely reminded me of a French Bistro. The $T$ was amazing, my husband ordered a delicious salad, and I had clam linguine with French onion soup. Also add a cup of coffee... the best coffee I' ve received at a restaurant in a long time! The waiter Arthur was impressive as he easily handled the entire restaurant! Great place!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 993
+  },
+  {
+    "review_text": "What' s not to love? Great $T$, no grease, clean dining room, friendly staff, wel priced. Has the feel of a locals only diner without the attitude. You' ll love it!",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 1011
+  },
+  {
+    "review_text": "About a month after visiting Israel I got hit with a falafel craving and had the excuse to finally try this place out. I' m no culinary expert but the $T$ is great for the value( seriously $ 5 falafel). I went on a Saturday night and it was busy but not crowded... interestingly enough they were playing some super geeky dubstep which I was fine with but I' m not sure about everyone else, haha. Decor is modern, well lit, place was clean and staff was friendly. Order was up in like 2 minutes, like, QSR fast. Plus I got a big spoonful of tzatziki sauce at no extra charge... mmmm. They also have some unique desserts like fruit tarts. A nice alternative on a Saturday night to the normal Norwood townie infested bars! :)",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 1024
+  },
+  {
+    "review_text": "Finally got a chance to check this place out. Decided to check out the happy hour. I was very happy to hear they have both drink and food specials including a ladies night on Thursday. The $T$ and wait staff was great, i tried the tuna flat bread. Everything seemed very fresh. I will definitely be back. I do see the trouble with noise on real busy nights, but i wasn' t effected while on my visit.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 1032
+  },
+  {
+    "review_text": "Always a delightful experience. Staff is attentive and helpful and the $T$ excellent. We always look forward to eating at Gran Gusto when we' re in Cambridge.",
+    "aspect": "food",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 1038
+  }
+]

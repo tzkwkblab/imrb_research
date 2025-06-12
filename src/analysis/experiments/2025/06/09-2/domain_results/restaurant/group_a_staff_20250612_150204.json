@@ -1,0 +1,3578 @@
+[
+  {
+    "review_text": "Apparently Prides Osteria had a rough summer as evidenced by the almost empty dining room at 6: 30 on a Friday night. However new blood in the kitchen seems to have revitalized the food from other customers recent visits. $T$ was warm but unobtrusive. By 8 pm or so when we left the bar was full and the dining room was much more lively than it had been. Perhaps Beverly residents prefer a later seating. After reading the mixed reviews of late I was a little tentative over our choice but luckily there was nothing to worry about in the food department. We started with the fried dough, burrata and prosciutto which were all lovely. Then although they don' t offer half portions of pasta we each ordered the entree size and split them. We chose the tagliatelle bolognese and a four cheese filled pasta in a creamy sauce with bacon, asparagus and grana frita. Both were very good. We split a secondi which was the special Berkshire pork secreto, which was described as a pork skirt steak with garlic potato pur é e and romanesco broccoli( incorrectly described as a romanesco sauce). Some tables received bread before the meal but for some reason we did not. Management also seems capable for when the tenants in the apartment above began playing basketball she intervened and also comped the tables a dessert. We ordered the apple dumpling with gelato and it was also quite tasty. Portions are not huge which I particularly like because I prefer to order courses. If you are someone who orders just a meal you may leave hungry depending on you appetite. Dining room was mostly younger crowd while the bar was definitely the over 40 set. Would recommend that the naysayers return to see the improvement although I personally don' t know the former glory to be able to compare. Easy access to downtown Salem without the crowds on this month of October.",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 0,
+    "format": "apc"
+  },
+  {
+    "review_text": "This store is pretty good. Not as great as Walmart( or my preferred, Milford Target), but closer and in a easier area to get to. The store itself is pretty clean and organized, the $T$ are friendly( most of the time), and BEST of all is the Self Checkout this store has! Great clearance sections throughout, and great prices on everything in the store, in general( they pricematch too!).Christian , Debbie , Jen and Hanna are all very friendly, helpful, sensitive to all customer needs. Definitely one of the better Target locations in the area, and they do a GREAT job assisting customers for being such a busy store. Located directly in the Framingham Mall on Cochituate Rd/ Route 30. 4 stars.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 4,
+    "format": "apc"
+  },
+  {
+    "review_text": "Probably one of the better breakfast sandwiches I' ve ever had. I had the EGGMEATMUFFIN, the bread was toasted perfectly and the bacon was a real thick cut. Not that lame bacon we are more familiar with at your conventional breakfast diner. In addition, the place was clean and the $T$ was very helpful. The butcher had several different cuts available and was knowledgable as well as friendly. I left with some cuts of pork and beef and am excited to come back!",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 13,
+    "format": "apc"
+  },
+  {
+    "review_text": "I work in the Pru and this is the most affordable and tasty place in the food court. deals where a meal is $ 5$ 7 and the chicken pesto is really good. I am not a chowda person but all there soups I have had are pretty damn good. Broccoli chicken is my favorite. Also, probably the most personable Food court $T$ I have ever had the pleasure of ordering from.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 17,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great coffee and pastries. Baristas are excellent. All the other $T$ are sooooo lost and vacant.",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 39,
+    "format": "apc"
+  },
+  {
+    "review_text": "Even the mad Captain Ahab is touched by Starbuck' s goodness... Herman Melville The drive thru was jammed with vehicles when I pulled up, so I opted to park and go to the walk up window. The $T$ were super friendly! More then a few of them said hello to me while I ordered. Even though they were busy, they were all genuinely smiling. They look like they enjoy their job. Great teamwork! I think this is the friendliest Starbucks I' ve ever visited. The building is architecturally pleasing to me so it catches my eye every time I' ve driven past it. I' m glad I stopped this time. It' s close to my freeway entrance so I' ll be making this a regular stop from now on. If you' re in the area, you should too!",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 119,
+    "format": "apc"
+  },
+  {
+    "review_text": "its the best pizza hut i' v found in florida always got great deals& offers the $T$ are very friendly& make you feel welcome and if you have children with you they make them feel extra special& welcome them in a huge way too",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 137,
+    "format": "apc"
+  },
+  {
+    "review_text": "By no means is me giving Habaneros 3 stars a bad thing. This is my go to spot for Mexican food when my family comes to visit me from NY. It' s cheap, it' s quick and it' s surprisingly good. The establishment offers a wide selection of Mexican dinners and combination specials, common in other traditional Mexican restaurants. If you' re a fan of Mexican food, especially if you' re from out of town just go here and eat. Parking isn' t bad, your seated immediately and there is always a table available. Unfortunately there can sometimes be minor communication errors with your waitresses and the $T$ so make sure to be very clear with what you want when placing your Oder. The food is good, nothing amazing but it definitely hits the spot.",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 185,
+    "format": "apc"
+  },
+  {
+    "review_text": "Nice $T$. Subpar food for the price.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 199,
+    "format": "apc"
+  },
+  {
+    "review_text": "I just had a terrible experience here at the Shaking Crab in Quincy. The server brought us our crab and told us that the crackers were in the washer and would be out in a minute or two. Then 10 minutes passed, still no utensils, we asked again and a different server told us that they didn' t have any more, that they kept going missing. This went on for the rest of the time we were here. After 20 minutes of having our food the 3 of us were given one cracker. The crab was ice cold. The $T$ then avoided our table. We informed the manager and he did not seem to care. I normally would never post anything like this, but that was the worst experience I have had at a restaurant. I would give them a negative star if I could. The food was NOT worth the money it cost us.",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 253,
+    "format": "apc"
+  },
+  {
+    "review_text": "Nice music, excellent service, reasonable prices. The $T$ is super friendly and food is delicious and fairly priced. Potstickers and Mac and cheese were amazing. The bacon jam burger is my favorite. I love this place. You should go!",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 296,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is the best place specially during summer evenings. They do provide outer dining area, which is really beautiful. $T$ is very friendly. food and  drinks are good",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 299,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great spot. Comfortable little joint smack dab in the middle of Harvard Square. Drop in on a hot day and grab a bubble tea while shootin' the breeze with the $T$. You can also challenge Harvard students to a game of Street Fighter 2 if you feel the need, but personally I like to just relax and keep the peace. The only place that rivals this is a bubble tea shop in Calgary that I walked into awkwardly while they were still under construction. They told me to come back in and gave me a free bubble tea though so they are scoring points stricly on being nice and not charging anything( I still tipped though, I' m not a scumbag.) Boston Tea Stop( clever name especially with the MBTA map on the wall) is a valuable addition to the ever diminishing Harvard Square area. Pretty soon that neighborhood will be nothing but boring chain restaurants and mediocre bars so try and support the little guys while you can. Also the staff deserves a shout out. They can talk about the Rival Mob with the best of them.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 342,
+    "format": "apc"
+  },
+  {
+    "review_text": "Visited this restaurant today for their new weekday lunch hour and was immediately impressed by the friendliness of the $T$ and service. However, after my Caesar salad with grilled shrimp($ 8 additional) showed up, I was less than impressed. This dish comes with 4 pretty small grilled shrimp, that should really only be worth $ 4 at most. I even asked the waitress if that was all the shrimp it came with and she confirmed it was. Will not return to this restaurant as I don' t feel at all that I got a meal worth what I paid.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 369,
+    "format": "apc"
+  },
+  {
+    "review_text": "First time here the $T$ was wonderful and the food was very well prepared and tasty. I am very particular about Italian restaurants and this one is very good. We will be back often I am sure. The only problem I see is they might need more room very quickly",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 441,
+    "format": "apc"
+  },
+  {
+    "review_text": "Meatloaf was very good.... I had a very good meal here. $T$ was very friendly as well. Place was quiet and was very relaxing. Prices are fair. Something for everyone on the menu and breakfast all day. I' ll be back.",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 447,
+    "format": "apc"
+  },
+  {
+    "review_text": "The food was good and the service was exceptional. There were a couple of snafus my soup was taken to the wrong table which the wait staff made up for with cups of another soup to tide me over. $T$ was also very sensitive to my food allergies, and made sure there was no cross contamination in the kitchen. I was pleasantly surprised at how well children are accommodated. There' s a dedicated child' s menu with low cost( around $ 5) entrees, and crayons for coloring.  ( The kids' food was great, too.)",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 489,
+    "format": "apc"
+  },
+  {
+    "review_text": "Went there last night and was disappointed again! How hard is it to take and order and fill it? All we asked for was a salad and a pizza and for the second time in a row, no salad arrived. At least they didn' t put it on the bill this time. I can understand if the place is jamming, but it was dead in there at 8 PM. Maybe the $T$ should spend less time hanging out together behind the bar, flexing, talking about drinking and plans for later and spend some time doing their jobs. And the pizza was only fair, not the usual excellent. Not a good showing last night. It will be a long time before we return, if we do return. Great pizza can overcome poor service, but fair pizza and poor service? That' s a tough sell.",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 504,
+    "format": "apc"
+  },
+  {
+    "review_text": "This place is amazing. From the $T$, to the food, and the decor. Went during lunch and the food options are amazing. The bakery goods look so delicious. Order the artichoke eggs Benedict. Every bite was worth it. The wait staff is great. Very helpful and friendly. Worth the stop.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 519,
+    "format": "apc"
+  },
+  {
+    "review_text": "This place is amazing. From the staff, to the food, and the decor. Went during lunch and the food options are amazing. The bakery goods look so delicious. Order the artichoke eggs Benedict. Every bite was worth it. The wait $T$ is great. Very helpful and friendly. Worth the stop.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 523,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great comfortable place for wings and a beer. $T$ is super friendly and the whole place has a good vibe. All walks of life are welcomed here and fit in seamlessly. Wish this chain existed in Cincy.",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 536,
+    "format": "apc"
+  },
+  {
+    "review_text": "El Paso Style Food huh... when I first saw this place, I thought to myself, hmm, I am originally from El Paso and your telling me you make food like mama did back home? Well, this I have to see.\" I took 4 friends to this restaurant and of course, I was very skeptical. We sat down and had the chips with salsa. T he salsa was spicy and tasty and I actually requested more. Our meals included Steak Tampiquena, Flautas, Original El Paso Enchiladas, The Texican dinner and of course, one of my favorite dishes, Carne Chile Colorado. I know what El Paso Chile Colorado should taste like so when I took a bite of The Texican' s Chile Colorado, my taste buds were the happiest they had been in a long time. I also tried the other plates and this is definitely the Chicano food from back in El Paso. All my guests enjoyed their meals as I did. The food tastes like grandma' s food back home. I was truly surprised and delighted. When I feel like eating a great meal from back home, you can bet I will come back here. The $T$ was friendly and knowledgeable. For all you original El Pasoens in Austin, this place is for you, but sorry they don' t serve Chico' s Tacos( El Paso humor) lol. I recommend this place for anyone, it is a great place to eat.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 542,
+    "format": "apc"
+  },
+  {
+    "review_text": "At at this place for the first time today. I was in early. Coffee was perked... and tasty. Breakfast was very good. Had standard... eggs, bacon, hash browns and French toast. With coffee, still less than $ 10. $T$ was attentive even though they were busy. Coffee never ran out on me. My friend had the eggs Benedict. Well done, particularly for a diner. Hollandaise was homemade... not Sysco. Looking forward to going back. If u are at a swim meet at Harvard U... park the car and walk here... 5 minutes away.",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 662,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great burgers and vibes. The $T$ is always friendly and ready to assist however they can. The food is the real star of this place. I' ve thoroughly enjoyed the Lamb burger and the ribs so if you' d like some great flavor start there.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 676,
+    "format": "apc"
+  },
+  {
+    "review_text": "We received terrible service when we ordered at Sweet Mamas today. We told the server we were on lunch break and we come from a company that is right down the road that always orders there so they usually work well with us and get us in and out in a timely manner.... but not today! They were incredibly rude and put our order in late, like 15 minutes after we ordered. Then we asked where our food was and that we needed to leave soon, and the waitress said\" well if you need to leave you need to leave. I will get to go boxes.\" We were in shock. We asked for the owners and they weren' t in, so we ffigure that' s why the $T$ was so terrible today, but my group and I decided to never go back there. So if you go and are served by a young girl that dresses like she' s going to a soccer match, run the other direction and eat somewhere else! We ended up taking our food in TO GO boxes and ate at work. Now we' re telling our whole company of over 4, 000 employees to stay away from it!",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "yelp.train.txt",
+    "sample_id": 745,
+    "format": "apc"
+  },
+  {
+    "review_text": "With a suggestion from a friend on a place to get some dessert we went to Random Order Pie Bar. The location is small and cozy. The $T$ was pleasant and friendly. Unfortunately, the one thing they are known for was a bit off. My son and I had a slice of banana cream and coconut cream. The banana cream was the better of the two. The coconut was a bit bland and the crust on both was hard and even down right hard to cut through. Maybe we came at a bad time and the pies weren' t freshly made. Time will tell if we get another chance to try.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 748,
+    "format": "apc"
+  },
+  {
+    "review_text": "I' m not a huge fan of chains but I actually enjoy this one. The salad selection is always fresh and sometimes new.   ( I did finally have to admit I don' t care for quinoa after this visit but it was of no fault of the restaurant.) Each time I' ve been in the $T$ and been very friendly and helpful. I try to make it here at least once a month.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 772,
+    "format": "apc"
+  },
+  {
+    "review_text": "I used to be literally the world' s biggest Milestones fan. I eat out 3 4 times a week and I came to this location very often. Unfortunately, they used to have a great menu but most of that is gone and even though the $T$ are great, the food has gotten consistently worse and worse. I had three bad meals here in a row before I finally decided to pack it in and say good bye. It doesn' t matter what you order, the quality of the ingredients has gotten worse and the kitchen staff seemingly doesn' t care. I' m not sure if I' m allowed to mention other restaurants, but there' s another chain restaurant a block away that has been improving their menu recently and they' ve earned my loyalty now. It' s a shame though because I often recommended Milestones to other people and now I' m forced to do the exact opposite.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.train.txt",
+    "sample_id": 783,
+    "format": "apc"
+  },
+  {
+    "review_text": "I love the low key vibe of this place. The $T$ is great, there aren' t any attitudes, and they have a good mix of regulars and first timers that are sure to come back. It' s pretty big, which is great for groups and on busy nights. There' s a large patio out back, and a little nook full of couches inside. Good beer selection, great prices.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 112,
+    "format": "apc"
+  },
+  {
+    "review_text": "My favourite lunch place in the area. Big portions, good prices, and extremely friendly $T$. This is where I was first introduced to Filipino food, and it made a good impression. The menu is huge, and a lot of the dishes are best shared so go with friends.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 178,
+    "format": "apc"
+  },
+  {
+    "review_text": "What' s not to love? Great food, no grease, clean dining room, friendly $T$, wel priced. Has the feel of a locals only diner without the attitude. You' ll love it!",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 204,
+    "format": "apc"
+  },
+  {
+    "review_text": "About a month after visiting Israel I got hit with a falafel craving and had the excuse to finally try this place out. I' m no culinary expert but the food is great for the value( seriously $ 5 falafel). I went on a Saturday night and it was busy but not crowded... interestingly enough they were playing some super geeky dubstep which I was fine with but I' m not sure about everyone else, haha. Decor is modern, well lit, place was clean and $T$ was friendly. Order was up in like 2 minutes, like, QSR fast. Plus I got a big spoonful of tzatziki sauce at no extra charge... mmmm. They also have some unique desserts like fruit tarts. A nice alternative on a Saturday night to the normal Norwood townie infested bars! :)",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 218,
+    "format": "apc"
+  },
+  {
+    "review_text": "Finally got a chance to check this place out. Decided to check out the happy hour. I was very happy to hear they have both drink and food specials including a ladies night on Thursday. The food and wait $T$ was great, i tried the tuna flat bread. Everything seemed very fresh. I will definitely be back. I do see the trouble with noise on real busy nights, but i wasn' t effected while on my visit.",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 225,
+    "format": "apc"
+  },
+  {
+    "review_text": "Always a delightful experience. $T$ is attentive and helpful and the food excellent. We always look forward to eating at Gran Gusto when we' re in Cambridge.",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "yelp.test.txt",
+    "sample_id": 229,
+    "format": "apc"
+  },
+  {
+    "review_text": "But the $T$ was so horrible to us .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 0,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is friendly , and the food has gotten better and better !",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 117,
+    "format": "apc"
+  },
+  {
+    "review_text": "The service was impeccable and unobtrusive -- the $T$ knows what they are there to do -- to know their menu , present your meal , and attend to your needs .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 332,
+    "format": "apc"
+  },
+  {
+    "review_text": "Since it literally is a complete hole in the wall , it 's a bit intimidating at first , but you get over that very quickly as soon as the friendly $T$ welcomes you - do n't hesitate to ask for help with what to get .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 385,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is very accomodating .",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 404,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very friendly , if not overly efficient .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 483,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ were very nice and suggested swordfish for my husband he enjoyed his meal .",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 567,
+    "format": "apc"
+  },
+  {
+    "review_text": "Solid wine list , knowledgeable $T$ , friendly owners and an adventurous , ever-changing menu keep us coming back .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 612,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is no nonsense .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 666,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is a great Thai restaurant with a very friendly $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 668,
+    "format": "apc"
+  },
+  {
+    "review_text": "Friendly $T$ that actually lets you enjoy your meal and the company you 're with .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 703,
+    "format": "apc"
+  },
+  {
+    "review_text": "Saturday , Nov. 6th I had a group from work come in with about 35 people and the $T$ was amazing to accomodate us .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 742,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was back-to-back with the diner at the table behind me and $T$ had to hoist trays over our heads as they squeezed past us again and again .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 761,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ were attentive , polite and helpful - an impressive feat in such close quarters .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 803,
+    "format": "apc"
+  },
+  {
+    "review_text": "Super friendly and knowledgable $T$ , fabulous bistro fare and a wonderful jazz brunch with great live jazz -LRB- the chilaquiles were awesome !",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 885,
+    "format": "apc"
+  },
+  {
+    "review_text": "Make reservations but expect to be delayed 15-20 minutes as the $T$ was having difficulty seating guests who arrived with a reservation because they probably had a lot of walk ins being so close to Time Square .",
+    "aspect": "hosting staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1106,
+    "format": "apc"
+  },
+  {
+    "review_text": "The crust is thin , the ingredients are fresh and the $T$ is friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1120,
+    "format": "apc"
+  },
+  {
+    "review_text": "Friendly and informative $T$ , very attentive and prompt raw bar service .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1193,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ ignored my friends and I the entire time we were there .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1202,
+    "format": "apc"
+  },
+  {
+    "review_text": "not the food , not the ambiance , not the service , I agree with the previous reviews you wait and wait , the $T$ are very rude and when you get in they are looking to get you right out .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1237,
+    "format": "apc"
+  },
+  {
+    "review_text": "Nha Trang , while being notorious for utter lack of comfort and decor , horribly slow $T$ and horribly quick meals , is one of the best vietnamese restaurants i 've ever been to . the pho is delicious and comes with very fresh vegtables .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1245,
+    "format": "apc"
+  },
+  {
+    "review_text": "With so many good restaurants on the UWS , I do n't need overpriced food , absurdly arrogant $T$ who do n't recognize they work at a glorified diner , clumsy service , and management that does n't care .",
+    "aspect": "wait-staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1271,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only positive was the $T$ , which was prompt , knowledgable , and likeable .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1329,
+    "format": "apc"
+  },
+  {
+    "review_text": "We were well attended to by the enthusiastic $T$ especially the manager Tony Gaskin who made excellent suggestions for our menu selections .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1414,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was the friendliest that have seen in New York .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1441,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very attentive and we can almost always get a table .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1503,
+    "format": "apc"
+  },
+  {
+    "review_text": "The signs , the specials menus , food , and even all the $T$ are ALL TOTALLY Japanese .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1584,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is also attentive and friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1597,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very freindly , they make it feel like you 're eating in a freindly little european town .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1627,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ are all very busy , it 's not outstanding service , but I 've never been dealt with rudely .",
+    "aspect": "waitstaff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1628,
+    "format": "apc"
+  },
+  {
+    "review_text": "From the moment you enter till the moment you walk out the friendly and helpful $T$ was was just Fantastic .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1707,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is incredibly helpful and attentive .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1726,
+    "format": "apc"
+  },
+  {
+    "review_text": "Patroon features a nice cigar bar and has great $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1739,
+    "format": "apc"
+  },
+  {
+    "review_text": "The owner and $T$ are all Japanese as well and that adds to the entire ambiance .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1756,
+    "format": "apc"
+  },
+  {
+    "review_text": "From the spectacular caviar to the hospitable $T$ , I felt like royalty and enjoyed every second of it .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1769,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was accomodating , the food was absolutely delicious and the place is lovely .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1784,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was knowledgeable and full of personality .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1809,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1810,
+    "format": "apc"
+  },
+  {
+    "review_text": "And the $T$ is also young , energeic and hot !!!!",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1850,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is accomodating , the ambiance is exciting and yet relaxed , and the food is out of this world !",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1907,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ are attentive , and have smiles on their faces .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1921,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is blantently unappreciative of your business but its the best pie on the UWS !",
+    "aspect": "Wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1934,
+    "format": "apc"
+  },
+  {
+    "review_text": "The service was poor , restaurant poorly lit , $T$ not very attentive and I would have rather eaten at a Mcdonald 's than this joint .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2039,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ are very friendly .",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2047,
+    "format": "apc"
+  },
+  {
+    "review_text": "While the $T$ at this little bistro is very friendly , I have never experienced more incompetency .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2080,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is courteous and friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2088,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is pleasant , fun , and for the most part gorgeous -LRB- in the wonderful aesthetic beautification way , not in that she's-way-cuter-than-me-that-b@#$* way -RRB- .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2122,
+    "format": "apc"
+  },
+  {
+    "review_text": "We 've never had any problems with the $T$ but maybe we 've been lucky ?",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2153,
+    "format": "apc"
+  },
+  {
+    "review_text": "Cute place , nice $T$ but would never go there again .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2204,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has always been attentive and kind , and I 've always been amazed at how they 've handled all the various different group sizes that come in .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2227,
+    "format": "apc"
+  },
+  {
+    "review_text": "If you do n't mind pre-sliced low quality fish , unfriendly $T$ and a sushi chef that looks like he is miserable then this is your place .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2368,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is n't the friendliest or most competent , and I am stickler for service , but everything else about this place makes up for it .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2399,
+    "format": "apc"
+  },
+  {
+    "review_text": "I have been coming here for years and have nothing but good things to say about the service and the great $T$ at La Lanterna .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2409,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has always been friendly without seeming grating , and the chef has greeted us on a couple of occasions .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2439,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only concern i have is with the slighly all-business $T$ who order and throw the food down , rushing you out .",
+    "aspect": "waitstaff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2515,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only friendly $T$ was the guy at the bar .",
+    "aspect": "staff member",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2680,
+    "format": "apc"
+  },
+  {
+    "review_text": "I can not imagine a friendlier $T$ working in a restaurant .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2686,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ there is very attentive and down to earth .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2745,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very kind and well trained , they 're fast , they are always prompt to jump behind the bar and fix drinks , they know details of every item in the menu and make excelent recomendations .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2772,
+    "format": "apc"
+  },
+  {
+    "review_text": "The whole set up is truly unprofessional and I wish Cafe Noir would get some good $T$ , because despite the current one this is a great place .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2790,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ offers impeccable service .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2795,
+    "format": "apc"
+  },
+  {
+    "review_text": "Kind , attentive $T$ .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2814,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is excellent , specjal : that girl behind the bar , european chic .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2831,
+    "format": "apc"
+  },
+  {
+    "review_text": "We , there were four of us , arrived at noon - the place was empty - and the $T$ acted like we were imposing on them and they were very rude .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2850,
+    "format": "apc"
+  },
+  {
+    "review_text": "This place has the the correct ambience and an excellent $T$ to make you feel like a guest and a friend at the same time .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2863,
+    "format": "apc"
+  },
+  {
+    "review_text": "from an English speaking $T$ .",
+    "aspect": "staff",
+    "sentiment": "Neutral",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2872,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is great , very attentive .",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2924,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was very attentive , the ambience lovely , and the food superb .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3003,
+    "format": "apc"
+  },
+  {
+    "review_text": "The well mannered , pleasant $T$ that Tony has in his employ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3029,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ are not that friendly , but the taste covers all .",
+    "aspect": "Staffs",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3096,
+    "format": "apc"
+  },
+  {
+    "review_text": "Winnie and her $T$ are the best crew you can find serving you .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3156,
+    "format": "apc"
+  },
+  {
+    "review_text": "During the course of the past 3 months , the chef and $T$ changed and it was not for the better .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3173,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ makes you feel at home , the food is great and the atmosphere is WONDERFUL !",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3208,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was too busy ordering sushi for dinner and then laying it out to eat on the bar to even bring me my check .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3213,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 've rarely had a problem with slow $T$ in the 10 years I 've been going .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3315,
+    "format": "apc"
+  },
+  {
+    "review_text": "The drinks are a saving grace , but $T$ , please , get over yourselves .",
+    "aspect": "service staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3359,
+    "format": "apc"
+  },
+  {
+    "review_text": "The all-Italian $T$ is warm and engaging from the start .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3361,
+    "format": "apc"
+  },
+  {
+    "review_text": "Complimentary stuff kept coming , and when the waiter saw me opening a gift , I received my dessert on a plate that had Happy Birthday written on it , with a candlevery nice touch , and attentive $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3402,
+    "format": "apc"
+  },
+  {
+    "review_text": "We were seated and ignored by $T$ .",
+    "aspect": "waitstaff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3464,
+    "format": "apc"
+  },
+  {
+    "review_text": "The food and $T$ always surprise me with the new heights they are taken to .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3516,
+    "format": "apc"
+  },
+  {
+    "review_text": "From the beginning , we were met by friendly $T$ , and the convienent parking at Chelsea Piers made it easy for us to get to the boat .",
+    "aspect": "staff memebers",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 30,
+    "format": "apc"
+  },
+  {
+    "review_text": "I highly recommend it for not just its superb cuisine , but also for its friendly owners and $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 41,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ should be a bit more friendly .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 55,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , the $T$ is very attentive and really personable .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 59,
+    "format": "apc"
+  },
+  {
+    "review_text": "Had a great experience at Trio ... $T$ was pleasant ; food was tasty and large in portion size - I would highly recommend the portobello/gorgonzola/sausage appetizer and the lobster risotto .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 61,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great food , great $T$ , great atmosphere , and best of all GREAT beer !",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 81,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 'm glad I did as the food was very good and the $T$ was friendly , courteous and efficient .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 108,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very sharp and they look good too .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 132,
+    "format": "apc"
+  },
+  {
+    "review_text": "Our waiter was friendly and it is a shame that he didnt have a supportive $T$ to work with .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 164,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was loud and inconsiderate .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 193,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 215,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is unbelievably friendly , and I dream about their Saag gosht ... so good .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 241,
+    "format": "apc"
+  },
+  {
+    "review_text": "The owner and $T$ go to great lengths to make you feel comfortable .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 249,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was extremely friendly and pleasant .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 281,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is solicitous and friendly and always seems glad to see us , and the food is wonderful , if not stunningly creative .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 394,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is accomodating make sure you are satified .",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 432,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ greeted me warmly at the door and I was seated promptly and the food was excellent .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 441,
+    "format": "apc"
+  },
+  {
+    "review_text": "the $T$ is very friendly , if your not rude or picky ... . . our meal at Leon last weekend was great - .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 446,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is arrogant , the prices are way high for Brooklyn .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 464,
+    "format": "apc"
+  },
+  {
+    "review_text": "Although I moved uptown I try to stop in as often as possible for the GREAT cheap food and to pay the friendly $T$ a visit .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 520,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ are extremely friendly and even replaced my drink once when I dropped it outside .",
+    "aspect": "staff members",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 563,
+    "format": "apc"
+  },
+  {
+    "review_text": "Finally let into the store 5 at a time , to buy expensive slices from a harried $T$ .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 574,
+    "format": "apc"
+  },
+  {
+    "review_text": "We ended up having to just leave because we were essentially being ignored by the $T$ -- even though the rest of the restaurant was largely empty .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 576,
+    "format": "apc"
+  },
+  {
+    "review_text": "Service was awful - mostly because $T$ were overwhelmed on a Saturday night .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 629,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is 100 % Italian and the food is as authentic as it gets .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 636,
+    "format": "apc"
+  },
+  {
+    "review_text": "Not only is the food authentic , but the $T$ here are practically off-the-boat , they are young and hip and know what they are doing when it comes to food and wine .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 758,
+    "format": "apc"
+  },
+  {
+    "review_text": "I had to flag down a third $T$ for a fork ... so now it 's goodbye Little RUDE Pie Company .",
+    "aspect": "staff person",
+    "sentiment": "Neutral",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 841,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was very attentive and polite .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 848,
+    "format": "apc"
+  },
+  {
+    "review_text": "I love the simplicity and respect which was given to the food , as well the $T$ was freindly and knowledgable .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 854,
+    "format": "apc"
+  },
+  {
+    "review_text": "The service , however , is a peg or two below the quality of food -LRB- horrible bartenders -RRB- , and the clientele , for the most part , are rowdy , loud-mouthed commuters -LRB- this could explain the bad attitudes from the $T$ -RRB- getting loaded for an AC/DC concert or a Knicks game .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 969,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was especially impressed during the bday party when the $T$ went above and beyond in helping me decorate and bring out a bday cake as well as offering prompt and friendly service to a 15 person party .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 1065,
+    "format": "apc"
+  },
+  {
+    "review_text": "From the beginning , we were met by friendly $T$ , and the convienent parking at Chelsea Piers made it easy for us to get to the boat .",
+    "aspect": "staff memebers",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 30,
+    "format": "apc"
+  },
+  {
+    "review_text": "I highly recommend it for not just its superb cuisine , but also for its friendly owners and $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 41,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ should be a bit more friendly .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 55,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , the $T$ is very attentive and really personable .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 59,
+    "format": "apc"
+  },
+  {
+    "review_text": "Had a great experience at Trio ... $T$ was pleasant ; food was tasty and large in portion size - I would highly recommend the portobello/gorgonzola/sausage appetizer and the lobster risotto .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 61,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great food , great $T$ , great atmosphere , and best of all GREAT beer !",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 81,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 'm glad I did as the food was very good and the $T$ was friendly , courteous and efficient .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 108,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very sharp and they look good too .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 132,
+    "format": "apc"
+  },
+  {
+    "review_text": "Our waiter was friendly and it is a shame that he didnt have a supportive $T$ to work with .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 164,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was loud and inconsiderate .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 193,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 215,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is unbelievably friendly , and I dream about their Saag gosht ... so good .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 241,
+    "format": "apc"
+  },
+  {
+    "review_text": "The owner and $T$ go to great lengths to make you feel comfortable .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 249,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was extremely friendly and pleasant .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 281,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is solicitous and friendly and always seems glad to see us , and the food is wonderful , if not stunningly creative .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 394,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is accomodating make sure you are satified .",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 432,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ greeted me warmly at the door and I was seated promptly and the food was excellent .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 441,
+    "format": "apc"
+  },
+  {
+    "review_text": "the $T$ is very friendly , if your not rude or picky ... . . our meal at Leon last weekend was great - .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 446,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is arrogant , the prices are way high for Brooklyn .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 464,
+    "format": "apc"
+  },
+  {
+    "review_text": "Although I moved uptown I try to stop in as often as possible for the GREAT cheap food and to pay the friendly $T$ a visit .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 520,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ are extremely friendly and even replaced my drink once when I dropped it outside .",
+    "aspect": "staff members",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 563,
+    "format": "apc"
+  },
+  {
+    "review_text": "Finally let into the store 5 at a time , to buy expensive slices from a harried $T$ .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 574,
+    "format": "apc"
+  },
+  {
+    "review_text": "We ended up having to just leave because we were essentially being ignored by the $T$ -- even though the rest of the restaurant was largely empty .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 576,
+    "format": "apc"
+  },
+  {
+    "review_text": "Service was awful - mostly because $T$ were overwhelmed on a Saturday night .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 629,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is 100 % Italian and the food is as authentic as it gets .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 636,
+    "format": "apc"
+  },
+  {
+    "review_text": "Not only is the food authentic , but the $T$ here are practically off-the-boat , they are young and hip and know what they are doing when it comes to food and wine .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 758,
+    "format": "apc"
+  },
+  {
+    "review_text": "I had to flag down a third $T$ for a fork ... so now it 's goodbye Little RUDE Pie Company .",
+    "aspect": "staff person",
+    "sentiment": "Neutral",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 841,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was very attentive and polite .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 848,
+    "format": "apc"
+  },
+  {
+    "review_text": "I love the simplicity and respect which was given to the food , as well the $T$ was freindly and knowledgable .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 854,
+    "format": "apc"
+  },
+  {
+    "review_text": "The service , however , is a peg or two below the quality of food -LRB- horrible bartenders -RRB- , and the clientele , for the most part , are rowdy , loud-mouthed commuters -LRB- this could explain the bad attitudes from the $T$ -RRB- getting loaded for an AC/DC concert or a Knicks game .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 969,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was especially impressed during the bday party when the $T$ went above and beyond in helping me decorate and bring out a bday cake as well as offering prompt and friendly service to a 15 person party .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Test_Gold.xml.seg",
+    "sample_id": 1065,
+    "format": "apc"
+  },
+  {
+    "review_text": "But the $T$ was so horrible to us .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 0,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is friendly , and the food has gotten better and better !",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 117,
+    "format": "apc"
+  },
+  {
+    "review_text": "The service was impeccable and unobtrusive -- the $T$ knows what they are there to do -- to know their menu , present your meal , and attend to your needs .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 332,
+    "format": "apc"
+  },
+  {
+    "review_text": "Since it literally is a complete hole in the wall , it 's a bit intimidating at first , but you get over that very quickly as soon as the friendly $T$ welcomes you - do n't hesitate to ask for help with what to get .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 385,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is very accomodating .",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 404,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very friendly , if not overly efficient .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 483,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ were very nice and suggested swordfish for my husband he enjoyed his meal .",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 567,
+    "format": "apc"
+  },
+  {
+    "review_text": "Solid wine list , knowledgeable $T$ , friendly owners and an adventurous , ever-changing menu keep us coming back .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 612,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is no nonsense .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 666,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is a great Thai restaurant with a very friendly $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 668,
+    "format": "apc"
+  },
+  {
+    "review_text": "Friendly $T$ that actually lets you enjoy your meal and the company you 're with .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 703,
+    "format": "apc"
+  },
+  {
+    "review_text": "Saturday , Nov. 6th I had a group from work come in with about 35 people and the $T$ was amazing to accomodate us .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 742,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was back-to-back with the diner at the table behind me and $T$ had to hoist trays over our heads as they squeezed past us again and again .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 761,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ were attentive , polite and helpful - an impressive feat in such close quarters .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 803,
+    "format": "apc"
+  },
+  {
+    "review_text": "Super friendly and knowledgable $T$ , fabulous bistro fare and a wonderful jazz brunch with great live jazz -LRB- the chilaquiles were awesome !",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 885,
+    "format": "apc"
+  },
+  {
+    "review_text": "Make reservations but expect to be delayed 15-20 minutes as the $T$ was having difficulty seating guests who arrived with a reservation because they probably had a lot of walk ins being so close to Time Square .",
+    "aspect": "hosting staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1106,
+    "format": "apc"
+  },
+  {
+    "review_text": "The crust is thin , the ingredients are fresh and the $T$ is friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1120,
+    "format": "apc"
+  },
+  {
+    "review_text": "Friendly and informative $T$ , very attentive and prompt raw bar service .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1193,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ ignored my friends and I the entire time we were there .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1202,
+    "format": "apc"
+  },
+  {
+    "review_text": "not the food , not the ambiance , not the service , I agree with the previous reviews you wait and wait , the $T$ are very rude and when you get in they are looking to get you right out .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1237,
+    "format": "apc"
+  },
+  {
+    "review_text": "Nha Trang , while being notorious for utter lack of comfort and decor , horribly slow $T$ and horribly quick meals , is one of the best vietnamese restaurants i 've ever been to . the pho is delicious and comes with very fresh vegtables .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1245,
+    "format": "apc"
+  },
+  {
+    "review_text": "With so many good restaurants on the UWS , I do n't need overpriced food , absurdly arrogant $T$ who do n't recognize they work at a glorified diner , clumsy service , and management that does n't care .",
+    "aspect": "wait-staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1271,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only positive was the $T$ , which was prompt , knowledgable , and likeable .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1329,
+    "format": "apc"
+  },
+  {
+    "review_text": "We were well attended to by the enthusiastic $T$ especially the manager Tony Gaskin who made excellent suggestions for our menu selections .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1414,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was the friendliest that have seen in New York .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1441,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very attentive and we can almost always get a table .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1503,
+    "format": "apc"
+  },
+  {
+    "review_text": "The signs , the specials menus , food , and even all the $T$ are ALL TOTALLY Japanese .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1584,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is also attentive and friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1597,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very freindly , they make it feel like you 're eating in a freindly little european town .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1627,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ are all very busy , it 's not outstanding service , but I 've never been dealt with rudely .",
+    "aspect": "waitstaff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1628,
+    "format": "apc"
+  },
+  {
+    "review_text": "From the moment you enter till the moment you walk out the friendly and helpful $T$ was was just Fantastic .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1707,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is incredibly helpful and attentive .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1726,
+    "format": "apc"
+  },
+  {
+    "review_text": "Patroon features a nice cigar bar and has great $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1739,
+    "format": "apc"
+  },
+  {
+    "review_text": "The owner and $T$ are all Japanese as well and that adds to the entire ambiance .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1756,
+    "format": "apc"
+  },
+  {
+    "review_text": "From the spectacular caviar to the hospitable $T$ , I felt like royalty and enjoyed every second of it .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1769,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was accomodating , the food was absolutely delicious and the place is lovely .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1784,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was knowledgeable and full of personality .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1809,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1810,
+    "format": "apc"
+  },
+  {
+    "review_text": "And the $T$ is also young , energeic and hot !!!!",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1850,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is accomodating , the ambiance is exciting and yet relaxed , and the food is out of this world !",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1907,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ are attentive , and have smiles on their faces .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1921,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is blantently unappreciative of your business but its the best pie on the UWS !",
+    "aspect": "Wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1934,
+    "format": "apc"
+  },
+  {
+    "review_text": "The service was poor , restaurant poorly lit , $T$ not very attentive and I would have rather eaten at a Mcdonald 's than this joint .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2039,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ are very friendly .",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2047,
+    "format": "apc"
+  },
+  {
+    "review_text": "While the $T$ at this little bistro is very friendly , I have never experienced more incompetency .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2080,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is courteous and friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2088,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is pleasant , fun , and for the most part gorgeous -LRB- in the wonderful aesthetic beautification way , not in that she's-way-cuter-than-me-that-b@#$* way -RRB- .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2122,
+    "format": "apc"
+  },
+  {
+    "review_text": "We 've never had any problems with the $T$ but maybe we 've been lucky ?",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2153,
+    "format": "apc"
+  },
+  {
+    "review_text": "Cute place , nice $T$ but would never go there again .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2204,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has always been attentive and kind , and I 've always been amazed at how they 've handled all the various different group sizes that come in .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2227,
+    "format": "apc"
+  },
+  {
+    "review_text": "If you do n't mind pre-sliced low quality fish , unfriendly $T$ and a sushi chef that looks like he is miserable then this is your place .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2368,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is n't the friendliest or most competent , and I am stickler for service , but everything else about this place makes up for it .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2399,
+    "format": "apc"
+  },
+  {
+    "review_text": "I have been coming here for years and have nothing but good things to say about the service and the great $T$ at La Lanterna .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2409,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has always been friendly without seeming grating , and the chef has greeted us on a couple of occasions .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2439,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only concern i have is with the slighly all-business $T$ who order and throw the food down , rushing you out .",
+    "aspect": "waitstaff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2515,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only friendly $T$ was the guy at the bar .",
+    "aspect": "staff member",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2680,
+    "format": "apc"
+  },
+  {
+    "review_text": "I can not imagine a friendlier $T$ working in a restaurant .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2686,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ there is very attentive and down to earth .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2745,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very kind and well trained , they 're fast , they are always prompt to jump behind the bar and fix drinks , they know details of every item in the menu and make excelent recomendations .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2772,
+    "format": "apc"
+  },
+  {
+    "review_text": "The whole set up is truly unprofessional and I wish Cafe Noir would get some good $T$ , because despite the current one this is a great place .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2790,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ offers impeccable service .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2795,
+    "format": "apc"
+  },
+  {
+    "review_text": "Kind , attentive $T$ .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2814,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is excellent , specjal : that girl behind the bar , european chic .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2831,
+    "format": "apc"
+  },
+  {
+    "review_text": "We , there were four of us , arrived at noon - the place was empty - and the $T$ acted like we were imposing on them and they were very rude .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2850,
+    "format": "apc"
+  },
+  {
+    "review_text": "This place has the the correct ambience and an excellent $T$ to make you feel like a guest and a friend at the same time .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2863,
+    "format": "apc"
+  },
+  {
+    "review_text": "from an English speaking $T$ .",
+    "aspect": "staff",
+    "sentiment": "Neutral",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2872,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is great , very attentive .",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2924,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was very attentive , the ambience lovely , and the food superb .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3003,
+    "format": "apc"
+  },
+  {
+    "review_text": "The well mannered , pleasant $T$ that Tony has in his employ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3029,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ are not that friendly , but the taste covers all .",
+    "aspect": "Staffs",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3096,
+    "format": "apc"
+  },
+  {
+    "review_text": "Winnie and her $T$ are the best crew you can find serving you .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3156,
+    "format": "apc"
+  },
+  {
+    "review_text": "During the course of the past 3 months , the chef and $T$ changed and it was not for the better .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3173,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ makes you feel at home , the food is great and the atmosphere is WONDERFUL !",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3208,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was too busy ordering sushi for dinner and then laying it out to eat on the bar to even bring me my check .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3213,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 've rarely had a problem with slow $T$ in the 10 years I 've been going .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3315,
+    "format": "apc"
+  },
+  {
+    "review_text": "The drinks are a saving grace , but $T$ , please , get over yourselves .",
+    "aspect": "service staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3359,
+    "format": "apc"
+  },
+  {
+    "review_text": "The all-Italian $T$ is warm and engaging from the start .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3361,
+    "format": "apc"
+  },
+  {
+    "review_text": "Complimentary stuff kept coming , and when the waiter saw me opening a gift , I received my dessert on a plate that had Happy Birthday written on it , with a candlevery nice touch , and attentive $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3402,
+    "format": "apc"
+  },
+  {
+    "review_text": "We were seated and ignored by $T$ .",
+    "aspect": "waitstaff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3464,
+    "format": "apc"
+  },
+  {
+    "review_text": "The food and $T$ always surprise me with the new heights they are taken to .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3516,
+    "format": "apc"
+  },
+  {
+    "review_text": "But the $T$ was so horrible to us .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 0,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is friendly , and the food has gotten better and better !",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 117,
+    "format": "apc"
+  },
+  {
+    "review_text": "The service was impeccable and unobtrusive -- the $T$ knows what they are there to do -- to know their menu , present your meal , and attend to your needs .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 332,
+    "format": "apc"
+  },
+  {
+    "review_text": "Since it literally is a complete hole in the wall , it 's a bit intimidating at first , but you get over that very quickly as soon as the friendly $T$ welcomes you - do n't hesitate to ask for help with what to get .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 385,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is very accomodating .",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 404,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very friendly , if not overly efficient .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 483,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ were very nice and suggested swordfish for my husband he enjoyed his meal .",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 567,
+    "format": "apc"
+  },
+  {
+    "review_text": "Solid wine list , knowledgeable $T$ , friendly owners and an adventurous , ever-changing menu keep us coming back .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 612,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is no nonsense .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 666,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is a great Thai restaurant with a very friendly $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 668,
+    "format": "apc"
+  },
+  {
+    "review_text": "Friendly $T$ that actually lets you enjoy your meal and the company you 're with .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 703,
+    "format": "apc"
+  },
+  {
+    "review_text": "Saturday , Nov. 6th I had a group from work come in with about 35 people and the $T$ was amazing to accomodate us .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 742,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was back-to-back with the diner at the table behind me and $T$ had to hoist trays over our heads as they squeezed past us again and again .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 761,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ were attentive , polite and helpful - an impressive feat in such close quarters .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 803,
+    "format": "apc"
+  },
+  {
+    "review_text": "Super friendly and knowledgable $T$ , fabulous bistro fare and a wonderful jazz brunch with great live jazz -LRB- the chilaquiles were awesome !",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 885,
+    "format": "apc"
+  },
+  {
+    "review_text": "Make reservations but expect to be delayed 15-20 minutes as the $T$ was having difficulty seating guests who arrived with a reservation because they probably had a lot of walk ins being so close to Time Square .",
+    "aspect": "hosting staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1106,
+    "format": "apc"
+  },
+  {
+    "review_text": "The crust is thin , the ingredients are fresh and the $T$ is friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1120,
+    "format": "apc"
+  },
+  {
+    "review_text": "Friendly and informative $T$ , very attentive and prompt raw bar service .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1193,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ ignored my friends and I the entire time we were there .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1202,
+    "format": "apc"
+  },
+  {
+    "review_text": "not the food , not the ambiance , not the service , I agree with the previous reviews you wait and wait , the $T$ are very rude and when you get in they are looking to get you right out .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1237,
+    "format": "apc"
+  },
+  {
+    "review_text": "Nha Trang , while being notorious for utter lack of comfort and decor , horribly slow $T$ and horribly quick meals , is one of the best vietnamese restaurants i 've ever been to . the pho is delicious and comes with very fresh vegtables .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1245,
+    "format": "apc"
+  },
+  {
+    "review_text": "With so many good restaurants on the UWS , I do n't need overpriced food , absurdly arrogant $T$ who do n't recognize they work at a glorified diner , clumsy service , and management that does n't care .",
+    "aspect": "wait-staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1271,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only positive was the $T$ , which was prompt , knowledgable , and likeable .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1329,
+    "format": "apc"
+  },
+  {
+    "review_text": "We were well attended to by the enthusiastic $T$ especially the manager Tony Gaskin who made excellent suggestions for our menu selections .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1414,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was the friendliest that have seen in New York .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1441,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very attentive and we can almost always get a table .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1503,
+    "format": "apc"
+  },
+  {
+    "review_text": "The signs , the specials menus , food , and even all the $T$ are ALL TOTALLY Japanese .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1584,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is also attentive and friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1597,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very freindly , they make it feel like you 're eating in a freindly little european town .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1627,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ are all very busy , it 's not outstanding service , but I 've never been dealt with rudely .",
+    "aspect": "waitstaff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1628,
+    "format": "apc"
+  },
+  {
+    "review_text": "From the moment you enter till the moment you walk out the friendly and helpful $T$ was was just Fantastic .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1707,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is incredibly helpful and attentive .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1726,
+    "format": "apc"
+  },
+  {
+    "review_text": "Patroon features a nice cigar bar and has great $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1739,
+    "format": "apc"
+  },
+  {
+    "review_text": "The owner and $T$ are all Japanese as well and that adds to the entire ambiance .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1756,
+    "format": "apc"
+  },
+  {
+    "review_text": "From the spectacular caviar to the hospitable $T$ , I felt like royalty and enjoyed every second of it .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1769,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was accomodating , the food was absolutely delicious and the place is lovely .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1784,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was knowledgeable and full of personality .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1809,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1810,
+    "format": "apc"
+  },
+  {
+    "review_text": "And the $T$ is also young , energeic and hot !!!!",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1850,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is accomodating , the ambiance is exciting and yet relaxed , and the food is out of this world !",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1907,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ are attentive , and have smiles on their faces .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1921,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is blantently unappreciative of your business but its the best pie on the UWS !",
+    "aspect": "Wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1934,
+    "format": "apc"
+  },
+  {
+    "review_text": "The service was poor , restaurant poorly lit , $T$ not very attentive and I would have rather eaten at a Mcdonald 's than this joint .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2039,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ are very friendly .",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2047,
+    "format": "apc"
+  },
+  {
+    "review_text": "While the $T$ at this little bistro is very friendly , I have never experienced more incompetency .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2080,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is courteous and friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2088,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is pleasant , fun , and for the most part gorgeous -LRB- in the wonderful aesthetic beautification way , not in that she's-way-cuter-than-me-that-b@#$* way -RRB- .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2122,
+    "format": "apc"
+  },
+  {
+    "review_text": "We 've never had any problems with the $T$ but maybe we 've been lucky ?",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2153,
+    "format": "apc"
+  },
+  {
+    "review_text": "Cute place , nice $T$ but would never go there again .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2204,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has always been attentive and kind , and I 've always been amazed at how they 've handled all the various different group sizes that come in .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2227,
+    "format": "apc"
+  },
+  {
+    "review_text": "If you do n't mind pre-sliced low quality fish , unfriendly $T$ and a sushi chef that looks like he is miserable then this is your place .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2368,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is n't the friendliest or most competent , and I am stickler for service , but everything else about this place makes up for it .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2399,
+    "format": "apc"
+  },
+  {
+    "review_text": "I have been coming here for years and have nothing but good things to say about the service and the great $T$ at La Lanterna .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2409,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has always been friendly without seeming grating , and the chef has greeted us on a couple of occasions .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2439,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only concern i have is with the slighly all-business $T$ who order and throw the food down , rushing you out .",
+    "aspect": "waitstaff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2515,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only friendly $T$ was the guy at the bar .",
+    "aspect": "staff member",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2680,
+    "format": "apc"
+  },
+  {
+    "review_text": "I can not imagine a friendlier $T$ working in a restaurant .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2686,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ there is very attentive and down to earth .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2745,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very kind and well trained , they 're fast , they are always prompt to jump behind the bar and fix drinks , they know details of every item in the menu and make excelent recomendations .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2772,
+    "format": "apc"
+  },
+  {
+    "review_text": "The whole set up is truly unprofessional and I wish Cafe Noir would get some good $T$ , because despite the current one this is a great place .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2790,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ offers impeccable service .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2795,
+    "format": "apc"
+  },
+  {
+    "review_text": "Kind , attentive $T$ .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2814,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is excellent , specjal : that girl behind the bar , european chic .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2831,
+    "format": "apc"
+  },
+  {
+    "review_text": "We , there were four of us , arrived at noon - the place was empty - and the $T$ acted like we were imposing on them and they were very rude .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2850,
+    "format": "apc"
+  },
+  {
+    "review_text": "This place has the the correct ambience and an excellent $T$ to make you feel like a guest and a friend at the same time .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2863,
+    "format": "apc"
+  },
+  {
+    "review_text": "from an English speaking $T$ .",
+    "aspect": "staff",
+    "sentiment": "Neutral",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2872,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is great , very attentive .",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2924,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was very attentive , the ambience lovely , and the food superb .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3003,
+    "format": "apc"
+  },
+  {
+    "review_text": "The well mannered , pleasant $T$ that Tony has in his employ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3029,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ are not that friendly , but the taste covers all .",
+    "aspect": "Staffs",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3096,
+    "format": "apc"
+  },
+  {
+    "review_text": "Winnie and her $T$ are the best crew you can find serving you .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3156,
+    "format": "apc"
+  },
+  {
+    "review_text": "During the course of the past 3 months , the chef and $T$ changed and it was not for the better .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3173,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ makes you feel at home , the food is great and the atmosphere is WONDERFUL !",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3208,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was too busy ordering sushi for dinner and then laying it out to eat on the bar to even bring me my check .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3213,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 've rarely had a problem with slow $T$ in the 10 years I 've been going .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3315,
+    "format": "apc"
+  },
+  {
+    "review_text": "The drinks are a saving grace , but $T$ , please , get over yourselves .",
+    "aspect": "service staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3359,
+    "format": "apc"
+  },
+  {
+    "review_text": "The all-Italian $T$ is warm and engaging from the start .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3361,
+    "format": "apc"
+  },
+  {
+    "review_text": "Complimentary stuff kept coming , and when the waiter saw me opening a gift , I received my dessert on a plate that had Happy Birthday written on it , with a candlevery nice touch , and attentive $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3402,
+    "format": "apc"
+  },
+  {
+    "review_text": "We were seated and ignored by $T$ .",
+    "aspect": "waitstaff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3464,
+    "format": "apc"
+  },
+  {
+    "review_text": "The food and $T$ always surprise me with the new heights they are taken to .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3516,
+    "format": "apc"
+  },
+  {
+    "review_text": "From the beginning , we were met by friendly $T$ , and the convienent parking at Chelsea Piers made it easy for us to get to the boat .",
+    "aspect": "staff memebers",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 30,
+    "format": "apc"
+  },
+  {
+    "review_text": "I highly recommend it for not just its superb cuisine , but also for its friendly owners and $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 41,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ should be a bit more friendly .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 55,
+    "format": "apc"
+  },
+  {
+    "review_text": "Also , the $T$ is very attentive and really personable .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 59,
+    "format": "apc"
+  },
+  {
+    "review_text": "Had a great experience at Trio ... $T$ was pleasant ; food was tasty and large in portion size - I would highly recommend the portobello/gorgonzola/sausage appetizer and the lobster risotto .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 61,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great food , great $T$ , great atmosphere , and best of all GREAT beer !",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 81,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 'm glad I did as the food was very good and the $T$ was friendly , courteous and efficient .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 108,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very sharp and they look good too .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 132,
+    "format": "apc"
+  },
+  {
+    "review_text": "Our waiter was friendly and it is a shame that he didnt have a supportive $T$ to work with .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 164,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was loud and inconsiderate .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 193,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 215,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is unbelievably friendly , and I dream about their Saag gosht ... so good .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 241,
+    "format": "apc"
+  },
+  {
+    "review_text": "The owner and $T$ go to great lengths to make you feel comfortable .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 249,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was extremely friendly and pleasant .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 281,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is solicitous and friendly and always seems glad to see us , and the food is wonderful , if not stunningly creative .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 394,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is accomodating make sure you are satified .",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 432,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ greeted me warmly at the door and I was seated promptly and the food was excellent .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 441,
+    "format": "apc"
+  },
+  {
+    "review_text": "the $T$ is very friendly , if your not rude or picky ... . . our meal at Leon last weekend was great - .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 446,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is arrogant , the prices are way high for Brooklyn .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 464,
+    "format": "apc"
+  },
+  {
+    "review_text": "Although I moved uptown I try to stop in as often as possible for the GREAT cheap food and to pay the friendly $T$ a visit .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 520,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ are extremely friendly and even replaced my drink once when I dropped it outside .",
+    "aspect": "staff members",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 563,
+    "format": "apc"
+  },
+  {
+    "review_text": "Finally let into the store 5 at a time , to buy expensive slices from a harried $T$ .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 574,
+    "format": "apc"
+  },
+  {
+    "review_text": "We ended up having to just leave because we were essentially being ignored by the $T$ -- even though the rest of the restaurant was largely empty .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 576,
+    "format": "apc"
+  },
+  {
+    "review_text": "Service was awful - mostly because $T$ were overwhelmed on a Saturday night .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 629,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is 100 % Italian and the food is as authentic as it gets .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 636,
+    "format": "apc"
+  },
+  {
+    "review_text": "Not only is the food authentic , but the $T$ here are practically off-the-boat , they are young and hip and know what they are doing when it comes to food and wine .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 758,
+    "format": "apc"
+  },
+  {
+    "review_text": "I had to flag down a third $T$ for a fork ... so now it 's goodbye Little RUDE Pie Company .",
+    "aspect": "staff person",
+    "sentiment": "Neutral",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 841,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was very attentive and polite .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 848,
+    "format": "apc"
+  },
+  {
+    "review_text": "I love the simplicity and respect which was given to the food , as well the $T$ was freindly and knowledgable .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 854,
+    "format": "apc"
+  },
+  {
+    "review_text": "The service , however , is a peg or two below the quality of food -LRB- horrible bartenders -RRB- , and the clientele , for the most part , are rowdy , loud-mouthed commuters -LRB- this could explain the bad attitudes from the $T$ -RRB- getting loaded for an AC/DC concert or a Knicks game .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 969,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was especially impressed during the bday party when the $T$ went above and beyond in helping me decorate and bring out a bday cake as well as offering prompt and friendly service to a 15 person party .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Valid_Gold.xml.seg",
+    "sample_id": 1065,
+    "format": "apc"
+  },
+  {
+    "review_text": "But the $T$ was so horrible to us .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 0,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is friendly , and the food has gotten better and better !",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 117,
+    "format": "apc"
+  },
+  {
+    "review_text": "The service was impeccable and unobtrusive -- the $T$ knows what they are there to do -- to know their menu , present your meal , and attend to your needs .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 332,
+    "format": "apc"
+  },
+  {
+    "review_text": "Since it literally is a complete hole in the wall , it 's a bit intimidating at first , but you get over that very quickly as soon as the friendly $T$ welcomes you - do n't hesitate to ask for help with what to get .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 385,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is very accomodating .",
+    "aspect": "Staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 404,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very friendly , if not overly efficient .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 483,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ were very nice and suggested swordfish for my husband he enjoyed his meal .",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 567,
+    "format": "apc"
+  },
+  {
+    "review_text": "Solid wine list , knowledgeable $T$ , friendly owners and an adventurous , ever-changing menu keep us coming back .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 612,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is no nonsense .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 666,
+    "format": "apc"
+  },
+  {
+    "review_text": "This is a great Thai restaurant with a very friendly $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 668,
+    "format": "apc"
+  },
+  {
+    "review_text": "Friendly $T$ that actually lets you enjoy your meal and the company you 're with .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 703,
+    "format": "apc"
+  },
+  {
+    "review_text": "Saturday , Nov. 6th I had a group from work come in with about 35 people and the $T$ was amazing to accomodate us .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 742,
+    "format": "apc"
+  },
+  {
+    "review_text": "I was back-to-back with the diner at the table behind me and $T$ had to hoist trays over our heads as they squeezed past us again and again .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 761,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ were attentive , polite and helpful - an impressive feat in such close quarters .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 803,
+    "format": "apc"
+  },
+  {
+    "review_text": "Super friendly and knowledgable $T$ , fabulous bistro fare and a wonderful jazz brunch with great live jazz -LRB- the chilaquiles were awesome !",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 885,
+    "format": "apc"
+  },
+  {
+    "review_text": "Make reservations but expect to be delayed 15-20 minutes as the $T$ was having difficulty seating guests who arrived with a reservation because they probably had a lot of walk ins being so close to Time Square .",
+    "aspect": "hosting staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1106,
+    "format": "apc"
+  },
+  {
+    "review_text": "The crust is thin , the ingredients are fresh and the $T$ is friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1120,
+    "format": "apc"
+  },
+  {
+    "review_text": "Friendly and informative $T$ , very attentive and prompt raw bar service .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1193,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ ignored my friends and I the entire time we were there .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1202,
+    "format": "apc"
+  },
+  {
+    "review_text": "not the food , not the ambiance , not the service , I agree with the previous reviews you wait and wait , the $T$ are very rude and when you get in they are looking to get you right out .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1237,
+    "format": "apc"
+  },
+  {
+    "review_text": "Nha Trang , while being notorious for utter lack of comfort and decor , horribly slow $T$ and horribly quick meals , is one of the best vietnamese restaurants i 've ever been to . the pho is delicious and comes with very fresh vegtables .",
+    "aspect": "wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1245,
+    "format": "apc"
+  },
+  {
+    "review_text": "With so many good restaurants on the UWS , I do n't need overpriced food , absurdly arrogant $T$ who do n't recognize they work at a glorified diner , clumsy service , and management that does n't care .",
+    "aspect": "wait-staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1271,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only positive was the $T$ , which was prompt , knowledgable , and likeable .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1329,
+    "format": "apc"
+  },
+  {
+    "review_text": "We were well attended to by the enthusiastic $T$ especially the manager Tony Gaskin who made excellent suggestions for our menu selections .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1414,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was the friendliest that have seen in New York .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1441,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very attentive and we can almost always get a table .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1503,
+    "format": "apc"
+  },
+  {
+    "review_text": "The signs , the specials menus , food , and even all the $T$ are ALL TOTALLY Japanese .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1584,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is also attentive and friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1597,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very freindly , they make it feel like you 're eating in a freindly little european town .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1627,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ are all very busy , it 's not outstanding service , but I 've never been dealt with rudely .",
+    "aspect": "waitstaff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1628,
+    "format": "apc"
+  },
+  {
+    "review_text": "From the moment you enter till the moment you walk out the friendly and helpful $T$ was was just Fantastic .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1707,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is incredibly helpful and attentive .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1726,
+    "format": "apc"
+  },
+  {
+    "review_text": "Patroon features a nice cigar bar and has great $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1739,
+    "format": "apc"
+  },
+  {
+    "review_text": "The owner and $T$ are all Japanese as well and that adds to the entire ambiance .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1756,
+    "format": "apc"
+  },
+  {
+    "review_text": "From the spectacular caviar to the hospitable $T$ , I felt like royalty and enjoyed every second of it .",
+    "aspect": "waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1769,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was accomodating , the food was absolutely delicious and the place is lovely .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1784,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was knowledgeable and full of personality .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1809,
+    "format": "apc"
+  },
+  {
+    "review_text": "Great $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1810,
+    "format": "apc"
+  },
+  {
+    "review_text": "And the $T$ is also young , energeic and hot !!!!",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1850,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is accomodating , the ambiance is exciting and yet relaxed , and the food is out of this world !",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1907,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ are attentive , and have smiles on their faces .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1921,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is blantently unappreciative of your business but its the best pie on the UWS !",
+    "aspect": "Wait staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 1934,
+    "format": "apc"
+  },
+  {
+    "review_text": "The service was poor , restaurant poorly lit , $T$ not very attentive and I would have rather eaten at a Mcdonald 's than this joint .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2039,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ are very friendly .",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2047,
+    "format": "apc"
+  },
+  {
+    "review_text": "While the $T$ at this little bistro is very friendly , I have never experienced more incompetency .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2080,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is courteous and friendly .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2088,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is pleasant , fun , and for the most part gorgeous -LRB- in the wonderful aesthetic beautification way , not in that she's-way-cuter-than-me-that-b@#$* way -RRB- .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2122,
+    "format": "apc"
+  },
+  {
+    "review_text": "We 've never had any problems with the $T$ but maybe we 've been lucky ?",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2153,
+    "format": "apc"
+  },
+  {
+    "review_text": "Cute place , nice $T$ but would never go there again .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2204,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has always been attentive and kind , and I 've always been amazed at how they 've handled all the various different group sizes that come in .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2227,
+    "format": "apc"
+  },
+  {
+    "review_text": "If you do n't mind pre-sliced low quality fish , unfriendly $T$ and a sushi chef that looks like he is miserable then this is your place .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2368,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is n't the friendliest or most competent , and I am stickler for service , but everything else about this place makes up for it .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2399,
+    "format": "apc"
+  },
+  {
+    "review_text": "I have been coming here for years and have nothing but good things to say about the service and the great $T$ at La Lanterna .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2409,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ has always been friendly without seeming grating , and the chef has greeted us on a couple of occasions .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2439,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only concern i have is with the slighly all-business $T$ who order and throw the food down , rushing you out .",
+    "aspect": "waitstaff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2515,
+    "format": "apc"
+  },
+  {
+    "review_text": "The only friendly $T$ was the guy at the bar .",
+    "aspect": "staff member",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2680,
+    "format": "apc"
+  },
+  {
+    "review_text": "I can not imagine a friendlier $T$ working in a restaurant .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2686,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ there is very attentive and down to earth .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2745,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is very kind and well trained , they 're fast , they are always prompt to jump behind the bar and fix drinks , they know details of every item in the menu and make excelent recomendations .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2772,
+    "format": "apc"
+  },
+  {
+    "review_text": "The whole set up is truly unprofessional and I wish Cafe Noir would get some good $T$ , because despite the current one this is a great place .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2790,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ offers impeccable service .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2795,
+    "format": "apc"
+  },
+  {
+    "review_text": "Kind , attentive $T$ .",
+    "aspect": "wait staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2814,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ is excellent , specjal : that girl behind the bar , european chic .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2831,
+    "format": "apc"
+  },
+  {
+    "review_text": "We , there were four of us , arrived at noon - the place was empty - and the $T$ acted like we were imposing on them and they were very rude .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2850,
+    "format": "apc"
+  },
+  {
+    "review_text": "This place has the the correct ambience and an excellent $T$ to make you feel like a guest and a friend at the same time .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2863,
+    "format": "apc"
+  },
+  {
+    "review_text": "from an English speaking $T$ .",
+    "aspect": "staff",
+    "sentiment": "Neutral",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2872,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ is great , very attentive .",
+    "aspect": "Waitstaff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 2924,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was very attentive , the ambience lovely , and the food superb .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3003,
+    "format": "apc"
+  },
+  {
+    "review_text": "The well mannered , pleasant $T$ that Tony has in his employ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3029,
+    "format": "apc"
+  },
+  {
+    "review_text": "$T$ are not that friendly , but the taste covers all .",
+    "aspect": "Staffs",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3096,
+    "format": "apc"
+  },
+  {
+    "review_text": "Winnie and her $T$ are the best crew you can find serving you .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3156,
+    "format": "apc"
+  },
+  {
+    "review_text": "During the course of the past 3 months , the chef and $T$ changed and it was not for the better .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3173,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ makes you feel at home , the food is great and the atmosphere is WONDERFUL !",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3208,
+    "format": "apc"
+  },
+  {
+    "review_text": "The $T$ was too busy ordering sushi for dinner and then laying it out to eat on the bar to even bring me my check .",
+    "aspect": "staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3213,
+    "format": "apc"
+  },
+  {
+    "review_text": "I 've rarely had a problem with slow $T$ in the 10 years I 've been going .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3315,
+    "format": "apc"
+  },
+  {
+    "review_text": "The drinks are a saving grace , but $T$ , please , get over yourselves .",
+    "aspect": "service staff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3359,
+    "format": "apc"
+  },
+  {
+    "review_text": "The all-Italian $T$ is warm and engaging from the start .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3361,
+    "format": "apc"
+  },
+  {
+    "review_text": "Complimentary stuff kept coming , and when the waiter saw me opening a gift , I received my dessert on a plate that had Happy Birthday written on it , with a candlevery nice touch , and attentive $T$ .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3402,
+    "format": "apc"
+  },
+  {
+    "review_text": "We were seated and ignored by $T$ .",
+    "aspect": "waitstaff",
+    "sentiment": "Negative",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3464,
+    "format": "apc"
+  },
+  {
+    "review_text": "The food and $T$ always surprise me with the new heights they are taken to .",
+    "aspect": "staff",
+    "sentiment": "Positive",
+    "source_file": "Restaurants_Train.xml.seg",
+    "sample_id": 3516,
+    "format": "apc"
+  }
+]
