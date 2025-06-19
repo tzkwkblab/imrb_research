@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "config_version": "1.0",
+    "created_at": "2025-06-18",
+    "description": "統一実験条件設定ファイル - JSON版",
+    "author": "清野駿"
+  },
+  
+  "models": {
+    "gpt-4": {
+      "name": "gpt-4",
+      "max_tokens": 100,
+      "top_p": 1.0,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0,
+      "description": "高精度対話モデル"
+    },
+    "gpt-4-turbo": {
+      "name": "gpt-4-turbo", 
+      "max_tokens": 100,
+      "top_p": 1.0,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0,
+      "description": "高速版GPT-4"
+    },
+    "gpt-3.5-turbo": {
+      "name": "gpt-3.5-turbo",
+      "max_tokens": 100,
+      "top_p": 1.0,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0,
+      "description": "軽量対話モデル"
+    }
+  },
+  
+  "temperature_settings": {
+    "deterministic": {
+      "value": 0.0,
+      "description": "完全に決定的な出力"
+    },
+    "low_creativity": {
+      "value": 0.3,
+      "description": "低創造性・高一貫性"
+    },
+    "balanced": {
+      "value": 0.7,
+      "description": "バランス型"
+    },
+    "high_creativity": {
+      "value": 1.0,
+      "description": "高創造性・多様性重視"
+    }
+  },
+  
+  "fewshot_configurations": {
+    "minimal": {
+      "shot_counts": [0, 1],
+      "example_sample_size": 2,
+      "target_sample_size": 5,
+      "description": "最小限のFew-shot設定"
+    },
+    "standard": {
+      "shot_counts": [0, 1, 3, 5],
+      "example_sample_size": 3,
+      "target_sample_size": 10,
+      "description": "標準的なFew-shot設定"
+    },
+    "comprehensive": {
+      "shot_counts": [0, 1, 2, 3, 5, 8],
+      "example_sample_size": 5,
+      "target_sample_size": 15,
+      "description": "包括的なFew-shot設定"
+    }
+  },
+  
+  "evaluation_metrics": {
+    "primary": {
+      "use_bert_score": true,
+      "use_bleu_score": true,
+      "use_accuracy_score": false,
+      "use_hallucination_score": true,
+      "use_domain_relevance_score": true,
+      "similarity_model": "all-MiniLM-L6-v2",
+      "description": "主要評価指標（BERTスコア・BLEUスコア中心）"
+    },
+    "comprehensive": {
+      "use_bert_score": true,
+      "use_bleu_score": true,
+      "use_accuracy_score": true,
+      "use_hallucination_score": true,
+      "use_domain_relevance_score": true,
+      "similarity_model": "all-MiniLM-L6-v2",
+      "description": "全評価指標を使用"
+    },
+    "bert_only": {
+      "use_bert_score": true,
+      "use_bleu_score": false,
+      "use_accuracy_score": false,
+      "use_hallucination_score": false,
+      "use_domain_relevance_score": false,
+      "similarity_model": "all-MiniLM-L6-v2",
+      "description": "BERTスコアのみ"
+    }
+  },
+  
+  "datasets": {
+    "amazon_reviews": {
+      "name": "Amazon Product Reviews",
+      "path": "src/analysis/experiments/2025/05/15/processed_reviews.csv",
+      "domains": ["general"],
+      "features": ["feature_1", "feature_2", "feature_3", "feature_4", "feature_5", 
+                  "feature_6", "feature_7", "feature_8", "feature_9", "feature_10",
+                  "feature_11", "feature_12", "feature_13", "feature_14", "feature_15",
+                  "feature_16", "feature_17", "feature_18", "feature_19", "feature_20"],
+      "sample_sizes": [5, 10, 15, 20],
+      "description": "Amazon商品レビューデータセット（手動特徴定義）"
+    },
+    "semeval_absa": {
+      "name": "SemEval ABSA Dataset",
+      "path": "data/external/semeval-absa/current/",
+      "domains": ["restaurant", "laptop"],
+      "features": {
+        "restaurant": ["food", "service", "staff", "atmosphere", "menu", "price"],
+        "laptop": ["battery", "screen", "keyboard", "performance", "design", "price"]
+      },
+      "sample_sizes": [50, 100, 200, 300],
+      "description": "SemEval ABSAデータセット（ドメイン特化）"
+    }
+  },
+  
+  "prompt_templates": {
+    "basic_contrast": {
+      "template": "あなたは{domain_context}レビュー分析の専門家です。\n\n【分析タスク】\n以下の2つのレビューグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【データ情報】\n- ドメイン: {domain_context}\n- 対象特徴: {feature}\n- グループAサイズ: {group_a_size}レビュー\n- グループBサイズ: {group_b_size}レビュー\n\n{few_shot_examples}\n\n【グループA のレビュー】（{feature}特徴を含む）\n{group_a_reviews}\n\n【グループB のレビュー】（{feature}特徴を含まない）\n{group_b_reviews}\n\n【回答要求】\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：",
+      "variables": ["domain_context", "feature", "group_a_size", "group_b_size", "few_shot_examples", "group_a_reviews", "group_b_reviews"],
+      "description": "基本対比因子抽出プロンプト"
+    },
+    "feature_classification": {
+      "template": "あなたは商品レビューを分析する専門家です。\n以下の商品レビューに対して、各特徴が当てはまるかどうかを判定してください。\n\n【レビュー】\n{review_text}\n\n【レビュー評価】\n{rating}\n\n【特徴リスト】\n{features_list}\n\n回答形式：\n{{\n    \"features\": {{\n        \"1\": 0 or 1,\n        \"2\": 0 or 1,\n        ...\n    }}\n}}\n\n※ 0=特徴なし、1=特徴あり\n各特徴について、当てはまる場合は1、当てはまらない場合は0で回答してください。",
+      "variables": ["review_text", "rating", "features_list"],
+      "description": "特徴判定用プロンプト"
+    },
+    "hallucination_detection": {
+      "template": "以下のレビューグループの分析結果について、その妥当性を評価してください。\n\n【レビューグループA】\n{group_a_reviews}\n\n【レビューグループB】\n{group_b_reviews}\n\n【分析結果】\n\"{gpt_statement}\"\n\n【評価基準】\nこの分析結果が実際のレビュー内容に基づいているかを0-1のスコアで評価してください。\n- 1.0: 完全に妥当で根拠がある\n- 0.5: 部分的に妥当だが不完全\n- 0.0: 全く根拠がない/虚偽の分析\n\nスコア（0.0-1.0）：",
+      "variables": ["group_a_reviews", "group_b_reviews", "gpt_statement"],
+      "description": "ハルシネーション検証プロンプト"
+    }
+  },
+  
+  "experiment_presets": {
+    "high_precision": {
+      "model": "gpt-4",
+      "temperature": "deterministic",
+      "fewshot": "comprehensive",
+      "evaluation": "comprehensive",
+      "dataset": "semeval_absa",
+      "description": "高精度実験設定（低temperature + GPT-4）"
+    },
+    "balanced": {
+      "model": "gpt-4",
+      "temperature": "low_creativity",
+      "fewshot": "standard",
+      "evaluation": "primary",
+      "dataset": "semeval_absa",
+      "description": "バランス実験設定（中温度 + GPT-4）"
+    },
+    "high_creativity": {
+      "model": "gpt-3.5-turbo",
+      "temperature": "high_creativity",
+      "fewshot": "minimal",
+      "evaluation": "bert_only",
+      "dataset": "amazon_reviews",
+      "description": "高創造性実験設定（高temperature + GPT-3.5）"
+    },
+    "research_standard": {
+      "model": "gpt-4",
+      "temperature": "low_creativity",
+      "fewshot": "standard",
+      "evaluation": "primary",
+      "dataset": "semeval_absa",
+      "description": "研究標準設定（論文用）"
+    }
+  },
+  
+  "evaluation_design_philosophy": {
+    "primary_metrics": ["BERT_score", "BLEU_score"],
+    "secondary_metrics": ["hallucination_score", "domain_relevance_score"],
+    "reference_metrics": ["accuracy_score"],
+    "rationale": "LLM説明文と人間定義正解説明の一致度測定が主目的。1/0判定正解率は参考値として扱う。",
+    "bert_score_purpose": "意味類似度に基づく深層ベクトル比較（高次元意味空間）",
+    "bleu_score_purpose": "n-gramベースの表層一致率（翻訳品質などで広く用いられる）"
+  }
+} 

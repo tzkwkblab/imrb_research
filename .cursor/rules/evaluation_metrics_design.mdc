@@ -1,0 +1,39 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# 評価指標設計思想ルール
+
+## 主要評価指標
+
+本研究では、LLMによる自然言語出力の意味的妥当性を定量的に評価するため、以下の自動スコアを主要な評価指標とする：
+
+### BERTスコア
+- **目的**: 意味類似度に基づく深層ベクトル比較
+- **特徴**: 高次元意味空間での類似度測定
+- **適用範囲**: 説明文の意味的妥当性評価
+
+### BLEUスコア  
+- **目的**: n-gramベースの表層一致率
+- **特徴**: 翻訳品質などで広く用いられる標準指標
+- **適用範囲**: 説明文の表現的一致度評価
+
+## 評価の位置づけ
+
+これらのスコアは、LLMが出力した「説明文」が人間定義の正解説明とどの程度一致しているかを測る、**説明タスクにおける主要スコア**である。
+
+### 参考指標
+
+1/0の判定正解率（分類精度）は本研究の主目的とは異なるため、参考値にとどめる。
+
+## 実装時の注意点
+
+- 評価スクリプトでは常にBERTスコアとBLEUスコアを両方計算する
+- 結果分析ではこれら2つのスコアを主要指標として報告する
+- 分類精度は補助的な情報として記録するが、主要な評価軸ではない
+
+## 関連ファイル
+
+- 類似度評価実装: [src/analysis/experiments/2025/05/27/text_similarity_evaluator.py](mdc:src/analysis/experiments/2025/05/27/text_similarity_evaluator.py)
+- ベースライン類似度計算: [src/analysis/experiments/2025/06/02/baseline_similarity_calculator.py](mdc:src/analysis/experiments/2025/06/02/baseline_similarity_calculator.py)
