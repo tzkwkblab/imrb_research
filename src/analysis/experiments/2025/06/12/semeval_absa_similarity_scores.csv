@@ -1,0 +1,37 @@
+domain,feature,shot,gpt_response,bert_similarity,bleu_score
+restaurant,food,0,Group A reviews directly comment on food taste and quality,0.6736016273498535,0.021105340631872645
+restaurant,food,1,"Group A focuses on food quality and taste, Group B discusses cost and service.",0.6996245384216309,0.01428363257865929
+restaurant,food,3,"Group A reviews focus on food quality and taste, while Group B reviews focus more on the cost and value of the food.",0.6421492099761963,0.008282282660969604
+restaurant,service,0,Group A reviews directly praise or criticize the service.,0.720553994178772,0.0
+restaurant,service,1,"Group A reviews consistently praise or critique the service, while Group B reviews do not focus on service.",0.6482644081115723,0.0
+restaurant,service,3,"Group A reviews consistently praise or critique the service, while Group B reviews mention service incidentally or not at all.",0.6725585460662842,0.009629943614188135
+restaurant,staff,0,Direct praise or criticism of staff's behavior and service,0.8021701574325562,0.0
+restaurant,staff,1,Positive descriptions of staff behavior and attitude,0.7885141372680664,0.033031643180138064
+restaurant,staff,3,Direct references to staff's behavior and attitude,0.7662819623947144,0.0
+restaurant,atmosphere,0,Group A emphasizes on atmosphere description,0.8228545188903809,0.040824829046386304
+restaurant,atmosphere,1,Group A emphasizes on restaurant atmosphere,0.7015159130096436,0.040824829046386304
+restaurant,atmosphere,3,Group A emphasizes on atmosphere description,0.8228545188903809,0.040824829046386304
+restaurant,menu,0,"Group A reviews specifically mention and focus on the restaurant's menu, while Group B does not.",0.6707234382629395,0.0
+restaurant,menu,1,Menu variety and quality discussion,0.7905054092407227,0.05372849659117709
+restaurant,menu,3,Group A reviews focus on menu variety and quality.,0.7245164513587952,0.023980296761827107
+restaurant,price,0,Group A explicitly mentions price dissatisfaction.,0.660855770111084,0.040824829046386304
+restaurant,price,1,"Group A reviews directly discuss price value and quality, while Group B does not.",0.5780407190322876,0.01428363257865929
+restaurant,price,3,Group A explicitly mentions price value.,0.6897838115692139,0.040824829046386304
+laptop,battery,0,Group A frequently discusses battery life duration.,0.7413682341575623,0.033031643180138064
+laptop,battery,1,Negative expressions about battery life,0.7684316635131836,0.05372849659117709
+laptop,battery,3,Group A frequently discusses battery life duration.,0.7413682341575623,0.033031643180138064
+laptop,screen,0,Group A specifically discusses screen features,0.7841354608535767,0.040824829046386304
+laptop,screen,1,Specific mentions and descriptions of screen,0.8325186967849731,0.040824829046386304
+laptop,screen,3,Group A specifically mentions screen characteristics.,0.8216584920883179,0.040824829046386304
+laptop,keyboard,0,Group A frequently mentions keyboard functionality,0.7433292269706726,0.040824829046386304
+laptop,keyboard,1,Group A frequently mentions keyboard,0.7617801427841187,0.05372849659117709
+laptop,keyboard,3,Group A reviews specifically mention keyboard functionality and issues.,0.7911818027496338,0.023980296761827107
+laptop,performance,0,"Group A reviews focus on performance issues and technical aspects, while Group B reviews do not.",0.6177311539649963,0.012300686288463768
+laptop,performance,1,"Group A reviews focus on performance issues and technical aspects, while Group B reviews discuss features and user experience.",0.6382412910461426,0.010182425646195498
+laptop,performance,3,"Group A reviews focus on performance issues and technical aspects, while Group B reviews do not.",0.6177311539649963,0.012300686288463768
+laptop,price,0,Explicit discussions about price value,0.7291156053543091,0.05372849659117709
+laptop,price,1,Discussion of price-value relationship,0.7279317378997803,0.0
+laptop,price,3,Explicit mention of price value,0.7182462215423584,0.05372849659117709
+laptop,design,0,Group A focuses on design aesthetics and ergonomics.,0.7679274678230286,0.02777619034011792
+laptop,design,1,Group A reviews focus on design aspects.,0.7314243912696838,0.033031643180138064
+laptop,design,3,"Group A focuses on design aesthetics and ergonomics, Group B does not.",0.6933929324150085,0.017033186037639283

@@ -45,6 +45,7 @@ data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+human_validated_reviews/*
 
 # 外部データセット（大きなファイルを除外）
 data/external/*/
@@ -63,3 +64,4 @@ src/analysis/results_batch_analysis/*
 requirements.txt
 requirements.txt
 requirements.txt
+src/analysis/human_validated_reviews/*

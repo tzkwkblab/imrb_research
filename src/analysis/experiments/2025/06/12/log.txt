@@ -1,0 +1,46 @@
+
+=== 類似度スコア集計 ===
+    domain     feature  shot  bert_similarity  bleu_score
+restaurant        food     0         0.673602    0.021105
+restaurant        food     1         0.699625    0.014284
+restaurant        food     3         0.642149    0.008282
+restaurant     service     0         0.720554    0.000000
+restaurant     service     1         0.648264    0.000000
+restaurant     service     3         0.672559    0.009630
+restaurant       staff     0         0.802170    0.000000
+restaurant       staff     1         0.788514    0.033032
+restaurant       staff     3         0.766282    0.000000
+restaurant  atmosphere     0         0.822855    0.040825
+restaurant  atmosphere     1         0.701516    0.040825
+restaurant  atmosphere     3         0.822855    0.040825
+restaurant        menu     0         0.670723    0.000000
+restaurant        menu     1         0.790505    0.053728
+restaurant        menu     3         0.724516    0.023980
+restaurant       price     0         0.660856    0.040825
+restaurant       price     1         0.578041    0.014284
+restaurant       price     3         0.689784    0.040825
+    laptop     battery     0         0.741368    0.033032
+    laptop     battery     1         0.768432    0.053728
+    laptop     battery     3         0.741368    0.033032
+    laptop      screen     0         0.784135    0.040825
+    laptop      screen     1         0.832519    0.040825
+    laptop      screen     3         0.821658    0.040825
+    laptop    keyboard     0         0.743329    0.040825
+    laptop    keyboard     1         0.761780    0.053728
+    laptop    keyboard     3         0.791182    0.023980
+    laptop performance     0         0.617731    0.012301
+    laptop performance     1         0.638241    0.010182
+    laptop performance     3         0.617731    0.012301
+    laptop       price     0         0.729116    0.053728
+    laptop       price     1         0.727932    0.000000
+    laptop       price     3         0.718246    0.053728
+    laptop      design     0         0.767927    0.027776
+    laptop      design     1         0.731424    0.033032
+    laptop      design     3         0.693393    0.017033
+
+--- 平均値 ---
+bert_similarity    0.725080
+bleu_score         0.026759
+dtype: float64
+
+CSV出力: /Users/seinoshun/imrb_research/src/analysis/experiments/2025/06/12/semeval_absa_similarity_scores.csv
