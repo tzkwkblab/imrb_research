@@ -1,24 +1,45 @@
 ## 現在着手している場所
 
-でかいデータをダウンロードして、それで実験してみます。
-自分の手でデータ作るのが面倒なので。
+新しいデータセットを試してみます。
+Steam Review Aspect Dataset (Steam Game Review Aspect Dataset)
 
-```
-from pyabsa import make_ABSA_dataset
+1. Kaggle から取得
+   • データセット名：ilosvigil/steam-review-aspect-dataset
+   • 構成ファイル：
+   • train.csv（900 件）
+   • test.csv（200 件）
+   • 内容：review, cleaned_review, labels（8 アスペクト配列） ￼ ￼
+   kaggle datasets download ilosvigil/steam-review-aspect-dataset
+   unzip steam-review-aspect-dataset.zip -d data/steam_aspect/
+2. GitHub / Hugging Face から取得
+   • GitHub：ilos-vigil/steam-review-aspect-dataset リポジトリ ￼
+   • Hugging Face：同データセットが提供されている（Arrow Parquet 形式）
 
-# データセットの準備（SemEvalのデータセットをフォルダに配置しておく）
-make_ABSA_dataset(dataset_name_or_path='integrated_datasets/review', checkpoint='english')
-これを実行したい。
-このプロジェクトのディレクトリ構造を把握した上で（readme.mdなど読むと良い）@Readme.md
-適切な場所に格納ようディレクトリを作成し、データをダウンロードせよ。
-@/data データは必ずこの中の外部データフォルダの中にディレクトリ作成することになると思うので。
+Hugging Face 利用例（Python）：
+from datasets import load_dataset
+ds = load_dataset("ilosvigil/steam-review-aspect-dataset")
+train = ds["train"] # 900 examples
+test = ds["test"] # 200 examples
 
-で、データのダウンロードが完了したら、データを確認せよ。
-データの確認方法としては、以下を調べてほしい
-1.データは圧縮されているか。圧縮されているなら、解凍すべきか否か（bz2などの圧縮方式だと解凍せず使った方が良いことが多い。ので必ずしも解凍すべきではない）を判断
-2.データの中身はなんの形式か。csvかtxtか。
-3.データの中身は、どのようなデータ構成か。レビュー本文に対して、どのような特徴データ、アスペクトデータが、どのようなラベル名や形式でついているか。具体例として１、２個のデータを表示して、構造を確認したのちツリー構造で表示することが望ましい
-4.これらのデータを使って、「ある特徴が含まれるレビュー群Aと、その特徴が含まれないレビュー群B」を作成できるか検討。できると判断したら、pythonスクリプトを作成。スクリプトは、@/09-2 このフォルダの中に作成して、どんなスクリプトであるか、最後に説明を行う。
+データれい：
+
+{
+"review": "Devs are on meth pricing this game at $44",
+"aspects": ["Price"]
+}
+
+{
+"review": "I cost twice cheaper than most of recent Mediocre AAA games like Tomb Raider 2013, Bioshock Infinite ...",
+"aspects": ["Price", "Recommended", "Gameplay"]
+}
+
+| 項目         | 詳細                                                                                |
+| ------------ | ----------------------------------------------------------------------------------- |
+| 総レビュー数 | 1,100 件（900 トレーニング + 200 テスト）                                           |
+| アスペクト数 | 8 種類（Recommended, Story, Gameplay, Visual, Audio, Technical, Price, Suggestion） |
+| ファイル形式 | CSV, JSON, Apache Arrow（Parquet）                                                  |
+| レビュー長   | 中長文（約 300 ～ 400 字程度）                                                      |
+| 取得日付     | 2024 年 2 月 21 日時点の Steam レビューから収集                                     |
 
 ```
 
@@ -99,3 +120,4 @@ make_ABSA_dataset(dataset_name_or_path='integrated_datasets/review', checkpoint=
 - 2 つのデータ集合間の違いを人間が理解できる自然言語で説明する AI 手法の確立
 - 説明可能 AI のための基礎技術の構築
 - 将来的な創発言語の意味説明や AI 意思決定過程の透明化への応用可能性の提示
+```
