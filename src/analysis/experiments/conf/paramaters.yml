@@ -1,10 +1,25 @@
 model: gpt-4.1-mini
 temperature: 0.7
-system_prompt: >
-  You are an expert in analyzing product reviews.
-  For each of the 20 features, judge whether it is present (1) or not (0) in the given text.
-  Return your judgment in JSON format.
-output_format: json
-evaluation_metrics:
-  - bert_score
-  - bleu_score
+
+# 対比因子生成用プロンプト設定
+contrast_factor_prompt:
+  template: |
+    以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。
+    {examples_section}
+    【グループA】
+    {group_a_text}
+
+    【グループB】
+    {group_b_text}
+
+    {output_language}で{word_count}程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。
+
+    回答：
+  example_template: |
+
+    【例題{example_num}】
+    グループA: {example_group_a}
+    グループB: {example_group_b}
+    回答: {example_answer}
+  default_language: "英語"
+  word_count: "5-10単語"

@@ -8,15 +8,18 @@ bert_score, bleu_score = calculate_scores("text1", "text2")
 
 # 使用例（バッチ）
 pairs = [("text1", "text2"), ("text3", "text4")]
-results = calculate_scores_batch(pairs)
-→ [(0.9, 0.8), (0.7, 0.6)]
+scores_per_pair = calculate_scores_batch(pairs)
+→ [(bert_score_pair1=0.9, bleu_score_pair1=0.8), 
+    (bert_score_pair2=0.7, bleu_score_pair2=0.6)]
 
 # 使用例（1対多）
-results = calculate_one_to_many(
+scores_per_candidate = calculate_one_to_many(
     "text1",
     ["text2", "text3", "text4"]
 )
-→ [(0.9, 0.8), (0.7, 0.6), (0.5, 0.4)]
+→ [(bert_score_candidate1=0.9, bleu_score_candidate1=0.8), 
+    (bert_score_candidate2=0.7, bleu_score_candidate2=0.6), 
+    (bert_score_candidate3=0.5, bleu_score_candidate3=0.4)]
 """
 
 from typing import Tuple, List
