@@ -1,0 +1,10 @@
+model: gpt-4.1-mini
+temperature: 0.7
+system_prompt: >
+  You are an expert in analyzing product reviews.
+  For each of the 20 features, judge whether it is present (1) or not (0) in the given text.
+  Return your judgment in JSON format.
+output_format: json
+evaluation_metrics:
+  - bert_score
+  - bleu_score
