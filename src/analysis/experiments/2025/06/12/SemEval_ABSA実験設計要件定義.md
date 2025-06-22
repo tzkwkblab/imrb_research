@@ -162,30 +162,6 @@ def create_semeval_prompt(self, group_a_reviews, group_b_reviews, shot_count=0, 
 - **ドメイン間比較**: Restaurant vs Laptop の性能差分析
 - **データサイズ効果**: 50-200 レビューでの性能変化
 
----
-
-## 📋 実装スケジュール
-
-### Phase 1: データ準備 (今後)
-
-- [ ] `domain_aware_feature_splitter.py`を使用して SemEval データの分割実行
-- [ ] グループ A/B のデータ品質確認
-- [ ] 実験対象特徴の最終決定
-
-### Phase 2: GPT 実験システム構築 (今後)
-
-- [ ] `baseline_gpt_fewshot_cross_validation.py`を参考に SemEval 特化システム作成
-- [ ] プロンプト設計と Few-shot 学習システム実装
-- [ ] 評価指標システムの統合
-
-### Phase 3: 実験実行・評価 (今後)
-
-- [ ] Restaurant/Laptop ドメインでの 36 実験実行
-- [ ] 結果分析と過去実験との比較
-- [ ] 最終レポート作成
-
----
-
 ## 🔗 関連ファイル参照
 
 ### 設定ファイル
@@ -202,23 +178,3 @@ def create_semeval_prompt(self, group_a_reviews, group_b_reviews, shot_count=0, 
 
 - 実験レポート: [`SemEval_ABSA_GPT対比因子生成検証実験レポート.md`](src/analysis/experiments/2025/06/12/SemEval_ABSA_GPT対比因子生成検証実験レポート.md)
 - 過去実験分析: [`ハルシネーション検証実験レポート.md`](src/analysis/experiments/2025/06/06-2/ハルシネーション検証実験レポート.md)
-
----
-
-## 💡 実装のポイント
-
-### 再利用可能コンポーネント
-
-1. **データ分割**: `domain_aware_feature_splitter.py`の`create_domain_feature_splits()`
-2. **GPT 呼び出し**: `baseline_gpt_fewshot_cross_validation.py`の`query_gpt()`
-3. **プロンプト生成**: `create_few_shot_prompt()`の拡張
-4. **結果保存**: `save_results()`メソッドの活用
-
-### 新規実装必要項目
-
-1. **SemEval 特化プロンプト**: ドメイン情報を含むプロンプト設計
-2. **評価指標システム**: 正確性・具体性・ハルシネーション・ドメイン適合性の自動評価
-3. **統合実験管理**: ドメイン × 特徴 ×Shot 数の組み合わせ実験管理
-4. **比較分析システム**: 過去実験との定量的比較分析
-
-このファイルを基に、次のフェーズで具体的なスクリプト実装を進める予定です。
