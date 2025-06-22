@@ -82,8 +82,18 @@ class ConfigManager:
         model_config = self.get_model_config()
         return {
             'model': model_config.model,
-            'temperature': model_config.temperature
+            'temperature': model_config.temperature,
+            'max_tokens': self.get_value('max_tokens', 100)
         }
+    
+    def get_api_key(self, env_key: str) -> str:
+        """APIキーを環境変数から取得"""
+        api_key = os.getenv(env_key)
+        
+        if not api_key:
+            raise ValueError(f"{env_key}環境変数が設定されていません")
+        
+        return api_key
     
     def get_value(self, key: str, default: Any = None) -> Any:
         """任意の設定値を取得"""
@@ -110,6 +120,11 @@ def get_model_config() -> ModelConfig:
 def get_openai_params() -> Dict[str, Any]:
     """OpenAI API用パラメータを取得（便利関数）"""
     return get_config_manager().get_openai_params()
+
+
+def get_api_key(env_key: str) -> str:
+    """APIキーを取得（便利関数）"""
+    return get_config_manager().get_api_key(env_key)
 
 
 def main():

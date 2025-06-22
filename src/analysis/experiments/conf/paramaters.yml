@@ -1,5 +1,10 @@
-model: gpt-4.1-mini
+model: gpt-4o-mini
 temperature: 0.7
+max_tokens: 100
+
+# APIキーは環境変数で設定してください
+# export OPENAI_API_KEY="sk-..."
+# export ANTHROPIC_API_KEY="..."
 
 # 対比因子生成用プロンプト設定
 contrast_factor_prompt:
