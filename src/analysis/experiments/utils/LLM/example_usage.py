@@ -13,8 +13,22 @@ load_dotenv()
 def main():
     """使用例"""
     
-    # サポートモデル確認
-    print("サポートモデル:", LLMFactory.get_supported_models())
+    # API問い合わせによる利用可能モデル確認
+    print("=== 利用可能モデル一覧（API問い合わせ） ===")
+    try:
+        available_models = LLMFactory.get_supported_models()
+        print(f"利用可能モデル数: {len(available_models)}")
+        print("モデルID:", available_models[:10])  # 最初の10個を表示
+        
+        # 詳細情報を表形式で表示
+        print("\n=== モデル詳細情報（最新10件） ===")
+        model_details = LLMFactory.get_model_details()
+        for i, model in enumerate(model_details[:10]):
+            print(f"{i+1:2d}. {model['id']:<25} | {model['created']} | {model['owned_by']}")
+            
+    except Exception as e:
+        print(f"モデル一覧取得エラー: {e}")
+        print("設定ファイルのデフォルトモデルを使用します")
     
     # 設定ファイルのデフォルトモデルを使用
     llm_client = LLMFactory.create_client()  # model=Noneで設定ファイルから取得

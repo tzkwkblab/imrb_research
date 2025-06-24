@@ -48,6 +48,16 @@ class BaseLLM(ABC):
         """モデル名を取得"""
         pass
     
+    @abstractmethod
+    def list_available_models(self) -> List[Dict[str, str]]:
+        """利用可能なモデル一覧を取得"""
+        pass
+    
+    @abstractmethod
+    def get_available_model_ids(self) -> List[str]:
+        """利用可能なモデルIDのみを取得"""
+        pass
+    
     def get_default_params(self, **kwargs) -> Dict[str, Any]:
         """
         デフォルトパラメータを取得（設定ファイル + オーバーライド）
