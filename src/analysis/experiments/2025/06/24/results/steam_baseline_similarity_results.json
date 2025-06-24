@@ -1,0 +1,191 @@
+{
+  "dataset": "Steam Review Aspect Dataset",
+  "aspects": [
+    "recommended",
+    "story",
+    "gameplay",
+    "visual",
+    "audio",
+    "technical",
+    "price",
+    "suggestion"
+  ],
+  "pair_details": [
+    {
+      "aspect1": "recommended",
+      "aspect2": "story",
+      "bert_score": 0.9669305086135864,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "recommended",
+      "aspect2": "gameplay",
+      "bert_score": 0.9688025116920471,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "recommended",
+      "aspect2": "visual",
+      "bert_score": 0.9567440152168274,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "recommended",
+      "aspect2": "audio",
+      "bert_score": 0.9271483421325684,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "recommended",
+      "aspect2": "technical",
+      "bert_score": 0.8792421221733093,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "recommended",
+      "aspect2": "price",
+      "bert_score": 0.9794618487358093,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "recommended",
+      "aspect2": "suggestion",
+      "bert_score": 0.982387900352478,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "story",
+      "aspect2": "gameplay",
+      "bert_score": 0.9732815623283386,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "story",
+      "aspect2": "visual",
+      "bert_score": 0.965469241142273,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "story",
+      "aspect2": "audio",
+      "bert_score": 0.9221763610839844,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "story",
+      "aspect2": "technical",
+      "bert_score": 0.8527636528015137,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "story",
+      "aspect2": "price",
+      "bert_score": 0.9768946170806885,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "story",
+      "aspect2": "suggestion",
+      "bert_score": 0.9794586300849915,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "gameplay",
+      "aspect2": "visual",
+      "bert_score": 0.9584898352622986,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "gameplay",
+      "aspect2": "audio",
+      "bert_score": 0.9223445653915405,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "gameplay",
+      "aspect2": "technical",
+      "bert_score": 0.878301739692688,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "gameplay",
+      "aspect2": "price",
+      "bert_score": 0.9718157649040222,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "gameplay",
+      "aspect2": "suggestion",
+      "bert_score": 0.972808301448822,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "visual",
+      "aspect2": "audio",
+      "bert_score": 0.9286259412765503,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "visual",
+      "aspect2": "technical",
+      "bert_score": 0.8869293928146362,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "visual",
+      "aspect2": "price",
+      "bert_score": 0.9574153423309326,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "visual",
+      "aspect2": "suggestion",
+      "bert_score": 0.9723855257034302,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "audio",
+      "aspect2": "technical",
+      "bert_score": 0.8880181908607483,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "audio",
+      "aspect2": "price",
+      "bert_score": 0.9186878800392151,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "audio",
+      "aspect2": "suggestion",
+      "bert_score": 0.9190855026245117,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "technical",
+      "aspect2": "price",
+      "bert_score": 0.8607926964759827,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "technical",
+      "aspect2": "suggestion",
+      "bert_score": 0.8689075708389282,
+      "bleu_score": 0
+    },
+    {
+      "aspect1": "price",
+      "aspect2": "suggestion",
+      "bert_score": 0.9844562411308289,
+      "bleu_score": 0
+    }
+  ],
+  "summary_statistics": {
+    "bert_mean": 0.9364223501511982,
+    "bleu_mean": 0.0,
+    "bert_std": 0.04184783476225254,
+    "bleu_std": 0.0,
+    "num_pairs": 28,
+    "num_aspects": 8
+  }
+}

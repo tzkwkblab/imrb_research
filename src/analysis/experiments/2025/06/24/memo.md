@@ -1,0 +1,10 @@
+- 新しくダウンロードした steam レビューデータセットで bert,bleu スコアを打ち出す。
+- データセット場所はここ。
+  - data/external/steam-review-aspect-dataset/v1.0_2025-06-24
+- プロンプト生成、gpt への問い合わせ、スコア生成はここ
+  - src/analysis/experiments/utils
+- 最終的に得たいのは
+- steam data set でのスコア二つ
+- グループ A、グループ B（特徴が八個あるので、8 回分のグループ AB を作って、few-shot を 0,1,3 で回す。計 24 回問い合わせる。）
+- まず 24 回回した結果から、bert と bleu の平均を出す。表としては、bert:なんぼ、bleu:なんぼ。
+- で、詳細結果として、それぞれの実験条件とその時の二つのスコアを表として出す。
