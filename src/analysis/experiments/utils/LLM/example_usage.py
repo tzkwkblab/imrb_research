@@ -10,75 +10,129 @@ from llm_factory import LLMFactory
 load_dotenv()
 
 
-def main():
-    """使用例"""
+def test_model_configuration_debug():
+    """設定ファイルのモデル名読み込みをデバッグモードでテスト"""
+    print("=" * 60)
+    print("設定ファイルからのモデル読み込みテスト（デバッグモード）")
+    print("=" * 60)
     
-    # API問い合わせによる利用可能モデル確認
-    print("=== 利用可能モデル一覧（API問い合わせ） ===")
+    # デバッグモード有効でクライアント作成
+    print("\n--- デバッグモード有効でのクライアント作成 ---")
+    llm_client = LLMFactory.create_client(debug=True)
+    
+    print(f"\n[結果] 実際に使用されているモデル: {llm_client.get_model_name()}")
+    print(f"[結果] デフォルト温度: {llm_client.default_temperature}")
+    print(f"[結果] デフォルトmax_tokens: {llm_client.default_max_tokens}")
+    
+    return llm_client
+
+
+def test_model_override_debug():
+    """モデル名を明示的に指定した場合のテスト"""
+    print("\n" + "=" * 60)
+    print("モデル名明示指定テスト（デバッグモード）")
+    print("=" * 60)
+    
+    test_model = "gpt-4o-mini"
+    print(f"\n--- {test_model} を明示指定してクライアント作成 ---")
+    
     try:
-        available_models = LLMFactory.get_supported_models()
-        print(f"利用可能モデル数: {len(available_models)}")
-        print("モデルID:", available_models[:10])  # 最初の10個を表示
-        
-        # 詳細情報を表形式で表示
-        print("\n=== モデル詳細情報（最新10件） ===")
-        model_details = LLMFactory.get_model_details()
-        for i, model in enumerate(model_details[:10]):
-            print(f"{i+1:2d}. {model['id']:<25} | {model['created']} | {model['owned_by']}")
+        llm_client = LLMFactory.create_client(model_name=test_model, debug=True)
+        print(f"\n[結果] 成功: {llm_client.get_model_name()}")
+        return llm_client
+    except SystemExit as e:
+        print(f"\n[結果] モデル検証エラーで終了: {e}")
+        return None
+    except Exception as e:
+        print(f"\n[結果] その他エラー: {e}")
+        return None
+
+
+def test_invalid_model_debug():
+    """存在しないモデル名でのエラーテスト"""
+    print("\n" + "=" * 60)
+    print("不正モデル名エラーテスト（デバッグモード）")
+    print("=" * 60)
+    
+    invalid_model = "invalid-model-name-12345"
+    print(f"\n--- {invalid_model} を指定してエラー確認 ---")
+    
+    try:
+        llm_client = LLMFactory.create_client(model_name=invalid_model, debug=True)
+        print(f"\n[結果] 予期せず成功: {llm_client.get_model_name()}")
+        return llm_client
+    except SystemExit as e:
+        print(f"\n[結果] 期待通りモデル検証エラーで終了")
+        return None
+    except Exception as e:
+        print(f"\n[結果] その他エラー: {e}")
+        return None
+
+
+def test_api_calls_debug(client):
+    """API呼び出しをデバッグモードでテスト"""
+    if client is None:
+        print("\n[スキップ] クライアントが作成されていないため、API呼び出しテストをスキップ")
+        return
+    
+    print("\n" + "=" * 60)
+    print("API呼び出しテスト（デバッグモード）")
+    print("=" * 60)
+    
+    # シンプルなテスト
+    print("\n--- シンプルなAPI呼び出し ---")
+    response = client.ask("Hello, how are you?")
+    print(f"[結果] 応答: {response}")
+    
+    # パラメータ指定テスト
+    print("\n--- パラメータ指定API呼び出し ---")
+    response = client.ask(
+        "Say just one word: 'Success'",
+        temperature=0.1,
+        max_tokens=5
+    )
+    print(f"[結果] 応答: {response}")
+
+
+def main():
+    """メイン関数 - 段階的にテスト実行"""
+    
+    print("LLM設定テスト開始")
+    
+    # 1. 設定ファイルからのモデル読み込みテスト
+    client1 = test_model_configuration_debug()
+    
+    # 2. モデル名明示指定テスト
+    client2 = test_model_override_debug()
+    
+    # 3. 有効なクライアントでAPI呼び出しテスト
+    valid_client = client1 if client1 else client2
+    test_api_calls_debug(valid_client)
+    
+    # 4. 利用可能モデル一覧表示（デバッグモード）
+    print("\n" + "=" * 60)
+    print("利用可能モデル一覧取得（デバッグモード）")
+    print("=" * 60)
+    
+    try:
+        print("\n--- デバッグモード有効でモデル一覧取得 ---")
+        available_models = LLMFactory.get_supported_models(debug=True)
+        print(f"\n[結果] 取得成功: {len(available_models)}個のモデル")
+        print("最初の10個:")
+        for i, model in enumerate(available_models[:10]):
+            print(f"  {i+1:2d}. {model}")
             
     except Exception as e:
-        print(f"モデル一覧取得エラー: {e}")
-        print("設定ファイルのデフォルトモデルを使用します")
+        print(f"[結果] モデル一覧取得エラー: {e}")
     
-    # 設定ファイルのデフォルトモデルを使用
-    llm_client = LLMFactory.create_client()  # model=Noneで設定ファイルから取得
+    print("\n" + "=" * 60)
+    print("全テスト完了")
+    print("=" * 60)
     
-    print(f"使用モデル: {llm_client.get_model_name()}")
-    print(f"デフォルト温度: {llm_client.default_temperature}")
-    print(f"デフォルトmax_tokens: {llm_client.default_max_tokens}")
-    print("\n=== テスト開始 ===")
-    
-    # メッセージ構築（シンプルな例）
-    messages1 = [
-        {"role": "user", "content": "次の文章を要約してください: 今日は良い天気です。"}
-    ]
-    
-    # メッセージ構築（システムメッセージ付き）
-    messages2 = [
-        {"role": "system", "content": "あなたは優秀なレビューテキスト分析専門家です。"},
-        {"role": "user", "content": "この商品レビューを分析してください: 良い商品です。"}
-    ]
-    
-    # クエリ実行（messages版）
-    response1 = llm_client.query(messages1, temperature=0.5, max_tokens=50)
-    response2 = llm_client.query(messages2, temperature=0.3, max_tokens=100)
-    
-    # シンプルな質問（ask版）
-    print("\n1. ask()メソッドテスト...")
-    simple_response = llm_client.ask("『こんにちは』を英語で言うと？")
-    print(f"シンプル質問: {simple_response}")
-    
-    print("\n2. ask()システムメッセージ付きテスト...")
-    expert_response = llm_client.ask(
-        "このレビューの感情を分析して: とても良い商品でした！",
-        system_message="あなたは優秀なレビュー分析専門家です。"
-    )
-    print(f"エキスパート分析: {expert_response}")
-    
-    # パラメータオーバーライドテスト
-    print("\n3. パラメータオーバーライドテスト...")
-    override_response = llm_client.ask(
-        "ランダムな数字を1つ言って",
-        temperature=1.0,  # 設定ファイルの0.7をオーバーライド
-        max_tokens=10     # 設定ファイルの100をオーバーライド
-    )
-    print(f"パラメータオーバーライド: {override_response}")
-    
-    print(f"\n=== 結果サマリー ===")
-    print(f"モデル: {llm_client.get_model_name()}")
-    print(f"messages版シンプル応答: {response1}")
-    print(f"messages版レビュー分析: {response2}")
-    print("\n=== テスト完了 ===")
+    # 最後に不正モデル名テスト（プログラム終了のため最後に実行）
+    print("\n最後に不正モデル名テストを実行します（プログラムが終了する可能性があります）")
+    input("Enterキーを押すと続行...")
+    test_invalid_model_debug()
 
 
 if __name__ == "__main__":
