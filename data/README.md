@@ -75,3 +75,15 @@ sampled_path = "data/processed/amazon-reviews/sampled/"
 2. 処理済みデータは **processed/** ディレクトリに保存
 3. 一時ファイルは **cache/** ディレクトリを使用
 4. 新しいデータセット追加時は構造に従って整理
+
+## 外部データセット一覧（2025 年 6 月現在）
+
+| ディレクトリ名              | 内容・特徴                                      |
+| --------------------------- | ----------------------------------------------- |
+| amazon-product-reviews      | Amazon 商品レビュー（Kaggle: bittlingmayer 等） |
+| absa-review-dataset         | ABSA（アスペクトベース感情分析）用レビュー      |
+| semeval-absa                | SemEval 公式 ABSA タスク用データ                |
+| steam-review-aspect-dataset | Steam ゲームレビューのアスペクト多ラベルデータ  |
+
+- それぞれバージョン管理・current リンク・dataset_info.json 付き
+- サブディレクトリ例：`kaggle-bittlingmayer/`, `pyabsa-integrated/`, `v1.0_YYYY-MM-DD/` など
