@@ -1,0 +1,65 @@
+{
+  "experiment_info": {
+    "timestamp": "20250627_150132",
+    "experiment_name": "test_battery_vs_screen",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 3,
+      "group_b_count": 3,
+      "examples_count": 1,
+      "output_language": null
+    }
+  },
+  "input": {
+    "group_a": [
+      "Great battery life lasting all day",
+      "Excellent power management features",
+      "Long-lasting battery performance"
+    ],
+    "group_b": [
+      "Poor screen quality and resolution",
+      "Uncomfortable keyboard layout",
+      "Slow system performance"
+    ],
+    "correct_answer": "Battery performance and power management",
+    "examples": [
+      {
+        "group_a": [
+          "Fast delivery",
+          "Quick shipping"
+        ],
+        "group_b": [
+          "Slow response",
+          "Delayed support"
+        ],
+        "answer": "Delivery speed and response time"
+      }
+    ]
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【例題1】\nグループA: [\"Fast delivery\", \"Quick shipping\"]\nグループB: [\"Slow response\", \"Delayed support\"]\n回答: Delivery speed and response time\n\n【グループA】\n- Great battery life lasting all day\n- Excellent power management features\n- Long-lasting battery performance\n\n【グループB】\n- Poor screen quality and resolution\n- Uncomfortable keyboard layout\n- Slow system performance\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Battery life and performance features"
+  },
+  "evaluation": {
+    "bert_score": 0.9038900136947632,
+    "bleu_score": 0.07071067811865477,
+    "similarity_scores": {
+      "semantic_similarity": 0.9038900136947632,
+      "lexical_similarity": 0.07071067811865477
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "bert_level": "high",
+      "bleu_level": "low",
+      "overall_quality": "fair",
+      "comments": "BERT:high, BLEU:low → 総合:fair"
+    },
+    "processing_time": "20250627_150132"
+  }
+}

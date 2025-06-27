@@ -1,0 +1,53 @@
+{
+  "experiment_info": {
+    "timestamp": "20250627_150207",
+    "experiment_name": "multi_feature_comparison_01",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 3,
+      "group_b_count": 3,
+      "examples_count": 0,
+      "output_language": null
+    }
+  },
+  "input": {
+    "group_a": [
+      "Fast performance",
+      "Quick response times",
+      "High speed processing"
+    ],
+    "group_b": [
+      "Large file size",
+      "Heavy application",
+      "Resource intensive"
+    ],
+    "correct_answer": "Performance speed and responsiveness",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- Fast performance\n- Quick response times\n- High speed processing\n\n【グループB】\n- Large file size\n- Heavy application\n- Resource intensive\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Emphasis on speed and efficiency."
+  },
+  "evaluation": {
+    "bert_score": 0.8098042011260986,
+    "bleu_score": 0.11362193664674995,
+    "similarity_scores": {
+      "semantic_similarity": 0.8098042011260986,
+      "lexical_similarity": 0.11362193664674995
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "bert_level": "high",
+      "bleu_level": "low",
+      "overall_quality": "fair",
+      "comments": "BERT:high, BLEU:low → 総合:fair"
+    },
+    "processing_time": "20250627_150207"
+  }
+}

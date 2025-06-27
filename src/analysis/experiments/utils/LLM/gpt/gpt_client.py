@@ -2,10 +2,7 @@ import os
 import openai
 from typing import Optional, List, Dict
 from datetime import datetime
-import sys
-import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from base_llm import BaseLLM
+from ..base_llm import BaseLLM
 
 
 class GPTClient(BaseLLM):
@@ -78,6 +75,8 @@ class GPTClient(BaseLLM):
         """
         # 基底クラスからデフォルトパラメータを取得
         params = self.get_default_params(**kwargs)
+        # モデル名をparamsから除外（別途指定するため）
+        params.pop('model', None)
         
         if self.debug:
             print(f"[DEBUG] API呼び出し開始")

@@ -1,6 +1,6 @@
 from typing import Dict, Type
-from base_llm import BaseLLM
-from gpt.gpt_client import GPTClient
+from .base_llm import BaseLLM
+from .gpt.gpt_client import GPTClient
 
 
 class LLMFactory:

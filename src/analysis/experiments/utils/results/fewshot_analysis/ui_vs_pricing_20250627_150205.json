@@ -1,0 +1,82 @@
+{
+  "experiment_info": {
+    "timestamp": "20250627_150205",
+    "experiment_name": "ui_vs_pricing",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 4,
+      "group_b_count": 4,
+      "examples_count": 2,
+      "output_language": "英語"
+    }
+  },
+  "input": {
+    "group_a": [
+      "User-friendly interface design",
+      "Intuitive navigation system",
+      "Easy-to-use features",
+      "Simple and clean layout"
+    ],
+    "group_b": [
+      "Expensive pricing model",
+      "High cost for basic features",
+      "Overpriced subscription plans",
+      "Poor value for money"
+    ],
+    "correct_answer": "User interface design and ease of use",
+    "examples": [
+      {
+        "group_a": [
+          "Fast delivery",
+          "Quick shipping",
+          "Express service"
+        ],
+        "group_b": [
+          "Slow response",
+          "Delayed support",
+          "Poor customer service"
+        ],
+        "answer": "Delivery speed and customer service quality"
+      },
+      {
+        "group_a": [
+          "High quality materials",
+          "Durable construction",
+          "Premium build"
+        ],
+        "group_b": [
+          "Cheap plastic",
+          "Fragile design",
+          "Poor assembly"
+        ],
+        "answer": "Material quality and build durability"
+      }
+    ]
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【例題1】\nグループA: [\"Fast delivery\", \"Quick shipping\", \"Express service\"]\nグループB: [\"Slow response\", \"Delayed support\", \"Poor customer service\"]\n回答: Delivery speed and customer service quality\n\n【例題2】\nグループA: [\"High quality materials\", \"Durable construction\", \"Premium build\"]\nグループB: [\"Cheap plastic\", \"Fragile design\", \"Poor assembly\"]\n回答: Material quality and build durability\n\n【グループA】\n- User-friendly interface design\n- Intuitive navigation system\n- Easy-to-use features\n- Simple and clean layout\n\n【グループB】\n- Expensive pricing model\n- High cost for basic features\n- Overpriced subscription plans\n- Poor value for money\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "User-friendly design and ease of use"
+  },
+  "evaluation": {
+    "bert_score": 0.9348880052566528,
+    "bleu_score": 0.6431870218238024,
+    "similarity_scores": {
+      "semantic_similarity": 0.9348880052566528,
+      "lexical_similarity": 0.6431870218238024
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "bert_level": "high",
+      "bleu_level": "high",
+      "overall_quality": "excellent",
+      "comments": "BERT:high, BLEU:high → 総合:excellent"
+    },
+    "processing_time": "20250627_150205"
+  }
+}
