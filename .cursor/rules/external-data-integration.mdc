@@ -1,10 +1,7 @@
 ---
-description: 外部データソース統合とAPI使用のルール
-globs:
-  - "src/data/**/*"
-  - "*.env*"
-  - "kaggle.json"
-alwaysApply: true
+description: 実験に使うデータについての場所とか取り扱い方についてです。
+globs: 
+alwaysApply: false
 ---
 
 # 外部データソース統合ルール

@@ -1,7 +1,7 @@
 ---
-description: 
+description: 研究タイトル：説明可能AIのための対比因子ラベル生成手法に関する研究。研究に関する質問や、研究の意義、関連研究など聞かれた際に参照。
 globs: 
-alwaysApply: true
+alwaysApply: false
 ---
 
 ## 研究タイトル：説明可能AIのための対比因子ラベル生成手法に関する研究
