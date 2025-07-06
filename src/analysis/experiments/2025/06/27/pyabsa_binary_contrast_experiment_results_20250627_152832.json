@@ -1,0 +1,244 @@
+{
+  "experiment_info": {
+    "dataset_id": "110.112.arts_restaurant14",
+    "timestamp": "20250627_152812",
+    "total_records": 4728,
+    "target_aspects": [
+      "food",
+      "service",
+      "atmosphere",
+      "price"
+    ],
+    "shot_settings": [
+      0,
+      1,
+      3
+    ],
+    "group_size": 300,
+    "random_seed": 42,
+    "experiment_type": "binary_contrast"
+  },
+  "results": [
+    {
+      "target_aspect": "food",
+      "shot_count": 0,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.5539568066596985,
+      "bleu_score": 0,
+      "quality_assessment": "poor",
+      "llm_response": "Group A emphasizes staff friendliness and authenticity.",
+      "correct_answer": "food",
+      "success": true
+    },
+    {
+      "target_aspect": "food",
+      "shot_count": 1,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.7434773445129395,
+      "bleu_score": 0.033031643180138064,
+      "quality_assessment": "fair",
+      "llm_response": "Focus on food quality and dining experience.",
+      "correct_answer": "food",
+      "success": true
+    },
+    {
+      "target_aspect": "food",
+      "shot_count": 3,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.7706069946289062,
+      "bleu_score": 0.08034284189446518,
+      "quality_assessment": "fair",
+      "llm_response": "food quality and presentation",
+      "correct_answer": "food",
+      "success": true
+    },
+    {
+      "target_aspect": "service",
+      "shot_count": 0,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.6718263626098633,
+      "bleu_score": 0.00913442366656447,
+      "quality_assessment": "fair",
+      "llm_response": "Group A has detailed evaluations of service quality and food experiences, while Group B focuses more on specific dishes and pricing.",
+      "correct_answer": "service",
+      "success": true
+    },
+    {
+      "target_aspect": "service",
+      "shot_count": 1,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.7526781558990479,
+      "bleu_score": 0.05372849659117709,
+      "quality_assessment": "fair",
+      "llm_response": "service quality and staff attentiveness",
+      "correct_answer": "service",
+      "success": true
+    },
+    {
+      "target_aspect": "service",
+      "shot_count": 3,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.7584589123725891,
+      "bleu_score": 0.08034284189446518,
+      "quality_assessment": "fair",
+      "llm_response": "service and dining experience",
+      "correct_answer": "service",
+      "success": true
+    },
+    {
+      "target_aspect": "atmosphere",
+      "shot_count": 0,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.5981284976005554,
+      "bleu_score": 0,
+      "quality_assessment": "poor",
+      "llm_response": "Group A emphasizes ambiance, warmth, and personal experiences.",
+      "correct_answer": "atmosphere",
+      "success": true
+    },
+    {
+      "target_aspect": "atmosphere",
+      "shot_count": 1,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.7051465511322021,
+      "bleu_score": 0,
+      "quality_assessment": "fair",
+      "llm_response": "atmosphere, ambiance, laid-back scene, warm service, casual dining",
+      "correct_answer": "atmosphere",
+      "success": true
+    },
+    {
+      "target_aspect": "atmosphere",
+      "shot_count": 3,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.6872205138206482,
+      "bleu_score": 0,
+      "quality_assessment": "fair",
+      "llm_response": "atmosphere, ambiance, casual dining, lively scene, romantic setting",
+      "correct_answer": "atmosphere",
+      "success": true
+    },
+    {
+      "target_aspect": "price",
+      "shot_count": 0,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.598957359790802,
+      "bleu_score": 0.010802314890908065,
+      "quality_assessment": "poor",
+      "llm_response": "Group A focuses on price and value comparisons, while Group B emphasizes specific food quality and dining experiences.",
+      "correct_answer": "price",
+      "success": true
+    },
+    {
+      "target_aspect": "price",
+      "shot_count": 1,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.7168934941291809,
+      "bleu_score": 0,
+      "quality_assessment": "fair",
+      "llm_response": "price-related expressions and value assessments",
+      "correct_answer": "price",
+      "success": true
+    },
+    {
+      "target_aspect": "price",
+      "shot_count": 3,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.6149902939796448,
+      "bleu_score": 0,
+      "quality_assessment": "fair",
+      "llm_response": "Group A focuses on \"reasonable prices\" and \"value,\" while Group B emphasizes \"food quality\" and \"experience.\"",
+      "correct_answer": "price",
+      "success": true
+    }
+  ],
+  "summary": {
+    "total_experiments": 12,
+    "successful_experiments": 12,
+    "bert_score_avg": 0.6810284405946732,
+    "bleu_score_avg": 0.022281880176476504,
+    "bert_score_range": [
+      0.5539568066596985,
+      0.7706069946289062
+    ],
+    "bleu_score_range": [
+      0,
+      0.08034284189446518
+    ],
+    "shot_statistics": {
+      "0shot": {
+        "count": 4,
+        "bert_avg": 0.6057172566652298,
+        "bleu_avg": 0.004984184639368134
+      },
+      "1shot": {
+        "count": 4,
+        "bert_avg": 0.7295488864183426,
+        "bleu_avg": 0.021690034942828788
+      },
+      "3shot": {
+        "count": 4,
+        "bert_avg": 0.7078191787004471,
+        "bleu_avg": 0.04017142094723259
+      }
+    },
+    "aspect_statistics": {
+      "price": {
+        "count": 3,
+        "bert_avg": 0.6436137159665426,
+        "bleu_avg": 0.003600771630302688
+      },
+      "service": {
+        "count": 3,
+        "bert_avg": 0.7276544769605001,
+        "bleu_avg": 0.04773525405073558
+      },
+      "food": {
+        "count": 3,
+        "bert_avg": 0.6893470486005148,
+        "bleu_avg": 0.03779149502486775
+      },
+      "atmosphere": {
+        "count": 3,
+        "bert_avg": 0.6634985208511353,
+        "bleu_avg": 0.0
+      }
+    }
+  }
+}

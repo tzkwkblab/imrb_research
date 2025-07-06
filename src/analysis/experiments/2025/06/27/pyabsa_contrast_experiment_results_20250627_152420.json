@@ -1,0 +1,214 @@
+{
+  "experiment_info": {
+    "dataset_id": "110.112.arts_restaurant14",
+    "timestamp": "20250627_152358",
+    "total_records": 4728,
+    "aspect_pairs": [
+      [
+        "food",
+        "service"
+      ],
+      [
+        "atmosphere",
+        "price"
+      ],
+      [
+        "staff",
+        "location"
+      ]
+    ],
+    "shot_settings": [
+      0,
+      1,
+      3
+    ],
+    "group_size": 300,
+    "random_seed": 42
+  },
+  "results": [
+    {
+      "aspect_pair": [
+        "food",
+        "service"
+      ],
+      "shot_count": 0,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.7889175415039062,
+      "bleu_score": 0.02777619034011792,
+      "quality_assessment": "fair",
+      "llm_response": "Group A emphasizes food quality and ambiance significantly.",
+      "correct_answer": "food vs service characteristics",
+      "success": true
+    },
+    {
+      "aspect_pair": [
+        "food",
+        "service"
+      ],
+      "shot_count": 1,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.7868059873580933,
+      "bleu_score": 0.033031643180138064,
+      "quality_assessment": "fair",
+      "llm_response": "Group A emphasizes food quality and ambiance.",
+      "correct_answer": "food vs service characteristics",
+      "success": true
+    },
+    {
+      "aspect_pair": [
+        "food",
+        "service"
+      ],
+      "shot_count": 3,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.8301356434822083,
+      "bleu_score": 0.040824829046386304,
+      "quality_assessment": "fair",
+      "llm_response": "Food quality and dining experience focus",
+      "correct_answer": "food vs service characteristics",
+      "success": true
+    },
+    {
+      "aspect_pair": [
+        "atmosphere",
+        "price"
+      ],
+      "shot_count": 0,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.5435652732849121,
+      "bleu_score": 0,
+      "quality_assessment": "poor",
+      "llm_response": "Group A emphasizes positive dining experiences, ambiance, and recommendations.",
+      "correct_answer": "atmosphere vs price characteristics",
+      "success": true
+    },
+    {
+      "aspect_pair": [
+        "atmosphere",
+        "price"
+      ],
+      "shot_count": 1,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.6044511795043945,
+      "bleu_score": 0,
+      "quality_assessment": "fair",
+      "llm_response": "Focus on ambiance, service quality, and overall dining experience.",
+      "correct_answer": "atmosphere vs price characteristics",
+      "success": true
+    },
+    {
+      "aspect_pair": [
+        "atmosphere",
+        "price"
+      ],
+      "shot_count": 3,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.6886677742004395,
+      "bleu_score": 0.05372849659117709,
+      "quality_assessment": "fair",
+      "llm_response": "Atmosphere and dining experience focus",
+      "correct_answer": "atmosphere vs price characteristics",
+      "success": true
+    },
+    {
+      "aspect_pair": [
+        "staff",
+        "location"
+      ],
+      "shot_count": 0,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.6596461534500122,
+      "bleu_score": 0,
+      "quality_assessment": "fair",
+      "llm_response": "Group A emphasizes personal experiences and specific details about service and food.",
+      "correct_answer": "staff vs location characteristics",
+      "success": true
+    },
+    {
+      "aspect_pair": [
+        "staff",
+        "location"
+      ],
+      "shot_count": 1,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.7476094961166382,
+      "bleu_score": 0.023980296761827107,
+      "quality_assessment": "fair",
+      "llm_response": "Group A focuses on service quality and staff friendliness.",
+      "correct_answer": "staff vs location characteristics",
+      "success": true
+    },
+    {
+      "aspect_pair": [
+        "staff",
+        "location"
+      ],
+      "shot_count": 3,
+      "group_sizes": {
+        "group_a": 300,
+        "group_b": 300
+      },
+      "bert_score": 0.6327270269393921,
+      "bleu_score": 0,
+      "quality_assessment": "fair",
+      "llm_response": "Service quality and personal interactions",
+      "correct_answer": "staff vs location characteristics",
+      "success": true
+    }
+  ],
+  "summary": {
+    "total_experiments": 9,
+    "successful_experiments": 9,
+    "bert_score_avg": 0.6980584528711107,
+    "bleu_score_avg": 0.019926828435516276,
+    "bert_score_range": [
+      0.5435652732849121,
+      0.8301356434822083
+    ],
+    "bleu_score_range": [
+      0,
+      0.05372849659117709
+    ],
+    "shot_statistics": {
+      "0shot": {
+        "count": 3,
+        "bert_avg": 0.6640429894129435,
+        "bleu_avg": 0.00925873011337264
+      },
+      "1shot": {
+        "count": 3,
+        "bert_avg": 0.7129555543263754,
+        "bleu_avg": 0.019003979980655058
+      },
+      "3shot": {
+        "count": 3,
+        "bert_avg": 0.7171768148740133,
+        "bleu_avg": 0.03151777521252113
+      }
+    }
+  }
+}
