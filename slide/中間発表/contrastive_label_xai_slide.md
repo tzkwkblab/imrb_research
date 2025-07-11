@@ -6,6 +6,30 @@ auto-scaling: true
 paginate: true
 --------------
 
+<style>
+.cite {
+  position: absolute; /* スライドの特定位置に固定 */
+  bottom: 20px;       /* 下から20pxの位置 */
+  left: 30px;         /* 左から30pxの位置 */
+  font-size: 0.6em;   /* 文字サイズを小さく */
+  color: #666;         /* 文字色を少し薄く */
+}
+table {
+  font-size: 1em;
+  margin: 20px auto;
+}
+th, td {
+  padding: 15px 30px;
+}
+</style>
+<!--
+<div class="cite">
+  引用元: <a href="https://transformer-circuits.pub/2025/attribution-graphs/methods.html">https://transformer-circuits.pub/2025/attribution-graphs/methods.html</a>
+</div>
+-->
+
+
+
 <!-- page: title -->
 
 # 説明可能 AI のための対比因子ラベル生成手法に関する研究
@@ -20,52 +44,119 @@ paginate: true
 
 ---
 
-## なぜ XAI の重要性が高まっているのか？
+## XAI（説明可能 AI）を取り巻く現状
 
-- AI の社会実装が進む中で、**「なぜその判断なのか？」という疑問が増加**
+### 重要性の高まり
+
+- AI の社会実装進展により、**「なぜその判断なのか？」という疑問が増加**
 - 医療・法務・教育など、**説明責任**が求められる分野で利用拡大
-- **LLM のようなブラックボックスモデルの普及**により、透明性の欠如が顕著に
 
----
-
-## 現在の課題は何か？
+### 現在の課題
 
 - 多くの AI モデルは「正答を出す」が、**理由は出さない**
-- 出力結果に対して、人が **納得・理解できないケースが多い**
 - 特に LLM では、**創発的な挙動**が人間にとって予測困難
-- 「説明できない AI」は、社会的信頼を失うリスク
 
----
-
-## これまでの主な取り組み
+### これまでの取り組みと限界
 
 - **可視化手法**（Attention Map、SHAP、LIME など）：画像・特徴量に特化
 - **ルール抽出・事後説明型 XAI**：決定木や説明生成モデル
-- **生成系 XAI**（例：GPT による説明生成）：文脈に応じた自然言語説明を試みるが、一貫性・根拠の妥当性に課題
-- 多くが **入力と出力の間にある“中間的特徴”の扱いが曖昧**
+- **共通の課題**：未知データに対して**毎回人手でのラベリング**が必要
 
 ---
 
-## 可視化手法の例
+## 人手による解釈のラベリング
 
-- Circuit Tracing: Revealing Computational Graphs in Language Models
-- https://www.anthropic.com/
-- 画像はっつける
+<style scoped>
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+}
+.content {
+  flex: 1;
+}
+.image-container {
+  flex: 0 0 350px;
+  text-align: center;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
 
-- 「ここでニューロンが発火している」という、LLM の判断基準部分が可視化されている。
-- しかし発火に至る判断過程は不明　 → 人間が目で見て、ラベリングしている
-  - → これを自動化できないか？
+<div class="main-content">
+
+<div class="content">
+
+<!-- LLM内部で、あるニューロンが発火した時、その発火がどのような意味を持って、最終的な出力にどんな影響を与えているかを可視化している -->
+
+- LLM の判断理由を出力する取り組みの例（右図）
+- 説明可能 AI を実現するには、ニューロンの発火の意味を説明するラベルを付与する必要がある
+
+- **現状**：ニューロンが発火するデータと発火しないデータの集合を見比べて**人手でラベルを付与**している
+- **課題**：未知のデータセットに対して毎回人手でのラベリングが必要
+</div>
+
+<div class="image-container">
+
+![](images/attribution_graph.png)
+
+ニューロン発火パターンの可視化(anthropic)
+
+</div>
+
+</div>
+
+<div class="cite">
+  引用元: <a href="https://transformer-circuits.pub/2025/attribution-graphs/methods.html">https://transformer-circuits.pub/2025/attribution-graphs/methods.html</a>
+</div>
 
 ---
 
-## 本研究の立場と貢献
+## 自動説明生成の必要性
 
-- 本研究の目的は、**LLM（GPT）による「対比因子生成」というタスクが成り立つかを検証すること**
-  - → 既存研究ではこのタスクの明示的な実施例はなく、LLM が実行可能かも不明
-- 本研究では、二つのテキスト集合の差異を **自然言語で説明させるプロンプト設計**を行い、
-  - GPT による出力の**正確さ・具体性・再現性**を定量的に評価
-- 説明の焦点は、抽象的な推論過程ではなく、**具体的で観察可能なテキスト的差異（対比因子）**
-- この検証は、最終的に目指す「**創発言語の意味理解**」の実現に向けた **中間的ステップ**
+### 現在の説明手法の限界
+
+ニューロンの発火は見えるが、発火の意味付け部分に関しては人手でのラベリングに依存している。
+
+- **根本的問題**：AI 内部の「意味」を人間が理解できる形で自動抽出する仕組みが不十分
+
+### 求められる解決策
+
+→ **人手に依存しない自動説明生成**の仕組みが求められている
+
+---
+
+<!-- 本研究における問題設定を以下のように定義します -->
+
+## 対比因子ラベル生成
+
+### 対比因子
+
+> 「グループ A に特徴的でグループ B には見られないテキスト的傾向」
+
+### 問題設定
+
+**2 つのテキスト集合の意味的な差異を自動で言語化する**
+
+- **グループ A**：特定の特徴（例：ストーリー）に言及しているテキスト集合
+  - 「素晴らしいストーリー」、「プロットが魅力的」
+- **グループ B**：その特徴に言及していないテキストからランダムに選んだ集合
+
+  - 「良いグラフィック」、「値段が少し高い」
+
+- **望まれる対比因子ラベル**：「ストーリー」
+
+---
+
+## 本研究の目的
+
+### **LLM は「データの特徴的差異」を人間が理解できる自然言語で正確に説明できるか？** を検証する
+
+XAI（説明可能 AI）における人手ラベリング依存問題を解決するため、LLM による対比因子自動生成の実現可能性を定量的に検証する。
 
 ---
 
@@ -79,15 +170,9 @@ paginate: true
 
 - GPT にプロンプトを与え、**グループ A/B のレビュー集合**を入力
 - GPT は、**グループ A にのみ特徴的な差異を自然言語で記述**
-- 出力された説明が「対比因子」として妥当かを検証
+- 出力された説明が「対比因子」として妥当かを評価
 
 ---
-
-<style scoped>
-section {
-  font-size: 0.9em;
-}
-</style>
 
 ## 使用プロンプトの構造
 
@@ -107,19 +192,16 @@ section {
 主要な違いを簡潔に回答してください。
 ```
 
-- `examples_section`: Few-shot 例題（0〜3 件）
-- `group_a_text`, `group_b_text`: 入力テキスト群
-- 出力：**自然言語 1 文**（差異の説明）
-
 ---
 
-## 本研究における「対比因子」とは？
+## 評価の流れ
 
-> 「A に含まれて B に含まれないテキスト的特徴」
+1. A/B グループを「特徴（例：価格）」で分離しておく
+   この**特徴を正解ラベル**とする
+2. A/B グループを入力 → LLM 出力（例：「**グループ A は価格に言及している**」）
+3. LLM 出力と正解ラベルを比較して、二つの類似度を 0~1 のスコアとして算出
 
-- 例：「A は価格に関する言及が多い」
-- 抽象的な特徴ではなく、**文中の傾向・パターン**として表現される差異
-- LLM がこれを自力で抽出できるかを評価
+→ どれだけ“意味的に近い”説明が生成できたかを測定
 
 ---
 
@@ -127,19 +209,15 @@ section {
 
 ### 意味的類似度を使った自動評価
 
-- **BLEU スコア**：n-gram ベースの表層一致（語彙レベル）
-- **BERT スコア**：意味空間でのベクトル類似（意味レベル）
+- **BERT（Bidirectional Encoder Representations from Transformers ※1）スコア**
+  - 意味空間でのベクトル類似（意味レベル）
+- **BLEU（Bilingual Evaluation Understudy ※2）スコア**
+  - n-gram ベースの表層一致（語彙レベル）
 
----
-
-## 評価の流れ
-
-1. A/B グループを「ある特徴（例：価格）」で分離しておく
-2. GPT 出力（例：「A は価格に触れている」）と
-   正解ラベル（例：「price」）を比較
-3. BLEU/BERT スコアを算出（0〜1）
-
-→ どれだけ“意味的に近い”説明が生成できたかを測定
+<div class="cite">
+  ※1: Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805. <a href="https://arxiv.org/abs/1810.04805">https://arxiv.org/abs/1810.04805</a><br>
+  ※2: Papineni, K., Roukos, S., Ward, T., & Zhu, W. J. (2002). BLEU: a Method for Automatic Evaluation of Machine Translation. In Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics (ACL), (pp. 311-318). <a href="https://aclanthology.org/P02-1040/">https://aclanthology.org/P02-1040/</a>
+</div>
 
 ---
 
@@ -151,9 +229,9 @@ section {
 
 ## 実験の目的とアプローチ
 
-- **目的**：GPT が「対比因子」をどの程度適切に生成できるかを **定量的に評価**
+- **目的**：LLM が「対比因子」をどの程度適切に生成できるかを **定量的に評価**
 - **手法**：
-  - 各データセットに対して、**異なる条件（変数）**で GPT に説明生成を行わせる
+  - **2 種類のデータセット**に対して、**異なる検証軸**で GPT に説明生成を行わせる
   - 出力を **BERT/BLEU スコア**で評価
 - **検証軸**：
   - Few-shot の効果
@@ -168,14 +246,25 @@ section {
 
 ---
 
-## 実験における変数設定
+## 使用データセット
 
-- **使用データセット**：
+1. SemEval レストランレビュー
 
-  - SemEval レストランレビュー
-  - Steam ゲームレビュー
+   - 例："good food, great price, gread!"
+   - 含有アスペクト："food","price", "service"
 
-- **変数と固定要素**：
+2. Steam ゲームレビュー
+   - 例："great sounds and story I have ever played"
+   - 含有アスペクト："audio","story"
+
+<div class="cite">
+  ※1: Pontiki, M., Galanis, D., Papageorgiou, H., Androutsopoulos, I., Manandhar, S., AL-Smadi, M., ... & Peev, V. (2014). SemEval-2014 Task 4: Aspect Based Sentiment Analysis. In Proceedings of the 8th International Workshop on Semantic Evaluation (SemEval 2014), (pp. 27-35). <a href="https://aclanthology.org/S14-2004/">https://aclanthology.org/S14-2004/</a><br>
+  ※2: ilos-vigil. (2024). Steam Review Aspect Dataset. GitHub. <a href="https://github.com/ilos-vigil/steam-review-aspect-dataset">https://github.com/ilos-vigil/steam-review-aspect-dataset</a> Kaggle. <a href="https://www.kaggle.com/datasets/ilosvigil/steam-review-aspect-dataset">https://www.kaggle.com/datasets/ilosvigil/steam-review-aspect-dataset</a> Licensed under CC BY 4.0.
+</div>
+
+---
+
+## 変数と固定要素
 
 | 項目           | 設定内容                 |
 | -------------- | ------------------------ |
@@ -184,16 +273,42 @@ section {
 | 使用 LLM       | GPT-4o-mini（固定）      |
 | 評価指標       | BERT / BLEU スコア       |
 
-- 各条件の組み合わせで出力を生成し、**説明精度の傾向を比較・分析**
+---
+
+## 実験設計
+
+- Few-Shot 例題数を変えて出力を生成し、**説明精度の傾向を比較・分析**
 
 ---
 
 ## 評価方法の詳細
 
-- 評価指標：BERT（意味）／BLEU（語彙）
-  - 正解ラベルと、LLM によって生成される対比因子の二つのテキストをもとに、0~1 のスコアを算出します
-    - 例:正解ラベル「price」vs GPT「グループ A は価格に言及」→ 0.55
-  - temperature：0.7、seed：42 で、LLM とその他ランダム値を固定しています
+### 評価指標
+
+- **BERT スコア**（意味類似度）
+- **BLEU スコア**（語彙一致度）
+
+### 評価の流れ
+
+1. 正解ラベルと LLM 生成テキストを比較
+2. 類似度を 0~1 で数値化
+3. 高いスコア = より正確な対比因子の抽出
+
+---
+
+## 評価例と実験設定
+
+### 具体的な評価例
+
+- **正解ラベル**：「価格」
+- **GPT 出力**：「グループ A は価格に言及」
+- **結果**：BERT スコア: 0.76、BLEU スコア: 0.00
+
+### 実験設定
+
+- temperature: 0.7
+- seed: 42
+- ランダム値を固定して再現性を確保
 
 ---
 
@@ -201,12 +316,16 @@ section {
 
 ---
 
-## 結果（データセットごとの平均比較）
+## データセットごとの平均値
 
 | データセット | BERT  | BLEU  |
 | ------------ | ----- | ----- |
 | SemEval      | 0.718 | 0.015 |
 | Steam        | 0.672 | 0.014 |
+
+- どちらも BERT が高く BLEU が低い。
+- 単語レベルでの一致などが少ない
+- → 意味的には正解ラベルと LLM の出力が一致している
 
 ---
 
@@ -216,23 +335,43 @@ section {
 
 ---
 
-### Steam レビュー実験：概要と傾向
+### 全体統計
 
-- gameplay や story など語彙が明確なアスペクトは高スコア
-- recommended や suggestion など抽象的な属性は苦手傾向
-- few-shot により「推薦」などの語彙が明確化する例も観察
+| 指標             | 値              |
+| ---------------- | --------------- |
+| 総実験数         | 24 件           |
+| 平均 BERT スコア | 0.5506          |
+| 平均 BLEU スコア | 0.0067          |
+| BERT スコア範囲  | 0.4400 - 0.8240 |
+| BLEU スコア範囲  | 0.0000 - 0.0800 |
+
+- **BERT スコアは中程度**：意味レベルでの一致は確認できるが、抽出の精度はアスペクトに依存
+- **BLEU スコアは極めて低い**：語彙レベルの一致がほとんど発生していない（自由生成傾向）
 
 ---
 
-### Few-shot による性能変化（例：gameplay）
+### Few-shot ごとの平均値
 
-| Shot | BERT  | BLEU  | 説明語彙の例       |
-| ---- | ----- | ----- | ------------------ |
-| 0    | 0.529 | 0.000 | メカニクスへの言及 |
-| 1    | 0.824 | 0.080 | gameplay mechanics |
-| 3    | 0.824 | 0.080 | exploration も追加 |
+| Shot 設定 | BERT   | BLEU   |
+| --------- | ------ | ------ |
+| 0-shot    | 0.5114 | 0.0000 |
+| 1-shot    | 0.5742 | 0.0100 |
+| 3-shot    | 0.5662 | 0.0100 |
 
-- → 例示によって差異を“特定する”語彙にシフト
+- **例題でスコアが向上**：0 → 1-shot でスコアが向上している
+- **例題数の影響は小**：1-shot と 3-shot の差は小さい
+
+---
+
+### Few-shot による性能変化の具体例（例：gameplay）
+
+| Shot | BERT  | BLEU  | 説明語彙の例                                                      |
+| ---- | ----- | ----- | ----------------------------------------------------------------- |
+| 0    | 0.529 | 0.000 | グループ A はゲームの具体的なメカニクスや比較に焦点を当てている。 |
+| 1    | 0.824 | 0.080 | gameplay mechanics and exploration                                |
+| 3    | 0.824 | 0.080 | gameplay mechanics and exploration                                |
+
+- **Few-shot による出力の変化**：例示によって、レビューグループ A と B の差異を**説明する → 特定する**語彙にシフト
 
 ---
 
@@ -261,14 +400,17 @@ section {
 
 ---
 
-## 詳細結果 (PyABSA SemEval レストランレビュー)
+<!-- page:title -->
+
+## PyABSA SemEval レストランレビューの結果概要
+
+---
 
 ### 全体統計
 
 | 指標             | 値            |
 | ---------------- | ------------- |
 | 総実験数         | 12 件         |
-| 成功実験数       | 12 件 (100%)  |
 | 平均 BERT スコア | 0.681         |
 | 平均 BLEU スコア | 0.022         |
 | BERT スコア範囲  | 0.554 - 0.771 |
@@ -292,15 +434,25 @@ section {
 
 ---
 
-## 結果
+## アスペクトごとの比較
 
 以下は food アスペクトでの例：
 
-| Shot   | BERT スコア | BLEU スコア | LLM 応答                                                  | データ分割        |
-| ------ | ----------- | ----------- | --------------------------------------------------------- | ----------------- |
-| 0-shot | 0.554       | 0.000       | "Group A emphasizes staff friendliness and authenticity." | 613 件 vs 4115 件 |
-| 1-shot | 0.743       | 0.033       | "Focus on food quality and dining experience."            | 613 件 vs 4115 件 |
-| 3-shot | 0.771       | 0.080       | "food quality and presentation"                           | 613 件 vs 4115 件 |
+<style scoped>
+table {
+  font-size: 0.8em;
+  margin: 20px auto;
+}
+th, td {
+  padding: 8px 15px;
+}
+</style>
+
+| Shot0,1,3 | BERT スコア | BLEU スコア | LLM 応答                                                  |
+| --------- | ----------- | ----------- | --------------------------------------------------------- |
+| 0-shot    | 0.554       | 0.000       | "Group A emphasizes staff friendliness and authenticity." |
+| 1-shot    | 0.743       | 0.033       | "Focus on food quality and dining experience."            |
+| 3-shot    | 0.771       | 0.080       | "food quality and presentation"                           |
 
 - **0-shot**: food 関連語彙が出現せず
 - **1-shot**: "food quality" が出現開始
@@ -341,7 +493,7 @@ section {
 
 ---
 
-## まとめ
+## SemEval レストランデータセット結果まとめ
 
 | Shot 設定 | 実験数 | 平均 BERT スコア | 平均 BLEU スコア |
 | --------- | ------ | ---------------- | ---------------- |
@@ -353,8 +505,6 @@ section {
 - **3-shot 限界**: 内容充実する一方、焦点散漫化で BERT スコア低下のケースあり
 
 ---
-
-## Steam 実験との比較
 
 ## Steam 実験との比較
 
@@ -455,20 +605,26 @@ section {
 
 ---
 
-## 実用性・汎用性の拡張
+## 評価と改善の方向性 1
 
-- 多言語レビュー・ノイズ含むテキストへの対応
-- → より現実的な応用場面への展開
-- ストリーミング処理でのリアルタイム説明生成
-- → チャットボットなど対話型 AI への応用
+- 評価指標が BERT,BLEU のみで、文脈的な判断ができない
+  - 人手による説明の主観評価（納得性・簡潔性・明瞭さなど）の導入
 
 ---
 
-## 評価と改善の方向性
+## 評価と改善の方向性 2
 
-- 人手による説明の主観評価（納得性・簡潔性・明瞭さなど）の導入
-- 説明の「引用妥当性」「情報源の明示性」などの質的指標
-- → GPT の“ハルシネーション傾向”の抑制に活用
+- データセットがレビュー系のみ
+  - 感情分類など、より抽象度の高いデータセットでの検証
+  - 例：GoEmotion データセットなど
+
+---
+
+## 評価と改善の方向性 3
+
+- ベースライン手法
+  - 基準となる手法が検討できていない（データセットのアスペクト同士のスコアを現在基準としている）
+  - TF-IDF 等、LLM 以外によるアプローチでのベースラインを考える
 
 ---
 
@@ -483,5 +639,3 @@ section {
 <!-- page:title -->
 
 # ご清聴ありがとうございました
-
----
