@@ -1,0 +1,41 @@
+\documentclass[a4paper,twocolumn]{ltjsarticle}
+\usepackage{url}
+\author{清野駿}
+\date{2025年7月8日}
+\title{説明可能AIのための対比因子ラベル生成手法に関する研究}
+\begin{document}
+\maketitle
+
+\section{リサーチクエスチョン}
+「大規模言語モデル（LLM）を活用して、AI内部のニューロン発火条件を説明する対比因子ラベルを自動生成することは可能か、またその生成精度はどの程度達成できるか」
+
+従来のXAI分野では、AIモデル内部のニューロンが発火する条件を理解するために、人間の専門家が手動でラベルを付与する必要があった。本研究では、この人手ラベリングプロセスを自動化し、2つの異なるテキスト集合（ニューロンが発火する場合としない場合）間の差異を自然言語で説明する対比因子ラベルをLLMに生成させることの実現可能性を検証する。
+
+\section{研究の背景と意義}
+AI技術の社会実装が進む中、医療・法務・教育など説明責任が求められる分野において「なぜその判断に至ったのか」という疑問が増加している。特に大規模言語モデルでは創発的な挙動が人間にとって予測困難であり、XAI（説明可能AI）の重要性が高まっている。
+
+現在の説明手法では、Attention Map\cite{bahdanau2014neural}\cite{vaswani2017attention}やSHAP\cite{lundberg2017unified}などの可視化技術が存在するが、AI内部のニューロンの発火条件を人間が理解できる形で説明するには、専門家による手動ラベリングが不可欠である。このプロセスは多大なコストと時間を要し、スケーラビリティに課題がある。本研究は、この人手ラベリングの自動化により、XAI技術の実用性向上と普及促進に貢献する。
+
+\section{研究の新規性・独創性}
+本研究の新規性は、従来人手に依存していたニューロン発火条件のラベリングを「対比因子生成タスク」として定式化し、LLMを活用した自動生成手法を提案する点にある。特に、アスペクト付きレビューデータセットを用いた定量的評価フレームワークの構築により、生成されたラベルの品質をBERTスコアとBLEUスコアで客観的に測定可能とした。
+
+さらに、Few-shot学習を活用したプロンプト設計により、例示の提示回数（0-shot、1-shot、3-shot）が生成精度に与える影響を体系的に分析している。この手法により、SteamゲームレビューとSemEvalレストランレビューという異なるドメインにおいて再現可能な比較実験を実現し、アスペクトの抽象度が対比因子抽出の難易度に与える影響を明らかにした点も独創的である。
+
+\section{関連研究}
+説明可能AI分野では、Lundberg \& Lee\cite{lundberg2017unified}がSHAP（SHapley Additive exPlanations）を提案し、機械学習モデルの予測に対する特徴量の寄与度を定量化した。Attention機構については、Bahdanau et al.\cite{bahdanau2014neural}が機械翻訳における注意機構を提案し、Vaswani et al.\cite{vaswani2017attention}がTransformerアーキテクチャにおけるself-attentionを導入した。また、自然言語処理における対比学習については、Chen et al.\cite{chen2020simple}がSimCLRフレームワークを提案し、対比的な表現学習の有効性を示した。本研究はこれらの先行研究を基に、テキスト集合間の対比因子抽出という新たな応用領域を開拓する。
+
+\begin{thebibliography}{99}
+\bibitem{bahdanau2014neural}
+Bahdanau, D., Cho, K., \& Bengio, Y. (2014). Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473.
+
+\bibitem{lundberg2017unified}
+Lundberg, S. M., \& Lee, S. I. (2017). A unified approach to interpreting model predictions. Advances in neural information processing systems, 30.
+
+\bibitem{vaswani2017attention}
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., \& Polosukhin, I. (2017). Attention is all you need. Advances in Neural Information Processing Systems, 30, 5998--6008.
+
+\bibitem{chen2020simple}
+Chen, T., Kornblith, S., Norouzi, M., \& Hinton, G. (2020). A simple framework for contrastive learning of visual representations. Proceedings of the 37th International Conference on Machine Learning, PMLR 119, 1597--1607.
+\end{thebibliography}
+
+\end{document}
