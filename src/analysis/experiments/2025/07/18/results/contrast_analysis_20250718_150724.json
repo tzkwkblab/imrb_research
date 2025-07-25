@@ -1,0 +1,157 @@
+{
+  "experiment_info": {
+    "timestamp": "20250718_150724",
+    "experiment_name": "contrast_analysis_20250718_150724",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 50,
+      "group_b_count": 50,
+      "examples_count": 1,
+      "output_language": null
+    }
+  },
+  "input": {
+    "group_a": [
+      "The ambience is authentic and relaxing and we have always received attentive and prompt $T$ .",
+      "The $T$ is always great , and the owner walks around to make sure you enjoy .",
+      "The $T$ is a bit slow , but harkens back to my years growing up in Napoli , Italy where things are not rushed and when you sit down for dinner the table is yours all night .",
+      "COMPUTER HAS BEEN AT $T$ MORE THAN IN MY HANDS .",
+      "Its ease of use and the top $T$ from Apple - be it their phone assistance or bellying up to the genius bar - can not be beat .",
+      "While we enjoyed the food , we were highly disappointed by the poor $T$ -LRB- waiter was not quite competent and SLOW service -RRB- and lack of remorse .",
+      "$T$ could be improved but overall this is a place that understands the importance of little things -LRB- the heavy , black , antique-seeming teapot , for one -RRB- in the restaurant experience .",
+      "For the people who want great food plus great $T$ , Roxy is a place to AVOID !",
+      "Granted the space is smaller than most , it is the best $T$ you will find in even the largest of restaurants .",
+      "The $T$ was pretty poor all around , the food was well below average relative to the cost , and outside there is a crazy bum who harasses every customer who leaves the place .",
+      "COMPUTER HAS BEEN AT $T$ MORE THAN IN MY HANDS .",
+      "$T$ was good and so was the atmosphere .",
+      "I highly recommend Cafe St. Bart 's for their food , the ambience and wonderful $T$ .",
+      "$T$ is friendly , prices are good - delivery time was a little slow , but for the way this pizza tastes , I 'm willing to overlook it .",
+      "The food is great , $T$ is ok .",
+      "The place is small and intimate and you may feel a little crowded , but the $T$ is excellent and it 's great for friends out , a romantic date , or a special occassion .",
+      "everything is scrumptious , from the excellent $T$ by cute waitresses , to the extremely lush atmosphere .",
+      "We were also seated promptly at the time of our reservation and the $T$ was very quick and professional .",
+      "Tiny restaurant with very fast $T$ .",
+      "Sony parts reliability and quality of $T$ is recenlty the worst .",
+      "Ever since I bought this laptop , so far I 've experience nothing but constant break downs of the laptop and bad customer services I received over the phone with $T$ hotlines .",
+      "The food really is n't very good and the $T$ is terrible .",
+      "$T$ was prompt , friendly and great .",
+      "Decor is nice though $T$ can be spotty .",
+      "Great food , great prices , great $T$ .",
+      "Going to bring it to $T$ today .",
+      "I HAVE NEVER HAD A BAD MEAL -LRB- OR BAD $T$ -RRB- @ PIGALLE .",
+      "$T$ was also very good .",
+      "The food is delicious and beautifully prepared along with the friendly and personable $T$ .",
+      "The $T$ was fast and friendly and the food was very tasty and they had the best hot sauce to add to your meals .",
+      "Wo n't or Ca n't is not in the $T$ directory .",
+      "The drinks are a saving grace , but $T$ , please , get over yourselves .",
+      "Wonderful menu , warm inviting ambiance , great $T$ the FOOD keeps me coming back !",
+      "The $T$ is descent even when this small place is packed .",
+      "THE $T$ IS PERFECT TOO NOTHING WRONG IN THIS ITALIAN/FRENCH RESTAURANT",
+      "For the people who want great food plus great $T$ , Roxy is a place to AVOID !",
+      "Overall , this is a nice place to take a few friends to hang out at and the $T$ is excellent .",
+      "thanks for great $T$ and shipping !",
+      "Everything is always cooked to perfection , the $T$ is excellent , the decor cool and understated .",
+      "The $T$ was impeccable and unobtrusive -- the staff knows what they are there to do -- to know their menu , present your meal , and attend to your needs .",
+      "Whenever you need a Sushi fix , Mizu will be there with quality fish and great $T$ .",
+      "Quick and friendly $T$ .",
+      "We had a birthday party here recently and the food and $T$ was amazing .",
+      "I have been coming here for years and have nothing but good things to say about the $T$ and the great staff at La Lanterna .",
+      "The $T$ was bad , the food took to forever to come , we sat on the upper level .",
+      "The $T$ is friendly , if not the most prompt in the world , the food is great , and the prices , while not cheap , wo n't put your wallet out of commission .",
+      "The food was mediocre at best but it was the horrible $T$ that made me vow never to go back .",
+      "they did n't disappoint , $T$ from the second i arrived at the door was extremely pleasant and attentive with almost one server per table .",
+      "My problem was with $T$ .",
+      "We visited Bread Bar during January restaurant week and were so pleased with the menu selections and $T$ ."
+    ],
+    "group_b": [
+      "tons of bloatware and junk $T$ .",
+      "BUt their best dish is thh Thai spiced curry noodles with shrimp - a $T$ that would cost $ 23.95 is most places , but it is $ 16 here .",
+      "Its pretty fast and does not have hiccups while I am using it for $T$ , uploading photos , watching movies -LRB- 720p -RRB- on occasion and creating presentations .",
+      "It 's fast , light , and simple to $T$ .",
+      "super fast $T$ and really nice graphics card . .",
+      "The $T$ is a bit too small for live music , so on jazz nights , it can be loud and cramped .",
+      "I love the $T$ and the preloaded software .",
+      "I understand I should call $T$ about any variables -LRB- which is my purpose of writing this con -RRB- as variables could be a bigger future problem .",
+      "I was sorly disapointed to discover that HP -LRB- what I thought was a reputable company -RRB- would n't honor the warrenty when the $T$ fell apart .",
+      "As always we had a great $T$ while we waited .",
+      "If you 're not familiar with the $T$ , you may encounter problems ordering here and be sure to bring plenty of cash with you as they do n't accept credit cards .",
+      "The $T$ is tasty and portion sizes are appropriate .",
+      "I REALLY ENJOYED THE $T$ PUT ON BY THE ACTORS .",
+      "There is also very limited seating and there can be a substantial wait in getting $T$ at peak times .",
+      "It ' only open for $T$ but the food is so good !",
+      "My $T$ would not recognize Windows 7 and I could n't get online to find out why .",
+      "Its good to go there for drinks if you do n't want to get drunk because you 'll be lucky if you can get one $T$ an hour the service is so bad .",
+      "Great $T$ , whether looking for a couple of drinks or quiet dinner .",
+      "Despite the claims of the Apple apologists -LRB- a vice of which I am recently myself reformed -RRB- the $T$ of Mac laptops are NO different from PCs ' at this point .",
+      "I like those programs better than $T$ and you can save your files to be completely compatible with the Office programs as well .",
+      "Finally , the biggest problem has been $T$ .",
+      "First , the waiter who served us neglected to fill us in on the $T$ , which I would have chosen had I known about them .",
+      "I 've had it for about 2 months now and found no issues with software or $T$ .",
+      "For the $T$ , a little too expensive .",
+      "The Macbook arrived in a nice twin packing and sealed in the box , all the $T$ works great .",
+      "I always get the $T$ and the beef is always fresh .",
+      "$T$ is reasonable size .",
+      "I am not a vegetarian but , almost all the $T$ were great .",
+      "Needs Power and $T$ to Plug in back instead of side , In the way of operating a mouse in small area .",
+      "Now $T$ is broken , have to wait for a new one .",
+      "The $T$ was excellent - authentic Italian cuisine made absolutely fresh .",
+      "Fan only comes on when you are $T$ .",
+      "I had my IWORKS , $T$ , Email , MS Office , network and printers set up and completely working perfectly within an hour .",
+      "I believe that the quality of a mac is worth the $T$ .",
+      "We have never had any problems with charging the meal or the tip , and the $T$ was delivered quickly , but we live only a few minutes walk from them .",
+      "One more tip , please purchase this model and get a $T$ to save you $ 1Negative",
+      "$T$ is ok even though sometimes there 's alot of people .",
+      "But to be honest , I do n't use my computer for anything like graphics editing and complex data analysis and $T$ .",
+      "Overall , not worth the $T$ .",
+      "I love the Little Pie Company as much as anyone else who has written reviews , but must discourage anyone from visiting the Grand Central location due to their RUDE service from two $T$ .",
+      "The $T$ is very intuitive , so much so that I never want to use buttons to click again !",
+      "If it 's just a quick $T$ at the bar -LRB- which I recommend Jeffery 's -RRB- or a mind blowing Roast Chicken , go to Village !",
+      "The $T$ is a little tight and on a cold day , the seating by the entranceway can be pretty drafty .",
+      "Our agreed favorite is the orrechiete with sausage and chicken -LRB- usually the waiters are kind enough to split the $T$ in half so you get to sample both meats -RRB- .",
+      "Average $T$ thats been courted by a LOT of hype .",
+      "$T$ is fast too .",
+      "The food 's dazzling $T$ overwhelm the palate , truly embracing the beauty of authentic Thai cuisine .",
+      "Monday nights are a bargain at the $ 28 $T$ - this includes a three course meal plus * three * glasses of wine paired with each course .",
+      "All-time favorites include the Big Mac , Chicken McNuggets , $T$ and McDonald 's famous french fries ; lighter options like entree-sized salads are also available .",
+      "Reasonably priced with very fresh $T$ ."
+    ],
+    "correct_answer": "service related characteristics",
+    "examples": [
+      {
+        "group_a": [
+          "The waiter was very helpful and friendly"
+        ],
+        "group_b": [
+          "The atmosphere was cozy and romantic"
+        ],
+        "answer": "staff behavior and service quality"
+      }
+    ]
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【例題1】\nグループA: [\"The waiter was very helpful and friendly\"]\nグループB: [\"The atmosphere was cozy and romantic\"]\n回答: staff behavior and service quality\n\n【グループA】\n- The ambience is authentic and relaxing and we have always received attentive and prompt $T$ .\n- The $T$ is always great , and the owner walks around to make sure you enjoy .\n- The $T$ is a bit slow , but harkens back to my years growing up in Napoli , Italy where things are not rushed and when you sit down for dinner the table is yours all night .\n- COMPUTER HAS BEEN AT $T$ MORE THAN IN MY HANDS .\n- Its ease of use and the top $T$ from Apple - be it their phone assistance or bellying up to the genius bar - can not be beat .\n- While we enjoyed the food , we were highly disappointed by the poor $T$ -LRB- waiter was not quite competent and SLOW service -RRB- and lack of remorse .\n- $T$ could be improved but overall this is a place that understands the importance of little things -LRB- the heavy , black , antique-seeming teapot , for one -RRB- in the restaurant experience .\n- For the people who want great food plus great $T$ , Roxy is a place to AVOID !\n- Granted the space is smaller than most , it is the best $T$ you will find in even the largest of restaurants .\n- The $T$ was pretty poor all around , the food was well below average relative to the cost , and outside there is a crazy bum who harasses every customer who leaves the place .\n- COMPUTER HAS BEEN AT $T$ MORE THAN IN MY HANDS .\n- $T$ was good and so was the atmosphere .\n- I highly recommend Cafe St. Bart 's for their food , the ambience and wonderful $T$ .\n- $T$ is friendly , prices are good - delivery time was a little slow , but for the way this pizza tastes , I 'm willing to overlook it .\n- The food is great , $T$ is ok .\n- The place is small and intimate and you may feel a little crowded , but the $T$ is excellent and it 's great for friends out , a romantic date , or a special occassion .\n- everything is scrumptious , from the excellent $T$ by cute waitresses , to the extremely lush atmosphere .\n- We were also seated promptly at the time of our reservation and the $T$ was very quick and professional .\n- Tiny restaurant with very fast $T$ .\n- Sony parts reliability and quality of $T$ is recenlty the worst .\n- Ever since I bought this laptop , so far I 've experience nothing but constant break downs of the laptop and bad customer services I received over the phone with $T$ hotlines .\n- The food really is n't very good and the $T$ is terrible .\n- $T$ was prompt , friendly and great .\n- Decor is nice though $T$ can be spotty .\n- Great food , great prices , great $T$ .\n- Going to bring it to $T$ today .\n- I HAVE NEVER HAD A BAD MEAL -LRB- OR BAD $T$ -RRB- @ PIGALLE .\n- $T$ was also very good .\n- The food is delicious and beautifully prepared along with the friendly and personable $T$ .\n- The $T$ was fast and friendly and the food was very tasty and they had the best hot sauce to add to your meals .\n- Wo n't or Ca n't is not in the $T$ directory .\n- The drinks are a saving grace , but $T$ , please , get over yourselves .\n- Wonderful menu , warm inviting ambiance , great $T$ the FOOD keeps me coming back !\n- The $T$ is descent even when this small place is packed .\n- THE $T$ IS PERFECT TOO NOTHING WRONG IN THIS ITALIAN/FRENCH RESTAURANT\n- For the people who want great food plus great $T$ , Roxy is a place to AVOID !\n- Overall , this is a nice place to take a few friends to hang out at and the $T$ is excellent .\n- thanks for great $T$ and shipping !\n- Everything is always cooked to perfection , the $T$ is excellent , the decor cool and understated .\n- The $T$ was impeccable and unobtrusive -- the staff knows what they are there to do -- to know their menu , present your meal , and attend to your needs .\n- Whenever you need a Sushi fix , Mizu will be there with quality fish and great $T$ .\n- Quick and friendly $T$ .\n- We had a birthday party here recently and the food and $T$ was amazing .\n- I have been coming here for years and have nothing but good things to say about the $T$ and the great staff at La Lanterna .\n- The $T$ was bad , the food took to forever to come , we sat on the upper level .\n- The $T$ is friendly , if not the most prompt in the world , the food is great , and the prices , while not cheap , wo n't put your wallet out of commission .\n- The food was mediocre at best but it was the horrible $T$ that made me vow never to go back .\n- they did n't disappoint , $T$ from the second i arrived at the door was extremely pleasant and attentive with almost one server per table .\n- My problem was with $T$ .\n- We visited Bread Bar during January restaurant week and were so pleased with the menu selections and $T$ .\n\n【グループB】\n- tons of bloatware and junk $T$ .\n- BUt their best dish is thh Thai spiced curry noodles with shrimp - a $T$ that would cost $ 23.95 is most places , but it is $ 16 here .\n- Its pretty fast and does not have hiccups while I am using it for $T$ , uploading photos , watching movies -LRB- 720p -RRB- on occasion and creating presentations .\n- It 's fast , light , and simple to $T$ .\n- super fast $T$ and really nice graphics card . .\n- The $T$ is a bit too small for live music , so on jazz nights , it can be loud and cramped .\n- I love the $T$ and the preloaded software .\n- I understand I should call $T$ about any variables -LRB- which is my purpose of writing this con -RRB- as variables could be a bigger future problem .\n- I was sorly disapointed to discover that HP -LRB- what I thought was a reputable company -RRB- would n't honor the warrenty when the $T$ fell apart .\n- As always we had a great $T$ while we waited .\n- If you 're not familiar with the $T$ , you may encounter problems ordering here and be sure to bring plenty of cash with you as they do n't accept credit cards .\n- The $T$ is tasty and portion sizes are appropriate .\n- I REALLY ENJOYED THE $T$ PUT ON BY THE ACTORS .\n- There is also very limited seating and there can be a substantial wait in getting $T$ at peak times .\n- It ' only open for $T$ but the food is so good !\n- My $T$ would not recognize Windows 7 and I could n't get online to find out why .\n- Its good to go there for drinks if you do n't want to get drunk because you 'll be lucky if you can get one $T$ an hour the service is so bad .\n- Great $T$ , whether looking for a couple of drinks or quiet dinner .\n- Despite the claims of the Apple apologists -LRB- a vice of which I am recently myself reformed -RRB- the $T$ of Mac laptops are NO different from PCs ' at this point .\n- I like those programs better than $T$ and you can save your files to be completely compatible with the Office programs as well .\n- Finally , the biggest problem has been $T$ .\n- First , the waiter who served us neglected to fill us in on the $T$ , which I would have chosen had I known about them .\n- I 've had it for about 2 months now and found no issues with software or $T$ .\n- For the $T$ , a little too expensive .\n- The Macbook arrived in a nice twin packing and sealed in the box , all the $T$ works great .\n- I always get the $T$ and the beef is always fresh .\n- $T$ is reasonable size .\n- I am not a vegetarian but , almost all the $T$ were great .\n- Needs Power and $T$ to Plug in back instead of side , In the way of operating a mouse in small area .\n- Now $T$ is broken , have to wait for a new one .\n- The $T$ was excellent - authentic Italian cuisine made absolutely fresh .\n- Fan only comes on when you are $T$ .\n- I had my IWORKS , $T$ , Email , MS Office , network and printers set up and completely working perfectly within an hour .\n- I believe that the quality of a mac is worth the $T$ .\n- We have never had any problems with charging the meal or the tip , and the $T$ was delivered quickly , but we live only a few minutes walk from them .\n- One more tip , please purchase this model and get a $T$ to save you $ 1Negative\n- $T$ is ok even though sometimes there 's alot of people .\n- But to be honest , I do n't use my computer for anything like graphics editing and complex data analysis and $T$ .\n- Overall , not worth the $T$ .\n- I love the Little Pie Company as much as anyone else who has written reviews , but must discourage anyone from visiting the Grand Central location due to their RUDE service from two $T$ .\n- The $T$ is very intuitive , so much so that I never want to use buttons to click again !\n- If it 's just a quick $T$ at the bar -LRB- which I recommend Jeffery 's -RRB- or a mind blowing Roast Chicken , go to Village !\n- The $T$ is a little tight and on a cold day , the seating by the entranceway can be pretty drafty .\n- Our agreed favorite is the orrechiete with sausage and chicken -LRB- usually the waiters are kind enough to split the $T$ in half so you get to sample both meats -RRB- .\n- Average $T$ thats been courted by a LOT of hype .\n- $T$ is fast too .\n- The food 's dazzling $T$ overwhelm the palate , truly embracing the beauty of authentic Thai cuisine .\n- Monday nights are a bargain at the $ 28 $T$ - this includes a three course meal plus * three * glasses of wine paired with each course .\n- All-time favorites include the Big Mac , Chicken McNuggets , $T$ and McDonald 's famous french fries ; lighter options like entree-sized salads are also available .\n- Reasonably priced with very fresh $T$ .\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Service quality and staff interaction"
+  },
+  "evaluation": {
+    "bert_score": 0.7925622463226318,
+    "bleu_score": 0.05372849659117709,
+    "similarity_scores": {
+      "semantic_similarity": 0.7925622463226318,
+      "lexical_similarity": 0.05372849659117709
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "bert_level": "medium",
+      "bleu_level": "low",
+      "overall_quality": "fair",
+      "comments": "BERT:medium, BLEU:low → 総合:fair"
+    },
+    "processing_time": "20250718_150724"
+  }
+}

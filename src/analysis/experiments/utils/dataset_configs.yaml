@@ -1,0 +1,78 @@
+# データセット設定ファイル
+
+datasets:
+  steam:
+    path: "/Users/seinoshun/imrb_research/data/external/steam-review-aspect-dataset/current"
+    domain: "gaming"
+    language: "en"
+    aspects:
+      - "recommended"
+      - "story"
+      - "gameplay"
+      - "visual"
+      - "audio"
+      - "technical"
+      - "price"
+      - "suggestion"
+
+  semeval:
+    path: "/Users/seinoshun/imrb_research/data/external/absa-review-dataset/pyabsa-integrated/current"
+    language: "en"
+    domains:
+      restaurant:
+        aspects: ["food", "service", "atmosphere", "price"]
+      laptop:
+        aspects: ["battery", "screen", "keyboard", "performance"]
+
+  amazon:
+    path: "/Users/seinoshun/imrb_research/data/external/amazon-product-reviews/kaggle-bittlingmayer/current"
+    domain: "e-commerce"
+    language: "en"
+    aspects: ["quality", "price", "delivery", "service", "product"]
+
+# 実験デフォルト設定
+experiment_defaults:
+  group_size: 300
+  shot_settings: [0, 1, 3]
+  random_seed: 42
+  split_types: ["aspect_vs_others", "binary_label"]
+
+# Few-shot例題テンプレート
+example_templates:
+  steam:
+    gameplay:
+      - group_a: ["The gameplay mechanics are intuitive and engaging"]
+        group_b: ["Beautiful graphics and stunning visuals"]
+        answer: "gameplay mechanics and controls"
+    story:
+      - group_a: ["Compelling storyline with great character development"]
+        group_b: ["Excellent sound effects and music"]
+        answer: "narrative and story elements"
+    visual:
+      - group_a: ["Stunning graphics and beautiful art style"]
+        group_b: ["Great gameplay but confusing controls"]
+        answer: "visual presentation and graphics quality"
+
+  semeval:
+    food:
+      - group_a: ["The pasta was perfectly cooked and delicious"]
+        group_b: ["The service was excellent and attentive"]
+        answer: "food quality and taste descriptions"
+    service:
+      - group_a: ["The waiter was very helpful and friendly"]
+        group_b: ["The atmosphere was cozy and romantic"]
+        answer: "staff behavior and service quality"
+    atmosphere:
+      - group_a: ["The ambiance was romantic with soft lighting"]
+        group_b: ["The food was excellent but overpriced"]
+        answer: "environmental and mood descriptions"
+    price:
+      - group_a: ["Great value for money, very affordable prices"]
+        group_b: ["The atmosphere was cozy and the service was fast"]
+        answer: "cost and value evaluations"
+
+  amazon:
+    product:
+      - group_a: ["This product exceeded my expectations"]
+        group_b: ["Poor quality and disappointing purchase"]
+        answer: "product quality and satisfaction"

@@ -1,0 +1,45 @@
+{
+  "experiment_info": {
+    "timestamp": "20250718_150742",
+    "experiment_name": "cross_amazon_price",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 0,
+      "group_b_count": 0,
+      "examples_count": 0,
+      "output_language": null
+    }
+  },
+  "input": {
+    "group_a": [],
+    "group_b": [],
+    "correct_answer": "price related characteristics",
+    "examples": []
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n\n\n【グループB】\n\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "グループA uses unique idiomatic expressions and cultural references."
+  },
+  "evaluation": {
+    "bert_score": 0.544636607170105,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.544636607170105,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "bert_level": "low",
+      "bleu_level": "low",
+      "overall_quality": "poor",
+      "comments": "BERT:low, BLEU:low → 総合:poor"
+    },
+    "processing_time": "20250718_150742"
+  }
+}
