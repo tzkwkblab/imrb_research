@@ -86,3 +86,8 @@ results = analyzer.analyze_batch(
 - OpenAI API キー必須
 - BERT モデル初回読み込みで約 500MB 使用
 - max_tokens 調整で応答長制御
+
+## 関連ドキュメント
+
+- [DatasetManager 使い方ガイド](./dataset-manager-guide.md): データセット統一管理ツール
+- [リファクタリングパターン集](./refactoring-patterns.md): 大規模リファクタリングの設計パターン
