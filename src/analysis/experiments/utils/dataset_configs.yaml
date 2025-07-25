@@ -30,6 +30,33 @@ datasets:
     language: "en"
     aspects: ["quality", "price", "delivery", "service", "product"]
 
+# 設定検証ルール
+validation:
+  required_files: ["train.csv", "test.csv", "train.ft.txt", "test.ft.txt"]
+  min_samples: 100
+  supported_languages: ["en", "ja", "zh", "fr", "de", "es"]
+
+# ローダー設定
+loaders:
+  steam:
+    class: "SteamDatasetLoader"
+    module: "loaders.steam_loader"
+  semeval:
+    class: "SemEvalDatasetLoader"
+    module: "loaders.semeval_loader"
+  amazon:
+    class: "AmazonDatasetLoader"
+    module: "loaders.amazon_loader"
+
+# 分割戦略設定
+splitters:
+  aspect_vs_others:
+    class: "AspectSplitter"
+    module: "splitters.aspect_splitter"
+  binary_label:
+    class: "BinarySplitter"
+    module: "splitters.binary_splitter"
+
 # 実験デフォルト設定
 experiment_defaults:
   group_size: 300
