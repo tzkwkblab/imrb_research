@@ -33,20 +33,24 @@ from pathlib import Path
 # 必要なモジュールをインポート
 from prompt_contrast_factor import generate_contrast_factor_prompt
 from LLM.llm_factory import LLMFactory
-from get_score import calculate_scores
+from get_score import calculate_scores, calculate_scores_with_descriptions
+from aspect_description_manager import AspectDescriptionManager
 
 
 class ContrastFactorAnalyzer:
     """対比因子分析統合クラス"""
     
-    def __init__(self, debug: bool = False):
+    def __init__(self, debug: bool = False, use_aspect_descriptions: bool = False):
         """
         初期化
         Args:
             debug: デバッグモードの有効/無効
+            use_aspect_descriptions: アスペクト説明文を使用するかどうか
         """
         self.debug = debug
+        self.use_aspect_descriptions = use_aspect_descriptions
         self.llm_client = None
+        self.aspect_manager = None
     
     def _get_llm_client(self):
         """LLMクライアントの遅延初期化"""
@@ -62,7 +66,8 @@ class ContrastFactorAnalyzer:
         output_dir: str,
         examples: Optional[List[Dict]] = None,
         output_language: Optional[str] = None,
-        experiment_name: Optional[str] = None
+        experiment_name: Optional[str] = None,
+        dataset_path: Optional[str] = None
     ) -> Dict:
         """
         対比因子分析を実行
@@ -75,6 +80,7 @@ class ContrastFactorAnalyzer:
             examples: Few-shot用例題リスト
             output_language: 出力言語
             experiment_name: 実験名（ファイル名用）
+            dataset_path: データセットパス（アスペクト説明文使用時）
             
         Returns:
             分析結果辞書
@@ -84,6 +90,13 @@ class ContrastFactorAnalyzer:
             print(f"[DEBUG] グループA: {len(group_a)}件")
             print(f"[DEBUG] グループB: {len(group_b)}件")
             print(f"[DEBUG] 正解: {correct_answer}")
+            print(f"[DEBUG] アスペクト説明文使用: {self.use_aspect_descriptions}")
+        
+        # アスペクト説明文管理クラス初期化
+        if self.use_aspect_descriptions and dataset_path:
+            self.aspect_manager = AspectDescriptionManager(dataset_path)
+            if self.debug:
+                print(f"[DEBUG] アスペクト説明文読み込み: {self.aspect_manager.has_descriptions()}")
         
         # タイムスタンプ生成
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -120,7 +133,14 @@ class ContrastFactorAnalyzer:
         if self.debug:
             print(f"[DEBUG] Step 3: スコア計算")
         
-        bert_score, bleu_score = calculate_scores(correct_answer, llm_response)
+        if self.use_aspect_descriptions and self.aspect_manager:
+            bert_score, bleu_score = calculate_scores_with_descriptions(
+                correct_answer, llm_response, self.aspect_manager, True
+            )
+            if self.debug:
+                print(f"[DEBUG] 説明文使用: {self.aspect_manager.get_description(correct_answer)}")
+        else:
+            bert_score, bleu_score = calculate_scores(correct_answer, llm_response)
         
         if self.debug:
             print(f"[DEBUG] BERTスコア: {bert_score:.4f}")

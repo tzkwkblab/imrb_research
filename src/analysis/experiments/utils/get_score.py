@@ -152,6 +152,31 @@ def calculate_one_to_many(reference_text: str, candidate_texts: List[str]) -> Li
     return calculate_scores_batch(pairs)
 
 
+def calculate_scores_with_descriptions(
+    text_a: str, 
+    text_b: str, 
+    aspect_manager=None,
+    use_descriptions: bool = False
+) -> Tuple[float, float]:
+    """
+    アスペクト説明文オプション付きスコア計算
+    
+    Args:
+        text_a: テキストA（通常はアスペクト名）
+        text_b: テキストB（LLM応答）
+        aspect_manager: アスペクト説明文管理クラス
+        use_descriptions: 説明文を使用するかどうか
+        
+    Returns:
+        (BERTスコア, BLEUスコア) のタプル
+    """
+    if use_descriptions and aspect_manager and aspect_manager.has_descriptions():
+        # アスペクト名を説明文に変換
+        text_a = aspect_manager.get_description(text_a)
+    
+    return calculate_scores(text_a, text_b)
+
+
 def main():
     """テスト"""
     print("=== 単一比較テスト ===")

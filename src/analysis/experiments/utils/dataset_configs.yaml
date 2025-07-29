@@ -63,6 +63,7 @@ experiment_defaults:
   shot_settings: [0, 1, 3]
   random_seed: 42
   split_types: ["aspect_vs_others", "binary_label"]
+  use_aspect_descriptions: false # アスペクト説明文使用オプション
 
 # Few-shot例題テンプレート
 example_templates:
