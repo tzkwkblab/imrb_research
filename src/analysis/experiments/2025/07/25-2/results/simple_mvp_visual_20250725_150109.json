@@ -1,0 +1,21 @@
+{
+  "experiment_info": {
+    "timestamp": "20250725_150109",
+    "dataset": "steam",
+    "aspect": "visual",
+    "group_size": 100,
+    "version": "MVP-1.0-Simple",
+    "note": "Simplified MVP with mock data"
+  },
+  "results": {
+    "bert_score": 0.6,
+    "bleu_score": 0.4,
+    "similarity_score": 0.23529411764705882,
+    "llm_response": "Analysis shows positive reviews emphasize quality (2 positive indicators) while negative reviews focus on problems (2 negative indicators).",
+    "correct_answer": "Visual quality differentiates positive from negative reviews"
+  },
+  "summary": {
+    "success": true,
+    "quality": "fair"
+  }
+}
