@@ -23,6 +23,11 @@ import sys
 import os
 import yaml
 
+# confディレクトリを追加
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'conf'))
+from experiment_config import get_openai_params
+
+
 def _load_prompt_config():
     """プロンプト設定をYAMLから読み込み"""
     config_path = os.path.join(os.path.dirname(__file__), '..', 'conf', 'paramaters.yml')
@@ -72,11 +77,7 @@ def generate_contrast_factor_prompt(
         (プロンプト文字列, モデル設定辞書)
     """
     # 設定読み込み
-    model_config = {
-        'model': 'gpt-4o-mini',
-        'temperature': 0.7,
-        'max_tokens': 1000
-    }
+    model_config = get_openai_params()
     prompt_config = _load_prompt_config()
     
     # デフォルト言語設定

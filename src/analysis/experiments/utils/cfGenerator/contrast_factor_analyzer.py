@@ -32,16 +32,16 @@ from pathlib import Path
 
 # 必要なモジュールをインポート
 try:
-    from prompt_contrast_factor import generate_contrast_factor_prompt
+    from analysis.experiments.utils.promptGen.prompt_contrast_factor import generate_contrast_factor_prompt
     from LLM.llm_factory import LLMFactory
-    from get_score import calculate_scores, calculate_scores_with_descriptions
-    from aspect_description_manager import AspectDescriptionManager
+    from analysis.experiments.utils.scores.get_score import calculate_scores, calculate_scores_with_descriptions
+    from analysis.experiments.utils.scores.aspect_description_manager import AspectDescriptionManager
 except ImportError:
     # フォールバック: 絶対インポート
-    from .prompt_contrast_factor import generate_contrast_factor_prompt
-    from .LLM.llm_factory import LLMFactory
-    from .get_score import calculate_scores, calculate_scores_with_descriptions
-    from .aspect_description_manager import AspectDescriptionManager
+    from ..promptGen.prompt_contrast_factor import generate_contrast_factor_prompt
+    from ..LLM.llm_factory import LLMFactory
+    from ..scores.get_score import calculate_scores, calculate_scores_with_descriptions
+    from ..scores.aspect_description_manager import AspectDescriptionManager
 
 
 class ContrastFactorAnalyzer:

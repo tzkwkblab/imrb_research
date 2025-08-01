@@ -23,19 +23,19 @@ from datetime import datetime
 
 # 新しいモジュール構成をインポート
 try:
-    from .config import DatasetConfig, ConfigValidator, ValidationError
-    from .loaders import (
+    from ..config import DatasetConfig, ConfigValidator, ValidationError
+    from ..loaders import (
         BaseDatasetLoader, UnifiedRecord,
         SteamDatasetLoader, SemEvalDatasetLoader, AmazonDatasetLoader
     )
-    from .splitters import (
+    from ..splitters import (
         BaseSplitter, BinarySplitResult, SplitOptions,
         AspectSplitter, BinarySplitter
     )
     
     # 後方互換性のため元のクラスもエクスポート
-    from .loaders.base import UnifiedRecord
-    from .splitters.base import BinarySplitResult
+    from ..loaders.base import UnifiedRecord
+    from ..splitters.base import BinarySplitResult
 except ImportError:
     # フォールバック: 絶対インポート
     from config import DatasetConfig, ConfigValidator, ValidationError

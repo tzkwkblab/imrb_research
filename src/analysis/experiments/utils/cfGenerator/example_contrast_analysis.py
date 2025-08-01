@@ -20,7 +20,7 @@ print(f"スコア: BERT={result['evaluation']['bert_score']:.3f}")
 
 import os
 from dotenv import load_dotenv
-from contrast_factor_analyzer import ContrastFactorAnalyzer
+from analysis.experiments.utils.cfGenerator.contrast_factor_analyzer import ContrastFactorAnalyzer
 
 # 環境変数読み込み
 load_dotenv()
