@@ -1,15 +1,12 @@
-"""
-データ分割戦略モジュール
-"""
-
+# splitters パッケージ
 from .base import BaseSplitter, BinarySplitResult, SplitOptions
 from .aspect_splitter import AspectSplitter
 from .binary_splitter import BinarySplitter
 
 __all__ = [
-    'BaseSplitter',
-    'BinarySplitResult',
+    'BaseSplitter', 
+    'BinarySplitResult', 
     'SplitOptions',
-    'AspectSplitter',
+    'AspectSplitter', 
     'BinarySplitter'
-] 
+]

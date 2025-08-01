@@ -3,8 +3,8 @@
 """
 
 from pathlib import Path
-from typing import List, Optional
-from .dataset_config import DatasetConfig, DatasetInfo
+from typing import List, Optional, Dict, Any
+from .dataset_config import DatasetConfig
 
 
 class ValidationError(Exception):
@@ -43,12 +43,12 @@ class ConfigValidator:
         warnings = []
         
         try:
-            dataset_info = self.config.get_dataset_info(dataset_id)
+            dataset_info = self.config.get_dataset_config(dataset_id)
         except ValueError as e:
             raise ValidationError(f"データセット情報取得失敗: {e}")
         
         # パス存在確認
-        path_warnings = self._validate_path(dataset_info.path)
+        path_warnings = self._validate_path(dataset_info.get('path', ''))
         warnings.extend(path_warnings)
         
         # アスペクト検証
@@ -56,7 +56,7 @@ class ConfigValidator:
         warnings.extend(aspect_warnings)
         
         # 言語設定検証
-        language_warnings = self._validate_language(dataset_info.language)
+        language_warnings = self._validate_language(dataset_info.get('language', 'en'))
         warnings.extend(language_warnings)
         
         return warnings
@@ -80,21 +80,21 @@ class ConfigValidator:
         
         return warnings
     
-    def _validate_aspects(self, dataset_info: DatasetInfo) -> List[str]:
+    def _validate_aspects(self, dataset_info: Dict[str, Any]) -> List[str]:
         """アスペクト設定検証"""
         warnings = []
         
-        if not dataset_info.aspects and not dataset_info.domains:
+        if not dataset_info.get('aspects') and not dataset_info.get('domains'):
             warnings.append("アスペクト情報が定義されていません")
         
-        if dataset_info.aspects:
-            if len(dataset_info.aspects) == 0:
+        if dataset_info.get('aspects'):
+            if len(dataset_info['aspects']) == 0:
                 warnings.append("アスペクトリストが空です")
-            elif len(set(dataset_info.aspects)) != len(dataset_info.aspects):
+            elif len(set(dataset_info['aspects'])) != len(dataset_info['aspects']):
                 warnings.append("重複するアスペクトがあります")
         
-        if dataset_info.domains:
-            for domain, domain_data in dataset_info.domains.items():
+        if dataset_info.get('domains'):
+            for domain, domain_data in dataset_info['domains'].items():
                 if 'aspects' not in domain_data:
                     warnings.append(f"ドメイン '{domain}' にアスペクト定義がありません")
                 elif len(domain_data['aspects']) == 0:
@@ -115,8 +115,12 @@ class ConfigValidator:
     def check_dataset_accessibility(self, dataset_id: str) -> bool:
         """データセットアクセス可能性チェック"""
         try:
-            dataset_info = self.config.get_dataset_info(dataset_id)
-            path_obj = Path(dataset_info.path)
+            dataset_info = self.config.get_dataset_config(dataset_id)
+            path = dataset_info.get('path', '')
+            if not path:
+                return False
+                
+            path_obj = Path(path)
             
             # パス存在確認
             if not path_obj.exists():

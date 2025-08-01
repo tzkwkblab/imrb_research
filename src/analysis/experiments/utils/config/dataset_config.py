@@ -1,118 +1,147 @@
+#!/usr/bin/env python3
 """
 データセット設定管理クラス
 """
 
 import yaml
 from pathlib import Path
-from typing import Dict, List, Optional, Union, Any
-from dataclasses import dataclass, field
-
-
-@dataclass
-class DatasetInfo:
-    """個別データセット情報"""
-    path: str
-    domain: Optional[str] = None
-    language: str = "en"
-    aspects: Optional[List[str]] = None
-    domains: Optional[Dict[str, Dict[str, List[str]]]] = None
+from typing import Dict, List, Optional, Any
+from dataclasses import dataclass
 
 
 @dataclass
 class ExperimentDefaults:
     """実験デフォルト設定"""
     group_size: int = 300
-    shot_settings: List[int] = field(default_factory=lambda: [0, 1, 3])
+    shot_settings: List[int] = None
     random_seed: int = 42
-    split_types: List[str] = field(default_factory=lambda: ["aspect_vs_others", "binary_label"])
-
-
-@dataclass
-class ExampleTemplate:
-    """Few-shot例題テンプレート"""
-    group_a: List[str]
-    group_b: List[str]
-    answer: str
+    split_types: List[str] = None
+    use_aspect_descriptions: bool = False
+    
+    def __post_init__(self):
+        if self.shot_settings is None:
+            self.shot_settings = [0, 1, 3]
+        if self.split_types is None:
+            self.split_types = ["aspect_vs_others", "binary_label"]
 
 
 class DatasetConfig:
-    """YAMLベースの設定管理クラス"""
+    """データセット設定管理クラス"""
     
     def __init__(self, config_path: Optional[str] = None):
         """
         初期化
         
         Args:
-            config_path: 設定ファイルパス（Noneの場合はデフォルトパスを使用）
+            config_path: 設定ファイルパス（Noneの場合はデフォルト設定）
         """
         if config_path is None:
             config_path = Path(__file__).parent.parent / "dataset_configs.yaml"
         
         self.config_path = Path(config_path)
-        self._config_data: Dict = {}
-        self._load_config()
+        self.config_data = self._load_config()
     
-    def _load_config(self) -> None:
+    def _load_config(self) -> Dict[str, Any]:
         """設定ファイル読み込み"""
-        try:
+        if self.config_path.exists():
             with open(self.config_path, 'r', encoding='utf-8') as f:
-                self._config_data = yaml.safe_load(f)
-        except FileNotFoundError:
-            raise FileNotFoundError(f"設定ファイルが見つかりません: {self.config_path}")
-        except yaml.YAMLError as e:
-            raise ValueError(f"YAML形式エラー: {e}")
+                return yaml.safe_load(f)
+        else:
+            # デフォルト設定
+            return {
+                "datasets": {
+                    "steam": {
+                        "path": "data/external/steam-review-aspect-dataset/current",
+                        "domain": "gaming",
+                        "language": "en",
+                        "aspects": ["recommended", "story", "gameplay", "visual", "audio", "technical", "price", "suggestion"]
+                    }
+                },
+                "experiment_defaults": {
+                    "group_size": 300,
+                    "shot_settings": [0, 1, 3],
+                    "random_seed": 42,
+                    "split_types": ["aspect_vs_others", "binary_label"],
+                    "use_aspect_descriptions": False
+                }
+            }
     
-    @classmethod
-    def load(cls, config_path: str) -> 'DatasetConfig':
-        """ファクトリーメソッド"""
-        return cls(config_path)
+    def list_available_datasets(self) -> List[str]:
+        """利用可能なデータセット一覧"""
+        return list(self.config_data.get("datasets", {}).keys())
     
-    def get_dataset_info(self, dataset_id: str) -> DatasetInfo:
-        """データセット情報取得"""
-        if dataset_id not in self._config_data.get('datasets', {}):
-            raise ValueError(f"未定義のデータセット: {dataset_id}")
-        
-        data = self._config_data['datasets'][dataset_id]
-        return DatasetInfo(**data)
+    def get_dataset_config(self, dataset_id: str) -> Dict[str, Any]:
+        """データセット設定取得"""
+        return self.config_data.get("datasets", {}).get(dataset_id, {})
+    
+    def get_dataset_aspects(self, dataset_id: str) -> List[str]:
+        """データセットのアスペクト一覧"""
+        config = self.get_dataset_config(dataset_id)
+        return config.get("aspects", [])
     
     def get_experiment_defaults(self) -> ExperimentDefaults:
         """実験デフォルト設定取得"""
-        defaults_data = self._config_data.get('experiment_defaults', {})
-        return ExperimentDefaults(**defaults_data)
+        defaults = self.config_data.get("experiment_defaults", {})
+        return ExperimentDefaults(**defaults)
     
-    def get_example_templates(self, dataset_id: str, aspect: str) -> List[ExampleTemplate]:
+    def get_example_templates(self, dataset_id: str, aspect: str) -> List[Dict]:
         """Few-shot例題テンプレート取得"""
-        templates_data = self._config_data.get('example_templates', {})
-        dataset_templates = templates_data.get(dataset_id, {})
-        aspect_templates = dataset_templates.get(aspect, [])
+        templates = self.config_data.get("example_templates", {})
+        dataset_templates = templates.get(dataset_id, {})
+        return dataset_templates.get(aspect, [])
+
+
+class ConfigValidator:
+    """設定検証クラス"""
+    
+    def __init__(self, config: DatasetConfig):
+        self.config = config
+    
+    def validate_dataset(self, dataset_id: str) -> List[str]:
+        """データセット設定検証"""
+        warnings = []
+        config = self.config.get_dataset_config(dataset_id)
         
-        return [ExampleTemplate(**template) for template in aspect_templates]
-    
-    def list_available_datasets(self) -> List[str]:
-        """利用可能データセット一覧"""
-        return list(self._config_data.get('datasets', {}).keys())
-    
-    def get_dataset_aspects(self, dataset_id: str) -> List[str]:
-        """データセットのアスペクト一覧取得"""
-        dataset_info = self.get_dataset_info(dataset_id)
+        if not config:
+            warnings.append(f"データセット '{dataset_id}' の設定が見つかりません")
+            return warnings
         
-        if dataset_info.aspects:
-            return dataset_info.aspects
-        elif dataset_info.domains:
-            # SemEval形式の場合
-            all_aspects = []
-            for domain_data in dataset_info.domains.values():
-                all_aspects.extend(domain_data.get('aspects', []))
-            return list(set(all_aspects))
-        else:
-            return []
+        # パス存在チェック
+        path = config.get("path")
+        if path and not Path(path).exists():
+            warnings.append(f"データセットパスが存在しません: {path}")
+        
+        # アスペクト存在チェック
+        aspects = config.get("aspects", [])
+        if not aspects:
+            warnings.append(f"データセット '{dataset_id}' にアスペクトが定義されていません")
+        
+        return warnings
     
-    def get_loader_config(self, dataset_id: str) -> Dict[str, str]:
-        """ローダー設定取得（将来の拡張用）"""
-        loaders_config = self._config_data.get('loaders', {})
-        return loaders_config.get(dataset_id, {})
+    def check_dataset_accessibility(self, dataset_id: str) -> bool:
+        """データセットアクセス可能性チェック"""
+        config = self.config.get_dataset_config(dataset_id)
+        if not config:
+            return False
+        
+        path = config.get("path")
+        if path:
+            return Path(path).exists()
+        
+        return False
     
-    def get_splitter_config(self, split_type: str) -> Dict[str, str]:
-        """分割戦略設定取得（将来の拡張用）"""
-        splitters_config = self._config_data.get('splitters', {})
-        return splitters_config.get(split_type, {}) 
+    def validate_all(self) -> Dict[str, List[str]]:
+        """全設定検証"""
+        all_warnings = {}
+        
+        for dataset_id in self.config.list_available_datasets():
+            warnings = self.validate_dataset(dataset_id)
+            if warnings:
+                all_warnings[dataset_id] = warnings
+        
+        return all_warnings
+
+
+class ValidationError(Exception):
+    """設定検証エラー"""
+    pass

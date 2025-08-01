@@ -1,14 +1,5 @@
-"""
-設定管理モジュール
-"""
-
-from .dataset_config import DatasetConfig, ExperimentDefaults, ExampleTemplate
+# config パッケージ
+from .dataset_config import DatasetConfig
 from .validation import ConfigValidator, ValidationError
 
-__all__ = [
-    'DatasetConfig',
-    'ExperimentDefaults', 
-    'ExampleTemplate',
-    'ConfigValidator',
-    'ValidationError'
-] 
+__all__ = ['DatasetConfig', 'ConfigValidator', 'ValidationError']

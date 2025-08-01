@@ -22,19 +22,35 @@ from typing import Dict, List, Optional, Union
 from datetime import datetime
 
 # 新しいモジュール構成をインポート
-from .config import DatasetConfig, ConfigValidator, ValidationError
-from .loaders import (
-    BaseDatasetLoader, UnifiedRecord,
-    SteamDatasetLoader, SemEvalDatasetLoader, AmazonDatasetLoader
-)
-from .splitters import (
-    BaseSplitter, BinarySplitResult, SplitOptions,
-    AspectSplitter, BinarySplitter
-)
-
-# 後方互換性のため元のクラスもエクスポート
-from .loaders.base import UnifiedRecord
-from .splitters.base import BinarySplitResult
+try:
+    from .config import DatasetConfig, ConfigValidator, ValidationError
+    from .loaders import (
+        BaseDatasetLoader, UnifiedRecord,
+        SteamDatasetLoader, SemEvalDatasetLoader, AmazonDatasetLoader
+    )
+    from .splitters import (
+        BaseSplitter, BinarySplitResult, SplitOptions,
+        AspectSplitter, BinarySplitter
+    )
+    
+    # 後方互換性のため元のクラスもエクスポート
+    from .loaders.base import UnifiedRecord
+    from .splitters.base import BinarySplitResult
+except ImportError:
+    # フォールバック: 絶対インポート
+    from config import DatasetConfig, ConfigValidator, ValidationError
+    from loaders import (
+        BaseDatasetLoader, UnifiedRecord,
+        SteamDatasetLoader, SemEvalDatasetLoader, AmazonDatasetLoader
+    )
+    from splitters import (
+        BaseSplitter, BinarySplitResult, SplitOptions,
+        AspectSplitter, BinarySplitter
+    )
+    
+    # 後方互換性のため元のクラスもエクスポート
+    from loaders.base import UnifiedRecord
+    from splitters.base import BinarySplitResult
 
 
 class LoaderFactory:
@@ -280,64 +296,19 @@ class DatasetManager:
 
 
 def main():
-    """使用例とテスト"""
-    print("=" * 60)
-    print("データセット統一管理ツール（リファクタリング版）テスト")
-    print("=" * 60)
+    """メイン関数（テスト用）"""
+    manager = DatasetManager()
     
-    try:
-        # 設定ファイル駆動初期化
-        manager = DatasetManager.from_config()
-        
-        # 設定検証
-        print("\n🔍 設定検証:")
-        validation_result = manager.validate_configuration()
-        print(f"  ステータス: {validation_result['status']}")
-        if validation_result['warnings']:
-            for warning in validation_result['warnings']:
-                print(f"  ⚠️ {warning}")
-        
-        # 利用可能データセット確認
-        print("\n📊 利用可能データセット:")
-        datasets = manager.list_available_datasets()
-        for dataset_id, info in datasets.items():
-            accessible = "✅" if info.get('accessible', False) else "❌"
-            print(f"  {accessible} {dataset_id}: {info.get('domain', 'N/A')}")
-            if 'warnings' in info:
-                for warning in info['warnings'][:2]:  # 最初の2つだけ表示
-                    print(f"      ⚠️ {warning}")
-        
-        # Steamデータセットでテスト（アクセス可能な場合のみ）
-        steam_info = datasets.get("steam", {})
-        if steam_info.get('accessible', False):
-            print(f"\n🎮 Steamデータセット二項分割テスト:")
-            try:
-                splits = manager.get_binary_splits(
-                    "steam", 
-                    aspect="gameplay", 
-                    group_size=50, 
-                    split_type="binary_label"
-                )
-                print(f"  ✅ グループA: {len(splits.group_a)}件")
-                print(f"  ✅ グループB: {len(splits.group_b)}件")
-                print(f"  ✅ 正解: {splits.correct_answer}")
-                print(f"  📊 メタデータ: {splits.metadata.get('split_type', 'N/A')}")
-            except Exception as e:
-                print(f"  ❌ エラー: {e}")
-        
-        # Few-shot例題生成テスト
-        print(f"\n💡 Few-shot例題生成テスト:")
-        examples = manager.create_examples("steam", "gameplay", shot_count=1)
-        if examples:
-            print(f"  ✅ 例題数: {len(examples)}")
-            print(f"  📝 例題: {examples[0].get('answer', 'N/A')}")
-        else:
-            print(f"  ⚠️ 例題なし")
-        
-    except Exception as e:
-        print(f"❌ 初期化エラー: {e}")
-        print("設定ファイルまたはデータパスを確認してください")
+    # 利用可能データセット一覧
+    datasets = manager.list_available_datasets()
+    print("利用可能データセット:")
+    for dataset_id, info in datasets.items():
+        print(f"  {dataset_id}: {info}")
+    
+    # 設定検証
+    validation = manager.validate_configuration()
+    print(f"\n設定検証結果: {validation}")
 
 
 if __name__ == "__main__":
-    main() 
+    main()

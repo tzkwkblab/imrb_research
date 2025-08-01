@@ -1,0 +1,69 @@
+---
+alwaysApply: true
+description: Python実行前の仮想環境チェックとアクティベーション手順
+---
+
+# Python仮想環境実行ルール
+
+## 必須手順
+
+Pythonスクリプトを実行する前に、必ず以下の手順を実行してください：
+
+### 1. 仮想環境チェック
+```bash
+# 現在の仮想環境を確認
+echo $VIRTUAL_ENV
+```
+
+### 2. 仮想環境アクティベーション
+仮想環境がアクティブでない場合（`$VIRTUAL_ENV`が空の場合）：
+
+```bash
+# プロジェクトルートの.venvを使用
+cd /Users/seinoshun/imrb_research
+source .venv/bin/activate
+
+# または、venv_steam_experimentを使用（実験専用）
+source venv_steam_experiment/bin/activate
+```
+
+### 3. アクティベーション確認
+```bash
+# 仮想環境が正しくアクティブになったか確認
+which python
+pip list
+```
+
+### 4. スクリプト実行
+```bash
+# 仮想環境内でスクリプト実行
+python script.py
+```
+
+## 注意事項
+
+- **システムPython使用禁止**: 必ず仮想環境内でPythonを実行
+- **依存関係管理**: 新しいライブラリが必要な場合は仮想環境内でインストール
+- **環境分離**: 実験ごとに専用仮想環境を作成することを推奨
+
+## トラブルシューティング
+
+### 仮想環境が見つからない場合
+```bash
+# 新しい仮想環境を作成
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+### 権限エラーの場合
+```bash
+# 仮想環境の権限を確認・修正
+chmod +x .venv/bin/activate
+```
+
+## 関連ファイル
+
+- 仮想環境設定: [.venv/](mdc:.venv/)
+- 依存関係: [requirements.txt](mdc:requirements.txt)
+- 実験用環境: [venv_steam_experiment/](mdc:venv_steam_experiment/)

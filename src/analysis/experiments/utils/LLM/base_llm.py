@@ -3,9 +3,7 @@ from typing import Optional, Dict, Any, List
 import sys
 import os
 
-# 設定管理をインポート
-sys.path.append(os.path.join(os.path.dirname(__file__), '../../conf'))
-from experiment_config import get_config_manager
+# 簡易設定（外部依存なし）
 
 
 class BaseLLM(ABC):
@@ -18,18 +16,19 @@ class BaseLLM(ABC):
             model: モデル名（Noneの場合は設定ファイルから取得）
             max_retries: 最大リトライ回数
         """
-        # 設定ファイルからデフォルト値を取得
-        self.config_manager = get_config_manager()
-        self.model_config = self.config_manager.get_model_config()
-        
-        self.model = model or self.model_config.model
+        # デフォルト設定（外部依存なし）
+        self.model = model or 'gpt-4o-mini'
         self.max_retries = max_retries
-        self.default_temperature = self.model_config.temperature
-        self.default_max_tokens = self.config_manager.get_value('max_tokens', 100)
+        self.default_temperature = 0.7
+        self.default_max_tokens = 1000
     
     def get_api_key(self, env_key: str) -> str:
         """APIキーを取得（基底クラスで共通化）"""
-        return self.config_manager.get_api_key(env_key)
+        import os
+        api_key = os.getenv(env_key)
+        if not api_key:
+            raise ValueError(f"{env_key}環境変数が設定されていません")
+        return api_key
     
     @abstractmethod
     def query(self, messages: List[Dict[str, str]], **kwargs) -> Optional[str]:
