@@ -5,7 +5,7 @@ Amazon Review Dataset専用ローダー
 from pathlib import Path
 from typing import Dict, List
 from .base import BaseDatasetLoader, UnifiedRecord
-from ..config import DatasetConfig
+from ..configs.dataset_configs import DatasetConfig
 
 
 class AmazonDatasetLoader(BaseDatasetLoader):

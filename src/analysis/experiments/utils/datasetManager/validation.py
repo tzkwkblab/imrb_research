@@ -4,7 +4,7 @@
 
 from pathlib import Path
 from typing import List, Optional, Dict, Any
-from .dataset_config import DatasetConfig
+from .configs.dataset_config import DatasetConfig
 
 
 class ValidationError(Exception):
