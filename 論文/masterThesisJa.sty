@@ -1,0 +1,141 @@
+% フォーマット
+% 2021年度版inf学位申請の手引(博士前期課程)20210716.pdf
+
+% 紙面設定
+\setlength{\textwidth}{\paperwidth}    % 本文領域を紙面幅全体に設定
+\setlength{\oddsidemargin}{4.6mm}    % 奇数ページの左マージン：1in(25.4mm)+4.6mmで30mmに設定
+\setlength{\evensidemargin}{\oddsidemargin}    % 偶数ページにも同じ設定
+\addtolength{\textwidth}{-60mm}    % 本文領域の設定値から左右余白(30mm x2)を削除
+
+\setlength{\textheight}{\paperheight}    % 本文領域を紙面高さ全体に設定
+\setlength{\topmargin}{9.6mm}    % 上マージン：1in(25.4mm)+9.6mmで35mmに設定
+\setlength{\headheight}{0pt}    % ヘッダの高さを0に設定
+\setlength{\headsep}{0pt}    % ヘッダと本文の間隔を0に設定
+\setlength{\footskip}{10mm}    % フッタの高さを0に設定
+\addtolength{\textheight}{-60mm}    % 本文領域の設定値から上下余白(35mm x2)を削除後、フッタ分10mm追加
+
+% フォント設定
+\usepackage[T1]{fontenc}    % フォント New PX
+\usepackage{lmodern}    % アンダースコア用
+% \usepackage{tgtermes}    % 本文用
+% \usepackage{tgheros}    % 見出し用
+% \usepackage{inconsolata}    % ソースコード用
+% \usepackage{newtxmath}    % 数式用
+
+% その他設定
+\usepackage{ifthen}    % 条件分岐用
+\pagestyle{empty}    % ページ番号非表示
+
+% 文字列定義
+
+% 題目
+\newcommand{\maintitle}[2]{
+    \newcommand{\Maintitleja}{#1}    % 主題日本語
+    \newcommand{\Maintitleen}{#2}    % 主題英語
+}
+% サブタイトル
+\newcommand{\subtitle}[2]{
+    \newcommand{\Subtitleja}{#1}    % 副題日本語
+    \newcommand{\Subtitleen}{#2}    % 副題英語
+}
+% 発表年月
+\newcommand{\publish}[2]{
+    \newcommand{\Year}{#1}
+    \newcommand{\Month}{#2}
+}
+% 学籍番号・名前
+\newcommand{\student}[3]{
+    \newcommand{\Id}{#1}    % 学籍番号
+    \newcommand{\Nameja}{#2}    % 氏名日本語
+    \newcommand{\Nameen}{#3}    % 氏名英語
+}
+% 概要
+\newcommand{\jabst}[1]{
+    \newcommand{\Abstract}{#1}
+}
+\newcommand{\eabst}[1]{
+    \newcommand{\eAbstract}{#1}
+}
+
+% 指導教官
+\newcommand{\advisors}[2]{
+    \newcommand{\Padvisor}{#1}    % 主指導教員
+    \newcommand{\Sadvisor}{#2}    % 副指導教員
+}
+
+
+\newcommand{\makecover}{
+    % 標題紙上部
+    {\centering
+        \vspace*{\stretch{1}}
+        \vspace{-35mm}
+        \fontsize{20pt}{10pt}\selectfont
+        \ifthenelse{\isundefined{\Subtitleja}}{
+            \Maintitleja
+        }{
+            \Maintitleja \\[10pt]
+            \centering\fontsize{20pt}{0pt}\selectfont    % 副題のフォントサイズはここで調整
+            \Subtitleja
+        }
+        \vspace*{\stretch{1}}
+            
+    % 標題紙下部
+        \begin{minipage}[b]{\hsize}
+            {\centering
+                \fontsize{16pt}{10pt}\selectfont
+                筑波大学 \\[10pt]
+                人間総合科学学術院人間総合科学研究群 \\[10pt]
+                情報学学位プログラム \\[10pt]
+                \Year 年\Month 月 \\[10pt]
+                \Nameja    % DO NOT DELETE THE NEXT LINE
+                
+            }
+            \vspace{25mm}
+        \end{minipage}
+    }
+    
+    \newpage
+    
+     % 概要ページ
+    {\centering
+        \fontsize{14pt}{20pt}\selectfont
+        \ifthenelse{\isundefined{\Subtitleja}}{
+            \Maintitleja \\
+        }{
+            \Maintitleja \\
+            \Subtitleja \\
+        }
+                
+        \ifthenelse{\isundefined{\Subtitleen}}{
+               \Maintitleen \\
+           }{
+            \Maintitleen\Subtitleen \\
+           }
+    }
+
+    \begin{flushright}
+                \vspace{10mm}    % 題目と学籍番号の間隔はここで調整
+              \fontsize{10.5pt}{15pt}\selectfont
+              氏名：\Nameja \\
+              \Nameen
+    \end{flushright}
+
+    \vspace{0mm}    % 氏名と概要の間隔はここで調整
+    \begin{flushleft}
+        \fontsize{10.5pt}{15pt}\selectfont
+        \ifthenelse{\isundefined{\eAbstract}}{
+            \Abstract
+        }{
+            \Abstract
+            \vspace{5mm}
+            \eAbstract
+        }
+    \end{flushleft}
+    
+    \begin{flushright}
+                \vspace{10mm}    % 概要と指導教員の間隔はここで調整
+               主研究指導教員：\Padvisor \\
+               副研究指導教員：\Sadvisor \\
+    \end{flushright}
+    
+}
