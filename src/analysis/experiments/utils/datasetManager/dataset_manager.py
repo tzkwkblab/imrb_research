@@ -34,7 +34,18 @@ class DatasetManager:
                 raise ValueError(f"未対応のデータセット: {dataset_id}")
             
             loader_class = self.LOADERS[dataset_id]
-            loader = loader_class(str(self.data_root))
+            
+            # データセット固有のパスを構築
+            if dataset_id == "steam":
+                dataset_path = self.data_root / "steam-review-aspect-dataset" / "current"
+            elif dataset_id == "semeval":
+                dataset_path = self.data_root / "absa-review-dataset" / "pyabsa-integrated" / "current"
+            elif dataset_id == "amazon":
+                dataset_path = self.data_root / "amazon-product-reviews" / "kaggle-bittlingmayer" / "current"
+            else:
+                dataset_path = self.data_root
+            
+            loader = loader_class(str(dataset_path))
             self._data_cache[dataset_id] = loader.load_raw_data()
         
         return self._data_cache[dataset_id]

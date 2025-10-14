@@ -1,0 +1,43 @@
+# 統一実験パイプライン設定ファイル
+
+# 実験設定
+experiments:
+  - dataset: steam
+    aspects:
+      - gameplay
+      - visual
+      - story
+    group_size: 50
+    split_type: binary_label
+
+  - dataset: semeval
+    aspects:
+      - food
+      - service
+    group_size: 50
+    split_type: aspect_vs_others
+
+  - dataset: amazon
+    aspects:
+      - quality
+      - price
+    group_size: 50
+    split_type: aspect_vs_others
+
+# 出力設定
+output:
+  directory: results/
+  format: json
+  save_intermediate: true
+
+# LLM設定
+llm:
+  model: gpt-4o-mini
+  temperature: 0.7
+  max_tokens: 150
+
+# その他設定
+general:
+  debug_mode: true
+  console_output: true
+  use_aspect_descriptions: false

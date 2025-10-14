@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 from typing import Dict, List
 from .base import BaseDatasetLoader, UnifiedRecord
-from ..config import DatasetConfig
+from ..configs.dataset_config import DatasetConfig
 
 
 class SemEvalDatasetLoader(BaseDatasetLoader):

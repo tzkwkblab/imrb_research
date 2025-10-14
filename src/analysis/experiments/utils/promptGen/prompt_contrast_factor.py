@@ -23,14 +23,14 @@ import sys
 import os
 import yaml
 
-# confディレクトリを追加
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'conf'))
+# configディレクトリを追加
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'config'))
 from experiment_config import get_openai_params
 
 
 def _load_prompt_config():
     """プロンプト設定をYAMLから読み込み"""
-    config_path = os.path.join(os.path.dirname(__file__), '..', 'conf', 'paramaters.yml')
+    config_path = os.path.join(os.path.dirname(__file__), '..', 'config', 'paramaters.yml')
     with open(config_path, 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
     return config['contrast_factor_prompt']
