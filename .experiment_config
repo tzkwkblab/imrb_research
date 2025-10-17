@@ -1,0 +1,4 @@
+DATASET="steam"
+ASPECTS="gameplay visual"
+GROUP_SIZE="50"
+SPLIT_TYPE="binary_label"

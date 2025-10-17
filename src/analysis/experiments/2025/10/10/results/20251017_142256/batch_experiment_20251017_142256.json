@@ -1,0 +1,70 @@
+{
+  "experiment_meta": {
+    "timestamp": "20251017_142256",
+    "config_file": "/var/folders/d5/1xhk4r3105n15zqmc6kl877c0000gn/T/tmpbvpdspva.yaml",
+    "total_experiments": 1,
+    "successful_experiments": 1,
+    "run_name": "tmpbvpdspva",
+    "output_dir": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/10/results/20251017_142256"
+  },
+  "results": [
+    {
+      "experiment_info": {
+        "timestamp": "20251017_142256",
+        "experiment_name": "steam_story_20251017_142256",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 3,
+          "group_b_count": 3,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "dataset": "steam",
+        "aspect": "story",
+        "group_size": 3,
+        "split_type": "binary_label"
+      },
+      "input": {
+        "group_a": [
+          "Absolutely the second best (half-life Alyx is the best game) VR game I have played in the last 5+ years.  Both RM1 and RM2 are fantastic, superb graphics, excellent story and game play.  I took my time and explored and the game time ended up just over 13 hours.  But the big diff is this game was developed by a very small non-AAA team while Half life Alyx was created with a large AAA dev team with unlimited budget.  The quality/game play of recently released VR games has been exceptionally poor and very disappointing to say the least.  But NOT THIS GAME, RED MATTER 2 excels in every area and is simply a great game that will keep you playing.     \n\nI played using Vive Pro 1 wireless with vive wands and had no issues with controllers or my HMD.  I am saddened that the game play for me is over now that I beat the game......i really enjoyed playing this game and can only hope that Vertical Robot will soon release another similar game........or MAYBE RM3!\n\nGREAT WORK DEVS..........this game must be selected as game of the year!",
+          "Remember when you first played Thumper, and you were expecting a rhythm game but got so much more?\nOr when you played Thomas Was Alone, and you somehow fell in love with characters who were literally monochromatic rectangles?\nOr when you got to the final level of Journey, and you nearly cried of amazement at the emotional EXPLOSION AND RELEASE?\nAll those feelings? That is Sayonara Wild Hearts.",
+          "The premise is that you're a passenger on a ship, waking up on the morning after you've murdered your well-to-do husband. From that point, you're free to go anywhere on board to do whatever you can to avoid justice within the time limit. You could just try to play dumb and cover up enough evidence to put your guilt into doubt. If you're more devious you could try to frame one of your fellow passengers. You could even go the And Then There Were None route and murder everyone else on board just to be thorough, if you can pull it off.\n\nOverboard! was clearly designed for replayability. The ship is full of evidence and red herrings to tamper with, desperate schemes to attempt, and secrets to learn. The first playthrough reveals only a small slice of all this, leaving a collection of unsolved mysteries and unfollowed leads to pursue on the second. The second playthrough prepares you for the third, and so on, until finally you beat the game... but there's much more to it than that. Vague, but I don't want to spoil anything.\n\nThis game was released today without any kind of announcement beforehand from inkle. As usual, their writing and design are superb. If you're captivated by the premise, even by a little, you won't regret the purchase."
+        ],
+        "group_b": [
+          "I had seen this in the steam store and wanted it. I put it on my wish list and a friend got it for me. I have to say from start until now it's amazing and keeps me busy. I do take breaks from it from time to time. However the game keeps growing and always something neat to come back to. I was amazed to that right off the bat the game was made well, and wasn't like 20 patches later and it was good to go. It was a few little hot-fixes but it was already good from start in. I am super glad that I got this game from my friend. \n\nupside\n- Was well made from the start \n- developers are still working with the game and adding in new content when they can\n- Game you can play for hours if you are willing \n- Good strategy game \n\nsmall down sides \n-Not a city builder to me , so like not like sim city etc... more like a strategy game that involves having a small town ^^\n- Does take a bit to learn all the little mechanics but once you do , you are good to go \n-Still early access so from time to time you lose saves as they add content",
+          "ghrrrrrrrrrrrrrr... *shapeshifts into six pack sweaty wolf grrrrrrrrrrrrrrrrrrrrrrrolw  grrrrrrrrrrOOF rwooof woof *barks seductivley in public park brhhhhhhrrrrrrrrrrr *foaming at the mouth ahsdf nrrrrrrrrrrrrrrrrrrrrrrrrrrrrauoooooooooooo ",
+          "I am a 43 yo father, probably one of the oldest people playing this game. I am a single father to my Son, who is 14 now. My son got this game for Christmas from his uncle, so we installed it on his computer and he started playing. By the end of the week he had 24 hours on this game. This was horrible for me, as it was already hard for me to find ways to spend time with my son, as he is always out with his friends or just, watching YouTube. So i decided to make a Steam account and get this game to see if I could maybe play alongside him. loaded into the game, made my character and world and started playing but I was stuck on what you were supposed to do. I asked my Son for help and he helped me. Loved it as it was the best time had spent with my Son since my wife had died. This game has ever since brought me and my son closer again and now we actually spend time together outside the house together as well. This game reminded me that there's fun to be had in everything, and it has brought both me and my Son many happy memories.\nThank you <3"
+        ],
+        "correct_answer": "story positive vs negative characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- Absolutely the second best (half-life Alyx is the best game) VR game I have played in the last 5+ years.  Both RM1 and RM2 are fantastic, superb graphics, excellent story and game play.  I took my time and explored and the game time ended up just over 13 hours.  But the big diff is this game was developed by a very small non-AAA team while Half life Alyx was created with a large AAA dev team with unlimited budget.  The quality/game play of recently released VR games has been exceptionally poor and very disappointing to say the least.  But NOT THIS GAME, RED MATTER 2 excels in every area and is simply a great game that will keep you playing.     \n\nI played using Vive Pro 1 wireless with vive wands and had no issues with controllers or my HMD.  I am saddened that the game play for me is over now that I beat the game......i really enjoyed playing this game and can only hope that Vertical Robot will soon release another similar game........or MAYBE RM3!\n\nGREAT WORK DEVS..........this game must be selected as game of the year!\n- Remember when you first played Thumper, and you were expecting a rhythm game but got so much more?\nOr when you played Thomas Was Alone, and you somehow fell in love with characters who were literally monochromatic rectangles?\nOr when you got to the final level of Journey, and you nearly cried of amazement at the emotional EXPLOSION AND RELEASE?\nAll those feelings? That is Sayonara Wild Hearts.\n- The premise is that you're a passenger on a ship, waking up on the morning after you've murdered your well-to-do husband. From that point, you're free to go anywhere on board to do whatever you can to avoid justice within the time limit. You could just try to play dumb and cover up enough evidence to put your guilt into doubt. If you're more devious you could try to frame one of your fellow passengers. You could even go the And Then There Were None route and murder everyone else on board just to be thorough, if you can pull it off.\n\nOverboard! was clearly designed for replayability. The ship is full of evidence and red herrings to tamper with, desperate schemes to attempt, and secrets to learn. The first playthrough reveals only a small slice of all this, leaving a collection of unsolved mysteries and unfollowed leads to pursue on the second. The second playthrough prepares you for the third, and so on, until finally you beat the game... but there's much more to it than that. Vague, but I don't want to spoil anything.\n\nThis game was released today without any kind of announcement beforehand from inkle. As usual, their writing and design are superb. If you're captivated by the premise, even by a little, you won't regret the purchase.\n\n【グループB】\n- I had seen this in the steam store and wanted it. I put it on my wish list and a friend got it for me. I have to say from start until now it's amazing and keeps me busy. I do take breaks from it from time to time. However the game keeps growing and always something neat to come back to. I was amazed to that right off the bat the game was made well, and wasn't like 20 patches later and it was good to go. It was a few little hot-fixes but it was already good from start in. I am super glad that I got this game from my friend. \n\nupside\n- Was well made from the start \n- developers are still working with the game and adding in new content when they can\n- Game you can play for hours if you are willing \n- Good strategy game \n\nsmall down sides \n-Not a city builder to me , so like not like sim city etc... more like a strategy game that involves having a small town ^^\n- Does take a bit to learn all the little mechanics but once you do , you are good to go \n-Still early access so from time to time you lose saves as they add content\n- ghrrrrrrrrrrrrrr... *shapeshifts into six pack sweaty wolf grrrrrrrrrrrrrrrrrrrrrrrolw  grrrrrrrrrrOOF rwooof woof *barks seductivley in public park brhhhhhhrrrrrrrrrrr *foaming at the mouth ahsdf nrrrrrrrrrrrrrrrrrrrrrrrrrrrrauoooooooooooo \n- I am a 43 yo father, probably one of the oldest people playing this game. I am a single father to my Son, who is 14 now. My son got this game for Christmas from his uncle, so we installed it on his computer and he started playing. By the end of the week he had 24 hours on this game. This was horrible for me, as it was already hard for me to find ways to spend time with my son, as he is always out with his friends or just, watching YouTube. So i decided to make a Steam account and get this game to see if I could maybe play alongside him. loaded into the game, made my character and world and started playing but I was stuck on what you were supposed to do. I asked my Son for help and he helped me. Loved it as it was the best time had spent with my Son since my wife had died. This game has ever since brought me and my son closer again and now we actually spend time together outside the house together as well. This game reminded me that there's fun to be had in everything, and it has brought both me and my Son many happy memories.\nThank you <3\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Emotionally resonant storytelling and game depth."
+      },
+      "evaluation": {
+        "bert_score": 0.6939728260040283,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.6939728260040283,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.34698641300201416,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251017_142256"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/10/results/20251017_142256/steam_story_20251017_142256_20251017_142256.json"
+    }
+  ]
+}

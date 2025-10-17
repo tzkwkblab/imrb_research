@@ -49,6 +49,18 @@ class ExperimentPipeline:
         self.dataset_manager = None
         self.results = []
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.run_name = self._derive_run_name()
+        self.run_dir: Optional[Path] = None
+
+    def _derive_run_name(self) -> str:
+        """実行名を決定（configのrun_name > 設定ファイル名）"""
+        try:
+            name_from_config = self.config.get('run_name')
+            if isinstance(name_from_config, str) and name_from_config.strip():
+                return name_from_config.strip()
+        except Exception:
+            pass
+        return self.config_path.stem
         
     def setup_logging(self):
         """ログ設定"""
@@ -109,7 +121,8 @@ class ExperimentPipeline:
         dataset: str, 
         aspect: str, 
         group_size: int,
-        split_type: str = "aspect_vs_others"
+        split_type: str = "aspect_vs_others",
+        output_dir: Optional[Path] = None
     ) -> Optional[Dict]:
         """
         単一実験実行
@@ -162,9 +175,9 @@ class ExperimentPipeline:
             # [2/3] 対比因子分析実行
             self.logger.info(f"\n[2/3] 対比因子分析実行中...")
             
-            # 出力ディレクトリ設定
-            output_dir = Path(self.config['output']['directory'])
-            output_dir.mkdir(parents=True, exist_ok=True)
+            # 出力ディレクトリ設定（実行ディレクトリ配下）
+            out_dir = output_dir if output_dir is not None else Path(self.config['output']['directory'])
+            out_dir.mkdir(parents=True, exist_ok=True)
             
             analyzer = ContrastFactorAnalyzer(debug=self.debug)
             
@@ -172,7 +185,7 @@ class ExperimentPipeline:
                 group_a=splits.group_a,
                 group_b=splits.group_b,
                 correct_answer=splits.correct_answer,
-                output_dir=str(output_dir),
+                output_dir=str(out_dir),
                 experiment_name=experiment_id
             )
             
@@ -229,6 +242,14 @@ class ExperimentPipeline:
         
         all_results = []
         
+        # 実行用ディレクトリを準備
+        # スクリプト直下のresultsに時刻ディレクトリ作成（experiments/{YYYY}/{MM}/{DD}/results/時刻）
+        base_output_dir = SCRIPT_DIR / "results"
+        base_output_dir.mkdir(parents=True, exist_ok=True)
+        self.run_dir = base_output_dir / f"{self.timestamp}"
+        self.run_dir.mkdir(parents=True, exist_ok=True)
+        self.logger.info(f"出力ディレクトリ: {self.run_dir}")
+
         # 各実験設定を実行
         for exp_config in self.config['experiments']:
             dataset = exp_config['dataset']
@@ -245,7 +266,8 @@ class ExperimentPipeline:
                     dataset=dataset,
                     aspect=aspect,
                     group_size=group_size,
-                    split_type=split_type
+                    split_type=split_type,
+                    output_dir=self.run_dir
                 )
                 
                 if result:
@@ -263,9 +285,11 @@ class ExperimentPipeline:
             self.logger.warning("保存する結果がありません")
             return ""
         
-        # 出力ディレクトリ設定
-        output_dir = Path(self.config['output']['directory'])
-        output_dir.mkdir(parents=True, exist_ok=True)
+        # 出力ディレクトリ（実行用ディレクトリ配下）
+        if self.run_dir is None:
+            base_output_dir = SCRIPT_DIR / "results"
+            self.run_dir = base_output_dir / f"{self.timestamp}"
+            self.run_dir.mkdir(parents=True, exist_ok=True)
         
         # 統合結果作成
         summary = {
@@ -275,21 +299,210 @@ class ExperimentPipeline:
                 "total_experiments": len(results),
                 "successful_experiments": sum(
                     1 for r in results if r.get('summary', {}).get('success', False)
-                )
+                ),
+                "run_name": self.run_name,
+                "output_dir": str(self.run_dir)
             },
             "results": results
         }
         
         # 保存
         filename = f"batch_experiment_{self.timestamp}.json"
-        filepath = output_dir / filename
+        filepath = self.run_dir / filename
         
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(summary, f, ensure_ascii=False, indent=2)
         
         self.logger.info(f"\n📁 結果保存: {filepath}")
+
+        # 実行時設定の保存（スナップショット）
+        self._save_run_configuration()
+
+        # マークダウンサマリーの生成（詳細）
+        self._write_markdown_summary(summary)
+        # ルートresultsに概要を作成
+        self._write_root_overview(summary)
         
         return str(filepath)
+
+    def _save_run_configuration(self) -> None:
+        """実行時設定（有効値）を保存"""
+        if self.run_dir is None:
+            return
+        # 設定スナップショット（元YAML）
+        try:
+            with open(self.config_path, 'r', encoding='utf-8') as f:
+                original_yaml = f.read()
+            with open(self.run_dir / 'pipeline_config_snapshot.yaml', 'w', encoding='utf-8') as f:
+                f.write(original_yaml)
+        except Exception:
+            pass
+        # 実行メタ（JSON）
+        effective = {
+            "timestamp": self.timestamp,
+            "run_name": self.run_name,
+            "output_dir": str(self.run_dir),
+            "config_path": str(self.config_path),
+            "experiments": self.config.get('experiments', []),
+            "llm": self.config.get('llm', {}),
+            "general": self.config.get('general', {})
+        }
+        with open(self.run_dir / 'run_effective_config.json', 'w', encoding='utf-8') as f:
+            json.dump(effective, f, ensure_ascii=False, indent=2)
+
+    def _write_markdown_summary(self, summary_data: Dict) -> None:
+        """設定値と結果概要のMarkdownを作成"""
+        if self.run_dir is None:
+            return
+        lines = []
+        meta = summary_data.get('experiment_meta', {})
+        results = summary_data.get('results', [])
+        lines.append(f"# 実験サマリー: {self.run_name}")
+        lines.append("")
+        lines.append(f"- 実行時刻: {meta.get('timestamp', '')}")
+        lines.append(f"- 出力先: {meta.get('output_dir', '')}")
+        lines.append(f"- 総実験数: {meta.get('total_experiments', 0)}")
+        lines.append(f"- 成功数: {meta.get('successful_experiments', 0)}")
+        lines.append("")
+        # 設定
+        lines.append("## 設定")
+        lines.append("")
+        lines.append("```yaml")
+        try:
+            with open(self.run_dir / 'pipeline_config_snapshot.yaml', 'r', encoding='utf-8') as f:
+                lines.append(f.read())
+        except Exception:
+            # フォールバックとして簡易設定
+            lines.append(yaml.safe_dump(self.config, allow_unicode=True))
+        lines.append("```")
+        lines.append("")
+        # 結果一覧
+        lines.append("## 結果概要")
+        lines.append("")
+        lines.append("| データセット | アスペクト | BERT | BLEU | 品質 | 出力ファイル |")
+        lines.append("| --- | --- | ---:| ---:| --- | --- |")
+        for r in results:
+            if not r.get('summary', {}).get('success', False):
+                continue
+            info = r.get('experiment_info', {})
+            evals = r.get('evaluation', {})
+            out_file = r.get('output_file', '')
+            lines.append(
+                f"| {info.get('dataset','')} | {info.get('aspect','')} | "
+                f"{evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} | "
+                f"{r.get('summary',{}).get('quality_assessment',{}).get('overall_quality','')} | "
+                f"{Path(out_file).name if out_file else ''} |"
+            )
+        lines.append("")
+        # 保存
+        md_path = self.run_dir / 'summary.md'
+        with open(md_path, 'w', encoding='utf-8') as f:
+            f.write("\n".join(lines))
+
+    def _write_root_overview(self, summary_data: Dict) -> None:
+        """プロジェクトルートresults/に概要Markdownを保存し、詳細へのパスを記載"""
+        try:
+            root_dir = SCRIPT_DIR.parents[5] / 'results'
+        except Exception:
+            return
+        root_dir.mkdir(parents=True, exist_ok=True)
+
+        # テンプレートを用意（なければ生成）
+        template_dir = root_dir / 'template'
+        template_dir.mkdir(parents=True, exist_ok=True)
+        template_path = template_dir / 'root_overview_template.md'
+        if not template_path.exists():
+            default_tpl = []
+            # 説明コメント（生成物には含めない）
+            default_tpl.append("<!-- テンプレ説明: 下記の記号は実行時に置換されます（このコメントは出力に含まれません） -->")
+            default_tpl.append("<!-- {{TIMESTAMP}}: 実行時刻(YYYYMMDD_HHMMSS) -->")
+            default_tpl.append("<!-- {{RUN_NAME}}: 実験名（configのrun_name。未設定時は設定ファイル名） -->")
+            default_tpl.append("<!-- {{DETAIL_DIR_PATH}}: 詳細ディレクトリへの相対パス -->")
+            default_tpl.append("<!-- {{DETAIL_SUMMARY_PATH}}: 詳細summary.mdへの相対パス -->")
+            default_tpl.append("<!-- {{DETAIL_DIR_MD_LINK}}: [詳細ディレクトリ](相対パス) へのリンク -->")
+            default_tpl.append("<!-- {{DETAIL_SUMMARY_MD_LINK}}: [詳細サマリー](相対パス) へのリンク -->")
+            default_tpl.append("<!-- {{TOTAL_EXPERIMENTS}}: 総実験数 / {{SUCCESSFUL_EXPERIMENTS}}: 成功数 -->")
+            default_tpl.append("<!-- {{RESULTS_TABLE}}: 先頭数件の結果テーブル（データセット/アスペクト/BERT/BLEU） -->")
+            # 追加プレースホルダ（任意で使用可）
+            default_tpl.append("<!-- 追加: {{DATASET_LIST}}（ユニークなデータセットのカンマ区切り） -->")
+            default_tpl.append("<!-- 追加: {{ASPECT_LIST}}（ユニークなアスペクトのカンマ区切り） -->")
+            default_tpl.append("<!-- 追加: {{DETAIL_DIR_ABS}}（詳細ディレクトリの絶対パス） -->")
+            default_tpl.append("<!-- 追加: {{CONFIG_PATH}}（使用した設定ファイルのパス） -->")
+            default_tpl.append("<!-- 追加: {{RUN_DIR_NAME}}（詳細ディレクトリ名のみ） -->")
+            default_tpl.append("<!-- 追加: {{LLM_MODEL}}（設定のllm.model） -->")
+            default_tpl.append("<!-- 追加: {{RESULT_JSON_PATH}}（バッチ結果JSONの相対パス） -->\n")
+            default_tpl.append("# 実験概要 {{TIMESTAMP}}")
+            default_tpl.append("")
+            default_tpl.append("- 実験名: {{RUN_NAME}}")
+            default_tpl.append("- {{DETAIL_DIR_MD_LINK}}")
+            default_tpl.append("- {{DETAIL_SUMMARY_MD_LINK}}")
+            default_tpl.append("- 総実験数: {{TOTAL_EXPERIMENTS}} / 成功: {{SUCCESSFUL_EXPERIMENTS}}\n")
+            default_tpl.append("- データセット: {{DATASET_LIST}}")
+            default_tpl.append("- アスペクト: {{ASPECT_LIST}}\n")
+            default_tpl.append("## 結果概要")
+            default_tpl.append("{{RESULTS_TABLE}}")
+            with open(template_path, 'w', encoding='utf-8') as tf:
+                tf.write("\n".join(default_tpl))
+
+        # 置換データ作成
+        meta = summary_data.get('experiment_meta', {})
+        results = summary_data.get('results', [])
+        rel_detail_dir = os.path.relpath(self.run_dir, root_dir) if self.run_dir else ''
+        rel_detail_summary = os.path.relpath(self.run_dir / 'summary.md', root_dir) if self.run_dir else ''
+        results_table = self._build_results_table(results, limit=5)
+        # 追加変数を構築
+        datasets = sorted({(r.get('experiment_info') or {}).get('dataset', '') for r in results if r.get('experiment_info')})
+        aspects = sorted({(r.get('experiment_info') or {}).get('aspect', '') for r in results if r.get('experiment_info')})
+        dataset_list = ", ".join([d for d in datasets if d])
+        aspect_list = ", ".join([a for a in aspects if a])
+        detail_dir_abs = str(self.run_dir) if self.run_dir else ''
+        config_path = str(self.config_path)
+        run_dir_name = self.run_dir.name if self.run_dir else ''
+        llm_model = (self.config.get('llm') or {}).get('model', '')
+        result_json_rel = os.path.relpath(self.run_dir / f"batch_experiment_{meta.get('timestamp','')}.json", root_dir) if self.run_dir else ''
+
+        with open(template_path, 'r', encoding='utf-8') as tf:
+            template = tf.read()
+
+        # プレースホルダ置換
+        rendered = template
+        rendered = rendered.replace('{{TIMESTAMP}}', str(meta.get('timestamp', '')))
+        rendered = rendered.replace('{{RUN_NAME}}', str(self.run_name))
+        rendered = rendered.replace('{{DETAIL_DIR_PATH}}', rel_detail_dir)
+        rendered = rendered.replace('{{DETAIL_SUMMARY_PATH}}', rel_detail_summary)
+        rendered = rendered.replace('{{DETAIL_DIR_MD_LINK}}', f"[詳細ディレクトリ]({rel_detail_dir})")
+        rendered = rendered.replace('{{DETAIL_SUMMARY_MD_LINK}}', f"[詳細サマリー]({rel_detail_summary})")
+        rendered = rendered.replace('{{TOTAL_EXPERIMENTS}}', str(meta.get('total_experiments', 0)))
+        rendered = rendered.replace('{{SUCCESSFUL_EXPERIMENTS}}', str(meta.get('successful_experiments', 0)))
+        rendered = rendered.replace('{{RESULTS_TABLE}}', results_table)
+        # 追加置換
+        rendered = rendered.replace('{{DATASET_LIST}}', dataset_list)
+        rendered = rendered.replace('{{ASPECT_LIST}}', aspect_list)
+        rendered = rendered.replace('{{DETAIL_DIR_ABS}}', detail_dir_abs)
+        rendered = rendered.replace('{{CONFIG_PATH}}', config_path)
+        rendered = rendered.replace('{{RUN_DIR_NAME}}', run_dir_name)
+        rendered = rendered.replace('{{LLM_MODEL}}', llm_model)
+        rendered = rendered.replace('{{RESULT_JSON_PATH}}', result_json_rel)
+
+        # 出力
+        overview_path = root_dir / f"summary_{meta.get('timestamp','')}.md"
+        # コメント行(<!-- -->)は概要には含めない
+        rendered_lines = [ln for ln in rendered.splitlines() if not ln.strip().startswith('<!--')]
+        with open(overview_path, 'w', encoding='utf-8') as f:
+            f.write("\n".join(rendered_lines))
+
+    def _build_results_table(self, results: List[Dict], limit: int = 5) -> str:
+        """結果テーブルMarkdownを作成"""
+        lines = []
+        lines.append("| データセット | アスペクト | BERT | BLEU |")
+        lines.append("| --- | --- | ---:| ---:|")
+        for r in results[:limit]:
+            info = r.get('experiment_info', {})
+            evals = r.get('evaluation', {})
+            lines.append(
+                f"| {info.get('dataset','')} | {info.get('aspect','')} | {evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} |"
+            )
+        return "\n".join(lines)
     
     def print_summary(self):
         """実験サマリー表示"""

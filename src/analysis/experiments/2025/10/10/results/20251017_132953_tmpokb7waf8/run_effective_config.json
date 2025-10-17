@@ -1,0 +1,26 @@
+{
+  "timestamp": "20251017_132953",
+  "run_name": "tmpokb7waf8",
+  "output_dir": "results/20251017_132953_tmpokb7waf8",
+  "config_path": "/var/folders/d5/1xhk4r3105n15zqmc6kl877c0000gn/T/tmpokb7waf8.yaml",
+  "experiments": [
+    {
+      "aspects": [
+        "story"
+      ],
+      "dataset": "steam",
+      "group_size": 5,
+      "split_type": "binary_label"
+    }
+  ],
+  "llm": {
+    "max_tokens": 150,
+    "model": "gpt-4o-mini",
+    "temperature": 0.7
+  },
+  "general": {
+    "console_output": true,
+    "debug_mode": true,
+    "use_aspect_descriptions": false
+  }
+}

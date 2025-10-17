@@ -1,0 +1,26 @@
+{
+  "timestamp": "20251017_142256",
+  "run_name": "tmpbvpdspva",
+  "output_dir": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/10/results/20251017_142256",
+  "config_path": "/var/folders/d5/1xhk4r3105n15zqmc6kl877c0000gn/T/tmpbvpdspva.yaml",
+  "experiments": [
+    {
+      "aspects": [
+        "story"
+      ],
+      "dataset": "steam",
+      "group_size": 3,
+      "split_type": "binary_label"
+    }
+  ],
+  "llm": {
+    "max_tokens": 150,
+    "model": "gpt-4o-mini",
+    "temperature": 0.7
+  },
+  "general": {
+    "console_output": true,
+    "debug_mode": true,
+    "use_aspect_descriptions": false
+  }
+}

@@ -1,0 +1,5 @@
+#!/bin/bash
+# クイックスタート用のエイリアススクリプト
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec "$SCRIPT_DIR/scripts/run_interactive_experiment.sh" "$@"
