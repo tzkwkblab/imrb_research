@@ -195,14 +195,22 @@ class ExperimentPipeline:
             out_dir = output_dir if output_dir is not None else Path(self.config['output']['directory'])
             out_dir.mkdir(parents=True, exist_ok=True)
             
-            analyzer = ContrastFactorAnalyzer(debug=self.debug)
+            # 一般設定から説明文利用フラグとCSVファイルパスを取得
+            general_cfg = self.config.get('general', {}) or {}
+            use_desc = bool(general_cfg.get('use_aspect_descriptions', False))
+            desc_file = general_cfg.get('aspect_descriptions_file')
+
+            analyzer = ContrastFactorAnalyzer(debug=self.debug, use_aspect_descriptions=use_desc)
             
             result = analyzer.analyze(
                 group_a=splits.group_a,
                 group_b=splits.group_b,
                 correct_answer=splits.correct_answer,
                 output_dir=str(out_dir),
-                experiment_name=experiment_id
+                experiment_name=experiment_id,
+                # デフォルトの説明文フォールバック用（外部データ標準のdescriptions.csv）
+                dataset_path=str(self.dataset_manager.data_root / 'steam-review-aspect-dataset' / 'current') if dataset == 'steam' else None,
+                aspect_descriptions_file=desc_file
             )
             
             self.logger.info("✅ LLM応答取得完了")
@@ -229,6 +237,9 @@ class ExperimentPipeline:
             result['experiment_info']['aspect'] = aspect
             result['experiment_info']['group_size'] = group_size
             result['experiment_info']['split_type'] = split_type
+            # 選択モード/CSVパス（analyzer側で既に含めるが明示的に保持）
+            result['experiment_info']['use_aspect_descriptions'] = bool(use_desc)
+            result['experiment_info']['aspect_descriptions_file'] = desc_file or ''
             
             return result
             

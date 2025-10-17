@@ -2,13 +2,16 @@
 """
 アスペクト説明文管理クラス
 
-descriptions.csvからアスペクト名と説明文のマッピングを読み込み、
-アスペクト名から説明文への変換を提供する
+descriptions.csv もしくは明示指定された CSV からアスペクト名と説明文の
+マッピングを読み込み、アスペクト名から説明文への変換を提供する。
 
-# 使用例
-manager = AspectDescriptionManager("data/external/steam-review-aspect-dataset/current")
+# 使用例（ディレクトリ指定: ディレクトリ直下の descriptions.csv を使用）
+manager = AspectDescriptionManager(dataset_path="data/external/steam-review-aspect-dataset/current")
 description = manager.get_description("gameplay")
-# → "Controls, mechanics, interactivity, difficulty and other gameplay setups."
+
+# 使用例（CSVファイルを直接指定）
+manager = AspectDescriptionManager(csv_path="/path/to/steam_v1.csv")
+description = manager.get_description("gameplay")
 """
 
 import pandas as pd
@@ -19,38 +22,41 @@ from typing import Dict, Optional
 class AspectDescriptionManager:
     """アスペクト説明文管理クラス"""
     
-    def __init__(self, dataset_path: str):
+    def __init__(self, dataset_path: Optional[str] = None, csv_path: Optional[str] = None):
         """
         初期化
         
         Args:
-            dataset_path: データセットのパス（descriptions.csvを含むディレクトリ）
+            dataset_path: データセットのディレクトリパス（直下の descriptions.csv を利用）
+            csv_path: 説明文CSVファイルの明示パス（優先）
         """
-        self.dataset_path = Path(dataset_path)
-        self.descriptions = {}
+        self.dataset_path = Path(dataset_path) if dataset_path else None
+        self.csv_path = Path(csv_path) if csv_path else None
+        self.descriptions: Dict[str, str] = {}
+        self.source_file: Optional[Path] = None
         self._load_descriptions()
     
     def _load_descriptions(self):
-        """descriptions.csvから説明文を読み込み"""
-        desc_file = self.dataset_path / "descriptions.csv"
-        if desc_file.exists():
-            try:
-                # カンマを含む説明文を適切に処理するため、quoting=csv.QUOTE_ALLを使用
-                import csv
-                df = pd.read_csv(desc_file, quoting=csv.QUOTE_ALL)
-                self.descriptions = dict(zip(df['aspect'], df['description']))
-            except Exception as e:
-                print(f"警告: descriptions.csvの読み込みに失敗しました: {e}")
-                # フォールバック: 手動でCSVを読み込み
-                try:
-                    self._load_descriptions_manual(desc_file)
-                except Exception as e2:
-                    print(f"警告: 手動読み込みも失敗しました: {e2}")
-                    self.descriptions = {}
-        else:
-            print(f"警告: descriptions.csvが見つかりません: {desc_file}")
+        """説明文CSVを読み込み（csv_path優先、次にdataset_path/descriptions.csv）"""
+        # 優先: 明示CSV
+        if self.csv_path is not None:
+            if self.csv_path.exists():
+                self._read_csv(self.csv_path)
+                return
+            else:
+                print(f"警告: 指定のCSVが見つかりません: {self.csv_path}")
+        # 次: ディレクトリの descriptions.csv
+        if self.dataset_path is not None:
+            desc_file = self.dataset_path / "descriptions.csv"
+            if desc_file.exists():
+                self._read_csv(desc_file)
+                return
+            else:
+                print(f"警告: descriptions.csvが見つかりません: {desc_file}")
+        # いずれも無ければ空
+        self.descriptions = {}
     
-    def _load_descriptions_manual(self, desc_file):
+    def _load_descriptions_manual(self, desc_file: Path):
         """手動でCSVを読み込み（フォールバック用）"""
         self.descriptions = {}
         with open(desc_file, 'r', encoding='utf-8') as f:
@@ -70,6 +76,22 @@ class AspectDescriptionManager:
                     aspect = parts[0].strip()
                     description = parts[1].strip()
                     self.descriptions[aspect] = description
+        self.source_file = desc_file
+
+    def _read_csv(self, file_path: Path) -> None:
+        """pandasでCSVを読み込む（quote対応つき）"""
+        try:
+            import csv
+            df = pd.read_csv(file_path, quoting=csv.QUOTE_ALL)
+            self.descriptions = dict(zip(df['aspect'], df['description']))
+            self.source_file = file_path
+        except Exception as e:
+            print(f"警告: CSV読み込みに失敗しました: {e} — 手動読み込みにフォールバックします")
+            try:
+                self._load_descriptions_manual(file_path)
+            except Exception as e2:
+                print(f"警告: 手動読み込みも失敗しました: {e2}")
+                self.descriptions = {}
     
     def get_description(self, aspect: str) -> str:
         """

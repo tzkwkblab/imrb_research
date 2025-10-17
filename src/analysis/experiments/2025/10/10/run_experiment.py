@@ -81,6 +81,20 @@ def parse_args():
         default='binary_label',
         help='分割タイプ (default: binary_label)'
     )
+
+    # アスペクト説明文利用フラグ
+    parser.add_argument(
+        '--use-aspect-descriptions',
+        action='store_true',
+        help='アスペクト名の代わりに説明文を用いてスコア比較する'
+    )
+
+    # アスペクト説明CSVファイル（明示指定）
+    parser.add_argument(
+        '--aspect-descriptions-file',
+        type=str,
+        help='アスペクト説明文CSVファイル（aspect,description ヘッダー）'
+    )
     
     # その他オプション
     parser.add_argument(
@@ -135,7 +149,8 @@ def create_quick_config(args) -> dict:
         'general': {
             'debug_mode': args.debug,
             'console_output': True,
-            'use_aspect_descriptions': False
+            'use_aspect_descriptions': bool(args.use_aspect_descriptions),
+            'aspect_descriptions_file': args.aspect_descriptions_file
         }
     }
     

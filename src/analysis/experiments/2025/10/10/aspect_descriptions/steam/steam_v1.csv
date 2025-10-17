@@ -1,0 +1,9 @@
+aspect,description
+recommended,This review expresses whether the game is recommended overall.
+story,This review discusses the narrative, plot, characters, or storytelling.
+gameplay,This review talks about controls, mechanics, challenge, and game systems.
+visual,This review mentions graphics, art style, UI, or visual effects.
+audio,This review mentions music, sound effects, or voice acting.
+technical,This review mentions bugs, performance, stability, or optimization.
+price,This review comments on price, value for money, or discounts.
+suggestion,This review includes requests, feature suggestions, or improvements.

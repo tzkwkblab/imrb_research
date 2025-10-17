@@ -45,6 +45,8 @@ DATASET=""
 ASPECTS=""
 GROUP_SIZE=""
 SPLIT_TYPE=""
+USE_ASPECT_DESCRIPTIONS="0"
+ASPECT_DESCRIPTIONS_FILE=""
 
 # =====================================
 # ユーティリティ関数
@@ -120,6 +122,8 @@ DATASET="$DATASET"
 ASPECTS="$ASPECTS"
 GROUP_SIZE="$GROUP_SIZE"
 SPLIT_TYPE="$SPLIT_TYPE"
+USE_ASPECT_DESCRIPTIONS="$USE_ASPECT_DESCRIPTIONS"
+ASPECT_DESCRIPTIONS_FILE="$ASPECT_DESCRIPTIONS_FILE"
 EOF
     print_info "設定を保存しました: $CONFIG_FILE"
 }
@@ -134,6 +138,10 @@ load_previous_config() {
         echo "アスペクト: $ASPECTS"
         echo "グループサイズ: $GROUP_SIZE"
         echo "分割タイプ: $SPLIT_TYPE"
+        echo "説明文比較: $([[ "$USE_ASPECT_DESCRIPTIONS" == "1" ]] && echo "有効" || echo "無効")"
+        if [[ "$USE_ASPECT_DESCRIPTIONS" == "1" ]]; then
+            echo "説明CSV: $ASPECT_DESCRIPTIONS_FILE"
+        fi
         echo ""
         
         read -p "前回の設定を使用しますか？ (y/n): " use_previous
@@ -143,6 +151,95 @@ load_previous_config() {
     fi
     return 1
 }
+# =====================================
+# 説明CSV選択
+# =====================================
+
+select_description_csv() {
+    print_section "アスペクト説明CSV選択（任意）"
+
+    # 探索ディレクトリ（データ配置ディレクトリ配下）
+    local desc_dir="$PROJECT_ROOT/data/analysis-workspace/aspect_descriptions/$DATASET"
+    local -a csv_files=()
+
+    if [[ -d "$desc_dir" ]]; then
+        while IFS= read -r -d '' f; do
+            csv_files+=("$f")
+        done < <(find "$desc_dir" -maxdepth 1 -type f -name "*.csv" -print0 2>/dev/null | sort -z)
+    fi
+
+    # 外部デフォルト（存在すれば追加候補）
+    local external_csv=""
+    case "$DATASET" in
+        steam)
+            external_csv="$PROJECT_ROOT/data/external/steam-review-aspect-dataset/current/descriptions.csv"
+            ;;
+        semeval)
+            external_csv="$PROJECT_ROOT/data/external/absa-review-dataset/pyabsa-integrated/current/descriptions.csv"
+            ;;
+        amazon)
+            external_csv="$PROJECT_ROOT/data/external/amazon-product-reviews/kaggle-bittlingmayer/current/descriptions.csv"
+            ;;
+    esac
+
+    local has_external=0
+    if [[ -f "$external_csv" ]]; then
+        has_external=1
+    fi
+
+    echo "0) 単語比較（説明文なし）"
+
+    local i=1
+    for f in "${csv_files[@]}"; do
+        echo "$i) $(basename "$f")"
+        i=$((i+1))
+    done
+
+    local external_index=-1
+    if [[ $has_external -eq 1 ]]; then
+        external_index=$i
+        echo "$i) 外部データセットのdescriptions.csv"
+    fi
+
+    echo ""
+    read -p "選択してください (番号、Enter=0): " choice
+    if [[ -z "$choice" ]]; then
+        choice=0
+    fi
+
+    if [[ "$choice" == "0" ]]; then
+        USE_ASPECT_DESCRIPTIONS="0"
+        ASPECT_DESCRIPTIONS_FILE=""
+        print_success "単語比較を選択しました"
+        return 0
+    fi
+
+    # 数値チェック
+    if ! [[ "$choice" =~ ^[0-9]+$ ]]; then
+        print_error "無効な入力です"
+        return 1
+    fi
+
+    local idx=$choice
+    local total_internal=${#csv_files[@]}
+    if [[ $idx -ge 1 && $idx -le $total_internal ]]; then
+        USE_ASPECT_DESCRIPTIONS="1"
+        ASPECT_DESCRIPTIONS_FILE="${csv_files[$((idx-1))]}"
+        print_success "説明CSVを選択: $(basename "$ASPECT_DESCRIPTIONS_FILE")"
+        return 0
+    fi
+
+    if [[ $has_external -eq 1 && $idx -eq $external_index ]]; then
+        USE_ASPECT_DESCRIPTIONS="1"
+        ASPECT_DESCRIPTIONS_FILE="$external_csv"
+        print_success "外部の説明CSVを選択: $ASPECT_DESCRIPTIONS_FILE"
+        return 0
+    fi
+
+    print_error "無効な番号です"
+    return 1
+}
+
 
 # =====================================
 # データセット選択
@@ -307,6 +404,10 @@ confirm_settings() {
     echo "  アスペクト: $ASPECTS"
     echo "  グループサイズ: $GROUP_SIZE"
     echo "  分割タイプ: $SPLIT_TYPE"
+    echo "  説明文比較: $([[ "$USE_ASPECT_DESCRIPTIONS" == "1" ]] && echo "有効" || echo "無効")"
+    if [[ "$USE_ASPECT_DESCRIPTIONS" == "1" ]]; then
+        echo "  説明CSV: $ASPECT_DESCRIPTIONS_FILE"
+    fi
     echo ""
     
     read -p "この設定で実験を開始しますか？ (y/n): " confirm
@@ -339,6 +440,14 @@ run_experiment() {
         cmd="$cmd --aspect ${ASPECT_ARRAY[0]}"
     else
         cmd="$cmd --aspects ${ASPECT_ARRAY[@]}"
+    fi
+
+    # 説明文比較オプション
+    if [[ "$USE_ASPECT_DESCRIPTIONS" == "1" ]]; then
+        cmd="$cmd --use-aspect-descriptions"
+        if [[ -n "$ASPECT_DESCRIPTIONS_FILE" ]]; then
+            cmd="$cmd --aspect-descriptions-file \"$ASPECT_DESCRIPTIONS_FILE\""
+        fi
     fi
     
     echo -e "${CYAN}実行コマンド:${NC}"
@@ -549,6 +658,8 @@ main_menu() {
     select_aspects
     input_group_size
     select_split_type
+    # 説明CSV選択（任意）
+    select_description_csv || true
     
     # 確認と実行
     if confirm_settings; then

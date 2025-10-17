@@ -78,7 +78,8 @@ class ContrastFactorAnalyzer:
         examples: Optional[List[Dict]] = None,
         output_language: Optional[str] = None,
         experiment_name: Optional[str] = None,
-        dataset_path: Optional[str] = None
+        dataset_path: Optional[str] = None,
+        aspect_descriptions_file: Optional[str] = None
     ) -> Dict:
         """
         対比因子分析を実行
@@ -104,10 +105,17 @@ class ContrastFactorAnalyzer:
             logger.debug("アスペクト説明文使用: %s", self.use_aspect_descriptions)
         
         # アスペクト説明文管理クラス初期化
-        if self.use_aspect_descriptions and dataset_path:
-            self.aspect_manager = AspectDescriptionManager(dataset_path)
+        if self.use_aspect_descriptions:
+            # 明示CSVが優先、無ければデータセットディレクトリのdescriptions.csv
+            if aspect_descriptions_file:
+                self.aspect_manager = AspectDescriptionManager(csv_path=aspect_descriptions_file)
+            elif dataset_path:
+                self.aspect_manager = AspectDescriptionManager(dataset_path=dataset_path)
             if self.debug:
-                logger.debug("アスペクト説明文読み込み: %s", self.aspect_manager.has_descriptions())
+                try:
+                    logger.debug("アスペクト説明文読み込み: %s (%s)", self.aspect_manager.has_descriptions(), getattr(self.aspect_manager, 'source_file', None))
+                except Exception:
+                    logger.debug("アスペクト説明文読み込み状況の記録に失敗")
         
         # タイムスタンプ生成
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -176,7 +184,9 @@ class ContrastFactorAnalyzer:
                     "group_b_count": len(group_b),
                     "examples_count": len(examples) if examples else 0,
                     "output_language": output_language
-                }
+                },
+                "use_aspect_descriptions": bool(self.use_aspect_descriptions),
+                "aspect_descriptions_file": str(getattr(self.aspect_manager, 'source_file', '') or aspect_descriptions_file or '')
             },
             "input": {
                 "group_a": group_a,
