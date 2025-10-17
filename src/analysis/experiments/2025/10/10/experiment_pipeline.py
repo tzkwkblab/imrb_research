@@ -431,7 +431,7 @@ class ExperimentPipeline:
     def _write_root_overview(self, summary_data: Dict) -> None:
         """プロジェクトルートresults/に概要Markdownを保存し、詳細へのパスを記載"""
         try:
-            root_dir = SCRIPT_DIR.parents[5] / 'results'
+            root_dir = SCRIPT_DIR.parents[5] / 'experiment_summaries'
         except Exception:
             return
         root_dir.mkdir(parents=True, exist_ok=True)
