@@ -493,30 +493,40 @@ class ExperimentPipeline:
         rel_cli_log = os.path.relpath(self.run_dir / 'logs/cli_run.log', root_dir) if self.run_dir else ''
 
         with open(template_path, 'r', encoding='utf-8') as tf:
-            template = tf.read()
+            template_lines = tf.read().splitlines()
 
-        # プレースホルダ置換
-        rendered = template
-        rendered = rendered.replace('{{TIMESTAMP}}', str(meta.get('timestamp', '')))
-        rendered = rendered.replace('{{RUN_NAME}}', str(self.run_name))
-        rendered = rendered.replace('{{DETAIL_DIR_PATH}}', rel_detail_dir)
-        rendered = rendered.replace('{{DETAIL_SUMMARY_PATH}}', rel_detail_summary)
-        rendered = rendered.replace('{{DETAIL_DIR_MD_LINK}}', f"[詳細ディレクトリ]({rel_detail_dir})")
-        rendered = rendered.replace('{{DETAIL_SUMMARY_MD_LINK}}', f"[詳細サマリー]({rel_detail_summary})")
-        rendered = rendered.replace('{{TOTAL_EXPERIMENTS}}', str(meta.get('total_experiments', 0)))
-        rendered = rendered.replace('{{SUCCESSFUL_EXPERIMENTS}}', str(meta.get('successful_experiments', 0)))
-        rendered = rendered.replace('{{RESULTS_TABLE}}', results_table)
-        # 追加置換
-        rendered = rendered.replace('{{DATASET_LIST}}', dataset_list)
-        rendered = rendered.replace('{{ASPECT_LIST}}', aspect_list)
-        rendered = rendered.replace('{{DETAIL_DIR_ABS}}', detail_dir_abs)
-        rendered = rendered.replace('{{CONFIG_PATH}}', config_path)
-        rendered = rendered.replace('{{RUN_DIR_NAME}}', run_dir_name)
-        rendered = rendered.replace('{{LLM_MODEL}}', llm_model)
-        rendered = rendered.replace('{{RESULT_JSON_PATH}}', result_json_rel)
-        rendered = rendered.replace('{{LOG_DIR_PATH}}', rel_log_dir)
-        rendered = rendered.replace('{{CLI_LOG_PATH}}', rel_cli_log)
-        rendered = rendered.replace('{{CLI_LOG_MD_LINK}}', f"[CLIログ]({rel_cli_log})")
+        # プレースホルダ置換（コメント行は置換しない）
+        def apply_replacements(text: str) -> str:
+            text = text.replace('{{TIMESTAMP}}', str(meta.get('timestamp', '')))
+            text = text.replace('{{RUN_NAME}}', str(self.run_name))
+            text = text.replace('{{DETAIL_DIR_PATH}}', rel_detail_dir)
+            text = text.replace('{{DETAIL_SUMMARY_PATH}}', rel_detail_summary)
+            text = text.replace('{{DETAIL_DIR_MD_LINK}}', f"[詳細ディレクトリ]({rel_detail_dir})")
+            text = text.replace('{{DETAIL_SUMMARY_MD_LINK}}', f"[詳細サマリー]({rel_detail_summary})")
+            text = text.replace('{{TOTAL_EXPERIMENTS}}', str(meta.get('total_experiments', 0)))
+            text = text.replace('{{SUCCESSFUL_EXPERIMENTS}}', str(meta.get('successful_experiments', 0)))
+            text = text.replace('{{RESULTS_TABLE}}', results_table)
+            # 追加置換
+            text = text.replace('{{DATASET_LIST}}', dataset_list)
+            text = text.replace('{{ASPECT_LIST}}', aspect_list)
+            text = text.replace('{{DETAIL_DIR_ABS}}', detail_dir_abs)
+            text = text.replace('{{CONFIG_PATH}}', config_path)
+            text = text.replace('{{RUN_DIR_NAME}}', run_dir_name)
+            text = text.replace('{{LLM_MODEL}}', llm_model)
+            text = text.replace('{{RESULT_JSON_PATH}}', result_json_rel)
+            text = text.replace('{{LOG_DIR_PATH}}', rel_log_dir)
+            text = text.replace('{{CLI_LOG_PATH}}', rel_cli_log)
+            text = text.replace('{{CLI_LOG_MD_LINK}}', f"[CLIログ]({rel_cli_log})")
+            return text
+
+        rendered_lines_all = []
+        for ln in template_lines:
+            if ln.strip().startswith('<!--'):
+                # コメント行はそのまま保持（後段で除外）
+                rendered_lines_all.append(ln)
+            else:
+                rendered_lines_all.append(apply_replacements(ln))
+        rendered = "\n".join(rendered_lines_all)
 
         # 出力
         overview_path = root_dir / f"summary_{meta.get('timestamp','')}.md"
