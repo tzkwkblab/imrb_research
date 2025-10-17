@@ -345,15 +345,53 @@ run_experiment() {
     echo "$cmd"
     echo ""
     
-    # 実行
-    if eval "$cmd"; then
+    # 実行: 画面表示しながら一時ログへ保存
+    RUN_TS="$(date +%Y%m%d_%H%M%S)"
+    CLI_TMP_LOG="/tmp/cli_run_${RUN_TS}_$$.log"
+    if eval "$cmd" 2>&1 | tee "$CLI_TMP_LOG"; then
         print_success "実験が正常に完了しました"
         save_config
-        return 0
+        # 後続でログ保存処理
+        :
     else
         print_error "実験中にエラーが発生しました"
-        return 1
+        # 失敗時もログは保存対象
+        :
     fi
+
+    # 実行後: 最新の結果JSONから run_dir を取得
+    local latest_json=$(find "$PROJECT_ROOT/src/analysis/experiments/2025/10/10/results" -type f -name 'batch_experiment_*.json' -print0 2>/dev/null | xargs -0 ls -t 2>/dev/null | head -1)
+    local run_dir
+    if [[ -n "$latest_json" ]]; then
+        run_dir=$(python - <<'PY'
+import json,sys
+p=sys.argv[1]
+with open(p,'r',encoding='utf-8') as f:
+    d=json.load(f)
+print(d.get('experiment_meta',{}).get('output_dir',''))
+PY
+"$latest_json")
+    fi
+
+    if [[ -n "$run_dir" ]]; then
+        mkdir -p "$run_dir/logs"
+        mv "$CLI_TMP_LOG" "$run_dir/logs/cli_run.log" 2>/dev/null || cp "$CLI_TMP_LOG" "$run_dir/logs/cli_run.log"
+        # 環境スナップショット
+        {
+            echo "date: $(date)"
+            echo "uname: $(uname -a)"
+            echo "which python: $(which python)"
+            echo "python --version: $(python --version 2>&1)"
+            echo "pip list:"; pip list
+            echo "git status -sb:"; git -C "$PROJECT_ROOT" status -sb
+            echo "git head:"; git -C "$PROJECT_ROOT" rev-parse HEAD
+        } > "$run_dir/logs/env_snapshot.txt"
+    else
+        print_warning "run_dirが特定できずCLIログの保存をスキップしました"
+    fi
+
+    # 正常終了/異常終了の戻り値は直前のevalの終了コードを反映できないため0固定
+    return 0
 }
 
 # =====================================

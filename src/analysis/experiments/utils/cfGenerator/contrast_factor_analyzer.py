@@ -29,6 +29,7 @@ import os
 from datetime import datetime
 from typing import List, Dict, Optional, Tuple
 from pathlib import Path
+import logging
 
 # 必要なモジュールをインポート
 try:
@@ -42,6 +43,9 @@ except ImportError:
     from ..LLM.llm_factory import LLMFactory
     from ..scores.get_score import calculate_scores, calculate_scores_with_descriptions
     from ..scores.aspect_description_manager import AspectDescriptionManager
+
+
+logger = logging.getLogger(__name__)
 
 
 class ContrastFactorAnalyzer:
@@ -93,24 +97,24 @@ class ContrastFactorAnalyzer:
             分析結果辞書
         """
         if self.debug:
-            print(f"[DEBUG] 対比因子分析開始")
-            print(f"[DEBUG] グループA: {len(group_a)}件")
-            print(f"[DEBUG] グループB: {len(group_b)}件")
-            print(f"[DEBUG] 正解: {correct_answer}")
-            print(f"[DEBUG] アスペクト説明文使用: {self.use_aspect_descriptions}")
+            logger.debug("対比因子分析開始")
+            logger.debug("グループA: %d件", len(group_a))
+            logger.debug("グループB: %d件", len(group_b))
+            logger.debug("正解: %s", correct_answer)
+            logger.debug("アスペクト説明文使用: %s", self.use_aspect_descriptions)
         
         # アスペクト説明文管理クラス初期化
         if self.use_aspect_descriptions and dataset_path:
             self.aspect_manager = AspectDescriptionManager(dataset_path)
             if self.debug:
-                print(f"[DEBUG] アスペクト説明文読み込み: {self.aspect_manager.has_descriptions()}")
+                logger.debug("アスペクト説明文読み込み: %s", self.aspect_manager.has_descriptions())
         
         # タイムスタンプ生成
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         
         # 1. プロンプト生成
         if self.debug:
-            print(f"[DEBUG] Step 1: プロンプト生成")
+            logger.debug("Step 1: プロンプト生成")
         
         prompt, model_config = generate_contrast_factor_prompt(
             group_a=group_a,
@@ -120,38 +124,46 @@ class ContrastFactorAnalyzer:
         )
         
         if self.debug:
-            print(f"[DEBUG] プロンプト長: {len(prompt)}文字")
-            print(f"[DEBUG] モデル設定: {model_config}")
+            logger.debug("プロンプト長: %d文字", len(prompt))
+            try:
+                logger.debug("モデル設定: %s", {k: model_config[k] for k in model_config})
+            except Exception:
+                logger.debug("モデル設定の記録に失敗")
         
         # 2. LLM問い合わせ
         if self.debug:
-            print(f"[DEBUG] Step 2: LLM問い合わせ")
+            logger.debug("Step 2: LLM問い合わせ")
         
         client = self._get_llm_client()
         llm_response = client.ask(prompt, **model_config)
         
         if llm_response is None:
             raise RuntimeError("LLMからの応答取得に失敗しました")
-        
+
         if self.debug:
-            print(f"[DEBUG] LLM応答: {llm_response}")
+            # 機微情報対策: 本文は記録せず、長さと先頭一部のみ
+            preview = (llm_response or "")[:120]
+            logger.debug("LLM応答長: %d, 先頭プレビュー: %s", len(llm_response or ""), preview)
         
         # 3. スコア計算
         if self.debug:
-            print(f"[DEBUG] Step 3: スコア計算")
+            logger.debug("Step 3: スコア計算")
         
         if self.use_aspect_descriptions and self.aspect_manager:
             bert_score, bleu_score = calculate_scores_with_descriptions(
                 correct_answer, llm_response, self.aspect_manager, True
             )
             if self.debug:
-                print(f"[DEBUG] 説明文使用: {self.aspect_manager.get_description(correct_answer)}")
+                try:
+                    logger.debug("説明文使用: %s", self.aspect_manager.get_description(correct_answer))
+                except Exception:
+                    logger.debug("説明文取得に失敗")
         else:
             bert_score, bleu_score = calculate_scores(correct_answer, llm_response)
         
         if self.debug:
-            print(f"[DEBUG] BERTスコア: {bert_score:.4f}")
-            print(f"[DEBUG] BLEUスコア: {bleu_score:.4f}")
+            logger.debug("BERTスコア: %.4f", bert_score)
+            logger.debug("BLEUスコア: %.4f", bleu_score)
         
         # 4. 結果構造化
         result = {

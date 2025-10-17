@@ -71,6 +71,22 @@ class ExperimentPipeline:
         )
         self.logger = logging.getLogger(__name__)
     
+    def _attach_file_logger(self) -> None:
+        """実行ディレクトリ配下にファイルロガーを取り付ける"""
+        if self.run_dir is None:
+            return
+        log_dir = self.run_dir / "logs"
+        log_dir.mkdir(parents=True, exist_ok=True)
+        from logging import FileHandler, Formatter
+        fh = FileHandler(log_dir / "python.log", encoding="utf-8")
+        fh.setLevel(logging.DEBUG if self.debug else logging.INFO)
+        fmt = Formatter('%(asctime)s - %(levelname)s - %(name)s - %(message)s')
+        fh.setFormatter(fmt)
+        root = logging.getLogger()
+        # 重複追加防止
+        if not any(getattr(h, 'baseFilename', '').endswith("python.log") for h in root.handlers):
+            root.addHandler(fh)
+    
     def _load_config(self) -> Dict:
         """設定ファイル読み込み"""
         if not self.config_path.exists():
@@ -249,6 +265,8 @@ class ExperimentPipeline:
         self.run_dir = base_output_dir / f"{self.timestamp}"
         self.run_dir.mkdir(parents=True, exist_ok=True)
         self.logger.info(f"出力ディレクトリ: {self.run_dir}")
+        # ファイルロガー取り付け
+        self._attach_file_logger()
 
         # 各実験設定を実行
         for exp_config in self.config['experiments']:
@@ -394,6 +412,17 @@ class ExperimentPipeline:
                 f"{Path(out_file).name if out_file else ''} |"
             )
         lines.append("")
+        # ログリンク
+        lines.append("## ログ")
+        lines.append("")
+        try:
+            rel_python_log = os.path.relpath(self.run_dir / 'logs/python.log', self.run_dir)
+            rel_cli_log = os.path.relpath(self.run_dir / 'logs/cli_run.log', self.run_dir)
+            lines.append(f"- Pythonログ: {rel_python_log}")
+            lines.append(f"- CLIログ: {rel_cli_log}")
+        except Exception:
+            pass
+        lines.append("")
         # 保存
         md_path = self.run_dir / 'summary.md'
         with open(md_path, 'w', encoding='utf-8') as f:
@@ -460,6 +489,8 @@ class ExperimentPipeline:
         run_dir_name = self.run_dir.name if self.run_dir else ''
         llm_model = (self.config.get('llm') or {}).get('model', '')
         result_json_rel = os.path.relpath(self.run_dir / f"batch_experiment_{meta.get('timestamp','')}.json", root_dir) if self.run_dir else ''
+        rel_log_dir = os.path.relpath(self.run_dir / 'logs', root_dir) if self.run_dir else ''
+        rel_cli_log = os.path.relpath(self.run_dir / 'logs/cli_run.log', root_dir) if self.run_dir else ''
 
         with open(template_path, 'r', encoding='utf-8') as tf:
             template = tf.read()
@@ -483,6 +514,9 @@ class ExperimentPipeline:
         rendered = rendered.replace('{{RUN_DIR_NAME}}', run_dir_name)
         rendered = rendered.replace('{{LLM_MODEL}}', llm_model)
         rendered = rendered.replace('{{RESULT_JSON_PATH}}', result_json_rel)
+        rendered = rendered.replace('{{LOG_DIR_PATH}}', rel_log_dir)
+        rendered = rendered.replace('{{CLI_LOG_PATH}}', rel_cli_log)
+        rendered = rendered.replace('{{CLI_LOG_MD_LINK}}', f"[CLIログ]({rel_cli_log})")
 
         # 出力
         overview_path = root_dir / f"summary_{meta.get('timestamp','')}.md"

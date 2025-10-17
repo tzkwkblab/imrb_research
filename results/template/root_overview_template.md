@@ -6,6 +6,9 @@
 <!-- {{DETAIL_DIR_MD_LINK}}: [詳細ディレクトリ](相対パス) の完成済みリンク -->
 <!-- {{DETAIL_SUMMARY_MD_LINK}}: [詳細サマリー](相対パス) の完成済みリンク -->
 <!-- {{TOTAL_EXPERIMENTS}}: 総実験数 / {{SUCCESSFUL_EXPERIMENTS}}: 成功数 -->
+<!-- 追加: {{LOG_DIR_PATH}}（ログディレクトリ相対パス） -->
+<!-- 追加: {{CLI_LOG_PATH}}（CLIログ相対パス） -->
+<!-- 追加: {{CLI_LOG_MD_LINK}}（[CLIログ](相対パス) リンク） -->
 <!-- {{RESULTS_TABLE}}: 先頭数件の結果テーブル（データセット/アスペクト/BERT/BLEU） -->
 
 # 実験概要 {{TIMESTAMP}}
@@ -15,5 +18,11 @@
 - {{DETAIL_SUMMARY_MD_LINK}}
 - 総実験数: {{TOTAL_EXPERIMENTS}} / 成功: {{SUCCESSFUL_EXPERIMENTS}}
 
+## ログ
+
+- ログディレクトリ: {{LOG_DIR_PATH}}
+- {{CLI_LOG_MD_LINK}}
+
 ## 結果概要
+
 {{RESULTS_TABLE}}

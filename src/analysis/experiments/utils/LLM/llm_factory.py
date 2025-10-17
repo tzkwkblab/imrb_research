@@ -1,4 +1,5 @@
 from typing import Dict, Type
+import logging
 from .base_llm import BaseLLM
 from .gpt.gpt_client import GPTClient
 
@@ -25,16 +26,17 @@ class LLMFactory:
         Returns:
             LLMクライアントインスタンス
         """
+        logger = logging.getLogger(__name__)
         if debug:
-            print(f"[DEBUG] LLMFactory.create_client() 開始")
-            print(f"[DEBUG] 引数 model_name: {model_name}")
-            print(f"[DEBUG] 引数 debug: {debug}")
-            print(f"[DEBUG] 追加パラメータ: {kwargs}")
+            logger.debug("LLMFactory.create_client() 開始")
+            logger.debug("引数 model_name: %s", model_name)
+            logger.debug("引数 debug: %s", debug)
+            logger.debug("追加パラメータ: %s", kwargs)
         
         # model_nameがNoneの場合は設定ファイルから取得
         if model_name is None:
             if debug:
-                print(f"[DEBUG] モデル名未指定 - 設定ファイルから取得開始")
+                logger.debug("モデル名未指定 - 設定ファイルから取得開始")
             
             import sys
             import os
@@ -45,54 +47,55 @@ class LLMFactory:
             model_name = config_manager.get_value('model', 'gpt-4')
             
             if debug:
-                print(f"[DEBUG] 設定ファイルから取得したモデル: {model_name}")
-                # 他の設定も表示
+                logger.debug("設定ファイルから取得したモデル: %s", model_name)
                 try:
                     model_config = config_manager.get_model_config()
-                    print(f"[DEBUG] 設定詳細:")
-                    print(f"[DEBUG]   temperature: {model_config.temperature}")
-                    print(f"[DEBUG]   system_prompt: {model_config.system_prompt[:50]}...")
+                    logger.debug("設定詳細: temperature=%s", getattr(model_config, 'temperature', None))
+                    # system_prompt は長いので先頭のみ
+                    sp = getattr(model_config, 'system_prompt', '')
+                    logger.debug("設定詳細: system_prompt(先頭50)=%s", sp[:50] if isinstance(sp, str) else '')
                 except Exception as e:
                     if debug:
-                        print(f"[DEBUG] 設定詳細取得エラー: {e}")
+                        logger.debug("設定詳細取得エラー: %s", e)
         
         # プロバイダーを推定してクライアントクラスを取得
         if debug:
-            print(f"[DEBUG] クライアントクラス推定開始: {model_name}")
+            logger.debug("クライアントクラス推定開始: %s", model_name)
         
         client_class = cls._get_client_class(model_name, debug=debug)
         
         if debug:
-            print(f"[DEBUG] 決定されたクライアントクラス: {client_class.__name__}")
-            print(f"[DEBUG] クライアントインスタンス作成開始")
+            logger.debug("決定されたクライアントクラス: %s", client_class.__name__)
+            logger.debug("クライアントインスタンス作成開始")
         
         # debugパラメータをkwargsに追加
         kwargs['debug'] = debug
         client = client_class(model=model_name, **kwargs)
         
         if debug:
-            print(f"[DEBUG] クライアントインスタンス作成完了")
-            print(f"[DEBUG] 作成されたクライアントのモデル: {client.get_model_name()}")
+            logger.debug("クライアントインスタンス作成完了")
+            logger.debug("作成されたクライアントのモデル: %s", client.get_model_name())
         
         return client
     
     @classmethod
     def _get_client_class(cls, model_name: str, debug: bool = False) -> Type[BaseLLM]:
         """モデル名からクライアントクラスを推定"""
+        logger = logging.getLogger(__name__)
         if debug:
-            print(f"[DEBUG] クライアントクラス推定: {model_name}")
-            print(f"[DEBUG] GPTプレフィックス: {cls._gpt_prefixes}")
+            logger.debug("クライアントクラス推定: %s", model_name)
+            logger.debug("GPTプレフィックス: %s", cls._gpt_prefixes)
         
         # GPTモデルの場合
         for prefix in cls._gpt_prefixes:
             if model_name.startswith(prefix):
                 if debug:
-                    print(f"[DEBUG] GPTモデルと判定: プレフィックス '{prefix}' にマッチ")
+                    logger.debug("GPTモデルと判定: プレフィックス '%s' にマッチ", prefix)
                 return cls._providers['openai']
         
         # デフォルトでGPTClientを使用
         if debug:
-            print(f"[DEBUG] プレフィックスにマッチしないため、デフォルトでGPTClientを使用")
+            logger.debug("プレフィックスにマッチしないため、デフォルトでGPTClientを使用")
         
         return cls._providers['openai']
     
@@ -106,28 +109,29 @@ class LLMFactory:
         Returns:
             利用可能なモデルIDのリスト
         """
+        logger = logging.getLogger(__name__)
         if debug:
-            print(f"[DEBUG] get_supported_models() 開始")
-            print(f"[DEBUG] プロバイダー: {provider}")
+            logger.debug("get_supported_models() 開始")
+            logger.debug("プロバイダー: %s", provider)
         
         if provider not in cls._providers:
             error_msg = f"サポートされていないプロバイダー: {provider}"
             if debug:
-                print(f"[DEBUG] エラー: {error_msg}")
+                logger.debug("エラー: %s", error_msg)
             raise ValueError(error_msg)
         
         # 一時的にクライアントを作成してモデル一覧を取得
         client_class = cls._providers[provider]
         
         if debug:
-            print(f"[DEBUG] 一時クライアント作成: {client_class.__name__}")
+            logger.debug("一時クライアント作成: %s", client_class.__name__)
         
         temp_client = client_class(debug=debug)
         models = temp_client.get_available_model_ids()
         
         if debug:
-            print(f"[DEBUG] 取得したモデル数: {len(models)}")
-            print(f"[DEBUG] 最初の5個: {models[:5] if models else []}")
+            logger.debug("取得したモデル数: %d", len(models))
+            logger.debug("最初の5個: %s", models[:5] if models else [])
         
         return models
     
@@ -141,25 +145,26 @@ class LLMFactory:
         Returns:
             モデル詳細情報のリスト
         """
+        logger = logging.getLogger(__name__)
         if debug:
-            print(f"[DEBUG] get_model_details() 開始")
-            print(f"[DEBUG] プロバイダー: {provider}")
+            logger.debug("get_model_details() 開始")
+            logger.debug("プロバイダー: %s", provider)
         
         if provider not in cls._providers:
             error_msg = f"サポートされていないプロバイダー: {provider}"
             if debug:
-                print(f"[DEBUG] エラー: {error_msg}")
+                logger.debug("エラー: %s", error_msg)
             raise ValueError(error_msg)
         
         client_class = cls._providers[provider]
         
         if debug:
-            print(f"[DEBUG] 一時クライアント作成: {client_class.__name__}")
+            logger.debug("一時クライアント作成: %s", client_class.__name__)
         
         temp_client = client_class(debug=debug)
         details = temp_client.list_available_models()
         
         if debug:
-            print(f"[DEBUG] 取得したモデル詳細数: {len(details)}")
+            logger.debug("取得したモデル詳細数: %d", len(details))
         
         return details

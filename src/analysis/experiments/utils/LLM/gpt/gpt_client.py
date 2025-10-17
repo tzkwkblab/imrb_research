@@ -3,6 +3,7 @@ import openai
 from typing import Optional, List, Dict
 from datetime import datetime
 from ..base_llm import BaseLLM
+import logging
 
 
 class GPTClient(BaseLLM):
@@ -11,30 +12,31 @@ class GPTClient(BaseLLM):
     def __init__(self, model: str = None, max_retries: int = 3, debug: bool = False):
         # デバッグモード設定
         self.debug = debug
+        self.logger = logging.getLogger(__name__)
         
         if self.debug:
-            print(f"[DEBUG] GPTClient初期化開始")
-            print(f"[DEBUG] 引数 model: {model}")
-            print(f"[DEBUG] 引数 max_retries: {max_retries}")
+            self.logger.debug("GPTClient初期化開始")
+            self.logger.debug("引数 model: %s", model)
+            self.logger.debug("引数 max_retries: %s", max_retries)
         
         # 基底クラスで設定管理
         super().__init__(model, max_retries)
         
         if self.debug:
-            print(f"[DEBUG] 基底クラス初期化後のモデル: {self.model}")
+            self.logger.debug("基底クラス初期化後のモデル: %s", self.model)
         
         # OpenAIクライアント初期化（環境変数からAPIキー取得）
         api_key = self.get_api_key('OPENAI_API_KEY')
         self.client = openai.OpenAI(api_key=api_key)
         
         if self.debug:
-            print(f"[DEBUG] OpenAIクライアント初期化完了")
+            self.logger.debug("OpenAIクライアント初期化完了")
         
         # モデル名の検証
         self._validate_model()
         
         if self.debug:
-            print(f"[DEBUG] GPTClient初期化完了 - 最終モデル: {self.model}")
+            self.logger.debug("GPTClient初期化完了 - 最終モデル: %s", self.model)
     
     def _validate_model(self):
         """
@@ -42,13 +44,13 @@ class GPTClient(BaseLLM):
         不正な場合は利用可能なモデル一覧を表示してエラー終了
         """
         if self.debug:
-            print(f"[DEBUG] モデル検証開始: {self.model}")
+            self.logger.debug("モデル検証開始: %s", self.model)
         
         available_models = self.get_available_model_ids()
         
         if self.debug:
-            print(f"[DEBUG] 利用可能モデル数: {len(available_models)}")
-            print(f"[DEBUG] 利用可能モデル（最初の5個）: {available_models[:5]}")
+            self.logger.debug("利用可能モデル数: %d", len(available_models))
+            self.logger.debug("利用可能モデル（最初の5個）: %s", available_models[:5])
         
         if not available_models:
             print("エラー: 利用可能なモデル一覧を取得できませんでした")
@@ -62,7 +64,7 @@ class GPTClient(BaseLLM):
             sys.exit(1)
         
         if self.debug:
-            print(f"[DEBUG] モデル検証成功: {self.model}")
+            self.logger.debug("モデル検証成功: %s", self.model)
     
     def query(self, messages: List[Dict[str, str]], **kwargs) -> Optional[str]:
         """
@@ -79,10 +81,11 @@ class GPTClient(BaseLLM):
         params.pop('model', None)
         
         if self.debug:
-            print(f"[DEBUG] API呼び出し開始")
-            print(f"[DEBUG] 使用モデル: {self.model}")
-            print(f"[DEBUG] パラメータ: {params}")
-            print(f"[DEBUG] メッセージ数: {len(messages)}")
+            safe_params = {k: v for k, v in params.items() if k not in ('api_key', 'headers')}
+            self.logger.debug("API呼び出し開始")
+            self.logger.debug("使用モデル: %s", self.model)
+            self.logger.debug("パラメータ: %s", safe_params)
+            self.logger.debug("メッセージ数: %d", len(messages))
         
         for attempt in range(self.max_retries):
             try:
@@ -93,15 +96,15 @@ class GPTClient(BaseLLM):
                 )
                 
                 if self.debug:
-                    print(f"[DEBUG] API呼び出し成功 (試行 {attempt + 1})")
-                    print(f"[DEBUG] 応答長: {len(response.choices[0].message.content)} 文字")
+                    self.logger.debug("API呼び出し成功 (試行 %d)", attempt + 1)
+                    self.logger.debug("応答長: %d 文字", len(response.choices[0].message.content))
                 
                 return response.choices[0].message.content.strip()
             
             except Exception as e:
                 print(f"GPT API エラー (試行 {attempt + 1}/{self.max_retries}): {e}")
                 if self.debug:
-                    print(f"[DEBUG] エラー詳細: {type(e).__name__}: {e}")
+                    self.logger.debug("エラー詳細: %s: %s", type(e).__name__, e)
                 if attempt == self.max_retries - 1:
                     return None
         
@@ -118,7 +121,7 @@ class GPTClient(BaseLLM):
         """
         try:
             if self.debug:
-                print(f"[DEBUG] モデル一覧取得開始")
+                self.logger.debug("モデル一覧取得開始")
             
             models = self.client.models.list()
             model_data = []
@@ -135,14 +138,14 @@ class GPTClient(BaseLLM):
             model_data.sort(key=lambda x: x['created'], reverse=True)
             
             if self.debug:
-                print(f"[DEBUG] モデル一覧取得完了: {len(model_data)}個")
+                self.logger.debug("モデル一覧取得完了: %d個", len(model_data))
             
             return model_data
             
         except Exception as e:
             print(f"モデル一覧取得エラー: {e}")
             if self.debug:
-                print(f"[DEBUG] モデル一覧取得エラー詳細: {type(e).__name__}: {e}")
+                self.logger.debug("モデル一覧取得エラー詳細: %s: %s", type(e).__name__, e)
             return []
     
     def get_available_model_ids(self) -> List[str]:
