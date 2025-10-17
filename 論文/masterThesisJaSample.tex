@@ -12,10 +12,10 @@
 % \subtitle{—情報学学位プログラムの場合—}{: A Case Study in the Master's Program in Informatics}
 
 % 【必須】発表年月：\publish{年}{月}
-\publish{20XX}{XX}
+\publish{2025}{12}
 
 % 【必須】学生情報：\student{学籍番号}{氏名（日本語：氏名の間は1文字空ける）}{氏名（英語：Twins登録の表記）}
-\student{20XX21XXX}{筑波　太郎}{Tsukuba Taro}
+\student{202421675}{清野　駿}{Seino Shun}
 
 % 【必須】日本語の概要：\jabst{概要}
 \jabst{
@@ -29,7 +29,7 @@ This study examines the feasibility of generating contrastive factor labels that
 }
 
 % 【必須】研究指導教員（氏名の間は1文字空ける）：\advisors{主研究指導教員}{副研究指導教員}
-\advisors{大学　一郎}{紫峰　花子}
+\advisors{若林　啓}{伊藤　寛祥}
 
 
 % 以下，本文を出力
@@ -66,6 +66,9 @@ AI の社会実装が進む中で，医療・法務・教育等の高責任領�
 \section{課題}
 既存の可視化・事後説明手法では，未知データごとに人手で解釈ラベル（例：ニューロンの発火条件）を付与する負担が大きい．人手依存を減らし，入力集合の差異から説明ラベルを自動生成する枠組みが求められる．
 
+\paragraph{関連動向（非教師ありコンセプト抽出）}
+近年，Concept Bottleneck Models（CBM）の非教師あり変種や，合成的な概念表現を自動発見する手法が提案されている．具体的には，Unsupervised CBM は事前に人間が定義した概念に依存せず内部表現から概念を抽出し\cite{UnsupervisedCBM2024}，CCE（Compositional Concept Extraction）は複数概念の構成性に着目して自動抽出を行う\cite{CCE2024}．両者はいずれも「非教師ありコンセプト抽出」に属し，事前ラベル・定義なしで概念を獲得できる利点がある一方で，抽出概念の意味を人が解釈・命名する作業は不可欠であり，解釈容易な構造とコンセプト自体の意味付けが未解決である．本研究は，コンセプトの自動的な意味付けと効率的な可視化を志向し，A/B 集合の差分から対比因子ラベルを抽出・検証する枠組みを提案する．
+
 \section{問題設定}
 本研究では，テキスト集合 A（発火）と B（非発火）の差異を自然言語で要約し，ニューロンの発火条件に対応する\textbf{対比因子ラベル}を生成する問題を定式化する．
 
@@ -87,6 +90,11 @@ Attention 可視化，SHAP，LIME などは入力特徴と出力の関係を示�
 
 \section{人手依存の問題}
 いずれもラベル付与・検証に人手が必要で，スケールしない．本研究は A/B 集合間の\textit{差分説明}を自動化することで負担軽減を図る．
+
+\section{非教師ありコンセプト抽出：CBM と CCE}
+従来の Concept Bottleneck Models（CBM）は，人手で定義・注釈された概念に依存するため，適用や拡張に要するコストが高いという制約がある．これに対し，Unsupervised CBM は事前定義を前提とせず，モデル内部表現から概念を自動的に抽出してボトルネックを構成するアプローチである\cite{UnsupervisedCBM2024}．この系譜は，概念獲得をデータ駆動で行うことで，アノテーション負荷の削減と柔軟性の向上を目指す．
+
+一方，CCE（Compositional Concept Extraction）は，概念の合成性（compositionality）に焦点を当て，複数の概念の組合せでサンプルを説明できる構成的表現の自動発見を志向する\cite{CCE2024}．両者はいずれも「非教師ありコンセプト抽出」として，人間の事前ラベルや定義なしに概念を抽出できる利点を持つが，抽出された概念の意味付け・命名や可視化は依然として人手に依存しやすく，解釈容易な構造設計とコンセプト自体の意味付け問題が残る．本研究は，A/B 集合の差分に基づく対比因子ラベルという形で自動的な意味づけと効率的な可視化を支援することを目的とする．
 
 \chapter{提案}
 \section{タスク設定}
@@ -162,6 +170,12 @@ Devlin, J., Chang, M.-W., Lee, K., Toutanova, K., "BERT: Pre-training of Deep Bi
 
 \bibitem{AttributionGraphs}
 Transformer Circuits Team, "Attribution Graphs", 2025, https://transformer-circuits.pub/2025/attribution-graphs/methods.html
+
+\bibitem{UnsupervisedCBM2024}
+"Unsupervised Concept Bottleneck Models", arXiv:2407.03921, 2024, https://arxiv.org/abs/2407.03921.
+
+\bibitem{CCE2024}
+"Compositional Concept Extraction", Proceedings of PMLR, vol. 235, 2024, https://proceedings.mlr.press/v235/stein24b.html.
 
 \end{thebibliography}
 
