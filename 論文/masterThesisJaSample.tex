@@ -5,11 +5,11 @@
 \setcounter{page}{-1}
 
 % 【必須】主題：\maintatile{日本語}{英語}
-\maintitle{国文学論文の情報検索}{Information Retrieval for Articles on Japanese Literature}
+\maintitle{説明可能 AI のための対比因子ラベル生成手法に関する研究}{A Study on Generating Contrastive Factor Labels for Explainable AI}
 
 % 【任意】副題：\subtitle{日本語}{英語}
 % 副題が不要な場合は次の行をコメントアウトしてください
-\subtitle{—情報学学位プログラムの場合—}{: A Case Study in the Master's Program in Informatics}
+% \subtitle{—情報学学位プログラムの場合—}{: A Case Study in the Master's Program in Informatics}
 
 % 【必須】発表年月：\publish{年}{月}
 \publish{20XX}{XX}
@@ -19,20 +19,13 @@
 
 % 【必須】日本語の概要：\jabst{概要}
 \jabst{
-　この文書は、筑波大学大学院情報学学位プログラムの論文概要のサンプルである。文字のサイズは10.5ポイントとする。
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-
-　* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \\
-　（参考文献は書かない）
-
+　大規模言語モデル（LLM）の実運用では、判断の妥当性を説明可能にすることが重要であるが、既存手法は未知データごとに人手で解釈ラベルを付与する負担が大きい。本研究は、二つのテキスト集合（A: ニューロン発火群, B: 非発火群）間の差異を自然言語で要約し、発火条件を表す「対比因子ラベル」を自動生成する枠組みの実現可能性を検証する。手法は、A/B の代表テキストを入力として、Few-shot 例示（0/1/3-shot）付きプロンプトで LLM に差分説明を生成させる。評価は SemEval レストランレビューと Steam ゲームレビューの二データセットを用い、各グループ 300 件・LLM は GPT-4o-mini で固定し、生成文と正解アスペクト名との類似度を BERT スコアおよび BLEU スコアで測定した。結果として、全体平均で BERT ≈ 0.551、BLEU ≈ 0.007 を得て、意味レベルの一致は中程度だが語彙一致は低いことが示された。また Few-shot では 1-shot が最も良く、出力スタイルが「説明的叙述」から「一意に特定する語彙」へ矯正される傾向が確認された。アスペクト別には gameplay/food 等の語彙的に安定な概念で高く、recommended/suggestion 等の抽象概念で低い。以上より、本枠組みは一定の条件で有効であり、人手ラベリングの一部代替となる可能性がある一方、抽象概念の扱いと評価指標の高度化（人手・LLM 補助、非語彙的類似）が今後の課題である。
 }
 
 % 【任意】英語の概要：\eabst{Abstract}
 % 英語の概要が不要な場合は\eabst{}をすべてコメントアウトしてください
 \eabst{
-　（英語をつけてもよい）This is an example of the abstract of a thesis for the Master's Program in Informatics, University of Tsukuba.
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\\
-
+This study examines the feasibility of generating contrastive factor labels that explain neuron activation conditions by comparing two text groups (A: activated, B: non-activated). We prompt an LLM (GPT-4o-mini) with 0/1/3-shot examples to produce concise differences, and evaluate semantic and lexical alignment against gold aspect labels using BERT and BLEU on SemEval restaurant and Steam game reviews (300 samples per group). Results show moderate semantic similarity (BERT ≈ 0.551) but very low lexical overlap (BLEU ≈ 0.007), with 1-shot giving the best performance by shifting outputs toward uniquely identifying terms. Performance is higher for lexically stable aspects (e.g., gameplay, food) and lower for abstract ones (e.g., recommended, suggestion). The approach can partially reduce manual labeling, while handling abstract concepts and improving evaluation beyond lexical matches remain as future work.
 }
 
 % 【必須】研究指導教員（氏名の間は1文字空ける）：\advisors{主研究指導教員}{副研究指導教員}
@@ -67,21 +60,80 @@
 % 項：\subsection{}
 
 \chapter{序章}
-% プレースホルダ
-現在，遠隔地間で通話する方法として携帯電話が使用されている．ユーザは携帯電話を使ってどこででも通話することができ，これまで固定電話や公衆電話を利用して行われていた仕事相手や友人同士の連絡がより容易になった．
+\section{背景}
+AI の社会実装が進む中で，医療・法務・教育等の高責任領域では，\textit{なぜその判断なのか}を示す説明可能性（XAI）が強く求められている．一方，多くのモデルは出力は行うが理由は提示せず，特に LLM では創発的挙動により出力根拠の把握が難しい．
+
+\section{課題}
+既存の可視化・事後説明手法では，未知データごとに人手で解釈ラベル（例：ニューロンの発火条件）を付与する負担が大きい．人手依存を減らし，入力集合の差異から説明ラベルを自動生成する枠組みが求められる．
+
+\section{問題設定}
+本研究では，テキスト集合 A（発火）と B（非発火）の差異を自然言語で要約し，ニューロンの発火条件に対応する\textbf{対比因子ラベル}を生成する問題を定式化する．
+
+\section{目的と貢献}
+目的は，LLM を用いた対比因子ラベル自動生成の\textbf{実現可能性}を検証することである．本研究の貢献は以下である．
+\begin{itemize}
+  \item 対比因子生成という XAI 新タスクの定義と評価枠組みの提示
+  \item SemEval/Steam の異種ドメインでの再現可能な比較実験
+  \item Few-shot による出力スタイル矯正効果（1-shot 最良）の報告
+\end{itemize}
 
 
 \chapter{関連研究}
-\section{○○の研究}
-\subsection{○○における××の研究}
+\section{可視化に基づく説明}
+Attention 可視化，SHAP，LIME などは入力特徴と出力の関係を示すが，語彙や特徴に特化しがちで，未知データへの汎化や抽象概念の説明に限界がある．
+
+\section{事後説明・ルール抽出}
+決定木等によるルール抽出や説明生成は理解容易性がある一方，モデル内部の発火条件の同定や未知分布での整合性維持が課題である．
+
+\section{人手依存の問題}
+いずれもラベル付与・検証に人手が必要で，スケールしない．本研究は A/B 集合間の\textit{差分説明}を自動化することで負担軽減を図る．
 
 \chapter{提案}
+\section{タスク設定}
+テキスト集合 A（発火）と B（非発火）を入力とし，A に特徴的で B に現れにくい表現・内容を自然言語で記述する．これを対比因子ラベルとする．
+
+\section{LLM プロンプト設計}
+指示：\textit{A/B を比較し，A に特徴的で B に見られない主要な違いを簡潔に述べよ}．Few-shot 例示（0/1/3-shot）を可変とし，言語・長さを指定して一貫性を確保する．
+
+\section{Few-shot の役割}
+例示は出力スタイルを「説明的叙述」から「一意に特定する語彙」へ誘導し，精度向上を期待する．
 
 \chapter{評価実験}
+\section{データセット}
+SemEval-2014 レストランレビューと Steam ゲームレビューを用いる．各データはアスペクト（food, price, service / gameplay, story, audio 等）を持つ．
+
+\section{設定}
+各グループ 300 件，LLM は GPT-4o-mini，Few-shot は 0/1/3-shot を比較．
+
+\section{評価指標}
+生成文と正解アスペクト名の類似度を BERT スコア（意味）と BLEU（語彙）で評価する．
+
+\chapter{結果}
+\section{全体統計}
+全体平均は BERT \approx 0.551，BLEU \approx 0.007 であり，意味的一致は中程度，語彙一致は極めて低い．
+
+\section{Few-shot の影響}
+0/1/3-shot の比較で 1-shot が最良．例示が出力スタイルを一意化し，正解語彙への収束を促す．
+
+\section{アスペクト別傾向}
+ゲームレビューでは gameplay, story, audio が高く，recommended, suggestion は低い．レストランでは price が間接表現の多さから低下する傾向がある．
 
 \chapter{考察}
+\section{意味と語彙の乖離}
+BERT は中程度だが BLEU は極低であり，意味は合致する一方，語彙は多様で一致しにくい．
+
+\section{抽象アスペクトの困難}
+recommended/suggestion のような抽象・メタ的概念は低スコア．price でも間接表現が多い場合に低下．
+
+\section{Few-shot の効果}
+1-shot が最良で，最小限の例示が出力を一意化することが示唆される．
 
 \chapter{まとめ}
+\section{結論}
+LLM を用いた対比因子ラベル生成は一定条件で有効で，人手ラベリングの一部代替となる可能性がある．
+
+\section{今後の課題}
+評価の高度化（人手・LLM 補助，語彙非依存指標），レビュー以外のデータセットへの拡張，TF-IDF 等の非 LLM ベースラインの構築．
 
 \chapter*{謝辞}
 \addcontentsline{toc}{chapter}{謝辞}
@@ -99,9 +151,18 @@
 %% 参考文献を直接ファイルに含めて書く場合
 \begin{thebibliography}{99}
 
-% e.g.)
-\bibitem{studyA}
-黒田治之，千葉和彦，「M.26 わい性台木利用リンゴ樹における生産構造と光環境に及ぼす栽植密度の影響」，園芸学会雑誌，Vol.71，No.4，2002，pp.544-552．
+\bibitem{SemEval2014}
+Pontiki, M., Galanis, D., Papageorgiou, H., Androutsopoulos, I., Manandhar, S., et al., "SemEval-2014 Task 4: Aspect Based Sentiment Analysis", Proceedings of SemEval 2014, pp. 27-35.
+
+\bibitem{BLEU2002}
+Papineni, K., Roukos, S., Ward, T., Zhu, W. J., "BLEU: a Method for Automatic Evaluation of Machine Translation", Proceedings of ACL 2002, pp. 311-318.
+
+\bibitem{BERT2018}
+Devlin, J., Chang, M.-W., Lee, K., Toutanova, K., "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", arXiv:1810.04805, 2018.
+
+\bibitem{AttributionGraphs}
+Transformer Circuits Team, "Attribution Graphs", 2025, https://transformer-circuits.pub/2025/attribution-graphs/methods.html
+
 \end{thebibliography}
 
 \end{document}
