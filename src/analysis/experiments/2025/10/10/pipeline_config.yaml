@@ -43,3 +43,7 @@ general:
   use_aspect_descriptions: false
   # 説明CSVの明示指定（未指定時は単語比較 or データセット標準のdescriptions.csvを使用）
   aspect_descriptions_file:
+  # Few-shot例題の使用設定
+  use_examples: false
+  examples_file:
+  max_examples:

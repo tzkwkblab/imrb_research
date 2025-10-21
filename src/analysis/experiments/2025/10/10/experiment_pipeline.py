@@ -53,6 +53,8 @@ class ExperimentPipeline:
         self.run_dir: Optional[Path] = None
         # アスペクト説明CSVのキャッシュ {csv_path: {aspect: description}}
         self._desc_cache: Dict[str, Dict[str, str]] = {}
+        # 例題ファイルのキャッシュ {path: List[Dict]}
+        self._examples_cache: Dict[str, List[Dict]] = {}
 
     def _derive_run_name(self) -> str:
         """実行名を決定（configのrun_name > 設定ファイル名）"""
@@ -201,9 +203,27 @@ class ExperimentPipeline:
             general_cfg = self.config.get('general', {}) or {}
             use_desc = bool(general_cfg.get('use_aspect_descriptions', False))
             desc_file = general_cfg.get('aspect_descriptions_file')
+            # 例題設定
+            use_examples = bool(general_cfg.get('use_examples', False))
+            examples_file = general_cfg.get('examples_file')
+            max_examples = general_cfg.get('max_examples')
+            if isinstance(max_examples, str):
+                try:
+                    max_examples = int(max_examples) if max_examples.strip() else None
+                except Exception:
+                    max_examples = None
 
             analyzer = ContrastFactorAnalyzer(debug=self.debug, use_aspect_descriptions=use_desc)
             
+            # 例題読み込み（必要時）
+            examples_payload: Optional[List[Dict]] = None
+            if use_examples and examples_file:
+                examples_all = self._load_examples_file(str(examples_file))
+                if isinstance(max_examples, int) and max_examples > 0:
+                    examples_payload = examples_all[:max_examples]
+                else:
+                    examples_payload = examples_all
+
             result = analyzer.analyze(
                 group_a=splits.group_a,
                 group_b=splits.group_b,
@@ -212,7 +232,8 @@ class ExperimentPipeline:
                 experiment_name=experiment_id,
                 # デフォルトの説明文フォールバック用（外部データ標準のdescriptions.csv）
                 dataset_path=str(self.dataset_manager.data_root / 'steam-review-aspect-dataset' / 'current') if dataset == 'steam' else None,
-                aspect_descriptions_file=desc_file
+                aspect_descriptions_file=desc_file,
+                examples=examples_payload
             )
             
             self.logger.info("✅ LLM応答取得完了")
@@ -242,6 +263,10 @@ class ExperimentPipeline:
             # 選択モード/CSVパス（analyzer側で既に含めるが明示的に保持）
             result['experiment_info']['use_aspect_descriptions'] = bool(use_desc)
             result['experiment_info']['aspect_descriptions_file'] = desc_file or ''
+            # 例題メタ情報
+            result['experiment_info']['use_examples'] = bool(use_examples)
+            result['experiment_info']['examples_file'] = examples_file or ''
+            result['experiment_info']['examples_count_used'] = len(examples_payload or [])
             
             return result
             
@@ -410,8 +435,8 @@ class ExperimentPipeline:
         # 結果一覧
         lines.append("## 結果概要")
         lines.append("")
-        lines.append("| データセット | アスペクト | 件数(A/B) | BERT | BLEU | 品質 | LLM出力 | 出力ファイル |")
-        lines.append("| --- | --- | --- | ---:| ---:| --- | --- | --- |")
+        lines.append("| データセット | アスペクト | 件数(A/B) | 例題数 | BERT | BLEU | 品質 | LLM出力 | 出力ファイル |")
+        lines.append("| --- | --- | --- | ---:| ---:| ---:| --- | --- | --- |")
         for r in results:
             if not r.get('summary', {}).get('success', False):
                 continue
@@ -434,19 +459,56 @@ class ExperimentPipeline:
             a_count = len(((r.get('input') or {}).get('group_a') or []))
             b_count = len(((r.get('input') or {}).get('group_b') or []))
             counts_display = f"A:{a_count}/B:{b_count}"
+            # 例題数
+            examples_count = int((info.get('examples_count_used') or 0))
             # LLM出力（テーブル向けに整形・短縮）
             llm_text = (r.get('process', {}) or {}).get('llm_response', '') or ''
             llm_text = llm_text.replace("\n", " ").replace("|", "｜").strip()
             if len(llm_text) > 160:
                 llm_text = llm_text[:157] + "..."
             lines.append(
-                f"| {info.get('dataset','')} | {aspect_display} | {counts_display} | "
+                f"| {info.get('dataset','')} | {aspect_display} | {counts_display} | {examples_count} | "
                 f"{evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} | "
                 f"{r.get('summary',{}).get('quality_assessment',{}).get('overall_quality','')} | "
                 f"{llm_text} | "
                 f"{Path(out_file).name if out_file else ''} |"
             )
         lines.append("")
+
+    def _load_examples_file(self, path: str) -> List[Dict]:
+        """例題ファイル(JSON/YAML)を読み込み、簡易検証して返す。キャッシュあり。"""
+        if not path:
+            return []
+        if path in self._examples_cache:
+            return self._examples_cache[path]
+        ext = (Path(path).suffix or '').lower()
+        data = []
+        try:
+            if ext in ['.yaml', '.yml']:
+                import yaml as _yaml
+                with open(path, 'r', encoding='utf-8') as f:
+                    data = _yaml.safe_load(f) or []
+            else:
+                import json as _json
+                with open(path, 'r', encoding='utf-8') as f:
+                    data = _json.load(f) or []
+        except Exception as e:
+            self.logger.warning(f"例題ファイルの読み込みに失敗: {path} ({e})")
+            data = []
+        # 検証・整形
+        valid: List[Dict] = []
+        if isinstance(data, list):
+            for item in data:
+                try:
+                    ga = item.get('group_a') if isinstance(item, dict) else None
+                    gb = item.get('group_b') if isinstance(item, dict) else None
+                    ans = item.get('answer') if isinstance(item, dict) else None
+                    if isinstance(ga, list) and isinstance(gb, list) and isinstance(ans, str):
+                        valid.append({'group_a': ga, 'group_b': gb, 'answer': ans})
+                except Exception:
+                    continue
+        self._examples_cache[path] = valid
+        return valid
         # ログリンク
         lines.append("## ログ")
         lines.append("")

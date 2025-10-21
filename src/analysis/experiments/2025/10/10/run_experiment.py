@@ -95,6 +95,24 @@ def parse_args():
         type=str,
         help='アスペクト説明文CSVファイル（aspect,description ヘッダー）'
     )
+
+    # 例題（Few-shot）オプション
+    parser.add_argument(
+        '--use-examples',
+        action='store_true',
+        help='Few-shot例題をプロンプトに含める'
+    )
+    parser.add_argument(
+        '--examples-file',
+        type=str,
+        help='Few-shot例題ファイル（JSON/YAML）'
+    )
+    parser.add_argument(
+        '--max-examples',
+        type=int,
+        default=None,
+        help='先頭N件のみ例題を使用（未指定は全件）'
+    )
     
     # その他オプション
     parser.add_argument(
@@ -150,7 +168,10 @@ def create_quick_config(args) -> dict:
             'debug_mode': args.debug,
             'console_output': True,
             'use_aspect_descriptions': bool(args.use_aspect_descriptions),
-            'aspect_descriptions_file': args.aspect_descriptions_file
+            'aspect_descriptions_file': args.aspect_descriptions_file,
+            'use_examples': bool(args.use_examples),
+            'examples_file': args.examples_file,
+            'max_examples': args.max_examples
         }
     }
     

@@ -47,6 +47,9 @@ GROUP_SIZE=""
 SPLIT_TYPE=""
 USE_ASPECT_DESCRIPTIONS="0"
 ASPECT_DESCRIPTIONS_FILE=""
+USE_EXAMPLES="0"
+EXAMPLES_FILE=""
+MAX_EXAMPLES=""
 
 # =====================================
 # ユーティリティ関数
@@ -124,6 +127,9 @@ GROUP_SIZE="$GROUP_SIZE"
 SPLIT_TYPE="$SPLIT_TYPE"
 USE_ASPECT_DESCRIPTIONS="$USE_ASPECT_DESCRIPTIONS"
 ASPECT_DESCRIPTIONS_FILE="$ASPECT_DESCRIPTIONS_FILE"
+USE_EXAMPLES="$USE_EXAMPLES"
+EXAMPLES_FILE="$EXAMPLES_FILE"
+MAX_EXAMPLES="$MAX_EXAMPLES"
 EOF
     print_info "設定を保存しました: $CONFIG_FILE"
 }
@@ -141,6 +147,13 @@ load_previous_config() {
         echo "説明文比較: $([[ "$USE_ASPECT_DESCRIPTIONS" == "1" ]] && echo "有効" || echo "無効")"
         if [[ "$USE_ASPECT_DESCRIPTIONS" == "1" ]]; then
             echo "説明CSV: $ASPECT_DESCRIPTIONS_FILE"
+        fi
+        echo "例題使用: $([[ "$USE_EXAMPLES" == "1" ]] && echo "有効" || echo "無効")"
+        if [[ "$USE_EXAMPLES" == "1" ]]; then
+            echo "例題ファイル: $EXAMPLES_FILE"
+            if [[ -n "$MAX_EXAMPLES" ]]; then
+                echo "最大例題数: $MAX_EXAMPLES"
+            fi
         fi
         echo ""
         
@@ -238,6 +251,58 @@ select_description_csv() {
 
     print_error "無効な番号です"
     return 1
+}
+
+# =====================================
+# 例題ファイル選択
+# =====================================
+
+select_examples_file() {
+    print_section "例題（Few-shot）設定"
+    read -p "例題を使用しますか？ (y/n, Enter=n): " use_ex
+    if [[ -z "$use_ex" || "$use_ex" == "n" || "$use_ex" == "N" ]]; then
+        USE_EXAMPLES="0"
+        EXAMPLES_FILE=""
+        MAX_EXAMPLES=""
+        print_info "例題は使用しません"
+        return 0
+    fi
+
+    USE_EXAMPLES="1"
+    local ex_dir="$PROJECT_ROOT/data/analysis-workspace/contrast_examples/$DATASET"
+    local -a files=()
+    if [[ -d "$ex_dir" ]]; then
+        while IFS= read -r -d '' f; do files+=("$f"); done < <(find "$ex_dir" -maxdepth 1 -type f \( -name "*.json" -o -name "*.yaml" -o -name "*.yml" \) -print0 2>/dev/null | sort -z)
+    fi
+    echo "0) 使用しない（0-shot）"
+    local i=1
+    for f in "${files[@]}"; do
+        echo "$i) $(basename "$f")"
+        i=$((i+1))
+    done
+    echo ""
+    read -p "選択してください (番号, Enter=0): " idx
+    if [[ -z "$idx" ]]; then idx=0; fi
+    if [[ "$idx" == "0" ]]; then
+        USE_EXAMPLES="0"
+        EXAMPLES_FILE=""
+        MAX_EXAMPLES=""
+        print_info "例題は使用しません"
+        return 0
+    fi
+    if ! [[ "$idx" =~ ^[0-9]+$ ]]; then
+        print_error "無効な入力です"
+        return 1
+    fi
+    local total=${#files[@]}
+    if [[ $idx -lt 1 || $idx -gt $total ]]; then
+        print_error "無効な番号です"
+        return 1
+    fi
+    EXAMPLES_FILE="${files[$((idx-1))]}"
+    print_success "例題ファイル: $(basename "$EXAMPLES_FILE")"
+    read -p "最大例題数を指定しますか？ (空=全件): " MAX_EXAMPLES
+    return 0
 }
 
 
@@ -408,6 +473,13 @@ confirm_settings() {
     if [[ "$USE_ASPECT_DESCRIPTIONS" == "1" ]]; then
         echo "  説明CSV: $ASPECT_DESCRIPTIONS_FILE"
     fi
+    echo "  例題使用: $([[ "$USE_EXAMPLES" == "1" ]] && echo "有効" || echo "無効")"
+    if [[ "$USE_EXAMPLES" == "1" ]]; then
+        echo "  例題ファイル: $EXAMPLES_FILE"
+        if [[ -n "$MAX_EXAMPLES" ]]; then
+            echo "  最大例題数: $MAX_EXAMPLES"
+        fi
+    fi
     echo ""
     
     read -p "この設定で実験を開始しますか？ (y/n): " confirm
@@ -447,6 +519,16 @@ run_experiment() {
         cmd="$cmd --use-aspect-descriptions"
         if [[ -n "$ASPECT_DESCRIPTIONS_FILE" ]]; then
             cmd="$cmd --aspect-descriptions-file \"$ASPECT_DESCRIPTIONS_FILE\""
+        fi
+    fi
+    # 例題オプション
+    if [[ "$USE_EXAMPLES" == "1" ]]; then
+        cmd="$cmd --use-examples"
+        if [[ -n "$EXAMPLES_FILE" ]]; then
+            cmd="$cmd --examples-file \"$EXAMPLES_FILE\""
+        fi
+        if [[ -n "$MAX_EXAMPLES" ]]; then
+            cmd="$cmd --max-examples $MAX_EXAMPLES"
         fi
     fi
     
@@ -667,6 +749,8 @@ main_menu() {
     select_split_type
     # 説明CSV選択（任意）
     select_description_csv || true
+    # 例題ファイル選択（任意）
+    select_examples_file || true
     
     # 確認と実行
     if confirm_settings; then
