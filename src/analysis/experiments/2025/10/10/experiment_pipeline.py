@@ -629,6 +629,16 @@ class ExperimentPipeline:
         overview_path = root_dir / f"summary_{meta.get('timestamp','')}.md"
         # コメント行(<!-- -->)は概要には含めない
         rendered_lines = [ln for ln in rendered.splitlines() if not ln.strip().startswith('<!--')]
+        # 追記: アスペクトごとのLLM出力一覧テーブル
+        try:
+            outputs_table = self._build_llm_outputs_table(results)
+            if outputs_table.strip():
+                rendered_lines.append("")
+                rendered_lines.append("## LLM出力一覧")
+                rendered_lines.append("")
+                rendered_lines.extend(outputs_table.splitlines())
+        except Exception:
+            pass
         with open(overview_path, 'w', encoding='utf-8') as f:
             f.write("\n".join(rendered_lines))
 
@@ -654,6 +664,35 @@ class ExperimentPipeline:
             lines.append(
                 f"| {info.get('dataset','')} | {aspect_display} | {evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} |"
             )
+        return "\n".join(lines)
+
+    def _build_llm_outputs_table(self, results: List[Dict], limit: Optional[int] = None) -> str:
+        """LLM出力をアスペクトごとに一覧化する表（ルート概要用）"""
+        if not results:
+            return ""
+        rows = results if limit is None else results[:limit]
+        lines: List[str] = []
+        lines.append("| データセット | アスペクト | LLM出力 |")
+        lines.append("| --- | --- | --- |")
+        for r in rows:
+            info = r.get('experiment_info', {}) or {}
+            dataset = info.get('dataset', '')
+            aspect_name = info.get('aspect', '')
+            aspect_display = aspect_name
+            try:
+                if info.get('use_aspect_descriptions') and info.get('aspect_descriptions_file'):
+                    csv_path = str(info.get('aspect_descriptions_file'))
+                    desc_map = self._load_aspect_descriptions(csv_path)
+                    desc_text = desc_map.get(aspect_name, '')
+                    if desc_text:
+                        aspect_display = f"({aspect_name}) {desc_text}"
+            except Exception:
+                pass
+            llm_text = ((r.get('process') or {}).get('llm_response') or '')
+            llm_text = llm_text.replace("\n", " ").replace("|", "｜").strip()
+            if len(llm_text) > 200:
+                llm_text = llm_text[:197] + "..."
+            lines.append(f"| {dataset} | {aspect_display} | {llm_text} |")
         return "\n".join(lines)
 
     def _load_aspect_descriptions(self, csv_path: str) -> Dict[str, str]:
