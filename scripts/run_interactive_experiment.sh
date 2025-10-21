@@ -550,8 +550,9 @@ run_experiment() {
         :
     fi
 
-    # 実行後: 最新の結果JSONから run_dir を取得
-    local latest_json=$(find "$PROJECT_ROOT/src/analysis/experiments/2025/10/10/results" -type f -name 'batch_experiment_*.json' -print0 2>/dev/null | xargs -0 ls -t 2>/dev/null | head -1)
+    # 実行後: 最新の結果JSONから run_dir を取得（当日の日付ディレクトリを探索）
+    local results_base="$PROJECT_ROOT/src/analysis/experiments/$(date +%Y)/$(date +%m)/$(date +%d)/results"
+    local latest_json=$(find "$results_base" -type f -name 'batch_experiment_*.json' -print0 2>/dev/null | xargs -0 ls -t 2>/dev/null | head -1)
     local run_dir
     if [[ -n "$latest_json" ]]; then
         run_dir=$(python - "$latest_json" <<'PY'
@@ -653,8 +654,9 @@ save_results() {
         return 0
     fi
     
-    # 最新の結果ファイルを検索（サブディレクトリ含む）
-    local result_file=$(find "$PROJECT_ROOT/src/analysis/experiments/2025/10/10/results" -type f -name 'batch_experiment_*.json' -print0 2>/dev/null | xargs -0 ls -t 2>/dev/null | head -1)
+    # 最新の結果ファイルを検索（サブディレクトリ含む、当日の日付ディレクトリ）
+    local results_base="$PROJECT_ROOT/src/analysis/experiments/$(date +%Y)/$(date +%m)/$(date +%d)/results"
+    local result_file=$(find "$results_base" -type f -name 'batch_experiment_*.json' -print0 2>/dev/null | xargs -0 ls -t 2>/dev/null | head -1)
     
     if [[ -z "$result_file" ]]; then
         print_error "結果ファイルが見つかりません"
