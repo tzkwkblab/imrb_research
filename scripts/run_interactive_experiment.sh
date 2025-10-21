@@ -472,14 +472,17 @@ run_experiment() {
     local latest_json=$(find "$PROJECT_ROOT/src/analysis/experiments/2025/10/10/results" -type f -name 'batch_experiment_*.json' -print0 2>/dev/null | xargs -0 ls -t 2>/dev/null | head -1)
     local run_dir
     if [[ -n "$latest_json" ]]; then
-        run_dir=$(python - <<'PY'
+        run_dir=$(python - "$latest_json" <<'PY'
 import json,sys
-p=sys.argv[1]
+p = sys.argv[1] if len(sys.argv) > 1 else None
+if not p:
+    print("")
+    raise SystemExit(0)
 with open(p,'r',encoding='utf-8') as f:
     d=json.load(f)
 print(d.get('experiment_meta',{}).get('output_dir',''))
 PY
-"$latest_json")
+)
     fi
 
     if [[ -n "$run_dir" ]]; then
@@ -612,21 +615,25 @@ save_results() {
     local dest_dir="$PROJECT_ROOT/$SELECTED_DIR"
     local dest_file="$dest_dir/$(basename $result_file)"
     
+    mkdir -p "$dest_dir"
     if cp "$result_file" "$dest_file"; then
         print_success "結果を保存しました: $dest_file"
         
         # 結果サマリーを表示
         echo ""
         print_info "結果サマリー:"
-        python -c "
-import json
-with open('$dest_file', 'r') as f:
+        python - "$dest_file" <<'PY'
+import json,sys
+path = sys.argv[1] if len(sys.argv) > 1 else None
+if not path:
+    raise SystemExit(0)
+with open(path,'r',encoding='utf-8') as f:
     data = json.load(f)
-    meta = data['experiment_meta']
-    print(f\"  総実験数: {meta['total_experiments']}\")
-    print(f\"  成功: {meta['successful_experiments']}\")
-    print(f\"  タイムスタンプ: {meta['timestamp']}\")
-"
+meta = data.get('experiment_meta',{})
+print(f"  総実験数: {meta.get('total_experiments',0)}")
+print(f"  成功: {meta.get('successful_experiments',0)}")
+print(f"  タイムスタンプ: {meta.get('timestamp','')}")
+PY
     else
         print_error "ファイルのコピーに失敗しました"
         return 1

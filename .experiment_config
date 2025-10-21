@@ -1,4 +1,6 @@
 DATASET="steam"
-ASPECTS="gameplay visual"
+ASPECTS="gameplay visual story"
 GROUP_SIZE="50"
 SPLIT_TYPE="binary_label"
+USE_ASPECT_DESCRIPTIONS="1"
+ASPECT_DESCRIPTIONS_FILE="/Users/seinoshun/imrb_research/data/analysis-workspace/aspect_descriptions/steam/steam_v1.csv"

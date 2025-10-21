@@ -51,6 +51,8 @@ class ExperimentPipeline:
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         self.run_name = self._derive_run_name()
         self.run_dir: Optional[Path] = None
+        # アスペクト説明CSVのキャッシュ {csv_path: {aspect: description}}
+        self._desc_cache: Dict[str, Dict[str, str]] = {}
 
     def _derive_run_name(self) -> str:
         """実行名を決定（configのrun_name > 設定ファイル名）"""
@@ -408,18 +410,40 @@ class ExperimentPipeline:
         # 結果一覧
         lines.append("## 結果概要")
         lines.append("")
-        lines.append("| データセット | アスペクト | BERT | BLEU | 品質 | 出力ファイル |")
-        lines.append("| --- | --- | ---:| ---:| --- | --- |")
+        lines.append("| データセット | アスペクト | 件数(A/B) | BERT | BLEU | 品質 | LLM出力 | 出力ファイル |")
+        lines.append("| --- | --- | --- | ---:| ---:| --- | --- | --- |")
         for r in results:
             if not r.get('summary', {}).get('success', False):
                 continue
             info = r.get('experiment_info', {})
             evals = r.get('evaluation', {})
             out_file = r.get('output_file', '')
+            # アスペクト表示（説明文モード時は (元アスペクト) 説明文）
+            aspect_name = info.get('aspect', '')
+            aspect_display = aspect_name
+            try:
+                if info.get('use_aspect_descriptions') and info.get('aspect_descriptions_file'):
+                    csv_path = str(info.get('aspect_descriptions_file'))
+                    desc_map = self._load_aspect_descriptions(csv_path)
+                    desc_text = desc_map.get(aspect_name, '')
+                    if desc_text:
+                        aspect_display = f"({aspect_name}) {desc_text}"
+            except Exception:
+                pass
+            # 件数（A/B）
+            a_count = len(((r.get('input') or {}).get('group_a') or []))
+            b_count = len(((r.get('input') or {}).get('group_b') or []))
+            counts_display = f"A:{a_count}/B:{b_count}"
+            # LLM出力（テーブル向けに整形・短縮）
+            llm_text = (r.get('process', {}) or {}).get('llm_response', '') or ''
+            llm_text = llm_text.replace("\n", " ").replace("|", "｜").strip()
+            if len(llm_text) > 160:
+                llm_text = llm_text[:157] + "..."
             lines.append(
-                f"| {info.get('dataset','')} | {info.get('aspect','')} | "
+                f"| {info.get('dataset','')} | {aspect_display} | {counts_display} | "
                 f"{evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} | "
                 f"{r.get('summary',{}).get('quality_assessment',{}).get('overall_quality','')} | "
+                f"{llm_text} | "
                 f"{Path(out_file).name if out_file else ''} |"
             )
         lines.append("")
@@ -554,10 +578,42 @@ class ExperimentPipeline:
         for r in results[:limit]:
             info = r.get('experiment_info', {})
             evals = r.get('evaluation', {})
+            aspect_name = info.get('aspect', '')
+            aspect_display = aspect_name
+            try:
+                if info.get('use_aspect_descriptions') and info.get('aspect_descriptions_file'):
+                    csv_path = str(info.get('aspect_descriptions_file'))
+                    desc_map = self._load_aspect_descriptions(csv_path)
+                    desc_text = desc_map.get(aspect_name, '')
+                    if desc_text:
+                        aspect_display = f"({aspect_name}) {desc_text}"
+            except Exception:
+                pass
             lines.append(
-                f"| {info.get('dataset','')} | {info.get('aspect','')} | {evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} |"
+                f"| {info.get('dataset','')} | {aspect_display} | {evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} |"
             )
         return "\n".join(lines)
+
+    def _load_aspect_descriptions(self, csv_path: str) -> Dict[str, str]:
+        """アスペクト説明CSVを読み込み（パス毎にキャッシュ）"""
+        if not csv_path:
+            return {}
+        if csv_path in self._desc_cache:
+            return self._desc_cache[csv_path]
+        mapping: Dict[str, str] = {}
+        try:
+            import csv
+            with open(csv_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    aspect = (row.get('aspect') or '').strip()
+                    desc = (row.get('description') or '').strip()
+                    if aspect:
+                        mapping[aspect] = desc
+        except Exception:
+            mapping = {}
+        self._desc_cache[csv_path] = mapping
+        return mapping
     
     def print_summary(self):
         """実験サマリー表示"""
