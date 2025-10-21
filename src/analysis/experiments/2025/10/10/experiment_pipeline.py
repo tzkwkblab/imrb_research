@@ -56,6 +56,22 @@ class ExperimentPipeline:
         # 例題ファイルのキャッシュ {path: List[Dict]}
         self._examples_cache: Dict[str, List[Dict]] = {}
 
+    def _get_dated_results_base(self) -> Path:
+        """日付(YYYY/MM/DD)に基づく結果ベースディレクトリを返す。
+        例: src/analysis/experiments/2025/10/21/results
+        """
+        try:
+            y = self.timestamp[0:4]
+            m = self.timestamp[4:6]
+            d = self.timestamp[6:8]
+        except Exception:
+            from datetime import datetime as _dt
+            now = _dt.now()
+            y = f"{now.year:04d}"
+            m = f"{now.month:02d}"
+            d = f"{now.day:02d}"
+        return EXPERIMENTS_DIR / y / m / d / "results"
+
     def _derive_run_name(self) -> str:
         """実行名を決定（configのrun_name > 設定ファイル名）"""
         try:
@@ -297,8 +313,8 @@ class ExperimentPipeline:
         all_results = []
         
         # 実行用ディレクトリを準備
-        # スクリプト直下のresultsに時刻ディレクトリ作成（experiments/{YYYY}/{MM}/{DD}/results/時刻）
-        base_output_dir = SCRIPT_DIR / "results"
+        # 日付ベースパスに時刻ディレクトリ作成（experiments/{YYYY}/{MM}/{DD}/results/時刻）
+        base_output_dir = self._get_dated_results_base()
         base_output_dir.mkdir(parents=True, exist_ok=True)
         self.run_dir = base_output_dir / f"{self.timestamp}"
         self.run_dir.mkdir(parents=True, exist_ok=True)
@@ -343,7 +359,7 @@ class ExperimentPipeline:
         
         # 出力ディレクトリ（実行用ディレクトリ配下）
         if self.run_dir is None:
-            base_output_dir = SCRIPT_DIR / "results"
+            base_output_dir = self._get_dated_results_base()
             self.run_dir = base_output_dir / f"{self.timestamp}"
             self.run_dir.mkdir(parents=True, exist_ok=True)
         
