@@ -8,21 +8,23 @@ experiments:
       - visual
       - story
     group_size: 50
-    split_type: binary_label
+    split_type:
+      binary_label # ネガポジ分類用（ラベル1(ポジ) vs ラベル0(ネガ)）
+      # 通常のアスペクト比較には aspect_vs_others を推奨
 
   - dataset: semeval
     aspects:
       - food
       - service
     group_size: 50
-    split_type: aspect_vs_others
+    split_type: aspect_vs_others # 通常のアスペクト比較：対象アスペクト含む vs 含まない
 
   - dataset: amazon
     aspects:
       - quality
       - price
     group_size: 50
-    split_type: aspect_vs_others
+    split_type: aspect_vs_others # 通常のアスペクト比較：対象アスペクト含む vs 含まない
 
 # 出力設定
 output:

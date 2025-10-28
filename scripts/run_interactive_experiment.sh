@@ -426,18 +426,16 @@ input_group_size() {
 select_split_type() {
     print_section "分割タイプ選択"
     
-    echo "1. binary_label (Steamデータセット用)"
-    echo "2. aspect_vs_others (SemEval/Amazonデータセット用)"
+    echo "1. aspect_vs_others (通常のアスペクト比較用 - 推奨)"
+    echo "   対象アスペクトを含む vs 含まないレビューを比較"
+    echo ""
+    echo "2. binary_label (ネガポジ分類用)"
+    echo "   同一アスペクト内でラベル1(ポジ) vs ラベル0(ネガ)の感情評価を比較"
+    echo "   ※感情的な分類をしたい場合のみ"
     echo ""
     
-    local default_type
-    if [[ "$DATASET" == "steam" ]]; then
-        default_type="binary_label"
-        print_info "Steamデータセットには binary_label が推奨されます"
-    else
-        default_type="aspect_vs_others"
-        print_info "$DATASET データセットには aspect_vs_others が推奨されます"
-    fi
+    local default_type="aspect_vs_others"
+    print_info "通常のアスペクト間比較には aspect_vs_others が推奨されます"
     
     while true; do
         read -p "選択してください (1-2, Enter=推奨): " choice
@@ -448,8 +446,8 @@ select_split_type() {
         fi
         
         case $choice in
-            1) SPLIT_TYPE="binary_label"; break;;
-            2) SPLIT_TYPE="aspect_vs_others"; break;;
+            1) SPLIT_TYPE="aspect_vs_others"; break;;
+            2) SPLIT_TYPE="binary_label"; break;;
             *) print_error "無効な選択です。1か2を入力してください";;
         esac
     done
