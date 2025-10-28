@@ -1,0 +1,29 @@
+experiments:
+- aspects:
+  - gameplay
+  - visual
+  - story
+  - audio
+  - technical
+  - price
+  - suggestion
+  - recommended
+  dataset: steam
+  group_size: 30
+  split_type: aspect_vs_others
+general:
+  aspect_descriptions_file: /Users/seinoshun/imrb_research/data/analysis-workspace/aspect_descriptions/steam/steam_v1.csv
+  console_output: true
+  debug_mode: true
+  examples_file: /Users/seinoshun/imrb_research/data/analysis-workspace/contrast_examples/steam/steam_examples_v1.json
+  max_examples: 3
+  use_aspect_descriptions: true
+  use_examples: true
+llm:
+  max_tokens: 150
+  model: gpt-4o-mini
+  temperature: 0.7
+output:
+  directory: results/
+  format: json
+  save_intermediate: true
