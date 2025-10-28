@@ -1,0 +1,514 @@
+STRUM-LLM: Attributed and Structured Contrastive Summarization
+BelizGunel,JamesB.Wendt,JingXie,YichaoZhou,NguyenVo,ZacharyFisher,SandeepTata
+{bgunel,jwendt,lucyxie,yichaojoey,nguyenvo,zachfisher,tata}@google.com
+GoogleResearch,MountainView,CA,USA
+Abstract
+Usersoftenstrugglewithdecision-makingbe-
+tween two options (A vs B), as it usually re-
+quires time-consuming research across mul-
+tiple web pages. We propose STRUM-LLM
+thataddressesthischallengebygeneratingat-
+tributed, structured, and helpful contrastive
+summaries that highlight key differences be-
+tweenthetwooptions. STRUM-LLMidenti-
+fieshelpfulcontrast —thespecificattributes
+along which the two options differ signifi-
+cantlyandwhicharemostlikelytoinfluence
+theuser’sdecision. Ourtechniqueisdomain-
+agnostic, and does not require any human-
+labeled data or fixed attribute list as supervi-
+sion. STRUM-LLMattributesallextractions
+backtotheinputsourcesalongwithtextualevi-
+dence,anditdoesnothavealimitonthelength Figure1: STRUM-LLMaimstoproduceanattributed
+ofinputsourcesthatitcanprocess. STRUM- (groundedintheinputsources),faceted(arowperat-
+LLMDistilledhas100xmorethroughputthan tribute),andhelpful(relevantandcontrastiveattributes)
+themodelswithcomparableperformancewhile summaryforanAvsBcomparison.
+being 10x smaller. In this paper, we provide
+extensiveevaluations forourmethod andlay
+AtthecoreofSTRUM-LLMistheconceptofa
+outfuturedirectionsforourcurrentlydeployed
+system.
+helpfulcomparison,whichisguidedbythefollow-
+ingdesiderata. First,itprioritizesclearattribution
+1 Introduction to sources, ensuring all information is traceable.
+High-contrastandimportantattributesbetweentwo
+Today, decision-making is often hindered by in-
+optionsareidentifiedtoaiddiscernment. Second,
+formation overload, and we need tools that can
+shown values are consistent, non-redundant, and
+efficiently and effectively distill key differences
+reflectthemajorityopinion. Finally,attributesare
+between options. We introduce STRUM-LLM, a
+rankedtohighlightthemostrelevantandcontrast-
+large language model (LLM) based system that
+ing aspects. We present the final summary in a
+aidsuserswiththeirAvsBdecisionssuchasiPad
+faceted way,showingarowperattributeasinFig-
+vsMicrosoftSurface,MammogramvsUltrasound,
+ure1. Overall,ourcontributionsthatledtoareal-
+orLowe’svsHomeDepotbyprovidingthemwith
+worlddeployedsystemareinthefollowing:
+structuredcontrastivesummariesthathighlightthe
+helpfulcontrastbetweenthetwooptions. Oursys- • DesiderataandNovelEvaluationMetrics
+tem is currently deployed in an LLM-enhanced foraHelpfulComparison: Wedefinedesider-
+web-searchproductservingmillionsofusers. Our ata and a set of evaluation metrics for iden-
+approachisdomain-agnostic,doesnotrequireany tifying a helpful comparison and measuring
+humanlabeleddataorfixedattributelistassupervi- theperformanceofmodelsthataredesigned
+sion,andcanprocessarbitrarilylonginputsources forthattask. Wedemonstrateourautomated
+inanattributableway. evaluation metrics correlate well to human
+4202
+raM
+52
+]LC.sc[
+1v01791.3042:viXra
+
+judgementinTable3andTable4. ferredtoasSTRUMin-codeintherestofthepaper,
+which generates extractive structured contrastive
+• Enhanced Throughput and Performance
+summaries using natural language inference and
+forReal-WorldSystems: STRUM-LLMDis-
+aspectextractionmodels. Althoughthisapproach
+tilledshowsa100-foldincreaseinthroughput
+canprocessarbitrarilylonginputsources,itisnot
+whilebeing10xsmallerinsizecomparedto
+efficient at inference time due to high number of
+modelswithsimilarperformance. Thesystem
+pairwisecalculations. Thismakesithardtodeploy
+iscapableofhandlinglargeamountofinput
+in real-world applications, which was one of the
+textwithoutbeingconstrainedtothecontext
+mainmotivationsofourmethodSTRUM-LLM.
+lengthssupportedbyagivenlargelanguage
+model. 3 Method
+• Critique-and-Revision Models: STRUM- Welayoutthedesiderataforournotionofahelpful
+LLM builds task-specific critique-and- comparisonbetweentwoentities. Wedescribeour
+revision models in order to enhance the
+STRUM-LLM approach and outline the critique-
+qualityofdatageneration,andhenceensure
+and-revisionmodelsthatwebuildtoimprovethe
+the relevancy and accuracy of information.
+qualityofourdatagenerationpipeline.
+Table 2 demonstrates that this approach
+improvestheperformanceofSTRUM-LLM 3.1 DesiderataforaHelpfulComparison
+Distilled by 14 points on our key metric –
+1. AttributiontoSources: Thisensuresthatthe
+the fraction of helpful rows in the output
+information presented is traceable, as each
+summary.
+extractionisaccompaniedbyevidencefrom
+2 RelatedWork thesourcetext. Weachievethisbyadopting
+anextractiveapproach,andincludingsource
+Thereexistsalineofwork(Royetal.,2018;Ange- URLsforeachextraction.
+lidisetal.,2020;Amplayoetal.,2021;Ahujaetal.,
+2022)thatfocusesonaspect-basedsummarization 2. IdentificationofHigh-ContrastandImpor-
+ofasingleentity,whichisnotthegoalofthiswork. tantAttributes: Weidentifyattributeswhere
+Unlikesingleentitysummarizationmethods,con- thereisasignificantcontrastbetweenthetwo
+trastivesummarizationliteratureislimited. Ströhle optionstoaidwithdecisionmaking. Notethat
+etal.(2023)havesurveyedcontrastivetextsumma- someattributesareinherentlyinformativeand
+rizationmethods,spanningfromearlyrule-based do not necessarily requirecontrasting views
+systems to modern neural models. Among rep- tobeinformative. Wesurfacetheseattributes
+resentativeworks,LermanandMcDonald(2009) based on how often they occur in the input
+proposedanapproachrootedinstatisticallanguage sources(popularitysignal). Examplesinclude
+modelsthatpredominantlyweighsthesentiments thepriceattributeforacarcomparisonorthe
+of opinions, and evaluated on consumer reviews. ingredientsforapeanutbuttercomparison.
+Isoetal.(2022)introducedaneuraltechniquefor
+contrastive summarization, which they tested on 3. Consistent,Non-Redundant,andAccurate
+a collection of short hotel reviews. Their princi- OpinionRepresentation: Weprovideacom-
+palcontributionisatechniquetermedco-decoding, prehensive, consistent, and non-redundant
+whichcontraststokenprobabilitydistributionsin view of the attributes and values. For exam-
+contrastive summaries and aggregates them for ple, ifforentityA,theopiniongoodviewis
+shared summaries. However, unlike our work, heldbyaminority(1/10)andbadviewisthe
+theirpaperfocusesonfullyabstractivegeneral(not majorityopinion(9/10),whereasforentityB,
+attribute-basedstructured)contrastivesummaries badviewisunanimous(10/10),thecompari-
+thatoptimizefortoken-levelcontrast,andmostim- sonshouldnotmisleadinglypresentitasgood
+portantlylimittheinputsourcetextto16Ktokens viewforAversusbadviewforB(therebyop-
+as their base model is a pre-trained LED model timizing contrast between the entities). We
+(Beltagy et al., 2020). The limit on input source clustertheredundantvaluesandremovethe
+length makes it unfair to compare to our method. minorityinconsistentvalues,sothatthesum-
+Our approach builds on (Gunel et al., 2023), re- maryreflectsthemajorityopinion.
+
+4. Ranking and Presentation of Attributes: URLs, which we surface in the final structured
+Thisensuresthatthemostpertinentandhigh summary, to maintain fidelity to the source. LM-
+contrastattributesarehighlightedinthecom- Extract has several critique-and-revision models
+parison. Wepresentthefinalcomparisonsum- described in the next section, including insuffi-
+mary in a faceted format where we show a cientcontext,wrongentity,andunhelpfulattributes.
+rowperattributetofurtheraidwithstructured Thesecritique-and-revisionmodelsensurehigher
+decisionmakingbetweentwooptions. qualityextractionswhilepreservingtherecalldur-
+ing data generation stage for distillation. LM-
+3.2 STRUM-LLM
+Extractisrunforbothentitiesseparately.
+LM-Attribute-Merge: ThisLMconsolidatesthe
+attributes of both entities, merging similar at-
+tributes and only keeping the cluster centers to
+reduce redundancy among attributes. This clus-
+tering stage helps with the consistency and the
+redundancyoftheshownattributes.
+LM-Value-Merge: This LM clusters the similar
+values for each attribute separately, removes in-
+consistent minority opinions, and keeps the clus-
+tercentersthatreflectthemajorityopinions. This
+stagehelpswiththeconsistency,redundancy,and
+accuraterepresentationofopinions.
+LM-Contrast: This stage identifies attributes
+with contrasting values and keeps important at-
+tributes that are inherently valuable for drawing
+insights. LM-Contrast also ranks the attributes
+basedontheirpopularityandcontrastlevel,taking
+Figure2: STRUM-LLMretrieveswebpagesrelevantto
+theentitiesbeingcompared,dividesthemintochunksof thesearchrankingofthewebpagesoftheextrac-
+textthatfitintothecontextwindowoftheLLMthatwe tionsandthemajorityopinionsintoaccount.
+refertoastiling,extractsattributesandvaluesfromthe
+LM-Usefulness: ThisLMfilterscomparisonrows
+text,clustersrelatedattributesandmergestheirvalues,
+thatarenotusefulbasedonthehelpfulcomparison
+and identifies the most meaningful contrast between
+desiderata. Wehavethisstagetocatchtheerrors
+thetwoentities. Critique-and-revision(CR)modelsim-
+thatmightbemadebyanyofthepreviousstages.
+provethequalityforbothLM-ExtractandLM-Compare
+duringdatageneration. WerefertothecombinationofLM-Value-Merge,
+LM-Contrast, and LM-Usefulness run sequen-
+STRUM-LLM pipeline is outlined in Figure 2. tially as LM-Compare. LM-Compare has sev-
+We use PaLM 2 (Anil et al., 2023) as our base eralcritique-and-revisionmodelsthatwedescribe
+LLMmodelswithacontextwindowof8Ktokens in the next section, including same attribute - or-
+across all LMs and critique-and-revision models. thogonalvalues,inconsistentvalues,unhelpfulat-
+STRUM-LLMfirstretrieves5-20webpagesfrom tributes, over- and under-merged attributes, and
+websearchcontainingeditorialtextforbothentities longcomplexclaims. Thesecritique-and-revision
+separately. Essentialsentencesfromthewebpages models ensure higher quality comparisons in the
+areextractedandtiledintochunksthatcanfitinto data generation stage. We first generate data us-
+thecontextwindowoftheLLM.Thereisnocon- ing few-shot prompted pre-trained LLMs for all
+straintonthetotallengthofinputsourcesfedinto the described LM stages above, and distill to a
+ourpipelineduetoourtilingapproach. 10xsmallerpre-trainedLLM(STRUM-LLMDis-
+LM-Extract: This LM extracts all the attributes tilled) with a task mixture of LM-Extract (∼15K
+andtheircorrespondingvaluesfromtheprovided row-levelexamples),LM-Attribute-Merge(∼500
+input text. We employ an extractive approach, summary-level examples), and LM-Compare (∼
+drawing directly from the source text to ensure 15K row-level examples) through fine-tuning on
+attributiontosources. Eachextractionisaccom- that generated data. We use that finetuned LM
+paniedbyevidencefromthesourcetextincluding forLM-Extract,LM-Attribute-Merge,andLM-
+
+Compare in STRUM-LLM Distilled. Task mix- toiPhone14ProforiPhone14,aredeleted. This
+tureisthesameforbothwhencritique-and-revision errorcasehappenswhentheentitynamemention
+modelsareonandwhentheyareoff. Thereisno and the extraction are far apart in the text, hence
+humansupervisionatanystageofthedatagenera- appearindifferenttilesfedtotheLM.
+tion. UnhelpfulAttributes: Theattributesextractedare
+nothelpfulsuchascolorforawinery. Therevision
+3.3 Critique-and-RevisionModelsfor modeldeletestheunhelpfulattributes.
+STRUM-LLM CRsforLM-Compare:
+SameAttribute-OrthogonalValues: Valuesfor
+The critique phase is where the LLM generates
+thesameattributedonotalignacrosstwoentities
+natural language critiques about its own outputs.
+suchasshowingfueltank=iconicteardropshape
+LargerLLMsareoftenbetteratself-critiquing,de-
+foramotorcycleentityAandfueltank=holds3.3
+spite dealing with more complex outputs (Saun-
+gallonsforentityB.Therevisionmodelrepeatsthe
+ders et al., 2022). Following the critique phase
+LM-Contraststagetobetteralignvalues.
+is the revision phase, where the LLM revises its
+InconsistentValues: Thereareconflictingvalues
+output based on the critiques it generated. This
+(views=good,great,bad)forthesameentity. The
+involvesimprovingtheoriginaloutputtoenhance
+revisionmodeldeletestheinconsistentvalueswhile
+itsaccuracy,relevance,orcoherence. Inpractice,
+preservingthemajorityopinion(views=good).
+critique-and-revisionmodelscanhavesignificant
+Unhelpful Attributes or Values: Certain at-
+implicationsinvariousapplications. Forinstance,
+tributes or values might be unhelpful such as ex-
+intherealmofcreatingharmlessAIassistants,Bai
+tractingwheels=fourforacar. Therevisionmodel
+et al. (2022) employed self-critique and revision
+removestheunhelpfulattributesandvalues.
+techniquesduringtrainingphasefollowingalistof
+Under-MergedorOver-MergedAttributes: This
+rulestheyreferredtoasConstitutionalAI.
+CR fixes the issues with the attribute clustering
+We define a taxonomy of ways STRUM-LLM
+whichavoidsshowingredundantsummaries.
+could produce an unhelpful summary based
+Long Complex Claims: The LLM faces diffi-
+on our human evaluations and build targeted
+culties in determining contrast for long complex
+critique-and-revision (CR) models. We describe
+claims, so the revision model breaks these long
+the individual CR models based on few-shot
+claimsintoatomicclaims.
+prompted pre-trained LLMs for LM-Extract and
+LM-Compare stages below. The critique model
+4 EvaluationSetup
+detects the described problem given the model
+output,andtherevisionmodelimprovestheoutput We design our evaluations to answer the follow-
+based on that problem while having access to ing key questions: (1) Based on our helpful com-
+the source text. We do not allow for additional parison desiderata, does STRUM-LLM improve
+retrieval of new webpages, but we allow for over the existing baseline in terms of quality and
+repeatedly invoking the CR models to iteratively throughput? (2)Doourcritique-and-revisionmod-
+refinetheresponses. TheCRmodelsareenabled elsthatenhancethedataqualityactuallyimprove
+for the data generation stage with the few-shot the performance of our distilled models? (3) Do
+prompted LLMs to improve the finetuning data ournovelLLM-basedautomatedmetricscorrelate
+qualityforthedistilledmodel. to the human judgement? Note that LLM-based
+autoratershavebeenshowntohavehighercorrela-
+CRsforLM-Extract: tiontohumanjudgementsthantraditionalmetrics
+InsufficientContext: Thereisinsufficientcontext suchasROUGE(Lin,2004)orBERTScore(Zhang
+fortheextractedvaluesuchashavingviews=good etal.,2019)invariousnaturallanguagegeneration
+while comparing hotels. Revision model repeats tasksbasedontheirabilitytocapturetask-specific
+theextractionstepusingthesourcetextforthatat- properties(Wangetal.,2023). Hence,webuilda
+tributetoprovidemorecontextsuchasviews=good few-shotpromptedLLM-basedcomparisonhelp-
+view from the rooftop, limited view from most of fulnessscorer(CHS)basedonthedesideratawelay
+theroomsforahotelcomparison. outinSection3.1,whichoperatesontherow(at-
+WrongEntity: Extractionsassociatedwithadif- tribute)level. Wealsodevelopfew-shotprompted
+ferententity,suchasincludingextractionsrelated summarylevelpre-trainedLLM-basedautoraters
+
+Model %ofrowsusefulbyCHS Redundancy AvgInconsistentValues RankingPrecision Throughput
+STRUMin-code(Guneletal.,2023) 56.5% 19.6% 3.94 0.89 0.018summ/s
+STRUM-LLMFew-shot 97.3% 3.6% 0.89 0.91 0.013summ/s
+STRUM-LLMDistilled 84.9% 4.0% 1.26 0.92 1.500summ/s
+Table1: WecompareSTRUM-LLMandSTRUM-in-codemodelsacrosscomparisonhelpfulnessscore(CHS),
+summary-level metrics, and throughput. We observe the STRUM-LLM Distilled model outperforms STRUM
+in-code,anditiscompetitivewiththeSTRUM-LLMFew-shotmodelthatweusefordatagenerationwhilehaving
+100xhigherthroughputwitha10xsmallermodel.
+Model %ofrowsusefulbyCHS RedundancyLLM AvgInconsistentValuesLLM RankingLLM
+STRUM-LLMDistilledw/oCR 79% 9.8% 1.69 0.97
+STRUM-LLMDistilledw/CR 93% 2.5% 1.74 0.94
+Table 2: Critique-and-Revision (CR) ablations across Shopping, Sports, Science, Home & Garden categories
+includingbothLM-ExtractandLM-CompareCRs. Weobservethatbothcomparisonhelpfulnessscore(CHS)and
+redundancyscoreimprovewithoutanimpactonconsistencyandrankingprecision.
+thatmeasureredundancy(clustering),consistency, Row-levelratingsincludeYES,NO-BadExtrac-
+andrankingprecisioninthefinalcomparisonsum- tion,NO-InconsistentValues,NO-Undermerged
+maries. We would like to note that the reported Values, NO - Same Attribute, Orthogonal Values
+resultsarebasedonofflineevaluationofthemeth- thatindetailintheAppendix. InTable3,wecorre-
+odsasdescribedinthispaper,andarenotindicative latethecomparisonhelpfulnessscorer(CHS)tohu-
+ofthedeployedsystemend-to-endperformance. manratingsforbothSTRUMin-codeandSTRUM-
+LLMinordertodemonstrateitscredibilityindeter-
+4.1 STRUMIn-CodeBaseline
+miningahelpfulcomparisonbasedonourdesider-
+OurpipelinebuildsonGuneletal.(2023),sowe ata. While estimating Human-CHS agreement,
+include it as an important baseline. STRUM in- we take the majority opinion for humans, set the
+codedividesextractedessentialsentencesfromthe LLM’stemperatureto0,andusetheevaluationsfor
+inputwebpagesintochunksof256tokens. Ituses ourdeployedsystem(totalofafewhundredrows
+apre-trainedlargelanguagemodel,fine-tunedon tested)forthisanalysis. Keymetricswemeasure
+shopping-relateddataforhigh-precisionattribute forthisrow-levelanalysisaretheaveragenumber
+extraction(Vilnisetal.,2022),followedbyagglom- ofrowsassessed,thefractionofrowsmarkeduse-
+erativehierarchicalclusteringofattributesandval- ful by both humans and the LLM, and the levels
+uesusingapre-trainednaturallanguageinference ofagreementamonghumansandbetweenhumans
+entailmentmodel. Foreachsharedattribute,source and the CHS. We observe a Human-CHS agree-
+sentencesareselectedthatmaximizethecontrast, ment either higher or comparable to the human
+basedontheentailmentmodel. Notethatthisap- agreement (Human-CHS Agreement of 83% for
+proach is inherently slow due to high number of STRUMin-codeand86%forSTRUM-LLM),con-
+pairwisecallstotheattributediscoveryandentail- firming the trustworthiness of LLM-based evalu-
+ment models. In addition, entailment models are ators at the row level. Also, in terms of % rows
+brittle when used on sentences or on paragraphs usefulbyHumans,wedemonstratethatSTRUM-
+thatincludecomplexclaims,hencetheyshouldbe LLM(81%)outperformsSTRUMin-code(62%).
+used on propositions – making the overall calcu-
+4.3 Summary-LevelEvaluations
+lations even slower (Chen et al., 2022). Overall,
+thisapproachisnotsuitabletodeployinreal-world Redundancy(Clustering): Wemeasureattribute
+applicationsbasedonbothqualityandefficiency, clustering efficacy with this metric. As an exam-
+evidencedbythemeasuredthroughput(numberof ple, room and rooms or amenities and facilities
+summariesgeneratedpersecond)inTable1. shouldnotbeseparaterowsinthestructuredsum-
+mary. More formally, we calculate this metric as
+4.2 Row-LevelComparisonHelpfulness 1− numberofuniqueattributeclusters persummary.
+numberofallattributes
+Evaluations
+Consistency: Wecheckforinconsistentvaluesin
+Three human evaluators are provided with struc- thesummaryacrossdifferentattributes. Wedefine
+tured summaries comparing two entities where thismetricbytherawnumberofinconsistentval-
+each row represents an attribute of comparison. ues. Wedonotcalculatetheratioofinconsistent
+
+Model Avg#ofrows %ofrowsusefulbyHumans %ofrowsusefulbyCHS HumanAgreement Human-CHSAgreement
+STRUMin-code 8.70 62% 70% 76% 83%
+STRUM-LLM 10.12 81% 82% 88% 86%
+Table3: Comparisonhelpfulnessscorer(CHS)correlateswellwithhumanjudgement. WealsoseethatSTRUM-
+LLMcomfortablyoutperformsSTRUMin-codeonpercentageofrowsusefulacrosssummaries.
+Model RedundancyLLM RedundancyHuman InconsistencyLLM InconsistencyHuman RankingLLM RankingHuman
+STRUMin-code 28.2% 23.7% 2.74 2.23 0.88 0.73
+STRUM-LLM 13.2% 9.8% 1.86 0.97 0.86 0.78
+Table4: Summary-levelLLMautoratersarewell-correlatedwithhumanjudgement. STRUM-LLMeitheroutper-
+formsoriscomparabletoSTRUMin-codeacrossallcriteria.
+values for better granularity as the percentage is acrossthesummary. Also,STRUM-LLMDistilled
+verylowforbothSTRUM-LLMandSTRUMin- modelisremarkablycompetitivewiththeSTRUM-
+code. Asanexample,forthesetofvalues[45liters, LLM Few-shot model across all summary-level
+46liters,46litersinvolume,46litersofspace],the metrics. This is in stark contrast to the STRUM-
+number of inconsistent values is 1 as one would in-code approach, which is notably slower. Note
+needtodeletetheinconsistentvalueof45litersto that STRUM-LLM Few-shot model’s % of rows
+makealltheothervaluesconsistent. usefulbyCHSisexpectedtobecloseto100%as
+Ranking Precision: The output structured sum- ithasanLM-Usefulnessstepintheendforhigher
+marytableshouldprioritizerowsthatarehelpful dataquality. Finally,InTable2,weevaluatehow
+tothecomparisonandrankthemaccordingly. The effectivetheCRmodelsareforbothLM-Extract
+concretemetricwecalculateisPrecisionat5. andLMComparefortheSTRUM-LLMDistilled
+InTable4,wedemonstratethatsummary-level modelacrossShopping,Sports,Science,Home&
+LLM autoraters (redundancy, consistency, and Gardencategories. Mostnotably,%ofrowsuseful
+ranking precision), when temperature is set to 0, by CHS goes from 79% to 93% and redundancy
+are well-correlated to the human judgement. Fi- decreasesto2.5%from9.8%withoutanimpacton
+nally, we show that STRUM-LLM either outper- consistencyandrankingprecisionwhenCRsareon.
+formsoriscomparabletoSTRUMin-codeacross ItisimportanttonotethatbuildingnewCRmodels
+allsummary-levelcriteria. Notably,STRUM-LLM allowustoimprovethedataqualitywheneverwe
+decreasestheredundancyto9.8%from23.7%of detect a problem trend in our evaluations for our
+STRUMin-codebasedonhumanevaluations. deployedsystem. Weincludeseveralcomparison
+examplesfromourpipelineintheAppendix.
+5 Results
+6 ConclusionandFutureWork
+In Table 1, we present our main results using the
+row-levelandthesummary-levelmetrics. Ourtest We introduce STRUM-LLM – a novel domain-
+setconsistsof250sampledAvsBqueriesacross agnostic approach for generating attributed and
+thecategories: Health,Computers&Electronics, structuredcontrastivesummariesthatfacilitatein-
+Arts&Entertainment,Jobs&Education,Autos& formeddecision-makingbetweentwochoices. Our
+Vehicles,Travel&Transportation,Food&Drink, methoddoesnotrequireanyhuman-labeleddataor
+Shopping,Sports,Science,Beauty&Fitness,Peo- pre-determinedattributelistassupervision,andit
+ple & Society, Finance, Pets & Animals, Games, doesnothavealimitonthelengthofinputsources
+News,Internet&Telecom,Home&Garden,and itcanprocess. Importantly,STRUM-LLMadheres
+Business&Industrial. tothedesideratawelayoutforahelpfulcompari-
+STRUM-LLM Distilled significantly outper- son,namely: attributiontosources;identification
+forms STRUM-in-code across all metrics while of high-contrast and important attributes; consis-
+having100xmorethroughput. Particularlynotable tent, non-redundant, and accurate opinion repre-
+was its performance in the CHS and redundancy sentation,andprioritizationofrelevantattributes.
+metrics: STRUM-LLMDistilledhas84.9%rows Wedemonstratethatcritique-and-revisionmodels
+markedusefulbyCHSand4%redundancyacross improvethequality. Throughourextensiveevalua-
+the summary while STRUM in-code has 56.5% tions,weshowthatSTRUM-LLMproduceshigh
+rowsmarkedusefulbyCHSand19.6%redundancy qualitycomparisonsummariesandthatitsdistilled
+
+version has 100x more throughput than the mod- SnehaKudugunta,ChangLan,KatherineLee,Ben-
+elswithcomparableperformancewhilebeing10x jaminLee,EricLi,Mu-LiLi,WeiLi,YaguangLi,
+JunYuLi,HyeontaekLim,HanLin,Zhong-Zhong
+smaller. Forfuturework,weaimtoaccommodate
+Liu,FrederickLiu,MarcelloMaggioni,AromaMa-
+a wider variety of query types beyond pairwise
+hendru, Joshua Maynez, Vedant Misra, Maysam
+comparisonsandintegratemultimodaldatasuchas Moussalem,ZacharyNado,JohnNham,EricNi,An-
+imagesandfiguresinadditiontotext. drewNystrom,AliciaParrish,MariePellat,Martin
+Polacek, Oleksandr Polozov, Reiner Pope, Siyuan
+7 EthicalConsiderations Qiao, Emily Reif, Bryan Richter, Parker Riley,
+AlexandraRos,AurkoRoy,BrennanSaeta,Rajku-
+WeacknowledgethatourSTRUM-LLMapproach marSamuel,ReneeMarieShelby,AmbroseSlone,
+DanielSmilkov,DavidR.So,DanielaSohn,Simon
+is limited by the factuality of the top web search
+Tokumine,DashaValter,VijayVasudevan,KiranVo-
+results. Hence,ifawebpagepresentsanoutdated
+drahalli, Xuezhi Wang, Pidong Wang, Zirui Wang,
+oranincorrectpieceofinformation,thismightsur- TaoWang,JohnWieting,YuhuaiWu,KeXu,Yunhan
+faceinourfinalcomparisonsummary. Inaddition, Xu,LinWuXue,PengchengYin,JiahuiYu,Qiaoling
+Zhang,StevenZheng,CeZheng,WeiZhou,Denny
+we acknowledge that the notion of an important
+Zhou,SlavPetrov,andYonghuiWu.2023. Palm2
+attributeforanAvs. Bcomparisonishighlyper-
+technicalreport. ArXiv,abs/2305.10403.
+sonalandsubjective,hencemightbedifferentfor
+Yuntao Bai, Saurav Kadavath, Sandipan Kundu,
+differentgroups. Wemaketheassumptionthatpop-
+Amanda Askell, John Kernion, Andy Jones, Anna
+ularandcontrastiveattributesareimportantforA
+Chen, Anna Goldie, Azalia Mirhoseini, Cameron
+vs. Bdecisionmaking. McKinnon,CarolChen,CatherineOlsson,Christo-
+pher Olah, Danny Hernandez, Dawn Drain, Deep
+Ganguli, Dustin Li, Eli Tran-Johnson, E Perez,
+References Jamie Kerr, Jared Mueller, Jeff Ladish, J Landau,
+Kamal Ndousse, Kamile˙ Lukovsiu¯te˙, Liane Lovitt,
+Ojas Ahuja et al. 2022. ASPECTNEWS: Aspect- MichaelSellitto,NelsonElhage,NicholasSchiefer,
+orientedsummarizationofnewsdocuments. InPro- Noem’iMercado,NovaDasSarma,RobertLasenby,
+ceedingsofthe60thAnnualMeetingoftheAssocia- RobinLarson,SamRinger,ScottJohnston,Shauna
+tionforComputationalLinguistics(Volume1: Long Kravec, Sheer El Showk, Stanislav Fort, Tamera
+Papers),pages6494–6506. Lanham, Timothy Telleen-Lawton, Tom Conerly,
+T. J. Henighan, Tristan Hume, Sam Bowman, Zac
+ReinaldKimAmplayoetal.2021. Aspect-controllable
+Hatfield-Dodds, Benjamin Mann, Dario Amodei,
+opinionsummarization. InProceedingsofthe2021
+NicholasJoseph,SamMcCandlish,TomB.Brown,
+Conference on Empirical Methods in Natural Lan-
+andJaredKaplan.2022. Constitutionalai: Harmless-
+guageProcessing,pages6578–6593.
+nessfromaifeedback. ArXiv,abs/2212.08073.
+StefanosAngelidisetal.2020. Extractiveopinionsum- IzBeltagy,MatthewE.Peters,andArmanCohan.2020.
+marizationinquantizedtransformerspaces. Transac- Longformer:Thelong-documenttransformer. ArXiv,
+tionsoftheAssociationforComputationalLinguis- abs/2004.05150.
+tics,9:277–293.
+Sihao Chen, Senaka Buthpitiya, Alex Fabrikant, Dan
+Rohan Anil, Andrew M. Dai, Orhan Firat, Melvin Roth,andTalSchuster.2022. Propsegment: Alarge-
+Johnson,DmitryLepikhin,AlexandreTachardPas- scalecorpusforproposition-levelsegmentationand
+sos, Siamak Shakeri, Emanuel Taropa, Paige Bai- entailment recognition. In Annual Meeting of the
+ley,Z.Chen,EricChu,J.Clark,LaurentElShafey, AssociationforComputationalLinguistics.
+YanpingHuang,KathleenS.Meier-Hellstern,Gau-
+Beliz Gunel, Sandeep Tata, and Marc Najork. 2023.
+ravMishra,EricaMoreira,MarkOmernick,Kevin
+Strum: Extractiveaspect-basedcontrastivesumma-
+Robinson, Sebastian Ruder, Yi Tay, Kefan Xiao,
+rization. CompanionProceedingsoftheACMWeb
+YuanzhongXu,YujingZhang,GustavoHernandez
+Conference2023.
+Abrego,JunwhanAhn,JacobAustin,PaulBarham,
+JanA.Botha,JamesBradbury,SiddharthaBrahma,
+HayateIsoetal.2022. Comparativeopinionsumma-
+KevinMichaelBrooks,MicheleCatasta,Yongzhou
+rizationviacollaborativedecoding. InFindingsof
+Cheng, Colin Cherry, Christopher A. Choquette-
+theAssociationforComputationalLinguistics: ACL
+Choo,AakankshaChowdhery,CCrépy,ShachiDave,
+2022,pages3307–3324.
+MostafaDehghani,SunipaDev,JacobDevlin,M.C.
+D’iaz,NanDu,EthanDyer,VladimirFeinberg,Fan KevinLermanandRyanMcDonald.2009. Contrastive
+Feng, Vlad Fienber, Markus Freitag, Xavier Gar- summarization: An experiment with consumer re-
+cía,SebastianGehrmann,LucasGonzález,GuyGur- views. In Proceedings of Human Language Tech-
+Ari, Steven Hand, Hadi Hashemi, Le Hou, Joshua nologies: The2009AnnualConferenceoftheNorth
+Howland,AnRenHu,JeffreyHui,JeremyHurwitz, AmericanChapteroftheAssociationforComputa-
+MichaelIsard, AbeIttycheriah, MatthewJagielski, tionalLinguistics,CompanionVolume: ShortPapers.
+Wen Hao Jia, Kathleen Kenealy, Maxim Krikun, AssociationforComputationalLinguistics.
+
+Chin-YewLin.2004. Rouge: Apackageforautomatic B STRUM-LLMOutputSummaries
+evaluationofsummaries. InAnnualMeetingofthe
+AssociationforComputationalLinguistics. WeshowthreeSTRUM-LLMsummariesthatare
+output by our pipeline. Note that each shown ex-
+AurkoRoyetal.2018. Theoryandexperimentsonvec-
+tractionisattributabletothesource,andincludes
+torquantizedautoencoders. ArXiv,abs/1805.11063.
+othersourcesorconflictstagsifothersourcessup-
+WilliamSaunders,CatherineYeh,JeffWu,StevenBills,
+portorconflictwiththeshownextractions.
+OuyangLong,JonathanWard,andJanLeike.2022.
+Self-critiquingmodelsforassistinghumanevaluators.
+ArXiv,abs/2206.05802.
+Thomas Ströhle, Ricardo Campos, and Adam Jatowt.
+2023. Contrastivetextsummarization: asurvey. In-
+ternationalJournalofDataScienceandAnalytics.
+Luke Vilnis et al. 2022. Impakt: A dataset for
+open-schemaknowledgebaseconstruction. ArXiv,
+abs/2212.10770.
+JiaanWang,YunlongLiang,FandongMeng,Haoxiang
+Shi,ZhixuLi,JinanXu,JianfengQu,andJieZhou.
+2023. Ischatgptagoodnlgevaluator? apreliminary
+study. ArXiv,abs/2303.04048.
+Tianyi Zhang, Varsha Kishore, Felix Wu, Kilian Q.
+Weinberger, and Yoav Artzi. 2019. Bertscore:
+Evaluating text generation with bert. ArXiv,
+abs/1904.09675.
+A Row-LevelComparisonHelpfulness
+Evaluations
+Three human evaluators are provided with struc-
+tured summaries comparing two entities where
+each row represents an attribute of comparison.
+Wedescribethepredefinedrow-levelratingsbelow.
+YES: Both the attribute and shown values
+are related to the comparison and satisfy the
+desideratalaidoutinSection3.1.
+NO-BadExtraction: Eitherattributeorthevalue
+extractiondoesnotmakesensesuchasextracting
+graphic card for a campsite or extracting bright
+forthetransmissionattributeinacar.
+NO-InconsistentValues: Thevaluesforasingle
+entityareinconsistent. Anexamplewouldbehav-
+ing monthly fee=$10, $5000 or price=expensive,
+affordableforthesameentity.
+NO - Undermerged Values: Some values are
+redundant and should be merged with the other
+valuessuchasbackpackandtravelbackpack.
+NO - Same Attribute, Orthogonal Values:
+Values of the same attribute are interpreted
+differently across the two entities. An example
+wouldbehavingsteering=sportyandfuntodrive
+foroneentityandaccuratefortheotherone.
+OK:RowdoesnotfitanyoftheNOcategoriesbut
+itdoesfitthehelpfulcomparisondesiderataeither.
+
+Figure3: STRUM-LLMsummarycomparingSonosMoveandAppleHomePod.
+Figure4: STRUM-LLMsummarycomparingSonyLinkBudsandBoseSoundSportFree.
+Figure5: STRUM-LLMsummarycomparing1zpressoJXProandKnockAergrind.
+
