@@ -590,139 +590,7 @@ PY
 }
 
 # =====================================
-# ディレクトリ検索
-# =====================================
-
-search_directory() {
-    local search_name="$1"
-    local max_depth=3
-    
-    print_info "検索中... (3階層まで)"
-    
-    # 検索実行（プロジェクトルートから）
-    cd "$PROJECT_ROOT"
-    local results
-    mapfile -t results < <(find . -maxdepth $max_depth -type d -name "*$search_name*" 2>/dev/null | sort)
-    
-    local count=${#results[@]}
-    
-    if [ $count -eq 0 ]; then
-        print_error "ディレクトリが見つかりません"
-        return 1
-    elif [ $count -gt 10 ]; then
-        print_warning "検索結果が多すぎます ($count件)"
-        echo "より具体的な名前を入力してください"
-        return 2
-    else
-        echo -e "\n${BOLD}【検索結果: $count件】${NC}"
-        for i in "${!results[@]}"; do
-            echo "  $((i+1)). ${results[$i]}"
-        done
-        
-        # グローバル配列に保存（選択用）
-        SEARCH_RESULTS=("${results[@]}")
-        return 0
-    fi
-}
-
-select_from_list() {
-    local count=${#SEARCH_RESULTS[@]}
-    
-    while true; do
-        read -p "保存先を選択 (1-$count): " choice
-        
-        if [[ "$choice" =~ ^[0-9]+$ ]] && [ "$choice" -ge 1 ] && [ "$choice" -le "$count" ]; then
-            SELECTED_DIR="${SEARCH_RESULTS[$((choice-1))]}"
-            return 0
-        else
-            print_error "無効な選択です。1-${count}の数字を入力してください"
-        fi
-    done
-}
-
-# =====================================
-# 結果保存
-# =====================================
-
-save_results() {
-    print_section "結果保存"
-    
-    read -p "結果を保存しますか？ (y/n): " save_choice
-    
-    if [[ "$save_choice" != "y" && "$save_choice" != "Y" ]]; then
-        print_info "結果を保存せずに終了します"
-        return 0
-    fi
-    
-    # 最新の結果ファイルを検索（サブディレクトリ含む、当日の日付ディレクトリ）
-    local results_base="$PROJECT_ROOT/src/analysis/experiments/$(date +%Y)/$(date +%m)/$(date +%d)/results"
-    local result_file=$(find "$results_base" -type f -name 'batch_experiment_*.json' -print0 2>/dev/null | xargs -0 ls -t 2>/dev/null | head -1)
-    
-    if [[ -z "$result_file" ]]; then
-        print_error "結果ファイルが見つかりません"
-        return 1
-    fi
-    
-    print_success "結果ファイル: $(basename $result_file)"
-    
-    # ディレクトリ検索ループ
-    while true; do
-        echo ""
-        read -p "保存先ディレクトリ名を入力: " dir_name
-        
-        if [[ -z "$dir_name" ]]; then
-            print_error "ディレクトリ名を入力してください"
-            continue
-        fi
-        
-        if search_directory "$dir_name"; then
-            select_from_list
-            break
-        elif [ $? -eq 2 ]; then
-            # 10件以上ヒット、再検索
-            continue
-        else
-            # 0件ヒット
-            echo ""
-            read -p "新しいディレクトリを作成しますか？ (y/n): " create_new
-            if [[ "$create_new" == "y" || "$create_new" == "Y" ]]; then
-                read -p "作成するパス (プロジェクトルートからの相対パス): " new_path
-                SELECTED_DIR="$new_path"
-                mkdir -p "$PROJECT_ROOT/$new_path"
-                print_success "ディレクトリを作成しました: $new_path"
-                break
-            fi
-        fi
-    done
-    
-    # ファイルコピー
-    local dest_dir="$PROJECT_ROOT/$SELECTED_DIR"
-    local dest_file="$dest_dir/$(basename $result_file)"
-    
-    mkdir -p "$dest_dir"
-    if cp "$result_file" "$dest_file"; then
-        print_success "結果を保存しました: $dest_file"
-        
-        # 結果サマリーを表示
-        echo ""
-        print_info "結果サマリー:"
-        python - "$dest_file" <<'PY'
-import json,sys
-path = sys.argv[1] if len(sys.argv) > 1 else None
-if not path:
-    raise SystemExit(0)
-with open(path,'r',encoding='utf-8') as f:
-    data = json.load(f)
-meta = data.get('experiment_meta',{})
-print(f"  総実験数: {meta.get('total_experiments',0)}")
-print(f"  成功: {meta.get('successful_experiments',0)}")
-print(f"  タイムスタンプ: {meta.get('timestamp','')}")
-PY
-    else
-        print_error "ファイルのコピーに失敗しました"
-        return 1
-    fi
-}
+# （削除）手動結果保存フローは不要：パイプラインが自動保存するため
 
 # =====================================
 # メインメニュー
@@ -739,7 +607,6 @@ main_menu() {
     if load_previous_config; then
         if confirm_settings; then
             run_experiment
-            save_results
             return 0
         fi
     fi
@@ -757,7 +624,6 @@ main_menu() {
     # 確認と実行
     if confirm_settings; then
         run_experiment
-        save_results
     else
         print_warning "実験をキャンセルしました"
         return 1
