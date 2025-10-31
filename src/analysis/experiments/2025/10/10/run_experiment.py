@@ -51,7 +51,7 @@ def parse_args():
     parser.add_argument(
         '--dataset', '-d',
         type=str,
-        choices=['steam', 'semeval', 'amazon'],
+        choices=['steam', 'semeval', 'amazon', 'retrieved_concepts'],
         help='データセット名'
     )
     

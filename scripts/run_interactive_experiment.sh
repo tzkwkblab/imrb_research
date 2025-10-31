@@ -316,15 +316,17 @@ select_dataset() {
     echo "1. Steam Reviews (動作確認済み)"
     echo "2. SemEval ABSA (実験的)"
     echo "3. Amazon Reviews (実験的)"
+    echo "4. Retrieved Concepts (COCO captions, concept_i)"
     echo ""
     
     while true; do
-        read -p "選択してください (1-3): " choice
+        read -p "選択してください (1-4): " choice
         case $choice in
             1) DATASET="steam"; break;;
             2) DATASET="semeval"; break;;
             3) DATASET="amazon"; break;;
-            *) print_error "無効な選択です。1-3の数字を入力してください";;
+            4) DATASET="retrieved_concepts"; break;;
+            *) print_error "無効な選択です。1-4の数字を入力してください";;
         esac
     done
     
@@ -350,6 +352,54 @@ select_aspects() {
         amazon)
             available_aspects=("quality" "price" "delivery" "service" "product")
             ;;
+        retrieved_concepts)
+            echo "concept_i を指定してください（0-299）。"
+            echo "例: 0  /  0,1,2  /  0-9  /  0-4,10,20-25"
+            while true; do
+                read -p "入力: " selection
+                if [[ -z "$selection" ]]; then
+                    print_error "入力が空です"
+                    continue
+                fi
+                # 解析
+                IFS=',' read -ra TOKENS <<< "$selection"
+                local -a selected_aspects=()
+                local valid=true
+                for tk in "${TOKENS[@]}"; do
+                    tk=$(echo "$tk" | xargs)
+                    if [[ "$tk" =~ ^[0-9]+$ ]]; then
+                        num=$tk
+                        if [ "$num" -ge 0 ] && [ "$num" -le 299 ]; then
+                            selected_aspects+=("concept_${num}")
+                        else
+                            print_error "範囲外: $num (0-299)"
+                            valid=false; break
+                        fi
+                    elif [[ "$tk" =~ ^([0-9]+)-([0-9]+)$ ]]; then
+                        start=${BASH_REMATCH[1]}
+                        end=${BASH_REMATCH[2]}
+                        if [ "$start" -le "$end" ] && [ "$start" -ge 0 ] && [ "$end" -le 299 ]; then
+                            for ((i=start;i<=end;i++)); do selected_aspects+=("concept_${i}"); done
+                        else
+                            print_error "無効な範囲: $tk"
+                            valid=false; break
+                        fi
+                    else
+                        print_error "無効なトークン: $tk"
+                        valid=false; break
+                    fi
+                done
+                if $valid && [ ${#selected_aspects[@]} -gt 0 ]; then
+                    ASPECTS=$(IFS=' '; echo "${selected_aspects[*]}")
+                    echo ""
+                    print_success "選択されたアスペクト: $ASPECTS"
+                    break
+                else
+                    print_error "有効なアスペクトを選択してください"
+                fi
+            done
+            return 0
+            ;;
     esac
     
     echo "利用可能なアスペクト:"
@@ -361,14 +411,13 @@ select_aspects() {
     while true; do
         read -p "選択してください（カンマ区切りで複数可, 例: 1,2,3）: " selection
         
-        # カンマで分割
         IFS=',' read -ra SELECTED <<< "$selection"
         
         local selected_aspects=()
         local valid=true
         
         for num in "${SELECTED[@]}"; do
-            num=$(echo "$num" | xargs)  # trim
+            num=$(echo "$num" | xargs)
             if [[ "$num" =~ ^[0-9]+$ ]] && [ "$num" -ge 1 ] && [ "$num" -le "${#available_aspects[@]}" ]; then
                 selected_aspects+=("${available_aspects[$((num-1))]}")
             else
