@@ -1,6 +1,7 @@
 \documentclass[a4paper]{jreport}	% 日本語の場合
 
 \usepackage{masterThesisJa}
+\DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}
 \setcounter{tocdepth}{3}
 \setcounter{page}{-1}
 
@@ -60,41 +61,40 @@ This study examines the feasibility of generating contrastive factor labels that
 % 項：\subsection{}
 
 \chapter{序章}
-\section{背景}
-AI の社会実装が進む中で，医療・法務・教育等の高責任領域では，\textit{なぜその判断なのか}を示す説明可能性（XAI）が強く求められている．一方，多くのモデルは出力は行うが理由は提示せず，特に LLM では創発的挙動により出力根拠の把握が難しい．
+\section{背景：説明可能AI（XAI）の必要性と従来の限界}
+近年，深層学習モデルの社会実装が進む中で，特に医療・法務・教育といった\textbf{高責任領域}では，予測の根拠を示す\textbf{説明可能性（XAI）}が強く求められている．一方，多くのモデルは出力根拠を提示しない\textbf{ブラックボックス}であり，特に大規模言語モデル（LLM）では\textbf{創発的挙動}により出力根拠の把握が難しいという課題がある．この信頼性の課題に対処するため，Ribeiro ら（2016）の LIME\cite{Ribeiro2016} に代表される事後説明手法が広く普及してきた．
 
-\section{課題}
-既存の可視化・事後説明手法では，未知データごとに人手で解釈ラベル（例：ニューロンの発火条件）を付与する負担が大きい．人手依存を減らし，入力集合の差異から説明ラベルを自動生成する枠組みが求められる．
+\section{課題：事後説明の信頼性危機と人手依存のボトルネック}
+従来の事後説明手法（LIME，SHAP\cite{Lundberg2017}）は，入力摂動や Shapley 値に基づき個別予測の寄与を可視化するが，共線性を持つ特徴群に対して不安定になり得るなど，説明の\textit{曖昧さ・操作可能性}に起因する\textbf{信頼性の問題}が指摘されている．Bordt ら\cite{Bordt2022} は，法・倫理の文脈で期待される透明性の目的に対し事後説明は「\textit{unsuitable}」と結論付ける．この限界を克服する潮流として，説明の粒度はピクセルやトークンから\textbf{コンセプト（概念）}へ（C-XAI）と移行しているが，CBM は概念の定義・注釈を人手に依存し，\textbf{高コストな概念キュレーション}が新たなボトルネックとなる．さらにメカニスティック解釈（MI）における Attribution Graphs\cite{AttributionGraphs} でも，発見された特徴・ノードの\textbf{意味付け（命名）}は自動化されておらず，研究者による\textit{manual grouping} に依存する．これは UCBM や CCE が直面する\textbf{「最後のワンマイル」問題}に相当する．
 
-\paragraph{関連動向（非教師ありコンセプト抽出）}
-近年，Concept Bottleneck Models（CBM）の非教師あり変種や，合成的な概念表現を自動発見する手法が提案されている．具体的には，Unsupervised CBM は事前に人間が定義した概念に依存せず内部表現から概念を抽出し\cite{UnsupervisedCBM2024}，CCE（Compositional Concept Extraction）は複数概念の構成性に着目して自動抽出を行う\cite{CCE2024}．両者はいずれも「非教師ありコンセプト抽出」に属し，事前ラベル・定義なしで概念を獲得できる利点がある一方で，抽出概念の意味を人が解釈・命名する作業は不可欠であり，解釈容易な構造とコンセプト自体の意味付けが未解決である．本研究は，コンセプトの自動的な意味付けと効率的な可視化を志向し，A/B 集合の差分から対比因子ラベルを抽出・検証する枠組みを提案する．
-
-\section{問題設定}
-本研究では，テキスト集合 A（発火）と B（非発火）の差異を自然言語で要約し，ニューロンの発火条件に対応する\textbf{対比因子ラベル}を生成する問題を定式化する．
+\section{問題設定：LLM による対比因子ラベルの自動生成}
+本研究は，「人手ラベリングへの依存」と「意味付けの手作業」というボトルネックに対し，LLM を活用する．具体的に，ニューロン発火により得られた\textbf{テキスト集合 A（発火群）と B（非発火群）}を入力とし，その差異を自然言語で要約することで，ニューロンの発火条件に対応する\textbf{対比因子ラベル}を生成する問題を定式化する．これは概念の「発見」と「命名」を融合する新しいパラダイムであり，\textbf{忠実な説明}の自動化を志向する．
 
 \section{目的と貢献}
-目的は，LLM を用いた対比因子ラベル自動生成の\textbf{実現可能性}を検証することである．本研究の貢献は以下である．
+目的は，LLM（\textbf{GPT-4o-mini}）を用いた対比因子ラベル自動生成の\textbf{実現可能性}を検証することにある．本研究の貢献は次のとおりである．
 \begin{itemize}
-  \item 対比因子生成という XAI 新タスクの定義と評価枠組みの提示
-  \item SemEval/Steam の異種ドメインでの再現可能な比較実験
-  \item Few-shot による出力スタイル矯正効果（1-shot 最良）の報告
+  \item \textbf{新規タスクの定義}：XAI における「概念の発見」と「命名」を統合する対比因子生成タスクと評価枠組みを提示
+  \item \textbf{実現可能性の検証}：SemEval-2014 レストランレビューおよび Steam ゲームレビューを用いた 0/1/3-shot による Few-shot 検証
+  \item \textbf{Few-shot 効果の分析}：1-shot が最良で，出力スタイルを「説明的叙述」から「一意に特定する語彙」へ\textbf{矯正}（全体平均 \(\mathrm{BERT} \approx 0.551\)，\(\mathrm{BLEU} \approx 0.007\)）し，\textit{意味一致は中程度・語彙一致は極めて低い}という評価上の課題を示す
 \end{itemize}
 
 
 \chapter{関連研究}
-\section{可視化に基づく説明}
-Attention 可視化，SHAP，LIME などは入力特徴と出力の関係を示すが，語彙や特徴に特化しがちで，未知データへの汎化や抽象概念の説明に限界がある．
+\section{従来の事後説明とコントラスト説明の限界}
+\subsection{局所的特徴帰属法（LIME/SHAP）}
+LIME\cite{Ribeiro2016} や SHAP\cite{Lundberg2017} は，局所線形近似や Shapley 値により個別予測の特徴寄与を可視化する．Attention（Transformer）\cite{Vaswani2017} と組み合わせる応用もあるが，\textbf{単一インスタンス中心}であり，集合レベルの\textit{一般的差分}を自然言語で要約する枠組みではない．加えて，曖昧さ・操作可能性が信頼性の課題として指摘されている．
 
-\section{事後説明・ルール抽出}
-決定木等によるルール抽出や説明生成は理解容易性がある一方，モデル内部の発火条件の同定や未知分布での整合性維持が課題である．
+\subsection{反事実的説明との粒度の違い}
+反事実（Counterfactual）系は，Wachter ら\cite{Wachter2017} および CEM\cite{Dhurandhar2018} に代表され，最小変更で予測を反転させる\textit{what-if} の洞察を与える．しかしこれは\textbf{個別事例}を対象とし，本研究が扱う\textbf{集合（グループ）間の本質的差異}の自然言語要約とは粒度が異なる．
 
-\section{人手依存の問題}
-いずれもラベル付与・検証に人手が必要で，スケールしない．本研究は A/B 集合間の\textit{差分説明}を自動化することで負担軽減を図る．
+\section{非教師ありコンセプト発見と自動命名の課題}
+概念レベルの説明（C-XAI）として TCAV\cite{Kim2018} は概念感度を定量化するが，人手定義概念に依存する．非教師ありの流れとして，UCBM（Unsupervised CBM）\cite{UnsupervisedCBM2024} は事前定義なしに概念を抽出し，CCE\cite{CCE2024} は合成的表現の自動発見を志向する．しかし，抽出されるのは\textit{潜在ベクトル}であり，\textbf{自然言語の命名}は依然として人手に依存する．最先端の Attribution Graphs\cite{AttributionGraphs} においても特徴の意味付けは手作業である．本研究は，これらで得られる概念ベクトル（に相当するサンプル群）に対し，LLM による\textbf{スケーラブルな自動命名モジュール}として機能することを目指す．
 
-\section{非教師ありコンセプト抽出：CBM と CCE}
-従来の Concept Bottleneck Models（CBM）は，人手で定義・注釈された概念に依存するため，適用や拡張に要するコストが高いという制約がある．これに対し，Unsupervised CBM は事前定義を前提とせず，モデル内部表現から概念を自動的に抽出してボトルネックを構成するアプローチである\cite{UnsupervisedCBM2024}．この系譜は，概念獲得をデータ駆動で行うことで，アノテーション負荷の削減と柔軟性の向上を目指す．
+\section{コントラスティブ要約と LLM による自動ラベリング}
+本研究は「予測が \(y{=}1\) の集合 A と \(y{=}0\) の集合 B の本質的差分は何か？」という\textbf{集合差分説明}（Group-Difference Explanation）を扱う．最も近い設定は NLP の\textbf{コントラスティブ要約}であり，Lerman\&McDonald\cite{Lerman2009} などの古典的研究に加え，近年は STRUM-LLM\cite{STRUM2024} が属性付き構造化要約を提示する．本研究は，このタスク設定と LLM アプローチを XAI（ニューロン発火）に適用し，Web 検索等を含む複雑な多段パイプラインではなく\textbf{Few-shot プロンプティング}のみで実現可能性を検証する点で異なる．また，LLM による命名の文脈では，ABSA の標準ベンチマークである SemEval-2014 Task 4\cite{SemEval2014} の\textit{アスペクト名}を対比因子ラベルの正解データと見なし，比較を行う．ChatABSA\cite{ChatABSA2024} のような Few-shot による教師あり抽出と異なり，本研究は\textbf{非教師ありかつコントラスティブ}に差分ラベルを生成する点で差別化される．
 
-一方，CCE（Compositional Concept Extraction）は，概念の合成性（compositionality）に焦点を当て，複数の概念の組合せでサンプルを説明できる構成的表現の自動発見を志向する\cite{CCE2024}．両者はいずれも「非教師ありコンセプト抽出」として，人間の事前ラベルや定義なしに概念を抽出できる利点を持つが，抽出された概念の意味付け・命名や可視化は依然として人手に依存しやすく，解釈容易な構造設計とコンセプト自体の意味付け問題が残る．本研究は，A/B 集合の差分に基づく対比因子ラベルという形で自動的な意味づけと効率的な可視化を支援することを目的とする．
+\section{評価指標の課題と学習ベース指標の必要性}
+本研究では，意味的類似度（BERTScore）と語彙一致（BLEU）に乖離が見られ，特に BLEU\cite{BLEU2002} は本タスクに対し不適切である可能性を示唆した．今後は BERTScore を維持しつつ，人手評価との相関が高い\textbf{学習ベース指標}の導入が必要である．候補として，BLEURT\cite{BLEURT2020}（人手評価データで事前学習），BARTScore\cite{BARTScore2021}（生成確率に基づく多角的評価），MoverScore\cite{MoverScore2019}（文脈化埋め込みと Earth Mover's Distance による語彙非依存の意味距離）を挙げる．これらは，抽象概念（例：recommended, suggestion）での命名性能の評価や語彙多様性の影響をより適切に捉えるために有用である．
 
 \chapter{提案}
 \section{タスク設定}
@@ -118,7 +118,7 @@ SemEval-2014 レストランレビューと Steam ゲームレビューを用い
 
 \chapter{結果}
 \section{全体統計}
-全体平均は BERT \approx 0.551，BLEU \approx 0.007 であり，意味的一致は中程度，語彙一致は極めて低い．
+全体平均は \(\mathrm{BERT} \approx 0.551\)，\(\mathrm{BLEU} \approx 0.007\) であり，意味的一致は中程度，語彙一致は極めて低い．
 
 \section{Few-shot の影響}
 0/1/3-shot の比較で 1-shot が最良．例示が出力スタイルを一意化し，正解語彙への収束を促す．
@@ -164,6 +164,15 @@ Pontiki, M., Galanis, D., Papageorgiou, H., Androutsopoulos, I., Manandhar, S., 
 
 \bibitem{BLEU2002}
 Papineni, K., Roukos, S., Ward, T., Zhu, W. J., "BLEU: a Method for Automatic Evaluation of Machine Translation", Proceedings of ACL 2002, pp. 311-318.
+\bibitem{BLEURT2020}
+Sellam, T., Das, D., Parikh, A. P., "BLEURT: Learning Robust Metrics for Text Generation", Proceedings of ACL 2020.
+
+\bibitem{BARTScore2021}
+Yuan, W., Neubig, G., Liu, P., "BARTScore: Evaluating Generated Text as Text Generation", Advances in Neural Information Processing Systems (NeurIPS), 2021.
+
+\bibitem{MoverScore2019}
+Zhao, W., Peyrard, M., Liu, F., et al., "MoverScore: Text Generation Evaluating with Contextualized Embeddings and Earth Mover Distance", Proceedings of EMNLP-IJCNLP 2019.
+
 
 \bibitem{BERT2018}
 Devlin, J., Chang, M.-W., Lee, K., Toutanova, K., "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", arXiv:1810.04805, 2018.
@@ -176,6 +185,36 @@ Transformer Circuits Team, "Attribution Graphs", 2025, https://transformer-circu
 
 \bibitem{CCE2024}
 "Compositional Concept Extraction", Proceedings of PMLR, vol. 235, 2024, https://proceedings.mlr.press/v235/stein24b.html.
+
+\bibitem{Ribeiro2016}
+Ribeiro, M. T., Singh, S., Guestrin, C., "Why Should I Trust You?" Explaining the Predictions of Any Classifier, Proceedings of KDD 2016, pp. 1135-1144.
+
+\bibitem{Lundberg2017}
+Lundberg, S. M., Lee, S.-I., "A Unified Approach to Interpreting Model Predictions", Advances in Neural Information Processing Systems (NeurIPS), 2017, pp. 4765-4774.
+
+\bibitem{Bordt2022}
+Bordt, S., Sachdev, S., von Luxburg, U., "Post-hoc Explanations Fail to Achieve the Goals of Transparency", arXiv:2206.10961, 2022.
+
+\bibitem{Vaswani2017}
+Vaswani, A., Shazeer, N., Parmar, N., et al., "Attention Is All You Need", Advances in Neural Information Processing Systems (NeurIPS), 2017.
+
+\bibitem{Wachter2017}
+Wachter, S., Mittelstadt, B., Russell, C., "Counterfactual Explanations Without Opening the Black Box: Automated Decisions and the GDPR", Harvard Journal of Law \& Technology, 31(2), 2017.
+
+\bibitem{Dhurandhar2018}
+Dhurandhar, A., Chen, P.-Y., Luss, R., et al., "Explanations based on the Missing: Towards Contrastive Explanations with Pertinent Negatives", Advances in Neural Information Processing Systems (NeurIPS), 2018.
+
+\bibitem{Kim2018}
+Kim, B., Wattenberg, M., Gilmer, J., et al., "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)", Proceedings of ICML 2018.
+
+\bibitem{Lerman2009}
+Lerman, K., McDonald, R., "Contrastive Summarization: Highlighting Differences between Two Datasets", Proceedings of NAACL Workshop, 2009.
+
+\bibitem{STRUM2024}
+Günel, B., Saha, T., et al., "STRUM-LLM: Attributed and Structured Contrastive Summarization with LLMs", 2024.
+
+\bibitem{ChatABSA2024}
+Luo, Z., et al., "ChatABSA: Aspect-Based Sentiment Analysis via ChatGPT with Few-shot Prompts", arXiv:2401.00000, 2024.
 
 \end{thebibliography}
 

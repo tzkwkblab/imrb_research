@@ -7,7 +7,14 @@
 from typing import Dict, List
 from pathlib import Path
 
-from .loaders import BaseDatasetLoader, UnifiedRecord, SteamDatasetLoader, SemEvalDatasetLoader, AmazonDatasetLoader
+from .loaders import (
+    BaseDatasetLoader,
+    UnifiedRecord,
+    SteamDatasetLoader,
+    SemEvalDatasetLoader,
+    AmazonDatasetLoader,
+    RetrievedConceptsDatasetLoader,
+)
 from .splitters import BaseSplitter, BinarySplitResult, SplitOptions, AspectSplitter, BinarySplitter
 
 
@@ -15,7 +22,8 @@ class DatasetManager:
     LOADERS = {
         "steam": SteamDatasetLoader,
         "semeval": SemEvalDatasetLoader,
-        "amazon": AmazonDatasetLoader
+        "amazon": AmazonDatasetLoader,
+        "retrieved_concepts": RetrievedConceptsDatasetLoader,
     }
     
     SPLITTERS = {
@@ -42,6 +50,9 @@ class DatasetManager:
                 dataset_path = self.data_root / "absa-review-dataset" / "pyabsa-integrated" / "current"
             elif dataset_id == "amazon":
                 dataset_path = self.data_root / "amazon-product-reviews" / "kaggle-bittlingmayer" / "current"
+            elif dataset_id == "retrieved_concepts":
+                # 直指定ファイルを扱うため base_path にはファイルパスを渡す
+                dataset_path = Path("/Users/seinoshun/imrb_research/retrieved_dataset_100.json")
             else:
                 dataset_path = self.data_root
             

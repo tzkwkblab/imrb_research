@@ -30,6 +30,12 @@ datasets:
     language: "en"
     aspects: ["quality", "price", "delivery", "service", "product"]
 
+  retrieved_concepts:
+    # Farnoosh共有の大容量 JSON（プロジェクト直下）
+    path: "/Users/seinoshun/imrb_research/retrieved_dataset_100.json"
+    domain: "vision"
+    language: "en"
+
 # 設定検証ルール
 validation:
   required_files: ["train.csv", "test.csv", "train.ft.txt", "test.ft.txt"]
@@ -47,6 +53,9 @@ loaders:
   amazon:
     class: "AmazonDatasetLoader"
     module: "loaders.amazon_loader"
+  retrieved_concepts:
+    class: "RetrievedConceptsDatasetLoader"
+    module: "loaders.retrieved_concepts_loader"
 
 # 分割戦略設定
 splitters:
