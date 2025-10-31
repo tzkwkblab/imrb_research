@@ -270,6 +270,11 @@ select_examples_file() {
 
     USE_EXAMPLES="1"
     local ex_dir="$PROJECT_ROOT/data/analysis-workspace/contrast_examples/$DATASET"
+    # retrieved_concepts の場合は Steam の例題を使用
+    if [[ "$DATASET" == "retrieved_concepts" ]]; then
+        ex_dir="$PROJECT_ROOT/data/analysis-workspace/contrast_examples/steam"
+        print_info "retrieved_concepts 用に Steam の例題ディレクトリを使用します: $ex_dir"
+    fi
     local -a files=()
     if [[ -d "$ex_dir" ]]; then
         while IFS= read -r -d '' f; do files+=("$f"); done < <(find "$ex_dir" -maxdepth 1 -type f \( -name "*.json" -o -name "*.yaml" -o -name "*.yml" \) -print0 2>/dev/null | sort -z)
