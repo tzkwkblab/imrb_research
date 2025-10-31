@@ -62,7 +62,7 @@ This study examines the feasibility of generating contrastive factor labels that
 
 \chapter{序章}
 \section{背景：説明可能AI（XAI）の必要性と従来の限界}
-近年，深層学習モデルの社会実装が進む中で，特に医療・法務・教育といった\textbf{高責任領域}では，予測の根拠を示す\textbf{説明可能性（XAI）}が強く求められている．一方，多くのモデルは出力根拠を提示しない\textbf{ブラックボックス}であり，特に大規模言語モデル（LLM）では\textbf{創発的挙動}により出力根拠の把握が難しいという課題がある．この信頼性の課題に対処するため，Ribeiro ら（2016）の LIME\cite{Ribeiro2016} に代表される事後説明手法が広く普及してきた．
+近年，深層学習モデルの社会実装が進む中で，特に医療・法務・教育といった\textbf{高責任領域}では，予測の根拠を示す\textbf{説明可能性（XAI）}が強く求められている．例えば医療では，臨床・倫理・法的観点から説明可能性が中核要件として整理されている\cite{Amann2020}．法領域では，GDPR 文脈で反事実説明が説明責任に資する実務的枠組みとして提案されている\cite{Wachter2017}．また，高リスク意思決定においては，後付け説明よりも本質的に解釈可能なモデルの採用が推奨される\cite{Rudin2019}．一方，多くのモデルは出力根拠を提示しない\textbf{ブラックボックス}である．特に大規模言語モデル（LLM）では，基盤モデルの内部仕様や学習データが非公開であり\cite{OpenAI2023GPT4}，スケールに伴い予期せぬ結果が創発するため\cite{Wei2022Emergent}，出力根拠の事前予測と検証が難しい．こうした信頼性の課題には，まず LIME\cite{Ribeiro2016} や SHAP\cite{Lundberg2017} が登場し，入力の摂動や Shapley 分解により予測を支える要因を\textbf{局所的・モデル非依存}に可視化し，望ましくない特徴依存の特定，不具合の切り分け，データ品質の点検，監査報告時の根拠提示といった実務に具体的に寄与してきた．その後，深層モデル向けには勾配に基づく帰属・可視化（Integrated Gradients\cite{Sundararajan2017}，Grad-CAM\cite{Selvaraju2017}）が提案され，入力と出力の感度やクラス特有の領域を可視化することで，\textbf{人間の直感に沿った手掛かり提示}が広がった．もっとも，これらは「どこが効いていそうか」を示す便益はある一方で，説明の信頼性には課題が残る．例えば，サリエンシー図がモデルの学習内容と無関係でも類似の結果を返し得ること（sanity check）\cite{Adebayo2018}，予測を変えずに説明だけを意図的に操作し得ること\cite{Slack2020} が報告されている．
 
 \section{課題：事後説明の信頼性危機と人手依存のボトルネック}
 従来の事後説明手法（LIME，SHAP\cite{Lundberg2017}）は，入力摂動や Shapley 値に基づき個別予測の寄与を可視化するが，共線性を持つ特徴群に対して不安定になり得るなど，説明の\textit{曖昧さ・操作可能性}に起因する\textbf{信頼性の問題}が指摘されている．Bordt ら\cite{Bordt2022} は，法・倫理の文脈で期待される透明性の目的に対し事後説明は「\textit{unsuitable}」と結論付ける．この限界を克服する潮流として，説明の粒度はピクセルやトークンから\textbf{コンセプト（概念）}へ（C-XAI）と移行しているが，CBM は概念の定義・注釈を人手に依存し，\textbf{高コストな概念キュレーション}が新たなボトルネックとなる．さらにメカニスティック解釈（MI）における Attribution Graphs\cite{AttributionGraphs} でも，発見された特徴・ノードの\textbf{意味付け（命名）}は自動化されておらず，研究者による\textit{manual grouping} に依存する．これは UCBM や CCE が直面する\textbf{「最後のワンマイル」問題}に相当する．
@@ -215,6 +215,30 @@ Günel, B., Saha, T., et al., "STRUM-LLM: Attributed and Structured Contrastive 
 
 \bibitem{ChatABSA2024}
 Luo, Z., et al., "ChatABSA: Aspect-Based Sentiment Analysis via ChatGPT with Few-shot Prompts", arXiv:2401.00000, 2024.
+
+\bibitem{Rudin2019}
+Rudin, C., "Stop explaining black-box machine learning models for high-stakes decisions", Nature Machine Intelligence, 1(5), 2019, pp. 206--215.
+
+\bibitem{Amann2020}
+Amann, J., Blasimme, A., Vayena, E., Frey, D., Madai, V. I., "Explainability for artificial intelligence in healthcare: a multidisciplinary perspective", BMC Medical Informatics and Decision Making, 20, 2020, Article 310.
+
+\bibitem{Sundararajan2017}
+Sundararajan, M., Taly, A., Yan, Q., "Axiomatic Attribution for Deep Networks", Proceedings of ICML 2017, pp. 3319-3328.
+
+\bibitem{Selvaraju2017}
+Selvaraju, R. R., Cogswell, M., Das, A., et al., "Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization", Proceedings of ICCV 2017, pp. 618-626.
+
+\bibitem{Adebayo2018}
+Adebayo, J., Gilmer, J., Muelly, M., et al., "Sanity Checks for Saliency Maps", Advances in Neural Information Processing Systems (NeurIPS), 2018.
+
+\bibitem{Slack2020}
+Slack, D., Hilgard, S., Jia, E., Singh, S., Lakkaraju, H., "Fooling LIME and SHAP: Adversarial Attacks on Post hoc Explanation Methods", Proceedings of AIES 2020, pp. 180-186.
+
+\bibitem{Wei2022Emergent}
+Wei, J., Wang, X., Schuurmans, D., et al., "Emergent Abilities of Large Language Models", Transactions on Machine Learning Research (TMLR), 2022. arXiv:2206.07682.
+
+\bibitem{OpenAI2023GPT4}
+OpenAI, "GPT-4 Technical Report", arXiv:2303.08774, 2023.
 
 \end{thebibliography}
 
