@@ -31,8 +31,8 @@ datasets:
     aspects: ["quality", "price", "delivery", "service", "product"]
 
   retrieved_concepts:
-    # Farnoosh共有の大容量 JSON（プロジェクト直下）
-    path: "/Users/seinoshun/imrb_research/retrieved_dataset_100.json"
+    # Farnoosh共有の大容量 JSON（external配下の標準配置）
+    path: "/Users/seinoshun/imrb_research/data/external/retrieved-concepts/farnoosh/current"
     domain: "vision"
     language: "en"
 

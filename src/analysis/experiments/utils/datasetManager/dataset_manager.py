@@ -51,8 +51,8 @@ class DatasetManager:
             elif dataset_id == "amazon":
                 dataset_path = self.data_root / "amazon-product-reviews" / "kaggle-bittlingmayer" / "current"
             elif dataset_id == "retrieved_concepts":
-                # 直指定ファイルを扱うため base_path にはファイルパスを渡す
-                dataset_path = Path("/Users/seinoshun/imrb_research/retrieved_dataset_100.json")
+                # external 配下の標準配置
+                dataset_path = self.data_root / "retrieved-concepts" / "farnoosh" / "current"
             else:
                 dataset_path = self.data_root
             

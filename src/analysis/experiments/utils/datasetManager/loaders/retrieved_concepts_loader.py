@@ -21,8 +21,8 @@ class RetrievedConceptsDatasetLoader(BaseDatasetLoader):
             dataset_info = config.get_dataset_info("retrieved_concepts")
             base_path = dataset_info.path
         elif base_path is None:
-            # プロジェクト直下に配置された既定パス
-            base_path = "/Users/seinoshun/imrb_research/retrieved_dataset_100.json"
+            # external配下の標準配置（currentシンボリックリンク）
+            base_path = "/Users/seinoshun/imrb_research/data/external/retrieved-concepts/farnoosh/current"
 
         super().__init__(base_path, "retrieved_concepts")
         self.config = config
@@ -30,9 +30,17 @@ class RetrievedConceptsDatasetLoader(BaseDatasetLoader):
 
     def load_raw_data(self) -> List[UnifiedRecord]:
         """JSON をコンセプト単位でパースしてフラットなレコードに変換"""
-        file_path = Path(str(self.base_path))
-        if not file_path.exists():
-            raise FileNotFoundError(f"データファイルが見つかりません: {file_path}")
+        target = Path(str(self.base_path))
+        # ディレクトリが指定された場合は中のJSONを探索
+        if target.is_dir():
+            json_file = self._find_json_file(target)
+            if json_file is None:
+                raise FileNotFoundError(f"JSONファイルが見つかりません: {target}")
+            file_path = json_file
+        else:
+            file_path = target
+            if not file_path.exists():
+                raise FileNotFoundError(f"データファイルが見つかりません: {file_path}")
 
         records: List[UnifiedRecord] = []
         discovered_aspects: List[str] = []
@@ -80,7 +88,14 @@ class RetrievedConceptsDatasetLoader(BaseDatasetLoader):
             return list(self._aspects)
 
         # 事前に全量ロードしていない場合は軽量スキャンでアスペクトのみ収集
-        file_path = Path(str(self.base_path))
+        target = Path(str(self.base_path))
+        if target.is_dir():
+            json_file = self._find_json_file(target)
+            if json_file is None:
+                return []
+            file_path = json_file
+        else:
+            file_path = target
         aspects: List[str] = []
         for concept_obj in self._iter_concept_objects(file_path):
             cid = concept_obj.get("concept_id")
@@ -152,5 +167,14 @@ class RetrievedConceptsDatasetLoader(BaseDatasetLoader):
                             pass
                         capturing = False
                         buffer_lines = []
+
+    def _find_json_file(self, dir_path: Path) -> Optional[Path]:
+        """ディレクトリ内のretrieved_dataset_*.jsonを優先探索"""
+        candidates = sorted(dir_path.glob("retrieved_dataset_*.json"))
+        if candidates:
+            return candidates[0]
+        # フォールバック: 直下の単一JSON
+        any_json = sorted(dir_path.glob("*.json"))
+        return any_json[0] if any_json else None
 
 
