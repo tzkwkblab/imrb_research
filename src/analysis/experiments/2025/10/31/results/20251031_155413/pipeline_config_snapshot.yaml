@@ -1,0 +1,31 @@
+experiments:
+- aspects:
+  - concept_0
+  - concept_1
+  - concept_2
+  - concept_3
+  - concept_4
+  - concept_5
+  - concept_6
+  - concept_7
+  - concept_8
+  - concept_9
+  dataset: retrieved_concepts
+  group_size: 10
+  split_type: aspect_vs_others
+general:
+  aspect_descriptions_file: null
+  console_output: true
+  debug_mode: true
+  examples_file: null
+  max_examples: null
+  use_aspect_descriptions: false
+  use_examples: false
+llm:
+  max_tokens: 150
+  model: gpt-4o-mini
+  temperature: 0.7
+output:
+  directory: results/
+  format: json
+  save_intermediate: true

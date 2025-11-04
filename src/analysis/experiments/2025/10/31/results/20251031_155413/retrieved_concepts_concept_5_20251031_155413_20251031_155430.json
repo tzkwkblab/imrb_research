@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251031_155430",
+    "experiment_name": "retrieved_concepts_concept_5_20251031_155413",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "A street sign telling people to watch for rocks",
+      "There is a group of people out in the field that are playing Frisbee.",
+      "A vase of red gerber daisies against a white background.",
+      "A painting of a flowers in a vase",
+      "A night time shot of a an empty highway.",
+      "A long table filled with lap top computers at a computer sale.",
+      "a wooden bench sitting in a grass patch next to shrubbery and yellow and purple flowers.",
+      "A black and white house cat is sitting on a chair, by a place setting.",
+      "A closeup of a toothbrush, dental floss, and Aveeno daily scrub sitting next to a sink",
+      "A couple of cows are walking in a road"
+    ],
+    "group_b": [
+      "a close up of a doughnut and a spoon",
+      "A military plane begins to ascend in to the air",
+      "A toilet built into a floor in a corner.",
+      "A golden fire hydrant in front of a house.",
+      "Someone pouring wine into a wine glass at a table for a woman.",
+      "Single cow grazing in open grassy field area.",
+      "A group of zebras grazing dry brush and grass in a field.",
+      "there is a ems truck that is yellow and blue",
+      "A couple of benches sitting next to each other.",
+      "Traffic lights at an intersection somewhere in the world."
+    ],
+    "correct_answer": "concept_5 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A street sign telling people to watch for rocks\n- There is a group of people out in the field that are playing Frisbee.\n- A vase of red gerber daisies against a white background.\n- A painting of a flowers in a vase\n- A night time shot of a an empty highway.\n- A long table filled with lap top computers at a computer sale.\n- a wooden bench sitting in a grass patch next to shrubbery and yellow and purple flowers.\n- A black and white house cat is sitting on a chair, by a place setting.\n- A closeup of a toothbrush, dental floss, and Aveeno daily scrub sitting next to a sink\n- A couple of cows are walking in a road\n\n【グループB】\n- a close up of a doughnut and a spoon\n- A military plane begins to ascend in to the air\n- A toilet built into a floor in a corner.\n- A golden fire hydrant in front of a house.\n- Someone pouring wine into a wine glass at a table for a woman.\n- Single cow grazing in open grassy field area.\n- A group of zebras grazing dry brush and grass in a field.\n- there is a ems truck that is yellow and blue\n- A couple of benches sitting next to each other.\n- Traffic lights at an intersection somewhere in the world.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Group A features natural scenes and domestic elements."
+  },
+  "evaluation": {
+    "bert_score": 0.6875296831130981,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.6875296831130981,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.3437648415565491,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251031_155430"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251031_155420",
+    "experiment_name": "retrieved_concepts_concept_1_20251031_155413",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "A black baseball mitt, ball, and baseball bat.",
+      "A dog with shoes on is walking in the snow by benches.",
+      "A group of pictures taken of dinner at a restaurant.",
+      "An old black and white photo shows a pic of a woman.",
+      "A building wall with a clock and windows.",
+      "Two cows are looking into the camera in a heard of cattle that appears to be ready to sell.",
+      "a piece of art made of pumkins next to a feild.",
+      "A zebra comes up to a car at a safari park.",
+      "a person sitting on a bench under a tree",
+      "a train on a train track with a sky background"
+    ],
+    "group_b": [
+      "a woman smiles as a giraffe walks in the back ground",
+      "The mobile home is parked next to a couple of street cones.",
+      "there are several people that are flying a kite",
+      "A skier on blue skies at the top of the mountain.",
+      "A dog sitting on the front steps in front of a welcome mat.",
+      "A polar bear dives down into the water in a zoo enclosure.",
+      "A big boat that is parked at the dock.",
+      "a large green leaf is hanging off of a tree",
+      "An adorable little girl sitting on a bench.",
+      "A person standing on top of a tennis court while wearing a white hat."
+    ],
+    "correct_answer": "concept_1 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A black baseball mitt, ball, and baseball bat.\n- A dog with shoes on is walking in the snow by benches.\n- A group of pictures taken of dinner at a restaurant.\n- An old black and white photo shows a pic of a woman.\n- A building wall with a clock and windows.\n- Two cows are looking into the camera in a heard of cattle that appears to be ready to sell.\n- a piece of art made of pumkins next to a feild.\n- A zebra comes up to a car at a safari park.\n- a person sitting on a bench under a tree\n- a train on a train track with a sky background\n\n【グループB】\n- a woman smiles as a giraffe walks in the back ground\n- The mobile home is parked next to a couple of street cones.\n- there are several people that are flying a kite\n- A skier on blue skies at the top of the mountain.\n- A dog sitting on the front steps in front of a welcome mat.\n- A polar bear dives down into the water in a zoo enclosure.\n- A big boat that is parked at the dock.\n- a large green leaf is hanging off of a tree\n- An adorable little girl sitting on a bench.\n- A person standing on top of a tennis court while wearing a white hat.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Group A includes specific objects and animals in various settings."
+  },
+  "evaluation": {
+    "bert_score": 0.6338992714881897,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.6338992714881897,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.31694963574409485,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251031_155420"
+  }
+}

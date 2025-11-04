@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251031_155424",
+    "experiment_name": "retrieved_concepts_concept_2_20251031_155413",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "A cat that is sitting on something red.",
+      "a street light sits in front of some buildings",
+      "A clock reflection shows a woman with an umbrella.",
+      "A bath tub sitting next to a white sink.",
+      "a collage of pictures with a person riding a camel on a dirt road",
+      "A black dog with his tongue hanging out laying in the sand next to a ball.",
+      "A player for the Atlanta Braves tossing a ball to himself.",
+      "Small child on a long skateboard riding on a city street.",
+      "A large white plane is on a tarmac near an empty luggage rack.",
+      "an image of a tennis player hitting the ball with a racket"
+    ],
+    "group_b": [
+      "A man playing tennis during a sunny day.",
+      "An airplane with the landing gear deployed in the sky.",
+      "Person sitting in front of a TV with the reflection of a lady on the TV.",
+      "a couple of cows are standing in a field",
+      "A protest sign looks like an ordinary stop sign.",
+      "A white propeller plane pulling a colorful kite along side of it.",
+      "some carrots radishes celery strawberries and other vegetables",
+      "This man is sitting on a bench next to a tree.",
+      "A horse and carriage in the middle of the city.",
+      "A large glass case filled with rams and ram heads."
+    ],
+    "correct_answer": "concept_2 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A cat that is sitting on something red.\n- a street light sits in front of some buildings\n- A clock reflection shows a woman with an umbrella.\n- A bath tub sitting next to a white sink.\n- a collage of pictures with a person riding a camel on a dirt road\n- A black dog with his tongue hanging out laying in the sand next to a ball.\n- A player for the Atlanta Braves tossing a ball to himself.\n- Small child on a long skateboard riding on a city street.\n- A large white plane is on a tarmac near an empty luggage rack.\n- an image of a tennis player hitting the ball with a racket\n\n【グループB】\n- A man playing tennis during a sunny day.\n- An airplane with the landing gear deployed in the sky.\n- Person sitting in front of a TV with the reflection of a lady on the TV.\n- a couple of cows are standing in a field\n- A protest sign looks like an ordinary stop sign.\n- A white propeller plane pulling a colorful kite along side of it.\n- some carrots radishes celery strawberries and other vegetables\n- This man is sitting on a bench next to a tree.\n- A horse and carriage in the middle of the city.\n- A large glass case filled with rams and ram heads.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Group A includes specific activities or actions involving objects."
+  },
+  "evaluation": {
+    "bert_score": 0.6325775980949402,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.6325775980949402,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.3162887990474701,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251031_155424"
+  }
+}

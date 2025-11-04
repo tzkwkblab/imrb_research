@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251031_155438",
+    "experiment_name": "retrieved_concepts_concept_9_20251031_155413",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "A slice of pizza sitting on top of a white paper plate.",
+      "A very large pile of yellow bananas on a counter",
+      "A red car waiting in traffic behind a large bus.",
+      "A bunch of people who are sitting under umbrellas in the sand.",
+      "A tented area with some women at a table with oranges stacked up.",
+      "An old broken boat leans on it's side in the water.",
+      "A black dog jumps to catch a yellow Frisbee.",
+      "A COUPLE IS ON THE EDGE OF A MOUNTAIN SKIING",
+      "A city street corner with officers standing on it",
+      "A horse is standing in a grassy pasture near a fence."
+    ],
+    "group_b": [
+      "A baby giraffe walks beside its mother in their zoo exhibit",
+      "A fat black cat laying inside of an upside down umbrella.",
+      "a girl with bright green hair holding a slice of pizza",
+      "Bicycle with brown wicker basket on front and small mirror on side",
+      "A toilet with the lid open in a very small bathroom.",
+      "A black and white photo of a woman getting a haircut.",
+      "a toilet sitting on a sidewalk next to a pole.",
+      "A man in a suit leaning on a door frame.",
+      "A wild duck floating on the surface of a pond.",
+      "Two cats sitting on a table looking at a bird in the window."
+    ],
+    "correct_answer": "concept_9 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A slice of pizza sitting on top of a white paper plate.\n- A very large pile of yellow bananas on a counter\n- A red car waiting in traffic behind a large bus.\n- A bunch of people who are sitting under umbrellas in the sand.\n- A tented area with some women at a table with oranges stacked up.\n- An old broken boat leans on it's side in the water.\n- A black dog jumps to catch a yellow Frisbee.\n- A COUPLE IS ON THE EDGE OF A MOUNTAIN SKIING\n- A city street corner with officers standing on it\n- A horse is standing in a grassy pasture near a fence.\n\n【グループB】\n- A baby giraffe walks beside its mother in their zoo exhibit\n- A fat black cat laying inside of an upside down umbrella.\n- a girl with bright green hair holding a slice of pizza\n- Bicycle with brown wicker basket on front and small mirror on side\n- A toilet with the lid open in a very small bathroom.\n- A black and white photo of a woman getting a haircut.\n- a toilet sitting on a sidewalk next to a pole.\n- A man in a suit leaning on a door frame.\n- A wild duck floating on the surface of a pond.\n- Two cats sitting on a table looking at a bird in the window.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Group A features outdoor scenes and animals in natural settings."
+  },
+  "evaluation": {
+    "bert_score": 0.5875445604324341,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.5875445604324341,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.29377228021621704,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251031_155438"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251031_155426",
+    "experiment_name": "retrieved_concepts_concept_3_20251031_155413",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "A young man is feeding a cow by the edge of the road.",
+      "this is a man riding on skis ion the snow",
+      "A very unsanitary area where it appears food is being prepared.",
+      "A professional baseball player holding a baseball bat staring at something.",
+      "A large architectural tower building with a clock sits in front of a clear blue sky.",
+      "Computer monitor and laptop sitting on a computer desk.",
+      "The girl is playing baseball in the field.",
+      "an image of guy doing tricks on a motorcycle",
+      "A train driving pass another train at a train station.",
+      "A motor bike sits on the grass outside near others."
+    ],
+    "group_b": [
+      "A wood bench in front of yellow flowers.",
+      "two giraffe standing side by side in a rocky field",
+      "A bed is made up and adorned with at brown teddy bear.",
+      "A bicycle with many gadgets and a mirror parked near a car.",
+      "A white toilet with a wooden seat on black tile floor.",
+      "A group stands in front of a bus.",
+      "A horse and a dog facing each other in a brown field of grass.",
+      "The black dog sits on a boat that is on the water.",
+      "A blue crane flying low over a body of water.",
+      "A man wearing a suit and tie walking on a sidewalk."
+    ],
+    "correct_answer": "concept_3 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A young man is feeding a cow by the edge of the road.\n- this is a man riding on skis ion the snow\n- A very unsanitary area where it appears food is being prepared.\n- A professional baseball player holding a baseball bat staring at something.\n- A large architectural tower building with a clock sits in front of a clear blue sky.\n- Computer monitor and laptop sitting on a computer desk.\n- The girl is playing baseball in the field.\n- an image of guy doing tricks on a motorcycle\n- A train driving pass another train at a train station.\n- A motor bike sits on the grass outside near others.\n\n【グループB】\n- A wood bench in front of yellow flowers.\n- two giraffe standing side by side in a rocky field\n- A bed is made up and adorned with at brown teddy bear.\n- A bicycle with many gadgets and a mirror parked near a car.\n- A white toilet with a wooden seat on black tile floor.\n- A group stands in front of a bus.\n- A horse and a dog facing each other in a brown field of grass.\n- The black dog sits on a boat that is on the water.\n- A blue crane flying low over a body of water.\n- A man wearing a suit and tie walking on a sidewalk.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Group A features active, dynamic scenes with people or animals engaged in activities."
+  },
+  "evaluation": {
+    "bert_score": 0.6137810349464417,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.6137810349464417,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.3068905174732208,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251031_155426"
+  }
+}

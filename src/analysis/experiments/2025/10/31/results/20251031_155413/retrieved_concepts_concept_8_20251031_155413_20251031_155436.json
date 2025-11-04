@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251031_155436",
+    "experiment_name": "retrieved_concepts_concept_8_20251031_155413",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "A train on the tracks near a covered station platform.",
+      "Book titled Fifth Avenue, 5 A.M. sitting on a bed.",
+      "Several ties are lying inside of a box.",
+      "A laptop computer sitting on top of a purple table.",
+      "A construction site has a couple of cranes.",
+      "There are several ripe oranges displayed in a wooden box.",
+      "Multiple accessories and some have an anime deco theme.",
+      "There are a lot of books and paper on a desk with a laptop in the middle.",
+      "A man with long hair wearing a jacket and a striped tie.",
+      "A crane truck has lifted up another large utility truck."
+    ],
+    "group_b": [
+      "A black vase with orange blossomed flower and green leaves.",
+      "A busy street has cars and buses on it.",
+      "there is only one kite that is being flown on the beach",
+      "this man is holding a ball up to the camera",
+      "A woman riding skis across snow covered ground.",
+      "Three wine bottles are shown sitting on a table with glasses.",
+      "A blurry image of a few horses near the crowd.",
+      "A little boy sitting on a bed with stuffed animals and a food tray.",
+      "A soccer player is kicking a soccer ball.",
+      "A woman sitting on a stone bench in front of the beach."
+    ],
+    "correct_answer": "concept_8 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A train on the tracks near a covered station platform.\n- Book titled Fifth Avenue, 5 A.M. sitting on a bed.\n- Several ties are lying inside of a box.\n- A laptop computer sitting on top of a purple table.\n- A construction site has a couple of cranes.\n- There are several ripe oranges displayed in a wooden box.\n- Multiple accessories and some have an anime deco theme.\n- There are a lot of books and paper on a desk with a laptop in the middle.\n- A man with long hair wearing a jacket and a striped tie.\n- A crane truck has lifted up another large utility truck.\n\n【グループB】\n- A black vase with orange blossomed flower and green leaves.\n- A busy street has cars and buses on it.\n- there is only one kite that is being flown on the beach\n- this man is holding a ball up to the camera\n- A woman riding skis across snow covered ground.\n- Three wine bottles are shown sitting on a table with glasses.\n- A blurry image of a few horses near the crowd.\n- A little boy sitting on a bed with stuffed animals and a food tray.\n- A soccer player is kicking a soccer ball.\n- A woman sitting on a stone bench in front of the beach.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Group A includes specific objects and settings, like books and construction sites."
+  },
+  "evaluation": {
+    "bert_score": 0.6674871444702148,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.6674871444702148,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.3337435722351074,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251031_155436"
+  }
+}

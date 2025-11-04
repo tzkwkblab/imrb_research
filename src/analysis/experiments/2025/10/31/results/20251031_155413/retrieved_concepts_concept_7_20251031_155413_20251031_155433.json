@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251031_155433",
+    "experiment_name": "retrieved_concepts_concept_7_20251031_155413",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "A group of men standing next to each other holding a blue vase.",
+      "A man on skis poses for a picture while on the snow",
+      "3 people are flying kites at the beach during the day.",
+      "A group of people on skis in the snow.",
+      "A rainy day with people walking on the sidewalks",
+      "a stuffed animal dog sits inside of a toilet",
+      "Black and white photograph of people in a city square",
+      "The stromboli has been served with soup and a bag of chips.",
+      "A group of men in suits gather for a group photo",
+      "Several cars stopped at a stoplight with a clock tower ahead"
+    ],
+    "group_b": [
+      "An open laptop computer sitting on top of a white table.",
+      "A bear walking in a grassy open field.",
+      "A man and woman sit together in front of a large piece of cake",
+      "Red fire truck driving through a red traffic light.",
+      "A man holding a tennis racquet on top of a tennis court.",
+      "some animals chillin in a frozen field in winter",
+      "a light that is attached to a pole",
+      "Two men standing knee deep in water surrounded by trees.",
+      "A baby sitting in a chair with cake and icing all over it's face and arms, and holding a toy airplane.",
+      "a tram bus is pulled into a station with the door open"
+    ],
+    "correct_answer": "concept_7 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A group of men standing next to each other holding a blue vase.\n- A man on skis poses for a picture while on the snow\n- 3 people are flying kites at the beach during the day.\n- A group of people on skis in the snow.\n- A rainy day with people walking on the sidewalks\n- a stuffed animal dog sits inside of a toilet\n- Black and white photograph of people in a city square\n- The stromboli has been served with soup and a bag of chips.\n- A group of men in suits gather for a group photo\n- Several cars stopped at a stoplight with a clock tower ahead\n\n【グループB】\n- An open laptop computer sitting on top of a white table.\n- A bear walking in a grassy open field.\n- A man and woman sit together in front of a large piece of cake\n- Red fire truck driving through a red traffic light.\n- A man holding a tennis racquet on top of a tennis court.\n- some animals chillin in a frozen field in winter\n- a light that is attached to a pole\n- Two men standing knee deep in water surrounded by trees.\n- A baby sitting in a chair with cake and icing all over it's face and arms, and holding a toy airplane.\n- a tram bus is pulled into a station with the door open\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Group A features outdoor activities and group gatherings."
+  },
+  "evaluation": {
+    "bert_score": 0.5609074831008911,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.5609074831008911,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.28045374155044556,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251031_155433"
+  }
+}

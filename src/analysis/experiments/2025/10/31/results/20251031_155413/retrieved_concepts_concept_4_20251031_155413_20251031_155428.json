@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251031_155428",
+    "experiment_name": "retrieved_concepts_concept_4_20251031_155413",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "a big bed with red blanket at the end of the bed",
+      "A hand on a cake in tin on a stovetop.",
+      "A fighter jet sitting on stretch of pavement at an airport.",
+      "Two small dogs on the grass next to a driveway",
+      "A boy sitting on a yellow fire hydrant on a street side.",
+      "A group of cars and busses on a dirt lot.",
+      "A locker room with some naked men in it.",
+      "A jeep on a tow truck on a flatbed tow truck.",
+      "many empty buses being parked at the parking",
+      "The people are standing out front of the building eating together."
+    ],
+    "group_b": [
+      "A group of seagulls sitting on a bench near a trash can.",
+      "The clock is on the post on the side of the road.",
+      "Three people are sitting at a table eating pizza.",
+      "a large group of people fly their kites over a grassy field",
+      "School bus traveling down a residential street brakes for passing car.",
+      "A red traffic light sitting next to a street sign.",
+      "A picture displaying several different types of food.",
+      "Urinals aligned along a wall with a stained glass art window.",
+      "A guy with shades sitting on a bench.",
+      "A herd of elephants play in a pond."
+    ],
+    "correct_answer": "concept_4 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- a big bed with red blanket at the end of the bed\n- A hand on a cake in tin on a stovetop.\n- A fighter jet sitting on stretch of pavement at an airport.\n- Two small dogs on the grass next to a driveway\n- A boy sitting on a yellow fire hydrant on a street side.\n- A group of cars and busses on a dirt lot.\n- A locker room with some naked men in it.\n- A jeep on a tow truck on a flatbed tow truck.\n- many empty buses being parked at the parking\n- The people are standing out front of the building eating together.\n\n【グループB】\n- A group of seagulls sitting on a bench near a trash can.\n- The clock is on the post on the side of the road.\n- Three people are sitting at a table eating pizza.\n- a large group of people fly their kites over a grassy field\n- School bus traveling down a residential street brakes for passing car.\n- A red traffic light sitting next to a street sign.\n- A picture displaying several different types of food.\n- Urinals aligned along a wall with a stained glass art window.\n- A guy with shades sitting on a bench.\n- A herd of elephants play in a pond.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Group A features specific locations and activities with vehicles and buildings."
+  },
+  "evaluation": {
+    "bert_score": 0.6621413230895996,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.6621413230895996,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.3310706615447998,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251031_155428"
+  }
+}

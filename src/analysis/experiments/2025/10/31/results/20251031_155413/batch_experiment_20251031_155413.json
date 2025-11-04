@@ -1,0 +1,782 @@
+{
+  "experiment_meta": {
+    "timestamp": "20251031_155413",
+    "config_file": "/var/folders/d5/1xhk4r3105n15zqmc6kl877c0000gn/T/tmp7ijbi8w2.yaml",
+    "total_experiments": 10,
+    "successful_experiments": 10,
+    "run_name": "tmp7ijbi8w2",
+    "output_dir": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/31/results/20251031_155413"
+  },
+  "results": [
+    {
+      "experiment_info": {
+        "timestamp": "20251031_155414",
+        "experiment_name": "retrieved_concepts_concept_0_20251031_155413",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_0",
+        "group_size": 10,
+        "split_type": "aspect_vs_others",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "A black and white photograph of a wall clock.",
+          "you can see there is a animal outside of the window",
+          "A large round clock hanging on a wall.",
+          "a blury image of a computer mouse and keyboard",
+          "A person hides from the camera behind a cellphone.",
+          "a woman taking a selfie in front of a stack of mirrors",
+          "Close up of a cup hanging on the wall with toothbrushes.",
+          "An upclose view of a pair of scissors inside a drain.",
+          "A glass mason jar with a toothbrush inside.",
+          "A traffic light suspended in a white sky with a green signal."
+        ],
+        "group_b": [
+          "A man sits on top of a motorbike outside.",
+          "A Japanese girl has a flower in her hair and is holding an umbrella.",
+          "Someone wearing a knecklace with a charm of a pair of scissors on it.",
+          "A man and woman who are smiling holding a cellphone.",
+          "An elephant mostly submerged in a large pond of water surrounded by water llies.",
+          "Two women are holding Wii controllers and playing a game.",
+          "A Phillie's baseball player holding a bat in position.",
+          "A number of people gathered at a birthday party.",
+          "some people waiting to board this passenger train",
+          "men work on the scaffolding that surrounds the tower of a brick building."
+        ],
+        "correct_answer": "concept_0 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A black and white photograph of a wall clock.\n- you can see there is a animal outside of the window\n- A large round clock hanging on a wall.\n- a blury image of a computer mouse and keyboard\n- A person hides from the camera behind a cellphone.\n- a woman taking a selfie in front of a stack of mirrors\n- Close up of a cup hanging on the wall with toothbrushes.\n- An upclose view of a pair of scissors inside a drain.\n- A glass mason jar with a toothbrush inside.\n- A traffic light suspended in a white sky with a green signal.\n\n【グループB】\n- A man sits on top of a motorbike outside.\n- A Japanese girl has a flower in her hair and is holding an umbrella.\n- Someone wearing a knecklace with a charm of a pair of scissors on it.\n- A man and woman who are smiling holding a cellphone.\n- An elephant mostly submerged in a large pond of water surrounded by water llies.\n- Two women are holding Wii controllers and playing a game.\n- A Phillie's baseball player holding a bat in position.\n- A number of people gathered at a birthday party.\n- some people waiting to board this passenger train\n- men work on the scaffolding that surrounds the tower of a brick building.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Group A features still life and close-up imagery."
+      },
+      "evaluation": {
+        "bert_score": 0.6633492112159729,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.6633492112159729,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.33167460560798645,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251031_155414"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/31/results/20251031_155413/retrieved_concepts_concept_0_20251031_155413_20251031_155414.json"
+    },
+    {
+      "experiment_info": {
+        "timestamp": "20251031_155420",
+        "experiment_name": "retrieved_concepts_concept_1_20251031_155413",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_1",
+        "group_size": 10,
+        "split_type": "aspect_vs_others",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "A black baseball mitt, ball, and baseball bat.",
+          "A dog with shoes on is walking in the snow by benches.",
+          "A group of pictures taken of dinner at a restaurant.",
+          "An old black and white photo shows a pic of a woman.",
+          "A building wall with a clock and windows.",
+          "Two cows are looking into the camera in a heard of cattle that appears to be ready to sell.",
+          "a piece of art made of pumkins next to a feild.",
+          "A zebra comes up to a car at a safari park.",
+          "a person sitting on a bench under a tree",
+          "a train on a train track with a sky background"
+        ],
+        "group_b": [
+          "a woman smiles as a giraffe walks in the back ground",
+          "The mobile home is parked next to a couple of street cones.",
+          "there are several people that are flying a kite",
+          "A skier on blue skies at the top of the mountain.",
+          "A dog sitting on the front steps in front of a welcome mat.",
+          "A polar bear dives down into the water in a zoo enclosure.",
+          "A big boat that is parked at the dock.",
+          "a large green leaf is hanging off of a tree",
+          "An adorable little girl sitting on a bench.",
+          "A person standing on top of a tennis court while wearing a white hat."
+        ],
+        "correct_answer": "concept_1 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A black baseball mitt, ball, and baseball bat.\n- A dog with shoes on is walking in the snow by benches.\n- A group of pictures taken of dinner at a restaurant.\n- An old black and white photo shows a pic of a woman.\n- A building wall with a clock and windows.\n- Two cows are looking into the camera in a heard of cattle that appears to be ready to sell.\n- a piece of art made of pumkins next to a feild.\n- A zebra comes up to a car at a safari park.\n- a person sitting on a bench under a tree\n- a train on a train track with a sky background\n\n【グループB】\n- a woman smiles as a giraffe walks in the back ground\n- The mobile home is parked next to a couple of street cones.\n- there are several people that are flying a kite\n- A skier on blue skies at the top of the mountain.\n- A dog sitting on the front steps in front of a welcome mat.\n- A polar bear dives down into the water in a zoo enclosure.\n- A big boat that is parked at the dock.\n- a large green leaf is hanging off of a tree\n- An adorable little girl sitting on a bench.\n- A person standing on top of a tennis court while wearing a white hat.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Group A includes specific objects and animals in various settings."
+      },
+      "evaluation": {
+        "bert_score": 0.6338992714881897,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.6338992714881897,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.31694963574409485,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251031_155420"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/31/results/20251031_155413/retrieved_concepts_concept_1_20251031_155413_20251031_155420.json"
+    },
+    {
+      "experiment_info": {
+        "timestamp": "20251031_155424",
+        "experiment_name": "retrieved_concepts_concept_2_20251031_155413",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_2",
+        "group_size": 10,
+        "split_type": "aspect_vs_others",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "A cat that is sitting on something red.",
+          "a street light sits in front of some buildings",
+          "A clock reflection shows a woman with an umbrella.",
+          "A bath tub sitting next to a white sink.",
+          "a collage of pictures with a person riding a camel on a dirt road",
+          "A black dog with his tongue hanging out laying in the sand next to a ball.",
+          "A player for the Atlanta Braves tossing a ball to himself.",
+          "Small child on a long skateboard riding on a city street.",
+          "A large white plane is on a tarmac near an empty luggage rack.",
+          "an image of a tennis player hitting the ball with a racket"
+        ],
+        "group_b": [
+          "A man playing tennis during a sunny day.",
+          "An airplane with the landing gear deployed in the sky.",
+          "Person sitting in front of a TV with the reflection of a lady on the TV.",
+          "a couple of cows are standing in a field",
+          "A protest sign looks like an ordinary stop sign.",
+          "A white propeller plane pulling a colorful kite along side of it.",
+          "some carrots radishes celery strawberries and other vegetables",
+          "This man is sitting on a bench next to a tree.",
+          "A horse and carriage in the middle of the city.",
+          "A large glass case filled with rams and ram heads."
+        ],
+        "correct_answer": "concept_2 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A cat that is sitting on something red.\n- a street light sits in front of some buildings\n- A clock reflection shows a woman with an umbrella.\n- A bath tub sitting next to a white sink.\n- a collage of pictures with a person riding a camel on a dirt road\n- A black dog with his tongue hanging out laying in the sand next to a ball.\n- A player for the Atlanta Braves tossing a ball to himself.\n- Small child on a long skateboard riding on a city street.\n- A large white plane is on a tarmac near an empty luggage rack.\n- an image of a tennis player hitting the ball with a racket\n\n【グループB】\n- A man playing tennis during a sunny day.\n- An airplane with the landing gear deployed in the sky.\n- Person sitting in front of a TV with the reflection of a lady on the TV.\n- a couple of cows are standing in a field\n- A protest sign looks like an ordinary stop sign.\n- A white propeller plane pulling a colorful kite along side of it.\n- some carrots radishes celery strawberries and other vegetables\n- This man is sitting on a bench next to a tree.\n- A horse and carriage in the middle of the city.\n- A large glass case filled with rams and ram heads.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Group A includes specific activities or actions involving objects."
+      },
+      "evaluation": {
+        "bert_score": 0.6325775980949402,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.6325775980949402,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.3162887990474701,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251031_155424"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/31/results/20251031_155413/retrieved_concepts_concept_2_20251031_155413_20251031_155424.json"
+    },
+    {
+      "experiment_info": {
+        "timestamp": "20251031_155426",
+        "experiment_name": "retrieved_concepts_concept_3_20251031_155413",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_3",
+        "group_size": 10,
+        "split_type": "aspect_vs_others",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "A young man is feeding a cow by the edge of the road.",
+          "this is a man riding on skis ion the snow",
+          "A very unsanitary area where it appears food is being prepared.",
+          "A professional baseball player holding a baseball bat staring at something.",
+          "A large architectural tower building with a clock sits in front of a clear blue sky.",
+          "Computer monitor and laptop sitting on a computer desk.",
+          "The girl is playing baseball in the field.",
+          "an image of guy doing tricks on a motorcycle",
+          "A train driving pass another train at a train station.",
+          "A motor bike sits on the grass outside near others."
+        ],
+        "group_b": [
+          "A wood bench in front of yellow flowers.",
+          "two giraffe standing side by side in a rocky field",
+          "A bed is made up and adorned with at brown teddy bear.",
+          "A bicycle with many gadgets and a mirror parked near a car.",
+          "A white toilet with a wooden seat on black tile floor.",
+          "A group stands in front of a bus.",
+          "A horse and a dog facing each other in a brown field of grass.",
+          "The black dog sits on a boat that is on the water.",
+          "A blue crane flying low over a body of water.",
+          "A man wearing a suit and tie walking on a sidewalk."
+        ],
+        "correct_answer": "concept_3 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A young man is feeding a cow by the edge of the road.\n- this is a man riding on skis ion the snow\n- A very unsanitary area where it appears food is being prepared.\n- A professional baseball player holding a baseball bat staring at something.\n- A large architectural tower building with a clock sits in front of a clear blue sky.\n- Computer monitor and laptop sitting on a computer desk.\n- The girl is playing baseball in the field.\n- an image of guy doing tricks on a motorcycle\n- A train driving pass another train at a train station.\n- A motor bike sits on the grass outside near others.\n\n【グループB】\n- A wood bench in front of yellow flowers.\n- two giraffe standing side by side in a rocky field\n- A bed is made up and adorned with at brown teddy bear.\n- A bicycle with many gadgets and a mirror parked near a car.\n- A white toilet with a wooden seat on black tile floor.\n- A group stands in front of a bus.\n- A horse and a dog facing each other in a brown field of grass.\n- The black dog sits on a boat that is on the water.\n- A blue crane flying low over a body of water.\n- A man wearing a suit and tie walking on a sidewalk.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Group A features active, dynamic scenes with people or animals engaged in activities."
+      },
+      "evaluation": {
+        "bert_score": 0.6137810349464417,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.6137810349464417,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.3068905174732208,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251031_155426"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/31/results/20251031_155413/retrieved_concepts_concept_3_20251031_155413_20251031_155426.json"
+    },
+    {
+      "experiment_info": {
+        "timestamp": "20251031_155428",
+        "experiment_name": "retrieved_concepts_concept_4_20251031_155413",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_4",
+        "group_size": 10,
+        "split_type": "aspect_vs_others",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "a big bed with red blanket at the end of the bed",
+          "A hand on a cake in tin on a stovetop.",
+          "A fighter jet sitting on stretch of pavement at an airport.",
+          "Two small dogs on the grass next to a driveway",
+          "A boy sitting on a yellow fire hydrant on a street side.",
+          "A group of cars and busses on a dirt lot.",
+          "A locker room with some naked men in it.",
+          "A jeep on a tow truck on a flatbed tow truck.",
+          "many empty buses being parked at the parking",
+          "The people are standing out front of the building eating together."
+        ],
+        "group_b": [
+          "A group of seagulls sitting on a bench near a trash can.",
+          "The clock is on the post on the side of the road.",
+          "Three people are sitting at a table eating pizza.",
+          "a large group of people fly their kites over a grassy field",
+          "School bus traveling down a residential street brakes for passing car.",
+          "A red traffic light sitting next to a street sign.",
+          "A picture displaying several different types of food.",
+          "Urinals aligned along a wall with a stained glass art window.",
+          "A guy with shades sitting on a bench.",
+          "A herd of elephants play in a pond."
+        ],
+        "correct_answer": "concept_4 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- a big bed with red blanket at the end of the bed\n- A hand on a cake in tin on a stovetop.\n- A fighter jet sitting on stretch of pavement at an airport.\n- Two small dogs on the grass next to a driveway\n- A boy sitting on a yellow fire hydrant on a street side.\n- A group of cars and busses on a dirt lot.\n- A locker room with some naked men in it.\n- A jeep on a tow truck on a flatbed tow truck.\n- many empty buses being parked at the parking\n- The people are standing out front of the building eating together.\n\n【グループB】\n- A group of seagulls sitting on a bench near a trash can.\n- The clock is on the post on the side of the road.\n- Three people are sitting at a table eating pizza.\n- a large group of people fly their kites over a grassy field\n- School bus traveling down a residential street brakes for passing car.\n- A red traffic light sitting next to a street sign.\n- A picture displaying several different types of food.\n- Urinals aligned along a wall with a stained glass art window.\n- A guy with shades sitting on a bench.\n- A herd of elephants play in a pond.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Group A features specific locations and activities with vehicles and buildings."
+      },
+      "evaluation": {
+        "bert_score": 0.6621413230895996,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.6621413230895996,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.3310706615447998,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251031_155428"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/31/results/20251031_155413/retrieved_concepts_concept_4_20251031_155413_20251031_155428.json"
+    },
+    {
+      "experiment_info": {
+        "timestamp": "20251031_155430",
+        "experiment_name": "retrieved_concepts_concept_5_20251031_155413",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_5",
+        "group_size": 10,
+        "split_type": "aspect_vs_others",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "A street sign telling people to watch for rocks",
+          "There is a group of people out in the field that are playing Frisbee.",
+          "A vase of red gerber daisies against a white background.",
+          "A painting of a flowers in a vase",
+          "A night time shot of a an empty highway.",
+          "A long table filled with lap top computers at a computer sale.",
+          "a wooden bench sitting in a grass patch next to shrubbery and yellow and purple flowers.",
+          "A black and white house cat is sitting on a chair, by a place setting.",
+          "A closeup of a toothbrush, dental floss, and Aveeno daily scrub sitting next to a sink",
+          "A couple of cows are walking in a road"
+        ],
+        "group_b": [
+          "a close up of a doughnut and a spoon",
+          "A military plane begins to ascend in to the air",
+          "A toilet built into a floor in a corner.",
+          "A golden fire hydrant in front of a house.",
+          "Someone pouring wine into a wine glass at a table for a woman.",
+          "Single cow grazing in open grassy field area.",
+          "A group of zebras grazing dry brush and grass in a field.",
+          "there is a ems truck that is yellow and blue",
+          "A couple of benches sitting next to each other.",
+          "Traffic lights at an intersection somewhere in the world."
+        ],
+        "correct_answer": "concept_5 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A street sign telling people to watch for rocks\n- There is a group of people out in the field that are playing Frisbee.\n- A vase of red gerber daisies against a white background.\n- A painting of a flowers in a vase\n- A night time shot of a an empty highway.\n- A long table filled with lap top computers at a computer sale.\n- a wooden bench sitting in a grass patch next to shrubbery and yellow and purple flowers.\n- A black and white house cat is sitting on a chair, by a place setting.\n- A closeup of a toothbrush, dental floss, and Aveeno daily scrub sitting next to a sink\n- A couple of cows are walking in a road\n\n【グループB】\n- a close up of a doughnut and a spoon\n- A military plane begins to ascend in to the air\n- A toilet built into a floor in a corner.\n- A golden fire hydrant in front of a house.\n- Someone pouring wine into a wine glass at a table for a woman.\n- Single cow grazing in open grassy field area.\n- A group of zebras grazing dry brush and grass in a field.\n- there is a ems truck that is yellow and blue\n- A couple of benches sitting next to each other.\n- Traffic lights at an intersection somewhere in the world.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Group A features natural scenes and domestic elements."
+      },
+      "evaluation": {
+        "bert_score": 0.6875296831130981,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.6875296831130981,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.3437648415565491,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251031_155430"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/31/results/20251031_155413/retrieved_concepts_concept_5_20251031_155413_20251031_155430.json"
+    },
+    {
+      "experiment_info": {
+        "timestamp": "20251031_155432",
+        "experiment_name": "retrieved_concepts_concept_6_20251031_155413",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_6",
+        "group_size": 10,
+        "split_type": "aspect_vs_others",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "A group of people sitting on top of a sandy beach.",
+          "A television screen has some cows on it.",
+          "Several food items with skewers sit on a plate.",
+          "A yellow bird perched on leafy  tree branch",
+          "A kitten laying down with a pair of red sneakers.",
+          "A large vehicle sits in the handicapped area.",
+          "Many people wait at an airport for their luggage.",
+          "There is a burnt personal pizza in the microwave",
+          "A boy holding onto a kite string where the kite is very high.",
+          "A plane is flying through a cloudy sky"
+        ],
+        "group_b": [
+          "Two cranes over mounds of sand by the water",
+          "A wet woman with two horses wading through a river",
+          "The small airplane is parked inside the building.",
+          "A tray full of sprinkle covered, chocolate glazed doughnuts.",
+          "a couple of bed that are in the same room",
+          "A lot of people that are in the water.",
+          "Blue and yellow flowers in a glass vase near a mirror.",
+          "a male in a black jacket and many monitors",
+          "Two men, one reading, one on his phone, sit on park benches near a flower bed.",
+          "A closeup of a woman overlooking a brown decorated cake."
+        ],
+        "correct_answer": "concept_6 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A group of people sitting on top of a sandy beach.\n- A television screen has some cows on it.\n- Several food items with skewers sit on a plate.\n- A yellow bird perched on leafy  tree branch\n- A kitten laying down with a pair of red sneakers.\n- A large vehicle sits in the handicapped area.\n- Many people wait at an airport for their luggage.\n- There is a burnt personal pizza in the microwave\n- A boy holding onto a kite string where the kite is very high.\n- A plane is flying through a cloudy sky\n\n【グループB】\n- Two cranes over mounds of sand by the water\n- A wet woman with two horses wading through a river\n- The small airplane is parked inside the building.\n- A tray full of sprinkle covered, chocolate glazed doughnuts.\n- a couple of bed that are in the same room\n- A lot of people that are in the water.\n- Blue and yellow flowers in a glass vase near a mirror.\n- a male in a black jacket and many monitors\n- Two men, one reading, one on his phone, sit on park benches near a flower bed.\n- A closeup of a woman overlooking a brown decorated cake.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Group A includes specific actions and personal items."
+      },
+      "evaluation": {
+        "bert_score": 0.6111977696418762,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.6111977696418762,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.3055988848209381,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251031_155432"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/31/results/20251031_155413/retrieved_concepts_concept_6_20251031_155413_20251031_155432.json"
+    },
+    {
+      "experiment_info": {
+        "timestamp": "20251031_155433",
+        "experiment_name": "retrieved_concepts_concept_7_20251031_155413",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_7",
+        "group_size": 10,
+        "split_type": "aspect_vs_others",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "A group of men standing next to each other holding a blue vase.",
+          "A man on skis poses for a picture while on the snow",
+          "3 people are flying kites at the beach during the day.",
+          "A group of people on skis in the snow.",
+          "A rainy day with people walking on the sidewalks",
+          "a stuffed animal dog sits inside of a toilet",
+          "Black and white photograph of people in a city square",
+          "The stromboli has been served with soup and a bag of chips.",
+          "A group of men in suits gather for a group photo",
+          "Several cars stopped at a stoplight with a clock tower ahead"
+        ],
+        "group_b": [
+          "An open laptop computer sitting on top of a white table.",
+          "A bear walking in a grassy open field.",
+          "A man and woman sit together in front of a large piece of cake",
+          "Red fire truck driving through a red traffic light.",
+          "A man holding a tennis racquet on top of a tennis court.",
+          "some animals chillin in a frozen field in winter",
+          "a light that is attached to a pole",
+          "Two men standing knee deep in water surrounded by trees.",
+          "A baby sitting in a chair with cake and icing all over it's face and arms, and holding a toy airplane.",
+          "a tram bus is pulled into a station with the door open"
+        ],
+        "correct_answer": "concept_7 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A group of men standing next to each other holding a blue vase.\n- A man on skis poses for a picture while on the snow\n- 3 people are flying kites at the beach during the day.\n- A group of people on skis in the snow.\n- A rainy day with people walking on the sidewalks\n- a stuffed animal dog sits inside of a toilet\n- Black and white photograph of people in a city square\n- The stromboli has been served with soup and a bag of chips.\n- A group of men in suits gather for a group photo\n- Several cars stopped at a stoplight with a clock tower ahead\n\n【グループB】\n- An open laptop computer sitting on top of a white table.\n- A bear walking in a grassy open field.\n- A man and woman sit together in front of a large piece of cake\n- Red fire truck driving through a red traffic light.\n- A man holding a tennis racquet on top of a tennis court.\n- some animals chillin in a frozen field in winter\n- a light that is attached to a pole\n- Two men standing knee deep in water surrounded by trees.\n- A baby sitting in a chair with cake and icing all over it's face and arms, and holding a toy airplane.\n- a tram bus is pulled into a station with the door open\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Group A features outdoor activities and group gatherings."
+      },
+      "evaluation": {
+        "bert_score": 0.5609074831008911,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.5609074831008911,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.28045374155044556,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251031_155433"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/31/results/20251031_155413/retrieved_concepts_concept_7_20251031_155413_20251031_155433.json"
+    },
+    {
+      "experiment_info": {
+        "timestamp": "20251031_155436",
+        "experiment_name": "retrieved_concepts_concept_8_20251031_155413",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_8",
+        "group_size": 10,
+        "split_type": "aspect_vs_others",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "A train on the tracks near a covered station platform.",
+          "Book titled Fifth Avenue, 5 A.M. sitting on a bed.",
+          "Several ties are lying inside of a box.",
+          "A laptop computer sitting on top of a purple table.",
+          "A construction site has a couple of cranes.",
+          "There are several ripe oranges displayed in a wooden box.",
+          "Multiple accessories and some have an anime deco theme.",
+          "There are a lot of books and paper on a desk with a laptop in the middle.",
+          "A man with long hair wearing a jacket and a striped tie.",
+          "A crane truck has lifted up another large utility truck."
+        ],
+        "group_b": [
+          "A black vase with orange blossomed flower and green leaves.",
+          "A busy street has cars and buses on it.",
+          "there is only one kite that is being flown on the beach",
+          "this man is holding a ball up to the camera",
+          "A woman riding skis across snow covered ground.",
+          "Three wine bottles are shown sitting on a table with glasses.",
+          "A blurry image of a few horses near the crowd.",
+          "A little boy sitting on a bed with stuffed animals and a food tray.",
+          "A soccer player is kicking a soccer ball.",
+          "A woman sitting on a stone bench in front of the beach."
+        ],
+        "correct_answer": "concept_8 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A train on the tracks near a covered station platform.\n- Book titled Fifth Avenue, 5 A.M. sitting on a bed.\n- Several ties are lying inside of a box.\n- A laptop computer sitting on top of a purple table.\n- A construction site has a couple of cranes.\n- There are several ripe oranges displayed in a wooden box.\n- Multiple accessories and some have an anime deco theme.\n- There are a lot of books and paper on a desk with a laptop in the middle.\n- A man with long hair wearing a jacket and a striped tie.\n- A crane truck has lifted up another large utility truck.\n\n【グループB】\n- A black vase with orange blossomed flower and green leaves.\n- A busy street has cars and buses on it.\n- there is only one kite that is being flown on the beach\n- this man is holding a ball up to the camera\n- A woman riding skis across snow covered ground.\n- Three wine bottles are shown sitting on a table with glasses.\n- A blurry image of a few horses near the crowd.\n- A little boy sitting on a bed with stuffed animals and a food tray.\n- A soccer player is kicking a soccer ball.\n- A woman sitting on a stone bench in front of the beach.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Group A includes specific objects and settings, like books and construction sites."
+      },
+      "evaluation": {
+        "bert_score": 0.6674871444702148,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.6674871444702148,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.3337435722351074,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251031_155436"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/31/results/20251031_155413/retrieved_concepts_concept_8_20251031_155413_20251031_155436.json"
+    },
+    {
+      "experiment_info": {
+        "timestamp": "20251031_155438",
+        "experiment_name": "retrieved_concepts_concept_9_20251031_155413",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_9",
+        "group_size": 10,
+        "split_type": "aspect_vs_others",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "A slice of pizza sitting on top of a white paper plate.",
+          "A very large pile of yellow bananas on a counter",
+          "A red car waiting in traffic behind a large bus.",
+          "A bunch of people who are sitting under umbrellas in the sand.",
+          "A tented area with some women at a table with oranges stacked up.",
+          "An old broken boat leans on it's side in the water.",
+          "A black dog jumps to catch a yellow Frisbee.",
+          "A COUPLE IS ON THE EDGE OF A MOUNTAIN SKIING",
+          "A city street corner with officers standing on it",
+          "A horse is standing in a grassy pasture near a fence."
+        ],
+        "group_b": [
+          "A baby giraffe walks beside its mother in their zoo exhibit",
+          "A fat black cat laying inside of an upside down umbrella.",
+          "a girl with bright green hair holding a slice of pizza",
+          "Bicycle with brown wicker basket on front and small mirror on side",
+          "A toilet with the lid open in a very small bathroom.",
+          "A black and white photo of a woman getting a haircut.",
+          "a toilet sitting on a sidewalk next to a pole.",
+          "A man in a suit leaning on a door frame.",
+          "A wild duck floating on the surface of a pond.",
+          "Two cats sitting on a table looking at a bird in the window."
+        ],
+        "correct_answer": "concept_9 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A slice of pizza sitting on top of a white paper plate.\n- A very large pile of yellow bananas on a counter\n- A red car waiting in traffic behind a large bus.\n- A bunch of people who are sitting under umbrellas in the sand.\n- A tented area with some women at a table with oranges stacked up.\n- An old broken boat leans on it's side in the water.\n- A black dog jumps to catch a yellow Frisbee.\n- A COUPLE IS ON THE EDGE OF A MOUNTAIN SKIING\n- A city street corner with officers standing on it\n- A horse is standing in a grassy pasture near a fence.\n\n【グループB】\n- A baby giraffe walks beside its mother in their zoo exhibit\n- A fat black cat laying inside of an upside down umbrella.\n- a girl with bright green hair holding a slice of pizza\n- Bicycle with brown wicker basket on front and small mirror on side\n- A toilet with the lid open in a very small bathroom.\n- A black and white photo of a woman getting a haircut.\n- a toilet sitting on a sidewalk next to a pole.\n- A man in a suit leaning on a door frame.\n- A wild duck floating on the surface of a pond.\n- Two cats sitting on a table looking at a bird in the window.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Group A features outdoor scenes and animals in natural settings."
+      },
+      "evaluation": {
+        "bert_score": 0.5875445604324341,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.5875445604324341,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.29377228021621704,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251031_155438"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/31/results/20251031_155413/retrieved_concepts_concept_9_20251031_155413_20251031_155438.json"
+    }
+  ]
+}

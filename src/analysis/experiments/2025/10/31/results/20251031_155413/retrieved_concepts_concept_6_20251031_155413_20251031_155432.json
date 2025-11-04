@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251031_155432",
+    "experiment_name": "retrieved_concepts_concept_6_20251031_155413",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "A group of people sitting on top of a sandy beach.",
+      "A television screen has some cows on it.",
+      "Several food items with skewers sit on a plate.",
+      "A yellow bird perched on leafy  tree branch",
+      "A kitten laying down with a pair of red sneakers.",
+      "A large vehicle sits in the handicapped area.",
+      "Many people wait at an airport for their luggage.",
+      "There is a burnt personal pizza in the microwave",
+      "A boy holding onto a kite string where the kite is very high.",
+      "A plane is flying through a cloudy sky"
+    ],
+    "group_b": [
+      "Two cranes over mounds of sand by the water",
+      "A wet woman with two horses wading through a river",
+      "The small airplane is parked inside the building.",
+      "A tray full of sprinkle covered, chocolate glazed doughnuts.",
+      "a couple of bed that are in the same room",
+      "A lot of people that are in the water.",
+      "Blue and yellow flowers in a glass vase near a mirror.",
+      "a male in a black jacket and many monitors",
+      "Two men, one reading, one on his phone, sit on park benches near a flower bed.",
+      "A closeup of a woman overlooking a brown decorated cake."
+    ],
+    "correct_answer": "concept_6 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A group of people sitting on top of a sandy beach.\n- A television screen has some cows on it.\n- Several food items with skewers sit on a plate.\n- A yellow bird perched on leafy  tree branch\n- A kitten laying down with a pair of red sneakers.\n- A large vehicle sits in the handicapped area.\n- Many people wait at an airport for their luggage.\n- There is a burnt personal pizza in the microwave\n- A boy holding onto a kite string where the kite is very high.\n- A plane is flying through a cloudy sky\n\n【グループB】\n- Two cranes over mounds of sand by the water\n- A wet woman with two horses wading through a river\n- The small airplane is parked inside the building.\n- A tray full of sprinkle covered, chocolate glazed doughnuts.\n- a couple of bed that are in the same room\n- A lot of people that are in the water.\n- Blue and yellow flowers in a glass vase near a mirror.\n- a male in a black jacket and many monitors\n- Two men, one reading, one on his phone, sit on park benches near a flower bed.\n- A closeup of a woman overlooking a brown decorated cake.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Group A includes specific actions and personal items."
+  },
+  "evaluation": {
+    "bert_score": 0.6111977696418762,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.6111977696418762,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.3055988848209381,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251031_155432"
+  }
+}

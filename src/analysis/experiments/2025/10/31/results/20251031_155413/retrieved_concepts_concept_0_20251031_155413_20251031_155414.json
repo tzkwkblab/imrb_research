@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251031_155414",
+    "experiment_name": "retrieved_concepts_concept_0_20251031_155413",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "A black and white photograph of a wall clock.",
+      "you can see there is a animal outside of the window",
+      "A large round clock hanging on a wall.",
+      "a blury image of a computer mouse and keyboard",
+      "A person hides from the camera behind a cellphone.",
+      "a woman taking a selfie in front of a stack of mirrors",
+      "Close up of a cup hanging on the wall with toothbrushes.",
+      "An upclose view of a pair of scissors inside a drain.",
+      "A glass mason jar with a toothbrush inside.",
+      "A traffic light suspended in a white sky with a green signal."
+    ],
+    "group_b": [
+      "A man sits on top of a motorbike outside.",
+      "A Japanese girl has a flower in her hair and is holding an umbrella.",
+      "Someone wearing a knecklace with a charm of a pair of scissors on it.",
+      "A man and woman who are smiling holding a cellphone.",
+      "An elephant mostly submerged in a large pond of water surrounded by water llies.",
+      "Two women are holding Wii controllers and playing a game.",
+      "A Phillie's baseball player holding a bat in position.",
+      "A number of people gathered at a birthday party.",
+      "some people waiting to board this passenger train",
+      "men work on the scaffolding that surrounds the tower of a brick building."
+    ],
+    "correct_answer": "concept_0 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A black and white photograph of a wall clock.\n- you can see there is a animal outside of the window\n- A large round clock hanging on a wall.\n- a blury image of a computer mouse and keyboard\n- A person hides from the camera behind a cellphone.\n- a woman taking a selfie in front of a stack of mirrors\n- Close up of a cup hanging on the wall with toothbrushes.\n- An upclose view of a pair of scissors inside a drain.\n- A glass mason jar with a toothbrush inside.\n- A traffic light suspended in a white sky with a green signal.\n\n【グループB】\n- A man sits on top of a motorbike outside.\n- A Japanese girl has a flower in her hair and is holding an umbrella.\n- Someone wearing a knecklace with a charm of a pair of scissors on it.\n- A man and woman who are smiling holding a cellphone.\n- An elephant mostly submerged in a large pond of water surrounded by water llies.\n- Two women are holding Wii controllers and playing a game.\n- A Phillie's baseball player holding a bat in position.\n- A number of people gathered at a birthday party.\n- some people waiting to board this passenger train\n- men work on the scaffolding that surrounds the tower of a brick building.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Group A features still life and close-up imagery."
+  },
+  "evaluation": {
+    "bert_score": 0.6633492112159729,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.6633492112159729,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.33167460560798645,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251031_155414"
+  }
+}
