@@ -3,6 +3,7 @@ SemEval ABSA Dataset専用ローダー
 """
 
 import sys
+import importlib
 from pathlib import Path
 from typing import Dict, List
 from .base import BaseDatasetLoader, UnifiedRecord
@@ -39,9 +40,14 @@ class SemEvalDatasetLoader(BaseDatasetLoader):
         
         try:
             # PyABSADatasetLoaderの動的インポート
-            current_dir = Path(__file__).parent.parent.parent / "2025/06/27"
-            sys.path.append(str(current_dir))
-            from dataset_comparison_framework import PyABSADatasetLoader
+            experiments_dir = Path(__file__).resolve().parents[3]
+            module_dir = experiments_dir / "2025" / "06" / "27"
+            if str(module_dir) not in sys.path:
+                sys.path.append(str(module_dir))
+            PyABSADatasetLoader = getattr(
+                importlib.import_module("dataset_comparison_framework"),
+                "PyABSADatasetLoader",
+            )
             
             loader = PyABSADatasetLoader()
             datasets = loader.list_available_datasets()
