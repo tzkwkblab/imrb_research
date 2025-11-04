@@ -5,6 +5,8 @@
 
 set -e
 
+SILENT_MODE=0
+
 # =====================================
 # 色設定
 # =====================================
@@ -83,6 +85,24 @@ print_info() {
     echo -e "${CYAN}ℹ️  $1${NC}"
 }
 
+choose_silent_mode() {
+    print_section "サイレントモード設定"
+    while true; do
+        read -p "サイレント実行を有効にしますか？ (y/n, Enter=n): " answer
+        if [[ -z "$answer" || "$answer" =~ ^[Nn]$ ]]; then
+            SILENT_MODE=0
+            print_info "サイレントモード: 無効"
+            break
+        elif [[ "$answer" =~ ^[Yy]$ ]]; then
+            SILENT_MODE=1
+            print_info "サイレントモード: 有効（ファイル保存とログ生成をスキップ）"
+            break
+        else
+            print_warning "y か n を入力してください"
+        fi
+    done
+}
+
 # =====================================
 # 環境設定
 # =====================================
@@ -118,6 +138,9 @@ check_environment() {
 # =====================================
 
 save_config() {
+    if [[ "$SILENT_MODE" == "1" ]]; then
+        return
+    fi
     # 値をクォートして安全にsource可能にする
     # 例: ASPECTS="gameplay visual"
     cat > "$CONFIG_FILE" << EOF
@@ -650,22 +673,31 @@ run_experiment() {
         fi
     fi
     
+    if [[ "$SILENT_MODE" == "1" ]]; then
+        cmd="$cmd --silent"
+    fi
+
     echo -e "${CYAN}実行コマンド:${NC}"
     echo "$cmd"
     echo ""
     
-    # 実行: 画面表示しながら一時ログへ保存
     RUN_TS="$(date +%Y%m%d_%H%M%S)"
+
+    if [[ "$SILENT_MODE" == "1" ]]; then
+        if eval "$cmd"; then
+            print_success "実験が正常に完了しました"
+        else
+            print_error "実験中にエラーが発生しました"
+        fi
+        return 0
+    fi
+
     CLI_TMP_LOG="/tmp/cli_run_${RUN_TS}_$$.log"
     if eval "$cmd" 2>&1 | tee "$CLI_TMP_LOG"; then
         print_success "実験が正常に完了しました"
         save_config
-        # 後続でログ保存処理
-        :
     else
         print_error "実験中にエラーが発生しました"
-        # 失敗時もログは保存対象
-        :
     fi
 
     # 実行後: 最新の結果JSONから run_dir を取得（当日の日付ディレクトリを探索）
@@ -703,7 +735,6 @@ PY
         print_warning "run_dirが特定できずCLIログの保存をスキップしました"
     fi
 
-    # 正常終了/異常終了の戻り値は直前のevalの終了コードを反映できないため0固定
     return 0
 }
 
@@ -718,6 +749,8 @@ main_menu() {
     clear
     print_header "対話型実験実行システム"
     
+    choose_silent_mode
+
     # 環境チェック
     check_environment
     

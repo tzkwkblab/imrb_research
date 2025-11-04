@@ -33,7 +33,7 @@ from utils.scores.get_score import calculate_scores
 class ExperimentPipeline:
     """統一実験パイプライン"""
     
-    def __init__(self, config_path: str, debug: bool = True):
+    def __init__(self, config_path: str, debug: bool = True, silent: bool = False):
         """
         初期化
         
@@ -43,7 +43,23 @@ class ExperimentPipeline:
         """
         self.config_path = Path(config_path)
         self.config = self._load_config()
-        self.debug = debug
+
+        general_cfg = self.config.setdefault('general', {}) or {}
+
+        self.debug = bool(debug)
+        general_cfg['debug_mode'] = self.debug
+
+        self.silent = bool(silent or general_cfg.get('silent_mode', False))
+        general_cfg['silent_mode'] = self.silent
+
+        console_flag = general_cfg.get('console_output')
+        self.console_output = False if self.silent else bool(console_flag if console_flag is not None else True)
+        general_cfg['console_output'] = self.console_output
+
+        output_cfg = self.config.setdefault('output', {}) or {}
+        if self.silent:
+            output_cfg['save_intermediate'] = False
+
         self.setup_logging()
         
         self.dataset_manager = None
@@ -93,7 +109,7 @@ class ExperimentPipeline:
     
     def _attach_file_logger(self) -> None:
         """実行ディレクトリ配下にファイルロガーを取り付ける"""
-        if self.run_dir is None:
+        if self.run_dir is None or self.silent:
             return
         log_dir = self.run_dir / "logs"
         log_dir.mkdir(parents=True, exist_ok=True)
@@ -212,8 +228,13 @@ class ExperimentPipeline:
             self.logger.info(f"\n[2/3] 対比因子分析実行中...")
             
             # 出力ディレクトリ設定（実行ディレクトリ配下）
-            out_dir = output_dir if output_dir is not None else Path(self.config['output']['directory'])
-            out_dir.mkdir(parents=True, exist_ok=True)
+            out_dir = None
+            if output_dir is not None:
+                out_dir = Path(output_dir)
+                out_dir.mkdir(parents=True, exist_ok=True)
+            elif not self.silent:
+                out_dir = Path(self.config['output']['directory'])
+                out_dir.mkdir(parents=True, exist_ok=True)
             
             # 一般設定から説明文利用フラグとCSVファイルパスを取得
             general_cfg = self.config.get('general', {}) or {}
@@ -244,7 +265,7 @@ class ExperimentPipeline:
                 group_a=splits.group_a,
                 group_b=splits.group_b,
                 correct_answer=splits.correct_answer,
-                output_dir=str(out_dir),
+                output_dir=str(out_dir) if out_dir else "",
                 experiment_name=experiment_id,
                 # デフォルトの説明文フォールバック用（外部データ標準のdescriptions.csv）
                 dataset_path=str(self.dataset_manager.data_root / 'steam-review-aspect-dataset' / 'current') if dataset == 'steam' else None,
@@ -314,13 +335,15 @@ class ExperimentPipeline:
         
         # 実行用ディレクトリを準備
         # 日付ベースパスに時刻ディレクトリ作成（experiments/{YYYY}/{MM}/{DD}/results/時刻）
-        base_output_dir = self._get_dated_results_base()
-        base_output_dir.mkdir(parents=True, exist_ok=True)
-        self.run_dir = base_output_dir / f"{self.timestamp}"
-        self.run_dir.mkdir(parents=True, exist_ok=True)
-        self.logger.info(f"出力ディレクトリ: {self.run_dir}")
-        # ファイルロガー取り付け
-        self._attach_file_logger()
+        base_output_dir = None
+        if not self.silent:
+            base_output_dir = self._get_dated_results_base()
+            base_output_dir.mkdir(parents=True, exist_ok=True)
+            self.run_dir = base_output_dir / f"{self.timestamp}"
+            self.run_dir.mkdir(parents=True, exist_ok=True)
+            self.logger.info(f"出力ディレクトリ: {self.run_dir}")
+            # ファイルロガー取り付け
+            self._attach_file_logger()
 
         # 各実験設定を実行
         for exp_config in self.config['experiments']:
@@ -339,7 +362,7 @@ class ExperimentPipeline:
                     aspect=aspect,
                     group_size=group_size,
                     split_type=split_type,
-                    output_dir=self.run_dir
+                    output_dir=self.run_dir if not self.silent else None
                 )
                 
                 if result:
@@ -353,6 +376,9 @@ class ExperimentPipeline:
         if results is None:
             results = self.results
         
+        if self.silent:
+            return ""
+
         if not results:
             self.logger.warning("保存する結果がありません")
             return ""
@@ -389,7 +415,7 @@ class ExperimentPipeline:
 
         # 実行時設定の保存（スナップショット）
         self._save_run_configuration()
-
+        
         # マークダウンサマリーの生成（詳細）
         self._write_markdown_summary(summary)
         # ルートresultsに概要を作成
@@ -399,7 +425,7 @@ class ExperimentPipeline:
 
     def _save_run_configuration(self) -> None:
         """実行時設定（有効値）を保存"""
-        if self.run_dir is None:
+        if self.silent or self.run_dir is None:
             return
         # 設定スナップショット（元YAML）
         try:
@@ -424,7 +450,7 @@ class ExperimentPipeline:
 
     def _write_markdown_summary(self, summary_data: Dict) -> None:
         """設定値と結果概要のMarkdownを作成"""
-        if self.run_dir is None:
+        if self.silent or self.run_dir is None:
             return
         lines = []
         meta = summary_data.get('experiment_meta', {})
@@ -543,6 +569,8 @@ class ExperimentPipeline:
 
     def _write_root_overview(self, summary_data: Dict) -> None:
         """プロジェクトルートresults/に概要Markdownを保存し、詳細へのパスを記載"""
+        if self.silent:
+            return
         try:
             root_dir = SCRIPT_DIR.parents[5] / 'experiment_summaries'
         except Exception:
@@ -734,6 +762,9 @@ class ExperimentPipeline:
     
     def print_summary(self):
         """実験サマリー表示"""
+        if not self.console_output:
+            return
+
         if not self.results:
             self.logger.info("実験結果がありません")
             return
@@ -778,7 +809,8 @@ class ExperimentPipeline:
             results = self.run_batch_experiments()
             
             # 結果保存
-            self.save_results(results)
+            if not self.silent:
+                self.save_results(results)
             
             # サマリー表示
             self.print_summary()

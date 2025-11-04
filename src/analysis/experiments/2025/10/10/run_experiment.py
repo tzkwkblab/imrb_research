@@ -128,6 +128,12 @@ def parse_args():
         default='results/',
         help='出力ディレクトリ (default: results/)'
     )
+
+    parser.add_argument(
+        '--silent',
+        action='store_true',
+        help='ファイル保存を行わずサイレント動作（デバッグ用途）'
+    )
     
     return parser.parse_args()
 
@@ -157,7 +163,7 @@ def create_quick_config(args) -> dict:
         'output': {
             'directory': args.output_dir,
             'format': 'json',
-            'save_intermediate': True
+            'save_intermediate': not args.silent
         },
         'llm': {
             'model': 'gpt-4o-mini',
@@ -166,7 +172,8 @@ def create_quick_config(args) -> dict:
         },
         'general': {
             'debug_mode': args.debug,
-            'console_output': True,
+            'console_output': not args.silent,
+            'silent_mode': bool(args.silent),
             'use_aspect_descriptions': bool(args.use_aspect_descriptions),
             'aspect_descriptions_file': args.aspect_descriptions_file,
             'use_examples': bool(args.use_examples),
@@ -212,7 +219,7 @@ def main():
                 tmp_config_path = tmp.name
             
             # パイプライン実行
-            pipeline = ExperimentPipeline(tmp_config_path, debug=args.debug)
+            pipeline = ExperimentPipeline(tmp_config_path, debug=args.debug, silent=args.silent)
             success = pipeline.run()
             
             # 一時ファイル削除
@@ -231,7 +238,7 @@ def main():
             print(f"設定ファイル: {config_path}")
             
             # パイプライン実行
-            pipeline = ExperimentPipeline(str(config_path), debug=args.debug)
+            pipeline = ExperimentPipeline(str(config_path), debug=args.debug, silent=args.silent)
             success = pipeline.run()
         
         if success:
