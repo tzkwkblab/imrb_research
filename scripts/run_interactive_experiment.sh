@@ -254,6 +254,72 @@ select_description_csv() {
 }
 
 # =====================================
+# 正解アスペクト表現モード選択（単語 or センテンス）
+# =====================================
+
+choose_aspect_representation() {
+    print_section "正解アスペクトの表現モード選択"
+
+    # データセット別 公式説明CSV（内部ワークスペース優先）
+    local internal_official_csv="$PROJECT_ROOT/data/analysis-workspace/aspect_descriptions/$DATASET/descriptions_official.csv"
+
+    # 外部デフォルト（存在すればフォールバック候補：ただし編集は行わない）
+    local external_csv=""
+    case "$DATASET" in
+        steam)
+            external_csv="$PROJECT_ROOT/data/external/steam-review-aspect-dataset/current/descriptions.csv"
+            ;;
+        semeval)
+            external_csv="$PROJECT_ROOT/data/external/absa-review-dataset/pyabsa-integrated/current/descriptions.csv"
+            ;;
+        amazon)
+            external_csv="$PROJECT_ROOT/data/external/amazon-product-reviews/kaggle-bittlingmayer/current/descriptions.csv"
+            ;;
+    esac
+
+    echo "1) 単語（説明文なし）"
+    echo "2) センテンス（公式）"
+    echo "3) センテンス（任意のCSVを選択）"
+    echo ""
+
+    local default_choice=2
+    read -p "選択してください (1-3, Enter=${default_choice}): " choice
+    if [[ -z "$choice" ]]; then choice=$default_choice; fi
+
+    case "$choice" in
+        1)
+            USE_ASPECT_DESCRIPTIONS="0"
+            ASPECT_DESCRIPTIONS_FILE=""
+            print_success "単語比較（説明文なし）を選択しました"
+            ;;
+        2)
+            # 内部公式CSVが最優先、無ければ外部current配下をフォールバック候補に
+            if [[ -f "$internal_official_csv" ]]; then
+                USE_ASPECT_DESCRIPTIONS="1"
+                ASPECT_DESCRIPTIONS_FILE="$internal_official_csv"
+                print_success "センテンス（公式・内部）を選択: $ASPECT_DESCRIPTIONS_FILE"
+            elif [[ -f "$external_csv" ]]; then
+                USE_ASPECT_DESCRIPTIONS="1"
+                ASPECT_DESCRIPTIONS_FILE="$external_csv"
+                print_warning "内部の公式CSVが見つかりませんでした。外部のcurrent/descriptions.csvを使用します"
+                print_success "センテンス（公式・外部）を選択: $ASPECT_DESCRIPTIONS_FILE"
+            else
+                print_warning "公式CSVが見つかりません。任意CSVの選択に切り替えます"
+                select_description_csv || true
+            fi
+            ;;
+        3)
+            select_description_csv || true
+            ;;
+        *)
+            print_error "無効な選択です。単語比較（説明文なし）にフォールバックします"
+            USE_ASPECT_DESCRIPTIONS="0"
+            ASPECT_DESCRIPTIONS_FILE=""
+            ;;
+    esac
+}
+
+# =====================================
 # 例題ファイル選択
 # =====================================
 
@@ -665,11 +731,12 @@ main_menu() {
     
     # 新規設定
     select_dataset
+    # 表現モード（単語/センテンス）を先に決めておく
+    choose_aspect_representation || true
     select_aspects
     input_group_size
     select_split_type
-    # 説明CSV選択（任意）
-    select_description_csv || true
+    # 説明CSVの個別選択は上の表現モード「3) 任意CSV選択」で実行済み
     # 例題ファイル選択（任意）
     select_examples_file || true
     
