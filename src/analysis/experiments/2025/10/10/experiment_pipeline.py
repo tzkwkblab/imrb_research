@@ -261,6 +261,14 @@ class ExperimentPipeline:
                 else:
                     examples_payload = examples_all
 
+            # 画像URL情報を取得（retrieved_conceptsデータセットの場合のみ）
+            group_a_top5_image_urls = None
+            group_b_top5_image_urls = None
+            if dataset == "retrieved_concepts" and splits.metadata:
+                # additional_metadataは直接metadataにマージされているため、直接取得
+                group_a_top5_image_urls = splits.metadata.get("group_a_top5_image_urls")
+                group_b_top5_image_urls = splits.metadata.get("group_b_top5_image_urls")
+            
             result = analyzer.analyze(
                 group_a=splits.group_a,
                 group_b=splits.group_b,
@@ -270,7 +278,9 @@ class ExperimentPipeline:
                 # デフォルトの説明文フォールバック用（外部データ標準のdescriptions.csv）
                 dataset_path=str(self.dataset_manager.data_root / 'steam-review-aspect-dataset' / 'current') if dataset == 'steam' else None,
                 aspect_descriptions_file=desc_file,
-                examples=examples_payload
+                examples=examples_payload,
+                group_a_top5_image_urls=group_a_top5_image_urls,
+                group_b_top5_image_urls=group_b_top5_image_urls
             )
             
             self.logger.info("✅ LLM応答取得完了")
@@ -516,6 +526,77 @@ class ExperimentPipeline:
                 f"{Path(out_file).name if out_file else ''} |"
             )
         lines.append("")
+        
+        # 画像URLセクションを追加（retrieved_conceptsデータセットの場合）
+        image_sections_added = False
+        for r in results:
+            if not r.get('summary', {}).get('success', False):
+                continue
+            info = r.get('experiment_info', {})
+            dataset = info.get('dataset', '')
+            if dataset == 'retrieved_concepts':
+                input_data = r.get('input', {})
+                group_a_urls = input_data.get('group_a_top5_image_urls')
+                group_b_urls = input_data.get('group_b_top5_image_urls')
+                
+                if group_a_urls or group_b_urls:
+                    if not image_sections_added:
+                        lines.append("## 画像URL")
+                        lines.append("")
+                        image_sections_added = True
+                    
+                    aspect_name = info.get('aspect', '')
+                    lines.append(f"### {aspect_name}")
+                    lines.append("")
+                    
+                    if group_a_urls:
+                        lines.append("#### グループA (Top-5)")
+                        lines.append("")
+                        lines.append("<p>")
+                        for url in group_a_urls[:5]:
+                            lines.append(f'  <img src="{url}" width="18%" />')
+                        lines.append("</p>")
+                        lines.append("")
+                    
+                    if group_b_urls:
+                        lines.append("#### グループB (Bottom-5)")
+                        lines.append("")
+                        lines.append("<p>")
+                        for url in group_b_urls[:5]:
+                            lines.append(f'  <img src="{url}" width="18%" />')
+                        lines.append("</p>")
+                        lines.append("")
+                    
+                    # 追加画像表示コマンド
+                    out_file = r.get('output_file', '')
+                    if out_file:
+                        file_name = Path(out_file).name
+                        lines.append("#### 追加画像を見るには")
+                        lines.append("")
+                        lines.append("```bash")
+                        lines.append(f"python src/analysis/experiments/utils/generate_image_gallery.py \\")
+                        lines.append(f"  --result-json {self.run_dir.name}/{file_name} \\")
+                        lines.append(f"  --top-n 10 \\")
+                        lines.append(f"  --bottom-n 10")
+                        lines.append("```")
+                        lines.append("")
+                    break  # 最初のretrieved_concepts実験のみ表示
+        
+        # ログリンク
+        lines.append("## ログ")
+        lines.append("")
+        try:
+            rel_python_log = os.path.relpath(self.run_dir / 'logs/python.log', self.run_dir)
+            rel_cli_log = os.path.relpath(self.run_dir / 'logs/cli_run.log', self.run_dir)
+            lines.append(f"- Pythonログ: {rel_python_log}")
+            lines.append(f"- CLIログ: {rel_cli_log}")
+        except Exception:
+            pass
+        lines.append("")
+        # 保存
+        md_path = self.run_dir / 'summary.md'
+        with open(md_path, 'w', encoding='utf-8') as f:
+            f.write("\n".join(lines))
 
     def _load_examples_file(self, path: str) -> List[Dict]:
         """例題ファイル(JSON/YAML)を読み込み、簡易検証して返す。キャッシュあり。"""
@@ -551,21 +632,6 @@ class ExperimentPipeline:
                     continue
         self._examples_cache[path] = valid
         return valid
-        # ログリンク
-        lines.append("## ログ")
-        lines.append("")
-        try:
-            rel_python_log = os.path.relpath(self.run_dir / 'logs/python.log', self.run_dir)
-            rel_cli_log = os.path.relpath(self.run_dir / 'logs/cli_run.log', self.run_dir)
-            lines.append(f"- Pythonログ: {rel_python_log}")
-            lines.append(f"- CLIログ: {rel_cli_log}")
-        except Exception:
-            pass
-        lines.append("")
-        # 保存
-        md_path = self.run_dir / 'summary.md'
-        with open(md_path, 'w', encoding='utf-8') as f:
-            f.write("\n".join(lines))
 
     def _write_root_overview(self, summary_data: Dict) -> None:
         """プロジェクトルートresults/に概要Markdownを保存し、詳細へのパスを記載"""
@@ -683,6 +749,16 @@ class ExperimentPipeline:
                 rendered_lines.extend(outputs_table.splitlines())
         except Exception:
             pass
+        
+        # 追記: 画像URLセクション（retrieved_conceptsデータセットの場合）
+        try:
+            image_section = self._build_image_urls_section(results)
+            if image_section.strip():
+                rendered_lines.append("")
+                rendered_lines.extend(image_section.splitlines())
+        except Exception:
+            pass
+        
         with open(overview_path, 'w', encoding='utf-8') as f:
             f.write("\n".join(rendered_lines))
 
@@ -737,6 +813,67 @@ class ExperimentPipeline:
             if len(llm_text) > 200:
                 llm_text = llm_text[:197] + "..."
             lines.append(f"| {dataset} | {aspect_display} | {llm_text} |")
+        return "\n".join(lines)
+
+    def _build_image_urls_section(self, results: List[Dict]) -> str:
+        """画像URLセクションをMarkdown形式で作成（retrieved_conceptsデータセットの場合）"""
+        lines: List[str] = []
+        image_sections_added = False
+        
+        for r in results:
+            if not r.get('summary', {}).get('success', False):
+                continue
+            info = r.get('experiment_info', {})
+            dataset = info.get('dataset', '')
+            if dataset == 'retrieved_concepts':
+                input_data = r.get('input', {})
+                group_a_urls = input_data.get('group_a_top5_image_urls')
+                group_b_urls = input_data.get('group_b_top5_image_urls')
+                
+                if group_a_urls or group_b_urls:
+                    if not image_sections_added:
+                        lines.append("## 画像URL")
+                        lines.append("")
+                        image_sections_added = True
+                    
+                    aspect_name = info.get('aspect', '')
+                    lines.append(f"### {aspect_name}")
+                    lines.append("")
+                    
+                    if group_a_urls:
+                        lines.append("#### グループA (Top-5)")
+                        lines.append("")
+                        lines.append("<p>")
+                        for url in group_a_urls[:5]:
+                            lines.append(f'  <img src="{url}" width="18%" />')
+                        lines.append("</p>")
+                        lines.append("")
+                    
+                    if group_b_urls:
+                        lines.append("#### グループB (Bottom-5)")
+                        lines.append("")
+                        lines.append("<p>")
+                        for url in group_b_urls[:5]:
+                            lines.append(f'  <img src="{url}" width="18%" />')
+                        lines.append("</p>")
+                        lines.append("")
+                    
+                    # 追加画像表示コマンド
+                    out_file = r.get('output_file', '')
+                    if out_file:
+                        file_name = Path(out_file).name
+                        rel_result_json = os.path.relpath(out_file, Path(self.run_dir).parents[5] / 'experiment_summaries') if self.run_dir else file_name
+                        lines.append("#### 追加画像を見るには")
+                        lines.append("")
+                        lines.append("```bash")
+                        lines.append(f"python src/analysis/experiments/utils/generate_image_gallery.py \\")
+                        lines.append(f"  --result-json {rel_result_json} \\")
+                        lines.append(f"  --top-n 10 \\")
+                        lines.append(f"  --bottom-n 10")
+                        lines.append("```")
+                        lines.append("")
+                    break  # 最初のretrieved_concepts実験のみ表示
+        
         return "\n".join(lines)
 
     def _load_aspect_descriptions(self, csv_path: str) -> Dict[str, str]:

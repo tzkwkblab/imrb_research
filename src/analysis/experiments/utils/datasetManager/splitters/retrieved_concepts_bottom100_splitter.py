@@ -2,9 +2,16 @@
 Retrieved Concepts用: Top-100 vs Bottom-100分割戦略
 """
 
-from typing import List
+from typing import List, Dict, Set
 from .base import BaseSplitter, BinarySplitResult, SplitOptions
 from ..loaders.base import UnifiedRecord
+import sys
+from pathlib import Path
+
+# URL変換ユーティリティをインポート
+utils_dir = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(utils_dir))
+from coco_image_url_converter import convert_coco_path_to_url
 
 
 class RetrievedConceptsBottom100Splitter(BaseSplitter):
@@ -71,6 +78,10 @@ class RetrievedConceptsBottom100Splitter(BaseSplitter):
         # 正解作成
         correct_answer = f"{target_aspect} related characteristics"
         
+        # Top-5/Bottom-5の画像URLを取得
+        group_a_top5_urls = self._get_top5_image_urls(group_a_records)
+        group_b_top5_urls = self._get_top5_image_urls(group_b_records)
+        
         # メタデータ作成
         metadata = self.create_metadata(
             dataset_id=records[0].dataset_id if records else "unknown",
@@ -82,7 +93,9 @@ class RetrievedConceptsBottom100Splitter(BaseSplitter):
                 "group_a_source": "top100",
                 "group_b_source": "bottom100",
                 "group_a_label_distribution": self.get_label_distribution(group_a_records),
-                "group_b_label_distribution": self.get_label_distribution(group_b_records)
+                "group_b_label_distribution": self.get_label_distribution(group_b_records),
+                "group_a_top5_image_urls": group_a_top5_urls,
+                "group_b_top5_image_urls": group_b_top5_urls
             }
         )
         
@@ -92,4 +105,33 @@ class RetrievedConceptsBottom100Splitter(BaseSplitter):
             correct_answer=correct_answer,
             metadata=metadata
         )
+    
+    def _get_top5_image_urls(self, records: List[UnifiedRecord]) -> List[str]:
+        """
+        レコードからrank順でTop-5の画像URLを取得
+        
+        Args:
+            records: UnifiedRecordのリスト
+        
+        Returns:
+            Top-5の画像URLリスト
+        """
+        # 画像パスとrankのペアを作成（重複を除去）
+        image_rank_map: Dict[str, int] = {}
+        for record in records:
+            image_path = record.metadata.get("image_path", "")
+            rank = record.metadata.get("rank")
+            if image_path and rank is not None:
+                # 既に存在する場合は、より小さいrank（上位）を優先
+                if image_path not in image_rank_map or rank < image_rank_map[image_path]:
+                    image_rank_map[image_path] = rank
+        
+        # rank順でソートしてTop-5を取得
+        sorted_images = sorted(image_rank_map.items(), key=lambda x: x[1])[:5]
+        
+        # URLに変換
+        urls = [convert_coco_path_to_url(image_path) for image_path, _ in sorted_images]
+        
+        # 空のURLを除外
+        return [url for url in urls if url]
 

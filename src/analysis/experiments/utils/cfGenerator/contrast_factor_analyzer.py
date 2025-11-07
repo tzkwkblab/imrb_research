@@ -79,7 +79,9 @@ class ContrastFactorAnalyzer:
         output_language: Optional[str] = None,
         experiment_name: Optional[str] = None,
         dataset_path: Optional[str] = None,
-        aspect_descriptions_file: Optional[str] = None
+        aspect_descriptions_file: Optional[str] = None,
+        group_a_top5_image_urls: Optional[List[str]] = None,
+        group_b_top5_image_urls: Optional[List[str]] = None
     ) -> Dict:
         """
         対比因子分析を実行
@@ -93,6 +95,8 @@ class ContrastFactorAnalyzer:
             output_language: 出力言語
             experiment_name: 実験名（ファイル名用）
             dataset_path: データセットパス（アスペクト説明文使用時）
+            group_a_top5_image_urls: グループAのTop-5画像URLリスト（オプション）
+            group_b_top5_image_urls: グループBのTop-5画像URLリスト（オプション）
             
         Returns:
             分析結果辞書
@@ -174,6 +178,19 @@ class ContrastFactorAnalyzer:
             logger.debug("BLEUスコア: %.4f", bleu_score)
         
         # 4. 結果構造化
+        input_dict = {
+            "group_a": group_a,
+            "group_b": group_b,
+            "correct_answer": correct_answer,
+            "examples": examples
+        }
+        
+        # 画像URLが提供されている場合は追加
+        if group_a_top5_image_urls is not None:
+            input_dict["group_a_top5_image_urls"] = group_a_top5_image_urls
+        if group_b_top5_image_urls is not None:
+            input_dict["group_b_top5_image_urls"] = group_b_top5_image_urls
+        
         result = {
             "experiment_info": {
                 "timestamp": timestamp,
@@ -188,12 +205,7 @@ class ContrastFactorAnalyzer:
                 "use_aspect_descriptions": bool(self.use_aspect_descriptions),
                 "aspect_descriptions_file": str(getattr(self.aspect_manager, 'source_file', '') or aspect_descriptions_file or '')
             },
-            "input": {
-                "group_a": group_a,
-                "group_b": group_b,
-                "correct_answer": correct_answer,
-                "examples": examples
-            },
+            "input": input_dict,
             "process": {
                 "prompt": prompt,
                 "llm_response": llm_response
