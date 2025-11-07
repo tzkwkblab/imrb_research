@@ -604,7 +604,6 @@ class ExperimentPipeline:
                         lines.append(f"  --bottom-n 10")
                         lines.append("```")
                         lines.append("")
-                    break  # 最初のretrieved_concepts実験のみ表示
         
         # ログリンク
         lines.append("## ログ")
