@@ -1,0 +1,243 @@
+{
+  "experiment_meta": {
+    "timestamp": "20251107_144836",
+    "config_file": "/var/folders/d5/1xhk4r3105n15zqmc6kl877c0000gn/T/tmpeckbc1ru.yaml",
+    "total_experiments": 3,
+    "successful_experiments": 3,
+    "run_name": "tmpeckbc1ru",
+    "output_dir": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/11/07/results/20251107_144836"
+  },
+  "results": [
+    {
+      "experiment_info": {
+        "timestamp": "20251107_144837",
+        "experiment_name": "retrieved_concepts_concept_0_20251107_144836",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_0",
+        "group_size": 10,
+        "split_type": "aspect_vs_bottom100",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "A well dressed business man with two cellphones",
+          "a close up of a keyboard a mouse and a lamp",
+          "The  black-eyed susan  plants are photographed slightly out of focus for a soft, blurry effect.",
+          "The man is para sailing on the water during the day.",
+          "An old man in suit holding his cellphone and looking at it.",
+          "A mug hangs on the wall below a toothbrush.",
+          "The teddy bear is in the room next to the window panel.",
+          "Looking down a stairwell with one person standing there.",
+          "A green tie with tiny embroidered details on a white shirt.",
+          "A man is hunching his shoulder beneath a clear blue sky."
+        ],
+        "group_b": [
+          "A older photo of a small town with carriages and horses .",
+          "A couple of men on a field with tennis rackets.",
+          "A Dutch publication of a man looking at pornography with a sex toy superimposed on his desk.",
+          "A group of people talking to reports who have cameras and microphones.",
+          "dignitaries posing for photos in front of two flags",
+          "Crowds watch as female tennis player prepares for the serve",
+          "A group of military men cutting up a sheet cake.",
+          "Several people in their formal blues cutting into a sheet cake.",
+          "a couple of people that are standing in a tennis court",
+          "A man in a baseball uniform throwing a ball."
+        ],
+        "correct_answer": "concept_0 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A well dressed business man with two cellphones\n- a close up of a keyboard a mouse and a lamp\n- The  black-eyed susan  plants are photographed slightly out of focus for a soft, blurry effect.\n- The man is para sailing on the water during the day.\n- An old man in suit holding his cellphone and looking at it.\n- A mug hangs on the wall below a toothbrush.\n- The teddy bear is in the room next to the window panel.\n- Looking down a stairwell with one person standing there.\n- A green tie with tiny embroidered details on a white shirt.\n- A man is hunching his shoulder beneath a clear blue sky.\n\n【グループB】\n- A older photo of a small town with carriages and horses .\n- A couple of men on a field with tennis rackets.\n- A Dutch publication of a man looking at pornography with a sex toy superimposed on his desk.\n- A group of people talking to reports who have cameras and microphones.\n- dignitaries posing for photos in front of two flags\n- Crowds watch as female tennis player prepares for the serve\n- A group of military men cutting up a sheet cake.\n- Several people in their formal blues cutting into a sheet cake.\n- a couple of people that are standing in a tennis court\n- A man in a baseball uniform throwing a ball.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Modern, individual-focused activities and indoor settings."
+      },
+      "evaluation": {
+        "bert_score": 0.5589156150817871,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.5589156150817871,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.27945780754089355,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251107_144837"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/11/07/results/20251107_144836/retrieved_concepts_concept_0_20251107_144836_20251107_144837.json"
+    },
+    {
+      "experiment_info": {
+        "timestamp": "20251107_144843",
+        "experiment_name": "retrieved_concepts_concept_1_20251107_144836",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_1",
+        "group_size": 10,
+        "split_type": "aspect_vs_bottom100",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "A tennis player that just hit a tennis ball on the court",
+          "A young boy from the Winecoff Youth League playing baseball.",
+          "An eclectic ceramic frog is sitting on an antique looking clock.",
+          "A sleek and modern style clock displays the time in Tokyo.",
+          "A blue glass vase with red and yellow flowers.",
+          "A view of a kitchen sink, knives, hanging cups, and wine glasses.",
+          "Many ducks are congregating on the  island in the sea.",
+          "a person that is jumping for something in the air",
+          "A stop sign with a blue sky and a few clouds.",
+          "a man is running through a field toward a disk"
+        ],
+        "group_b": [
+          "a white and green plane is in the sky",
+          "Two white and red jet airliners next to airport and control tower.",
+          "two commercial jet airplanes on the tarmac at an airport",
+          "A vase that has various flowers in it.",
+          "A man in a military uniform cuts a cake.",
+          "A teddy bear and other stuffed animals sitting on a table.",
+          "A blue aircraft is on the ramp at the airport.",
+          "A man is giving a speech at a podium.",
+          "A herd of cattle grazing in a field near a stream.",
+          "An advertisement for a farmer's market featuring tomatoes and oranges."
+        ],
+        "correct_answer": "concept_1 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A tennis player that just hit a tennis ball on the court\n- A young boy from the Winecoff Youth League playing baseball.\n- An eclectic ceramic frog is sitting on an antique looking clock.\n- A sleek and modern style clock displays the time in Tokyo.\n- A blue glass vase with red and yellow flowers.\n- A view of a kitchen sink, knives, hanging cups, and wine glasses.\n- Many ducks are congregating on the  island in the sea.\n- a person that is jumping for something in the air\n- A stop sign with a blue sky and a few clouds.\n- a man is running through a field toward a disk\n\n【グループB】\n- a white and green plane is in the sky\n- Two white and red jet airliners next to airport and control tower.\n- two commercial jet airplanes on the tarmac at an airport\n- A vase that has various flowers in it.\n- A man in a military uniform cuts a cake.\n- A teddy bear and other stuffed animals sitting on a table.\n- A blue aircraft is on the ramp at the airport.\n- A man is giving a speech at a podium.\n- A herd of cattle grazing in a field near a stream.\n- An advertisement for a farmer's market featuring tomatoes and oranges.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Group A features diverse activities and objects in everyday life."
+      },
+      "evaluation": {
+        "bert_score": 0.6709524393081665,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.6709524393081665,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.33547621965408325,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251107_144843"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/11/07/results/20251107_144836/retrieved_concepts_concept_1_20251107_144836_20251107_144843.json"
+    },
+    {
+      "experiment_info": {
+        "timestamp": "20251107_144844",
+        "experiment_name": "retrieved_concepts_concept_2_20251107_144836",
+        "model_config": {
+          "model": "gpt-4o-mini",
+          "temperature": 0.7,
+          "max_tokens": 100
+        },
+        "input_data": {
+          "group_a_count": 10,
+          "group_b_count": 10,
+          "examples_count": 0,
+          "output_language": null
+        },
+        "use_aspect_descriptions": false,
+        "aspect_descriptions_file": "",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_2",
+        "group_size": 10,
+        "split_type": "aspect_vs_bottom100",
+        "use_examples": false,
+        "examples_file": "",
+        "examples_count_used": 0
+      },
+      "input": {
+        "group_a": [
+          "A horse and pony standing by a road",
+          "A zebra eating grass under a tree in front of a concrete wall.",
+          "A herd of cow grazing in a field.",
+          "A brown horse standing next to a metal fence.",
+          "Holstein cow in water being splashed by a man.",
+          "Woman sitting at the table talking on the phone.",
+          "A horse is standing behind a fence with two dogs on the other side.",
+          "One man is catching a frisbee while another runs to catch up.",
+          "A car is parked near a train speeding by.",
+          "A bench sitting in the grass overlooking trees."
+        ],
+        "group_b": [
+          "A man in a suit standing in front an classic building",
+          "The four images make a collage of windows and street signs.",
+          "A group of motorcycles park in a parking lot.",
+          "A man in striped shirt and tie standing in front of a sign.",
+          "a young man is about to hit a tennis ball with his racquet.",
+          "A giant teddy bear stands in front of a teddy bear store.",
+          "A white chocolate cheesecake dessert is served on a doily.",
+          "A person walking along a beach near docked boats.",
+          "A person is standing with an umbrella in front of tbeir face.",
+          "A man and woman are at a press conference."
+        ],
+        "correct_answer": "concept_2 related characteristics",
+        "examples": null
+      },
+      "process": {
+        "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A horse and pony standing by a road\n- A zebra eating grass under a tree in front of a concrete wall.\n- A herd of cow grazing in a field.\n- A brown horse standing next to a metal fence.\n- Holstein cow in water being splashed by a man.\n- Woman sitting at the table talking on the phone.\n- A horse is standing behind a fence with two dogs on the other side.\n- One man is catching a frisbee while another runs to catch up.\n- A car is parked near a train speeding by.\n- A bench sitting in the grass overlooking trees.\n\n【グループB】\n- A man in a suit standing in front an classic building\n- The four images make a collage of windows and street signs.\n- A group of motorcycles park in a parking lot.\n- A man in striped shirt and tie standing in front of a sign.\n- a young man is about to hit a tennis ball with his racquet.\n- A giant teddy bear stands in front of a teddy bear store.\n- A white chocolate cheesecake dessert is served on a doily.\n- A person walking along a beach near docked boats.\n- A person is standing with an umbrella in front of tbeir face.\n- A man and woman are at a press conference.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+        "llm_response": "Group A features animals and outdoor scenes."
+      },
+      "evaluation": {
+        "bert_score": 0.5632486343383789,
+        "bleu_score": 0,
+        "similarity_scores": {
+          "semantic_similarity": 0.5632486343383789,
+          "lexical_similarity": 0
+        }
+      },
+      "summary": {
+        "success": true,
+        "quality_assessment": {
+          "overall_quality": "poor",
+          "average_score": 0.28162431716918945,
+          "bert_quality": "medium",
+          "bleu_quality": "low"
+        },
+        "processing_time": "20251107_144844"
+      },
+      "output_file": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/11/07/results/20251107_144836/retrieved_concepts_concept_2_20251107_144836_20251107_144844.json"
+    }
+  ]
+}

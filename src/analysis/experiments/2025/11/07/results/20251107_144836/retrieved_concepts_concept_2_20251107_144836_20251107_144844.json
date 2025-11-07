@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251107_144844",
+    "experiment_name": "retrieved_concepts_concept_2_20251107_144836",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "A horse and pony standing by a road",
+      "A zebra eating grass under a tree in front of a concrete wall.",
+      "A herd of cow grazing in a field.",
+      "A brown horse standing next to a metal fence.",
+      "Holstein cow in water being splashed by a man.",
+      "Woman sitting at the table talking on the phone.",
+      "A horse is standing behind a fence with two dogs on the other side.",
+      "One man is catching a frisbee while another runs to catch up.",
+      "A car is parked near a train speeding by.",
+      "A bench sitting in the grass overlooking trees."
+    ],
+    "group_b": [
+      "A man in a suit standing in front an classic building",
+      "The four images make a collage of windows and street signs.",
+      "A group of motorcycles park in a parking lot.",
+      "A man in striped shirt and tie standing in front of a sign.",
+      "a young man is about to hit a tennis ball with his racquet.",
+      "A giant teddy bear stands in front of a teddy bear store.",
+      "A white chocolate cheesecake dessert is served on a doily.",
+      "A person walking along a beach near docked boats.",
+      "A person is standing with an umbrella in front of tbeir face.",
+      "A man and woman are at a press conference."
+    ],
+    "correct_answer": "concept_2 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A horse and pony standing by a road\n- A zebra eating grass under a tree in front of a concrete wall.\n- A herd of cow grazing in a field.\n- A brown horse standing next to a metal fence.\n- Holstein cow in water being splashed by a man.\n- Woman sitting at the table talking on the phone.\n- A horse is standing behind a fence with two dogs on the other side.\n- One man is catching a frisbee while another runs to catch up.\n- A car is parked near a train speeding by.\n- A bench sitting in the grass overlooking trees.\n\n【グループB】\n- A man in a suit standing in front an classic building\n- The four images make a collage of windows and street signs.\n- A group of motorcycles park in a parking lot.\n- A man in striped shirt and tie standing in front of a sign.\n- a young man is about to hit a tennis ball with his racquet.\n- A giant teddy bear stands in front of a teddy bear store.\n- A white chocolate cheesecake dessert is served on a doily.\n- A person walking along a beach near docked boats.\n- A person is standing with an umbrella in front of tbeir face.\n- A man and woman are at a press conference.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Group A features animals and outdoor scenes."
+  },
+  "evaluation": {
+    "bert_score": 0.5632486343383789,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.5632486343383789,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.28162431716918945,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251107_144844"
+  }
+}

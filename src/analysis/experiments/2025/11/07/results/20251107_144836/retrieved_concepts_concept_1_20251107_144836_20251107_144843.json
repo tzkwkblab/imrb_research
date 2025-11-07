@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251107_144843",
+    "experiment_name": "retrieved_concepts_concept_1_20251107_144836",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "A tennis player that just hit a tennis ball on the court",
+      "A young boy from the Winecoff Youth League playing baseball.",
+      "An eclectic ceramic frog is sitting on an antique looking clock.",
+      "A sleek and modern style clock displays the time in Tokyo.",
+      "A blue glass vase with red and yellow flowers.",
+      "A view of a kitchen sink, knives, hanging cups, and wine glasses.",
+      "Many ducks are congregating on the  island in the sea.",
+      "a person that is jumping for something in the air",
+      "A stop sign with a blue sky and a few clouds.",
+      "a man is running through a field toward a disk"
+    ],
+    "group_b": [
+      "a white and green plane is in the sky",
+      "Two white and red jet airliners next to airport and control tower.",
+      "two commercial jet airplanes on the tarmac at an airport",
+      "A vase that has various flowers in it.",
+      "A man in a military uniform cuts a cake.",
+      "A teddy bear and other stuffed animals sitting on a table.",
+      "A blue aircraft is on the ramp at the airport.",
+      "A man is giving a speech at a podium.",
+      "A herd of cattle grazing in a field near a stream.",
+      "An advertisement for a farmer's market featuring tomatoes and oranges."
+    ],
+    "correct_answer": "concept_1 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A tennis player that just hit a tennis ball on the court\n- A young boy from the Winecoff Youth League playing baseball.\n- An eclectic ceramic frog is sitting on an antique looking clock.\n- A sleek and modern style clock displays the time in Tokyo.\n- A blue glass vase with red and yellow flowers.\n- A view of a kitchen sink, knives, hanging cups, and wine glasses.\n- Many ducks are congregating on the  island in the sea.\n- a person that is jumping for something in the air\n- A stop sign with a blue sky and a few clouds.\n- a man is running through a field toward a disk\n\n【グループB】\n- a white and green plane is in the sky\n- Two white and red jet airliners next to airport and control tower.\n- two commercial jet airplanes on the tarmac at an airport\n- A vase that has various flowers in it.\n- A man in a military uniform cuts a cake.\n- A teddy bear and other stuffed animals sitting on a table.\n- A blue aircraft is on the ramp at the airport.\n- A man is giving a speech at a podium.\n- A herd of cattle grazing in a field near a stream.\n- An advertisement for a farmer's market featuring tomatoes and oranges.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Group A features diverse activities and objects in everyday life."
+  },
+  "evaluation": {
+    "bert_score": 0.6709524393081665,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.6709524393081665,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.33547621965408325,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251107_144843"
+  }
+}

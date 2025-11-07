@@ -1,0 +1,69 @@
+{
+  "experiment_info": {
+    "timestamp": "20251107_144837",
+    "experiment_name": "retrieved_concepts_concept_0_20251107_144836",
+    "model_config": {
+      "model": "gpt-4o-mini",
+      "temperature": 0.7,
+      "max_tokens": 100
+    },
+    "input_data": {
+      "group_a_count": 10,
+      "group_b_count": 10,
+      "examples_count": 0,
+      "output_language": null
+    },
+    "use_aspect_descriptions": false,
+    "aspect_descriptions_file": ""
+  },
+  "input": {
+    "group_a": [
+      "A well dressed business man with two cellphones",
+      "a close up of a keyboard a mouse and a lamp",
+      "The  black-eyed susan  plants are photographed slightly out of focus for a soft, blurry effect.",
+      "The man is para sailing on the water during the day.",
+      "An old man in suit holding his cellphone and looking at it.",
+      "A mug hangs on the wall below a toothbrush.",
+      "The teddy bear is in the room next to the window panel.",
+      "Looking down a stairwell with one person standing there.",
+      "A green tie with tiny embroidered details on a white shirt.",
+      "A man is hunching his shoulder beneath a clear blue sky."
+    ],
+    "group_b": [
+      "A older photo of a small town with carriages and horses .",
+      "A couple of men on a field with tennis rackets.",
+      "A Dutch publication of a man looking at pornography with a sex toy superimposed on his desk.",
+      "A group of people talking to reports who have cameras and microphones.",
+      "dignitaries posing for photos in front of two flags",
+      "Crowds watch as female tennis player prepares for the serve",
+      "A group of military men cutting up a sheet cake.",
+      "Several people in their formal blues cutting into a sheet cake.",
+      "a couple of people that are standing in a tennis court",
+      "A man in a baseball uniform throwing a ball."
+    ],
+    "correct_answer": "concept_0 related characteristics",
+    "examples": null
+  },
+  "process": {
+    "prompt": "以下の2つのデータグループを比較して、グループAに特徴的でグループBには見られない表現パターンや内容の特徴を特定してください。\n\n【グループA】\n- A well dressed business man with two cellphones\n- a close up of a keyboard a mouse and a lamp\n- The  black-eyed susan  plants are photographed slightly out of focus for a soft, blurry effect.\n- The man is para sailing on the water during the day.\n- An old man in suit holding his cellphone and looking at it.\n- A mug hangs on the wall below a toothbrush.\n- The teddy bear is in the room next to the window panel.\n- Looking down a stairwell with one person standing there.\n- A green tie with tiny embroidered details on a white shirt.\n- A man is hunching his shoulder beneath a clear blue sky.\n\n【グループB】\n- A older photo of a small town with carriages and horses .\n- A couple of men on a field with tennis rackets.\n- A Dutch publication of a man looking at pornography with a sex toy superimposed on his desk.\n- A group of people talking to reports who have cameras and microphones.\n- dignitaries posing for photos in front of two flags\n- Crowds watch as female tennis player prepares for the serve\n- A group of military men cutting up a sheet cake.\n- Several people in their formal blues cutting into a sheet cake.\n- a couple of people that are standing in a tennis court\n- A man in a baseball uniform throwing a ball.\n\n英語で5-10単語程度で、グループAに特徴的でグループBには見られない主要な違いを簡潔に回答してください。\n\n回答：\n",
+    "llm_response": "Modern, individual-focused activities and indoor settings."
+  },
+  "evaluation": {
+    "bert_score": 0.5589156150817871,
+    "bleu_score": 0,
+    "similarity_scores": {
+      "semantic_similarity": 0.5589156150817871,
+      "lexical_similarity": 0
+    }
+  },
+  "summary": {
+    "success": true,
+    "quality_assessment": {
+      "overall_quality": "poor",
+      "average_score": 0.27945780754089355,
+      "bert_quality": "medium",
+      "bleu_quality": "low"
+    },
+    "processing_time": "20251107_144837"
+  }
+}
