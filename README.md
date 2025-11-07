@@ -47,6 +47,10 @@
   - ドキュメント: `docs/datasets/amazon-product-reviews/README.md`
   - 正規 CSV: `data/analysis-workspace/aspect_descriptions/amazon/descriptions_official.csv`
 
+- **Retrieved Concepts (COCO Captions)**（300 コンセプト: concept_0 ～ concept_299）
+  - ドキュメント: `docs/datasets/retrieved-concepts/README.md`
+  - Top-100/Bottom-100 の類似度順キャプションデータ
+
 ## 実験ワークフローと配置
 
 - 実験結果は日付階層: `src/analysis/experiments/{YYYY}/{MM}/{DD-実験番号}/`
@@ -68,6 +72,8 @@ source .venv/bin/activate
 ```bash
 bash scripts/run_interactive_experiment.sh
 ```
+
+詳細な使い方は [実験スクリプト使い方ガイド](docs/experiments/guides/experiment-script-guide.md) を参照してください。
 
 3. 直接実行（例: 2025/10/10 の統一パイプライン）
 

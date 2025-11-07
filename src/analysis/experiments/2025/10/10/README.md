@@ -4,11 +4,12 @@
 
 ## 機能
 
-- ✅ 複数データセット対応（Steam, Amazon, SemEval）
+- ✅ 複数データセット対応（Steam, Amazon, SemEval, Retrieved Concepts）
 - ✅ コマンドライン実行で BERT/BLEU スコア出力
 - ✅ 設定ファイル駆動の実験管理
 - ✅ JSON 形式での結果保存
 - ✅ エラーハンドリング
+- ✅ サイレントモード（`--silent`フラグ）
 
 ## ファイル構成
 
@@ -80,21 +81,32 @@ llm:
 ## コマンドラインオプション
 
 ```
-usage: run_experiment.py [-h] [--config CONFIG] [--dataset {steam,semeval,amazon}]
+usage: run_experiment.py [-h] [--config CONFIG] [--dataset {steam,semeval,amazon,retrieved_concepts}]
                         [--aspect ASPECT] [--aspects ASPECTS [ASPECTS ...]]
                         [--group-size GROUP_SIZE]
-                        [--split-type {binary_label,aspect_vs_others}]
-                        [--debug] [--output-dir OUTPUT_DIR]
+                        [--split-type {binary_label,aspect_vs_others,aspect_vs_bottom100}]
+                        [--use-aspect-descriptions] [--aspect-descriptions-file FILE]
+                        [--use-examples] [--examples-file FILE] [--max-examples N]
+                        [--silent] [--debug] [--output-dir OUTPUT_DIR]
 
 オプション:
   --config, -c          設定ファイルパス (default: pipeline_config.yaml)
-  --dataset, -d         データセット名 (steam, semeval, amazon)
+  --dataset, -d         データセット名 (steam, semeval, amazon, retrieved_concepts)
   --aspect, -a          アスペクト名（単一指定）
   --aspects             アスペクト名（複数指定）
   --group-size, -g      グループサイズ (default: 50)
   --split-type          分割タイプ (default: binary_label)
-  --debug               デバッグモード有効化
-  --output-dir          出力ディレクトリ (default: results/)
+                        - binary_label: ポジ/ネガ分類用（Steam推奨）
+                        - aspect_vs_others: アスペクト間比較用（汎用）
+                        - aspect_vs_bottom100: Top-100 vs Bottom-100（retrieved_concepts専用）
+  --use-aspect-descriptions  アスペクト説明文を使用
+  --aspect-descriptions-file  説明文CSVファイルパス
+  --use-examples         Few-shot例題を使用
+  --examples-file        例題ファイルパス
+  --max-examples         使用する例題数
+  --silent               ファイル保存をスキップ（デバッグ用途）
+  --debug                デバッグモード有効化
+  --output-dir           出力ディレクトリ (default: results/)
 ```
 
 ## 出力例
@@ -188,18 +200,32 @@ steam      gameplay        BERT: 0.5419  BLEU: 0.0000
 
 - データセット: `steam`
 - アスペクト: `gameplay`, `visual`, `story`, `audio`, `technical`, `price`, `suggestion`, `recommended`
-- 分割タイプ: `binary_label`
-- レコード数: 8,800 件
+- 推奨分割タイプ: `binary_label`
+- レコード数: 約8,800 件
+- ドキュメント: [Steamデータセット詳細](../../../../docs/datasets/steam-review-aspect-dataset/README.md)
 
-### SemEval ABSA（未対応）
+### Retrieved Concepts（動作確認済み）
+
+- データセット: `retrieved_concepts`
+- アスペクト: `concept_0` ～ `concept_299`（300個のコンセプト）
+- 推奨分割タイプ: `aspect_vs_bottom100`
+- レコード数: 約300,000 件（300コンセプト × 1000件/コンセプト）
+- ドキュメント: [Retrieved Conceptsデータセット詳細](../../../../docs/datasets/retrieved-concepts/README.md)
+- 実験手順: [retrieved_concepts実験手順](../../../../docs/experiments/playbooks/retrieved-concepts-experiment-guide.md)
+
+### SemEval ABSA（実験的）
 
 - データセット: `semeval`
-- 注意: 現在データローダーに問題があり動作しません
+- アスペクト: `food`, `service`, `atmosphere`, `price`
+- 推奨分割タイプ: `aspect_vs_others`
+- 注意: データローダーの動作確認が必要
 
-### Amazon Reviews（未対応）
+### Amazon Reviews（実験的）
 
 - データセット: `amazon`
-- 注意: 現在データローダーに問題があり動作しません
+- アスペクト: `quality`, `price`, `delivery`, `service`, `product`
+- 推奨分割タイプ: `aspect_vs_others`
+- 注意: データローダーの動作確認が必要
 
 ## エラーハンドリング
 
@@ -264,8 +290,41 @@ class ExperimentPipeline:
 - [ ] 並列実行対応
 - [ ] 進捗バー表示改善
 
+## 分割タイプの詳細
+
+### binary_label
+
+ポジティブ/ネガティブ分類用の分割タイプです。
+
+- **グループA**: 対象アスペクトでラベル=1（ポジティブ）のレコード
+- **グループB**: 対象アスペクトでラベル=0（ネガティブ）のレコード
+- **推奨データセット**: Steam
+
+### aspect_vs_others
+
+アスペクト間比較用の汎用的な分割タイプです。
+
+- **グループA**: 対象アスペクトを含むレコード
+- **グループB**: 対象アスペクトを含まないレコード（他のアスペクトからランダム抽出）
+- **推奨データセット**: SemEval, Amazon
+
+### aspect_vs_bottom100
+
+Top-100 vs Bottom-100比較用の分割タイプです（retrieved_concepts専用）。
+
+- **グループA**: 対象コンセプトのTop-100から抽出（最も類似度が高い画像のキャプション）
+- **グループB**: 対象コンセプトのBottom-100から抽出（最も類似度が低い画像のキャプション）
+- **推奨データセット**: retrieved_concepts（デフォルト）
+- **特徴**: コンセプトに特徴的な要素をより明確に抽出できる
+
+詳細は[実験スクリプト使い方ガイド](../../../../docs/experiments/guides/experiment-script-guide.md)を参照してください。
+
 ## 関連ドキュメント
 
+- [実験スクリプト使い方ガイド](../../../../docs/experiments/guides/experiment-script-guide.md)
+- [Steam実験手順](../../../../docs/experiments/playbooks/steam-experiment-guide.md)
+- [retrieved_concepts実験手順](../../../../docs/experiments/playbooks/retrieved-concepts-experiment-guide.md)
+- [トラブルシューティング](../../../../docs/experiments/troubleshooting/common-issues.md)
 - [utils ディレクトリ README](../../utils/README.md)
 - [データ構造説明](../../../../../data/README.md)
 - [実験管理ルール](../../../../../.cursor/rules/)
