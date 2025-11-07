@@ -65,3 +65,6 @@ splitters:
   binary_label:
     class: "BinarySplitter"
     module: "splitters.binary_splitter"
+  aspect_vs_bottom100:
+    class: "RetrievedConceptsBottom100Splitter"
+    module: "splitters.retrieved_concepts_bottom100_splitter"

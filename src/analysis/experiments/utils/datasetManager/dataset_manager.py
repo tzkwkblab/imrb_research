@@ -15,7 +15,7 @@ from .loaders import (
     AmazonDatasetLoader,
     RetrievedConceptsDatasetLoader,
 )
-from .splitters import BaseSplitter, BinarySplitResult, SplitOptions, AspectSplitter, BinarySplitter
+from .splitters import BaseSplitter, BinarySplitResult, SplitOptions, AspectSplitter, BinarySplitter, RetrievedConceptsBottom100Splitter
 
 
 class DatasetManager:
@@ -28,7 +28,8 @@ class DatasetManager:
     
     SPLITTERS = {
         "aspect_vs_others": AspectSplitter,
-        "binary_label": BinarySplitter
+        "binary_label": BinarySplitter,
+        "aspect_vs_bottom100": RetrievedConceptsBottom100Splitter
     }
     
     def __init__(self, data_root: Path = Path("data/external")):

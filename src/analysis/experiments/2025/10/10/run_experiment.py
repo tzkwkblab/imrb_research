@@ -77,7 +77,7 @@ def parse_args():
     parser.add_argument(
         '--split-type',
         type=str,
-        choices=['binary_label', 'aspect_vs_others'],
+        choices=['binary_label', 'aspect_vs_others', 'aspect_vs_bottom100'],
         default='binary_label',
         help='分割タイプ (default: binary_label)'
     )

@@ -33,52 +33,84 @@ class RetrievedConceptsDatasetLoader(BaseDatasetLoader):
         target = Path(str(self.base_path))
         # ディレクトリが指定された場合は中のJSONを探索
         if target.is_dir():
-            json_file = self._find_json_file(target)
-            if json_file is None:
+            json_files = self._find_json_files(target)
+            if not json_files:
                 raise FileNotFoundError(f"JSONファイルが見つかりません: {target}")
-            file_path = json_file
         else:
-            file_path = target
-            if not file_path.exists():
-                raise FileNotFoundError(f"データファイルが見つかりません: {file_path}")
+            json_files = [target]
+            if not target.exists():
+                raise FileNotFoundError(f"データファイルが見つかりません: {target}")
 
         records: List[UnifiedRecord] = []
         discovered_aspects: List[str] = []
 
-        for concept_obj in self._iter_concept_objects(file_path):
-            concept_id = concept_obj.get("concept_id")
-            if concept_id is None:
-                continue
-            aspect_name = f"concept_{int(concept_id)}"
-            if aspect_name not in discovered_aspects:
-                discovered_aspects.append(aspect_name)
+        for file_path in json_files:
+            for concept_obj in self._iter_concept_objects(file_path):
+                concept_id = concept_obj.get("concept_id")
+                if concept_id is None:
+                    continue
+                aspect_name = f"concept_{int(concept_id)}"
+                if aspect_name not in discovered_aspects:
+                    discovered_aspects.append(aspect_name)
 
-            topk = concept_obj.get("topk", [])
-            for item in topk:
-                captions = item.get("captions", []) or []
-                image_path = item.get("path", "")
-                score = item.get("score", None)
-                rank = item.get("rank", None)
+                topk = concept_obj.get("topk", [])
+                bottomk = concept_obj.get("bottomk", [])
 
-                for caption in captions:
-                    text = str(caption).strip()
-                    if not text:
-                        continue
-                    records.append(
-                        UnifiedRecord(
-                            text=text,
-                            aspect=aspect_name,
-                            label=1,  # 本データはアスペクトに対するポジティブ集合
-                            domain="vision",
-                            dataset_id="retrieved_concepts",
-                            metadata={
-                                "concept_id": int(concept_id),
-                                "image_path": image_path,
-                                "score": score,
-                                "rank": rank,
-                            },
+                for item in topk:
+                    source_type = "top100"
+                    captions = item.get("captions", []) or []
+                    image_path = item.get("path", "")
+                    score = item.get("score", None)
+                    rank = item.get("rank", None)
+
+                    for caption in captions:
+                        text = str(caption).strip()
+                        if not text:
+                            continue
+                        records.append(
+                            UnifiedRecord(
+                                text=text,
+                                aspect=aspect_name,
+                                label=1,
+                                domain="vision",
+                                dataset_id="retrieved_concepts",
+                                metadata={
+                                    "concept_id": int(concept_id),
+                                    "image_path": image_path,
+                                    "score": score,
+                                    "rank": rank,
+                                    "source_type": source_type,
+                                },
+                            )
                         )
-                    )
+
+                for item in bottomk:
+                    source_type = "bottom100"
+                    captions = item.get("captions", []) or []
+                    image_path = item.get("path", "")
+                    score = item.get("score", None)
+                    rank = item.get("rank", None)
+
+                    for caption in captions:
+                        text = str(caption).strip()
+                        if not text:
+                            continue
+                        records.append(
+                            UnifiedRecord(
+                                text=text,
+                                aspect=aspect_name,
+                                label=1,
+                                domain="vision",
+                                dataset_id="retrieved_concepts",
+                                metadata={
+                                    "concept_id": int(concept_id),
+                                    "image_path": image_path,
+                                    "score": score,
+                                    "rank": rank,
+                                    "source_type": source_type,
+                                },
+                            )
+                        )
 
         self._aspects = discovered_aspects
         return records
@@ -90,20 +122,20 @@ class RetrievedConceptsDatasetLoader(BaseDatasetLoader):
         # 事前に全量ロードしていない場合は軽量スキャンでアスペクトのみ収集
         target = Path(str(self.base_path))
         if target.is_dir():
-            json_file = self._find_json_file(target)
-            if json_file is None:
+            json_files = self._find_json_files(target)
+            if not json_files:
                 return []
-            file_path = json_file
         else:
-            file_path = target
+            json_files = [target]
         aspects: List[str] = []
-        for concept_obj in self._iter_concept_objects(file_path):
-            cid = concept_obj.get("concept_id")
-            if cid is None:
-                continue
-            name = f"concept_{int(cid)}"
-            if name not in aspects:
-                aspects.append(name)
+        for file_path in json_files:
+            for concept_obj in self._iter_concept_objects(file_path):
+                cid = concept_obj.get("concept_id")
+                if cid is None:
+                    continue
+                name = f"concept_{int(cid)}"
+                if name not in aspects:
+                    aspects.append(name)
         self._aspects = aspects
         return aspects
 
@@ -169,12 +201,21 @@ class RetrievedConceptsDatasetLoader(BaseDatasetLoader):
                         buffer_lines = []
 
     def _find_json_file(self, dir_path: Path) -> Optional[Path]:
-        """ディレクトリ内のretrieved_dataset_*.jsonを優先探索"""
+        """ディレクトリ内のretrieved_dataset_*.jsonを優先探索（後方互換性のため）"""
         candidates = sorted(dir_path.glob("retrieved_dataset_*.json"))
         if candidates:
             return candidates[0]
         # フォールバック: 直下の単一JSON
         any_json = sorted(dir_path.glob("*.json"))
         return any_json[0] if any_json else None
+
+    def _find_json_files(self, dir_path: Path) -> List[Path]:
+        """ディレクトリ内のretrieved_dataset_*.jsonを全て探索"""
+        candidates = sorted(dir_path.glob("retrieved_dataset_*.json"))
+        if candidates:
+            return candidates
+        # フォールバック: 直下の単一JSON
+        any_json = sorted(dir_path.glob("*.json"))
+        return any_json if any_json else []
 
 

@@ -306,15 +306,21 @@ input_group_size() {
 select_split_type() {
     print_section "分割タイプ選択"
 
-    echo "1. aspect_vs_others (通常のアスペクト比較用 - 推奨)"
+    echo "1. aspect_vs_others (通常のアスペクト比較用)"
     echo "2. binary_label (ネガポジ分類用)"
+    echo "3. aspect_vs_bottom100 (Top-100 vs Bottom-100 - retrieved_concepts専用)"
     echo ""
 
     local default_type="aspect_vs_others"
-    print_info "通常のアスペクト間比較には aspect_vs_others が推奨されます"
+    if [[ "$DATASET" == "retrieved_concepts" ]]; then
+        default_type="aspect_vs_bottom100"
+        print_info "retrieved_conceptsデータセットでは aspect_vs_bottom100 が推奨されます"
+    else
+        print_info "通常のアスペクト間比較には aspect_vs_others が推奨されます"
+    fi
 
     while true; do
-        read -p "選択してください (1-2, Enter=推奨): " choice
+        read -p "選択してください (1-3, Enter=推奨): " choice
         if [[ -z "$choice" ]]; then
             SPLIT_TYPE=$default_type
             break
@@ -322,7 +328,8 @@ select_split_type() {
         case $choice in
             1) SPLIT_TYPE="aspect_vs_others"; break ;;
             2) SPLIT_TYPE="binary_label"; break ;;
-            *) print_error "無効な選択です。1か2を入力してください" ;;
+            3) SPLIT_TYPE="aspect_vs_bottom100"; break ;;
+            *) print_error "無効な選択です。1、2、または3を入力してください" ;;
         esac
     done
 
