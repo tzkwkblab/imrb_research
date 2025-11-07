@@ -249,8 +249,20 @@ class ExperimentPipeline:
                     max_examples = int(max_examples) if max_examples.strip() else None
                 except Exception:
                     max_examples = None
+            
+            # 評価設定からLLM評価設定を取得
+            evaluation_cfg = self.config.get('evaluation', {}) or {}
+            use_llm_eval = bool(evaluation_cfg.get('use_llm_score', False))
+            llm_eval_model = evaluation_cfg.get('llm_evaluation_model', 'gpt-4o-mini')
+            llm_eval_temp = float(evaluation_cfg.get('llm_evaluation_temperature', 0.0))
 
-            analyzer = ContrastFactorAnalyzer(debug=self.debug, use_aspect_descriptions=use_desc)
+            analyzer = ContrastFactorAnalyzer(
+                debug=self.debug, 
+                use_aspect_descriptions=use_desc,
+                use_llm_evaluation=use_llm_eval,
+                llm_evaluation_model=llm_eval_model,
+                llm_evaluation_temperature=llm_eval_temp
+            )
             
             # 例題読み込み（必要時）
             examples_payload: Optional[List[Dict]] = None
@@ -290,6 +302,7 @@ class ExperimentPipeline:
             
             bert_score = result['evaluation']['bert_score']
             bleu_score = result['evaluation']['bleu_score']
+            llm_score = result['evaluation'].get('llm_score')
             llm_response = result['process']['llm_response']
             
             self.logger.info("✅ スコア確認完了")
@@ -299,6 +312,11 @@ class ExperimentPipeline:
             self.logger.info(f"=== 結果 ===")
             self.logger.info(f"BERTスコア: {bert_score:.4f}")
             self.logger.info(f"BLEUスコア: {bleu_score:.4f}")
+            if llm_score is not None:
+                self.logger.info(f"LLMスコア: {llm_score:.4f}")
+                llm_reasoning = result['evaluation'].get('llm_evaluation_reasoning')
+                if llm_reasoning:
+                    self.logger.info(f"LLM評価理由: {llm_reasoning}")
             self.logger.info(f"LLM応答: {llm_response}")
             self.logger.info(f"品質評価: {result['summary']['quality_assessment']['overall_quality']}")
             
@@ -314,6 +332,10 @@ class ExperimentPipeline:
             result['experiment_info']['use_examples'] = bool(use_examples)
             result['experiment_info']['examples_file'] = examples_file or ''
             result['experiment_info']['examples_count_used'] = len(examples_payload or [])
+            # LLM評価メタ情報
+            result['experiment_info']['use_llm_evaluation'] = bool(use_llm_eval)
+            result['experiment_info']['llm_evaluation_model'] = llm_eval_model
+            result['experiment_info']['llm_evaluation_temperature'] = llm_eval_temp
             
             return result
             
@@ -487,8 +509,8 @@ class ExperimentPipeline:
         # 結果一覧
         lines.append("## 結果概要")
         lines.append("")
-        lines.append("| データセット | アスペクト | 件数(A/B) | 例題数 | BERT | BLEU | 品質 | LLM出力 | 出力ファイル |")
-        lines.append("| --- | --- | --- | ---:| ---:| ---:| --- | --- | --- |")
+        lines.append("| データセット | アスペクト | 件数(A/B) | 例題数 | BERT | BLEU | LLM | 品質 | LLM出力 | 出力ファイル |")
+        lines.append("| --- | --- | --- | ---:| ---:| ---:| ---:| --- | --- | --- |")
         for r in results:
             if not r.get('summary', {}).get('success', False):
                 continue
@@ -518,9 +540,11 @@ class ExperimentPipeline:
             llm_text = llm_text.replace("\n", " ").replace("|", "｜").strip()
             if len(llm_text) > 160:
                 llm_text = llm_text[:157] + "..."
+            llm_score = evals.get('llm_score')
+            llm_score_display = f"{llm_score:.4f}" if llm_score is not None else "-"
             lines.append(
                 f"| {info.get('dataset','')} | {aspect_display} | {counts_display} | {examples_count} | "
-                f"{evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} | "
+                f"{evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} | {llm_score_display} | "
                 f"{r.get('summary',{}).get('quality_assessment',{}).get('overall_quality','')} | "
                 f"{llm_text} | "
                 f"{Path(out_file).name if out_file else ''} |"
@@ -765,8 +789,8 @@ class ExperimentPipeline:
     def _build_results_table(self, results: List[Dict], limit: int = 5) -> str:
         """結果テーブルMarkdownを作成"""
         lines = []
-        lines.append("| データセット | アスペクト | BERT | BLEU |")
-        lines.append("| --- | --- | ---:| ---:|")
+        lines.append("| データセット | アスペクト | BERT | BLEU | LLM |")
+        lines.append("| --- | --- | ---:| ---:| ---:|")
         for r in results[:limit]:
             info = r.get('experiment_info', {})
             evals = r.get('evaluation', {})
@@ -781,8 +805,10 @@ class ExperimentPipeline:
                         aspect_display = f"({aspect_name}) {desc_text}"
             except Exception:
                 pass
+            llm_score = evals.get('llm_score')
+            llm_score_display = f"{llm_score:.4f}" if llm_score is not None else "-"
             lines.append(
-                f"| {info.get('dataset','')} | {aspect_display} | {evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} |"
+                f"| {info.get('dataset','')} | {aspect_display} | {evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} | {llm_score_display} |"
             )
         return "\n".join(lines)
 
@@ -928,8 +954,12 @@ class ExperimentPipeline:
                 aspect = exp_info.get('aspect', 'N/A')
                 bert = evaluation.get('bert_score', 0)
                 bleu = evaluation.get('bleu_score', 0)
+                llm = evaluation.get('llm_score')
                 
-                self.logger.info(f"{dataset:10s} {aspect:15s} BERT: {bert:.4f}  BLEU: {bleu:.4f}")
+                if llm is not None:
+                    self.logger.info(f"{dataset:10s} {aspect:15s} BERT: {bert:.4f}  BLEU: {bleu:.4f}  LLM: {llm:.4f}")
+                else:
+                    self.logger.info(f"{dataset:10s} {aspect:15s} BERT: {bert:.4f}  BLEU: {bleu:.4f}")
     
     def run(self) -> bool:
         """パイプライン実行"""

@@ -22,7 +22,7 @@ scores_per_candidate = calculate_one_to_many(
     (bert_score_candidate3=0.5, bleu_score_candidate3=0.4)]
 """
 
-from typing import Tuple, List
+from typing import Tuple, List, Optional, Dict, Union
 import numpy as np
 
 try:
@@ -62,16 +62,25 @@ def _get_smoothing():
     return _smoothing
 
 
-def calculate_scores(text_a: str, text_b: str) -> Tuple[float, float]:
+def calculate_scores(
+    text_a: str, 
+    text_b: str, 
+    include_llm_score: bool = False,
+    llm_model_name: str = "gpt-4o-mini",
+    llm_temperature: float = 0.0
+) -> Union[Tuple[float, float], Tuple[float, float, float]]:
     """
-    二つのテキストのBERTスコアとBLEUスコアを計算
+    二つのテキストのBERTスコアとBLEUスコアを計算（オプションでLLMスコアも）
     
     Args:
         text_a: テキストA
         text_b: テキストB
+        include_llm_score: LLM評価スコアを含めるかどうか
+        llm_model_name: LLM評価に使用するモデル名
+        llm_temperature: LLM評価の温度パラメータ
         
     Returns:
-        (BERTスコア, BLEUスコア) のタプル
+        (BERTスコア, BLEUスコア) または (BERTスコア, BLEUスコア, LLMスコア) のタプル
     """
     # BERTスコア計算（モデル再利用）
     model = _get_model()
@@ -88,18 +97,46 @@ def calculate_scores(text_a: str, text_b: str) -> Tuple[float, float]:
         smoothing = _get_smoothing()
         bleu_score = sentence_bleu([ref_tokens], hyp_tokens, smoothing_function=smoothing)
     
+    # LLMスコア計算（オプション）
+    if include_llm_score:
+        try:
+            from .llm_score import calculate_llm_score
+            llm_result = calculate_llm_score(
+                reference_text=text_a,
+                candidate_text=text_b,
+                model_name=llm_model_name,
+                temperature=llm_temperature
+            )
+            if llm_result:
+                llm_score = llm_result["normalized_score"]
+                return bert_score, bleu_score, llm_score
+            else:
+                # LLM評価失敗時はNoneを返す（呼び出し側で処理）
+                return bert_score, bleu_score, None
+        except Exception as e:
+            print(f"LLM評価エラー: {e}")
+            return bert_score, bleu_score, None
+    
     return bert_score, bleu_score
 
 
-def calculate_scores_batch(text_pairs: List[Tuple[str, str]]) -> List[Tuple[float, float]]:
+def calculate_scores_batch(
+    text_pairs: List[Tuple[str, str]],
+    include_llm_score: bool = False,
+    llm_model_name: str = "gpt-4o-mini",
+    llm_temperature: float = 0.0
+) -> Union[List[Tuple[float, float]], List[Tuple[float, float, float]]]:
     """
-    大量のテキストペアのスコアを効率的に計算
+    大量のテキストペアのスコアを効率的に計算（オプションでLLMスコアも）
     
     Args:
         text_pairs: [(text_a1, text_b1), (text_a2, text_b2), ...] のリスト
+        include_llm_score: LLM評価スコアを含めるかどうか
+        llm_model_name: LLM評価に使用するモデル名
+        llm_temperature: LLM評価の温度パラメータ
         
     Returns:
-        [(bert_score1, bleu_score1), (bert_score2, bleu_score2), ...] のリスト
+        [(bert_score1, bleu_score1), ...] または [(bert_score1, bleu_score1, llm_score1), ...] のリスト
     """
     if not text_pairs:
         return []
@@ -132,7 +169,26 @@ def calculate_scores_batch(text_pairs: List[Tuple[str, str]]) -> List[Tuple[floa
             hyp_tokens = text_b.lower().split()
             bleu_score = sentence_bleu([ref_tokens], hyp_tokens, smoothing_function=smoothing)
         
-        results.append((bert_score, bleu_score))
+        # LLMスコア計算（オプション）
+        if include_llm_score:
+            try:
+                from .llm_score import calculate_llm_score
+                llm_result = calculate_llm_score(
+                    reference_text=text_a,
+                    candidate_text=text_b,
+                    model_name=llm_model_name,
+                    temperature=llm_temperature
+                )
+                if llm_result:
+                    llm_score = llm_result["normalized_score"]
+                    results.append((bert_score, bleu_score, llm_score))
+                else:
+                    results.append((bert_score, bleu_score, None))
+            except Exception as e:
+                print(f"LLM評価エラー: {e}")
+                results.append((bert_score, bleu_score, None))
+        else:
+            results.append((bert_score, bleu_score))
     
     return results
 
@@ -156,25 +212,37 @@ def calculate_scores_with_descriptions(
     text_a: str, 
     text_b: str, 
     aspect_manager=None,
-    use_descriptions: bool = False
-) -> Tuple[float, float]:
+    use_descriptions: bool = False,
+    include_llm_score: bool = False,
+    llm_model_name: str = "gpt-4o-mini",
+    llm_temperature: float = 0.0
+) -> Union[Tuple[float, float], Tuple[float, float, float]]:
     """
-    アスペクト説明文オプション付きスコア計算
+    アスペクト説明文オプション付きスコア計算（オプションでLLMスコアも）
     
     Args:
         text_a: テキストA（通常はアスペクト名）
         text_b: テキストB（LLM応答）
         aspect_manager: アスペクト説明文管理クラス
         use_descriptions: 説明文を使用するかどうか
+        include_llm_score: LLM評価スコアを含めるかどうか
+        llm_model_name: LLM評価に使用するモデル名
+        llm_temperature: LLM評価の温度パラメータ
         
     Returns:
-        (BERTスコア, BLEUスコア) のタプル
+        (BERTスコア, BLEUスコア) または (BERTスコア, BLEUスコア, LLMスコア) のタプル
     """
     if use_descriptions and aspect_manager and aspect_manager.has_descriptions():
         # アスペクト名を説明文に変換
         text_a = aspect_manager.get_description(text_a)
     
-    return calculate_scores(text_a, text_b)
+    return calculate_scores(
+        text_a, 
+        text_b, 
+        include_llm_score=include_llm_score,
+        llm_model_name=llm_model_name,
+        llm_temperature=llm_temperature
+    )
 
 
 def main():

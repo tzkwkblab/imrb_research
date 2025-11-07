@@ -51,15 +51,28 @@ logger = logging.getLogger(__name__)
 class ContrastFactorAnalyzer:
     """対比因子分析統合クラス"""
     
-    def __init__(self, debug: bool = False, use_aspect_descriptions: bool = False):
+    def __init__(
+        self, 
+        debug: bool = False, 
+        use_aspect_descriptions: bool = False,
+        use_llm_evaluation: bool = False,
+        llm_evaluation_model: str = "gpt-4o-mini",
+        llm_evaluation_temperature: float = 0.0
+    ):
         """
         初期化
         Args:
             debug: デバッグモードの有効/無効
             use_aspect_descriptions: アスペクト説明文を使用するかどうか
+            use_llm_evaluation: LLM評価スコアを使用するかどうか
+            llm_evaluation_model: LLM評価に使用するモデル名
+            llm_evaluation_temperature: LLM評価の温度パラメータ
         """
         self.debug = debug
         self.use_aspect_descriptions = use_aspect_descriptions
+        self.use_llm_evaluation = use_llm_evaluation
+        self.llm_evaluation_model = llm_evaluation_model
+        self.llm_evaluation_temperature = llm_evaluation_temperature
         self.llm_client = None
         self.aspect_manager = None
     
@@ -161,9 +174,19 @@ class ContrastFactorAnalyzer:
         if self.debug:
             logger.debug("Step 3: スコア計算")
         
+        # LLM評価スコアの取得
+        llm_score = None
+        llm_evaluation_reasoning = None
+        
         if self.use_aspect_descriptions and self.aspect_manager:
-            bert_score, bleu_score = calculate_scores_with_descriptions(
-                correct_answer, llm_response, self.aspect_manager, True
+            scores = calculate_scores_with_descriptions(
+                correct_answer, 
+                llm_response, 
+                self.aspect_manager, 
+                True,
+                include_llm_score=self.use_llm_evaluation,
+                llm_model_name=self.llm_evaluation_model,
+                llm_temperature=self.llm_evaluation_temperature
             )
             if self.debug:
                 try:
@@ -171,11 +194,41 @@ class ContrastFactorAnalyzer:
                 except Exception:
                     logger.debug("説明文取得に失敗")
         else:
-            bert_score, bleu_score = calculate_scores(correct_answer, llm_response)
+            scores = calculate_scores(
+                correct_answer, 
+                llm_response,
+                include_llm_score=self.use_llm_evaluation,
+                llm_model_name=self.llm_evaluation_model,
+                llm_temperature=self.llm_evaluation_temperature
+            )
+        
+        # スコアの展開
+        if len(scores) == 3:
+            bert_score, bleu_score, llm_score = scores
+        else:
+            bert_score, bleu_score = scores
         
         if self.debug:
             logger.debug("BERTスコア: %.4f", bert_score)
             logger.debug("BLEUスコア: %.4f", bleu_score)
+            if llm_score is not None:
+                logger.debug("LLMスコア: %.4f", llm_score)
+        
+        # LLM評価理由の取得（LLM評価が有効な場合）
+        if self.use_llm_evaluation and llm_score is not None:
+            try:
+                from ..scores.llm_score import calculate_llm_score
+                llm_result = calculate_llm_score(
+                    reference_text=correct_answer,
+                    candidate_text=llm_response,
+                    model_name=self.llm_evaluation_model,
+                    temperature=self.llm_evaluation_temperature
+                )
+                if llm_result:
+                    llm_evaluation_reasoning = llm_result.get("reasoning", "")
+            except Exception as e:
+                if self.debug:
+                    logger.debug("LLM評価理由取得エラー: %s", e)
         
         # 4. 結果構造化
         input_dict = {
@@ -213,14 +266,17 @@ class ContrastFactorAnalyzer:
             "evaluation": {
                 "bert_score": bert_score,
                 "bleu_score": bleu_score,
+                "llm_score": llm_score,
+                "llm_evaluation_reasoning": llm_evaluation_reasoning,
                 "similarity_scores": {
                     "semantic_similarity": bert_score,
-                    "lexical_similarity": bleu_score
+                    "lexical_similarity": bleu_score,
+                    "llm_similarity": llm_score
                 }
             },
             "summary": {
                 "success": True,
-                "quality_assessment": self._assess_quality(bert_score, bleu_score),
+                "quality_assessment": self._assess_quality(bert_score, bleu_score, llm_score),
                 "processing_time": timestamp
             }
         }
@@ -232,9 +288,12 @@ class ContrastFactorAnalyzer:
         
         return result
     
-    def _assess_quality(self, bert_score: float, bleu_score: float) -> Dict:
+    def _assess_quality(self, bert_score: float, bleu_score: float, llm_score: Optional[float] = None) -> Dict:
         """品質評価"""
-        avg_score = (bert_score + bleu_score) / 2
+        scores = [bert_score, bleu_score]
+        if llm_score is not None:
+            scores.append(llm_score)
+        avg_score = sum(scores) / len(scores)
         
         if avg_score >= 0.8:
             quality = "excellent"
@@ -245,12 +304,17 @@ class ContrastFactorAnalyzer:
         else:
             quality = "poor"
         
-        return {
+        result = {
             "overall_quality": quality,
             "average_score": avg_score,
             "bert_quality": "high" if bert_score >= 0.7 else "medium" if bert_score >= 0.5 else "low",
             "bleu_quality": "high" if bleu_score >= 0.3 else "medium" if bleu_score >= 0.1 else "low"
         }
+        
+        if llm_score is not None:
+            result["llm_quality"] = "high" if llm_score >= 0.7 else "medium" if llm_score >= 0.5 else "low"
+        
+        return result
     
     def _save_results(self, result: Dict, output_dir: str, experiment_name: str, timestamp: str) -> str:
         """結果保存"""

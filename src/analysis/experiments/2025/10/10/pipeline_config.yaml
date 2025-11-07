@@ -49,3 +49,12 @@ general:
   use_examples: false
   examples_file:
   max_examples:
+
+# 評価設定
+evaluation:
+  use_llm_score: false
+  llm_evaluation_model: "gpt-4o-mini"
+  llm_evaluation_temperature: 0.0
+  async_config:
+    max_concurrent_llm_requests: 5
+    max_concurrent_experiments: 3

@@ -19,6 +19,7 @@ Markdown==3.8
 MarkupSafe==3.0.2
 narwhals==1.41.1
 numpy==2.2.6
+openai>=1.0.0
 packaging==25.0
 pandas==2.3.0
 pdfminer.six==20250327
