@@ -264,6 +264,8 @@ class ContrastFactorAnalyzer:
                 "llm_response": llm_response
             },
             "evaluation": {
+                "reference_text": correct_answer,
+                "candidate_text": llm_response,
                 "bert_score": bert_score,
                 "bleu_score": bleu_score,
                 "llm_score": llm_score,

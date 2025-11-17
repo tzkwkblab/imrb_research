@@ -665,6 +665,36 @@ class ExperimentPipeline:
             )
         lines.append("")
         
+        # 比較対象テキストセクション
+        lines.append("## 比較対象テキスト")
+        lines.append("")
+        for idx, r in enumerate(results, 1):
+            if not r.get('summary', {}).get('success', False):
+                continue
+            info = r.get('experiment_info', {})
+            evals = r.get('evaluation', {})
+            dataset = info.get('dataset', '')
+            aspect = info.get('aspect', '')
+            
+            reference_text = evals.get('reference_text', '')
+            candidate_text = evals.get('candidate_text', '')
+            
+            if reference_text or candidate_text:
+                lines.append(f"### 実験 {idx}: {dataset} - {aspect}")
+                lines.append("")
+                lines.append("**正解テキスト (Reference):**")
+                lines.append("")
+                lines.append(f"```")
+                lines.append(reference_text)
+                lines.append("```")
+                lines.append("")
+                lines.append("**生成テキスト (Candidate):**")
+                lines.append("")
+                lines.append(f"```")
+                lines.append(candidate_text)
+                lines.append("```")
+                lines.append("")
+        
         # 画像URLセクションを追加（retrieved_conceptsデータセットの場合）
         image_sections_added = False
         for r in results:
