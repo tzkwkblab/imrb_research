@@ -1,0 +1,33 @@
+{
+  "timestamp": "20251117_174223",
+  "run_name": "tmporbm772c",
+  "output_dir": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/11/17/results/20251117_174223",
+  "config_path": "/var/folders/d5/1xhk4r3105n15zqmc6kl877c0000gn/T/tmporbm772c.yaml",
+  "experiments": [
+    {
+      "aspects": [
+        "gameplay",
+        "visual",
+        "story"
+      ],
+      "dataset": "steam",
+      "group_size": 50,
+      "split_type": "aspect_vs_others"
+    }
+  ],
+  "llm": {
+    "max_tokens": 1000,
+    "model": "gpt-5-nano",
+    "temperature": 0.7
+  },
+  "general": {
+    "aspect_descriptions_file": "/Users/seinoshun/imrb_research/data/analysis-workspace/aspect_descriptions/steam/descriptions_official.csv",
+    "console_output": true,
+    "debug_mode": true,
+    "examples_file": "/Users/seinoshun/imrb_research/data/analysis-workspace/contrast_examples/steam/steam_examples_v1.json",
+    "max_examples": 2,
+    "silent_mode": false,
+    "use_aspect_descriptions": true,
+    "use_examples": true
+  }
+}

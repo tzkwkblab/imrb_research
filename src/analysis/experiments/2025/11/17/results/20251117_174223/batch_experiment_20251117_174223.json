@@ -1,0 +1,48 @@
+{
+  "experiment_meta": {
+    "timestamp": "20251117_174223",
+    "config_file": "/var/folders/d5/1xhk4r3105n15zqmc6kl877c0000gn/T/tmporbm772c.yaml",
+    "total_experiments": 3,
+    "successful_experiments": 0,
+    "run_name": "tmporbm772c",
+    "output_dir": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/11/17/results/20251117_174223"
+  },
+  "results": [
+    {
+      "experiment_info": {
+        "experiment_id": "steam_gameplay_20251117_174223",
+        "dataset": "steam",
+        "aspect": "gameplay",
+        "error": "LLMからの応答取得に失敗しました"
+      },
+      "summary": {
+        "success": false,
+        "error": "LLMからの応答取得に失敗しました"
+      }
+    },
+    {
+      "experiment_info": {
+        "experiment_id": "steam_visual_20251117_174223",
+        "dataset": "steam",
+        "aspect": "visual",
+        "error": "LLMからの応答取得に失敗しました"
+      },
+      "summary": {
+        "success": false,
+        "error": "LLMからの応答取得に失敗しました"
+      }
+    },
+    {
+      "experiment_info": {
+        "experiment_id": "steam_story_20251117_174223",
+        "dataset": "steam",
+        "aspect": "story",
+        "error": "LLMからの応答取得に失敗しました"
+      },
+      "summary": {
+        "success": false,
+        "error": "LLMからの応答取得に失敗しました"
+      }
+    }
+  ]
+}

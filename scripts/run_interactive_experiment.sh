@@ -55,6 +55,7 @@ run_new_configuration() {
 
     select_dataset
     choose_aspect_representation || true
+    select_llm_model_for_generation || true
     select_aspects
     input_group_size
     select_split_type

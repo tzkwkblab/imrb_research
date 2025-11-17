@@ -101,7 +101,7 @@ class ExperimentPipeline:
         
     def setup_logging(self):
         """ログ設定"""
-        log_level = logging.INFO if self.debug else logging.WARNING
+        log_level = logging.DEBUG if self.debug else logging.INFO
         logging.basicConfig(
             level=log_level,
             format='%(asctime)s - %(levelname)s - %(message)s'
@@ -254,6 +254,7 @@ class ExperimentPipeline:
             # LLM設定から出力生成モデルを取得
             llm_cfg = self.config.get('llm', {}) or {}
             llm_model = llm_cfg.get('model', 'gpt-5-nano')
+            llm_max_tokens = llm_cfg.get('max_tokens')
             
             # 評価設定からLLM評価設定を取得
             evaluation_cfg = self.config.get('evaluation', {}) or {}
@@ -300,7 +301,8 @@ class ExperimentPipeline:
                 aspect_descriptions_file=desc_file,
                 examples=examples_payload,
                 group_a_top5_image_urls=group_a_top5_image_urls,
-                group_b_top5_image_urls=group_b_top5_image_urls
+                group_b_top5_image_urls=group_b_top5_image_urls,
+                max_tokens=llm_max_tokens
             )
             
             self.logger.info("✅ LLM応答取得完了")

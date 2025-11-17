@@ -94,7 +94,8 @@ class ContrastFactorAnalyzer:
         dataset_path: Optional[str] = None,
         aspect_descriptions_file: Optional[str] = None,
         group_a_top5_image_urls: Optional[List[str]] = None,
-        group_b_top5_image_urls: Optional[List[str]] = None
+        group_b_top5_image_urls: Optional[List[str]] = None,
+        max_tokens: Optional[int] = None
     ) -> Dict:
         """
         対比因子分析を実行
@@ -145,7 +146,8 @@ class ContrastFactorAnalyzer:
             group_a=group_a,
             group_b=group_b,
             output_language=output_language,
-            examples=examples
+            examples=examples,
+            max_tokens=max_tokens
         )
         
         if self.debug:

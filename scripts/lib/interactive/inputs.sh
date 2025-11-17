@@ -395,17 +395,78 @@ select_llm_model() {
     local purpose=$1
     local default_model=${2:-"gpt-5-nano"}
     
-    print_section "LLMモデル選択（${purpose}用）"
+    print_section "LLMモデル選択（${purpose}用）" >&2
     
     local selector_script="$INTERACTIVE_DIR/model_selector.py"
     if [[ ! -f "$selector_script" ]]; then
-        print_warning "モデル選択スクリプトが見つかりません。手動入力にフォールバックします。"
+        print_warning "モデル選択スクリプトが見つかりません。手動入力にフォールバックします。" >&2
         read -p "LLMモデル名 (Enter=${default_model}): " model
         if [[ -z "$model" ]]; then
             echo "$default_model"
         else
             echo "$model"
         fi
+        return 0
+    fi
+    
+    echo "" >&2
+    local options_output
+    options_output=$(python "$selector_script" list 2>/dev/null)
+    
+    if [[ $? -ne 0 || -z "$options_output" ]]; then
+        print_warning "モデル一覧の取得に失敗しました。手動入力にフォールバックします。" >&2
+        read -p "LLMモデル名 (Enter=${default_model}): " model
+        if [[ -z "$model" ]]; then
+            echo "$default_model"
+        else
+            echo "$model"
+        fi
+        return 0
+    fi
+    
+    echo "$options_output" >&2
+    echo "" >&2
+    
+    local max_index
+    max_index=$(echo "$options_output" | grep -E "^\s+[0-9]+\)" | tail -1 | awk '{print $1}' | tr -d ')')
+    
+    while true; do
+        read -p "選択してください (番号、Enter=1): " choice
+        if [[ -z "$choice" ]]; then
+            choice=1
+        fi
+        
+        if ! [[ "$choice" =~ ^[0-9]+$ ]]; then
+            print_error "数値を入力してください。" >&2
+            continue
+        fi
+        
+        if (( choice >= 1 && choice <= max_index )); then
+            local selected_model
+            selected_model=$(python "$selector_script" get "$choice" 2>/dev/null)
+            
+            if [[ -n "$selected_model" ]]; then
+                echo "$selected_model"
+                return 0
+            else
+                print_error "モデル情報の取得に失敗しました。再度選択してください。" >&2
+            fi
+        else
+            print_error "無効な番号です。1から${max_index}の数字を入力してください。" >&2
+        fi
+    done
+}
+
+select_llm_model_for_generation() {
+    print_section "LLMモデル選択（出力生成用）"
+    
+    local selector_script="$INTERACTIVE_DIR/model_selector.py"
+    local default_model="gpt-4o-mini"
+    
+    if [[ ! -f "$selector_script" ]]; then
+        print_warning "モデル選択スクリプトが見つかりません。デフォルトモデルを使用します。"
+        LLM_MODEL="$default_model"
+        print_info "出力生成モデル: $LLM_MODEL (デフォルト)"
         return 0
     fi
     
@@ -414,56 +475,51 @@ select_llm_model() {
     options_output=$(python "$selector_script" list 2>/dev/null)
     
     if [[ $? -ne 0 || -z "$options_output" ]]; then
-        print_warning "モデル一覧の取得に失敗しました。手動入力にフォールバックします。"
-        read -p "LLMモデル名 (Enter=${default_model}): " model
-        if [[ -z "$model" ]]; then
-            echo "$default_model"
-        else
-            echo "$model"
-        fi
+        print_warning "モデル一覧の取得に失敗しました。デフォルトモデルを使用します。"
+        LLM_MODEL="$default_model"
+        print_info "出力生成モデル: $LLM_MODEL (デフォルト)"
         return 0
     fi
     
     echo "$options_output"
     echo ""
+    echo "0) デフォルト (gpt-4o-mini)"
     
     local max_index
-    max_index=$(echo "$options_output" | grep -E "^\s+[0-9]+\)" | tail -1 | sed -E 's/^\s+([0-9]+)\).*/\1/')
+    max_index=$(echo "$options_output" | grep -E "^\s+[0-9]+\)" | tail -1 | awk '{print $1}' | tr -d ')')
     
     while true; do
-        read -p "選択してください (番号、Enter=1): " choice
+        read -p "選択してください (番号、Enter=0=gpt-4o-mini): " choice
         if [[ -z "$choice" ]]; then
-            choice=1
+            choice=0
         fi
         
-        if [[ "$choice" =~ ^[0-9]+$ ]] && (( choice >= 1 && choice <= max_index )); then
+        if ! [[ "$choice" =~ ^[0-9]+$ ]]; then
+            print_error "数値を入力してください。"
+            continue
+        fi
+        
+        if [[ "$choice" == "0" ]]; then
+            LLM_MODEL="$default_model"
+            print_success "出力生成モデル: $LLM_MODEL (デフォルト)"
+            return 0
+        fi
+        
+        if (( choice >= 1 && choice <= max_index )); then
             local selected_model
             selected_model=$(python "$selector_script" get "$choice" 2>/dev/null)
             
             if [[ -n "$selected_model" ]]; then
-                echo "$selected_model"
+                LLM_MODEL="$selected_model"
+                print_success "出力生成モデル: $LLM_MODEL"
                 return 0
             else
                 print_error "モデル情報の取得に失敗しました。再度選択してください。"
             fi
         else
-            print_error "無効な番号です。1から${max_index}の数字を入力してください。"
+            print_error "無効な番号です。0から${max_index}の数字を入力してください。"
         fi
     done
-}
-
-select_llm_model_for_generation() {
-    print_section "LLMモデル選択（出力生成用）"
-    read -p "出力生成用のLLMモデルを選択しますか？ (y/n, Enter=n): " select_model
-    if [[ -z "$select_model" || "$select_model" == "n" || "$select_model" == "N" ]]; then
-        LLM_MODEL=""
-        print_info "デフォルトモデルを使用します（設定ファイルから取得）"
-        return 0
-    fi
-
-    LLM_MODEL=$(select_llm_model "出力生成" "gpt-5-nano")
-    print_success "出力生成モデル: $LLM_MODEL"
-    return 0
 }
 
 select_llm_evaluation() {
@@ -471,7 +527,7 @@ select_llm_evaluation() {
     read -p "LLM評価スコアを計算しますか？ (y/n, Enter=n): " use_llm
     if [[ -z "$use_llm" || "$use_llm" == "n" || "$use_llm" == "N" ]]; then
         USE_LLM_SCORE="0"
-        LLM_EVALUATION_MODEL="gpt-5-nano"
+        LLM_EVALUATION_MODEL="gpt-4o-mini"
         LLM_EVALUATION_TEMPERATURE="0.0"
         print_info "LLM評価スコアは使用しません"
         return 0
@@ -479,9 +535,72 @@ select_llm_evaluation() {
 
     USE_LLM_SCORE="1"
     print_info "LLM評価スコアを有効にします"
+    echo ""
     
-    LLM_EVALUATION_MODEL=$(select_llm_model "評価" "gpt-5-nano")
+    print_section "LLMモデル選択（評価用）" >&2
     
+    local selector_script="$INTERACTIVE_DIR/model_selector.py"
+    local default_model="gpt-4o-mini"
+    
+    if [[ ! -f "$selector_script" ]]; then
+        print_warning "モデル選択スクリプトが見つかりません。デフォルトモデルを使用します。" >&2
+        LLM_EVALUATION_MODEL="$default_model"
+        print_info "評価モデル: $LLM_EVALUATION_MODEL (デフォルト)" >&2
+    else
+        echo "" >&2
+        local options_output
+        options_output=$(python "$selector_script" list 2>/dev/null)
+        
+        if [[ $? -ne 0 || -z "$options_output" ]]; then
+            print_warning "モデル一覧の取得に失敗しました。デフォルトモデルを使用します。" >&2
+            LLM_EVALUATION_MODEL="$default_model"
+            print_info "評価モデル: $LLM_EVALUATION_MODEL (デフォルト)" >&2
+        else
+            echo "$options_output" >&2
+            echo "" >&2
+            echo "0) デフォルト (gpt-4o-mini)" >&2
+            
+            local max_index
+            max_index=$(echo "$options_output" | grep -E "^\s+[0-9]+\)" | tail -1 | awk '{print $1}' | tr -d ')')
+            
+            while true; do
+                read -p "選択してください (番号、Enter=0=gpt-4o-mini): " choice
+                if [[ -z "$choice" ]]; then
+                    choice=0
+                fi
+                
+                if ! [[ "$choice" =~ ^[0-9]+$ ]]; then
+                    print_error "数値を入力してください。" >&2
+                    continue
+                fi
+                
+                if [[ "$choice" == "0" ]]; then
+                    LLM_EVALUATION_MODEL="$default_model"
+                    echo ""
+                    print_success "評価モデル: $LLM_EVALUATION_MODEL (デフォルト)"
+                    break
+                fi
+                
+                if (( choice >= 1 && choice <= max_index )); then
+                    local selected_model
+                    selected_model=$(python "$selector_script" get "$choice" 2>/dev/null)
+                    
+                    if [[ -n "$selected_model" ]]; then
+                        LLM_EVALUATION_MODEL="$selected_model"
+                        echo ""
+                        print_success "評価モデル: $LLM_EVALUATION_MODEL"
+                        break
+                    else
+                        print_error "モデル情報の取得に失敗しました。再度選択してください。" >&2
+                    fi
+                else
+                    print_error "無効な番号です。0から${max_index}の数字を入力してください。" >&2
+                fi
+            done
+        fi
+    fi
+    
+    echo ""
     read -p "LLM評価温度パラメータ (Enter=0.0): " temp
     if [[ -z "$temp" ]]; then
         LLM_EVALUATION_TEMPERATURE="0.0"

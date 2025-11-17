@@ -61,7 +61,8 @@ def generate_contrast_factor_prompt(
     group_a: List[str],
     group_b: List[str],
     output_language: Optional[str] = None,
-    examples: Optional[List[Dict]] = None
+    examples: Optional[List[Dict]] = None,
+    max_tokens: Optional[int] = None
 ) -> tuple[str, Dict]:
     """
     対比因子生成プロンプトを作成
@@ -72,12 +73,16 @@ def generate_contrast_factor_prompt(
         output_language: 出力言語（None時は設定ファイルのデフォルト使用）
         examples: Few-shot用例題リスト
                  [{"group_a": [...], "group_b": [...], "answer": "..."}]
+        max_tokens: 最大トークン数（None時は設定ファイルのデフォルト使用）
     
     Returns:
         (プロンプト文字列, モデル設定辞書)
     """
     # 設定読み込み
     model_config = get_openai_params()
+    # max_tokensが指定されている場合は上書き
+    if max_tokens is not None:
+        model_config['max_tokens'] = max_tokens
     prompt_config = _load_prompt_config()
     
     # デフォルト言語設定
