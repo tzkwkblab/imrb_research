@@ -133,6 +133,14 @@ def parse_args():
         help='LLM評価の温度パラメータ (default: 0.0)'
     )
     
+    # LLM出力生成モデルオプション
+    parser.add_argument(
+        '--llm-model',
+        type=str,
+        default=None,
+        help='出力生成に使用するLLMモデル名 (default: 設定ファイルから取得)'
+    )
+    
     # その他オプション
     parser.add_argument(
         '--debug',
@@ -185,7 +193,7 @@ def create_quick_config(args) -> dict:
             'save_intermediate': not args.silent
         },
         'llm': {
-            'model': 'gpt-4o-mini',
+            'model': args.llm_model if args.llm_model else 'gpt-5-nano',
             'temperature': 0.7,
             'max_tokens': 150
         },

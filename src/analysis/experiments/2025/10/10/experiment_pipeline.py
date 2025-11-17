@@ -251,10 +251,14 @@ class ExperimentPipeline:
                 except Exception:
                     max_examples = None
             
+            # LLM設定から出力生成モデルを取得
+            llm_cfg = self.config.get('llm', {}) or {}
+            llm_model = llm_cfg.get('model', 'gpt-5-nano')
+            
             # 評価設定からLLM評価設定を取得
             evaluation_cfg = self.config.get('evaluation', {}) or {}
             use_llm_eval = bool(evaluation_cfg.get('use_llm_score', False))
-            llm_eval_model = evaluation_cfg.get('llm_evaluation_model', 'gpt-4o-mini')
+            llm_eval_model = evaluation_cfg.get('llm_evaluation_model', 'gpt-5-nano')
             llm_eval_temp = float(evaluation_cfg.get('llm_evaluation_temperature', 0.0))
 
             analyzer = ContrastFactorAnalyzer(
@@ -264,6 +268,9 @@ class ExperimentPipeline:
                 llm_evaluation_model=llm_eval_model,
                 llm_evaluation_temperature=llm_eval_temp
             )
+            
+            # 出力生成用のLLMクライアントを設定
+            analyzer._get_llm_client(model_name=llm_model)
             
             # 例題読み込み（必要時）
             examples_payload: Optional[List[Dict]] = None

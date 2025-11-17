@@ -45,7 +45,8 @@ reset_experiment_state() {
     EXAMPLES_FILE=""
     MAX_EXAMPLES=""
     USE_LLM_SCORE="0"
-    LLM_EVALUATION_MODEL="gpt-4o-mini"
+    LLM_MODEL=""
+    LLM_EVALUATION_MODEL="gpt-5-nano"
     LLM_EVALUATION_TEMPERATURE="0.0"
 }
 

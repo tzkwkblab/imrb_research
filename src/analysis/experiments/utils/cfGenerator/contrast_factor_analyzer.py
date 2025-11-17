@@ -76,10 +76,10 @@ class ContrastFactorAnalyzer:
         self.llm_client = None
         self.aspect_manager = None
     
-    def _get_llm_client(self):
+    def _get_llm_client(self, model_name: str = None):
         """LLMクライアントの遅延初期化"""
         if self.llm_client is None:
-            self.llm_client = LLMFactory.create_client(debug=self.debug)
+            self.llm_client = LLMFactory.create_client(model_name=model_name, debug=self.debug)
         return self.llm_client
     
     def analyze(

@@ -16,6 +16,7 @@ USE_EXAMPLES="$USE_EXAMPLES"
 EXAMPLES_FILE="$EXAMPLES_FILE"
 MAX_EXAMPLES="$MAX_EXAMPLES"
 USE_LLM_SCORE="$USE_LLM_SCORE"
+LLM_MODEL="$LLM_MODEL"
 LLM_EVALUATION_MODEL="$LLM_EVALUATION_MODEL"
 LLM_EVALUATION_TEMPERATURE="$LLM_EVALUATION_TEMPERATURE"
 EOF
@@ -50,6 +51,11 @@ load_previous_config() {
         fi
     else
         echo "例題使用: 無効"
+    fi
+    if [[ -n "$LLM_MODEL" ]]; then
+        echo "出力生成モデル: $LLM_MODEL"
+    else
+        echo "出力生成モデル: デフォルト（設定ファイルから取得）"
     fi
     if [[ "$USE_LLM_SCORE" == "1" ]]; then
         echo "LLM評価スコア: 有効"

@@ -3,6 +3,18 @@ import logging
 from .base_llm import BaseLLM
 from .gpt.gpt_client import GPTClient
 
+try:
+    from .gemini.gemini_client import GeminiClient
+except ImportError:
+    GeminiClient = None
+
+try:
+    from .claude.claude_client import ClaudeClient
+except ImportError:
+    ClaudeClient = None
+
+from .model_registry import get_provider_from_model_id
+
 
 class LLMFactory:
     """LLMクライアントファクトリー"""
@@ -12,8 +24,15 @@ class LLMFactory:
         'openai': GPTClient,
     }
     
+    # 利用可能なプロバイダーを動的に追加
+    if GeminiClient is not None:
+        _providers['google'] = GeminiClient
+    
+    if ClaudeClient is not None:
+        _providers['anthropic'] = ClaudeClient
+    
     # GPTモデルのプレフィックス
-    _gpt_prefixes = ['gpt-', 'text-', 'davinci', 'curie', 'babbage', 'ada']
+    _gpt_prefixes = ['gpt-', 'text-', 'davinci', 'curie', 'babbage', 'ada', 'o']
     
     @classmethod
     def create_client(cls, model_name: str = None, debug: bool = False, **kwargs) -> BaseLLM:
@@ -86,9 +105,34 @@ class LLMFactory:
             logger.debug("クライアントクラス推定: %s", model_name)
             logger.debug("GPTプレフィックス: %s", cls._gpt_prefixes)
         
+        # モデルレジストリからプロバイダーを推定
+        provider = get_provider_from_model_id(model_name)
+        
+        if provider and provider in cls._providers:
+            if debug:
+                logger.debug("プロバイダー '%s' と判定", provider)
+            return cls._providers[provider]
+        
+        # フォールバック: プレフィックスベースの判定
+        model_name_lower = model_name.lower()
+        
+        # Geminiモデルの場合
+        if model_name_lower.startswith('gemini-'):
+            if 'google' in cls._providers:
+                if debug:
+                    logger.debug("Geminiモデルと判定")
+                return cls._providers['google']
+        
+        # Claudeモデルの場合
+        if model_name_lower.startswith('claude-'):
+            if 'anthropic' in cls._providers:
+                if debug:
+                    logger.debug("Claudeモデルと判定")
+                return cls._providers['anthropic']
+        
         # GPTモデルの場合
         for prefix in cls._gpt_prefixes:
-            if model_name.startswith(prefix):
+            if model_name_lower.startswith(prefix):
                 if debug:
                     logger.debug("GPTモデルと判定: プレフィックス '%s' にマッチ", prefix)
                 return cls._providers['openai']

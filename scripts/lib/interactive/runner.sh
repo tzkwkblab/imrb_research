@@ -94,6 +94,10 @@ run_experiment() {
         fi
     fi
 
+    if [[ -n "$LLM_MODEL" ]]; then
+        cmd+=(--llm-model "$LLM_MODEL")
+    fi
+
     if [[ "$USE_LLM_SCORE" == "1" ]]; then
         cmd+=(--use-llm-score)
         if [[ -n "$LLM_EVALUATION_MODEL" ]]; then
