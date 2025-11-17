@@ -116,11 +116,7 @@ class ContrastFactorAnalyzer:
             分析結果辞書
         """
         if self.debug:
-            logger.debug("対比因子分析開始")
-            logger.debug("グループA: %d件", len(group_a))
-            logger.debug("グループB: %d件", len(group_b))
-            logger.debug("正解: %s", correct_answer)
-            logger.debug("アスペクト説明文使用: %s", self.use_aspect_descriptions)
+            logger.debug("対比因子分析開始 - グループA: %d件, グループB: %d件", len(group_a), len(group_b))
         
         # アスペクト説明文管理クラス初期化
         if self.use_aspect_descriptions:
@@ -129,19 +125,10 @@ class ContrastFactorAnalyzer:
                 self.aspect_manager = AspectDescriptionManager(csv_path=aspect_descriptions_file)
             elif dataset_path:
                 self.aspect_manager = AspectDescriptionManager(dataset_path=dataset_path)
-            if self.debug:
-                try:
-                    logger.debug("アスペクト説明文読み込み: %s (%s)", self.aspect_manager.has_descriptions(), getattr(self.aspect_manager, 'source_file', None))
-                except Exception:
-                    logger.debug("アスペクト説明文読み込み状況の記録に失敗")
-        
         # タイムスタンプ生成
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         
         # 1. プロンプト生成
-        if self.debug:
-            logger.debug("Step 1: プロンプト生成")
-        
         prompt, model_config = generate_contrast_factor_prompt(
             group_a=group_a,
             group_b=group_b,
@@ -152,14 +139,8 @@ class ContrastFactorAnalyzer:
         
         if self.debug:
             logger.debug("プロンプト長: %d文字", len(prompt))
-            try:
-                logger.debug("モデル設定: %s", {k: model_config[k] for k in model_config})
-            except Exception:
-                logger.debug("モデル設定の記録に失敗")
         
         # 2. LLM問い合わせ
-        if self.debug:
-            logger.debug("Step 2: LLM問い合わせ")
         
         client = self._get_llm_client()
         llm_response = client.ask(prompt, **model_config)
@@ -168,13 +149,9 @@ class ContrastFactorAnalyzer:
             raise RuntimeError("LLMからの応答取得に失敗しました")
 
         if self.debug:
-            # 機微情報対策: 本文は記録せず、長さと先頭一部のみ
-            preview = (llm_response or "")[:120]
-            logger.debug("LLM応答長: %d, 先頭プレビュー: %s", len(llm_response or ""), preview)
+            logger.debug("LLM応答取得完了 - 応答長: %d文字", len(llm_response or ""))
         
         # 3. スコア計算
-        if self.debug:
-            logger.debug("Step 3: スコア計算")
         
         # LLM評価スコアの取得
         llm_score = None

@@ -1,0 +1,29 @@
+evaluation:
+  llm_evaluation_model: gpt-4o-mini
+  llm_evaluation_temperature: 0.0
+  use_llm_score: true
+experiments:
+- aspects:
+  - gameplay
+  - visual
+  - story
+  dataset: steam
+  group_size: 50
+  split_type: aspect_vs_others
+general:
+  aspect_descriptions_file: /Users/seinoshun/imrb_research/data/analysis-workspace/aspect_descriptions/steam/descriptions_official.csv
+  console_output: true
+  debug_mode: true
+  examples_file: /Users/seinoshun/imrb_research/data/analysis-workspace/contrast_examples/steam/steam_examples_v1.json
+  max_examples: 2
+  silent_mode: false
+  use_aspect_descriptions: true
+  use_examples: true
+llm:
+  max_tokens: 5000
+  model: gpt-4o-mini
+  temperature: 0.7
+output:
+  directory: results/
+  format: json
+  save_intermediate: true
