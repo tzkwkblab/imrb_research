@@ -9,7 +9,7 @@
 <!-- 追加: {{LOG_DIR_PATH}}（ログディレクトリ相対パス） -->
 <!-- 追加: {{CLI_LOG_PATH}}（CLIログ相対パス） -->
 <!-- 追加: {{CLI_LOG_MD_LINK}}（[CLIログ](相対パス) リンク） -->
-<!-- {{RESULTS_TABLE}}: 先頭数件の結果テーブル（データセット/アスペクト/BERT/BLEU） -->
+<!-- {{RESULTS_TABLE}}: 先頭数件の結果テーブル（データセット/アスペクト/BERT/BLEU/LLM） -->
 
 # 実験概要 {{TIMESTAMP}}
 

@@ -391,6 +391,38 @@ select_examples_file() {
     return 0
 }
 
+select_llm_evaluation() {
+    print_section "LLM評価スコア設定"
+    read -p "LLM評価スコアを計算しますか？ (y/n, Enter=n): " use_llm
+    if [[ -z "$use_llm" || "$use_llm" == "n" || "$use_llm" == "N" ]]; then
+        USE_LLM_SCORE="0"
+        LLM_EVALUATION_MODEL="gpt-4o-mini"
+        LLM_EVALUATION_TEMPERATURE="0.0"
+        print_info "LLM評価スコアは使用しません"
+        return 0
+    fi
+
+    USE_LLM_SCORE="1"
+    print_info "LLM評価スコアを有効にします"
+    
+    read -p "LLM評価モデル名 (Enter=gpt-4o-mini): " model
+    if [[ -z "$model" ]]; then
+        LLM_EVALUATION_MODEL="gpt-4o-mini"
+    else
+        LLM_EVALUATION_MODEL="$model"
+    fi
+    
+    read -p "LLM評価温度パラメータ (Enter=0.0): " temp
+    if [[ -z "$temp" ]]; then
+        LLM_EVALUATION_TEMPERATURE="0.0"
+    else
+        LLM_EVALUATION_TEMPERATURE="$temp"
+    fi
+    
+    print_success "LLM評価スコア設定: モデル=$LLM_EVALUATION_MODEL, 温度=$LLM_EVALUATION_TEMPERATURE"
+    return 0
+}
+
 confirm_settings() {
     print_section "設定確認"
 
@@ -413,6 +445,13 @@ confirm_settings() {
         fi
     else
         echo "  例題使用: 無効"
+    fi
+    if [[ "$USE_LLM_SCORE" == "1" ]]; then
+        echo "  LLM評価スコア: 有効"
+        echo "  LLM評価モデル: $LLM_EVALUATION_MODEL"
+        echo "  LLM評価温度: $LLM_EVALUATION_TEMPERATURE"
+    else
+        echo "  LLM評価スコア: 無効"
     fi
     echo ""
 

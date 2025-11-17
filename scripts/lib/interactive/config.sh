@@ -15,6 +15,9 @@ ASPECT_DESCRIPTIONS_FILE="$ASPECT_DESCRIPTIONS_FILE"
 USE_EXAMPLES="$USE_EXAMPLES"
 EXAMPLES_FILE="$EXAMPLES_FILE"
 MAX_EXAMPLES="$MAX_EXAMPLES"
+USE_LLM_SCORE="$USE_LLM_SCORE"
+LLM_EVALUATION_MODEL="$LLM_EVALUATION_MODEL"
+LLM_EVALUATION_TEMPERATURE="$LLM_EVALUATION_TEMPERATURE"
 EOF
 
     print_info "設定を保存しました: $CONFIG_FILE"
@@ -47,6 +50,13 @@ load_previous_config() {
         fi
     else
         echo "例題使用: 無効"
+    fi
+    if [[ "$USE_LLM_SCORE" == "1" ]]; then
+        echo "LLM評価スコア: 有効"
+        echo "LLM評価モデル: $LLM_EVALUATION_MODEL"
+        echo "LLM評価温度: $LLM_EVALUATION_TEMPERATURE"
+    else
+        echo "LLM評価スコア: 無効"
     fi
     echo ""
 

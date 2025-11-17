@@ -94,6 +94,16 @@ run_experiment() {
         fi
     fi
 
+    if [[ "$USE_LLM_SCORE" == "1" ]]; then
+        cmd+=(--use-llm-score)
+        if [[ -n "$LLM_EVALUATION_MODEL" ]]; then
+            cmd+=(--llm-evaluation-model "$LLM_EVALUATION_MODEL")
+        fi
+        if [[ -n "$LLM_EVALUATION_TEMPERATURE" ]]; then
+            cmd+=(--llm-evaluation-temperature "$LLM_EVALUATION_TEMPERATURE")
+        fi
+    fi
+
     if [[ "$SILENT_MODE" == "1" ]]; then
         cmd+=(--silent)
     fi

@@ -44,6 +44,9 @@ reset_experiment_state() {
     USE_EXAMPLES="0"
     EXAMPLES_FILE=""
     MAX_EXAMPLES=""
+    USE_LLM_SCORE="0"
+    LLM_EVALUATION_MODEL="gpt-4o-mini"
+    LLM_EVALUATION_TEMPERATURE="0.0"
 }
 
 run_new_configuration() {
@@ -55,6 +58,7 @@ run_new_configuration() {
     input_group_size
     select_split_type
     select_examples_file || true
+    select_llm_evaluation || true
 
     if confirm_settings; then
         run_experiment

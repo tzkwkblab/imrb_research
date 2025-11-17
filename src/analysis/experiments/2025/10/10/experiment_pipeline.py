@@ -562,6 +562,8 @@ class ExperimentPipeline:
                 input_data = r.get('input', {})
                 group_a_urls = input_data.get('group_a_top5_image_urls')
                 group_b_urls = input_data.get('group_b_top5_image_urls')
+                group_a_captions = input_data.get('group_a', [])
+                group_b_captions = input_data.get('group_b', [])
                 
                 if group_a_urls or group_b_urls:
                     if not image_sections_added:
@@ -581,6 +583,15 @@ class ExperimentPipeline:
                             lines.append(f'  <img src="{url}" width="18%" />')
                         lines.append("</p>")
                         lines.append("")
+                        # キャプションを表示
+                        if group_a_captions:
+                            lines.append("<p>")
+                            for i, caption in enumerate(group_a_captions[:5]):
+                                # キャプションを短縮（長すぎる場合）
+                                caption_display = caption if len(caption) <= 80 else caption[:77] + "..."
+                                lines.append(f'  <span style="font-size: 0.85em; width: 18%; display: inline-block; vertical-align: top; padding: 0 1%;">{caption_display}</span>')
+                            lines.append("</p>")
+                            lines.append("")
                     
                     if group_b_urls:
                         lines.append("#### グループB (Bottom-5)")
@@ -590,6 +601,15 @@ class ExperimentPipeline:
                             lines.append(f'  <img src="{url}" width="18%" />')
                         lines.append("</p>")
                         lines.append("")
+                        # キャプションを表示
+                        if group_b_captions:
+                            lines.append("<p>")
+                            for i, caption in enumerate(group_b_captions[:5]):
+                                # キャプションを短縮（長すぎる場合）
+                                caption_display = caption if len(caption) <= 80 else caption[:77] + "..."
+                                lines.append(f'  <span style="font-size: 0.85em; width: 18%; display: inline-block; vertical-align: top; padding: 0 1%;">{caption_display}</span>')
+                            lines.append("</p>")
+                            lines.append("")
                     
                     # 追加画像表示コマンド
                     out_file = r.get('output_file', '')

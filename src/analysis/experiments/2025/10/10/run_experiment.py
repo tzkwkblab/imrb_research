@@ -114,6 +114,25 @@ def parse_args():
         help='先頭N件のみ例題を使用（未指定は全件）'
     )
     
+    # LLM評価スコアオプション
+    parser.add_argument(
+        '--use-llm-score',
+        action='store_true',
+        help='LLM評価スコアを計算する（追加の評価指標）'
+    )
+    parser.add_argument(
+        '--llm-evaluation-model',
+        type=str,
+        default='gpt-4o-mini',
+        help='LLM評価に使用するモデル名 (default: gpt-4o-mini)'
+    )
+    parser.add_argument(
+        '--llm-evaluation-temperature',
+        type=float,
+        default=0.0,
+        help='LLM評価の温度パラメータ (default: 0.0)'
+    )
+    
     # その他オプション
     parser.add_argument(
         '--debug',
@@ -179,6 +198,11 @@ def create_quick_config(args) -> dict:
             'use_examples': bool(args.use_examples),
             'examples_file': args.examples_file,
             'max_examples': args.max_examples
+        },
+        'evaluation': {
+            'use_llm_score': bool(args.use_llm_score),
+            'llm_evaluation_model': args.llm_evaluation_model,
+            'llm_evaluation_temperature': args.llm_evaluation_temperature
         }
     }
     
