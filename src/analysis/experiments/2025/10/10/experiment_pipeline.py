@@ -619,8 +619,8 @@ class ExperimentPipeline:
         # 結果一覧
         lines.append("## 結果概要")
         lines.append("")
-        lines.append("| データセット | アスペクト | 件数(A/B) | 例題数 | BERT | BLEU | LLM | 品質 | LLM出力 | 出力ファイル |")
-        lines.append("| --- | --- | --- | ---:| ---:| ---:| ---:| --- | --- | --- |")
+        lines.append("| データセット | アスペクト | 件数(A/B) | 例題数 | BERT | BLEU | LLM | LLM理由 | 品質 | LLM出力 | 出力ファイル |")
+        lines.append("| --- | --- | --- | ---:| ---:| ---:| ---:| --- | --- | --- | --- |")
         for r in results:
             if not r.get('summary', {}).get('success', False):
                 continue
@@ -652,9 +652,13 @@ class ExperimentPipeline:
                 llm_text = llm_text[:157] + "..."
             llm_score = evals.get('llm_score')
             llm_score_display = f"{llm_score:.4f}" if llm_score is not None else "-"
+            llm_reasoning = evals.get('llm_evaluation_reasoning', '')
+            llm_reasoning_display = llm_reasoning.replace("\n", " ").replace("|", "｜").strip() if llm_reasoning else "-"
+            if len(llm_reasoning_display) > 80:
+                llm_reasoning_display = llm_reasoning_display[:77] + "..."
             lines.append(
                 f"| {info.get('dataset','')} | {aspect_display} | {counts_display} | {examples_count} | "
-                f"{evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} | {llm_score_display} | "
+                f"{evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} | {llm_score_display} | {llm_reasoning_display} | "
                 f"{r.get('summary',{}).get('quality_assessment',{}).get('overall_quality','')} | "
                 f"{llm_text} | "
                 f"{Path(out_file).name if out_file else ''} |"
@@ -926,8 +930,8 @@ class ExperimentPipeline:
     def _build_results_table(self, results: List[Dict], limit: int = 5) -> str:
         """結果テーブルMarkdownを作成"""
         lines = []
-        lines.append("| データセット | アスペクト | BERT | BLEU | LLM |")
-        lines.append("| --- | --- | ---:| ---:| ---:|")
+        lines.append("| データセット | アスペクト | BERT | BLEU | LLM | LLM理由 |")
+        lines.append("| --- | --- | ---:| ---:| ---:| --- |")
         for r in results[:limit]:
             info = r.get('experiment_info', {})
             evals = r.get('evaluation', {})
@@ -944,8 +948,12 @@ class ExperimentPipeline:
                 pass
             llm_score = evals.get('llm_score')
             llm_score_display = f"{llm_score:.4f}" if llm_score is not None else "-"
+            llm_reasoning = evals.get('llm_evaluation_reasoning', '')
+            llm_reasoning_display = llm_reasoning.replace("\n", " ").replace("|", "｜").strip() if llm_reasoning else "-"
+            if len(llm_reasoning_display) > 60:
+                llm_reasoning_display = llm_reasoning_display[:57] + "..."
             lines.append(
-                f"| {info.get('dataset','')} | {aspect_display} | {evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} | {llm_score_display} |"
+                f"| {info.get('dataset','')} | {aspect_display} | {evals.get('bert_score',0):.4f} | {evals.get('bleu_score',0):.4f} | {llm_score_display} | {llm_reasoning_display} |"
             )
         return "\n".join(lines)
 
