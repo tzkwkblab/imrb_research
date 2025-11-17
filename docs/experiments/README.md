@@ -5,6 +5,8 @@
 ### 推奨構成
 
 - `guides/`: 実験設計・評価指標の方針
+  - [実験スクリプト使い方ガイド](guides/experiment-script-guide.md)
+  - [LLM評価プロンプト仕様](guides/llm-evaluation-prompt.md)
 - `playbooks/`: データセット別の実行手順
 - `troubleshooting/`: 既知の課題と対処
 
