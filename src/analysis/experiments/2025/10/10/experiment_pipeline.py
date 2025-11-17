@@ -28,6 +28,7 @@ sys.path.insert(0, str(EXPERIMENTS_DIR))
 from utils.datasetManager.dataset_manager import DatasetManager
 from utils.cfGenerator.contrast_factor_analyzer import ContrastFactorAnalyzer
 from utils.scores.get_score import calculate_scores
+from utils.coco_image_url_converter import convert_coco_path_to_url
 
 
 class ExperimentPipeline:
@@ -480,6 +481,115 @@ class ExperimentPipeline:
         with open(self.run_dir / 'run_effective_config.json', 'w', encoding='utf-8') as f:
             json.dump(effective, f, ensure_ascii=False, indent=2)
 
+    def _extract_image_id_from_url(self, url: str) -> Optional[str]:
+        """
+        画像URLから画像ID（ファイル名）を抽出
+        
+        Args:
+            url: 画像URL（例: "http://images.cocodataset.org/train2017/000000081860.jpg"）
+        
+        Returns:
+            画像ID（例: "000000081860.jpg"）またはNone
+        """
+        if not url:
+            return None
+        try:
+            # URLからファイル名を抽出
+            # 例: "http://images.cocodataset.org/train2017/000000081860.jpg" -> "000000081860.jpg"
+            parts = url.split('/')
+            if parts:
+                filename = parts[-1]
+                return filename
+        except Exception:
+            pass
+        return None
+    
+    def _convert_url_to_image_path(self, url: str) -> Optional[str]:
+        """
+        画像URLを画像パスに逆変換
+        
+        Args:
+            url: 画像URL（例: "http://images.cocodataset.org/train2017/000000081860.jpg"）
+        
+        Returns:
+            画像パス（例: "data/coco/train2017/000000081860.jpg"）またはNone
+        """
+        if not url:
+            return None
+        try:
+            # URLから相対パスを抽出
+            # 例: "http://images.cocodataset.org/train2017/000000081860.jpg" -> "train2017/000000081860.jpg"
+            if "images.cocodataset.org/" in url:
+                relative_path = url.split("images.cocodataset.org/", 1)[1]
+                return f"data/coco/{relative_path}"
+        except Exception:
+            pass
+        return None
+    
+    def _find_caption_for_image_url(
+        self, 
+        image_url: str, 
+        captions: List[str],
+        output_file: Optional[str] = None
+    ) -> Optional[str]:
+        """
+        画像URLに対応するキャプションを取得
+        
+        Args:
+            image_url: 画像URL
+            captions: キャプションリスト
+            output_file: 出力JSONファイルパス（オプション、詳細情報を取得するため）
+        
+        Returns:
+            対応するキャプションまたはNone
+        """
+        if not image_url or not captions:
+            return None
+        
+        image_id = self._extract_image_id_from_url(image_url)
+        if not image_id:
+            return None
+        
+        # 出力JSONファイルから詳細情報を取得（可能な場合）
+        if output_file:
+            try:
+                with open(output_file, 'r', encoding='utf-8') as f:
+                    result_data = json.load(f)
+                
+                input_data = result_data.get('input', {})
+                group_a_records = input_data.get('group_a_records', [])
+                group_b_records = input_data.get('group_b_records', [])
+                
+                # グループAのレコードから検索
+                for record in group_a_records:
+                    if isinstance(record, dict):
+                        metadata = record.get('metadata', {})
+                        record_image_path = metadata.get('image_path', '')
+                        if record_image_path:
+                            record_image_id = self._extract_image_id_from_url(
+                                convert_coco_path_to_url(record_image_path)
+                            )
+                            if record_image_id == image_id:
+                                return record.get('text', '')
+                
+                # グループBのレコードから検索
+                for record in group_b_records:
+                    if isinstance(record, dict):
+                        metadata = record.get('metadata', {})
+                        record_image_path = metadata.get('image_path', '')
+                        if record_image_path:
+                            record_image_id = self._extract_image_id_from_url(
+                                convert_coco_path_to_url(record_image_path)
+                            )
+                            if record_image_id == image_id:
+                                return record.get('text', '')
+            except Exception:
+                pass
+        
+        # フォールバック: 順序が一致していると仮定して、インデックスで対応付ける
+        # これは最後の手段として使用される
+        return None
+
     def _write_markdown_summary(self, summary_data: Dict) -> None:
         """設定値と結果概要のMarkdownを作成"""
         if self.silent or self.run_dir is None:
@@ -575,6 +685,8 @@ class ExperimentPipeline:
                     lines.append(f"### {aspect_name}")
                     lines.append("")
                     
+                    out_file = r.get('output_file', '')
+                    
                     if group_a_urls:
                         lines.append("#### グループA (Top-5)")
                         lines.append("")
@@ -584,14 +696,24 @@ class ExperimentPipeline:
                         lines.append("</p>")
                         lines.append("")
                         # キャプションを表示
-                        if group_a_captions:
-                            lines.append("<p>")
-                            for i, caption in enumerate(group_a_captions[:5]):
+                        lines.append("<p>")
+                        for url in group_a_urls[:5]:
+                            # 画像URLから対応するキャプションを取得
+                            caption = self._find_caption_for_image_url(url, group_a_captions, out_file)
+                            if not caption and group_a_captions:
+                                # フォールバック: 順序が一致していると仮定
+                                url_index = group_a_urls.index(url)
+                                if url_index < len(group_a_captions):
+                                    caption = group_a_captions[url_index]
+                            
+                            if caption:
                                 # キャプションを短縮（長すぎる場合）
                                 caption_display = caption if len(caption) <= 80 else caption[:77] + "..."
                                 lines.append(f'  <span style="font-size: 0.85em; width: 18%; display: inline-block; vertical-align: top; padding: 0 1%;">{caption_display}</span>')
-                            lines.append("</p>")
-                            lines.append("")
+                            else:
+                                lines.append(f'  <span style="font-size: 0.85em; width: 18%; display: inline-block; vertical-align: top; padding: 0 1%;"></span>')
+                        lines.append("</p>")
+                        lines.append("")
                     
                     if group_b_urls:
                         lines.append("#### グループB (Bottom-5)")
@@ -602,27 +724,23 @@ class ExperimentPipeline:
                         lines.append("</p>")
                         lines.append("")
                         # キャプションを表示
-                        if group_b_captions:
-                            lines.append("<p>")
-                            for i, caption in enumerate(group_b_captions[:5]):
+                        lines.append("<p>")
+                        for url in group_b_urls[:5]:
+                            # 画像URLから対応するキャプションを取得
+                            caption = self._find_caption_for_image_url(url, group_b_captions, out_file)
+                            if not caption and group_b_captions:
+                                # フォールバック: 順序が一致していると仮定
+                                url_index = group_b_urls.index(url)
+                                if url_index < len(group_b_captions):
+                                    caption = group_b_captions[url_index]
+                            
+                            if caption:
                                 # キャプションを短縮（長すぎる場合）
                                 caption_display = caption if len(caption) <= 80 else caption[:77] + "..."
                                 lines.append(f'  <span style="font-size: 0.85em; width: 18%; display: inline-block; vertical-align: top; padding: 0 1%;">{caption_display}</span>')
-                            lines.append("</p>")
-                            lines.append("")
-                    
-                    # 追加画像表示コマンド
-                    out_file = r.get('output_file', '')
-                    if out_file:
-                        file_name = Path(out_file).name
-                        lines.append("#### 追加画像を見るには")
-                        lines.append("")
-                        lines.append("```bash")
-                        lines.append(f"python src/analysis/experiments/utils/generate_image_gallery.py \\")
-                        lines.append(f"  --result-json {self.run_dir.name}/{file_name} \\")
-                        lines.append(f"  --top-n 10 \\")
-                        lines.append(f"  --bottom-n 10")
-                        lines.append("```")
+                            else:
+                                lines.append(f'  <span style="font-size: 0.85em; width: 18%; display: inline-block; vertical-align: top; padding: 0 1%;"></span>')
+                        lines.append("</p>")
                         lines.append("")
         
         # ログリンク
