@@ -15,8 +15,11 @@ description = manager.get_description("gameplay")
 """
 
 import pandas as pd
+import logging
 from pathlib import Path
 from typing import Dict, Optional
+
+logger = logging.getLogger(__name__)
 
 
 class AspectDescriptionManager:
@@ -44,7 +47,7 @@ class AspectDescriptionManager:
                 self._read_csv(self.csv_path)
                 return
             else:
-                print(f"警告: 指定のCSVが見つかりません: {self.csv_path}")
+                logger.warning(f"指定のCSVが見つかりません: {self.csv_path}")
         # 次: ディレクトリの descriptions.csv
         if self.dataset_path is not None:
             desc_file = self.dataset_path / "descriptions.csv"
@@ -52,46 +55,93 @@ class AspectDescriptionManager:
                 self._read_csv(desc_file)
                 return
             else:
-                print(f"警告: descriptions.csvが見つかりません: {desc_file}")
+                logger.debug(f"descriptions.csvが見つかりません: {desc_file}")
         # いずれも無ければ空
         self.descriptions = {}
     
     def _load_descriptions_manual(self, desc_file: Path):
-        """手動でCSVを読み込み（フォールバック用）"""
+        """
+        手動でCSVを読み込み（フォールバック用）
+        
+        最初のカンマで分割することで、descriptionフィールド内のカンマに対応
+        """
         self.descriptions = {}
-        with open(desc_file, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-            if len(lines) < 2:
-                return
-            
-            # ヘッダーをスキップ
-            for line in lines[1:]:
-                line = line.strip()
-                if not line:
-                    continue
+        try:
+            with open(desc_file, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+                if len(lines) < 2:
+                    logger.warning(f"CSVファイルの行数が不足しています（2行未満）: {desc_file}")
+                    return
                 
-                # 最初のカンマで分割
-                parts = line.split(',', 1)
-                if len(parts) == 2:
-                    aspect = parts[0].strip()
-                    description = parts[1].strip()
-                    self.descriptions[aspect] = description
-        self.source_file = desc_file
+                # ヘッダーをスキップ
+                header = lines[0].strip()
+                logger.debug(f"CSVヘッダー: {header}")
+                
+                for line_num, line in enumerate(lines[1:], start=2):
+                    line = line.rstrip('\n\r')
+                    if not line.strip():
+                        continue
+                    
+                    # 最初のカンマで分割（aspect, description）
+                    parts = line.split(',', 1)
+                    if len(parts) == 2:
+                        aspect = parts[0].strip()
+                        description = parts[1].strip()
+                        if aspect:
+                            self.descriptions[aspect] = description
+                        else:
+                            logger.warning(f"行{line_num}: aspectが空です")
+                    else:
+                        logger.warning(f"行{line_num}: カンマが見つかりません（フィールド数: {len(parts)}）")
+            
+            self.source_file = desc_file
+            logger.debug(f"手動読み込み完了: {len(self.descriptions)}件のアスペクトを読み込みました")
+            
+        except Exception as e:
+            logger.error(f"手動読み込み中にエラーが発生しました: {desc_file}, エラー: {e}")
+            raise
 
     def _read_csv(self, file_path: Path) -> None:
-        """pandasでCSVを読み込む（quote対応つき）"""
+        """
+        CSVを読み込む（複数の方法を試行）
+        
+        1. pandas標準読み込み（クォート対応）
+        2. 手動読み込み（最初のカンマで分割）- descriptionフィールド内のカンマに対応
+        
+        注意: descriptionフィールドにカンマが含まれるCSVの場合、
+        手動読み込み（方法2）が確実に動作します。
+        """
+        import csv
+        
+        # 方法1: 標準のpandas読み込み（クォート対応）
         try:
-            import csv
             df = pd.read_csv(file_path, quoting=csv.QUOTE_ALL)
-            self.descriptions = dict(zip(df['aspect'], df['description']))
-            self.source_file = file_path
+            if 'aspect' in df.columns and 'description' in df.columns:
+                self.descriptions = dict(zip(df['aspect'], df['description']))
+                self.source_file = file_path
+                logger.debug(f"CSV読み込み成功（pandas標準）: {file_path}, {len(self.descriptions)}件")
+                # データが期待通り読み込まれているか確認
+                if len(self.descriptions) > 0:
+                    return
+                else:
+                    logger.warning(f"pandas標準読み込みでデータが空でした: {file_path}")
+            else:
+                logger.warning(f"CSVに必要なカラム（aspect, description）がありません: {file_path}")
         except Exception as e:
-            print(f"警告: CSV読み込みに失敗しました: {e} — 手動読み込みにフォールバックします")
-            try:
-                self._load_descriptions_manual(file_path)
-            except Exception as e2:
-                print(f"警告: 手動読み込みも失敗しました: {e2}")
-                self.descriptions = {}
+            logger.debug(f"pandas標準読み込み失敗: {e}")
+        
+        # 方法2: 手動読み込み（最初のカンマで分割）
+        # descriptionフィールド内のカンマに対応するため、この方法が確実
+        try:
+            logger.debug(f"手動読み込みを試行します: {file_path}")
+            self._load_descriptions_manual(file_path)
+            if self.descriptions:
+                logger.info(f"手動読み込み成功: {file_path}, {len(self.descriptions)}件")
+            else:
+                logger.warning(f"手動読み込み後もデータが空です: {file_path}")
+        except Exception as e:
+            logger.error(f"手動読み込みも失敗しました: {file_path}, エラー: {e}")
+            self.descriptions = {}
     
     def get_description(self, aspect: str) -> str:
         """
