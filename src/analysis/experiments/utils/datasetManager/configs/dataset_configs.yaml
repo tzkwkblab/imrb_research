@@ -36,6 +36,40 @@ datasets:
     domain: "vision"
     language: "en"
 
+  goemotions:
+    path: "/Users/seinoshun/imrb_research/data/external/goemotions/kaggle-debarshichanda/current"
+    domain: "emotions"
+    language: "en"
+    aspects:
+      - "admiration"
+      - "amusement"
+      - "anger"
+      - "annoyance"
+      - "approval"
+      - "caring"
+      - "confusion"
+      - "curiosity"
+      - "desire"
+      - "disappointment"
+      - "disapproval"
+      - "disgust"
+      - "embarrassment"
+      - "excitement"
+      - "fear"
+      - "gratitude"
+      - "grief"
+      - "joy"
+      - "love"
+      - "nervousness"
+      - "optimism"
+      - "pride"
+      - "realization"
+      - "relief"
+      - "remorse"
+      - "sadness"
+      - "surprise"
+      - "neutral"
+
 # 設定検証ルール
 validation:
   required_files: ["train.csv", "test.csv", "train.ft.txt", "test.ft.txt"]
@@ -56,6 +90,9 @@ loaders:
   retrieved_concepts:
     class: "RetrievedConceptsDatasetLoader"
     module: "loaders.retrieved_concepts_loader"
+  goemotions:
+    class: "GoEmotionsDatasetLoader"
+    module: "loaders.goemotions_loader"
 
 # 分割戦略設定
 splitters:

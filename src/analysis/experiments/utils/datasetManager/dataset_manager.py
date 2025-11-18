@@ -14,6 +14,7 @@ from .loaders import (
     SemEvalDatasetLoader,
     AmazonDatasetLoader,
     RetrievedConceptsDatasetLoader,
+    GoEmotionsDatasetLoader,
 )
 from .splitters import BaseSplitter, BinarySplitResult, SplitOptions, AspectSplitter, BinarySplitter, RetrievedConceptsBottom100Splitter
 
@@ -24,6 +25,7 @@ class DatasetManager:
         "semeval": SemEvalDatasetLoader,
         "amazon": AmazonDatasetLoader,
         "retrieved_concepts": RetrievedConceptsDatasetLoader,
+        "goemotions": GoEmotionsDatasetLoader,
     }
     
     SPLITTERS = {
@@ -52,8 +54,9 @@ class DatasetManager:
             elif dataset_id == "amazon":
                 dataset_path = self.data_root / "amazon-product-reviews" / "kaggle-bittlingmayer" / "current"
             elif dataset_id == "retrieved_concepts":
-                # external 配下の標準配置
                 dataset_path = self.data_root / "retrieved-concepts" / "farnoosh" / "current"
+            elif dataset_id == "goemotions":
+                dataset_path = self.data_root / "goemotions" / "kaggle-debarshichanda" / "current"
             else:
                 dataset_path = self.data_root
             

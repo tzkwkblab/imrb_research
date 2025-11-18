@@ -4,6 +4,7 @@ from .steam_loader import SteamDatasetLoader
 from .semeval_loader import SemEvalDatasetLoader
 from .amazon_loader import AmazonDatasetLoader
 from .retrieved_concepts_loader import RetrievedConceptsDatasetLoader
+from .goemotions_loader import GoEmotionsDatasetLoader
 
 __all__ = [
     'BaseDatasetLoader', 
@@ -11,5 +12,6 @@ __all__ = [
     'SteamDatasetLoader', 
     'SemEvalDatasetLoader', 
     'AmazonDatasetLoader',
-    'RetrievedConceptsDatasetLoader'
+    'RetrievedConceptsDatasetLoader',
+    'GoEmotionsDatasetLoader'
 ]
