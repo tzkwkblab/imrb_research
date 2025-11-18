@@ -5,7 +5,7 @@
 ### 研究テーマ/方向性（要点）
 
 - **目的**: 2 群（A: 特徴あり, B: 特徴なし）の本質的差分を自然言語で要約し、概念レベルの説明を自動生成
-- **適用データ**: Steam ゲームレビュー、SemEval ABSA（レストラン）、Amazon レビュー
+- **適用データ**: Steam ゲームレビュー、SemEval ABSA（レストラン）、Amazon レビュー、GoEmotions（感情分類）
 - **評価**: 主要指標は BERTScore と BLEU（意味/語彙の両面を記録）
 
 ## ディレクトリ構成（トップレベル）
@@ -50,6 +50,10 @@
 - **Retrieved Concepts (COCO Captions)**（300 コンセプト: concept_0 ～ concept_299）
   - ドキュメント: `docs/datasets/retrieved-concepts/README.md`
   - Top-100/Bottom-100 の類似度順キャプションデータ
+
+- **GoEmotions**（28感情カテゴリ: admiration, amusement, anger, joy, neutral など）
+  - ドキュメント: `docs/datasets/goemotions/README.md`
+  - Redditコメントから収集された細粒度感情分類データセット
 
 ## 実験ワークフローと配置
 

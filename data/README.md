@@ -84,6 +84,7 @@ sampled_path = "data/processed/amazon-reviews/sampled/"
 | absa-review-dataset         | ABSA（アスペクトベース感情分析）用レビュー      |
 | semeval-absa                | SemEval 公式 ABSA タスク用データ                |
 | steam-review-aspect-dataset | Steam ゲームレビューのアスペクト多ラベルデータ  |
+| goemotions                  | Redditコメントから収集された細粒度感情分類データセット（28感情カテゴリ） |
 
 - それぞれバージョン管理・current リンク・dataset_info.json 付き
-- サブディレクトリ例：`kaggle-bittlingmayer/`, `pyabsa-integrated/`, `v1.0_YYYY-MM-DD/` など
+- サブディレクトリ例：`kaggle-bittlingmayer/`, `pyabsa-integrated/`, `kaggle-debarshichanda/`, `v1.0_YYYY-MM-DD/` など
