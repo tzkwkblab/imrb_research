@@ -31,7 +31,7 @@ bash scripts/run_interactive_experiment.sh
 
 #### 2. データセット選択
 
-以下の4つのデータセットから選択できます：
+以下の5つのデータセットから選択できます：
 
 1. **Steam Reviews** (動作確認済み)
    - ゲームレビューデータセット
@@ -49,6 +49,10 @@ bash scripts/run_interactive_experiment.sh
    - COCO画像キャプションデータセット
    - 300個のコンセプト: concept_0 ～ concept_299
 
+5. **GoEmotions** (感情分類)
+   - Redditコメントから収集された細粒度感情分類データセット
+   - 28感情カテゴリ: admiration, amusement, anger, annoyance, approval, caring, confusion, curiosity, desire, disappointment, disapproval, disgust, embarrassment, excitement, fear, gratitude, grief, joy, love, nervousness, optimism, pride, realization, relief, remorse, sadness, surprise, neutral
+
 #### 3. 正解アスペクトの表現モード選択
 
 アスペクト名をそのまま使うか、説明文を使うかを選択します。
@@ -61,7 +65,7 @@ bash scripts/run_interactive_experiment.sh
 
 データセットに応じて選択方法が異なります：
 
-**Steam/SemEval/Amazonの場合:**
+**Steam/SemEval/Amazon/GoEmotionsの場合:**
 - 番号をカンマ区切りで入力（例: `1,2,3`）
 - 複数のアスペクトを一度に選択可能
 
@@ -100,7 +104,7 @@ bash scripts/run_interactive_experiment.sh
 
 **推奨設定:**
 - Steam → `binary_label`
-- SemEval/Amazon → `aspect_vs_others`
+- SemEval/Amazon/GoEmotions → `aspect_vs_others`
 - retrieved_concepts → `aspect_vs_bottom100`
 
 #### 7. 例題（Few-shot）設定

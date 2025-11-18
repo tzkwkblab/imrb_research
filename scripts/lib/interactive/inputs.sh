@@ -41,6 +41,9 @@ select_description_csv() {
         amazon)
             external_csv="$PROJECT_ROOT/data/external/amazon-product-reviews/kaggle-bittlingmayer/current/descriptions.csv"
             ;;
+        goemotions)
+            external_csv="$PROJECT_ROOT/data/external/goemotions/kaggle-debarshichanda/current/descriptions.csv"
+            ;;
     esac
 
     local has_external=0
@@ -116,6 +119,9 @@ choose_aspect_representation() {
         amazon)
             external_csv="$PROJECT_ROOT/data/external/amazon-product-reviews/kaggle-bittlingmayer/current/descriptions.csv"
             ;;
+        goemotions)
+            external_csv="$PROJECT_ROOT/data/external/goemotions/kaggle-debarshichanda/current/descriptions.csv"
+            ;;
     esac
 
     echo "1) 説明文なし"
@@ -166,16 +172,18 @@ select_dataset() {
     echo "2. SemEval ABSA (実験的)"
     echo "3. Amazon Reviews (実験的)"
     echo "4. Retrieved Concepts (COCO captions, concept_i)"
+    echo "5. GoEmotions (感情分類, 28感情カテゴリ)"
     echo ""
 
     while true; do
-        read -p "選択してください (1-4): " choice
+        read -p "選択してください (1-5): " choice
         case $choice in
             1) DATASET="steam"; break ;;
             2) DATASET="semeval"; break ;;
             3) DATASET="amazon"; break ;;
             4) DATASET="retrieved_concepts"; break ;;
-            *) print_error "無効な選択です。1-4の数字を入力してください" ;;
+            5) DATASET="goemotions"; break ;;
+            *) print_error "無効な選択です。1-5の数字を入力してください" ;;
         esac
     done
 
@@ -196,6 +204,9 @@ select_aspects() {
             ;;
         amazon)
             available_aspects=("quality" "price" "delivery" "service" "product")
+            ;;
+        goemotions)
+            available_aspects=("admiration" "amusement" "anger" "annoyance" "approval" "caring" "confusion" "curiosity" "desire" "disappointment" "disapproval" "disgust" "embarrassment" "excitement" "fear" "gratitude" "grief" "joy" "love" "nervousness" "optimism" "pride" "realization" "relief" "remorse" "sadness" "surprise" "neutral")
             ;;
         retrieved_concepts)
             echo "concept_i を指定してください（0-299）。"

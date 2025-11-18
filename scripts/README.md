@@ -25,10 +25,12 @@ bash scripts/run_interactive_experiment.sh
    - `semeval`: SemEval ABSAレストランレビューデータセット（実験的）
    - `amazon`: Amazon商品レビューデータセット（実験的）
    - `retrieved_concepts`: COCO画像キャプションデータセット（動作確認済み）
+   - `goemotions`: GoEmotions感情分類データセット（28感情カテゴリ）
 
 3. **アスペクト選択**
    - データセットごとに利用可能なアスペクトが表示されます
    - Steam: gameplay, visual, story, audio, technical, price, suggestion, recommended
+   - GoEmotions: admiration, amusement, anger, joy, neutral など（28感情カテゴリ）
    - Retrieved Concepts: concept_0 ～ concept_299（300個）
 
 4. **分割タイプ選択**
