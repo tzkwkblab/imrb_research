@@ -106,20 +106,24 @@ select_description_csv() {
 choose_aspect_representation() {
     print_section "正解アスペクトの表現モード選択"
 
-    local internal_official_csv="$PROJECT_ROOT/data/analysis-workspace/aspect_descriptions/$DATASET/descriptions_official.csv"
+    local internal_official_csv=""
     local external_csv=""
 
     case "$DATASET" in
         steam)
+            internal_official_csv="$PROJECT_ROOT/data/analysis-workspace/aspect_descriptions/$DATASET/descriptions_official.csv"
             external_csv="$PROJECT_ROOT/data/external/steam-review-aspect-dataset/current/descriptions.csv"
             ;;
         semeval)
+            internal_official_csv="$PROJECT_ROOT/data/analysis-workspace/aspect_descriptions/$DATASET/descriptions_official.csv"
             external_csv="$PROJECT_ROOT/data/external/absa-review-dataset/pyabsa-integrated/current/descriptions.csv"
             ;;
         amazon)
+            internal_official_csv="$PROJECT_ROOT/data/analysis-workspace/aspect_descriptions/$DATASET/descriptions_official.csv"
             external_csv="$PROJECT_ROOT/data/external/amazon-product-reviews/kaggle-bittlingmayer/current/descriptions.csv"
             ;;
         goemotions)
+            internal_official_csv="$PROJECT_ROOT/data/analysis-workspace/aspect_descriptions/$DATASET/descriptions.csv"
             external_csv="$PROJECT_ROOT/data/external/goemotions/kaggle-debarshichanda/current/descriptions.csv"
             ;;
     esac
@@ -143,7 +147,11 @@ choose_aspect_representation() {
             if [[ -f "$internal_official_csv" ]]; then
                 USE_ASPECT_DESCRIPTIONS="1"
                 ASPECT_DESCRIPTIONS_FILE="$internal_official_csv"
-                print_success "センテンス（公式・内部）を選択: $ASPECT_DESCRIPTIONS_FILE"
+                if [[ "$DATASET" == "goemotions" ]]; then
+                    print_success "センテンス（公式・GoEmotions）を選択: $ASPECT_DESCRIPTIONS_FILE"
+                else
+                    print_success "センテンス（公式・内部）を選択: $ASPECT_DESCRIPTIONS_FILE"
+                fi
             elif [[ -f "$external_csv" ]]; then
                 USE_ASPECT_DESCRIPTIONS="1"
                 ASPECT_DESCRIPTIONS_FILE="$external_csv"
