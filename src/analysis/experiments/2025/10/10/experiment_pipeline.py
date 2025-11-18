@@ -290,14 +290,21 @@ class ExperimentPipeline:
                 group_a_top5_image_urls = splits.metadata.get("group_a_top5_image_urls")
                 group_b_top5_image_urls = splits.metadata.get("group_b_top5_image_urls")
             
+            # デフォルトの説明文フォールバック用（外部データ標準のdescriptions.csv）
+            default_dataset_path = None
+            if dataset == 'steam':
+                default_dataset_path = str(self.dataset_manager.data_root / 'steam-review-aspect-dataset' / 'current')
+            elif dataset == 'goemotions':
+                # GoEmotionsの説明文はanalysis-workspaceに配置
+                default_dataset_path = str(Path("data/analysis-workspace/aspect_descriptions/goemotions"))
+            
             result = analyzer.analyze(
                 group_a=splits.group_a,
                 group_b=splits.group_b,
                 correct_answer=splits.correct_answer,
                 output_dir=str(out_dir) if out_dir else "",
                 experiment_name=experiment_id,
-                # デフォルトの説明文フォールバック用（外部データ標準のdescriptions.csv）
-                dataset_path=str(self.dataset_manager.data_root / 'steam-review-aspect-dataset' / 'current') if dataset == 'steam' else None,
+                dataset_path=default_dataset_path,
                 aspect_descriptions_file=desc_file,
                 examples=examples_payload,
                 group_a_top5_image_urls=group_a_top5_image_urls,

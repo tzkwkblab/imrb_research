@@ -46,6 +46,22 @@ GoEmotionsは、Redditコメントから収集された細粒度感情分類デ�
 
 ## データ形式と利用方法
 
+### アスペクト説明文（テキスト比較用）
+
+本リポジトリのセンテンス比較（BERT）では、アスペクト名の代わりに「短い説明文」を用います。
+- 正規 CSV（英語説明文）: `data/analysis-workspace/aspect_descriptions/goemotions/descriptions_official.csv`
+  
+  - 列構成: `aspect,description`
+  - 例:
+    - joy → "Feeling of great happiness, delight, or pleasure."
+    - anger → "Strong feeling of displeasure, hostility, or rage towards someone or something."
+    - neutral → "No particular emotion, feeling, or sentiment expressed."
+
+### 実行時の選択
+
+- 対話スクリプトで「正解アスペクトの表現モード」を「センテンス（公式）」にすると、上記 CSV が優先されます。
+- 「センテンス（任意の CSV）」を選ぶと `data/analysis-workspace/aspect_descriptions/goemotions/` 配下から手動選択できます。
+
 ### 基本的な使い方
 
 ```python
