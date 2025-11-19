@@ -10,8 +10,12 @@ import json
 import argparse
 import logging
 import os
+import time
+import gc
+import signal
+import atexit
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Any, Tuple
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from tqdm import tqdm
@@ -351,18 +355,228 @@ def run_single_experiment_wrapper(args: Tuple[Dict[str, Any], str, Path]) -> Dic
         }
 
 
+def load_checkpoint(checkpoint_file: Path) -> Tuple[List[Dict[str, Any]], List[str]]:
+    """
+    チェックポイントから進捗を復元
+    
+    Args:
+        checkpoint_file: チェックポイントファイルパス
+        
+    Returns:
+        (完了した結果リスト, 完了した実験IDリスト)
+    """
+    if not checkpoint_file.exists():
+        return [], []
+    
+    try:
+        with open(checkpoint_file, 'r', encoding='utf-8') as f:
+            checkpoint_data = json.load(f)
+        return checkpoint_data.get('results', []), checkpoint_data.get('completed_ids', [])
+    except Exception as e:
+        logging.warning(f"チェックポイント読み込みエラー: {e}")
+        return [], []
+
+
+def save_checkpoint(checkpoint_file: Path, results: List[Dict[str, Any]], completed_ids: List[str]):
+    """
+    チェックポイントを保存
+    
+    Args:
+        checkpoint_file: チェックポイントファイルパス
+        results: 完了した結果リスト
+        completed_ids: 完了した実験IDリスト
+    """
+    try:
+        checkpoint_data = {
+            'timestamp': datetime.now().isoformat(),
+            'results': results,
+            'completed_ids': completed_ids
+        }
+        with open(checkpoint_file, 'w', encoding='utf-8') as f:
+            json.dump(checkpoint_data, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logging.warning(f"チェックポイント保存エラー: {e}")
+
+
+def format_timedelta(seconds: float) -> str:
+    """秒数を読みやすい形式に変換"""
+    td = timedelta(seconds=int(seconds))
+    days = td.days
+    hours, remainder = divmod(td.seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    
+    parts = []
+    if days > 0:
+        parts.append(f"{days}日")
+    if hours > 0:
+        parts.append(f"{hours}時間")
+    if minutes > 0:
+        parts.append(f"{minutes}分")
+    if seconds > 0 or not parts:
+        parts.append(f"{seconds}秒")
+    
+    return "".join(parts)
+
+
+def save_pid(pid_file: Path):
+    """PIDファイルを保存"""
+    try:
+        with open(pid_file, 'w') as f:
+            f.write(str(os.getpid()))
+        atexit.register(cleanup_pid, pid_file)
+    except Exception as e:
+        logging.warning(f"PIDファイル保存エラー: {e}")
+
+
+def cleanup_pid(pid_file: Path):
+    """PIDファイルを削除"""
+    try:
+        if pid_file.exists():
+            pid_file.unlink()
+    except Exception:
+        pass
+
+
+def load_pid(pid_file: Path) -> Optional[int]:
+    """PIDファイルからPIDを読み込み"""
+    try:
+        if pid_file.exists():
+            with open(pid_file, 'r') as f:
+                return int(f.read().strip())
+    except Exception:
+        pass
+    return None
+
+
+def is_process_running(pid: int) -> bool:
+    """プロセスが実行中か確認"""
+    try:
+        os.kill(pid, 0)
+        return True
+    except OSError:
+        return False
+
+
+def stop_process(pid_file: Path) -> bool:
+    """実行中のプロセスを停止"""
+    pid = load_pid(pid_file)
+    if pid is None:
+        print(f"PIDファイルが見つかりません: {pid_file}")
+        return False
+    
+    if not is_process_running(pid):
+        print(f"プロセス {pid} は実行されていません")
+        cleanup_pid(pid_file)
+        return False
+    
+    try:
+        os.kill(pid, signal.SIGTERM)
+        print(f"プロセス {pid} に停止シグナルを送信しました")
+        time.sleep(1)
+        
+        if is_process_running(pid):
+            os.kill(pid, signal.SIGKILL)
+            print(f"プロセス {pid} を強制終了しました")
+        
+        cleanup_pid(pid_file)
+        return True
+    except Exception as e:
+        print(f"プロセス停止エラー: {e}")
+        return False
+
+
+def check_status(pid_file: Path, output_dir: Path) -> int:
+    """実行状態を確認"""
+    pid = load_pid(pid_file)
+    if pid is None:
+        print("実行中のプロセスはありません")
+        return 1
+    
+    if not is_process_running(pid):
+        print(f"プロセス {pid} は実行されていません（PIDファイルが残っています）")
+        cleanup_pid(pid_file)
+        return 1
+    
+    log_file = output_dir / "run.log"
+    checkpoint_file = output_dir / "checkpoint.json"
+    
+    print(f"実行中: PID {pid}")
+    print(f"出力ディレクトリ: {output_dir}")
+    
+    if log_file.exists():
+        log_size = log_file.stat().st_size
+        print(f"ログファイル: {log_file} ({log_size:,} bytes)")
+    
+    if checkpoint_file.exists():
+        try:
+            with open(checkpoint_file, 'r', encoding='utf-8') as f:
+                checkpoint_data = json.load(f)
+            completed = len(checkpoint_data.get('completed_ids', []))
+            print(f"完了済み実験数: {completed}")
+        except Exception:
+            pass
+    
+    return 0
+
+
+def daemonize(log_file: Path) -> int:
+    """
+    プロセスをデーモン化（Unix系のみ）
+    
+    Returns:
+        子プロセスのPID（親プロセスのみ）
+    """
+    if os.name == 'nt':
+        raise RuntimeError("バックグラウンド実行はUnix系システムでのみサポートされています")
+    
+    try:
+        pid = os.fork()
+        if pid > 0:
+            return pid
+    except OSError as e:
+        sys.stderr.write(f"fork failed: {e}\n")
+        sys.exit(1)
+    
+    os.chdir("/")
+    os.setsid()
+    os.umask(0)
+    
+    try:
+        pid = os.fork()
+        if pid > 0:
+            sys.exit(0)
+    except OSError as e:
+        sys.stderr.write(f"fork failed: {e}\n")
+        sys.exit(1)
+    
+    sys.stdout.flush()
+    sys.stderr.flush()
+    
+    si = open(os.devnull, 'r')
+    so = open(log_file, 'a+')
+    se = open(log_file, 'a+', 1)
+    
+    os.dup2(si.fileno(), sys.stdin.fileno())
+    os.dup2(so.fileno(), sys.stdout.fileno())
+    os.dup2(se.fileno(), sys.stderr.fileno())
+    
+    return 0
+
+
 def run_parallel_experiments(
     experiments: List[Dict[str, Any]],
     output_dir: Path,
-    max_workers: int = None
+    max_workers: int = None,
+    checkpoint_file: Optional[Path] = None
 ) -> List[Dict[str, Any]]:
     """
-    並列実行で実験を実行
+    並列実行で実験を実行（チェックポイント対応）
     
     Args:
         experiments: 実験設定のリスト
         output_dir: 出力ディレクトリ
         max_workers: 最大並列数（Noneの場合はCPUコア数、最大8）
+        checkpoint_file: チェックポイントファイルパス
         
     Returns:
         実験結果のリスト
@@ -372,33 +586,59 @@ def run_parallel_experiments(
     if max_workers is None:
         max_workers = min(multiprocessing.cpu_count(), 8)
     
+    # チェックポイントから復元
+    checkpoint_path = checkpoint_file or (output_dir / "checkpoint.json")
+    completed_results, completed_ids = load_checkpoint(checkpoint_path)
+    completed_set = set(completed_ids)
+    
     # 実験IDごとの出力ディレクトリを作成
     exp_output_dir = output_dir / "experiments"
     exp_output_dir.mkdir(parents=True, exist_ok=True)
     
-    # 実行引数を準備（スキップされる実験を除外）
+    # 実行引数を準備（スキップされる実験と完了済み実験を除外）
     args_list = []
     skipped_experiments = []
     for exp in experiments:
+        exp_id = exp['experiment_id']
+        
+        # 既に完了している場合はスキップ
+        if exp_id in completed_set:
+            continue
+        
         # 設定変換を試みて、スキップされるか確認
         try:
             config = convert_matrix_to_config(exp)
             if config is None:
-                skipped_experiments.append(exp['experiment_id'])
+                skipped_experiments.append(exp_id)
                 continue
         except Exception as e:
-            logging.warning(f"実験設定変換エラー ({exp['experiment_id']}): {e}")
-            skipped_experiments.append(exp['experiment_id'])
+            logging.warning(f"実験設定変換エラー ({exp_id}): {e}")
+            skipped_experiments.append(exp_id)
             continue
         
-        args_list.append((exp, exp['experiment_id'], exp_output_dir / exp['experiment_id']))
+        args_list.append((exp, exp_id, exp_output_dir / exp_id))
     
     if skipped_experiments:
         logging.info(f"スキップされた実験: {len(skipped_experiments)}件")
-        logging.debug(f"スキップ実験ID: {skipped_experiments}")
     
-    results = []
-    failed_experiments = []
+    if completed_results:
+        logging.info(f"チェックポイントから復元: {len(completed_results)}件完了済み")
+    
+    # 実行開始時刻
+    start_time = time.time()
+    results = completed_results.copy()
+    failed_experiments = [r['experiment_info']['experiment_id'] for r in completed_results if not r.get('success', False)]
+    
+    total_experiments = len(experiments)
+    remaining_experiments = len(args_list)
+    
+    if remaining_experiments == 0:
+        logging.info("全ての実験が完了済みです")
+        return results
+    
+    # エラーログファイル
+    error_log_file = output_dir / "errors.log"
+    error_log_file.touch()
     
     with ProcessPoolExecutor(max_workers=max_workers) as executor:
         # タスクを送信
@@ -408,30 +648,81 @@ def run_parallel_experiments(
         }
         
         # 進捗バーで結果を取得
-        with tqdm(total=len(experiments), desc="実験実行中") as pbar:
+        completed_count = len(completed_results)
+        with tqdm(total=total_experiments, initial=completed_count, desc="実験実行中", unit="件") as pbar:
+            last_checkpoint_time = time.time()
+            checkpoint_interval = 30  # 30秒ごとにチェックポイント保存
+            
             for future in as_completed(future_to_exp):
                 experiment_id = future_to_exp[future]
                 try:
                     result = future.result()
                     results.append(result)
+                    completed_count += 1
+                    
                     if not result.get('success', False):
                         failed_experiments.append(experiment_id)
+                        # エラーのみログファイルに記録
+                        error_info = result.get('experiment_info', {})
+                        error_msg = error_info.get('error', 'Unknown error')
+                        with open(error_log_file, 'a', encoding='utf-8') as f:
+                            f.write(f"[{datetime.now().isoformat()}] {experiment_id}: {error_msg}\n")
+                    
+                    # 予測時間計算
+                    elapsed_time = time.time() - start_time
+                    completed = completed_count
+                    remaining = total_experiments - completed
+                    
+                    if completed > 0:
+                        avg_time_per_exp = elapsed_time / completed
+                        estimated_remaining = avg_time_per_exp * remaining
+                        estimated_completion = datetime.now() + timedelta(seconds=estimated_remaining)
+                        
+                        # 進捗バーの説明を更新
+                        success_count = sum(1 for r in results if r.get('success', False))
+                        fail_count = len(failed_experiments)
+                        pbar.set_postfix({
+                            '成功': success_count,
+                            '失敗': fail_count,
+                            '予測終了': estimated_completion.strftime("%H:%M:%S")
+                        })
+                    
+                    # 定期的にチェックポイント保存
+                    current_time = time.time()
+                    if current_time - last_checkpoint_time >= checkpoint_interval:
+                        completed_ids = [r['experiment_info']['experiment_id'] for r in results]
+                        save_checkpoint(checkpoint_path, results, completed_ids)
+                        last_checkpoint_time = current_time
+                        
+                        # メモリクリーンアップ
+                        gc.collect()
+                    
                 except Exception as e:
+                    error_msg = f"結果取得エラー: {str(e)}"
                     logging.error(f"実験結果取得エラー ({experiment_id}): {e}")
                     results.append({
                         'experiment_info': {
                             'experiment_id': experiment_id,
-                            'error': f'結果取得エラー: {str(e)}'
+                            'error': error_msg
                         },
                         'success': False
                     })
                     failed_experiments.append(experiment_id)
+                    completed_count += 1
+                    
+                    # エラーログに記録
+                    with open(error_log_file, 'a', encoding='utf-8') as f:
+                        f.write(f"[{datetime.now().isoformat()}] {experiment_id}: {error_msg}\n")
                 finally:
                     pbar.update(1)
+            
+            # 最終チェックポイント保存
+            completed_ids = [r['experiment_info']['experiment_id'] for r in results]
+            save_checkpoint(checkpoint_path, results, completed_ids)
     
     if failed_experiments:
         logging.warning(f"失敗した実験: {len(failed_experiments)}件")
-        logging.warning(f"失敗実験ID: {failed_experiments[:10]}...")
+        logging.info(f"エラーログ: {error_log_file}")
     
     return results
 
@@ -514,6 +805,24 @@ def main():
     )
     
     parser.add_argument(
+        '--background', '-b',
+        action='store_true',
+        help='バックグラウンド実行'
+    )
+    
+    parser.add_argument(
+        '--status',
+        action='store_true',
+        help='実行状態を確認'
+    )
+    
+    parser.add_argument(
+        '--stop',
+        action='store_true',
+        help='実行中のプロセスを停止'
+    )
+    
+    parser.add_argument(
         '--debug',
         action='store_true',
         help='デバッグモード'
@@ -521,15 +830,97 @@ def main():
     
     args = parser.parse_args()
     
+    # 状態確認
+    if args.status:
+        if not args.output_dir:
+            print("エラー: --status には --output-dir が必要です")
+            return 1
+        output_dir = Path(args.output_dir)
+        pid_file = output_dir / "run.pid"
+        return check_status(pid_file, output_dir)
+    
+    # プロセス停止
+    if args.stop:
+        if not args.output_dir:
+            print("エラー: --stop には --output-dir が必要です")
+            return 1
+        output_dir = Path(args.output_dir)
+        pid_file = output_dir / "run.pid"
+        if stop_process(pid_file):
+            return 0
+        return 1
+    
+    # 出力ディレクトリを設定
+    if args.output_dir:
+        output_dir = Path(args.output_dir)
+    else:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_dir = Path("results") / timestamp
+    
+    pid_file = output_dir / "run.pid"
+    
     # ログ設定
     log_level = logging.DEBUG if args.debug else logging.INFO
-    logging.basicConfig(
-        level=log_level,
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-    )
-    logger = logging.getLogger(__name__)
+    
+    # バックグラウンド実行の場合
+    if args.background:
+        output_dir.mkdir(parents=True, exist_ok=True)
+        log_file = output_dir / "run.log"
+        
+        # 既に実行中の場合はエラー
+        if pid_file.exists():
+            pid = load_pid(pid_file)
+            if pid and is_process_running(pid):
+                print(f"既に実行中のプロセスがあります: PID {pid}")
+                print(f"状態確認: python {sys.argv[0]} --status --output-dir {output_dir}")
+                print(f"停止: python {sys.argv[0]} --stop --output-dir {output_dir}")
+                return 1
+        
+        # デーモン化
+        child_pid = daemonize(log_file)
+        
+        # 親プロセスの場合（child_pid > 0）
+        if child_pid > 0:
+            # 子プロセスのPIDファイルが作成されるまで少し待つ
+            time.sleep(0.5)
+            print(f"バックグラウンド実行開始: PID {child_pid}")
+            print(f"出力ディレクトリ: {output_dir}")
+            print(f"PIDファイル: {pid_file}")
+            print(f"ログファイル: {log_file}")
+            print(f"状態確認: python {sys.argv[0]} --status --output-dir {output_dir}")
+            print(f"停止: python {sys.argv[0]} --stop --output-dir {output_dir}")
+            sys.exit(0)
+        
+        # 子プロセス（デーモン）の処理
+        # デーモン化後はログファイルに出力
+        logging.basicConfig(
+            level=log_level,
+            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+            handlers=[
+                logging.FileHandler(log_file, encoding='utf-8'),
+                logging.StreamHandler()
+            ]
+        )
+        logger = logging.getLogger(__name__)
+        
+        # PIDファイルを保存（デーモン化後の子プロセスで）
+        save_pid(pid_file)
+        logger.info(f"バックグラウンド実行開始: PID {os.getpid()}")
+        logger.info(f"PIDファイル: {pid_file}")
+        logger.info(f"ログファイル: {log_file}")
+    else:
+        logging.basicConfig(
+            level=log_level,
+            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        )
+        logger = logging.getLogger(__name__)
     
     try:
+        # PIDファイルを保存
+        if args.background:
+            save_pid(pid_file)
+            logger.info(f"PIDファイル: {pid_file}")
+        
         # 実験マトリックスを読み込み
         logger.info(f"実験マトリックスを読み込み: {args.matrix}")
         matrix_data = load_experiment_matrix(args.matrix)
@@ -539,22 +930,22 @@ def main():
         
         logger.info(f"実験数: {len(experiments)}")
         
-        # 出力ディレクトリを設定
-        if args.output_dir:
-            output_dir = Path(args.output_dir)
-        else:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            output_dir = Path("results") / timestamp
-        
         output_dir.mkdir(parents=True, exist_ok=True)
         logger.info(f"出力ディレクトリ: {output_dir}")
         
+        # チェックポイントファイルパス
+        checkpoint_file = output_dir / "checkpoint.json"
+        
         # 並列実行
         logger.info(f"並列実行開始 (workers={args.workers or 'auto'})")
+        if checkpoint_file.exists():
+            logger.info(f"チェックポイントから再開: {checkpoint_file}")
+        
         results = run_parallel_experiments(
             experiments=experiments,
             output_dir=output_dir,
-            max_workers=args.workers
+            max_workers=args.workers,
+            checkpoint_file=checkpoint_file
         )
         
         # 結果を保存
@@ -567,21 +958,31 @@ def main():
         
         logger.info("=" * 60)
         logger.info("実行完了")
+        logger.info(f"総実験数: {len(experiments)}件")
+        logger.info(f"完了: {len(results)}件")
         logger.info(f"成功: {successful}件")
         logger.info(f"失敗: {failed}件")
         logger.info(f"結果ディレクトリ: {output_dir}")
+        if failed > 0:
+            error_log_file = output_dir / "errors.log"
+            logger.info(f"エラーログ: {error_log_file}")
         logger.info("=" * 60)
+        
+        # PIDファイルを削除
+        cleanup_pid(pid_file)
         
         return 0 if failed == 0 else 1
         
     except KeyboardInterrupt:
         logger.warning("実行が中断されました")
+        cleanup_pid(pid_file)
         return 130
         
     except Exception as e:
         logger.error(f"エラー: {e}")
         import traceback
         traceback.print_exc()
+        cleanup_pid(pid_file)
         return 1
 
 
