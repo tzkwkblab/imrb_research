@@ -1,0 +1,1271 @@
+{
+  "total": 37,
+  "by_dataset": {
+    "semeval": [
+      {
+        "experiment_id": "semeval_restaurant_food_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/semeval/semeval_restaurant_food_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "semeval_restaurant_food_1_4o-mini_word",
+          "dataset": "semeval",
+          "aspect": "food",
+          "domain": "restaurant",
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "semeval_restaurant_service_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/semeval/semeval_restaurant_service_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "semeval_restaurant_service_1_4o-mini_word",
+          "dataset": "semeval",
+          "aspect": "service",
+          "domain": "restaurant",
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "semeval_laptop_battery_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/semeval/semeval_laptop_battery_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "semeval_laptop_battery_1_4o-mini_word",
+          "dataset": "semeval",
+          "aspect": "battery",
+          "domain": "laptop",
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "semeval_laptop_screen_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/semeval/semeval_laptop_screen_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "semeval_laptop_screen_1_4o-mini_word",
+          "dataset": "semeval",
+          "aspect": "screen",
+          "domain": "laptop",
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      }
+    ],
+    "amazon": [
+      {
+        "experiment_id": "amazon_quality_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/amazon/amazon_quality_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "amazon_quality_1_4o-mini_word",
+          "dataset": "amazon",
+          "aspect": "quality",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "amazon_price_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/amazon/amazon_price_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "amazon_price_1_4o-mini_word",
+          "dataset": "amazon",
+          "aspect": "price",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "amazon_delivery_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/amazon/amazon_delivery_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "amazon_delivery_1_4o-mini_word",
+          "dataset": "amazon",
+          "aspect": "delivery",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "amazon_service_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/amazon/amazon_service_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "amazon_service_1_4o-mini_word",
+          "dataset": "amazon",
+          "aspect": "service",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "amazon_product_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/amazon/amazon_product_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "amazon_product_1_4o-mini_word",
+          "dataset": "amazon",
+          "aspect": "product",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      }
+    ],
+    "goemotions": [
+      {
+        "experiment_id": "goemotions_admiration_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_admiration_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_admiration_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "admiration",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_amusement_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_amusement_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_amusement_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "amusement",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_anger_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_anger_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_anger_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "anger",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_annoyance_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_annoyance_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_annoyance_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "annoyance",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_approval_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_approval_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_approval_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "approval",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_caring_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_caring_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_caring_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "caring",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_confusion_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_confusion_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_confusion_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "confusion",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_curiosity_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_curiosity_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_curiosity_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "curiosity",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_desire_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_desire_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_desire_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "desire",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_disappointment_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_disappointment_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_disappointment_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "disappointment",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_disapproval_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_disapproval_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_disapproval_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "disapproval",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_disgust_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_disgust_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_disgust_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "disgust",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_embarrassment_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_embarrassment_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_embarrassment_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "embarrassment",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_excitement_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_excitement_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_excitement_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "excitement",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_fear_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_fear_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_fear_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "fear",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_gratitude_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_gratitude_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_gratitude_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "gratitude",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_grief_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_grief_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_grief_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "grief",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_joy_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_joy_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_joy_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "joy",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_love_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_love_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_love_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "love",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_nervousness_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_nervousness_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_nervousness_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "nervousness",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_optimism_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_optimism_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_optimism_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "optimism",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_pride_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_pride_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_pride_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "pride",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_realization_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_realization_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_realization_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "realization",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_relief_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_relief_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_relief_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "relief",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_remorse_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_remorse_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_remorse_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "remorse",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_sadness_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_sadness_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_sadness_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "sadness",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_surprise_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_surprise_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_surprise_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "surprise",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      },
+      {
+        "experiment_id": "goemotions_neutral_1_4o-mini_word",
+        "file_path": "analysis_workspace/main_experiments/by_dataset/goemotions/goemotions_neutral_1_4o-mini_word.json",
+        "config": {
+          "experiment_id": "goemotions_neutral_1_4o-mini_word",
+          "dataset": "goemotions",
+          "aspect": "neutral",
+          "domain": null,
+          "few_shot": 1,
+          "gpt_model": "gpt-4o-mini",
+          "group_size": 100,
+          "split_type": "aspect_vs_others",
+          "use_llm_evaluation": true,
+          "llm_evaluation_model": "gpt-4o-mini",
+          "use_aspect_descriptions": false
+        }
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "experiment_id": "semeval_restaurant_food_1_4o-mini_word",
+      "file_path": "experiments/semeval_restaurant_food_1_4o-mini_word/semeval_food_20251119_153856_20251119_153857.json",
+      "config": {
+        "experiment_id": "semeval_restaurant_food_1_4o-mini_word",
+        "dataset": "semeval",
+        "aspect": "food",
+        "domain": "restaurant",
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "semeval_restaurant_service_1_4o-mini_word",
+      "file_path": "experiments/semeval_restaurant_service_1_4o-mini_word/semeval_service_20251119_153905_20251119_153906.json",
+      "config": {
+        "experiment_id": "semeval_restaurant_service_1_4o-mini_word",
+        "dataset": "semeval",
+        "aspect": "service",
+        "domain": "restaurant",
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "semeval_laptop_battery_1_4o-mini_word",
+      "file_path": "experiments/semeval_laptop_battery_1_4o-mini_word/semeval_battery_20251119_153912_20251119_153912.json",
+      "config": {
+        "experiment_id": "semeval_laptop_battery_1_4o-mini_word",
+        "dataset": "semeval",
+        "aspect": "battery",
+        "domain": "laptop",
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "semeval_laptop_screen_1_4o-mini_word",
+      "file_path": "experiments/semeval_laptop_screen_1_4o-mini_word/semeval_screen_20251119_153917_20251119_153918.json",
+      "config": {
+        "experiment_id": "semeval_laptop_screen_1_4o-mini_word",
+        "dataset": "semeval",
+        "aspect": "screen",
+        "domain": "laptop",
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "amazon_quality_1_4o-mini_word",
+      "file_path": "individual/amazon_quality_1_4o-mini_word.json",
+      "config": {
+        "experiment_id": "amazon_quality_1_4o-mini_word",
+        "dataset": "amazon",
+        "aspect": "quality",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "amazon_price_1_4o-mini_word",
+      "file_path": "individual/amazon_price_1_4o-mini_word.json",
+      "config": {
+        "experiment_id": "amazon_price_1_4o-mini_word",
+        "dataset": "amazon",
+        "aspect": "price",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "amazon_delivery_1_4o-mini_word",
+      "file_path": "individual/amazon_delivery_1_4o-mini_word.json",
+      "config": {
+        "experiment_id": "amazon_delivery_1_4o-mini_word",
+        "dataset": "amazon",
+        "aspect": "delivery",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "amazon_service_1_4o-mini_word",
+      "file_path": "individual/amazon_service_1_4o-mini_word.json",
+      "config": {
+        "experiment_id": "amazon_service_1_4o-mini_word",
+        "dataset": "amazon",
+        "aspect": "service",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "amazon_product_1_4o-mini_word",
+      "file_path": "individual/amazon_product_1_4o-mini_word.json",
+      "config": {
+        "experiment_id": "amazon_product_1_4o-mini_word",
+        "dataset": "amazon",
+        "aspect": "product",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_admiration_1_4o-mini_word",
+      "file_path": "experiments/goemotions_admiration_1_4o-mini_word/goemotions_admiration_20251119_153924_20251119_153925.json",
+      "config": {
+        "experiment_id": "goemotions_admiration_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "admiration",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_amusement_1_4o-mini_word",
+      "file_path": "experiments/goemotions_amusement_1_4o-mini_word/goemotions_amusement_20251119_153930_20251119_153931.json",
+      "config": {
+        "experiment_id": "goemotions_amusement_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "amusement",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_anger_1_4o-mini_word",
+      "file_path": "experiments/goemotions_anger_1_4o-mini_word/goemotions_anger_20251119_153936_20251119_153938.json",
+      "config": {
+        "experiment_id": "goemotions_anger_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "anger",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_annoyance_1_4o-mini_word",
+      "file_path": "experiments/goemotions_annoyance_1_4o-mini_word/goemotions_annoyance_20251119_153942_20251119_153944.json",
+      "config": {
+        "experiment_id": "goemotions_annoyance_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "annoyance",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_approval_1_4o-mini_word",
+      "file_path": "experiments/goemotions_approval_1_4o-mini_word/goemotions_approval_20251119_153949_20251119_153950.json",
+      "config": {
+        "experiment_id": "goemotions_approval_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "approval",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_caring_1_4o-mini_word",
+      "file_path": "experiments/goemotions_caring_1_4o-mini_word/goemotions_caring_20251119_153956_20251119_153957.json",
+      "config": {
+        "experiment_id": "goemotions_caring_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "caring",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_confusion_1_4o-mini_word",
+      "file_path": "experiments/goemotions_confusion_1_4o-mini_word/goemotions_confusion_20251119_154001_20251119_154003.json",
+      "config": {
+        "experiment_id": "goemotions_confusion_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "confusion",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_curiosity_1_4o-mini_word",
+      "file_path": "experiments/goemotions_curiosity_1_4o-mini_word/goemotions_curiosity_20251119_154007_20251119_154008.json",
+      "config": {
+        "experiment_id": "goemotions_curiosity_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "curiosity",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_desire_1_4o-mini_word",
+      "file_path": "experiments/goemotions_desire_1_4o-mini_word/goemotions_desire_20251119_154013_20251119_154014.json",
+      "config": {
+        "experiment_id": "goemotions_desire_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "desire",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_disappointment_1_4o-mini_word",
+      "file_path": "experiments/goemotions_disappointment_1_4o-mini_word/goemotions_disappointment_20251119_154018_20251119_154019.json",
+      "config": {
+        "experiment_id": "goemotions_disappointment_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "disappointment",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_disapproval_1_4o-mini_word",
+      "file_path": "experiments/goemotions_disapproval_1_4o-mini_word/goemotions_disapproval_20251119_154024_20251119_154025.json",
+      "config": {
+        "experiment_id": "goemotions_disapproval_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "disapproval",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_disgust_1_4o-mini_word",
+      "file_path": "experiments/goemotions_disgust_1_4o-mini_word/goemotions_disgust_20251119_154030_20251119_154032.json",
+      "config": {
+        "experiment_id": "goemotions_disgust_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "disgust",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_embarrassment_1_4o-mini_word",
+      "file_path": "experiments/goemotions_embarrassment_1_4o-mini_word/goemotions_embarrassment_20251119_154038_20251119_154039.json",
+      "config": {
+        "experiment_id": "goemotions_embarrassment_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "embarrassment",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_excitement_1_4o-mini_word",
+      "file_path": "experiments/goemotions_excitement_1_4o-mini_word/goemotions_excitement_20251119_154044_20251119_154045.json",
+      "config": {
+        "experiment_id": "goemotions_excitement_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "excitement",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_fear_1_4o-mini_word",
+      "file_path": "experiments/goemotions_fear_1_4o-mini_word/goemotions_fear_20251119_154051_20251119_154052.json",
+      "config": {
+        "experiment_id": "goemotions_fear_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "fear",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_gratitude_1_4o-mini_word",
+      "file_path": "experiments/goemotions_gratitude_1_4o-mini_word/goemotions_gratitude_20251119_154058_20251119_154059.json",
+      "config": {
+        "experiment_id": "goemotions_gratitude_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "gratitude",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_grief_1_4o-mini_word",
+      "file_path": "experiments/goemotions_grief_1_4o-mini_word/goemotions_grief_20251119_154104_20251119_154105.json",
+      "config": {
+        "experiment_id": "goemotions_grief_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "grief",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_joy_1_4o-mini_word",
+      "file_path": "experiments/goemotions_joy_1_4o-mini_word/goemotions_joy_20251119_154110_20251119_154112.json",
+      "config": {
+        "experiment_id": "goemotions_joy_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "joy",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_love_1_4o-mini_word",
+      "file_path": "experiments/goemotions_love_1_4o-mini_word/goemotions_love_20251119_154117_20251119_154119.json",
+      "config": {
+        "experiment_id": "goemotions_love_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "love",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_nervousness_1_4o-mini_word",
+      "file_path": "experiments/goemotions_nervousness_1_4o-mini_word/goemotions_nervousness_20251119_154123_20251119_154126.json",
+      "config": {
+        "experiment_id": "goemotions_nervousness_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "nervousness",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_optimism_1_4o-mini_word",
+      "file_path": "experiments/goemotions_optimism_1_4o-mini_word/goemotions_optimism_20251119_154132_20251119_154133.json",
+      "config": {
+        "experiment_id": "goemotions_optimism_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "optimism",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_pride_1_4o-mini_word",
+      "file_path": "experiments/goemotions_pride_1_4o-mini_word/goemotions_pride_20251119_154138_20251119_154140.json",
+      "config": {
+        "experiment_id": "goemotions_pride_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "pride",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_realization_1_4o-mini_word",
+      "file_path": "experiments/goemotions_realization_1_4o-mini_word/goemotions_realization_20251119_154146_20251119_154147.json",
+      "config": {
+        "experiment_id": "goemotions_realization_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "realization",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_relief_1_4o-mini_word",
+      "file_path": "experiments/goemotions_relief_1_4o-mini_word/goemotions_relief_20251119_154152_20251119_154154.json",
+      "config": {
+        "experiment_id": "goemotions_relief_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "relief",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_remorse_1_4o-mini_word",
+      "file_path": "experiments/goemotions_remorse_1_4o-mini_word/goemotions_remorse_20251119_154159_20251119_154202.json",
+      "config": {
+        "experiment_id": "goemotions_remorse_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "remorse",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_sadness_1_4o-mini_word",
+      "file_path": "experiments/goemotions_sadness_1_4o-mini_word/goemotions_sadness_20251119_154206_20251119_154208.json",
+      "config": {
+        "experiment_id": "goemotions_sadness_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "sadness",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_surprise_1_4o-mini_word",
+      "file_path": "experiments/goemotions_surprise_1_4o-mini_word/goemotions_surprise_20251119_154212_20251119_154214.json",
+      "config": {
+        "experiment_id": "goemotions_surprise_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "surprise",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    },
+    {
+      "experiment_id": "goemotions_neutral_1_4o-mini_word",
+      "file_path": "experiments/goemotions_neutral_1_4o-mini_word/goemotions_neutral_20251119_154219_20251119_154220.json",
+      "config": {
+        "experiment_id": "goemotions_neutral_1_4o-mini_word",
+        "dataset": "goemotions",
+        "aspect": "neutral",
+        "domain": null,
+        "few_shot": 1,
+        "gpt_model": "gpt-4o-mini",
+        "group_size": 100,
+        "split_type": "aspect_vs_others",
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini",
+        "use_aspect_descriptions": false
+      }
+    }
+  ]
+}

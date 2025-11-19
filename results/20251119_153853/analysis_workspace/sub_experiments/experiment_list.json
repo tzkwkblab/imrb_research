@@ -1,0 +1,1046 @@
+{
+  "total": 34,
+  "categories": {
+    "steam_group_size": {
+      "count": 20,
+      "experiments": [
+        {
+          "experiment_id": "steam_gameplay_group_size_50_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_gameplay_group_size_50_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_gameplay_group_size_50_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "gameplay",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 50,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_gameplay_group_size_100_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_gameplay_group_size_100_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_gameplay_group_size_100_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "gameplay",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 100,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_gameplay_group_size_150_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_gameplay_group_size_150_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_gameplay_group_size_150_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "gameplay",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 150,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_gameplay_group_size_200_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_gameplay_group_size_200_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_gameplay_group_size_200_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "gameplay",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 200,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_gameplay_group_size_300_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_gameplay_group_size_300_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_gameplay_group_size_300_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "gameplay",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 300,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_visual_group_size_50_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_visual_group_size_50_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_visual_group_size_50_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "visual",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 50,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_visual_group_size_100_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_visual_group_size_100_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_visual_group_size_100_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "visual",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 100,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_visual_group_size_150_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_visual_group_size_150_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_visual_group_size_150_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "visual",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 150,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_visual_group_size_200_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_visual_group_size_200_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_visual_group_size_200_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "visual",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 200,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_visual_group_size_300_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_visual_group_size_300_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_visual_group_size_300_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "visual",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 300,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_story_group_size_50_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_story_group_size_50_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_story_group_size_50_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "story",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 50,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_story_group_size_100_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_story_group_size_100_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_story_group_size_100_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "story",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 100,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_story_group_size_150_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_story_group_size_150_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_story_group_size_150_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "story",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 150,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_story_group_size_200_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_story_group_size_200_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_story_group_size_200_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "story",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 200,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_story_group_size_300_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_story_group_size_300_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_story_group_size_300_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "story",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 300,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_audio_group_size_50_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_audio_group_size_50_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_audio_group_size_50_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "audio",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 50,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_audio_group_size_100_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_audio_group_size_100_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_audio_group_size_100_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "audio",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 100,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_audio_group_size_150_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_audio_group_size_150_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_audio_group_size_150_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "audio",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 150,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_audio_group_size_200_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_audio_group_size_200_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_audio_group_size_200_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "audio",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 200,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_audio_group_size_300_1_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_group_size/steam_audio_group_size_300_1_4o-mini_word.json",
+          "config": {
+            "experiment_id": "steam_audio_group_size_300_1_4o-mini_word",
+            "dataset": "steam",
+            "aspect": "audio",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 300,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        }
+      ]
+    },
+    "steam_gpt51": {
+      "count": 4,
+      "experiments": [
+        {
+          "experiment_id": "steam_gameplay_group_size_300_1_5.1_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_gpt51/steam_gameplay_group_size_300_1_5.1_word.json",
+          "config": {
+            "experiment_id": "steam_gameplay_group_size_300_1_5.1_word",
+            "dataset": "steam",
+            "aspect": "gameplay",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-5.1",
+            "group_size": 300,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_visual_group_size_300_1_5.1_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_gpt51/steam_visual_group_size_300_1_5.1_word.json",
+          "config": {
+            "experiment_id": "steam_visual_group_size_300_1_5.1_word",
+            "dataset": "steam",
+            "aspect": "visual",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-5.1",
+            "group_size": 300,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_story_group_size_300_1_5.1_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_gpt51/steam_story_group_size_300_1_5.1_word.json",
+          "config": {
+            "experiment_id": "steam_story_group_size_300_1_5.1_word",
+            "dataset": "steam",
+            "aspect": "story",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-5.1",
+            "group_size": 300,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "steam_audio_group_size_300_1_5.1_word",
+          "file_path": "analysis_workspace/sub_experiments/steam_gpt51/steam_audio_group_size_300_1_5.1_word.json",
+          "config": {
+            "experiment_id": "steam_audio_group_size_300_1_5.1_word",
+            "dataset": "steam",
+            "aspect": "audio",
+            "domain": null,
+            "few_shot": 1,
+            "gpt_model": "gpt-5.1",
+            "group_size": 300,
+            "split_type": "aspect_vs_others",
+            "use_llm_evaluation": true,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        }
+      ]
+    },
+    "retrieved_concepts": {
+      "count": 10,
+      "experiments": [
+        {
+          "experiment_id": "retrieved_concepts_concept_0_0_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/retrieved_concepts/retrieved_concepts_concept_0_0_4o-mini_word.json",
+          "config": {
+            "experiment_id": "retrieved_concepts_concept_0_0_4o-mini_word",
+            "dataset": "retrieved_concepts",
+            "aspect": "concept_0",
+            "domain": null,
+            "few_shot": 0,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 50,
+            "split_type": "aspect_vs_bottom100",
+            "use_llm_evaluation": false,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "retrieved_concepts_concept_0_0_51_word",
+          "file_path": "analysis_workspace/sub_experiments/retrieved_concepts/retrieved_concepts_concept_0_0_51_word.json",
+          "config": {
+            "experiment_id": "retrieved_concepts_concept_0_0_51_word",
+            "dataset": "retrieved_concepts",
+            "aspect": "concept_0",
+            "domain": null,
+            "few_shot": 0,
+            "gpt_model": "gpt-5.1",
+            "group_size": 50,
+            "split_type": "aspect_vs_bottom100",
+            "use_llm_evaluation": false,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "retrieved_concepts_concept_1_0_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/retrieved_concepts/retrieved_concepts_concept_1_0_4o-mini_word.json",
+          "config": {
+            "experiment_id": "retrieved_concepts_concept_1_0_4o-mini_word",
+            "dataset": "retrieved_concepts",
+            "aspect": "concept_1",
+            "domain": null,
+            "few_shot": 0,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 50,
+            "split_type": "aspect_vs_bottom100",
+            "use_llm_evaluation": false,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "retrieved_concepts_concept_1_0_51_word",
+          "file_path": "analysis_workspace/sub_experiments/retrieved_concepts/retrieved_concepts_concept_1_0_51_word.json",
+          "config": {
+            "experiment_id": "retrieved_concepts_concept_1_0_51_word",
+            "dataset": "retrieved_concepts",
+            "aspect": "concept_1",
+            "domain": null,
+            "few_shot": 0,
+            "gpt_model": "gpt-5.1",
+            "group_size": 50,
+            "split_type": "aspect_vs_bottom100",
+            "use_llm_evaluation": false,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "retrieved_concepts_concept_2_0_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/retrieved_concepts/retrieved_concepts_concept_2_0_4o-mini_word.json",
+          "config": {
+            "experiment_id": "retrieved_concepts_concept_2_0_4o-mini_word",
+            "dataset": "retrieved_concepts",
+            "aspect": "concept_2",
+            "domain": null,
+            "few_shot": 0,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 50,
+            "split_type": "aspect_vs_bottom100",
+            "use_llm_evaluation": false,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "retrieved_concepts_concept_2_0_51_word",
+          "file_path": "analysis_workspace/sub_experiments/retrieved_concepts/retrieved_concepts_concept_2_0_51_word.json",
+          "config": {
+            "experiment_id": "retrieved_concepts_concept_2_0_51_word",
+            "dataset": "retrieved_concepts",
+            "aspect": "concept_2",
+            "domain": null,
+            "few_shot": 0,
+            "gpt_model": "gpt-5.1",
+            "group_size": 50,
+            "split_type": "aspect_vs_bottom100",
+            "use_llm_evaluation": false,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "retrieved_concepts_concept_10_0_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/retrieved_concepts/retrieved_concepts_concept_10_0_4o-mini_word.json",
+          "config": {
+            "experiment_id": "retrieved_concepts_concept_10_0_4o-mini_word",
+            "dataset": "retrieved_concepts",
+            "aspect": "concept_10",
+            "domain": null,
+            "few_shot": 0,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 50,
+            "split_type": "aspect_vs_bottom100",
+            "use_llm_evaluation": false,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "retrieved_concepts_concept_10_0_51_word",
+          "file_path": "analysis_workspace/sub_experiments/retrieved_concepts/retrieved_concepts_concept_10_0_51_word.json",
+          "config": {
+            "experiment_id": "retrieved_concepts_concept_10_0_51_word",
+            "dataset": "retrieved_concepts",
+            "aspect": "concept_10",
+            "domain": null,
+            "few_shot": 0,
+            "gpt_model": "gpt-5.1",
+            "group_size": 50,
+            "split_type": "aspect_vs_bottom100",
+            "use_llm_evaluation": false,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "retrieved_concepts_concept_50_0_4o-mini_word",
+          "file_path": "analysis_workspace/sub_experiments/retrieved_concepts/retrieved_concepts_concept_50_0_4o-mini_word.json",
+          "config": {
+            "experiment_id": "retrieved_concepts_concept_50_0_4o-mini_word",
+            "dataset": "retrieved_concepts",
+            "aspect": "concept_50",
+            "domain": null,
+            "few_shot": 0,
+            "gpt_model": "gpt-4o-mini",
+            "group_size": 50,
+            "split_type": "aspect_vs_bottom100",
+            "use_llm_evaluation": false,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        },
+        {
+          "experiment_id": "retrieved_concepts_concept_50_0_51_word",
+          "file_path": "analysis_workspace/sub_experiments/retrieved_concepts/retrieved_concepts_concept_50_0_51_word.json",
+          "config": {
+            "experiment_id": "retrieved_concepts_concept_50_0_51_word",
+            "dataset": "retrieved_concepts",
+            "aspect": "concept_50",
+            "domain": null,
+            "few_shot": 0,
+            "gpt_model": "gpt-5.1",
+            "group_size": 50,
+            "split_type": "aspect_vs_bottom100",
+            "use_llm_evaluation": false,
+            "llm_evaluation_model": "gpt-4o-mini",
+            "use_aspect_descriptions": false
+          }
+        }
+      ]
+    },
+    "other": {
+      "count": 0,
+      "experiments": []
+    }
+  },
+  "all_experiments": [
+    {
+      "experiment_id": "retrieved_concepts_concept_0_0_4o-mini_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_0",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_0_0_51_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_0",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_1_0_4o-mini_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_1",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_1_0_51_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_1",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_2_0_4o-mini_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_2",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_2_0_51_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_2",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_10_0_4o-mini_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_10",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_10_0_51_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_10",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_50_0_4o-mini_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_50",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_50_0_51_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_50",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_gameplay_group_size_50_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "gameplay",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_gameplay_group_size_100_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "gameplay",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 100,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_gameplay_group_size_150_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "gameplay",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 150,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_gameplay_group_size_200_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "gameplay",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 200,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_gameplay_group_size_300_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "gameplay",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_visual_group_size_50_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "visual",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_visual_group_size_100_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "visual",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 100,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_visual_group_size_150_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "visual",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 150,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_visual_group_size_200_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "visual",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 200,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_visual_group_size_300_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "visual",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_story_group_size_50_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "story",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_story_group_size_100_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "story",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 100,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_story_group_size_150_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "story",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 150,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_story_group_size_200_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "story",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 200,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_story_group_size_300_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "story",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_audio_group_size_50_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "audio",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_audio_group_size_100_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "audio",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 100,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_audio_group_size_150_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "audio",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 150,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_audio_group_size_200_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "audio",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 200,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_audio_group_size_300_1_4o-mini_word",
+      "dataset": "steam",
+      "aspect": "audio",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_gameplay_group_size_300_1_5.1_word",
+      "dataset": "steam",
+      "aspect": "gameplay",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_visual_group_size_300_1_5.1_word",
+      "dataset": "steam",
+      "aspect": "visual",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_story_group_size_300_1_5.1_word",
+      "dataset": "steam",
+      "aspect": "story",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "steam_audio_group_size_300_1_5.1_word",
+      "dataset": "steam",
+      "aspect": "audio",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "created_at": "20251119_154748",
+  "source_results_dir": "results/20251119_153853",
+  "experiment_plan": {
+    "total_experiments": 71,
+    "main_experiments": 37,
+    "sub_experiments": 34,
+    "created_at": "2025-11-19",
+    "description": "データセット別性能比較（メイン、group_size=100）+ Steamサブ実験（group_size変化による影響調査: 50/100/150/200/300、gpt-5.1でgroup_size=300も検証）+ COCO別枠実験（正解なしデータセット考察）",
+    "llm_evaluation_model": "gpt-4o-mini",
+    "main_experiment_settings": {
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false,
+      "use_llm_evaluation": true
+    },
+    "sub_experiment_settings": {
+      "steam": {
+        "use_llm_evaluation": true,
+        "llm_evaluation_model": "gpt-4o-mini"
+      },
+      "retrieved_concepts": {
+        "purpose": "正解のないデータセットに対する対比因子生成の考察",
+        "few_shot": 0,
+        "use_llm_evaluation": false,
+        "models": [
+          "gpt-4o-mini",
+          "gpt-5.1"
+        ],
+        "note": "スコアは参考値、出力された対比因子と画像を見比べて考察"
+      }
+    }
+  },
+  "summary": {
+    "main_experiments": 37,
+    "sub_experiments": 34,
+    "main_by_dataset": {
+      "semeval": 4,
+      "amazon": 5,
+      "goemotions": 28
+    },
+    "sub_categories": {
+      "steam_group_size": 20,
+      "steam_gpt51": 4,
+      "retrieved_concepts": 10,
+      "other": 0
+    }
+  }
+}
