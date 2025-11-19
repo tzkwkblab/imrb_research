@@ -52,6 +52,7 @@ GoEmotionsは、Redditコメントから収集された細粒度感情分類デ�
 - 正規 CSV（英語説明文）: `data/analysis-workspace/aspect_descriptions/goemotions/descriptions_official.csv`
   
   - 列構成: `aspect,description`
+  - 出所: 本プロジェクトで作成（GoEmotions公式データセットには説明文ファイルは含まれていない）
   - 例:
     - joy → "Feeling of great happiness, delight, or pleasure."
     - anger → "Strong feeling of displeasure, hostility, or rage towards someone or something."

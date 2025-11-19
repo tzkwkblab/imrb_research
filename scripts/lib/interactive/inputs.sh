@@ -123,7 +123,7 @@ choose_aspect_representation() {
             external_csv="$PROJECT_ROOT/data/external/amazon-product-reviews/kaggle-bittlingmayer/current/descriptions.csv"
             ;;
         goemotions)
-            internal_official_csv="$PROJECT_ROOT/data/analysis-workspace/aspect_descriptions/$DATASET/descriptions.csv"
+            internal_official_csv="$PROJECT_ROOT/data/analysis-workspace/aspect_descriptions/$DATASET/descriptions_official.csv"
             external_csv="$PROJECT_ROOT/data/external/goemotions/kaggle-debarshichanda/current/descriptions.csv"
             ;;
     esac
