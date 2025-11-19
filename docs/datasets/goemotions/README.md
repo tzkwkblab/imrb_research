@@ -1,19 +1,19 @@
 # GoEmotions データセット
 
-GoEmotionsは、Redditコメントから収集された細粒度感情分類データセットです。28の感情カテゴリ（27感情 + neutral）でラベル付けされています。
+GoEmotions は、Reddit コメントから収集された細粒度感情分類データセットです。28 の感情カテゴリ（27 感情 + neutral）でラベル付けされています。
 
 - Kaggle: https://www.kaggle.com/datasets/debarshichanda/goemotions
 - 元論文: Demszky et al. (2020) "GoEmotions: A Dataset of Fine-Grained Emotions"
 
 ## 概要
 
-- 本データセットは、Redditのコメントから収集された感情分類用のデータセットです。
-- 各テキストは1つ以上の感情ラベルを持つマルチラベル形式です。
+- 本データセットは、Reddit のコメントから収集された感情分類用のデータセットです。
+- 各テキストは 1 つ以上の感情ラベルを持つマルチラベル形式です。
 - 本プロジェクトでは、感情を「アスペクト」として扱い、対比因子生成実験に使用します。
 
-## アスペクト（28感情カテゴリ）
+## アスペクト（28 感情カテゴリ）
 
-本データセットでは、以下の28の感情カテゴリが利用可能です：
+本データセットでは、以下の 28 の感情カテゴリが利用可能です：
 
 - admiration（称賛）
 - amusement（面白さ）
@@ -49,10 +49,11 @@ GoEmotionsは、Redditコメントから収集された細粒度感情分類デ�
 ### アスペクト説明文（テキスト比較用）
 
 本リポジトリのセンテンス比較（BERT）では、アスペクト名の代わりに「短い説明文」を用います。
+
 - 正規 CSV（英語説明文）: `data/analysis-workspace/aspect_descriptions/goemotions/descriptions_official.csv`
-  
+
   - 列構成: `aspect,description`
-  - 出所: 本プロジェクトで作成（GoEmotions公式データセットには説明文ファイルは含まれていない）
+  - 出所: 本プロジェクトで作成（GoEmotions 公式データセットには説明文ファイルは含まれていない）
   - 例:
     - joy → "Feeling of great happiness, delight, or pleasure."
     - anger → "Strong feeling of displeasure, hostility, or rage towards someone or something."
@@ -74,8 +75,8 @@ records = manager.load_dataset('goemotions')
 
 ### データセット情報
 
-- **総レコード数**: 63,812件（マルチラベル展開後）
-- **感情カテゴリ数**: 28個（27感情 + neutral）
+- **総レコード数**: 63,812 件（マルチラベル展開後）
+- **感情カテゴリ数**: 28 個（27 感情 + neutral）
 - **ドメイン**: emotions
 - **言語**: 英語
 
@@ -110,7 +111,7 @@ python src/analysis/experiments/2025/10/10/run_experiment.py \
 - **ファイル形式**: TSV（タブ区切り）
 - **ファイル構成**: `train.tsv`, `test.tsv`, `dev.tsv`
 - **列構成**: `text`, `emotion_id`, `comment_id`
-- **マルチラベル**: 1つのテキストが複数の感情IDを持つ場合、カンマ区切りで記録
+- **マルチラベル**: 1 つのテキストが複数の感情 ID を持つ場合、カンマ区切りで記録
 
 ## ダウンロード/出典
 
@@ -136,7 +137,6 @@ Dora Demszky, Davide Movshovitz-Attias, Jeongwoo Ko, Alan Cowen, Gaurav Nemade, 
 
 ## ライセンス/注意
 
-- ライセンス・利用条件はKaggleデータセットページの規約に従ってください。
-- 本データセットはRedditコメントから収集されているため、一部のテキストには不快・不適切な表現が含まれる可能性があります。
+- ライセンス・利用条件は Kaggle データセットページの規約に従ってください。
+- 本データセットは Reddit コメントから収集されているため、一部のテキストには不快・不適切な表現が含まれる可能性があります。
 - 本リポジトリでの利用は、対比因子生成実験のための感情分類タスクとして位置づけられています。
-
