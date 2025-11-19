@@ -25,10 +25,44 @@ load_dotenv()
 # パス設定
 SCRIPT_DIR = Path(__file__).parent
 EXPERIMENTS_DIR = SCRIPT_DIR.parent.parent.parent
-PROJECT_ROOT = EXPERIMENTS_DIR.parent.parent
+# PROJECT_ROOT: src/analysis/experiments/2025/10/10 から6階層上がってプロジェクトルート
+# より確実な方法: プロジェクトルートにdataディレクトリがあることを利用
+_candidate_root = SCRIPT_DIR
+for _ in range(7):  # 最大7階層まで探索
+    if (_candidate_root / "data").exists() and (_candidate_root / "data" / "external").exists():
+        PROJECT_ROOT = _candidate_root
+        break
+    _candidate_root = _candidate_root.parent
+else:
+    # フォールバック: 6階層上がる
+    PROJECT_ROOT = SCRIPT_DIR.parent.parent.parent.parent.parent.parent
 sys.path.insert(0, str(EXPERIMENTS_DIR))
 
 from experiment_pipeline import ExperimentPipeline
+
+# 例題ファイルマッピング設定を読み込み
+EXAMPLES_MAPPING_FILE = SCRIPT_DIR / "dataset_examples_mapping.yaml"
+_examples_mapping_cache: Optional[Dict[str, Any]] = None
+
+
+def load_examples_mapping() -> Dict[str, Any]:
+    """
+    例題ファイルマッピング設定を読み込む
+    
+    Returns:
+        マッピング設定辞書
+    """
+    global _examples_mapping_cache
+    if _examples_mapping_cache is not None:
+        return _examples_mapping_cache
+    
+    if EXAMPLES_MAPPING_FILE.exists():
+        with open(EXAMPLES_MAPPING_FILE, 'r', encoding='utf-8') as f:
+            _examples_mapping_cache = yaml.safe_load(f) or {}
+    else:
+        _examples_mapping_cache = {}
+    
+    return _examples_mapping_cache
 
 
 def load_experiment_matrix(json_path: str) -> Dict[str, Any]:
@@ -66,10 +100,32 @@ def find_examples_file(dataset: str) -> Optional[str]:
     """
     examples_dir = PROJECT_ROOT / "data" / "analysis-workspace" / "contrast_examples"
     
-    # retrieved_conceptsはsteamの例題を使用
-    if dataset == "retrieved_concepts":
-        dataset = "steam"
+    # マッピング設定を読み込み
+    mapping_config = load_examples_mapping()
+    mappings = mapping_config.get('mappings', {})
     
+    # マッピング設定から例題ファイルパスを取得
+    if dataset in mappings:
+        mapped_path = mappings[dataset]
+        if mapped_path is None:
+            return None
+        
+        # 相対パスの場合は絶対パスに変換
+        if not Path(mapped_path).is_absolute():
+            # 相対パスは examples_dir からの相対パスとして扱う
+            full_path = examples_dir / mapped_path
+        else:
+            full_path = Path(mapped_path)
+        
+        # パスを正規化して存在確認
+        full_path = full_path.resolve()
+        if full_path.exists():
+            return str(full_path)
+        else:
+            logging.debug(f"マッピングで指定された例題ファイルが見つかりません: {full_path} (examples_dir={examples_dir})")
+            return None
+    
+    # マッピング設定がない場合は従来の検索方法を使用
     dataset_dir = examples_dir / dataset
     if not dataset_dir.exists():
         return None
@@ -80,6 +136,41 @@ def find_examples_file(dataset: str) -> Optional[str]:
         if files:
             # 最初に見つかったファイルを返す
             return str(files[0])
+    
+    return None
+
+
+def find_aspect_descriptions_file(dataset: str) -> Optional[str]:
+    """
+    データセット用のアスペクト説明文ファイルを検索
+    
+    Args:
+        dataset: データセット名
+        
+    Returns:
+        アスペクト説明文ファイルのパス（見つからない場合はNone）
+    """
+    descriptions_dir = PROJECT_ROOT / "data" / "analysis-workspace" / "aspect_descriptions"
+    
+    # データセット別のファイル名マッピング
+    file_mapping = {
+        'steam': 'descriptions_official.csv',
+        'semeval': 'descriptions_official.csv',
+        'goemotions': 'descriptions_official.csv',
+        'amazon': 'descriptions_official.csv',
+        'retrieved_concepts': None  # retrieved_conceptsにはアスペクト説明文がない
+    }
+    
+    if dataset not in file_mapping:
+        return None
+    
+    filename = file_mapping[dataset]
+    if filename is None:
+        return None
+    
+    file_path = descriptions_dir / dataset / filename
+    if file_path.exists():
+        return str(file_path)
     
     return None
 
@@ -99,10 +190,40 @@ def convert_matrix_to_config(exp_config: Dict[str, Any]) -> Dict[str, Any]:
     
     # 例題ファイルの解決
     examples_file = None
+    effective_few_shot = few_shot
+    
     if few_shot > 0:
         examples_file = find_examples_file(dataset)
         if not examples_file:
-            logging.warning(f"例題ファイルが見つかりません: {dataset} (few_shot={few_shot})")
+            mapping_config = load_examples_mapping()
+            on_not_found = mapping_config.get('default_behavior', {}).get('on_not_found', 'warn')
+            
+            if on_not_found == "error":
+                raise FileNotFoundError(
+                    f"例題ファイルが見つかりません: {dataset} (few_shot={few_shot})。"
+                    f"マッピング設定を確認してください: {EXAMPLES_MAPPING_FILE}"
+                )
+            elif on_not_found == "skip":
+                logging.warning(f"例題ファイルが見つかりません: {dataset} (few_shot={few_shot})。この実験をスキップします。")
+                return None  # スキップする場合はNoneを返す
+            else:  # warn
+                logging.warning(f"例題ファイルが見つかりません: {dataset} (few_shot={few_shot})。few_shot=0として実行します。")
+                effective_few_shot = 0  # few_shot=0として実行
+    
+    # アスペクト説明文ファイルの解決
+    aspect_descriptions_file = find_aspect_descriptions_file(dataset)
+    
+    # 実験マトリックスJSONで明示的に指定されていればそれを使用、なければfalse（単語を基本とする）
+    use_aspect_descriptions = exp_config.get('use_aspect_descriptions', False)
+    
+    # センテンス比較を有効にする場合のみ説明文ファイルを設定
+    if use_aspect_descriptions:
+        if aspect_descriptions_file is None:
+            logging.warning(f"センテンス比較が指定されましたが、説明文ファイルが見つかりません: {dataset}。単語比較で実行します。")
+            use_aspect_descriptions = False
+    else:
+        # 単語比較の場合、説明文ファイルは使用しない
+        aspect_descriptions_file = None
     
     config = {
         'experiments': [{
@@ -125,11 +246,11 @@ def convert_matrix_to_config(exp_config: Dict[str, Any]) -> Dict[str, Any]:
             'debug_mode': False,
             'console_output': False,
             'silent_mode': False,
-            'use_aspect_descriptions': False,
-            'aspect_descriptions_file': None,
-            'use_examples': few_shot > 0,
+            'use_aspect_descriptions': use_aspect_descriptions,
+            'aspect_descriptions_file': aspect_descriptions_file,
+            'use_examples': effective_few_shot > 0,
             'examples_file': examples_file,
-            'max_examples': few_shot if few_shot > 0 else None
+            'max_examples': effective_few_shot if effective_few_shot > 0 else None
         },
         'evaluation': {
             'use_llm_score': exp_config.get('use_llm_evaluation', True),
@@ -255,11 +376,26 @@ def run_parallel_experiments(
     exp_output_dir = output_dir / "experiments"
     exp_output_dir.mkdir(parents=True, exist_ok=True)
     
-    # 実行引数を準備
-    args_list = [
-        (exp, exp['experiment_id'], exp_output_dir / exp['experiment_id'])
-        for exp in experiments
-    ]
+    # 実行引数を準備（スキップされる実験を除外）
+    args_list = []
+    skipped_experiments = []
+    for exp in experiments:
+        # 設定変換を試みて、スキップされるか確認
+        try:
+            config = convert_matrix_to_config(exp)
+            if config is None:
+                skipped_experiments.append(exp['experiment_id'])
+                continue
+        except Exception as e:
+            logging.warning(f"実験設定変換エラー ({exp['experiment_id']}): {e}")
+            skipped_experiments.append(exp['experiment_id'])
+            continue
+        
+        args_list.append((exp, exp['experiment_id'], exp_output_dir / exp['experiment_id']))
+    
+    if skipped_experiments:
+        logging.info(f"スキップされた実験: {len(skipped_experiments)}件")
+        logging.debug(f"スキップ実験ID: {skipped_experiments}")
     
     results = []
     failed_experiments = []
