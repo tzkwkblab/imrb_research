@@ -48,6 +48,11 @@ from experiment_pipeline import ExperimentPipeline
 EXAMPLES_MAPPING_FILE = SCRIPT_DIR / "dataset_examples_mapping.yaml"
 _examples_mapping_cache: Optional[Dict[str, Any]] = None
 
+# グローバル変数: プロセスプールとクリーンアップフラグ
+_executor: Optional[ProcessPoolExecutor] = None
+_cleanup_registered = False
+_child_pids: set = set()
+
 
 def load_examples_mapping() -> Dict[str, Any]:
     """
@@ -437,6 +442,83 @@ def cleanup_pid(pid_file: Path):
         pass
 
 
+def cleanup_child_processes():
+    """子プロセスをクリーンアップ"""
+    global _executor, _child_pids
+    
+    try:
+        current_pid = os.getpid()
+        
+        if _executor is not None:
+            logging.info("子プロセスプールをシャットダウン中...")
+            try:
+                _executor.shutdown(wait=False, cancel_futures=True)
+            except Exception as e:
+                logging.warning(f"executor.shutdownエラー: {e}")
+            _executor = None
+        
+        if _child_pids:
+            logging.info(f"子プロセス {len(_child_pids)} 個を停止中...")
+            for pid in list(_child_pids):
+                try:
+                    if is_process_running(pid):
+                        os.kill(pid, signal.SIGTERM)
+                except Exception:
+                    pass
+            time.sleep(1)
+            for pid in list(_child_pids):
+                try:
+                    if is_process_running(pid):
+                        os.kill(pid, signal.SIGKILL)
+                except Exception:
+                    pass
+            _child_pids.clear()
+        
+        try:
+            import psutil
+            current = psutil.Process(current_pid)
+            children = current.children(recursive=True)
+            if children:
+                logging.info(f"残っている子プロセス {len(children)} 個を停止中...")
+                for child in children:
+                    try:
+                        child.terminate()
+                    except Exception:
+                        pass
+                time.sleep(1)
+                for child in children:
+                    try:
+                        if child.is_running():
+                            child.kill()
+                    except Exception:
+                        pass
+        except ImportError:
+            pass
+        except Exception as e:
+            logging.warning(f"psutilによるクリーンアップエラー: {e}")
+            
+    except Exception as e:
+        logging.warning(f"子プロセスクリーンアップエラー: {e}")
+
+
+def register_cleanup_handlers():
+    """クリーンアップハンドラを登録"""
+    global _cleanup_registered
+    
+    if _cleanup_registered:
+        return
+    
+    def signal_handler(signum, frame):
+        logging.warning(f"シグナル {signum} を受信しました。クリーンアップを実行します...")
+        cleanup_child_processes()
+        sys.exit(130 if signum == signal.SIGINT else 143)
+    
+    signal.signal(signal.SIGTERM, signal_handler)
+    signal.signal(signal.SIGINT, signal_handler)
+    atexit.register(cleanup_child_processes)
+    _cleanup_registered = True
+
+
 def load_pid(pid_file: Path) -> Optional[int]:
     """PIDファイルからPIDを読み込み"""
     try:
@@ -458,7 +540,7 @@ def is_process_running(pid: int) -> bool:
 
 
 def stop_process(pid_file: Path) -> bool:
-    """実行中のプロセスを停止"""
+    """実行中のプロセスを停止（子プロセスも含む）"""
     pid = load_pid(pid_file)
     if pid is None:
         print(f"PIDファイルが見つかりません: {pid_file}")
@@ -470,13 +552,40 @@ def stop_process(pid_file: Path) -> bool:
         return False
     
     try:
-        os.kill(pid, signal.SIGTERM)
-        print(f"プロセス {pid} に停止シグナルを送信しました")
-        time.sleep(1)
-        
-        if is_process_running(pid):
-            os.kill(pid, signal.SIGKILL)
-            print(f"プロセス {pid} を強制終了しました")
+        import psutil
+        try:
+            parent = psutil.Process(pid)
+            children = parent.children(recursive=True)
+            print(f"親プロセス {pid} と子プロセス {len(children)} 個を停止中...")
+            
+            for child in children:
+                try:
+                    child.terminate()
+                except Exception:
+                    pass
+            
+            parent.terminate()
+            time.sleep(2)
+            
+            for child in children:
+                try:
+                    if child.is_running():
+                        child.kill()
+                except Exception:
+                    pass
+            
+            if parent.is_running():
+                parent.kill()
+            
+            print(f"プロセス {pid} と子プロセスを停止しました")
+        except ImportError:
+            os.kill(pid, signal.SIGTERM)
+            print(f"プロセス {pid} に停止シグナルを送信しました")
+            time.sleep(1)
+            
+            if is_process_running(pid):
+                os.kill(pid, signal.SIGKILL)
+                print(f"プロセス {pid} を強制終了しました")
         
         cleanup_pid(pid_file)
         return True
@@ -519,15 +628,20 @@ def check_status(pid_file: Path, output_dir: Path) -> int:
     return 0
 
 
-def daemonize(log_file: Path) -> int:
+def daemonize(log_file: str) -> int:
     """
     プロセスをデーモン化（Unix系のみ）
+    
+    Args:
+        log_file: ログファイルの絶対パス（文字列）
     
     Returns:
         子プロセスのPID（親プロセスのみ）
     """
     if os.name == 'nt':
         raise RuntimeError("バックグラウンド実行はUnix系システムでのみサポートされています")
+    
+    Path(log_file).parent.mkdir(parents=True, exist_ok=True)
     
     try:
         pid = os.fork()
@@ -640,7 +754,12 @@ def run_parallel_experiments(
     error_log_file = output_dir / "errors.log"
     error_log_file.touch()
     
-    with ProcessPoolExecutor(max_workers=max_workers) as executor:
+    global _executor
+    register_cleanup_handlers()
+    
+    _executor = ProcessPoolExecutor(max_workers=max_workers)
+    try:
+        executor = _executor
         # タスクを送信
         future_to_exp = {
             executor.submit(run_single_experiment_wrapper, args): args[1]
@@ -719,6 +838,10 @@ def run_parallel_experiments(
             # 最終チェックポイント保存
             completed_ids = [r['experiment_info']['experiment_id'] for r in results]
             save_checkpoint(checkpoint_path, results, completed_ids)
+    finally:
+        if _executor is not None:
+            _executor.shutdown(wait=True)
+            _executor = None
     
     if failed_experiments:
         logging.warning(f"失敗した実験: {len(failed_experiments)}件")
@@ -864,8 +987,10 @@ def main():
     
     # バックグラウンド実行の場合
     if args.background:
+        output_dir = output_dir.resolve()
         output_dir.mkdir(parents=True, exist_ok=True)
-        log_file = output_dir / "run.log"
+        log_file = (output_dir / "run.log").resolve()
+        pid_file = pid_file.resolve()
         
         # 既に実行中の場合はエラー
         if pid_file.exists():
@@ -877,7 +1002,8 @@ def main():
                 return 1
         
         # デーモン化
-        child_pid = daemonize(log_file)
+        log_file_abs_str = str(log_file.resolve())
+        child_pid = daemonize(log_file_abs_str)
         
         # 親プロセスの場合（child_pid > 0）
         if child_pid > 0:
@@ -897,7 +1023,7 @@ def main():
             level=log_level,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             handlers=[
-                logging.FileHandler(log_file, encoding='utf-8'),
+                logging.FileHandler(log_file_abs_str, encoding='utf-8'),
                 logging.StreamHandler()
             ]
         )
@@ -975,6 +1101,7 @@ def main():
         
     except KeyboardInterrupt:
         logger.warning("実行が中断されました")
+        cleanup_child_processes()
         cleanup_pid(pid_file)
         return 130
         
@@ -982,8 +1109,11 @@ def main():
         logger.error(f"エラー: {e}")
         import traceback
         traceback.print_exc()
+        cleanup_child_processes()
         cleanup_pid(pid_file)
         return 1
+    finally:
+        cleanup_child_processes()
 
 
 if __name__ == "__main__":
