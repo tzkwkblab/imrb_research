@@ -1,12 +1,12 @@
 {
   "experiment_plan": {
-    "total_experiments": 102,
+    "total_experiments": 204,
     "created_at": "2025-01-XX",
-    "description": "修士論文最終版追加実験の全実験マトリックス"
+    "description": "修士論文最終版追加実験の全実験マトリックス（単語・センテンス比較）"
   },
   "experiments": [
     {
-      "experiment_id": "steam_gameplay_0_gpt4omini",
+      "experiment_id": "steam_gameplay_0_gpt4omini_word",
       "dataset": "steam",
       "aspect": "gameplay",
       "domain": null,
@@ -15,10 +15,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_gameplay_0_gpt51",
+      "experiment_id": "steam_gameplay_0_gpt4omini_sentence",
+      "dataset": "steam",
+      "aspect": "gameplay",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_gameplay_0_gpt51_word",
       "dataset": "steam",
       "aspect": "gameplay",
       "domain": null,
@@ -27,10 +41,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_gameplay_1_gpt4omini",
+      "experiment_id": "steam_gameplay_0_gpt51_sentence",
+      "dataset": "steam",
+      "aspect": "gameplay",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_gameplay_1_gpt4omini_word",
       "dataset": "steam",
       "aspect": "gameplay",
       "domain": null,
@@ -39,10 +67,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_gameplay_1_gpt51",
+      "experiment_id": "steam_gameplay_1_gpt4omini_sentence",
+      "dataset": "steam",
+      "aspect": "gameplay",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_gameplay_1_gpt51_word",
       "dataset": "steam",
       "aspect": "gameplay",
       "domain": null,
@@ -51,10 +93,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_gameplay_3_gpt4omini",
+      "experiment_id": "steam_gameplay_1_gpt51_sentence",
+      "dataset": "steam",
+      "aspect": "gameplay",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_gameplay_3_gpt4omini_word",
       "dataset": "steam",
       "aspect": "gameplay",
       "domain": null,
@@ -63,10 +119,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_gameplay_3_gpt51",
+      "experiment_id": "steam_gameplay_3_gpt4omini_sentence",
+      "dataset": "steam",
+      "aspect": "gameplay",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_gameplay_3_gpt51_word",
       "dataset": "steam",
       "aspect": "gameplay",
       "domain": null,
@@ -75,10 +145,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_visual_0_gpt4omini",
+      "experiment_id": "steam_gameplay_3_gpt51_sentence",
+      "dataset": "steam",
+      "aspect": "gameplay",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_visual_0_gpt4omini_word",
       "dataset": "steam",
       "aspect": "visual",
       "domain": null,
@@ -87,10 +171,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_visual_0_gpt51",
+      "experiment_id": "steam_visual_0_gpt4omini_sentence",
+      "dataset": "steam",
+      "aspect": "visual",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_visual_0_gpt51_word",
       "dataset": "steam",
       "aspect": "visual",
       "domain": null,
@@ -99,10 +197,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_visual_1_gpt4omini",
+      "experiment_id": "steam_visual_0_gpt51_sentence",
+      "dataset": "steam",
+      "aspect": "visual",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_visual_1_gpt4omini_word",
       "dataset": "steam",
       "aspect": "visual",
       "domain": null,
@@ -111,10 +223,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_visual_1_gpt51",
+      "experiment_id": "steam_visual_1_gpt4omini_sentence",
+      "dataset": "steam",
+      "aspect": "visual",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_visual_1_gpt51_word",
       "dataset": "steam",
       "aspect": "visual",
       "domain": null,
@@ -123,10 +249,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_visual_3_gpt4omini",
+      "experiment_id": "steam_visual_1_gpt51_sentence",
+      "dataset": "steam",
+      "aspect": "visual",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_visual_3_gpt4omini_word",
       "dataset": "steam",
       "aspect": "visual",
       "domain": null,
@@ -135,10 +275,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_visual_3_gpt51",
+      "experiment_id": "steam_visual_3_gpt4omini_sentence",
+      "dataset": "steam",
+      "aspect": "visual",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_visual_3_gpt51_word",
       "dataset": "steam",
       "aspect": "visual",
       "domain": null,
@@ -147,10 +301,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_story_0_gpt4omini",
+      "experiment_id": "steam_visual_3_gpt51_sentence",
+      "dataset": "steam",
+      "aspect": "visual",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_story_0_gpt4omini_word",
       "dataset": "steam",
       "aspect": "story",
       "domain": null,
@@ -159,10 +327,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_story_0_gpt51",
+      "experiment_id": "steam_story_0_gpt4omini_sentence",
+      "dataset": "steam",
+      "aspect": "story",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_story_0_gpt51_word",
       "dataset": "steam",
       "aspect": "story",
       "domain": null,
@@ -171,10 +353,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_story_1_gpt4omini",
+      "experiment_id": "steam_story_0_gpt51_sentence",
+      "dataset": "steam",
+      "aspect": "story",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_story_1_gpt4omini_word",
       "dataset": "steam",
       "aspect": "story",
       "domain": null,
@@ -183,10 +379,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_story_1_gpt51",
+      "experiment_id": "steam_story_1_gpt4omini_sentence",
+      "dataset": "steam",
+      "aspect": "story",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_story_1_gpt51_word",
       "dataset": "steam",
       "aspect": "story",
       "domain": null,
@@ -195,10 +405,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_story_3_gpt4omini",
+      "experiment_id": "steam_story_1_gpt51_sentence",
+      "dataset": "steam",
+      "aspect": "story",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_story_3_gpt4omini_word",
       "dataset": "steam",
       "aspect": "story",
       "domain": null,
@@ -207,10 +431,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "steam_story_3_gpt51",
+      "experiment_id": "steam_story_3_gpt4omini_sentence",
+      "dataset": "steam",
+      "aspect": "story",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "steam_story_3_gpt51_word",
       "dataset": "steam",
       "aspect": "story",
       "domain": null,
@@ -219,10 +457,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_restaurant_food_0_gpt4omini",
+      "experiment_id": "steam_story_3_gpt51_sentence",
+      "dataset": "steam",
+      "aspect": "story",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_restaurant_food_0_gpt4omini_word",
       "dataset": "semeval",
       "aspect": "food",
       "domain": "restaurant",
@@ -231,10 +483,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_restaurant_food_0_gpt51",
+      "experiment_id": "semeval_restaurant_food_0_gpt4omini_sentence",
+      "dataset": "semeval",
+      "aspect": "food",
+      "domain": "restaurant",
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_restaurant_food_0_gpt51_word",
       "dataset": "semeval",
       "aspect": "food",
       "domain": "restaurant",
@@ -243,10 +509,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_restaurant_food_1_gpt4omini",
+      "experiment_id": "semeval_restaurant_food_0_gpt51_sentence",
+      "dataset": "semeval",
+      "aspect": "food",
+      "domain": "restaurant",
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_restaurant_food_1_gpt4omini_word",
       "dataset": "semeval",
       "aspect": "food",
       "domain": "restaurant",
@@ -255,10 +535,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_restaurant_food_1_gpt51",
+      "experiment_id": "semeval_restaurant_food_1_gpt4omini_sentence",
+      "dataset": "semeval",
+      "aspect": "food",
+      "domain": "restaurant",
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_restaurant_food_1_gpt51_word",
       "dataset": "semeval",
       "aspect": "food",
       "domain": "restaurant",
@@ -267,10 +561,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_restaurant_food_3_gpt4omini",
+      "experiment_id": "semeval_restaurant_food_1_gpt51_sentence",
+      "dataset": "semeval",
+      "aspect": "food",
+      "domain": "restaurant",
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_restaurant_food_3_gpt4omini_word",
       "dataset": "semeval",
       "aspect": "food",
       "domain": "restaurant",
@@ -279,10 +587,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_restaurant_food_3_gpt51",
+      "experiment_id": "semeval_restaurant_food_3_gpt4omini_sentence",
+      "dataset": "semeval",
+      "aspect": "food",
+      "domain": "restaurant",
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_restaurant_food_3_gpt51_word",
       "dataset": "semeval",
       "aspect": "food",
       "domain": "restaurant",
@@ -291,10 +613,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_restaurant_service_0_gpt4omini",
+      "experiment_id": "semeval_restaurant_food_3_gpt51_sentence",
+      "dataset": "semeval",
+      "aspect": "food",
+      "domain": "restaurant",
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_restaurant_service_0_gpt4omini_word",
       "dataset": "semeval",
       "aspect": "service",
       "domain": "restaurant",
@@ -303,10 +639,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_restaurant_service_0_gpt51",
+      "experiment_id": "semeval_restaurant_service_0_gpt4omini_sentence",
+      "dataset": "semeval",
+      "aspect": "service",
+      "domain": "restaurant",
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_restaurant_service_0_gpt51_word",
       "dataset": "semeval",
       "aspect": "service",
       "domain": "restaurant",
@@ -315,10 +665,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_restaurant_service_1_gpt4omini",
+      "experiment_id": "semeval_restaurant_service_0_gpt51_sentence",
+      "dataset": "semeval",
+      "aspect": "service",
+      "domain": "restaurant",
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_restaurant_service_1_gpt4omini_word",
       "dataset": "semeval",
       "aspect": "service",
       "domain": "restaurant",
@@ -327,10 +691,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_restaurant_service_1_gpt51",
+      "experiment_id": "semeval_restaurant_service_1_gpt4omini_sentence",
+      "dataset": "semeval",
+      "aspect": "service",
+      "domain": "restaurant",
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_restaurant_service_1_gpt51_word",
       "dataset": "semeval",
       "aspect": "service",
       "domain": "restaurant",
@@ -339,10 +717,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_restaurant_service_3_gpt4omini",
+      "experiment_id": "semeval_restaurant_service_1_gpt51_sentence",
+      "dataset": "semeval",
+      "aspect": "service",
+      "domain": "restaurant",
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_restaurant_service_3_gpt4omini_word",
       "dataset": "semeval",
       "aspect": "service",
       "domain": "restaurant",
@@ -351,10 +743,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_restaurant_service_3_gpt51",
+      "experiment_id": "semeval_restaurant_service_3_gpt4omini_sentence",
+      "dataset": "semeval",
+      "aspect": "service",
+      "domain": "restaurant",
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_restaurant_service_3_gpt51_word",
       "dataset": "semeval",
       "aspect": "service",
       "domain": "restaurant",
@@ -363,10 +769,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_laptop_battery_0_gpt4omini",
+      "experiment_id": "semeval_restaurant_service_3_gpt51_sentence",
+      "dataset": "semeval",
+      "aspect": "service",
+      "domain": "restaurant",
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_laptop_battery_0_gpt4omini_word",
       "dataset": "semeval",
       "aspect": "battery",
       "domain": "laptop",
@@ -375,10 +795,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_laptop_battery_0_gpt51",
+      "experiment_id": "semeval_laptop_battery_0_gpt4omini_sentence",
+      "dataset": "semeval",
+      "aspect": "battery",
+      "domain": "laptop",
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_laptop_battery_0_gpt51_word",
       "dataset": "semeval",
       "aspect": "battery",
       "domain": "laptop",
@@ -387,10 +821,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_laptop_battery_1_gpt4omini",
+      "experiment_id": "semeval_laptop_battery_0_gpt51_sentence",
+      "dataset": "semeval",
+      "aspect": "battery",
+      "domain": "laptop",
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_laptop_battery_1_gpt4omini_word",
       "dataset": "semeval",
       "aspect": "battery",
       "domain": "laptop",
@@ -399,10 +847,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_laptop_battery_1_gpt51",
+      "experiment_id": "semeval_laptop_battery_1_gpt4omini_sentence",
+      "dataset": "semeval",
+      "aspect": "battery",
+      "domain": "laptop",
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_laptop_battery_1_gpt51_word",
       "dataset": "semeval",
       "aspect": "battery",
       "domain": "laptop",
@@ -411,10 +873,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_laptop_battery_3_gpt4omini",
+      "experiment_id": "semeval_laptop_battery_1_gpt51_sentence",
+      "dataset": "semeval",
+      "aspect": "battery",
+      "domain": "laptop",
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_laptop_battery_3_gpt4omini_word",
       "dataset": "semeval",
       "aspect": "battery",
       "domain": "laptop",
@@ -423,10 +899,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_laptop_battery_3_gpt51",
+      "experiment_id": "semeval_laptop_battery_3_gpt4omini_sentence",
+      "dataset": "semeval",
+      "aspect": "battery",
+      "domain": "laptop",
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_laptop_battery_3_gpt51_word",
       "dataset": "semeval",
       "aspect": "battery",
       "domain": "laptop",
@@ -435,10 +925,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_laptop_screen_0_gpt4omini",
+      "experiment_id": "semeval_laptop_battery_3_gpt51_sentence",
+      "dataset": "semeval",
+      "aspect": "battery",
+      "domain": "laptop",
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_laptop_screen_0_gpt4omini_word",
       "dataset": "semeval",
       "aspect": "screen",
       "domain": "laptop",
@@ -447,10 +951,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_laptop_screen_0_gpt51",
+      "experiment_id": "semeval_laptop_screen_0_gpt4omini_sentence",
+      "dataset": "semeval",
+      "aspect": "screen",
+      "domain": "laptop",
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_laptop_screen_0_gpt51_word",
       "dataset": "semeval",
       "aspect": "screen",
       "domain": "laptop",
@@ -459,10 +977,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_laptop_screen_1_gpt4omini",
+      "experiment_id": "semeval_laptop_screen_0_gpt51_sentence",
+      "dataset": "semeval",
+      "aspect": "screen",
+      "domain": "laptop",
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_laptop_screen_1_gpt4omini_word",
       "dataset": "semeval",
       "aspect": "screen",
       "domain": "laptop",
@@ -471,10 +1003,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_laptop_screen_1_gpt51",
+      "experiment_id": "semeval_laptop_screen_1_gpt4omini_sentence",
+      "dataset": "semeval",
+      "aspect": "screen",
+      "domain": "laptop",
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_laptop_screen_1_gpt51_word",
       "dataset": "semeval",
       "aspect": "screen",
       "domain": "laptop",
@@ -483,10 +1029,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_laptop_screen_3_gpt4omini",
+      "experiment_id": "semeval_laptop_screen_1_gpt51_sentence",
+      "dataset": "semeval",
+      "aspect": "screen",
+      "domain": "laptop",
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_laptop_screen_3_gpt4omini_word",
       "dataset": "semeval",
       "aspect": "screen",
       "domain": "laptop",
@@ -495,10 +1055,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "semeval_laptop_screen_3_gpt51",
+      "experiment_id": "semeval_laptop_screen_3_gpt4omini_sentence",
+      "dataset": "semeval",
+      "aspect": "screen",
+      "domain": "laptop",
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "semeval_laptop_screen_3_gpt51_word",
       "dataset": "semeval",
       "aspect": "screen",
       "domain": "laptop",
@@ -507,10 +1081,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_joy_0_gpt4omini",
+      "experiment_id": "semeval_laptop_screen_3_gpt51_sentence",
+      "dataset": "semeval",
+      "aspect": "screen",
+      "domain": "laptop",
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_joy_0_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "joy",
       "domain": null,
@@ -519,10 +1107,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_joy_0_gpt51",
+      "experiment_id": "goemotions_joy_0_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "joy",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_joy_0_gpt51_word",
       "dataset": "goemotions",
       "aspect": "joy",
       "domain": null,
@@ -531,10 +1133,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_joy_1_gpt4omini",
+      "experiment_id": "goemotions_joy_0_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "joy",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_joy_1_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "joy",
       "domain": null,
@@ -543,10 +1159,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_joy_1_gpt51",
+      "experiment_id": "goemotions_joy_1_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "joy",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_joy_1_gpt51_word",
       "dataset": "goemotions",
       "aspect": "joy",
       "domain": null,
@@ -555,10 +1185,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_joy_3_gpt4omini",
+      "experiment_id": "goemotions_joy_1_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "joy",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_joy_3_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "joy",
       "domain": null,
@@ -567,10 +1211,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_joy_3_gpt51",
+      "experiment_id": "goemotions_joy_3_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "joy",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_joy_3_gpt51_word",
       "dataset": "goemotions",
       "aspect": "joy",
       "domain": null,
@@ -579,10 +1237,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_anger_0_gpt4omini",
+      "experiment_id": "goemotions_joy_3_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "joy",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_anger_0_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "anger",
       "domain": null,
@@ -591,10 +1263,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_anger_0_gpt51",
+      "experiment_id": "goemotions_anger_0_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "anger",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_anger_0_gpt51_word",
       "dataset": "goemotions",
       "aspect": "anger",
       "domain": null,
@@ -603,10 +1289,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_anger_1_gpt4omini",
+      "experiment_id": "goemotions_anger_0_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "anger",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_anger_1_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "anger",
       "domain": null,
@@ -615,10 +1315,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_anger_1_gpt51",
+      "experiment_id": "goemotions_anger_1_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "anger",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_anger_1_gpt51_word",
       "dataset": "goemotions",
       "aspect": "anger",
       "domain": null,
@@ -627,10 +1341,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_anger_3_gpt4omini",
+      "experiment_id": "goemotions_anger_1_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "anger",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_anger_3_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "anger",
       "domain": null,
@@ -639,10 +1367,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_anger_3_gpt51",
+      "experiment_id": "goemotions_anger_3_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "anger",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_anger_3_gpt51_word",
       "dataset": "goemotions",
       "aspect": "anger",
       "domain": null,
@@ -651,10 +1393,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_sadness_0_gpt4omini",
+      "experiment_id": "goemotions_anger_3_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "anger",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_sadness_0_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "sadness",
       "domain": null,
@@ -663,10 +1419,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_sadness_0_gpt51",
+      "experiment_id": "goemotions_sadness_0_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "sadness",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_sadness_0_gpt51_word",
       "dataset": "goemotions",
       "aspect": "sadness",
       "domain": null,
@@ -675,10 +1445,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_sadness_1_gpt4omini",
+      "experiment_id": "goemotions_sadness_0_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "sadness",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_sadness_1_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "sadness",
       "domain": null,
@@ -687,10 +1471,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_sadness_1_gpt51",
+      "experiment_id": "goemotions_sadness_1_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "sadness",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_sadness_1_gpt51_word",
       "dataset": "goemotions",
       "aspect": "sadness",
       "domain": null,
@@ -699,10 +1497,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_sadness_3_gpt4omini",
+      "experiment_id": "goemotions_sadness_1_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "sadness",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_sadness_3_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "sadness",
       "domain": null,
@@ -711,10 +1523,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_sadness_3_gpt51",
+      "experiment_id": "goemotions_sadness_3_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "sadness",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_sadness_3_gpt51_word",
       "dataset": "goemotions",
       "aspect": "sadness",
       "domain": null,
@@ -723,10 +1549,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_fear_0_gpt4omini",
+      "experiment_id": "goemotions_sadness_3_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "sadness",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_fear_0_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "fear",
       "domain": null,
@@ -735,10 +1575,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_fear_0_gpt51",
+      "experiment_id": "goemotions_fear_0_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "fear",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_fear_0_gpt51_word",
       "dataset": "goemotions",
       "aspect": "fear",
       "domain": null,
@@ -747,10 +1601,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_fear_1_gpt4omini",
+      "experiment_id": "goemotions_fear_0_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "fear",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_fear_1_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "fear",
       "domain": null,
@@ -759,10 +1627,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_fear_1_gpt51",
+      "experiment_id": "goemotions_fear_1_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "fear",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_fear_1_gpt51_word",
       "dataset": "goemotions",
       "aspect": "fear",
       "domain": null,
@@ -771,10 +1653,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_fear_3_gpt4omini",
+      "experiment_id": "goemotions_fear_1_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "fear",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_fear_3_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "fear",
       "domain": null,
@@ -783,10 +1679,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_fear_3_gpt51",
+      "experiment_id": "goemotions_fear_3_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "fear",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_fear_3_gpt51_word",
       "dataset": "goemotions",
       "aspect": "fear",
       "domain": null,
@@ -795,10 +1705,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_surprise_0_gpt4omini",
+      "experiment_id": "goemotions_fear_3_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "fear",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_surprise_0_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "surprise",
       "domain": null,
@@ -807,10 +1731,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_surprise_0_gpt51",
+      "experiment_id": "goemotions_surprise_0_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "surprise",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_surprise_0_gpt51_word",
       "dataset": "goemotions",
       "aspect": "surprise",
       "domain": null,
@@ -819,10 +1757,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_surprise_1_gpt4omini",
+      "experiment_id": "goemotions_surprise_0_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "surprise",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_surprise_1_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "surprise",
       "domain": null,
@@ -831,10 +1783,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_surprise_1_gpt51",
+      "experiment_id": "goemotions_surprise_1_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "surprise",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_surprise_1_gpt51_word",
       "dataset": "goemotions",
       "aspect": "surprise",
       "domain": null,
@@ -843,10 +1809,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_surprise_3_gpt4omini",
+      "experiment_id": "goemotions_surprise_1_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "surprise",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_surprise_3_gpt4omini_word",
       "dataset": "goemotions",
       "aspect": "surprise",
       "domain": null,
@@ -855,10 +1835,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "goemotions_surprise_3_gpt51",
+      "experiment_id": "goemotions_surprise_3_gpt4omini_sentence",
+      "dataset": "goemotions",
+      "aspect": "surprise",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "goemotions_surprise_3_gpt51_word",
       "dataset": "goemotions",
       "aspect": "surprise",
       "domain": null,
@@ -867,10 +1861,24 @@
       "group_size": 300,
       "split_type": "aspect_vs_others",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_0_0_gpt4omini",
+      "experiment_id": "goemotions_surprise_3_gpt51_sentence",
+      "dataset": "goemotions",
+      "aspect": "surprise",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 300,
+      "split_type": "aspect_vs_others",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_0_0_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_0",
       "domain": null,
@@ -879,10 +1887,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_0_0_gpt51",
+      "experiment_id": "coco_concept_0_0_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_0",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_0_0_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_0",
       "domain": null,
@@ -891,10 +1913,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_0_1_gpt4omini",
+      "experiment_id": "coco_concept_0_0_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_0",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_0_1_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_0",
       "domain": null,
@@ -903,10 +1939,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_0_1_gpt51",
+      "experiment_id": "coco_concept_0_1_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_0",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_0_1_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_0",
       "domain": null,
@@ -915,10 +1965,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_0_3_gpt4omini",
+      "experiment_id": "coco_concept_0_1_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_0",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_0_3_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_0",
       "domain": null,
@@ -927,10 +1991,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_0_3_gpt51",
+      "experiment_id": "coco_concept_0_3_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_0",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_0_3_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_0",
       "domain": null,
@@ -939,10 +2017,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_1_0_gpt4omini",
+      "experiment_id": "coco_concept_0_3_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_0",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_1_0_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_1",
       "domain": null,
@@ -951,10 +2043,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_1_0_gpt51",
+      "experiment_id": "coco_concept_1_0_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_1",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_1_0_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_1",
       "domain": null,
@@ -963,10 +2069,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_1_1_gpt4omini",
+      "experiment_id": "coco_concept_1_0_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_1",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_1_1_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_1",
       "domain": null,
@@ -975,10 +2095,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_1_1_gpt51",
+      "experiment_id": "coco_concept_1_1_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_1",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_1_1_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_1",
       "domain": null,
@@ -987,10 +2121,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_1_3_gpt4omini",
+      "experiment_id": "coco_concept_1_1_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_1",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_1_3_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_1",
       "domain": null,
@@ -999,10 +2147,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_1_3_gpt51",
+      "experiment_id": "coco_concept_1_3_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_1",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_1_3_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_1",
       "domain": null,
@@ -1011,10 +2173,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_2_0_gpt4omini",
+      "experiment_id": "coco_concept_1_3_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_1",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_2_0_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_2",
       "domain": null,
@@ -1023,10 +2199,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_2_0_gpt51",
+      "experiment_id": "coco_concept_2_0_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_2",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_2_0_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_2",
       "domain": null,
@@ -1035,10 +2225,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_2_1_gpt4omini",
+      "experiment_id": "coco_concept_2_0_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_2",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_2_1_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_2",
       "domain": null,
@@ -1047,10 +2251,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_2_1_gpt51",
+      "experiment_id": "coco_concept_2_1_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_2",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_2_1_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_2",
       "domain": null,
@@ -1059,10 +2277,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_2_3_gpt4omini",
+      "experiment_id": "coco_concept_2_1_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_2",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_2_3_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_2",
       "domain": null,
@@ -1071,10 +2303,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_2_3_gpt51",
+      "experiment_id": "coco_concept_2_3_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_2",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_2_3_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_2",
       "domain": null,
@@ -1083,10 +2329,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_10_0_gpt4omini",
+      "experiment_id": "coco_concept_2_3_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_2",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_10_0_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_10",
       "domain": null,
@@ -1095,10 +2355,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_10_0_gpt51",
+      "experiment_id": "coco_concept_10_0_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_10",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_10_0_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_10",
       "domain": null,
@@ -1107,10 +2381,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_10_1_gpt4omini",
+      "experiment_id": "coco_concept_10_0_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_10",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_10_1_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_10",
       "domain": null,
@@ -1119,10 +2407,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_10_1_gpt51",
+      "experiment_id": "coco_concept_10_1_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_10",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_10_1_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_10",
       "domain": null,
@@ -1131,10 +2433,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_10_3_gpt4omini",
+      "experiment_id": "coco_concept_10_1_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_10",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_10_3_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_10",
       "domain": null,
@@ -1143,10 +2459,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_10_3_gpt51",
+      "experiment_id": "coco_concept_10_3_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_10",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_10_3_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_10",
       "domain": null,
@@ -1155,10 +2485,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_50_0_gpt4omini",
+      "experiment_id": "coco_concept_10_3_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_10",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_50_0_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_50",
       "domain": null,
@@ -1167,10 +2511,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_50_0_gpt51",
+      "experiment_id": "coco_concept_50_0_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_50",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_50_0_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_50",
       "domain": null,
@@ -1179,10 +2537,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_50_1_gpt4omini",
+      "experiment_id": "coco_concept_50_0_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_50",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_50_1_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_50",
       "domain": null,
@@ -1191,10 +2563,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_50_1_gpt51",
+      "experiment_id": "coco_concept_50_1_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_50",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_50_1_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_50",
       "domain": null,
@@ -1203,10 +2589,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_50_3_gpt4omini",
+      "experiment_id": "coco_concept_50_1_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_50",
+      "domain": null,
+      "few_shot": 1,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_50_3_gpt4omini_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_50",
       "domain": null,
@@ -1215,10 +2615,24 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
     },
     {
-      "experiment_id": "coco_concept_50_3_gpt51",
+      "experiment_id": "coco_concept_50_3_gpt4omini_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_50",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
+    },
+    {
+      "experiment_id": "coco_concept_50_3_gpt51_word",
       "dataset": "retrieved_concepts",
       "aspect": "concept_50",
       "domain": null,
@@ -1227,8 +2641,21 @@
       "group_size": 50,
       "split_type": "aspect_vs_bottom100",
       "use_llm_evaluation": true,
-      "llm_evaluation_model": "gpt-4o-mini"
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "coco_concept_50_3_gpt51_sentence",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_50",
+      "domain": null,
+      "few_shot": 3,
+      "gpt_model": "gpt-5.1",
+      "group_size": 50,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "use_aspect_descriptions": true
     }
   ]
 }
-
