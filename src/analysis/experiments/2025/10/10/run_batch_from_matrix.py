@@ -14,6 +14,7 @@ import time
 import gc
 import signal
 import atexit
+import multiprocessing
 from pathlib import Path
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Any, Tuple
@@ -698,7 +699,8 @@ def run_parallel_experiments(
     import multiprocessing
     
     if max_workers is None:
-        max_workers = min(multiprocessing.cpu_count(), 8)
+        # メモリ使用量削減のため、並列実行数を1/5に削減（最大8 -> 最大2）
+        max_workers = min(max(1, multiprocessing.cpu_count() // 5), 2)
     
     # チェックポイントから復元
     checkpoint_path = checkpoint_file or (output_dir / "checkpoint.json")
@@ -917,7 +919,7 @@ def main():
         '--workers', '-w',
         type=int,
         default=None,
-        help='並列実行数 (default: CPUコア数、最大8)'
+        help='並列実行数 (default: CPUコア数/5、最大2)'
     )
     
     parser.add_argument(
@@ -1029,6 +1031,9 @@ def main():
         )
         logger = logging.getLogger(__name__)
         
+        # デーモン化後にシグナルハンドラを再登録
+        register_cleanup_handlers()
+        
         # PIDファイルを保存（デーモン化後の子プロセスで）
         save_pid(pid_file)
         logger.info(f"バックグラウンド実行開始: PID {os.getpid()}")
@@ -1040,6 +1045,7 @@ def main():
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
         )
         logger = logging.getLogger(__name__)
+        register_cleanup_handlers()
     
     try:
         # PIDファイルを保存
@@ -1063,7 +1069,8 @@ def main():
         checkpoint_file = output_dir / "checkpoint.json"
         
         # 並列実行
-        logger.info(f"並列実行開始 (workers={args.workers or 'auto'})")
+        actual_workers = args.workers if args.workers is not None else min(max(1, multiprocessing.cpu_count() // 5), 2)
+        logger.info(f"並列実行開始 (workers={actual_workers}, CPUコア数={multiprocessing.cpu_count()})")
         if checkpoint_file.exists():
             logger.info(f"チェックポイントから再開: {checkpoint_file}")
         

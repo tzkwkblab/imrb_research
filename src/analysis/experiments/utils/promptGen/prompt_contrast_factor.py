@@ -62,7 +62,8 @@ def generate_contrast_factor_prompt(
     group_b: List[str],
     output_language: Optional[str] = None,
     examples: Optional[List[Dict]] = None,
-    max_tokens: Optional[int] = None
+    max_tokens: Optional[int] = None,
+    max_items_per_group: Optional[int] = None
 ) -> tuple[str, Dict]:
     """
     対比因子生成プロンプトを作成
@@ -74,6 +75,7 @@ def generate_contrast_factor_prompt(
         examples: Few-shot用例題リスト
                  [{"group_a": [...], "group_b": [...], "answer": "..."}]
         max_tokens: 最大トークン数（None時は設定ファイルのデフォルト使用）
+        max_items_per_group: グループあたりの最大アイテム数（None時は制限なし、コンテキスト長超過を防ぐため推奨: 100）
     
     Returns:
         (プロンプト文字列, モデル設定辞書)
@@ -88,6 +90,28 @@ def generate_contrast_factor_prompt(
     # デフォルト言語設定
     if output_language is None:
         output_language = prompt_config['default_language']
+    
+    # コンテキスト長超過を防ぐため、テキスト数を制限
+    # デフォルト: 100件（約100,000トークン以内を目安）
+    if max_items_per_group is None:
+        max_items_per_group = 100
+    
+    # テキストをサンプリング（先頭から取得）
+    original_a_count = len(group_a)
+    original_b_count = len(group_b)
+    if len(group_a) > max_items_per_group:
+        group_a = group_a[:max_items_per_group]
+    if len(group_b) > max_items_per_group:
+        group_b = group_b[:max_items_per_group]
+    
+    # 制限が適用された場合は警告を出力（ログに記録）
+    if original_a_count > max_items_per_group or original_b_count > max_items_per_group:
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.warning(
+            f"プロンプト長制限: グループA {original_a_count}件→{len(group_a)}件, "
+            f"グループB {original_b_count}件→{len(group_b)}件に制限しました"
+        )
     
     # テキスト整形
     group_a_text = "\n".join(f"- {text}" for text in group_a)

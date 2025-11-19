@@ -26,6 +26,7 @@ print(f"スコア: BERT={result['evaluation']['bert_score']:.3f}")
 
 import json
 import os
+import time
 from datetime import datetime
 from typing import List, Dict, Optional, Tuple
 from pathlib import Path
@@ -128,25 +129,47 @@ class ContrastFactorAnalyzer:
         # タイムスタンプ生成
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         
-        # 1. プロンプト生成
+        # 1. プロンプト生成（コンテキスト長超過を防ぐため、テキスト数を制限）
+        # モデルの最大コンテキスト長: 128,000 tokens
+        # 安全のため、100件に制限（約100,000トークン以内を目安）
         prompt, model_config = generate_contrast_factor_prompt(
             group_a=group_a,
             group_b=group_b,
             output_language=output_language,
             examples=examples,
-            max_tokens=max_tokens
+            max_tokens=max_tokens,
+            max_items_per_group=100
         )
         
         if self.debug:
             logger.debug("プロンプト長: %d文字", len(prompt))
         
-        # 2. LLM問い合わせ
-        
+        # 2. LLM問い合わせ（リトライ付き）
         client = self._get_llm_client()
-        llm_response = client.ask(prompt, **model_config)
+        max_retries = 3
+        llm_response = None
         
-        if llm_response is None:
-            raise RuntimeError("LLMからの応答取得に失敗しました")
+        for attempt in range(max_retries):
+            try:
+                llm_response = client.ask(prompt, **model_config)
+                if llm_response is not None and llm_response.strip():
+                    break
+                if attempt < max_retries - 1:
+                    logger.warning(f"LLM応答がNoneまたは空です。リトライ中... ({attempt + 1}/{max_retries})")
+                    time.sleep(2 ** attempt)  # 指数バックオフ
+            except Exception as e:
+                if attempt < max_retries - 1:
+                    logger.warning(f"LLM問い合わせエラー: {e}。リトライ中... ({attempt + 1}/{max_retries})")
+                    time.sleep(2 ** attempt)
+                else:
+                    logger.error(f"LLM問い合わせエラー（最終試行）: {e}")
+                    import traceback
+                    logger.error(f"エラー詳細:\n{traceback.format_exc()}")
+        
+        if llm_response is None or not llm_response.strip():
+            error_msg = f"LLMからの応答取得に失敗しました（{max_retries}回試行後）"
+            logger.error(error_msg)
+            raise RuntimeError(error_msg)
 
         if self.debug:
             logger.debug("LLM応答取得完了 - 応答長: %d文字", len(llm_response or ""))

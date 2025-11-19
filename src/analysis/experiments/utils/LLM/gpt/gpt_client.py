@@ -179,6 +179,14 @@ class GPTClient(BaseLLM):
                 return content_str
             
             except Exception as e:
+                error_str = str(e)
+                # コンテキスト長超過エラーの場合、リトライしても意味がないので即座にNoneを返す
+                if 'context_length_exceeded' in error_str or 'maximum context length' in error_str.lower():
+                    print(f"GPT API エラー（コンテキスト長超過）: {e}")
+                    if self.debug:
+                        self.logger.error("コンテキスト長超過エラー: プロンプトが長すぎます")
+                    return None
+                
                 print(f"GPT API エラー (試行 {attempt + 1}/{self.max_retries}): {e}")
                 if self.debug:
                     import traceback
