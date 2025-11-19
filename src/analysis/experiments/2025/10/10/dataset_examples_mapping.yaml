@@ -1,0 +1,18 @@
+# データセット別例題ファイルマッピング設定
+# 各データセットに使用する例題ファイルを指定
+
+# データセット名 -> 例題ファイルパス（data/analysis-workspace/contrast_examples/からの相対パス）
+# 全てsteamの例題を使用
+mappings:
+  steam: steam/steam_examples_v1.json
+  retrieved_concepts: steam/steam_examples_v1.json
+  semeval: steam/steam_examples_v1.json
+  goemotions: steam/steam_examples_v1.json
+
+# デフォルト動作
+default_behavior:
+  # 例題ファイルが見つからない場合の動作
+  # "skip": few_shot > 0の実験をスキップ
+  # "warn": 警告を出してfew_shot=0として実行
+  # "error": エラーとして停止
+  on_not_found: "warn"
