@@ -356,7 +356,7 @@ def analyze_individual_experiments(
                 analysis = llm_client.ask(
                     prompt,
                     temperature=0.7,
-                    max_tokens=50000
+                    max_tokens=8000
                 )
                 
                 if not analysis:
@@ -466,7 +466,7 @@ def analyze_individual_experiments(
                     analysis = llm_client.ask(
                         prompt,
                         temperature=0.7,
-                        max_tokens=50000
+                        max_tokens=8000
                     )
                     
                     if not analysis:
@@ -535,7 +535,7 @@ def analyze_categories(
             main_experiments
         )
         
-        analysis = llm_client.ask(prompt, temperature=0.7, max_tokens=50000)
+        analysis = llm_client.ask(prompt, temperature=0.7, max_tokens=8000)
         if analysis:
             category_analyses['main'] = analysis
             save_analysis_log(
@@ -569,7 +569,7 @@ def analyze_categories(
                     category_experiments
                 )
                 
-                analysis = llm_client.ask(prompt, temperature=0.7, max_tokens=50000)
+                analysis = llm_client.ask(prompt, temperature=0.7, max_tokens=8000)
                 if analysis:
                     category_analyses[category_name] = analysis
                     save_analysis_log(
