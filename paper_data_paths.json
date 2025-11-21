@@ -1,0 +1,1594 @@
+{
+  "generated_at": "2025-11-21T12:38:12.296485",
+  "project_root": "/Users/seinoshun/imrb_research",
+  "sections": {
+    "methodology": {
+      "presentation_slides": [
+        {
+          "exists": true,
+          "size": 34245,
+          "modified": "2025-07-16T20:26:45.222506",
+          "relative_path": "slide/中間発表/contrastive_label_xai_slide.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/slide/中間発表/contrastive_label_xai_slide.md"
+        },
+        {
+          "exists": true,
+          "size": 19420,
+          "modified": "2025-07-07T20:01:37.065665",
+          "relative_path": "slide/中間発表/backup/2025_07_07_2001_contrastive_label_xai_slide.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/slide/中間発表/backup/2025_07_07_2001_contrastive_label_xai_slide.md"
+        },
+        {
+          "exists": true,
+          "size": 21256,
+          "modified": "2025-07-10T15:34:38.745977",
+          "relative_path": "slide/中間発表/backup/2025_07_11_contrastive_label_xai_slide.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/slide/中間発表/backup/2025_07_11_contrastive_label_xai_slide.md"
+        },
+        {
+          "exists": true,
+          "size": 15180,
+          "modified": "2025-07-15T14:38:38.776238",
+          "relative_path": "slide/中間発表/backup/2025_07_15_contrastive_label_xai_slide.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/slide/中間発表/backup/2025_07_15_contrastive_label_xai_slide.md"
+        }
+      ],
+      "research_background": [
+        {
+          "exists": true,
+          "size": 21486,
+          "modified": "2025-10-31T15:34:59.422043",
+          "relative_path": "論文/masterThesisJaSample.tex",
+          "absolute_path": "/Users/seinoshun/imrb_research/論文/masterThesisJaSample.tex"
+        },
+        {
+          "exists": true,
+          "size": 9502,
+          "modified": "2025-11-19T16:08:08.197685",
+          "relative_path": "results/20251119_153853/analysis_workspace/research_context.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/research_context.md"
+        },
+        {
+          "exists": true,
+          "size": 6971,
+          "modified": "2025-06-27T15:18:24.948519",
+          "relative_path": ".cursor/rules/research-overview.mdc",
+          "absolute_path": "/Users/seinoshun/imrb_research/.cursor/rules/research-overview.mdc"
+        }
+      ]
+    },
+    "experiment": {
+      "prompt_configs": [
+        {
+          "exists": true,
+          "size": 948,
+          "modified": "2025-06-27T14:59:19.576383",
+          "relative_path": "src/analysis/experiments/utils/config/paramaters.yml",
+          "absolute_path": "/Users/seinoshun/imrb_research/src/analysis/experiments/utils/config/paramaters.yml"
+        },
+        {
+          "exists": true,
+          "size": 2747,
+          "modified": "2025-11-19T15:38:26.605327",
+          "relative_path": "experiment_execution_prompt.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/experiment_execution_prompt.md"
+        },
+        {
+          "exists": true,
+          "size": 3371,
+          "modified": "2025-11-19T19:38:05.544760",
+          "relative_path": "LLMエージェント実行プロンプト.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/LLMエージェント実行プロンプト.md"
+        }
+      ],
+      "experiment_settings": [
+        {
+          "exists": true,
+          "size": 29185,
+          "modified": "2025-11-19T15:35:32.899354",
+          "relative_path": "実験マトリックス.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/実験マトリックス.json"
+        },
+        {
+          "exists": true,
+          "size": 27136381,
+          "modified": "2025-11-19T15:46:20.591034",
+          "relative_path": "results/20251119_153853/batch_results.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/batch_results.json"
+        }
+      ]
+    },
+    "results_and_discussion": {
+      "experiment_results": [
+        {
+          "exists": true,
+          "size": 27136381,
+          "modified": "2025-11-19T15:46:20.591034",
+          "relative_path": "results/20251119_153853/batch_results.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/batch_results.json"
+        },
+        {
+          "exists": true,
+          "size": 354,
+          "modified": "2025-11-19T15:46:20.595392",
+          "relative_path": "results/20251119_153853/individual/amazon_delivery_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/amazon_delivery_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 348,
+          "modified": "2025-11-19T15:46:20.595308",
+          "relative_path": "results/20251119_153853/individual/amazon_price_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/amazon_price_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 352,
+          "modified": "2025-11-19T15:46:20.595560",
+          "relative_path": "results/20251119_153853/individual/amazon_product_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/amazon_product_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 352,
+          "modified": "2025-11-19T15:46:20.595219",
+          "relative_path": "results/20251119_153853/individual/amazon_quality_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/amazon_quality_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 352,
+          "modified": "2025-11-19T15:46:20.595476",
+          "relative_path": "results/20251119_153853/individual/amazon_service_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/amazon_service_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 48783,
+          "modified": "2025-11-19T15:46:20.596083",
+          "relative_path": "results/20251119_153853/individual/goemotions_admiration_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_admiration_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 47831,
+          "modified": "2025-11-19T15:46:20.596693",
+          "relative_path": "results/20251119_153853/individual/goemotions_amusement_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_amusement_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 49999,
+          "modified": "2025-11-19T15:46:20.597259",
+          "relative_path": "results/20251119_153853/individual/goemotions_anger_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_anger_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 50833,
+          "modified": "2025-11-19T15:46:20.597976",
+          "relative_path": "results/20251119_153853/individual/goemotions_annoyance_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_annoyance_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 51801,
+          "modified": "2025-11-19T15:46:20.598611",
+          "relative_path": "results/20251119_153853/individual/goemotions_approval_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_approval_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 50407,
+          "modified": "2025-11-19T15:46:20.599361",
+          "relative_path": "results/20251119_153853/individual/goemotions_caring_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_caring_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 49344,
+          "modified": "2025-11-19T15:46:20.599907",
+          "relative_path": "results/20251119_153853/individual/goemotions_confusion_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_confusion_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 51480,
+          "modified": "2025-11-19T15:46:20.600499",
+          "relative_path": "results/20251119_153853/individual/goemotions_curiosity_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_curiosity_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 48229,
+          "modified": "2025-11-19T15:46:20.601341",
+          "relative_path": "results/20251119_153853/individual/goemotions_desire_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_desire_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 50018,
+          "modified": "2025-11-19T15:46:20.601889",
+          "relative_path": "results/20251119_153853/individual/goemotions_disappointment_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_disappointment_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 49486,
+          "modified": "2025-11-19T15:46:20.602465",
+          "relative_path": "results/20251119_153853/individual/goemotions_disapproval_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_disapproval_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 48800,
+          "modified": "2025-11-19T15:46:20.603284",
+          "relative_path": "results/20251119_153853/individual/goemotions_disgust_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_disgust_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 53831,
+          "modified": "2025-11-19T15:46:20.603911",
+          "relative_path": "results/20251119_153853/individual/goemotions_embarrassment_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_embarrassment_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 45990,
+          "modified": "2025-11-19T15:46:20.604453",
+          "relative_path": "results/20251119_153853/individual/goemotions_excitement_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_excitement_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 52165,
+          "modified": "2025-11-19T15:46:20.605033",
+          "relative_path": "results/20251119_153853/individual/goemotions_fear_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_fear_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 47810,
+          "modified": "2025-11-19T15:46:20.605546",
+          "relative_path": "results/20251119_153853/individual/goemotions_gratitude_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_gratitude_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 46366,
+          "modified": "2025-11-19T15:46:20.606057",
+          "relative_path": "results/20251119_153853/individual/goemotions_grief_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_grief_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 47855,
+          "modified": "2025-11-19T15:46:20.606572",
+          "relative_path": "results/20251119_153853/individual/goemotions_joy_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_joy_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 48052,
+          "modified": "2025-11-19T15:46:20.607098",
+          "relative_path": "results/20251119_153853/individual/goemotions_love_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_love_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 51798,
+          "modified": "2025-11-19T15:46:20.607980",
+          "relative_path": "results/20251119_153853/individual/goemotions_nervousness_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_nervousness_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 47061,
+          "modified": "2025-11-19T15:46:20.613199",
+          "relative_path": "results/20251119_153853/individual/goemotions_neutral_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_neutral_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 53394,
+          "modified": "2025-11-19T15:46:20.608629",
+          "relative_path": "results/20251119_153853/individual/goemotions_optimism_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_optimism_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 47451,
+          "modified": "2025-11-19T15:46:20.609181",
+          "relative_path": "results/20251119_153853/individual/goemotions_pride_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_pride_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 53304,
+          "modified": "2025-11-19T15:46:20.609968",
+          "relative_path": "results/20251119_153853/individual/goemotions_realization_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_realization_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 50130,
+          "modified": "2025-11-19T15:46:20.610555",
+          "relative_path": "results/20251119_153853/individual/goemotions_relief_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_relief_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 50534,
+          "modified": "2025-11-19T15:46:20.611141",
+          "relative_path": "results/20251119_153853/individual/goemotions_remorse_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_remorse_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 46985,
+          "modified": "2025-11-19T15:46:20.611796",
+          "relative_path": "results/20251119_153853/individual/goemotions_sadness_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_sadness_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 49827,
+          "modified": "2025-11-19T15:46:20.612371",
+          "relative_path": "results/20251119_153853/individual/goemotions_surprise_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/goemotions_surprise_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 21602,
+          "modified": "2025-11-19T15:46:20.613572",
+          "relative_path": "results/20251119_153853/individual/retrieved_concepts_concept_0_0_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/retrieved_concepts_concept_0_0_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 22043,
+          "modified": "2025-11-19T15:46:20.613871",
+          "relative_path": "results/20251119_153853/individual/retrieved_concepts_concept_0_0_51_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/retrieved_concepts_concept_0_0_51_word.json"
+        },
+        {
+          "exists": true,
+          "size": 21821,
+          "modified": "2025-11-19T15:46:20.615362",
+          "relative_path": "results/20251119_153853/individual/retrieved_concepts_concept_10_0_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/retrieved_concepts_concept_10_0_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 21551,
+          "modified": "2025-11-19T15:46:20.615621",
+          "relative_path": "results/20251119_153853/individual/retrieved_concepts_concept_10_0_51_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/retrieved_concepts_concept_10_0_51_word.json"
+        },
+        {
+          "exists": true,
+          "size": 20794,
+          "modified": "2025-11-19T15:46:20.614178",
+          "relative_path": "results/20251119_153853/individual/retrieved_concepts_concept_1_0_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/retrieved_concepts_concept_1_0_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 21176,
+          "modified": "2025-11-19T15:46:20.614502",
+          "relative_path": "results/20251119_153853/individual/retrieved_concepts_concept_1_0_51_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/retrieved_concepts_concept_1_0_51_word.json"
+        },
+        {
+          "exists": true,
+          "size": 21122,
+          "modified": "2025-11-19T15:46:20.614815",
+          "relative_path": "results/20251119_153853/individual/retrieved_concepts_concept_2_0_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/retrieved_concepts_concept_2_0_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 21347,
+          "modified": "2025-11-19T15:46:20.615107",
+          "relative_path": "results/20251119_153853/individual/retrieved_concepts_concept_2_0_51_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/retrieved_concepts_concept_2_0_51_word.json"
+        },
+        {
+          "exists": true,
+          "size": 21465,
+          "modified": "2025-11-19T15:46:20.615930",
+          "relative_path": "results/20251119_153853/individual/retrieved_concepts_concept_50_0_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/retrieved_concepts_concept_50_0_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 20416,
+          "modified": "2025-11-19T15:46:20.616241",
+          "relative_path": "results/20251119_153853/individual/retrieved_concepts_concept_50_0_51_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/retrieved_concepts_concept_50_0_51_word.json"
+        },
+        {
+          "exists": true,
+          "size": 66332,
+          "modified": "2025-11-19T15:46:20.594584",
+          "relative_path": "results/20251119_153853/individual/semeval_laptop_battery_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/semeval_laptop_battery_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 64960,
+          "modified": "2025-11-19T15:46:20.595095",
+          "relative_path": "results/20251119_153853/individual/semeval_laptop_screen_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/semeval_laptop_screen_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 58504,
+          "modified": "2025-11-19T15:46:20.593326",
+          "relative_path": "results/20251119_153853/individual/semeval_restaurant_food_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/semeval_restaurant_food_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 64182,
+          "modified": "2025-11-19T15:46:20.594116",
+          "relative_path": "results/20251119_153853/individual/semeval_restaurant_service_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/semeval_restaurant_service_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 886834,
+          "modified": "2025-11-19T15:46:20.746360",
+          "relative_path": "results/20251119_153853/individual/steam_audio_group_size_100_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_audio_group_size_100_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1062530,
+          "modified": "2025-11-19T15:46:20.752603",
+          "relative_path": "results/20251119_153853/individual/steam_audio_group_size_150_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_audio_group_size_150_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1042564,
+          "modified": "2025-11-19T15:46:20.759449",
+          "relative_path": "results/20251119_153853/individual/steam_audio_group_size_200_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_audio_group_size_200_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1393950,
+          "modified": "2025-11-19T15:46:20.768811",
+          "relative_path": "results/20251119_153853/individual/steam_audio_group_size_300_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_audio_group_size_300_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1361679,
+          "modified": "2025-11-19T15:46:20.805414",
+          "relative_path": "results/20251119_153853/individual/steam_audio_group_size_300_1_5.1_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_audio_group_size_300_1_5.1_word.json"
+        },
+        {
+          "exists": true,
+          "size": 530768,
+          "modified": "2025-11-19T15:46:20.728402",
+          "relative_path": "results/20251119_153853/individual/steam_audio_group_size_50_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_audio_group_size_50_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 935511,
+          "modified": "2025-11-19T15:46:20.625264",
+          "relative_path": "results/20251119_153853/individual/steam_gameplay_group_size_100_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_gameplay_group_size_100_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 978580,
+          "modified": "2025-11-19T15:46:20.631163",
+          "relative_path": "results/20251119_153853/individual/steam_gameplay_group_size_150_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_gameplay_group_size_150_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1180523,
+          "modified": "2025-11-19T15:46:20.639003",
+          "relative_path": "results/20251119_153853/individual/steam_gameplay_group_size_200_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_gameplay_group_size_200_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1416794,
+          "modified": "2025-11-19T15:46:20.647674",
+          "relative_path": "results/20251119_153853/individual/steam_gameplay_group_size_300_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_gameplay_group_size_300_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1373222,
+          "modified": "2025-11-19T15:46:20.777912",
+          "relative_path": "results/20251119_153853/individual/steam_gameplay_group_size_300_1_5.1_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_gameplay_group_size_300_1_5.1_word.json"
+        },
+        {
+          "exists": true,
+          "size": 411844,
+          "modified": "2025-11-19T15:46:20.618680",
+          "relative_path": "results/20251119_153853/individual/steam_gameplay_group_size_50_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_gameplay_group_size_50_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 895549,
+          "modified": "2025-11-19T15:46:20.688178",
+          "relative_path": "results/20251119_153853/individual/steam_story_group_size_100_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_story_group_size_100_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 989777,
+          "modified": "2025-11-19T15:46:20.694690",
+          "relative_path": "results/20251119_153853/individual/steam_story_group_size_150_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_story_group_size_150_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1061941,
+          "modified": "2025-11-19T15:46:20.701880",
+          "relative_path": "results/20251119_153853/individual/steam_story_group_size_200_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_story_group_size_200_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1341532,
+          "modified": "2025-11-19T15:46:20.716413",
+          "relative_path": "results/20251119_153853/individual/steam_story_group_size_300_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_story_group_size_300_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1376756,
+          "modified": "2025-11-19T15:46:20.796948",
+          "relative_path": "results/20251119_153853/individual/steam_story_group_size_300_1_5.1_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_story_group_size_300_1_5.1_word.json"
+        },
+        {
+          "exists": true,
+          "size": 431960,
+          "modified": "2025-11-19T15:46:20.683649",
+          "relative_path": "results/20251119_153853/individual/steam_story_group_size_50_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_story_group_size_50_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 832442,
+          "modified": "2025-11-19T15:46:20.655089",
+          "relative_path": "results/20251119_153853/individual/steam_visual_group_size_100_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_visual_group_size_100_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1058396,
+          "modified": "2025-11-19T15:46:20.660974",
+          "relative_path": "results/20251119_153853/individual/steam_visual_group_size_150_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_visual_group_size_150_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1245834,
+          "modified": "2025-11-19T15:46:20.670918",
+          "relative_path": "results/20251119_153853/individual/steam_visual_group_size_200_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_visual_group_size_200_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1502695,
+          "modified": "2025-11-19T15:46:20.680425",
+          "relative_path": "results/20251119_153853/individual/steam_visual_group_size_300_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_visual_group_size_300_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 1391039,
+          "modified": "2025-11-19T15:46:20.787612",
+          "relative_path": "results/20251119_153853/individual/steam_visual_group_size_300_1_5.1_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_visual_group_size_300_1_5.1_word.json"
+        },
+        {
+          "exists": true,
+          "size": 486233,
+          "modified": "2025-11-19T15:46:20.650880",
+          "relative_path": "results/20251119_153853/individual/steam_visual_group_size_50_1_4o-mini_word.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/individual/steam_visual_group_size_50_1_4o-mini_word.json"
+        },
+        {
+          "exists": true,
+          "size": 48064,
+          "modified": "2025-11-19T15:40:38.399832",
+          "relative_path": "results/20251119_153853/experiments/goemotions_disgust_1_4o-mini_word/goemotions_disgust_20251119_154030_20251119_154032.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_disgust_1_4o-mini_word/goemotions_disgust_20251119_154030_20251119_154032.json"
+        },
+        {
+          "exists": true,
+          "size": 20115,
+          "modified": "2025-11-19T15:42:32.761028",
+          "relative_path": "results/20251119_153853/experiments/retrieved_concepts_concept_1_0_4o-mini_word/retrieved_concepts_concept_1_20251119_154230_20251119_154232.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/retrieved_concepts_concept_1_0_4o-mini_word/retrieved_concepts_concept_1_20251119_154230_20251119_154232.json"
+        },
+        {
+          "exists": true,
+          "size": 45638,
+          "modified": "2025-11-19T15:41:10.481266",
+          "relative_path": "results/20251119_153853/experiments/goemotions_grief_1_4o-mini_word/goemotions_grief_20251119_154104_20251119_154105.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_grief_1_4o-mini_word/goemotions_grief_20251119_154104_20251119_154105.json"
+        },
+        {
+          "exists": true,
+          "size": 1390309,
+          "modified": "2025-11-19T15:46:00.498144",
+          "relative_path": "results/20251119_153853/experiments/steam_visual_group_size_300_1_5.1_word/steam_visual_20251119_154552_20251119_154552.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_visual_group_size_300_1_5.1_word/steam_visual_20251119_154552_20251119_154552.json"
+        },
+        {
+          "exists": true,
+          "size": 48734,
+          "modified": "2025-11-19T15:40:30.791650",
+          "relative_path": "results/20251119_153853/experiments/goemotions_disapproval_1_4o-mini_word/goemotions_disapproval_20251119_154024_20251119_154025.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_disapproval_1_4o-mini_word/goemotions_disapproval_20251119_154024_20251119_154025.json"
+        },
+        {
+          "exists": true,
+          "size": 47328,
+          "modified": "2025-11-19T15:41:23.976371",
+          "relative_path": "results/20251119_153853/experiments/goemotions_love_1_4o-mini_word/goemotions_love_20251119_154117_20251119_154119.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_love_1_4o-mini_word/goemotions_love_20251119_154117_20251119_154119.json"
+        },
+        {
+          "exists": true,
+          "size": 431225,
+          "modified": "2025-11-19T15:44:21.362859",
+          "relative_path": "results/20251119_153853/experiments/steam_story_group_size_50_1_4o-mini_word/steam_story_20251119_154415_20251119_154416.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_story_group_size_50_1_4o-mini_word/steam_story_20251119_154415_20251119_154416.json"
+        },
+        {
+          "exists": true,
+          "size": 1416044,
+          "modified": "2025-11-19T15:43:31.472975",
+          "relative_path": "results/20251119_153853/experiments/steam_gameplay_group_size_300_1_4o-mini_word/steam_gameplay_20251119_154323_20251119_154324.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_gameplay_group_size_300_1_4o-mini_word/steam_gameplay_20251119_154323_20251119_154324.json"
+        },
+        {
+          "exists": true,
+          "size": 485494,
+          "modified": "2025-11-19T15:43:37.706642",
+          "relative_path": "results/20251119_153853/experiments/steam_visual_group_size_50_1_4o-mini_word/steam_visual_20251119_154331_20251119_154332.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_visual_group_size_50_1_4o-mini_word/steam_visual_20251119_154331_20251119_154332.json"
+        },
+        {
+          "exists": true,
+          "size": 49254,
+          "modified": "2025-11-19T15:40:24.404254",
+          "relative_path": "results/20251119_153853/experiments/goemotions_disappointment_1_4o-mini_word/goemotions_disappointment_20251119_154018_20251119_154019.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_disappointment_1_4o-mini_word/goemotions_disappointment_20251119_154018_20251119_154019.json"
+        },
+        {
+          "exists": true,
+          "size": 20682,
+          "modified": "2025-11-19T15:42:41.010227",
+          "relative_path": "results/20251119_153853/experiments/retrieved_concepts_concept_2_0_51_word/retrieved_concepts_concept_2_20251119_154237_20251119_154239.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/retrieved_concepts_concept_2_0_51_word/retrieved_concepts_concept_2_20251119_154237_20251119_154239.json"
+        },
+        {
+          "exists": true,
+          "size": 48600,
+          "modified": "2025-11-19T15:40:07.483858",
+          "relative_path": "results/20251119_153853/experiments/goemotions_confusion_1_4o-mini_word/goemotions_confusion_20251119_154001_20251119_154003.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_confusion_1_4o-mini_word/goemotions_confusion_20251119_154001_20251119_154003.json"
+        },
+        {
+          "exists": true,
+          "size": 46723,
+          "modified": "2025-11-19T15:41:46.634830",
+          "relative_path": "results/20251119_153853/experiments/goemotions_pride_1_4o-mini_word/goemotions_pride_20251119_154138_20251119_154140.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_pride_1_4o-mini_word/goemotions_pride_20251119_154138_20251119_154140.json"
+        },
+        {
+          "exists": true,
+          "size": 52654,
+          "modified": "2025-11-19T15:41:38.337546",
+          "relative_path": "results/20251119_153853/experiments/goemotions_optimism_1_4o-mini_word/goemotions_optimism_20251119_154132_20251119_154133.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_optimism_1_4o-mini_word/goemotions_optimism_20251119_154132_20251119_154133.json"
+        },
+        {
+          "exists": true,
+          "size": 1393212,
+          "modified": "2025-11-19T15:45:43.812618",
+          "relative_path": "results/20251119_153853/experiments/steam_audio_group_size_300_1_4o-mini_word/steam_audio_20251119_154532_20251119_154533.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_audio_group_size_300_1_4o-mini_word/steam_audio_20251119_154532_20251119_154533.json"
+        },
+        {
+          "exists": true,
+          "size": 20923,
+          "modified": "2025-11-19T15:42:28.177883",
+          "relative_path": "results/20251119_153853/experiments/retrieved_concepts_concept_0_0_4o-mini_word/retrieved_concepts_concept_0_20251119_154226_20251119_154227.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/retrieved_concepts_concept_0_0_4o-mini_word/retrieved_concepts_concept_0_20251119_154226_20251119_154227.json"
+        },
+        {
+          "exists": true,
+          "size": 1340794,
+          "modified": "2025-11-19T15:44:53.833247",
+          "relative_path": "results/20251119_153853/experiments/steam_story_group_size_300_1_4o-mini_word/steam_story_20251119_154445_20251119_154446.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_story_group_size_300_1_4o-mini_word/steam_story_20251119_154445_20251119_154446.json"
+        },
+        {
+          "exists": true,
+          "size": 831700,
+          "modified": "2025-11-19T15:43:45.240988",
+          "relative_path": "results/20251119_153853/experiments/steam_visual_group_size_100_1_4o-mini_word/steam_visual_20251119_154337_20251119_154338.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_visual_group_size_100_1_4o-mini_word/steam_visual_20251119_154337_20251119_154338.json"
+        },
+        {
+          "exists": true,
+          "size": 49675,
+          "modified": "2025-11-19T15:40:01.689358",
+          "relative_path": "results/20251119_153853/experiments/goemotions_caring_1_4o-mini_word/goemotions_caring_20251119_153956_20251119_153957.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_caring_1_4o-mini_word/goemotions_caring_20251119_153956_20251119_153957.json"
+        },
+        {
+          "exists": true,
+          "size": 65590,
+          "modified": "2025-11-19T15:39:17.312309",
+          "relative_path": "results/20251119_153853/experiments/semeval_laptop_battery_1_4o-mini_word/semeval_battery_20251119_153912_20251119_153912.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/semeval_laptop_battery_1_4o-mini_word/semeval_battery_20251119_153912_20251119_153912.json"
+        },
+        {
+          "exists": true,
+          "size": 51046,
+          "modified": "2025-11-19T15:41:32.293059",
+          "relative_path": "results/20251119_153853/experiments/goemotions_nervousness_1_4o-mini_word/goemotions_nervousness_20251119_154123_20251119_154126.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_nervousness_1_4o-mini_word/goemotions_nervousness_20251119_154123_20251119_154126.json"
+        },
+        {
+          "exists": true,
+          "size": 20443,
+          "modified": "2025-11-19T15:42:37.486673",
+          "relative_path": "results/20251119_153853/experiments/retrieved_concepts_concept_2_0_4o-mini_word/retrieved_concepts_concept_2_20251119_154235_20251119_154236.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/retrieved_concepts_concept_2_0_4o-mini_word/retrieved_concepts_concept_2_20251119_154235_20251119_154236.json"
+        },
+        {
+          "exists": true,
+          "size": 46249,
+          "modified": "2025-11-19T15:42:12.944766",
+          "relative_path": "results/20251119_153853/experiments/goemotions_sadness_1_4o-mini_word/goemotions_sadness_20251119_154206_20251119_154208.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_sadness_1_4o-mini_word/goemotions_sadness_20251119_154206_20251119_154208.json"
+        },
+        {
+          "exists": true,
+          "size": 1179773,
+          "modified": "2025-11-19T15:43:23.716014",
+          "relative_path": "results/20251119_153853/experiments/steam_gameplay_group_size_200_1_4o-mini_word/steam_gameplay_20251119_154314_20251119_154315.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_gameplay_group_size_200_1_4o-mini_word/steam_gameplay_20251119_154314_20251119_154315.json"
+        },
+        {
+          "exists": true,
+          "size": 49398,
+          "modified": "2025-11-19T15:41:59.837680",
+          "relative_path": "results/20251119_153853/experiments/goemotions_relief_1_4o-mini_word/goemotions_relief_20251119_154152_20251119_154154.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_relief_1_4o-mini_word/goemotions_relief_20251119_154152_20251119_154154.json"
+        },
+        {
+          "exists": true,
+          "size": 20782,
+          "modified": "2025-11-19T15:42:47.352743",
+          "relative_path": "results/20251119_153853/experiments/retrieved_concepts_concept_50_0_4o-mini_word/retrieved_concepts_concept_50_20251119_154245_20251119_154246.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/retrieved_concepts_concept_50_0_4o-mini_word/retrieved_concepts_concept_50_20251119_154245_20251119_154246.json"
+        },
+        {
+          "exists": true,
+          "size": 989039,
+          "modified": "2025-11-19T15:44:37.957081",
+          "relative_path": "results/20251119_153853/experiments/steam_story_group_size_150_1_4o-mini_word/steam_story_20251119_154430_20251119_154431.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_story_group_size_150_1_4o-mini_word/steam_story_20251119_154430_20251119_154431.json"
+        },
+        {
+          "exists": true,
+          "size": 1061792,
+          "modified": "2025-11-19T15:45:23.433100",
+          "relative_path": "results/20251119_153853/experiments/steam_audio_group_size_150_1_4o-mini_word/steam_audio_20251119_154513_20251119_154514.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_audio_group_size_150_1_4o-mini_word/steam_audio_20251119_154513_20251119_154514.json"
+        },
+        {
+          "exists": true,
+          "size": 57762,
+          "modified": "2025-11-19T15:39:05.010363",
+          "relative_path": "results/20251119_153853/experiments/semeval_restaurant_food_1_4o-mini_word/semeval_food_20251119_153856_20251119_153857.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/semeval_restaurant_food_1_4o-mini_word/semeval_food_20251119_153856_20251119_153857.json"
+        },
+        {
+          "exists": true,
+          "size": 1360953,
+          "modified": "2025-11-19T15:46:19.245928",
+          "relative_path": "results/20251119_153853/experiments/steam_audio_group_size_300_1_5.1_word/steam_audio_20251119_154610_20251119_154611.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_audio_group_size_300_1_5.1_word/steam_audio_20251119_154610_20251119_154611.json"
+        },
+        {
+          "exists": true,
+          "size": 47066,
+          "modified": "2025-11-19T15:41:04.441208",
+          "relative_path": "results/20251119_153853/experiments/goemotions_gratitude_1_4o-mini_word/goemotions_gratitude_20251119_154058_20251119_154059.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_gratitude_1_4o-mini_word/goemotions_gratitude_20251119_154058_20251119_154059.json"
+        },
+        {
+          "exists": true,
+          "size": 977830,
+          "modified": "2025-11-19T15:43:14.503626",
+          "relative_path": "results/20251119_153853/experiments/steam_gameplay_group_size_150_1_4o-mini_word/steam_gameplay_20251119_154305_20251119_154306.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_gameplay_group_size_150_1_4o-mini_word/steam_gameplay_20251119_154305_20251119_154306.json"
+        },
+        {
+          "exists": true,
+          "size": 1061203,
+          "modified": "2025-11-19T15:44:45.691439",
+          "relative_path": "results/20251119_153853/experiments/steam_story_group_size_200_1_4o-mini_word/steam_story_20251119_154437_20251119_154438.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_story_group_size_200_1_4o-mini_word/steam_story_20251119_154437_20251119_154438.json"
+        },
+        {
+          "exists": true,
+          "size": 19747,
+          "modified": "2025-11-19T15:42:49.433282",
+          "relative_path": "results/20251119_153853/experiments/retrieved_concepts_concept_50_0_51_word/retrieved_concepts_concept_50_20251119_154247_20251119_154248.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/retrieved_concepts_concept_50_0_51_word/retrieved_concepts_concept_50_20251119_154247_20251119_154248.json"
+        },
+        {
+          "exists": true,
+          "size": 47135,
+          "modified": "2025-11-19T15:41:17.781109",
+          "relative_path": "results/20251119_153853/experiments/goemotions_joy_1_4o-mini_word/goemotions_joy_20251119_154110_20251119_154112.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_joy_1_4o-mini_word/goemotions_joy_20251119_154110_20251119_154112.json"
+        },
+        {
+          "exists": true,
+          "size": 1041826,
+          "modified": "2025-11-19T15:45:32.333328",
+          "relative_path": "results/20251119_153853/experiments/steam_audio_group_size_200_1_4o-mini_word/steam_audio_20251119_154523_20251119_154524.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_audio_group_size_200_1_4o-mini_word/steam_audio_20251119_154523_20251119_154524.json"
+        },
+        {
+          "exists": true,
+          "size": 1372484,
+          "modified": "2025-11-19T15:45:51.998054",
+          "relative_path": "results/20251119_153853/experiments/steam_gameplay_group_size_300_1_5.1_word/steam_gameplay_20251119_154543_20251119_154544.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_gameplay_group_size_300_1_5.1_word/steam_gameplay_20251119_154543_20251119_154544.json"
+        },
+        {
+          "exists": true,
+          "size": 934761,
+          "modified": "2025-11-19T15:43:05.524562",
+          "relative_path": "results/20251119_153853/experiments/steam_gameplay_group_size_100_1_4o-mini_word/steam_gameplay_20251119_154256_20251119_154257.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_gameplay_group_size_100_1_4o-mini_word/steam_gameplay_20251119_154256_20251119_154257.json"
+        },
+        {
+          "exists": true,
+          "size": 47087,
+          "modified": "2025-11-19T15:39:36.409994",
+          "relative_path": "results/20251119_153853/experiments/goemotions_amusement_1_4o-mini_word/goemotions_amusement_20251119_153930_20251119_153931.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_amusement_1_4o-mini_word/goemotions_amusement_20251119_153930_20251119_153931.json"
+        },
+        {
+          "exists": true,
+          "size": 530033,
+          "modified": "2025-11-19T15:45:00.622632",
+          "relative_path": "results/20251119_153853/experiments/steam_audio_group_size_50_1_4o-mini_word/steam_audio_20251119_154453_20251119_154454.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_audio_group_size_50_1_4o-mini_word/steam_audio_20251119_154453_20251119_154454.json"
+        },
+        {
+          "exists": true,
+          "size": 49271,
+          "modified": "2025-11-19T15:39:42.328930",
+          "relative_path": "results/20251119_153853/experiments/goemotions_anger_1_4o-mini_word/goemotions_anger_20251119_153936_20251119_153938.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_anger_1_4o-mini_word/goemotions_anger_20251119_153936_20251119_153938.json"
+        },
+        {
+          "exists": true,
+          "size": 894811,
+          "modified": "2025-11-19T15:44:30.757330",
+          "relative_path": "results/20251119_153853/experiments/steam_story_group_size_100_1_4o-mini_word/steam_story_20251119_154421_20251119_154421.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_story_group_size_100_1_4o-mini_word/steam_story_20251119_154421_20251119_154421.json"
+        },
+        {
+          "exists": true,
+          "size": 1501953,
+          "modified": "2025-11-19T15:44:15.447328",
+          "relative_path": "results/20251119_153853/experiments/steam_visual_group_size_300_1_4o-mini_word/steam_visual_20251119_154402_20251119_154403.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_visual_group_size_300_1_4o-mini_word/steam_visual_20251119_154402_20251119_154403.json"
+        },
+        {
+          "exists": true,
+          "size": 51441,
+          "modified": "2025-11-19T15:40:58.292340",
+          "relative_path": "results/20251119_153853/experiments/goemotions_fear_1_4o-mini_word/goemotions_fear_20251119_154051_20251119_154052.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_fear_1_4o-mini_word/goemotions_fear_20251119_154051_20251119_154052.json"
+        },
+        {
+          "exists": true,
+          "size": 46325,
+          "modified": "2025-11-19T15:42:26.134617",
+          "relative_path": "results/20251119_153853/experiments/goemotions_neutral_1_4o-mini_word/goemotions_neutral_20251119_154219_20251119_154220.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_neutral_1_4o-mini_word/goemotions_neutral_20251119_154219_20251119_154220.json"
+        },
+        {
+          "exists": true,
+          "size": 21378,
+          "modified": "2025-11-19T15:42:30.667128",
+          "relative_path": "results/20251119_153853/experiments/retrieved_concepts_concept_0_0_51_word/retrieved_concepts_concept_0_20251119_154228_20251119_154229.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/retrieved_concepts_concept_0_0_51_word/retrieved_concepts_concept_0_20251119_154228_20251119_154229.json"
+        },
+        {
+          "exists": true,
+          "size": 886096,
+          "modified": "2025-11-19T15:45:13.692385",
+          "relative_path": "results/20251119_153853/experiments/steam_audio_group_size_100_1_4o-mini_word/steam_audio_20251119_154500_20251119_154501.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_audio_group_size_100_1_4o-mini_word/steam_audio_20251119_154500_20251119_154501.json"
+        },
+        {
+          "exists": true,
+          "size": 63428,
+          "modified": "2025-11-19T15:39:12.067467",
+          "relative_path": "results/20251119_153853/experiments/semeval_restaurant_service_1_4o-mini_word/semeval_service_20251119_153905_20251119_153906.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/semeval_restaurant_service_1_4o-mini_word/semeval_service_20251119_153905_20251119_153906.json"
+        },
+        {
+          "exists": true,
+          "size": 50736,
+          "modified": "2025-11-19T15:40:13.082698",
+          "relative_path": "results/20251119_153853/experiments/goemotions_curiosity_1_4o-mini_word/goemotions_curiosity_20251119_154007_20251119_154008.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_curiosity_1_4o-mini_word/goemotions_curiosity_20251119_154007_20251119_154008.json"
+        },
+        {
+          "exists": true,
+          "size": 50089,
+          "modified": "2025-11-19T15:39:49.471271",
+          "relative_path": "results/20251119_153853/experiments/goemotions_annoyance_1_4o-mini_word/goemotions_annoyance_20251119_153942_20251119_153944.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_annoyance_1_4o-mini_word/goemotions_annoyance_20251119_153942_20251119_153944.json"
+        },
+        {
+          "exists": true,
+          "size": 21138,
+          "modified": "2025-11-19T15:42:42.742455",
+          "relative_path": "results/20251119_153853/experiments/retrieved_concepts_concept_10_0_4o-mini_word/retrieved_concepts_concept_10_20251119_154241_20251119_154242.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/retrieved_concepts_concept_10_0_4o-mini_word/retrieved_concepts_concept_10_20251119_154241_20251119_154242.json"
+        },
+        {
+          "exists": true,
+          "size": 1057654,
+          "modified": "2025-11-19T15:43:55.424890",
+          "relative_path": "results/20251119_153853/experiments/steam_visual_group_size_150_1_4o-mini_word/steam_visual_20251119_154345_20251119_154345.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_visual_group_size_150_1_4o-mini_word/steam_visual_20251119_154345_20251119_154345.json"
+        },
+        {
+          "exists": true,
+          "size": 64222,
+          "modified": "2025-11-19T15:39:24.289788",
+          "relative_path": "results/20251119_153853/experiments/semeval_laptop_screen_1_4o-mini_word/semeval_screen_20251119_153917_20251119_153918.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/semeval_laptop_screen_1_4o-mini_word/semeval_screen_20251119_153917_20251119_153918.json"
+        },
+        {
+          "exists": true,
+          "size": 47497,
+          "modified": "2025-11-19T15:40:18.342621",
+          "relative_path": "results/20251119_153853/experiments/goemotions_desire_1_4o-mini_word/goemotions_desire_20251119_154013_20251119_154014.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_desire_1_4o-mini_word/goemotions_desire_20251119_154013_20251119_154014.json"
+        },
+        {
+          "exists": true,
+          "size": 49087,
+          "modified": "2025-11-19T15:42:19.237247",
+          "relative_path": "results/20251119_153853/experiments/goemotions_surprise_1_4o-mini_word/goemotions_surprise_20251119_154212_20251119_154214.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_surprise_1_4o-mini_word/goemotions_surprise_20251119_154212_20251119_154214.json"
+        },
+        {
+          "exists": true,
+          "size": 51061,
+          "modified": "2025-11-19T15:39:56.046180",
+          "relative_path": "results/20251119_153853/experiments/goemotions_approval_1_4o-mini_word/goemotions_approval_20251119_153949_20251119_153950.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_approval_1_4o-mini_word/goemotions_approval_20251119_153949_20251119_153950.json"
+        },
+        {
+          "exists": true,
+          "size": 48035,
+          "modified": "2025-11-19T15:39:30.272823",
+          "relative_path": "results/20251119_153853/experiments/goemotions_admiration_1_4o-mini_word/goemotions_admiration_20251119_153924_20251119_153925.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_admiration_1_4o-mini_word/goemotions_admiration_20251119_153924_20251119_153925.json"
+        },
+        {
+          "exists": true,
+          "size": 53071,
+          "modified": "2025-11-19T15:40:44.367933",
+          "relative_path": "results/20251119_153853/experiments/goemotions_embarrassment_1_4o-mini_word/goemotions_embarrassment_20251119_154038_20251119_154039.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_embarrassment_1_4o-mini_word/goemotions_embarrassment_20251119_154038_20251119_154039.json"
+        },
+        {
+          "exists": true,
+          "size": 45242,
+          "modified": "2025-11-19T15:40:51.132092",
+          "relative_path": "results/20251119_153853/experiments/goemotions_excitement_1_4o-mini_word/goemotions_excitement_20251119_154044_20251119_154045.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_excitement_1_4o-mini_word/goemotions_excitement_20251119_154044_20251119_154045.json"
+        },
+        {
+          "exists": true,
+          "size": 1376030,
+          "modified": "2025-11-19T15:46:10.604361",
+          "relative_path": "results/20251119_153853/experiments/steam_story_group_size_300_1_5.1_word/steam_story_20251119_154600_20251119_154601.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_story_group_size_300_1_5.1_word/steam_story_20251119_154600_20251119_154601.json"
+        },
+        {
+          "exists": true,
+          "size": 20882,
+          "modified": "2025-11-19T15:42:45.118793",
+          "relative_path": "results/20251119_153853/experiments/retrieved_concepts_concept_10_0_51_word/retrieved_concepts_concept_10_20251119_154242_20251119_154244.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/retrieved_concepts_concept_10_0_51_word/retrieved_concepts_concept_10_20251119_154242_20251119_154244.json"
+        },
+        {
+          "exists": true,
+          "size": 52552,
+          "modified": "2025-11-19T15:41:52.692130",
+          "relative_path": "results/20251119_153853/experiments/goemotions_realization_1_4o-mini_word/goemotions_realization_20251119_154146_20251119_154147.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_realization_1_4o-mini_word/goemotions_realization_20251119_154146_20251119_154147.json"
+        },
+        {
+          "exists": true,
+          "size": 1245092,
+          "modified": "2025-11-19T15:44:02.498697",
+          "relative_path": "results/20251119_153853/experiments/steam_visual_group_size_200_1_4o-mini_word/steam_visual_20251119_154355_20251119_154355.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_visual_group_size_200_1_4o-mini_word/steam_visual_20251119_154355_20251119_154355.json"
+        },
+        {
+          "exists": true,
+          "size": 20511,
+          "modified": "2025-11-19T15:42:35.404595",
+          "relative_path": "results/20251119_153853/experiments/retrieved_concepts_concept_1_0_51_word/retrieved_concepts_concept_1_20251119_154232_20251119_154234.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/retrieved_concepts_concept_1_0_51_word/retrieved_concepts_concept_1_20251119_154232_20251119_154234.json"
+        },
+        {
+          "exists": true,
+          "size": 49798,
+          "modified": "2025-11-19T15:42:06.861423",
+          "relative_path": "results/20251119_153853/experiments/goemotions_remorse_1_4o-mini_word/goemotions_remorse_20251119_154159_20251119_154202.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/goemotions_remorse_1_4o-mini_word/goemotions_remorse_20251119_154159_20251119_154202.json"
+        },
+        {
+          "exists": true,
+          "size": 411097,
+          "modified": "2025-11-19T15:42:56.957438",
+          "relative_path": "results/20251119_153853/experiments/steam_gameplay_group_size_50_1_4o-mini_word/steam_gameplay_20251119_154249_20251119_154250.json",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/experiments/steam_gameplay_group_size_50_1_4o-mini_word/steam_gameplay_20251119_154249_20251119_154250.json"
+        }
+      ],
+      "discussion_reports": [
+        {
+          "exists": true,
+          "size": 24065,
+          "modified": "2025-11-19T21:52:13.603864",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/amazon_delivery_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/amazon_delivery_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23533,
+          "modified": "2025-11-19T21:52:13.603495",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/amazon_price_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/amazon_price_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23136,
+          "modified": "2025-11-19T21:52:13.604763",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/amazon_product_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/amazon_product_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 22083,
+          "modified": "2025-11-19T21:52:13.603209",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/amazon_quality_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/amazon_quality_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23970,
+          "modified": "2025-11-19T21:52:13.604434",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/amazon_service_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/amazon_service_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23414,
+          "modified": "2025-11-19T21:52:13.605066",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_admiration_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_admiration_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24751,
+          "modified": "2025-11-19T21:52:13.605641",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_amusement_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_amusement_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24534,
+          "modified": "2025-11-19T21:52:13.605986",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_anger_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_anger_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23593,
+          "modified": "2025-11-19T21:52:13.606288",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_annoyance_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_annoyance_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24528,
+          "modified": "2025-11-19T21:52:13.607298",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_approval_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_approval_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23222,
+          "modified": "2025-11-19T21:52:13.608407",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_caring_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_caring_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 26143,
+          "modified": "2025-11-19T21:52:13.608889",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_confusion_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_confusion_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25279,
+          "modified": "2025-11-19T21:52:13.609397",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_curiosity_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_curiosity_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 28067,
+          "modified": "2025-11-19T21:52:13.609755",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_desire_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_desire_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24626,
+          "modified": "2025-11-19T21:52:13.610093",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_disappointment_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_disappointment_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24248,
+          "modified": "2025-11-19T21:52:13.613069",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_disapproval_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_disapproval_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23529,
+          "modified": "2025-11-19T21:52:13.613925",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_disgust_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_disgust_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24761,
+          "modified": "2025-11-19T21:52:13.614441",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_embarrassment_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_embarrassment_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 22908,
+          "modified": "2025-11-19T21:52:13.615228",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_excitement_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_excitement_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24647,
+          "modified": "2025-11-19T21:52:13.615616",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_fear_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_fear_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24588,
+          "modified": "2025-11-19T21:52:13.616116",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_gratitude_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_gratitude_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24122,
+          "modified": "2025-11-19T21:52:13.616719",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_grief_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_grief_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25523,
+          "modified": "2025-11-19T21:52:13.617458",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_joy_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_joy_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25246,
+          "modified": "2025-11-19T21:52:13.619146",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_love_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_love_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24291,
+          "modified": "2025-11-19T21:52:13.619676",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_nervousness_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_nervousness_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24495,
+          "modified": "2025-11-19T21:52:13.624402",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_neutral_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_neutral_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23877,
+          "modified": "2025-11-19T21:52:13.620218",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_optimism_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_optimism_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24518,
+          "modified": "2025-11-19T21:52:13.620992",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_pride_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_pride_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25948,
+          "modified": "2025-11-19T21:52:13.621793",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_realization_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_realization_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 26237,
+          "modified": "2025-11-19T21:52:13.622291",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_relief_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_relief_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23552,
+          "modified": "2025-11-19T21:52:13.622765",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_remorse_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_remorse_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23619,
+          "modified": "2025-11-19T21:52:13.623206",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_sadness_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_sadness_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23422,
+          "modified": "2025-11-19T21:52:13.623664",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/goemotions_surprise_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/goemotions_surprise_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25275,
+          "modified": "2025-11-19T21:52:13.639828",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_0_0_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_0_0_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25373,
+          "modified": "2025-11-19T21:52:13.640279",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_0_0_51_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_0_0_51_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24542,
+          "modified": "2025-11-19T21:52:13.642635",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_10_0_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_10_0_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23377,
+          "modified": "2025-11-19T21:52:13.643322",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_10_0_51_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_10_0_51_word.md"
+        },
+        {
+          "exists": true,
+          "size": 27164,
+          "modified": "2025-11-19T21:52:13.640719",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_1_0_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_1_0_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24627,
+          "modified": "2025-11-19T21:52:13.641112",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_1_0_51_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_1_0_51_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23571,
+          "modified": "2025-11-19T21:52:13.641508",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_2_0_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_2_0_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 22708,
+          "modified": "2025-11-19T21:52:13.641966",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_2_0_51_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_2_0_51_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24598,
+          "modified": "2025-11-19T21:52:13.643797",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_50_0_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_50_0_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24303,
+          "modified": "2025-11-19T21:52:13.644370",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_50_0_51_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/retrieved_concepts_concept_50_0_51_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24823,
+          "modified": "2025-11-19T21:52:13.602601",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/semeval_laptop_battery_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/semeval_laptop_battery_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 26125,
+          "modified": "2025-11-19T21:52:13.602904",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/semeval_laptop_screen_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/semeval_laptop_screen_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24526,
+          "modified": "2025-11-19T21:52:13.601734",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/semeval_restaurant_food_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/semeval_restaurant_food_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 26577,
+          "modified": "2025-11-19T21:52:13.602295",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/semeval_restaurant_service_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/semeval_restaurant_service_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23812,
+          "modified": "2025-11-19T21:52:13.635854",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_audio_group_size_100_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_audio_group_size_100_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24972,
+          "modified": "2025-11-19T21:52:13.636791",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_audio_group_size_150_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_audio_group_size_150_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24303,
+          "modified": "2025-11-19T21:52:13.637288",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_audio_group_size_200_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_audio_group_size_200_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 22805,
+          "modified": "2025-11-19T21:52:13.637738",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_audio_group_size_300_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_audio_group_size_300_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25541,
+          "modified": "2025-11-19T21:52:13.639414",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_audio_group_size_300_1_5.1_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_audio_group_size_300_1_5.1_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25698,
+          "modified": "2025-11-19T21:52:13.635280",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_audio_group_size_50_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_audio_group_size_50_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 26334,
+          "modified": "2025-11-19T21:52:13.626168",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_gameplay_group_size_100_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_gameplay_group_size_100_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25570,
+          "modified": "2025-11-19T21:52:13.626852",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_gameplay_group_size_150_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_gameplay_group_size_150_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 26256,
+          "modified": "2025-11-19T21:52:13.627499",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_gameplay_group_size_200_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_gameplay_group_size_200_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24937,
+          "modified": "2025-11-19T21:52:13.627944",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_gameplay_group_size_300_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_gameplay_group_size_300_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25891,
+          "modified": "2025-11-19T21:52:13.638169",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_gameplay_group_size_300_1_5.1_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_gameplay_group_size_300_1_5.1_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25991,
+          "modified": "2025-11-19T21:52:13.625417",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_gameplay_group_size_50_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_gameplay_group_size_50_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24754,
+          "modified": "2025-11-19T21:52:13.633114",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_story_group_size_100_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_story_group_size_100_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23662,
+          "modified": "2025-11-19T21:52:13.633686",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_story_group_size_150_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_story_group_size_150_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 28989,
+          "modified": "2025-11-19T21:52:13.634274",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_story_group_size_200_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_story_group_size_200_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 26086,
+          "modified": "2025-11-19T21:52:13.634709",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_story_group_size_300_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_story_group_size_300_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25715,
+          "modified": "2025-11-19T21:52:13.639006",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_story_group_size_300_1_5.1_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_story_group_size_300_1_5.1_word.md"
+        },
+        {
+          "exists": true,
+          "size": 21217,
+          "modified": "2025-11-19T21:52:13.632537",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_story_group_size_50_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_story_group_size_50_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 22330,
+          "modified": "2025-11-19T21:52:13.629298",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_visual_group_size_100_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_visual_group_size_100_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 22901,
+          "modified": "2025-11-19T21:52:13.630809",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_visual_group_size_150_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_visual_group_size_150_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 24551,
+          "modified": "2025-11-19T21:52:13.631303",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_visual_group_size_200_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_visual_group_size_200_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 23748,
+          "modified": "2025-11-19T21:52:13.631930",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_visual_group_size_300_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_visual_group_size_300_1_4o-mini_word.md"
+        },
+        {
+          "exists": true,
+          "size": 27425,
+          "modified": "2025-11-19T21:52:13.638600",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_visual_group_size_300_1_5.1_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_visual_group_size_300_1_5.1_word.md"
+        },
+        {
+          "exists": true,
+          "size": 25436,
+          "modified": "2025-11-19T21:52:13.628556",
+          "relative_path": "results/20251119_153853/analysis_workspace/reports/steam_visual_group_size_50_1_4o-mini_word.md",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/reports/steam_visual_group_size_50_1_4o-mini_word.md"
+        }
+      ],
+      "analysis_results": [
+        {
+          "exists": true,
+          "size": 15261,
+          "modified": "2025-11-19T14:38:14.451146",
+          "relative_path": "src/analysis/experiments/2025/10/10/aggregate_results.py",
+          "absolute_path": "/Users/seinoshun/imrb_research/src/analysis/experiments/2025/10/10/aggregate_results.py"
+        },
+        {
+          "exists": true,
+          "size": 30755,
+          "modified": "2025-11-19T21:52:13.645240",
+          "relative_path": "results/20251119_153853/analysis_workspace/analysis.log",
+          "absolute_path": "/Users/seinoshun/imrb_research/results/20251119_153853/analysis_workspace/analysis.log"
+        }
+      ]
+    }
+  },
+  "statistics": {
+    "total_files": 223,
+    "existing_files": 223,
+    "missing_files": 0,
+    "total_size_bytes": 110279331,
+    "total_size_mb": 105.17
+  }
+}
