@@ -1,0 +1,55 @@
+\documentclass[a4paper]{jreport}
+
+\usepackage{masterThesisJa}
+\DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}
+\setcounter{tocdepth}{3}
+\setcounter{page}{-1}
+
+\maintitle{大規模言語モデルを用いた対比因子ラベル生成手法に関する研究}{A Study on Generating Contrastive Factor Labels for Explainable AI}
+
+\publish{2025}{12}
+
+\student{202421675}{清野　駿}{Seino Shun}
+
+\jabst{
+　大規模言語モデル（LLM）の実運用では、判断の妥当性を説明可能にすることが重要であるが、既存手法は未知データごとに人手で解釈ラベルを付与する負担が大きい。本研究は、二つのテキスト集合（A: ニューロン発火群, B: 非発火群）間の差異を自然言語で要約し、発火条件を表す「対比因子ラベル」を自動生成する枠組みの実現可能性を検証する。手法は、A/B の代表テキストを入力として、Few-shot 例示（0/1/3-shot）付きプロンプトで LLM に差分説明を生成させる。評価は SemEval レストランレビューと Steam ゲームレビューの二データセットを用い、各グループ 300 件・LLM は GPT-4o-mini で固定し、生成文と正解アスペクト名との類似度を BERT スコアおよび BLEU スコアで測定した。結果として、全体平均で BERT ≈ 0.551、BLEU ≈ 0.007 を得て、意味レベルの一致は中程度だが語彙一致は低いことが示された。また Few-shot では 1-shot が最も良く、出力スタイルが「説明的叙述」から「一意に特定する語彙」へ矯正される傾向が確認された。アスペクト別には gameplay/food 等の語彙的に安定な概念で高く、recommended/suggestion 等の抽象概念で低い。以上より、本枠組みは一定の条件で有効であり、人手ラベリングの一部代替となる可能性がある一方、抽象概念の扱いと評価指標の高度化（人手・LLM 補助、非語彙的類似）が今後の課題である。
+}
+
+\eabst{
+This study examines the feasibility of generating contrastive factor labels that explain neuron activation conditions by comparing two text groups (A: activated, B: non-activated). We prompt an LLM (GPT-4o-mini) with 0/1/3-shot examples to produce concise differences, and evaluate semantic and lexical alignment against gold aspect labels using BERT and BLEU on SemEval restaurant and Steam game reviews (300 samples per group). Results show moderate semantic similarity (BERT ≈ 0.551) but very low lexical overlap (BLEU ≈ 0.007), with 1-shot giving the best performance by shifting outputs toward uniquely identifying terms. Performance is higher for lexically stable aspects (e.g., gameplay, food) and lower for abstract ones (e.g., recommended, suggestion). The approach can partially reduce manual labeling, while handling abstract concepts and improving evaluation beyond lexical matches remain as future work.
+}
+
+\advisors{若林　啓}{伊藤　寛祥}
+
+\begin{document}
+
+\makecover
+
+\addtolength{\textheight}{-5mm}
+\setlength{\footskip}{15mm}
+\fontsize{11pt}{15pt}\selectfont
+
+\pagebreak\setcounter{page}{1}
+\pagenumbering{roman}
+\pagestyle{plain}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\parindent=1zw
+\pagebreak\setcounter{page}{1}
+\pagenumbering{arabic}
+\pagestyle{plain}
+
+% 各章を読み込む
+\input{chapters/01_introduction}
+\input{chapters/02_related_work}
+\input{chapters/03_proposal}
+\input{chapters/04_experiment}
+\input{chapters/05_results}
+\input{chapters/06_discussion}
+\input{chapters/07_conclusion}
+\input{chapters/acknowledgments}
+\input{chapters/references}
+
+\end{document}
