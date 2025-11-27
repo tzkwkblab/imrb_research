@@ -63,7 +63,8 @@ def generate_contrast_factor_prompt(
     output_language: Optional[str] = None,
     examples: Optional[List[Dict]] = None,
     max_tokens: Optional[int] = None,
-    max_items_per_group: Optional[int] = None
+    max_items_per_group: Optional[int] = None,
+    temperature: Optional[float] = None
 ) -> tuple[str, Dict]:
     """
     対比因子生成プロンプトを作成
@@ -76,6 +77,7 @@ def generate_contrast_factor_prompt(
                  [{"group_a": [...], "group_b": [...], "answer": "..."}]
         max_tokens: 最大トークン数（None時は設定ファイルのデフォルト使用）
         max_items_per_group: グループあたりの最大アイテム数（None時は制限なし、コンテキスト長超過を防ぐため推奨: 100）
+        temperature: 温度パラメータ（None時は設定ファイルのデフォルト使用）
     
     Returns:
         (プロンプト文字列, モデル設定辞書)
@@ -85,6 +87,9 @@ def generate_contrast_factor_prompt(
     # max_tokensが指定されている場合は上書き
     if max_tokens is not None:
         model_config['max_tokens'] = max_tokens
+    # temperatureが指定されている場合は上書き
+    if temperature is not None:
+        model_config['temperature'] = temperature
     prompt_config = _load_prompt_config()
     
     # デフォルト言語設定
