@@ -1,8 +1,10 @@
 import os
 import sys
 import openai
-from typing import Optional, List, Dict, Tuple
+import base64
+from typing import Optional, List, Dict, Tuple, Union
 from datetime import datetime
+from pathlib import Path
 from ..base_llm import BaseLLM
 import logging
 
@@ -234,3 +236,128 @@ class GPTClient(BaseLLM):
         """
         models = self.list_available_models()
         return [model['id'] for model in models]
+    
+    def query_with_images(
+        self, 
+        messages: List[Dict], 
+        image_urls: List[str] = None,
+        image_paths: List[Union[str, Path]] = None,
+        **kwargs
+    ) -> Optional[str]:
+        """
+        画像を含むクエリをGPT-5.1に送信
+        
+        Args:
+            messages: メッセージリスト
+            image_urls: 画像URLのリスト（http://またはhttps://）
+            image_paths: ローカル画像ファイルパスのリスト
+            **kwargs: その他のパラメータ（max_completion_tokens等）
+        
+        Returns:
+            応答文字列
+        """
+        if not self._supports_vision():
+            raise ValueError(f"モデル {self.model} は画像入力に対応していません。GPT-4oまたはGPT-5（画像対応版）を使用してください。")
+        
+        messages_with_images = []
+        
+        for msg in messages:
+            if msg['role'] == 'user' and (image_urls or image_paths):
+                content = []
+                
+                # テキスト部分を追加
+                if isinstance(msg['content'], str):
+                    content.append({"type": "text", "text": msg['content']})
+                elif isinstance(msg['content'], list):
+                    for item in msg['content']:
+                        if isinstance(item, dict) and item.get('type') == 'text':
+                            content.append(item)
+                        elif isinstance(item, str):
+                            content.append({"type": "text", "text": item})
+                
+                # 画像URLを追加
+                if image_urls:
+                    for url in image_urls:
+                        content.append({
+                            "type": "image_url",
+                            "image_url": {"url": url}
+                        })
+                
+                # ローカル画像をbase64エンコードして追加
+                if image_paths:
+                    for img_path in image_paths:
+                        base64_image = self._encode_image(img_path)
+                        if base64_image:
+                            image_format = self._detect_image_format(img_path)
+                            content.append({
+                                "type": "image_url",
+                                "image_url": {
+                                    "url": f"data:image/{image_format};base64,{base64_image}"
+                                }
+                            })
+                
+                messages_with_images.append({
+                    "role": msg['role'],
+                    "content": content
+                })
+            else:
+                messages_with_images.append(msg)
+        
+        # 推論モデルの場合はmax_completion_tokensを設定（GPT-5.1の場合は100000）
+        if self._is_reasoning_model():
+            if 'max_completion_tokens' not in kwargs and 'max_tokens' not in kwargs:
+                model_lower = self.model.lower()
+                if model_lower.startswith('gpt-5'):
+                    kwargs['max_completion_tokens'] = 100000
+                else:
+                    kwargs['max_completion_tokens'] = 8000
+        
+        return self.query(messages_with_images, **kwargs)
+    
+    def _supports_vision(self) -> bool:
+        """画像入力に対応するモデルかどうかを判定"""
+        model_lower = self.model.lower()
+        
+        # 推論モデル（o1/o3）は画像入力に対応していない
+        if model_lower.startswith('o1') or model_lower.startswith('o3'):
+            return False
+        
+        # GPT-4o系は画像入力に対応
+        vision_models = ['gpt-4o', 'gpt-4-turbo', 'gpt-4-vision']
+        if any(model_lower.startswith(m) for m in vision_models):
+            return True
+        
+        # GPT-5系の場合、推論モデルでなければ画像入力に対応している可能性
+        if model_lower.startswith('gpt-5'):
+            return True
+        
+        return False
+    
+    def _encode_image(self, image_path: Union[str, Path]) -> Optional[str]:
+        """画像ファイルをbase64エンコード"""
+        try:
+            image_path = Path(image_path)
+            if not image_path.exists():
+                self.logger.error(f"画像ファイルが見つかりません: {image_path}")
+                return None
+            
+            with open(image_path, "rb") as image_file:
+                return base64.b64encode(image_file.read()).decode('utf-8')
+        except Exception as e:
+            self.logger.error(f"画像エンコードエラー: {e}")
+            return None
+    
+    def _detect_image_format(self, image_path: Union[str, Path]) -> str:
+        """画像ファイルの形式を検出"""
+        image_path = Path(image_path)
+        suffix = image_path.suffix.lower()
+        
+        format_map = {
+            '.jpg': 'jpeg',
+            '.jpeg': 'jpeg',
+            '.png': 'png',
+            '.gif': 'gif',
+            '.webp': 'webp'
+        }
+        
+        return format_map.get(suffix, 'jpeg')
