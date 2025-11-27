@@ -255,12 +255,14 @@ class ExperimentPipeline:
             llm_cfg = self.config.get('llm', {}) or {}
             llm_model = llm_cfg.get('model', 'gpt-5-nano')
             llm_max_tokens = llm_cfg.get('max_tokens')
+            llm_temperature = float(llm_cfg.get('temperature', 0.7))
             
             # 評価設定からLLM評価設定を取得
             evaluation_cfg = self.config.get('evaluation', {}) or {}
             use_llm_eval = bool(evaluation_cfg.get('use_llm_score', False))
             llm_eval_model = evaluation_cfg.get('llm_evaluation_model', 'gpt-5-nano')
-            llm_eval_temp = float(evaluation_cfg.get('llm_evaluation_temperature', 0.0))
+            llm_eval_temp_val = evaluation_cfg.get('llm_evaluation_temperature', 0.0)
+            llm_eval_temp = float(llm_eval_temp_val) if llm_eval_temp_val is not None else 0.0
 
             analyzer = ContrastFactorAnalyzer(
                 debug=self.debug, 
@@ -309,7 +311,8 @@ class ExperimentPipeline:
                 examples=examples_payload,
                 group_a_top5_image_urls=group_a_top5_image_urls,
                 group_b_top5_image_urls=group_b_top5_image_urls,
-                max_tokens=llm_max_tokens
+                max_tokens=llm_max_tokens,
+                temperature=llm_temperature
             )
             
             self.logger.info("✅ LLM応答取得完了")

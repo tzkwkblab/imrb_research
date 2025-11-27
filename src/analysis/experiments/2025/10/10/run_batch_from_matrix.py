@@ -185,18 +185,24 @@ def find_aspect_descriptions_file(dataset: str) -> Optional[str]:
     return None
 
 
-def convert_matrix_to_config(exp_config: Dict[str, Any]) -> Dict[str, Any]:
+def convert_matrix_to_config(exp_config: Dict[str, Any], experiment_plan: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
     """
     実験マトリックス設定をExperimentPipeline用設定に変換
     
     Args:
         exp_config: 実験マトリックスJSONの1実験設定
+        experiment_plan: 実験計画情報（temperature, max_tokens等を含む）
         
     Returns:
         ExperimentPipeline用設定辞書
     """
     dataset = exp_config['dataset']
     few_shot = exp_config.get('few_shot', 0)
+    
+    # experiment_planからパラメータを取得（デフォルト値あり）
+    settings = experiment_plan.get('settings', {}) if experiment_plan else {}
+    temperature = settings.get('temperature', 0.0)
+    max_tokens = settings.get('max_tokens', 100)
     
     # 例題ファイルの解決
     examples_file = None
@@ -249,8 +255,8 @@ def convert_matrix_to_config(exp_config: Dict[str, Any]) -> Dict[str, Any]:
         },
         'llm': {
             'model': exp_config.get('gpt_model', 'gpt-4o-mini'),
-            'temperature': 0.7,
-            'max_tokens': 100
+            'temperature': temperature,
+            'max_tokens': max_tokens
         },
         'general': {
             'debug_mode': False,
@@ -265,28 +271,28 @@ def convert_matrix_to_config(exp_config: Dict[str, Any]) -> Dict[str, Any]:
         'evaluation': {
             'use_llm_score': exp_config.get('use_llm_evaluation', True),
             'llm_evaluation_model': exp_config.get('llm_evaluation_model', 'gpt-4o-mini'),
-            'llm_evaluation_temperature': 0.0
+            'llm_evaluation_temperature': settings.get('llm_evaluation_temperature', 0.0)
         }
     }
     
     return config
 
 
-def run_single_experiment_wrapper(args: Tuple[Dict[str, Any], str, Path]) -> Dict[str, Any]:
+def run_single_experiment_wrapper(args: Tuple[Dict[str, Any], str, Path, Optional[Dict[str, Any]]]) -> Dict[str, Any]:
     """
     単一実験実行ラッパー（並列実行用）
     
     Args:
-        args: (exp_config, experiment_id, output_dir)のタプル
+        args: (exp_config, experiment_id, output_dir, experiment_plan)のタプル
         
     Returns:
         実験結果辞書
     """
-    exp_config, experiment_id, output_dir = args
+    exp_config, experiment_id, output_dir, experiment_plan = args
     
     try:
         # 一時設定ファイルを作成
-        config_dict = convert_matrix_to_config(exp_config)
+        config_dict = convert_matrix_to_config(exp_config, experiment_plan)
         
         with tempfile.NamedTemporaryFile(
             mode='w',
@@ -682,7 +688,8 @@ def run_parallel_experiments(
     experiments: List[Dict[str, Any]],
     output_dir: Path,
     max_workers: int = None,
-    checkpoint_file: Optional[Path] = None
+    checkpoint_file: Optional[Path] = None,
+    experiment_plan: Optional[Dict[str, Any]] = None
 ) -> List[Dict[str, Any]]:
     """
     並列実行で実験を実行（チェックポイント対応）
@@ -723,7 +730,7 @@ def run_parallel_experiments(
         
         # 設定変換を試みて、スキップされるか確認
         try:
-            config = convert_matrix_to_config(exp)
+            config = convert_matrix_to_config(exp, experiment_plan)
             if config is None:
                 skipped_experiments.append(exp_id)
                 continue
@@ -732,7 +739,7 @@ def run_parallel_experiments(
             skipped_experiments.append(exp_id)
             continue
         
-        args_list.append((exp, exp_id, exp_output_dir / exp_id))
+        args_list.append((exp, exp_id, exp_output_dir / exp_id, experiment_plan))
     
     if skipped_experiments:
         logging.info(f"スキップされた実験: {len(skipped_experiments)}件")
@@ -1078,7 +1085,8 @@ def main():
             experiments=experiments,
             output_dir=output_dir,
             max_workers=args.workers,
-            checkpoint_file=checkpoint_file
+            checkpoint_file=checkpoint_file,
+            experiment_plan=experiment_plan
         )
         
         # 結果を保存
