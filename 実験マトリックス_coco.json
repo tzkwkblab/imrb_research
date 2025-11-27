@@ -1,0 +1,90 @@
+{
+  "experiment_plan": {
+    "total_experiments": 5,
+    "main_experiments": 5,
+    "sub_experiments": 0,
+    "created_at": "2025-11-27",
+    "description": "COCOデータセット検証実験（retrieved_concepts）、few_shot=0、group_size=100、temperature=0、LLM評価なし、gpt-4o-mini",
+    "llm_evaluation_model": null,
+    "settings": {
+      "temperature": 0.0,
+      "max_tokens": 2000,
+      "llm_evaluation_temperature": null
+    },
+    "main_experiment_settings": {
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false,
+      "use_llm_evaluation": false,
+      "group_size": 100
+    }
+  },
+  "experiments": [
+    {
+      "experiment_id": "retrieved_concepts_concept_0_0_4omini_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_0",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 100,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": null,
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_1_0_4omini_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_1",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 100,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": null,
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_2_0_4omini_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_2",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 100,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": null,
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_10_0_4omini_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_10",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 100,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": null,
+      "use_aspect_descriptions": false
+    },
+    {
+      "experiment_id": "retrieved_concepts_concept_50_0_4omini_word",
+      "dataset": "retrieved_concepts",
+      "aspect": "concept_50",
+      "domain": null,
+      "few_shot": 0,
+      "gpt_model": "gpt-4o-mini",
+      "group_size": 100,
+      "split_type": "aspect_vs_bottom100",
+      "use_llm_evaluation": false,
+      "llm_evaluation_model": null,
+      "use_aspect_descriptions": false
+    }
+  ]
+}
+
