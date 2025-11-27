@@ -1,0 +1,16 @@
+{
+  "experiment_info": {
+    "experiment_id": "amazon_product_1_4o-mini_word",
+    "dataset": "amazon",
+    "aspect": "product",
+    "error": "無効なレコードです",
+    "few_shot": 1,
+    "gpt_model": "gpt-4o-mini",
+    "domain": null
+  },
+  "summary": {
+    "success": false,
+    "error": "無効なレコードです"
+  },
+  "success": true
+}

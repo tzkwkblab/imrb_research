@@ -1,0 +1,92 @@
+{
+  "timestamp": "2025-11-27T14:08:24.977208",
+  "results": [
+    {
+      "experiment_info": {
+        "experiment_id": "retrieved_concepts_concept_0_0_4omini_word",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_0",
+        "error": "float() argument must be a string or a real number, not 'NoneType'",
+        "few_shot": 0,
+        "gpt_model": "gpt-4o-mini",
+        "domain": null
+      },
+      "summary": {
+        "success": false,
+        "error": "float() argument must be a string or a real number, not 'NoneType'"
+      },
+      "success": true
+    },
+    {
+      "experiment_info": {
+        "experiment_id": "retrieved_concepts_concept_1_0_4omini_word",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_1",
+        "error": "float() argument must be a string or a real number, not 'NoneType'",
+        "few_shot": 0,
+        "gpt_model": "gpt-4o-mini",
+        "domain": null
+      },
+      "summary": {
+        "success": false,
+        "error": "float() argument must be a string or a real number, not 'NoneType'"
+      },
+      "success": true
+    },
+    {
+      "experiment_info": {
+        "experiment_id": "retrieved_concepts_concept_2_0_4omini_word",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_2",
+        "error": "float() argument must be a string or a real number, not 'NoneType'",
+        "few_shot": 0,
+        "gpt_model": "gpt-4o-mini",
+        "domain": null
+      },
+      "summary": {
+        "success": false,
+        "error": "float() argument must be a string or a real number, not 'NoneType'"
+      },
+      "success": true
+    },
+    {
+      "experiment_info": {
+        "experiment_id": "retrieved_concepts_concept_10_0_4omini_word",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_10",
+        "error": "float() argument must be a string or a real number, not 'NoneType'",
+        "few_shot": 0,
+        "gpt_model": "gpt-4o-mini",
+        "domain": null
+      },
+      "summary": {
+        "success": false,
+        "error": "float() argument must be a string or a real number, not 'NoneType'"
+      },
+      "success": true
+    },
+    {
+      "experiment_info": {
+        "experiment_id": "retrieved_concepts_concept_50_0_4omini_word",
+        "dataset": "retrieved_concepts",
+        "aspect": "concept_50",
+        "error": "float() argument must be a string or a real number, not 'NoneType'",
+        "few_shot": 0,
+        "gpt_model": "gpt-4o-mini",
+        "domain": null
+      },
+      "summary": {
+        "success": false,
+        "error": "float() argument must be a string or a real number, not 'NoneType'"
+      },
+      "success": true
+    }
+  ],
+  "completed_ids": [
+    "retrieved_concepts_concept_0_0_4omini_word",
+    "retrieved_concepts_concept_1_0_4omini_word",
+    "retrieved_concepts_concept_2_0_4omini_word",
+    "retrieved_concepts_concept_10_0_4omini_word",
+    "retrieved_concepts_concept_50_0_4omini_word"
+  ]
+}
