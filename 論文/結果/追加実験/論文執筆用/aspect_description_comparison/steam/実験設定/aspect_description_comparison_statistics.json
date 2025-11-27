@@ -1,0 +1,338 @@
+{
+  "statistics": {
+    "total_experiments": 8,
+    "successful": 8,
+    "failed": 0,
+    "description_stats": {
+      "no_desc": {
+        "count": 4,
+        "bert_scores": [
+          0.5334585309028625,
+          0.5311064720153809,
+          0.5392100811004639,
+          0.5543604493141174
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.2,
+          0.2,
+          0.4,
+          0.2
+        ],
+        "avg_bert_score": 0.5395338833332062,
+        "min_bert_score": 0.5311064720153809,
+        "max_bert_score": 0.5543604493141174,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.25,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.4
+      },
+      "with_desc": {
+        "count": 4,
+        "bert_scores": [
+          0.5522688627243042,
+          0.5186178684234619,
+          0.54668128490448,
+          0.5809816718101501
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.4,
+          0.2,
+          0.4,
+          0.2
+        ],
+        "avg_bert_score": 0.5496374219655991,
+        "min_bert_score": 0.5186178684234619,
+        "max_bert_score": 0.5809816718101501,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.30000000000000004,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.4
+      }
+    },
+    "aspect_stats": {
+      "gameplay": {
+        "count": 2,
+        "bert_scores": [
+          0.5334585309028625,
+          0.5522688627243042
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.2,
+          0.4
+        ],
+        "avg_bert_score": 0.5428636968135834,
+        "min_bert_score": 0.5334585309028625,
+        "max_bert_score": 0.5522688627243042,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.30000000000000004,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.4
+      },
+      "visual": {
+        "count": 2,
+        "bert_scores": [
+          0.5311064720153809,
+          0.5186178684234619
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.2,
+          0.2
+        ],
+        "avg_bert_score": 0.5248621702194214,
+        "min_bert_score": 0.5186178684234619,
+        "max_bert_score": 0.5311064720153809,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "story": {
+        "count": 2,
+        "bert_scores": [
+          0.5392100811004639,
+          0.54668128490448
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.4,
+          0.4
+        ],
+        "avg_bert_score": 0.5429456830024719,
+        "min_bert_score": 0.5392100811004639,
+        "max_bert_score": 0.54668128490448,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "audio": {
+        "count": 2,
+        "bert_scores": [
+          0.5543604493141174,
+          0.5809816718101501
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.2,
+          0.2
+        ],
+        "avg_bert_score": 0.5676710605621338,
+        "min_bert_score": 0.5543604493141174,
+        "max_bert_score": 0.5809816718101501,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      }
+    },
+    "aspect_description_stats": {
+      "gameplay_no_desc": {
+        "count": 1,
+        "bert_scores": [
+          0.5334585309028625
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5334585309028625,
+        "min_bert_score": 0.5334585309028625,
+        "max_bert_score": 0.5334585309028625,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "gameplay_with_desc": {
+        "count": 1,
+        "bert_scores": [
+          0.5522688627243042
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.5522688627243042,
+        "min_bert_score": 0.5522688627243042,
+        "max_bert_score": 0.5522688627243042,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "visual_no_desc": {
+        "count": 1,
+        "bert_scores": [
+          0.5311064720153809
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5311064720153809,
+        "min_bert_score": 0.5311064720153809,
+        "max_bert_score": 0.5311064720153809,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "visual_with_desc": {
+        "count": 1,
+        "bert_scores": [
+          0.5186178684234619
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5186178684234619,
+        "min_bert_score": 0.5186178684234619,
+        "max_bert_score": 0.5186178684234619,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "story_no_desc": {
+        "count": 1,
+        "bert_scores": [
+          0.5392100811004639
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.5392100811004639,
+        "min_bert_score": 0.5392100811004639,
+        "max_bert_score": 0.5392100811004639,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "story_with_desc": {
+        "count": 1,
+        "bert_scores": [
+          0.54668128490448
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.54668128490448,
+        "min_bert_score": 0.54668128490448,
+        "max_bert_score": 0.54668128490448,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "audio_no_desc": {
+        "count": 1,
+        "bert_scores": [
+          0.5543604493141174
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5543604493141174,
+        "min_bert_score": 0.5543604493141174,
+        "max_bert_score": 0.5543604493141174,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "audio_with_desc": {
+        "count": 1,
+        "bert_scores": [
+          0.5809816718101501
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5809816718101501,
+        "min_bert_score": 0.5809816718101501,
+        "max_bert_score": 0.5809816718101501,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      }
+    }
+  },
+  "generated_at": "2025-11-27T14:03:52.597012"
+}

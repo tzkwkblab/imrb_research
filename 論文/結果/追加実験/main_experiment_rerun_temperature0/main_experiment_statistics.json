@@ -1,0 +1,1007 @@
+{
+  "statistics": {
+    "total_experiments": 36,
+    "successful": 36,
+    "failed": 0,
+    "dataset_stats": {
+      "semeval": {
+        "count": 4,
+        "bert_scores": [
+          0.7285852432250977,
+          0.7180842161178589,
+          0.7645697593688965,
+          0.8011960983276367
+        ],
+        "bleu_scores": [
+          0.012300686288463768,
+          0.023980296761827107,
+          0.02777619034011792,
+          0.023980296761827107
+        ],
+        "llm_scores": [
+          0.4,
+          0.6,
+          0.6,
+          0.6
+        ],
+        "avg_bert_score": 0.7531088292598724,
+        "min_bert_score": 0.7180842161178589,
+        "max_bert_score": 0.8011960983276367,
+        "avg_bleu_score": 0.022009367538058974,
+        "min_bleu_score": 0.012300686288463768,
+        "max_bleu_score": 0.02777619034011792,
+        "avg_llm_score": 0.55,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.6
+      },
+      "goemotions": {
+        "count": 28,
+        "bert_scores": [
+          0.6797959804534912,
+          0.6248886585235596,
+          0.72139573097229,
+          0.7173399925231934,
+          0.5900338888168335,
+          0.6374245285987854,
+          0.6102278828620911,
+          0.6140465140342712,
+          0.6719898581504822,
+          0.8254852890968323,
+          0.6565675735473633,
+          0.8315679430961609,
+          0.8940741419792175,
+          0.6673444509506226,
+          0.8208826184272766,
+          0.8445321321487427,
+          0.81471848487854,
+          0.8192455172538757,
+          0.7740534543991089,
+          0.7152619361877441,
+          0.6494102478027344,
+          0.7564718723297119,
+          0.5880522131919861,
+          0.7307558655738831,
+          0.7707457542419434,
+          0.7271047234535217,
+          0.6572964191436768,
+          0.5436765551567078
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.021105340631872645,
+          0.0,
+          0.023980296761827107,
+          0.040824829046386304,
+          0.0,
+          0.02777619034011792,
+          0.021105340631872645,
+          0.021105340631872645,
+          0.0,
+          0.017033186037639283,
+          0.0,
+          0.0,
+          0.011502783619900045,
+          0.0,
+          0.021105340631872645,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.2,
+          0.4,
+          0.6,
+          0.4,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.6,
+          0.6,
+          0.4,
+          0.8,
+          0.8,
+          0.6,
+          0.6,
+          0.6,
+          0.4,
+          0.8,
+          0.8,
+          0.6,
+          0.6,
+          0.6,
+          0.2,
+          0.4,
+          0.6,
+          0.4,
+          0.2,
+          0.2
+        ],
+        "avg_bert_score": 0.7126567938498088,
+        "min_bert_score": 0.5436765551567078,
+        "max_bert_score": 0.8940741419792175,
+        "avg_bleu_score": 0.0073406660119057585,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.040824829046386304,
+        "avg_llm_score": 0.4714285714285714,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.8
+      },
+      "steam": {
+        "count": 4,
+        "bert_scores": [
+          0.5612260699272156,
+          0.5163538455963135,
+          0.5383032560348511,
+          0.5451562404632568
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.2,
+          0.2,
+          0.6,
+          0.2
+        ],
+        "avg_bert_score": 0.5402598530054092,
+        "min_bert_score": 0.5163538455963135,
+        "max_bert_score": 0.5612260699272156,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.3,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.6
+      }
+    },
+    "aspect_stats": {
+      "food": {
+        "count": 1,
+        "bert_scores": [
+          0.7285852432250977
+        ],
+        "bleu_scores": [
+          0.012300686288463768
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.7285852432250977,
+        "min_bert_score": 0.7285852432250977,
+        "max_bert_score": 0.7285852432250977,
+        "avg_bleu_score": 0.012300686288463768,
+        "min_bleu_score": 0.012300686288463768,
+        "max_bleu_score": 0.012300686288463768,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "service": {
+        "count": 1,
+        "bert_scores": [
+          0.7180842161178589
+        ],
+        "bleu_scores": [
+          0.023980296761827107
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.7180842161178589,
+        "min_bert_score": 0.7180842161178589,
+        "max_bert_score": 0.7180842161178589,
+        "avg_bleu_score": 0.023980296761827107,
+        "min_bleu_score": 0.023980296761827107,
+        "max_bleu_score": 0.023980296761827107,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "battery": {
+        "count": 1,
+        "bert_scores": [
+          0.7645697593688965
+        ],
+        "bleu_scores": [
+          0.02777619034011792
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.7645697593688965,
+        "min_bert_score": 0.7645697593688965,
+        "max_bert_score": 0.7645697593688965,
+        "avg_bleu_score": 0.02777619034011792,
+        "min_bleu_score": 0.02777619034011792,
+        "max_bleu_score": 0.02777619034011792,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "screen": {
+        "count": 1,
+        "bert_scores": [
+          0.8011960983276367
+        ],
+        "bleu_scores": [
+          0.023980296761827107
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.8011960983276367,
+        "min_bert_score": 0.8011960983276367,
+        "max_bert_score": 0.8011960983276367,
+        "avg_bleu_score": 0.023980296761827107,
+        "min_bleu_score": 0.023980296761827107,
+        "max_bleu_score": 0.023980296761827107,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "admiration": {
+        "count": 1,
+        "bert_scores": [
+          0.6797959804534912
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.6797959804534912,
+        "min_bert_score": 0.6797959804534912,
+        "max_bert_score": 0.6797959804534912,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "amusement": {
+        "count": 1,
+        "bert_scores": [
+          0.6248886585235596
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.6248886585235596,
+        "min_bert_score": 0.6248886585235596,
+        "max_bert_score": 0.6248886585235596,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "anger": {
+        "count": 1,
+        "bert_scores": [
+          0.72139573097229
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.72139573097229,
+        "min_bert_score": 0.72139573097229,
+        "max_bert_score": 0.72139573097229,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "annoyance": {
+        "count": 1,
+        "bert_scores": [
+          0.7173399925231934
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.7173399925231934,
+        "min_bert_score": 0.7173399925231934,
+        "max_bert_score": 0.7173399925231934,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "approval": {
+        "count": 1,
+        "bert_scores": [
+          0.5900338888168335
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5900338888168335,
+        "min_bert_score": 0.5900338888168335,
+        "max_bert_score": 0.5900338888168335,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "caring": {
+        "count": 1,
+        "bert_scores": [
+          0.6374245285987854
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.6374245285987854,
+        "min_bert_score": 0.6374245285987854,
+        "max_bert_score": 0.6374245285987854,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "confusion": {
+        "count": 1,
+        "bert_scores": [
+          0.6102278828620911
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.6102278828620911,
+        "min_bert_score": 0.6102278828620911,
+        "max_bert_score": 0.6102278828620911,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "curiosity": {
+        "count": 1,
+        "bert_scores": [
+          0.6140465140342712
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.6140465140342712,
+        "min_bert_score": 0.6140465140342712,
+        "max_bert_score": 0.6140465140342712,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "desire": {
+        "count": 1,
+        "bert_scores": [
+          0.6719898581504822
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.6719898581504822,
+        "min_bert_score": 0.6719898581504822,
+        "max_bert_score": 0.6719898581504822,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "disappointment": {
+        "count": 1,
+        "bert_scores": [
+          0.8254852890968323
+        ],
+        "bleu_scores": [
+          0.021105340631872645
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.8254852890968323,
+        "min_bert_score": 0.8254852890968323,
+        "max_bert_score": 0.8254852890968323,
+        "avg_bleu_score": 0.021105340631872645,
+        "min_bleu_score": 0.021105340631872645,
+        "max_bleu_score": 0.021105340631872645,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "disapproval": {
+        "count": 1,
+        "bert_scores": [
+          0.6565675735473633
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.6565675735473633,
+        "min_bert_score": 0.6565675735473633,
+        "max_bert_score": 0.6565675735473633,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "disgust": {
+        "count": 1,
+        "bert_scores": [
+          0.8315679430961609
+        ],
+        "bleu_scores": [
+          0.023980296761827107
+        ],
+        "llm_scores": [
+          0.8
+        ],
+        "avg_bert_score": 0.8315679430961609,
+        "min_bert_score": 0.8315679430961609,
+        "max_bert_score": 0.8315679430961609,
+        "avg_bleu_score": 0.023980296761827107,
+        "min_bleu_score": 0.023980296761827107,
+        "max_bleu_score": 0.023980296761827107,
+        "avg_llm_score": 0.8,
+        "min_llm_score": 0.8,
+        "max_llm_score": 0.8
+      },
+      "embarrassment": {
+        "count": 1,
+        "bert_scores": [
+          0.8940741419792175
+        ],
+        "bleu_scores": [
+          0.040824829046386304
+        ],
+        "llm_scores": [
+          0.8
+        ],
+        "avg_bert_score": 0.8940741419792175,
+        "min_bert_score": 0.8940741419792175,
+        "max_bert_score": 0.8940741419792175,
+        "avg_bleu_score": 0.040824829046386304,
+        "min_bleu_score": 0.040824829046386304,
+        "max_bleu_score": 0.040824829046386304,
+        "avg_llm_score": 0.8,
+        "min_llm_score": 0.8,
+        "max_llm_score": 0.8
+      },
+      "excitement": {
+        "count": 1,
+        "bert_scores": [
+          0.6673444509506226
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.6673444509506226,
+        "min_bert_score": 0.6673444509506226,
+        "max_bert_score": 0.6673444509506226,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "fear": {
+        "count": 1,
+        "bert_scores": [
+          0.8208826184272766
+        ],
+        "bleu_scores": [
+          0.02777619034011792
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.8208826184272766,
+        "min_bert_score": 0.8208826184272766,
+        "max_bert_score": 0.8208826184272766,
+        "avg_bleu_score": 0.02777619034011792,
+        "min_bleu_score": 0.02777619034011792,
+        "max_bleu_score": 0.02777619034011792,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "gratitude": {
+        "count": 1,
+        "bert_scores": [
+          0.8445321321487427
+        ],
+        "bleu_scores": [
+          0.021105340631872645
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.8445321321487427,
+        "min_bert_score": 0.8445321321487427,
+        "max_bert_score": 0.8445321321487427,
+        "avg_bleu_score": 0.021105340631872645,
+        "min_bleu_score": 0.021105340631872645,
+        "max_bleu_score": 0.021105340631872645,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "grief": {
+        "count": 1,
+        "bert_scores": [
+          0.81471848487854
+        ],
+        "bleu_scores": [
+          0.021105340631872645
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.81471848487854,
+        "min_bert_score": 0.81471848487854,
+        "max_bert_score": 0.81471848487854,
+        "avg_bleu_score": 0.021105340631872645,
+        "min_bleu_score": 0.021105340631872645,
+        "max_bleu_score": 0.021105340631872645,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "joy": {
+        "count": 1,
+        "bert_scores": [
+          0.8192455172538757
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.8
+        ],
+        "avg_bert_score": 0.8192455172538757,
+        "min_bert_score": 0.8192455172538757,
+        "max_bert_score": 0.8192455172538757,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.8,
+        "min_llm_score": 0.8,
+        "max_llm_score": 0.8
+      },
+      "love": {
+        "count": 1,
+        "bert_scores": [
+          0.7740534543991089
+        ],
+        "bleu_scores": [
+          0.017033186037639283
+        ],
+        "llm_scores": [
+          0.8
+        ],
+        "avg_bert_score": 0.7740534543991089,
+        "min_bert_score": 0.7740534543991089,
+        "max_bert_score": 0.7740534543991089,
+        "avg_bleu_score": 0.017033186037639283,
+        "min_bleu_score": 0.017033186037639283,
+        "max_bleu_score": 0.017033186037639283,
+        "avg_llm_score": 0.8,
+        "min_llm_score": 0.8,
+        "max_llm_score": 0.8
+      },
+      "nervousness": {
+        "count": 1,
+        "bert_scores": [
+          0.7152619361877441
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.7152619361877441,
+        "min_bert_score": 0.7152619361877441,
+        "max_bert_score": 0.7152619361877441,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "optimism": {
+        "count": 1,
+        "bert_scores": [
+          0.6494102478027344
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.6494102478027344,
+        "min_bert_score": 0.6494102478027344,
+        "max_bert_score": 0.6494102478027344,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "pride": {
+        "count": 1,
+        "bert_scores": [
+          0.7564718723297119
+        ],
+        "bleu_scores": [
+          0.011502783619900045
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.7564718723297119,
+        "min_bert_score": 0.7564718723297119,
+        "max_bert_score": 0.7564718723297119,
+        "avg_bleu_score": 0.011502783619900045,
+        "min_bleu_score": 0.011502783619900045,
+        "max_bleu_score": 0.011502783619900045,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "realization": {
+        "count": 1,
+        "bert_scores": [
+          0.5880522131919861
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5880522131919861,
+        "min_bert_score": 0.5880522131919861,
+        "max_bert_score": 0.5880522131919861,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "relief": {
+        "count": 1,
+        "bert_scores": [
+          0.7307558655738831
+        ],
+        "bleu_scores": [
+          0.021105340631872645
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.7307558655738831,
+        "min_bert_score": 0.7307558655738831,
+        "max_bert_score": 0.7307558655738831,
+        "avg_bleu_score": 0.021105340631872645,
+        "min_bleu_score": 0.021105340631872645,
+        "max_bleu_score": 0.021105340631872645,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "remorse": {
+        "count": 1,
+        "bert_scores": [
+          0.7707457542419434
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.7707457542419434,
+        "min_bert_score": 0.7707457542419434,
+        "max_bert_score": 0.7707457542419434,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "sadness": {
+        "count": 1,
+        "bert_scores": [
+          0.7271047234535217
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.7271047234535217,
+        "min_bert_score": 0.7271047234535217,
+        "max_bert_score": 0.7271047234535217,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "surprise": {
+        "count": 1,
+        "bert_scores": [
+          0.6572964191436768
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.6572964191436768,
+        "min_bert_score": 0.6572964191436768,
+        "max_bert_score": 0.6572964191436768,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "neutral": {
+        "count": 1,
+        "bert_scores": [
+          0.5436765551567078
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5436765551567078,
+        "min_bert_score": 0.5436765551567078,
+        "max_bert_score": 0.5436765551567078,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "gameplay": {
+        "count": 1,
+        "bert_scores": [
+          0.5612260699272156
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5612260699272156,
+        "min_bert_score": 0.5612260699272156,
+        "max_bert_score": 0.5612260699272156,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "visual": {
+        "count": 1,
+        "bert_scores": [
+          0.5163538455963135
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5163538455963135,
+        "min_bert_score": 0.5163538455963135,
+        "max_bert_score": 0.5163538455963135,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "story": {
+        "count": 1,
+        "bert_scores": [
+          0.5383032560348511
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.5383032560348511,
+        "min_bert_score": 0.5383032560348511,
+        "max_bert_score": 0.5383032560348511,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "audio": {
+        "count": 1,
+        "bert_scores": [
+          0.5451562404632568
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5451562404632568,
+        "min_bert_score": 0.5451562404632568,
+        "max_bert_score": 0.5451562404632568,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      }
+    }
+  },
+  "experiment_plan": {
+    "total_experiments": 36,
+    "created_at": "2025-11-26",
+    "description": "メイン実験再実行: SemEval(4) + GoEmotions(28) + Steam(4) = 36実験",
+    "settings": {
+      "temperature": 0.0,
+      "max_tokens": 2000,
+      "few_shot": 0,
+      "group_size": 100,
+      "use_llm_evaluation": true,
+      "llm_evaluation_model": "gpt-4o-mini",
+      "llm_evaluation_temperature": 0.0,
+      "gpt_model": "gpt-4o-mini",
+      "use_aspect_descriptions": false,
+      "evaluation_metrics": [
+        "bert_score",
+        "bleu_score",
+        "llm_score"
+      ]
+    },
+    "datasets": {
+      "semeval": {
+        "count": 4,
+        "aspects": [
+          "food",
+          "service",
+          "battery",
+          "screen"
+        ],
+        "domains": [
+          "restaurant",
+          "laptop"
+        ]
+      },
+      "goemotions": {
+        "count": 28,
+        "aspects": [
+          "admiration",
+          "amusement",
+          "anger",
+          "annoyance",
+          "approval",
+          "caring",
+          "confusion",
+          "curiosity",
+          "desire",
+          "disappointment",
+          "disapproval",
+          "disgust",
+          "embarrassment",
+          "excitement",
+          "fear",
+          "gratitude",
+          "grief",
+          "joy",
+          "love",
+          "nervousness",
+          "optimism",
+          "pride",
+          "realization",
+          "relief",
+          "remorse",
+          "sadness",
+          "surprise",
+          "neutral"
+        ]
+      },
+      "steam": {
+        "count": 4,
+        "aspects": [
+          "gameplay",
+          "visual",
+          "story",
+          "audio"
+        ]
+      }
+    }
+  }
+}

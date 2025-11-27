@@ -1,0 +1,210 @@
+{
+  "statistics": {
+    "total_experiments": 12,
+    "successful": 12,
+    "failed": 0,
+    "few_shot_stats": {
+      "0": {
+        "count": 4,
+        "bert_scores": [
+          0.5462050437927246,
+          0.5562477707862854,
+          0.5482983589172363,
+          0.5595852136611938
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.4,
+          0.2,
+          0.4,
+          0.2
+        ],
+        "avg_bert_score": 0.55258409678936,
+        "min_bert_score": 0.5462050437927246,
+        "max_bert_score": 0.5595852136611938,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.30000000000000004,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.4
+      },
+      "1": {
+        "count": 4,
+        "bert_scores": [
+          0.6801601648330688,
+          0.5111289024353027,
+          0.8356446027755737,
+          0.5849686861038208
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.2,
+          0.2,
+          0.8,
+          0.2
+        ],
+        "avg_bert_score": 0.6529755890369415,
+        "min_bert_score": 0.5111289024353027,
+        "max_bert_score": 0.8356446027755737,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.35000000000000003,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.8
+      },
+      "3": {
+        "count": 4,
+        "bert_scores": [
+          0.5643867254257202,
+          0.6449441313743591,
+          0.5416496396064758,
+          0.5504655838012695
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.6,
+          0.2,
+          0.6,
+          0.2
+        ],
+        "avg_bert_score": 0.5753615200519562,
+        "min_bert_score": 0.5416496396064758,
+        "max_bert_score": 0.6449441313743591,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.6
+      }
+    },
+    "aspect_stats": {
+      "gameplay": {
+        "count": 3,
+        "bert_scores": [
+          0.5462050437927246,
+          0.6801601648330688,
+          0.5643867254257202
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.4,
+          0.2,
+          0.6
+        ],
+        "avg_bert_score": 0.5969173113505045,
+        "min_bert_score": 0.5462050437927246,
+        "max_bert_score": 0.6801601648330688,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.39999999999999997,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.6
+      },
+      "visual": {
+        "count": 3,
+        "bert_scores": [
+          0.5562477707862854,
+          0.5111289024353027,
+          0.6449441313743591
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.2,
+          0.2,
+          0.2
+        ],
+        "avg_bert_score": 0.5707736015319824,
+        "min_bert_score": 0.5111289024353027,
+        "max_bert_score": 0.6449441313743591,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.20000000000000004,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "story": {
+        "count": 3,
+        "bert_scores": [
+          0.5482983589172363,
+          0.8356446027755737,
+          0.5416496396064758
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.4,
+          0.8,
+          0.6
+        ],
+        "avg_bert_score": 0.6418642004330953,
+        "min_bert_score": 0.5416496396064758,
+        "max_bert_score": 0.8356446027755737,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.8
+      },
+      "audio": {
+        "count": 3,
+        "bert_scores": [
+          0.5595852136611938,
+          0.5849686861038208,
+          0.5504655838012695
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.2,
+          0.2,
+          0.2
+        ],
+        "avg_bert_score": 0.5650064945220947,
+        "min_bert_score": 0.5504655838012695,
+        "max_bert_score": 0.5849686861038208,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.20000000000000004,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      }
+    }
+  },
+  "generated_at": "2025-11-27T11:58:07.315703"
+}

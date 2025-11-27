@@ -1,0 +1,151 @@
+{
+  "statistics": {
+    "total_experiments": 12,
+    "successful": 12,
+    "failed": 0,
+    "few_shot_stats": {
+      "0": {
+        "count": 4,
+        "bert_scores": [
+          0.5803680419921875,
+          0.6259682178497314,
+          0.5200141072273254,
+          0.5440610647201538
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "avg_bert_score": 0.5676028579473495,
+        "min_bert_score": 0.5200141072273254,
+        "max_bert_score": 0.6259682178497314,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0
+      },
+      "1": {
+        "count": 4,
+        "bert_scores": [
+          0.6287088394165039,
+          0.6449441313743591,
+          0.7174562215805054,
+          0.5840163230895996
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "avg_bert_score": 0.643781378865242,
+        "min_bert_score": 0.5840163230895996,
+        "max_bert_score": 0.7174562215805054,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0
+      },
+      "3": {
+        "count": 4,
+        "bert_scores": [
+          0.7924990057945251,
+          0.6347211003303528,
+          0.7675517797470093,
+          0.5647435784339905
+        ],
+        "bleu_scores": [
+          0.040824829046386304,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "avg_bert_score": 0.6898788660764694,
+        "min_bert_score": 0.5647435784339905,
+        "max_bert_score": 0.7924990057945251,
+        "avg_bleu_score": 0.010206207261596576,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.040824829046386304
+      }
+    },
+    "aspect_stats": {
+      "gameplay": {
+        "count": 3,
+        "bert_scores": [
+          0.5803680419921875,
+          0.6287088394165039,
+          0.7924990057945251
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.040824829046386304
+        ],
+        "avg_bert_score": 0.6671919624010721,
+        "min_bert_score": 0.5803680419921875,
+        "max_bert_score": 0.7924990057945251,
+        "avg_bleu_score": 0.013608276348795434,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.040824829046386304
+      },
+      "visual": {
+        "count": 3,
+        "bert_scores": [
+          0.6259682178497314,
+          0.6449441313743591,
+          0.6347211003303528
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "avg_bert_score": 0.6352111498514811,
+        "min_bert_score": 0.6259682178497314,
+        "max_bert_score": 0.6449441313743591,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0
+      },
+      "story": {
+        "count": 3,
+        "bert_scores": [
+          0.5200141072273254,
+          0.7174562215805054,
+          0.7675517797470093
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "avg_bert_score": 0.6683407028516134,
+        "min_bert_score": 0.5200141072273254,
+        "max_bert_score": 0.7675517797470093,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0
+      },
+      "audio": {
+        "count": 3,
+        "bert_scores": [
+          0.5440610647201538,
+          0.5840163230895996,
+          0.5647435784339905
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "avg_bert_score": 0.5642736554145813,
+        "min_bert_score": 0.5440610647201538,
+        "max_bert_score": 0.5840163230895996,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0
+      }
+    }
+  },
+  "generated_at": "2025-11-26T15:40:42.788748"
+}

@@ -1,0 +1,1008 @@
+{
+  "statistics": {
+    "total_experiments": 36,
+    "successful": 36,
+    "failed": 0,
+    "dataset_stats": {
+      "semeval": {
+        "count": 4,
+        "aspects": [
+          "battery",
+          "food",
+          "screen",
+          "service"
+        ],
+        "bert_scores": [
+          0.7525886297225952,
+          0.6898223161697388,
+          0.7490777373313904,
+          0.8008237481117249
+        ],
+        "bleu_scores": [
+          0.023980296761827107,
+          0.012300686288463768,
+          0.023980296761827107,
+          0.0
+        ],
+        "llm_scores": [
+          0.6,
+          0.4,
+          0.6,
+          0.6
+        ],
+        "avg_bert_score": 0.7480781078338623,
+        "min_bert_score": 0.6898223161697388,
+        "max_bert_score": 0.8008237481117249,
+        "avg_bleu_score": 0.015065319953029496,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.023980296761827107,
+        "avg_llm_score": 0.55,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.6
+      },
+      "goemotions": {
+        "count": 28,
+        "aspects": [
+          "admiration",
+          "amusement",
+          "anger",
+          "annoyance",
+          "approval",
+          "caring",
+          "confusion",
+          "curiosity",
+          "desire",
+          "disappointment",
+          "disapproval",
+          "disgust",
+          "embarrassment",
+          "excitement",
+          "fear",
+          "gratitude",
+          "grief",
+          "joy",
+          "love",
+          "nervousness",
+          "neutral",
+          "optimism",
+          "pride",
+          "realization",
+          "relief",
+          "remorse",
+          "sadness",
+          "surprise"
+        ],
+        "bert_scores": [
+          0.7297002077102661,
+          0.6826313734054565,
+          0.7718774080276489,
+          0.7455002069473267,
+          0.5560060143470764,
+          0.737017035484314,
+          0.587537407875061,
+          0.5959904789924622,
+          0.7383987903594971,
+          0.6495481729507446,
+          0.6274719834327698,
+          0.8781705498695374,
+          0.844099760055542,
+          0.8566054105758667,
+          0.7844258546829224,
+          0.8300655484199524,
+          0.730804443359375,
+          0.7253170609474182,
+          0.6791871786117554,
+          0.6363914608955383,
+          0.64046710729599,
+          0.7438317537307739,
+          0.5489752292633057,
+          0.6668606996536255,
+          0.6750600934028625,
+          0.7231108546257019,
+          0.8254940509796143,
+          0.5434510707855225
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.033031643180138064,
+          0.0,
+          0.0,
+          0.021105340631872645,
+          0.0,
+          0.01428363257865929,
+          0.01428363257865929,
+          0.0,
+          0.0,
+          0.017033186037639283,
+          0.0,
+          0.01428363257865929,
+          0.0,
+          0.0,
+          0.023980296761827107,
+          0.0
+        ],
+        "llm_scores": [
+          0.4,
+          0.4,
+          0.6,
+          0.4,
+          0.2,
+          0.6,
+          0.2,
+          0.2,
+          0.8,
+          0.2,
+          0.6,
+          0.6,
+          0.6,
+          0.8,
+          0.8,
+          0.8,
+          0.6,
+          0.4,
+          0.4,
+          0.4,
+          0.4,
+          0.6,
+          0.2,
+          0.4,
+          0.4,
+          0.4,
+          0.6,
+          0.2
+        ],
+        "avg_bert_score": 0.7054999002388546,
+        "min_bert_score": 0.5434510707855225,
+        "max_bert_score": 0.8781705498695374,
+        "avg_bleu_score": 0.0049286201552662485,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.033031643180138064,
+        "avg_llm_score": 0.4714285714285715,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.8
+      },
+      "steam": {
+        "count": 4,
+        "aspects": [
+          "audio",
+          "gameplay",
+          "story",
+          "visual"
+        ],
+        "bert_scores": [
+          0.5423665046691895,
+          0.511073112487793,
+          0.5175962448120117,
+          0.560253381729126
+        ],
+        "bleu_scores": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "llm_scores": [
+          0.4,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "avg_bert_score": 0.53282231092453,
+        "min_bert_score": 0.511073112487793,
+        "max_bert_score": 0.560253381729126,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.25,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.4
+      }
+    },
+    "aspect_stats": {
+      "semeval_food": {
+        "count": 1,
+        "dataset": "semeval",
+        "bert_scores": [
+          0.7525886297225952
+        ],
+        "bleu_scores": [
+          0.023980296761827107
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.7525886297225952,
+        "min_bert_score": 0.7525886297225952,
+        "max_bert_score": 0.7525886297225952,
+        "avg_bleu_score": 0.023980296761827107,
+        "min_bleu_score": 0.023980296761827107,
+        "max_bleu_score": 0.023980296761827107,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "semeval_service": {
+        "count": 1,
+        "dataset": "semeval",
+        "bert_scores": [
+          0.6898223161697388
+        ],
+        "bleu_scores": [
+          0.012300686288463768
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.6898223161697388,
+        "min_bert_score": 0.6898223161697388,
+        "max_bert_score": 0.6898223161697388,
+        "avg_bleu_score": 0.012300686288463768,
+        "min_bleu_score": 0.012300686288463768,
+        "max_bleu_score": 0.012300686288463768,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "semeval_battery": {
+        "count": 1,
+        "dataset": "semeval",
+        "bert_scores": [
+          0.7490777373313904
+        ],
+        "bleu_scores": [
+          0.023980296761827107
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.7490777373313904,
+        "min_bert_score": 0.7490777373313904,
+        "max_bert_score": 0.7490777373313904,
+        "avg_bleu_score": 0.023980296761827107,
+        "min_bleu_score": 0.023980296761827107,
+        "max_bleu_score": 0.023980296761827107,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "semeval_screen": {
+        "count": 1,
+        "dataset": "semeval",
+        "bert_scores": [
+          0.8008237481117249
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.8008237481117249,
+        "min_bert_score": 0.8008237481117249,
+        "max_bert_score": 0.8008237481117249,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "goemotions_admiration": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.7297002077102661
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.7297002077102661,
+        "min_bert_score": 0.7297002077102661,
+        "max_bert_score": 0.7297002077102661,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "goemotions_amusement": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.6826313734054565
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.6826313734054565,
+        "min_bert_score": 0.6826313734054565,
+        "max_bert_score": 0.6826313734054565,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "goemotions_anger": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.7718774080276489
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.7718774080276489,
+        "min_bert_score": 0.7718774080276489,
+        "max_bert_score": 0.7718774080276489,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "goemotions_annoyance": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.7455002069473267
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.7455002069473267,
+        "min_bert_score": 0.7455002069473267,
+        "max_bert_score": 0.7455002069473267,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "goemotions_approval": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.5560060143470764
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5560060143470764,
+        "min_bert_score": 0.5560060143470764,
+        "max_bert_score": 0.5560060143470764,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "goemotions_caring": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.737017035484314
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.737017035484314,
+        "min_bert_score": 0.737017035484314,
+        "max_bert_score": 0.737017035484314,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "goemotions_confusion": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.587537407875061
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.587537407875061,
+        "min_bert_score": 0.587537407875061,
+        "max_bert_score": 0.587537407875061,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "goemotions_curiosity": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.5959904789924622
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5959904789924622,
+        "min_bert_score": 0.5959904789924622,
+        "max_bert_score": 0.5959904789924622,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "goemotions_desire": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.7383987903594971
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.8
+        ],
+        "avg_bert_score": 0.7383987903594971,
+        "min_bert_score": 0.7383987903594971,
+        "max_bert_score": 0.7383987903594971,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.8,
+        "min_llm_score": 0.8,
+        "max_llm_score": 0.8
+      },
+      "goemotions_disappointment": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.6495481729507446
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.6495481729507446,
+        "min_bert_score": 0.6495481729507446,
+        "max_bert_score": 0.6495481729507446,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "goemotions_disapproval": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.6274719834327698
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.6274719834327698,
+        "min_bert_score": 0.6274719834327698,
+        "max_bert_score": 0.6274719834327698,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "goemotions_disgust": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.8781705498695374
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.8781705498695374,
+        "min_bert_score": 0.8781705498695374,
+        "max_bert_score": 0.8781705498695374,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "goemotions_embarrassment": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.844099760055542
+        ],
+        "bleu_scores": [
+          0.033031643180138064
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.844099760055542,
+        "min_bert_score": 0.844099760055542,
+        "max_bert_score": 0.844099760055542,
+        "avg_bleu_score": 0.033031643180138064,
+        "min_bleu_score": 0.033031643180138064,
+        "max_bleu_score": 0.033031643180138064,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "goemotions_excitement": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.8566054105758667
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.8
+        ],
+        "avg_bert_score": 0.8566054105758667,
+        "min_bert_score": 0.8566054105758667,
+        "max_bert_score": 0.8566054105758667,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.8,
+        "min_llm_score": 0.8,
+        "max_llm_score": 0.8
+      },
+      "goemotions_fear": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.7844258546829224
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.8
+        ],
+        "avg_bert_score": 0.7844258546829224,
+        "min_bert_score": 0.7844258546829224,
+        "max_bert_score": 0.7844258546829224,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.8,
+        "min_llm_score": 0.8,
+        "max_llm_score": 0.8
+      },
+      "goemotions_gratitude": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.8300655484199524
+        ],
+        "bleu_scores": [
+          0.021105340631872645
+        ],
+        "llm_scores": [
+          0.8
+        ],
+        "avg_bert_score": 0.8300655484199524,
+        "min_bert_score": 0.8300655484199524,
+        "max_bert_score": 0.8300655484199524,
+        "avg_bleu_score": 0.021105340631872645,
+        "min_bleu_score": 0.021105340631872645,
+        "max_bleu_score": 0.021105340631872645,
+        "avg_llm_score": 0.8,
+        "min_llm_score": 0.8,
+        "max_llm_score": 0.8
+      },
+      "goemotions_grief": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.730804443359375
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.730804443359375,
+        "min_bert_score": 0.730804443359375,
+        "max_bert_score": 0.730804443359375,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "goemotions_joy": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.7253170609474182
+        ],
+        "bleu_scores": [
+          0.01428363257865929
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.7253170609474182,
+        "min_bert_score": 0.7253170609474182,
+        "max_bert_score": 0.7253170609474182,
+        "avg_bleu_score": 0.01428363257865929,
+        "min_bleu_score": 0.01428363257865929,
+        "max_bleu_score": 0.01428363257865929,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "goemotions_love": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.6791871786117554
+        ],
+        "bleu_scores": [
+          0.01428363257865929
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.6791871786117554,
+        "min_bert_score": 0.6791871786117554,
+        "max_bert_score": 0.6791871786117554,
+        "avg_bleu_score": 0.01428363257865929,
+        "min_bleu_score": 0.01428363257865929,
+        "max_bleu_score": 0.01428363257865929,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "goemotions_nervousness": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.6363914608955383
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.6363914608955383,
+        "min_bert_score": 0.6363914608955383,
+        "max_bert_score": 0.6363914608955383,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "goemotions_optimism": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.64046710729599
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.64046710729599,
+        "min_bert_score": 0.64046710729599,
+        "max_bert_score": 0.64046710729599,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "goemotions_pride": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.7438317537307739
+        ],
+        "bleu_scores": [
+          0.017033186037639283
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.7438317537307739,
+        "min_bert_score": 0.7438317537307739,
+        "max_bert_score": 0.7438317537307739,
+        "avg_bleu_score": 0.017033186037639283,
+        "min_bleu_score": 0.017033186037639283,
+        "max_bleu_score": 0.017033186037639283,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "goemotions_realization": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.5489752292633057
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5489752292633057,
+        "min_bert_score": 0.5489752292633057,
+        "max_bert_score": 0.5489752292633057,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "goemotions_relief": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.6668606996536255
+        ],
+        "bleu_scores": [
+          0.01428363257865929
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.6668606996536255,
+        "min_bert_score": 0.6668606996536255,
+        "max_bert_score": 0.6668606996536255,
+        "avg_bleu_score": 0.01428363257865929,
+        "min_bleu_score": 0.01428363257865929,
+        "max_bleu_score": 0.01428363257865929,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "goemotions_remorse": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.6750600934028625
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.6750600934028625,
+        "min_bert_score": 0.6750600934028625,
+        "max_bert_score": 0.6750600934028625,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "goemotions_sadness": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.7231108546257019
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.7231108546257019,
+        "min_bert_score": 0.7231108546257019,
+        "max_bert_score": 0.7231108546257019,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "goemotions_surprise": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.8254940509796143
+        ],
+        "bleu_scores": [
+          0.023980296761827107
+        ],
+        "llm_scores": [
+          0.6
+        ],
+        "avg_bert_score": 0.8254940509796143,
+        "min_bert_score": 0.8254940509796143,
+        "max_bert_score": 0.8254940509796143,
+        "avg_bleu_score": 0.023980296761827107,
+        "min_bleu_score": 0.023980296761827107,
+        "max_bleu_score": 0.023980296761827107,
+        "avg_llm_score": 0.6,
+        "min_llm_score": 0.6,
+        "max_llm_score": 0.6
+      },
+      "goemotions_neutral": {
+        "count": 1,
+        "dataset": "goemotions",
+        "bert_scores": [
+          0.5434510707855225
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5434510707855225,
+        "min_bert_score": 0.5434510707855225,
+        "max_bert_score": 0.5434510707855225,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "steam_gameplay": {
+        "count": 1,
+        "dataset": "steam",
+        "bert_scores": [
+          0.5423665046691895
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.4
+        ],
+        "avg_bert_score": 0.5423665046691895,
+        "min_bert_score": 0.5423665046691895,
+        "max_bert_score": 0.5423665046691895,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.4,
+        "min_llm_score": 0.4,
+        "max_llm_score": 0.4
+      },
+      "steam_visual": {
+        "count": 1,
+        "dataset": "steam",
+        "bert_scores": [
+          0.511073112487793
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.511073112487793,
+        "min_bert_score": 0.511073112487793,
+        "max_bert_score": 0.511073112487793,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "steam_story": {
+        "count": 1,
+        "dataset": "steam",
+        "bert_scores": [
+          0.5175962448120117
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.5175962448120117,
+        "min_bert_score": 0.5175962448120117,
+        "max_bert_score": 0.5175962448120117,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      },
+      "steam_audio": {
+        "count": 1,
+        "dataset": "steam",
+        "bert_scores": [
+          0.560253381729126
+        ],
+        "bleu_scores": [
+          0.0
+        ],
+        "llm_scores": [
+          0.2
+        ],
+        "avg_bert_score": 0.560253381729126,
+        "min_bert_score": 0.560253381729126,
+        "max_bert_score": 0.560253381729126,
+        "avg_bleu_score": 0.0,
+        "min_bleu_score": 0.0,
+        "max_bleu_score": 0.0,
+        "avg_llm_score": 0.2,
+        "min_llm_score": 0.2,
+        "max_llm_score": 0.2
+      }
+    }
+  },
+  "generated_at": "2025-11-27T12:17:40.716117"
+}
