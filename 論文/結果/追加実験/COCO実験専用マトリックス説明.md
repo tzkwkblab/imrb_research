@@ -45,3 +45,13 @@ python run_batch_from_matrix.py --matrix 実験マトリックス_coco.json
 - 正解ラベルがないため、BERTScore/BLEUは参考値として扱ってください
 
 
+
+
+
+
+
+
+
+
+
+

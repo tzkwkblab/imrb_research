@@ -104,8 +104,7 @@ Steam Review Aspect Dataset は，Steam ゲームレビューから収集され�
 グループ A と B の抽出は，各アスペクトのラベルに基づいて行い，group\_size パラメータに応じてサンプル数を調整した．
 メイン実験では，group\_size = 100 を採用し，各グループから最大 100 件のテキストを抽出した．
 
-使用したアスペクトは，メイン実験において SemEval-2014 から Food，Service，Battery，Screen の 4 つ，GoEmotions から全 28 感情カテゴリ，Steam から Gameplay，Visual，Story，Audio の 4 つを採用した．
-これらのアスペクトは，具体的なアスペクト（Food，Price，Gameplay，Technical）と抽象的な概念（Atmosphere，Story，感情カテゴリ）の両方を含むように選定した．
+% メイン実験で使用したアスペクト一覧は第\ref{sec:experiment_setup}節でまとめて述べる．
 
 \subsection{SemEval-2014 ABSA（Restaurants）}
 SemEval-2014 ABSA（Restaurants）は，アスペクトベース感情分析（ABSA）の標準的なベンチマークとして広く使用されるレストランレビューのデータセットである~\cite{pontiki-EtAl:2014:SemEval2014Task4}．
@@ -121,7 +120,7 @@ SemEval-2014 ABSA（Restaurants）は，アスペクトベース感情分析（A
 実験での使用方法として，SemEval-2014 データセットにおいて，Restaurant ドメインから Food と Service，Laptop ドメインから Battery と Screen の 4 アスペクトを採用した．
 各アスペクトについて，そのアスペクトを含むテキスト群をグループ A，含まないテキスト群をグループ B として抽出し，split\_type = \texttt{aspect\_vs\_others} で分割した．
 
-使用したアスペクトの選定理由として，Food と Price は具体的な名詞や数値に関連する言及が中心となる具体的なアスペクトとして，Service と Battery，Screen は製品の属性に関する具体的なアスペクトとして選定した．
+使用したアスペクトの選定理由として，Food は具体的な名詞や数値に関連する言及が中心となる具体的なアスペクトとして，Service，Battery，Screen は製品の属性に関する具体的なアスペクトとして選定した．
 これにより，具体的なアスペクトにおける命名性能を評価できるようにした．
 
 \subsection{GoEmotions}
@@ -144,66 +143,48 @@ GoEmotions は，細粒度感情分類タスクのために Reddit コメント�
 
 \subsection{Retrieved Concepts（COCO Captions）}
 Retrieved Concepts（COCO Captions）は，視覚的概念記述の生成能力を検証するために，画像キャプションデータセット COCO に基づいて構築されたデータセットである~\cite{lin2014microsoft}．
+MS-COCO 2017 train split の画像に対して，実験協力者のFarnoosh Javar によって訓練された非教師ありコンセプト発見モデル（personal communication）から得られた 300 個の潜在コンセプト埋め込みと，CLIP（ViT-B/32）による画像埋め込みとのコサイン類似度を計算し，各コンセプトについて類似度が高い画像 Top-100 と低い画像 Bottom-100 を取得している．この潜在コンセプト埋め込みは，UCBM~\cite{schrodi2024unsupervised} に代表される辞書学習型の非教師ありコンセプト発見手法と同様に，既存モデルの中間表現から自動的に概念ベクトルを抽出するタイプのモデルにより学習されているが，本論文では上流モデルの詳細には立ち入らず，得られた concept embeddings と，それに対して CLIP 類似度にもとづき取得された Top/Bottom 画像およびその COCO 由来キャプションのみを利用する．
+各画像には COCO 由来の人手キャプションが 5 つ付与されており，本研究ではこれらのキャプション集合のみをテキストデータとして利用する．
 
 \begin{itemize}
-  \item \textbf{概要}: COCO Captions に基づく 300 の概念（concept\_0 ～ concept\_299）を扱う．
-  データには，Top-100/Bottom-100 の類似度順キャプションデータが含まれる．
-  \item \textbf{特徴}: LLM がテキストの集合差分から視覚的な特徴を抽象化した概念記述を生成できるかを確認するために使用された．
-  この検証は，本手法が将来的に画像モデルのニューロン解釈（例：縞模様，空の色といった視覚的概念）に適用可能であるかを探るための基礎的なデータを提供する．
+  \item \textbf{概要}: 非教師ありに学習された 300 の潜在コンセプト（concept\_0 ～ concept\_299）に対し，CLIP 類似度にもとづき取得された Top-100/Bottom-100 画像とそのキャプションからなるデータセットである．
+  \item \textbf{特徴}: 各コンセプトに対して人手の正解ラベル（アスペクト名）は与えられておらず，潜在コンセプトとその Top/Bottom 例のみが提供される．
+  これにより，SemEval などのラベル付きデータセットと比べて，「非教師ありコンセプト抽出＋命名」という本研究の理想的な問題設定により近い状況で，対比因子ラベル生成を検証できる．
+  LLM がテキストの集合差分から視覚的な特徴を抽象化した概念記述を生成できるかを確認するために使用され，本手法が将来的に画像モデルのニューロン解釈（例：縞模様，空の色といった視覚的概念）に適用可能であるかを探るための基礎的なデータを提供する．
 \end{itemize}
 
-実験での使用方法として，COCO Captions に基づく 300 の概念（concept\_0 ～ concept\_299）のうち，concept\_0，concept\_1，concept\_2，concept\_10，concept\_50 の 5 コンセプトを採用した．
-各コンセプトについて，CLIP（ViT-B/32）によるコサイン類似度に基づき，Top-100 のキャプションをグループ A，Bottom-100 のキャプションをグループ B として抽出した．
+実験では，300 コンセプトのうち concept\_0，concept\_1，concept\_2，concept\_10，concept\_50 の 5 コンセプトを採用した．
+各コンセプトについて，潜在コンセプト埋め込みと画像埋め込みとの CLIP（ViT-B/32）コサイン類似度に基づき，類似度が高い順に Top-100，低い順に Bottom-100 の画像を選び，それらに付与されたキャプションをグループ A（Top 側），グループ B（Bottom 側）として用いた．
 分割タイプは \texttt{aspect\_vs\_bottom100} を採用した．
 
-Top-100/Bottom-100 の選定方法として，各コンセプトに対する CLIP コサイン類似度~\cite{radford2021learning}を計算し，類似度が高い順に Top-100，低い順に Bottom-100 を抽出した．
-これにより，視覚的概念に対する類似度が高いキャプション群と低いキャプション群の差分から対比因子を生成できるようにした．
-
-正解ラベルがない場合の評価方法として，BERTScore と BLEU スコアは参考値として記録したが，正解ラベルが存在しないため，これらのスコアは評価指標として使用しなかった．
-代わりに，生成された対比因子と画像との整合性を確認する方法を採用した．
+正解ラベルが存在しないため，BERTScore と BLEU スコアは参考値として記録するにとどめ，主に生成された対比因子と対応する画像群との整合性に基づく定性的評価を行った．
 
 \section{実験設定}
+\label{sec:experiment_setup}
 
 \subsection{実験パイプラインの概要}
 本実験では，コントラスティブ要約に基づく対比因子ラベル生成器として，GPT-4o-mini を含む複数の大規模言語モデルを採用した．
-提案手法は，統一されたパイプラインとして構築され，その目的は，特定の概念に対応するテキスト集合 $A$（グループA）と，そうでないテキスト集合 $B$（グループB）の差分から，意味的な対比因子ラベル $L$ を LLM に生成させることである．理想的なタスク定義では，$A$ と $B$ はニューロン活性値に基づき構成されるが，本章の実験では，第\ref{sec:dataset}節で述べたように，アスペクトラベルや CLIP 類似度に基づいて構成したグループA/Bを，このタスクの近似として用いる．
+提案手法は，統一されたパイプラインとして構築され，その目的は，特定の概念に対応するテキスト集合 $A$（グループA）と，そうでないテキスト集合 $B$（グループB）の差分から，意味的な対比因子ラベル $L$ を LLM に生成させることである．理想的なタスク定義では，$A$ と $B$ はニューロン活性値に基づき構成されるが，本章の実験では，第\ref{sec:dataset}節で述べたように，SemEval，GoEmotions，Steam では人手アスペクトラベルに基づき，COCO Retrieved Concepts では潜在コンセプトと CLIP 類似度により定義された Top/Bottom 画像群に付与されたキャプションにもとづいて構成したグループA/Bを，このタスクの近似として用いる．
 
 \begin{itemize}
-  \item \textbf{タスク定式化}: 第3章で定義したとおり，集合 $A$ と $B$ の差分から自然言語ラベル $L$ を生成する写像 $\text{textContrastiveNaming}(A,B) \to L$ を用いる．理想的には，$A$ と $B$ はニューロン $N$ の活性化度に基づいて構成されるが，本章の実験ではアスペクトラベルや CLIP 類似度に基づいて構成したグループA/Bをその具体例として用いる．
-  \item \textbf{グルーピング}: 各データセットのアスペクトラベルや CLIP 類似度に基づき，ハイパーパラメータ $group\_size$ を用いて集合 $A$ と $B$ を抽出する．
+  \item \textbf{タスク定式化}: 第3章で定義したとおり，集合 $A$ と $B$ の差分から自然言語ラベル $L$ を生成する写像 $\text{textContrastiveNaming}(A,B) \to L$ を用いる．理想的には，$A$ と $B$ はニューロン $N$ の活性化度に基づいて構成されるが，本章の実験では，各データセットごとに定義されたグルーピング規則にもとづき構成したグループA/Bをその具体例として用いる．
+  \item \textbf{グルーピング}: 各データセットごとに定義された規則に従い，ハイパーパラメータ $group\_size$ を用いて集合 $A$ と $B$ を抽出する．SemEval，GoEmotions，Steam ではアスペクトラベルの有無にもとづき，COCO Retrieved Concepts では各潜在コンセプトに対する Top-100/Bottom-100 画像のキャプションにもとづいてグループA/Bを構成する．
   メイン実験では，プロンプトのコンテキスト長制限を考慮し，$group\_size = 100$ を採用した．
   \item \textbf{Few-shot ICL の検証}: LLM の出力形式の揺らぎや語彙の安定性を確保するための検証手段として，Few-shot インコンテキスト・ラーニング（ICL）のバリエーション（0-shot, 1-shot, 3-shot）を定量的に検証した．
   LLM は，プロンプト内でグループAとグループBを比較し，グループAに特徴的でグループBには欠如している意味的側面を推論するよう指示された．
 \end{itemize}
 
-実験パイプラインの全体フローを図~\ref{fig:experiment_pipeline}に示す．
-\begin{figure}[htbp]
-  \centering
-  \begin{tikzpicture}[
-    node distance=1.5cm,
-    block/.style={rectangle, draw, fill=blue!20, text width=3.5cm, text centered, rounded corners, minimum height=1cm},
-    arrow/.style={->, >=stealth, thick}
-  ]
-    % ノード定義
-    \node [block] (dataset) {データセット\\読み込み};
-    \node [block, below of=dataset] (split) {グループA/B\\抽出};
-    \node [block, below of=split] (prompt) {プロンプト\\生成};
-    \node [block, below of=prompt] (llm) {LLM\\生成};
-    \node [block, below of=llm] (eval) {評価\\（BERTScore等）};
-    
-    % 矢印
-    \draw [arrow] (dataset) -- (split);
-    \draw [arrow] (split) -- (prompt);
-    \draw [arrow] (prompt) -- (llm);
-    \draw [arrow] (llm) -- (eval);
-    
-    % サイドノード（Few-shot例）
-    \node [block, right of=prompt, xshift=3cm] (fewshot) {Few-shot例\\（オプション）};
-    \draw [arrow, dashed] (fewshot) -- (prompt);
-  \end{tikzpicture}
-  \caption{実験パイプラインの全体フロー}
-  \label{fig:experiment_pipeline}
-\end{figure}
+実験パイプラインの全体フローを以下に示す．
+
+\begin{enumerate}
+  \item \textbf{データセット読み込み}：各データセットからテキストを読み込む．
+\item \textbf{グループA/B抽出}：各データセットで定義されたグルーピング規則（アスペクトラベル，あるいは Retrieved Concepts における Top/Bottom 構造）に基づき，グループA（特定概念を含むテキスト群）とグループB（含まないテキスト群）を抽出する．
+  \item \textbf{プロンプト生成}：グループAとグループBのテキストリストをプロンプトに組み込む．Few-shot例が設定されている場合は，プロンプトにFew-shot例を挿入する（オプション）．
+  \item \textbf{LLM生成}：GPT-4o-mini等のLLMにプロンプトを入力し，対比因子ラベルを生成する．
+  \item \textbf{評価}：生成されたラベルと正解ラベルの意味的類似度をBERTScore，BLEU，LLM評価により測定する．
+\end{enumerate}
+
+メイン実験で対象としたアスペクトは，SemEval-2014 から Food，Service，Battery，Screen の 4 種類，GoEmotions から全 28 感情カテゴリ，Steam から Gameplay，Visual，Story，Audio の 4 種類である．
 
 \subsection{LLMモデルとパラメータ設定}
 本実験では，対比因子ラベル生成器として GPT-4o-mini を主要モデルとして採用した．
@@ -220,8 +201,8 @@ Few-shot 実験，グループサイズ比較実験，モデル比較実験，�
 COCO Retrieved Concepts 実験でも temperature = 0.0 を採用した．
 
 最大トークン数（max\_tokens）の設定として，メイン実験では max\_tokens = 2000 に設定した．
-Few-shot 実験，グループサイズ比較実験，モデル比較実験では max\_tokens = 100 に設定した．
-アスペクト説明文比較実験，COCO Retrieved Concepts 実験では max\_tokens = 2000 に設定した．
+Few-shot 実験，モデル比較実験では max\_tokens = 100 に設定した．
+グループサイズ比較実験，アスペクト説明文比較実験，COCO Retrieved Concepts 実験では max\_tokens = 2000 に設定した．
 
 その他の生成パラメータとして，top\_p や frequency\_penalty はデフォルト値を使用した．
 
@@ -296,6 +277,8 @@ Few-shot 実験では，0-shot，1-shot，3-shot の 3 つの設定を比較し�
     \bottomrule
   \end{tabular}
 \end{table}
+
+BERTScoreに対しFriedman検定を行った結果、p=0.4724で0/1/3-shot間に有意差は確認されなかった（Holm補正付き事後比較も全組み合わせ非有意）。
 
 \begin{table}[htbp]
   \centering
@@ -508,6 +491,8 @@ Few-shot 別の平均スコアを表~\ref{tab:fewshot_summary}に，アスペク
   \end{tabular}
 \end{table}
 
+BERTScoreについてFriedman検定を実施し，$p=0.3309$で$group\_size$ 50--300間に有意差は確認されなかった（Holm補正付き事後比較も全て非有意）。
+
 \begin{table}[htbp]
   \centering
   \caption{Few-shot設定による性能比較：アスペクト別BERTScore}
@@ -526,13 +511,14 @@ Few-shot 別の平均スコアを表~\ref{tab:fewshot_summary}に，アスペク
 
 \subsection{グループサイズの影響分析}
 実験設定として，Steam データセットを用いて，group\_size（50，100，150，200，300）による性能差を検証した．
-実験パラメータは，temperature = 0.0，max\_tokens = 100，few\_shot = 0，GPT モデル = gpt-4o-mini，LLM 評価 = 有効（gpt-4o-mini，temperature = 0.0）とした．
+実験パラメータは，temperature = 0.0，max\_tokens = 2000，few\_shot = 0，GPT モデル = gpt-4o-mini，LLM 評価 = 有効（gpt-4o-mini，temperature = 0.0）とした．
 総実験数は 20 実験（4 アスペクト × 5 group\_size）であり，全実験が成功した．
 
 グループサイズ別の性能を表~\ref{tab:groupsize_results}に示す．
+Friedman 検定では p=0.3309 となり，Holm 補正後の全ペア比較も含め有意差は確認されなかった．
 \begin{table}[htbp]
   \centering
-  \caption{グループサイズによる性能比較}
+  \caption{グループサイズによる性能比較（各group\_sizeでの全アスペクト平均値）}
   \label{tab:groupsize_results}
   \begin{tabular}{lccc}
     \toprule
@@ -572,6 +558,7 @@ GPT-4o-mini vs GPT-5.1 の比較として，Steam データセットを用いて
 総実験数は 8 実験（4 アスペクト × 2 モデル）であり，全実験が成功した．
 
 モデル別の性能差を表~\ref{tab:model_comparison_summary}に，アスペクト別の性能差を表~\ref{tab:model_comparison_aspect}に示す．
+対応のある Wilcoxon 検定では p=0.8750（中央値差 -0.0158，Holm 補正後も非有意）となり，統計的には差は確認されなかった．
 \begin{table}[htbp]
   \centering
   \caption{モデル比較実験：平均スコア}
@@ -592,6 +579,8 @@ GPT-4o-mini vs GPT-5.1 の比較として，Steam データセットを用いて
     \bottomrule
   \end{tabular}
 \end{table}
+
+BERTScoreに対する対応のあるWilcoxon検定ではp=0.8750で、GPT-4o-miniとGPT-5.1の差は有意ではなかった（中央値差 5.1−4o-mini = -0.0158）。
 
 \begin{table}[htbp]
   \centering
@@ -615,6 +604,7 @@ GPT-4o-mini vs GPT-5.1 の比較として，Steam データセットを用いて
 総実験数は 8 実験（4 アスペクト × 2 条件（説明文あり/なし））であり，全実験が成功した．
 
 説明文の有無による性能差を表~\ref{tab:aspect_desc_summary}に，アスペクト別の効果を表~\ref{tab:aspect_desc_aspect}に示す．
+対応のある Wilcoxon 検定では p=0.3750（Holm 補正後も非有意）となり，性能差は傾向レベルであった．
 \begin{table}[htbp]
   \centering
   \caption{アスペクト説明文の効果検証：平均スコア}
@@ -635,6 +625,8 @@ GPT-4o-mini vs GPT-5.1 の比較として，Steam データセットを用いて
     \bottomrule
   \end{tabular}
 \end{table}
+
+BERTScoreで対応のあるWilcoxon検定を行い，$p=0.3750$で説明文あり/なしの差は有意ではなかった（中央値差 $with\_desc - no\_desc = 0.0131$）。
 
 \begin{table}[htbp]
   \centering
@@ -812,37 +804,19 @@ GoEmotions の感情カテゴリ（BERTScore 平均 0.7127）は，Steam のア�
 GoEmotions の一部の感情カテゴリ（Disgust 0.8316，Embarrassment 0.8941，Joy 0.8192）では，高い BERTScore を記録した一方，neutral（0.5437）では低い値を記録した．
 
 \subsection{エラー分析と限界}
-失敗した実験の分析として，全実験カテゴリにおいて失敗数は 0 であり，詳細は表~\ref{tab:experiment_summary}を参照されたい．
-
-エラーの種類と原因として，本実験では実験実行時のエラーは発生しなかった．
-ただし，コンテキスト長制限を考慮して，各グループから最大 100 件のテキストを抽出する制限を設けた．
-
-手法の限界として，本実験では，具体的なアスペクト（SemEval-2014 の Food，Service，Battery，Screen）では高い BERTScore を記録したが，抽象的なアスペクト（Steam の Gameplay，Visual，Story，Audio）では比較的低い BERTScore を記録した．
-また，GoEmotions の感情カテゴリでは，一部のカテゴリ（neutral 0.5437）で低い BERTScore を記録した．
+本実験では，全ての実験カテゴリにおいて実行上の失敗は発生せず，予定した 89 実験を完了した．
+一方で，コンテキスト長制限を考慮し，各グループから最大 100 件のテキストを抽出する制約を設けており，大規模なテキスト集合に対する性能は十分に評価できていないという限界がある．
+また，具体的なアスペクト（SemEval-2014 の Food，Service，Battery，Screen）では高い BERTScore を記録した一方で，抽象度の高いアスペクト（Steam の Gameplay，Visual，Story，Audio）や一部の感情カテゴリ（GoEmotions の neutral など）ではスコアが低く，概念の抽象性が命名性能に影響することが示唆された．
 
 \subsection{補足分析}
-Few-shot ICL の導入として，Few-shot の例をプロンプトの \texttt{examples\_section} として挿入し，モデルがその出力形式を模倣する特性を利用した．
-Few-shot 実験では，1-shot 設定が他の設定と比較して最も高い BERTScore（平均 0.6530）を記録した．
-
-データセットの使用として，SemEval-2014 や Steam レビューデータは，LLM 命名の評価ベンチマークとして使用された．
-GoEmotions データセットは，総レコード数 63,812 件に及ぶ大規模な Reddit コメントから収集されており，28 の感情カテゴリを対象とした．
-実験パイプラインでは，グループ $A$ と $B$ を抽出する際，コンテキスト長超過エラーを回避するため，$group\_size$ が最大 100 件に制限された設定が用いられた．
-
-BLEU スコアの結果として，メイン実験では BLEU スコアの平均は 0.0082 を記録した．
-Few-shot 実験では BLEU スコアの平均は 0.0 を記録した．
-生成ラベルは「～に関する言及」といった説明文であり，正解ラベル（例：「food」）と直接的な語彙重複を持たない．
-
-BERTScore の結果として，メイン実験では BERTScore の平均は 0.6980 を記録した．
-SemEval-2014 データセットでは BERTScore の平均は 0.7531 を記録した．
-GoEmotions データセットでは BERTScore の平均は 0.7127 を記録した．
-Steam データセットでは BERTScore の平均は 0.5403 を記録した．
-
-概念の具体性による影響として，SemEval-2014 の具体的なアスペクト（BERTScore 平均 0.7531）は，Steam のアスペクト（BERTScore 平均 0.5403）と比較して高い値を記録した．
-GoEmotions の感情カテゴリ（BERTScore 平均 0.7127）は，Steam のアスペクトと比較して高い値を記録したが，SemEval-2014 の具体的なアスペクトと比較して低い値を記録した．
+Few-shot ICL では，少数の例題をプロンプトの \texttt{examples\_section} に挿入し，モデルが出力形式や語彙選択を安定させることを狙った．
+Steam データセットを用いた Few-shot 実験では，1-shot 設定が 0-shot および 3-shot と比較して最も高い BERTScore を示し，過度な例示よりも代表的な例を少数与える方が有効である可能性が示された．
+さらに，SemEval-2014，GoEmotions，Steam の結果を比較すると，具体的アスペクトを扱う SemEval-2014 で最も高いスコアが得られ，抽象度が高い Steam のアスペクトでスコアが低下するなど，概念の具体性が対比因子ラベル生成の難易度を規定する一因であることがうかがえた．
 
 \section{統計的分析}
-統計的有意性の検定として，本実験では統計的有意性の検定は実施しなかった．
-信頼区間の計算として，本実験では信頼区間の計算は実施しなかった．
+Few-shot（0/1/3-shot）とグループサイズ比較について Holm 補正済み Friedman 検定を実施し，それぞれ p=0.4724，p=0.3309 でいずれも有意差は確認されなかった．
+モデル比較（n=4）とアスペクト説明文有無（n=4）については，対応のある Wilcoxon 検定を実施し，p=0.8750（中央値差 -0.0158），p=0.3750 といずれも非有意であった（Holm 補正後も非有意）．
+詳細な統計量と検定結果は \texttt{stat\_tests.md} を参照されたい．
 
 外れ値の分析を表~\ref{tab:outliers}に示す．
 \begin{table}[htbp]
@@ -863,4 +837,3 @@ GoEmotions の感情カテゴリ（BERTScore 平均 0.7127）は，Steam のア�
 GoEmotions の感情カテゴリでは，neutral アスペクトで BERTScore 0.5437 と低い値を記録したが，これは他の感情カテゴリと比較して低い値であった．
 
 実験間の一貫性の確認として，全実験カテゴリにおいて実験間の一貫性が確認された．
-詳細は表~\ref{tab:experiment_summary}を参照されたい．

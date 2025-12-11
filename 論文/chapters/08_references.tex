@@ -1,0 +1,290 @@
+% 参考文献（References）
+\newpage
+\addcontentsline{toc}{chapter}{参考文献}
+\renewcommand{\bibname}{参考文献}
+
+%% 参考文献に bibtex を使う場合
+%\bibliographystyle{junsrt}
+%\bibliography{hoge}
+
+%% 参考文献を直接ファイルに含めて書く場合
+\begin{thebibliography}{99}
+
+\bibitem{pontiki-EtAl:2014:SemEval2014Task4}
+M.~Pontiki, D.~Galanis, J.~Pavlopoulos, H.~Papageorgiou, I.~Androutsopoulos, and S.~Manandhar:
+``SemEval-2014 Task 4: Aspect Based Sentiment Analysis,''
+in \textit{Proceedings of the 8th International Workshop on Semantic Evaluation (SemEval 2014)}, Dublin, Ireland, August 23--24, 2014, pp.~27--35, doi:10.3115/v1/S14-2004. Available at \url{https://aclanthology.org/S14-2004/}.
+% 研究概要: Aspect Based Sentiment Analysis（アスペクトベース感情分析）の標準ベンチマークタスクを提案。レビュー文からアスペクト（観点）とその極性（ポジティブ/ネガティブ/ニュートラル）を抽出するタスクを定義し、評価データセットを提供。
+% データセット: Restaurant（レストラン）とLaptop（ノートPC）の2ドメインで構成。Restaurantドメインではfood, service, price, atmosphereなどのアスペクト、Laptopドメインではbattery, screen, keyboard, performanceなどのアスペクトが定義されている。
+% タスク構成: 複数のサブタスク（アスペクト抽出、極性分類、アスペクトカテゴリ分類など）を含む包括的な評価フレームワークを提供。
+% 本研究での使用: 対比因子生成実験の主要データセットとして使用。Restaurantドメインからfood/service、Laptopドメインからbattery/screenの4アスペクトを採用し、アスペクトを含むテキスト群と含まないテキスト群の対比分析に活用。
+% 意義: ABSA研究の標準ベンチマークとして広く採用され、本研究における対比因子生成手法の評価基盤を提供。
+
+\bibitem{ribeiro2016should}
+M.~T. Ribeiro, S.~Singh, and C.~Guestrin:
+``Why should I trust you?: Explaining the predictions of any classifier,''
+in \textit{Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}, San Francisco, CA, USA, August 13--17, 2016, pp.~1135--1144, doi:10.1145/2939672.2939778.
+% 研究概要: ブラックボックス機械学習モデルの予測を説明するための手法LIME（Local Interpretable Model-agnostic Explanations）を提案。任意の分類器に対して、個々の予測に対する局所的な説明を生成する。
+% 手法: モデル非依存（model-agnostic）のアプローチで、対象インスタンスの近傍で擬似データを生成し、距離カーネルで重み付けしたLASSO回帰（線形モデル）を学習して各特徴量の重要度を算出。テキスト、画像、表形式データなど複数のモダリティに対応。
+% 主な貢献: 説明可能性の評価指標としてlocal fidelity（忠実性：局所近傍で説明モデルが元のモデルをどれだけ再現できているか）とinterpretability（可読性）を導入し、人間実験により説明の有用性（予測精度向上や欠陥発見）を実証。SP-LIME（submodular pick）により、サブモジュラー最適化を用いて冗長性の少ない多様な代表的説明セットを選択する手法も提案。
+% 課題: 局所的な説明に限定され、モデル全体の動作原理は説明しない。後続研究（Slack et al. 2020、Alvarez-Melis & Jaakkola 2018）により、敵対的攻撃に対する脆弱性やロバスト性の問題が指摘されている。なお、説明の安定性（stability）は本論文の中心的な評価指標ではなく、主に後続研究で議論される概念である。
+
+\bibitem{lundberg2017unified}
+S.~M. Lundberg and S.-I. Lee:
+``A unified approach to interpreting model predictions,''
+in \textit{Advances in Neural Information Processing Systems}, vol.~30, Long Beach, CA, USA, December 4--9, 2017, pp.~4765--4774, arXiv:1705.07874, doi:10.5555/3295222.3295230. Available at \url{https://proceedings.neurips.cc/paper/2017/file/8a20a8621978632d76c43dfd28b67767-Paper.pdf}.
+% 研究概要: 協力ゲーム理論のShapley値に基づき、機械学習モデルの予測に対する各特徴量の寄与度を説明するSHAP (SHapley Additive exPlanations) を提案。
+% 手法: 既存の複数の説明手法（LIME、DeepLIFT、Layer-Wise Relevance Propagation、Shapley regression valuesなど）を統一的に解釈できる理論的フレームワークを提供。
+% SHAP値は、特徴量のすべての可能な組み合わせに対する予測への寄与度を平均することで計算され、加法性（各特徴量のSHAP値の合計が予測値と基準値の差に等しい）を満たす。
+% 主な貢献: 異なる説明手法間の比較を可能にし、モデル解釈の統一的な評価基準を確立。線形モデル、ツリーモデル、深層学習モデルなど、様々なモデルタイプに適用可能。
+% 課題: 計算コストが高く、特に特徴量数が多い場合には近似手法が必要。また、後付け説明（post-hoc explanation）の限界として、モデル自体の解釈可能性を高めるわけではない。
+
+\bibitem{wachter2017counterfactual}
+S.~Wachter, B.~Mittelstadt, and C.~Russell:
+``Counterfactual explanations without opening the black box: Automated decisions and the GDPR,''
+\textit{Harvard Journal of Law \& Technology}, vol.~31, no.~2, pp.~841--887, 2017. Available at \url{https://jolt.law.harvard.edu/assets/articlePDFs/v31/Counterfactual-Explanations-without-Opening-the-Black-Box-Sandra-Wachter-et-al.pdf}.
+
+\bibitem{kim2018interpretability}
+B.~Kim, M.~Wattenberg, J.~Gilmer, C.~Cai, J.~Wexler, F.~Viegas, et al.:
+``Interpretability beyond feature attribution: Quantitative testing with concept activation vectors (TCAV),''
+in \textit{Proceedings of the 35th International Conference on Machine Learning (ICML 2018)}, Stockholm, Sweden, July 10--15, 2018, pp.~2673--2682, arXiv:1711.11279. Available at \url{https://proceedings.mlr.press/v80/kim18d.html}.
+
+\bibitem{luss2024cell}
+R.~Luss, E.~Miehling, and A.~Dhurandhar:
+``CELL your Model: Contrastive Explanations for Large Language Models,''
+arXiv preprint arXiv:2406.11785, June 2024. Available at \url{https://arxiv.org/abs/2406.11785}.
+
+\bibitem{bucinca2024contrastive}
+Z.~Bu{\c{c}}inca, S.~Swaroop, A.~E. Paluch, F.~Doshi-Velez, and K.~Z. Gajos:
+``Contrastive Explanations That Anticipate Human Misconceptions Can Improve Human Decision-Making Skills,''
+in \textit{Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (CHI '24)}, April 2024, arXiv preprint arXiv:2410.04253. Available at \url{https://arxiv.org/abs/2410.04253}.
+
+\bibitem{anthropic2025biology}
+Anthropic:
+``On the Biology of a Large Language Model,''
+Transformer Circuits, 2025. Available at \url{https://transformer-circuits.pub/2025/attribution-graphs/biology.html}.
+% 研究概要: Claude 3.5 Haikuを対象に、Circuit Tracing（回路トレース）手法を用いてモデル内部の計算プロセスを解析。
+% 手法: 出力から逆方向に、各特徴量（features）がどの順序で使われたかを追跡し、最終出力への影響を数値化。
+% 元の巨大モデルを直接可視化するのではなく、あるプロンプトに対する振る舞いを模倣するより単純な「置き換えモデル（replacement model）」を構築し、その上で特徴量間の相互作用をグラフとして可視化することで、影響の大きい計算経路（attribution graph）を抽出。
+% 主な発見: 多言語処理における共通概念空間、詩生成における計画性、推論プロセスと自己説明の乖離など。
+% 注意: 解析対象は主に「特徴量（features）」とその相互作用であり、個々の物理的ニューロンではなく人間が意味づけしやすい中間表現（superfeatures/human-interpretable features）を扱う。
+% 課題: Attribution Graphが描くのは「replacement model上のfeaturesの流れ」であり、必ずしもオリジナルのすべての内部挙動を忠実に再現したものとは限らない。
+% また、紹介されている回路や計算経路はモデルが出力を生成する過程のごく一部を捉えたものであり、複雑な長文や多段推論、リアルタイムの文脈変化などをすべてトレースするのは現状では困難。
+% グラフのノード（特徴量）の意味付けは自動化されておらず、手動で「スーパーノード」としてグループ化する必要がある。また、attribution graphを因果（causal）な説明と見るか相関（correlational）な説明と見るかには慎重さが求められる。
+
+\bibitem{demszky2020goemotions}
+D.~Demszky, D.~Movshovitz-Attias, J.~Ko, A.~Cowen, G.~Nemade, and S.~Ravi:
+``GoEmotions: A Dataset of Fine-Grained Emotions,''
+in \textit{Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020)}, pp.~4040--4054, 2020. Available at \url{https://aclanthology.org/2020.acl-main.372/}.
+
+\bibitem{srec:steam-review-aspect-dataset}
+S.~Khosasi:
+``Steam review aspect dataset,''
+2024. Available at \url{https://srec.ai/blog/steam-review-aspect-dataset}.
+
+\bibitem{papineni-etal-2002-bleu}
+K.~Papineni, S.~Roukos, T.~Ward, and W.-J. Zhu:
+``BLEU: a Method for Automatic Evaluation of Machine Translation,''
+in \textit{Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics (ACL 2002)}, pp.~311--318, 2002. Available at \url{https://aclanthology.org/P02-1040.pdf}.
+
+\bibitem{devlin2018bert}
+J.~Devlin, M.-W. Chang, K.~Lee, and K.~Toutanova:
+``BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,''
+arXiv preprint arXiv:1810.04805, 2018. Available at \url{https://arxiv.org/abs/1810.04805}.
+
+\bibitem{bau2017networkdissection}
+D.~Bau, B.~Zhou, A.~Khosla, A.~Oliva, and A.~Torralba:
+``Network Dissection: Quantifying Interpretability of Deep Visual Representations,''
+in \textit{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2017)}, Honolulu, HI, USA, July 2017, pp.~6541--6549, arXiv:1704.05796. Available at \url{https://arxiv.org/abs/1704.05796}.
+% 研究概要: CNN の各ユニットと Broden データセットの概念マスクとの IoU を用いて，「どのユニットがどの概念を検出しているか」を定量化する手法 Network Dissection を提案し，深層視覚表現の解釈可能性を測定。
+% 本研究での位置づけ: 画像モデル内部の概念特徴に対する「固定語彙ベースの自動ラベリング」手法として参照し，対比因子生成タスクとの違い（内部アクティベーション前提・画像中心）を説明する際の代表例として用いる。
+
+\bibitem{oikarinen2022clipdissect}
+T.~Oikarinen and T.-W. Weng:
+``CLIP-Dissect: Automatic Description of Neuron Visual Features with Language Models,''
+arXiv preprint arXiv:2204.10965, 2022. Available at \url{https://arxiv.org/abs/2204.10965}.
+% 研究概要: CLIP の画像・テキスト埋め込み空間を用い，高活性化画像と多数のテキスト候補との類似度を計算することで，任意の視覚モデルのユニットにオープンエンドな概念ラベルを自動付与する CLIP-Dissect を提案。
+% 本研究での位置づけ: CLIP を用いた検索ベースの自動概念命名の代表例として参照し，本研究のテキスト集合ベース・外部ラベル評価との対比に用いる。
+
+\bibitem{schrodi2024unsupervised}
+S.~Schrodi, M.~R{\"u}ckl, T.~Wirth, M.~B{\"o}hm, and D.~R{\"u}gamer:
+``Concept Bottleneck Models Without Predefined Concepts,''
+arXiv preprint arXiv:2407.03921, 2024. Available at \url{https://arxiv.org/abs/2407.03921}.
+
+\bibitem{oikarinen2023labelfree}
+T.~Oikarinen, S.~Tripathi, T.~M. Mitchell, and D.~Alvarez\mbox{-}Melis:
+``Label-Free Concept Bottleneck Models,''
+in \textit{Proceedings of the 11th International Conference on Learning Representations (ICLR 2023)}, Kigali, Rwanda, May 2023, arXiv:2304.06129. Available at \url{https://arxiv.org/abs/2304.06129}.
+% 研究概要: GPT-3 や CLIP を用いてタスクに関連する概念候補リスト（概念バンク）を自動生成し，ラベル付き概念を用いずに Concept Bottleneck Model を構築する Label-Free CBM を提案。
+% 本研究での位置づけ: 事前定義概念なしに概念ボトルネックを構築する既存手法として引用し，Discover-then-Name との関係や，本研究の「テキスト集合＋外部アスペクトラベル」という評価設定との違いを説明する。
+
+\bibitem{rao2024discoverthenname}
+S.~Rao, Y.~Zhao, M.~Sachan, and A.~Gupta:
+``Discover-then-Name: Task-Agnostic Concept Bottlenecks via Automated Concept Discovery,''
+arXiv preprint arXiv:2407.14499, 2024. Available at \url{https://arxiv.org/abs/2407.14499}.
+% 研究概要: CLIP 特徴に対して Sparse Autoencoder や NMF を適用して概念方向を教師なしで発見し，高活性化画像と CLIP/LLM を用いて概念に名前を付ける Discover-then-Name (DN-CBM) を提案。
+% 本研究での位置づけ: 「発見してから名付ける」コンセプトボトルネックの代表例として参照し，本研究の対比因子生成タスクとのタスク設計の違いを議論する。
+
+\bibitem{ameisen2025attribution}
+E.~Ameisen, J.~Lindsey, A.~Pearce, W.~Gurnee, N.~L. Turner, B.~Chen, C.~Citro, D.~Abrahams, S.~Carter, B.~Hosmer, J.~Marcus, M.~Sklar, A.~Templeton, T.~Bricken, C.~McDougall, H.~Cunningham, T.~Henighan, A.~Jermyn, A.~Jones, A.~Persic, Z.~Qi, T.~B. Thompson, S.~Zimmerman, K.~Rivoire, T.~Conerly, C.~Olah, and J.~Batson:
+``Circuit Tracing: Revealing Computational Graphs in Language Models,''
+\textit{Transformer Circuits}, 2025. Available at \url{https://transformer-circuits.pub/2025/attribution-graphs/methods.html}.
+% 研究概要: Attribution Graphsの手法論を提案。LLMの内部計算プロセスをトレースし、特徴量間の相互作用をグラフとして可視化することで計算構造（回路）を発見する。
+% 手法: ある出力が計算されるまでにネットワーク内部でどのニューロンや重みがどのような順序で使われたかを、出力側からさかのぼって追跡。
+% 各ニューロンや結合が最終出力にどの程度影響したかを数値化し、影響の大きい経路どうしを結んだグラフとして可視化することで、計算グラフを抽出。
+% 課題: グラフのノードとして発見される「特徴量（features）」は必ずしも自然言語的に意味のある概念（semantic concept）とは限らず、ノードが具体的に何を検出しているかを自然言語で特定するプロセスは自動化されていない。
+% また、Attribution Graphはモデルの振る舞いの一部を可視化できるが、すべての振る舞いやグローバルなアルゴリズムを保証するものではない。特に注意（attention）による経路は追えない場合があり、「dark matter」と呼ばれる未説明部分が残る。
+% 可視化された回路は多くのノード・エッジを含みうるため、手作業での解釈や簡潔な説明への落とし込みが困難で、feature-splitting/absorptionやsupernodesによる手動グルーピングが必要となる。
+% 関連研究: anthropic2025biologyと同一シリーズの研究で、Attribution Graphsの手法を具体的に適用した実証研究。
+
+\bibitem{bordt2022posthoc}
+S.~Bordt, M.~Finck, E.~Raidl, and U.~von Luxburg:
+``Post-Hoc Explanations Fail to Achieve their Purpose in Adversarial Contexts,''
+in \textit{Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency (FAccT '22)}, Seoul, Republic of Korea, June 21-24, 2022, pp.~1495--1515, doi:10.1145/3531146.3533153.
+
+\bibitem{slack2020fooling}
+D.~Slack, S.~Hilgard, E.~Jia, S.~Singh, and H.~Lakkaraju:
+``Fooling LIME and SHAP: Adversarial Attacks on Post hoc Explanation Methods,''
+in \textit{Proceedings of the 2020 AAAI/ACM Conference on AI, Ethics, and Society (AIES 2020)}, New York, NY, USA, February 7--8, 2020, pp.~180--186, arXiv:1911.02508, doi:10.1145/3375627.3375830.
+
+\bibitem{alvarez2018robustness}
+D.~Alvarez\mbox{-}Melis and T.~S. Jaakkola:
+``On the Robustness of Interpretability Methods,''
+in \textit{Proceedings of the 32nd Conference on Neural Information Processing Systems (NeurIPS 2018) Workshops}, 2018, arXiv:1806.08049. Available at \url{https://arxiv.org/abs/1806.08049}.
+
+\bibitem{mersha2024survey}
+M.~Mersha, K.~Lam, J.~Wood, A.~AlShami, and J.~Kalita:
+``Explainable AI: A Survey of Needs, Techniques, Applications, and Future Direction,''
+arXiv preprint arXiv:2409.00265, 2024. Available at \url{https://arxiv.org/abs/2409.00265}.
+
+\bibitem{rudin2019stop}
+C.~Rudin:
+``Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead,''
+\textit{Nature Machine Intelligence}, vol.~1, no.~5, pp.~206--215, 2019, doi:10.1038/s42256-019-0048-x.
+
+\bibitem{vilone2020systematic}
+G.~Vilone and L.~Longo:
+``Explainable Artificial Intelligence: a Systematic Review,''
+arXiv preprint arXiv:2006.00093, 2020, doi:10.48550/arXiv.2006.00093. Available at \url{https://arxiv.org/abs/2006.00093}.
+
+\bibitem{haedecke2025conceptClusters}
+E.~Haedecke, M.~Akila, and L.~von Rueden:
+``Global Properties from Local Explanations with Concept Explanation Clusters,''
+in \textit{World Conference on eXplainable Artificial Intelligence (xAI 2025)}, Springer, Cham, 2025, pp.~3--24, doi:10.1007/978-3-031-41510-0\_1.
+
+\bibitem{hu2024interpretableClustering}
+L.~Hu, M.~Jiang, J.~Dong, X.~Liu, and Z.~He:
+``Interpretable Clustering: A Survey,''
+arXiv preprint arXiv:2409.00743, 2024. Available at \url{https://arxiv.org/abs/2409.00743}.
+
+\bibitem{kardale2023contrastive}
+A.~Kardale:
+``Contrastive text summarization: a survey,''
+\textit{International Journal of Information and Computation}, vol.~12, no.~3, pp.~1--10, 2023.
+
+\bibitem{saha2024strumllm}
+A.~Saha, B.~P. Majumder, H.~Jhamtani, S.~Subramanian, S.~Sreedhar, S.~Chakrabarti, and P.~Kankar:
+``STRUM-LLM: Attributed and Structured Contrastive Summarization for User-Oriented Comparison,''
+arXiv preprint arXiv:2403.19710, 2024. Available at \url{https://arxiv.org/abs/2403.19710}.
+
+\bibitem{luo2024chatabsa}
+Z.~Luo, Z.~Feng, Y.~Zhang, and H.~Liu:
+``ChatABSA: A Novel Framework for Aspect-based Sentiment Analysis using Large Language Models,''
+arXiv preprint arXiv:2401.08226, 2024. Available at \url{https://arxiv.org/abs/2401.08226}.
+
+\bibitem{wang2024llmcluster}
+J.~Wang, J.~Song, X.~Sun, C.~Chen, W.~Liu, and Y.~Liu:
+``Improving Clustering Performance by Leveraging Large Language Models,''
+arXiv preprint arXiv:2410.00927, 2024. Available at \url{https://arxiv.org/abs/2410.00927}.
+
+\bibitem{sellam-etal-2020-bleurt}
+T.~Sellam, D.~Das, and A.~Parikh:
+``BLEURT: Learning Robust Metrics for Text Generation,''
+in \textit{Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020)}, pp.~7881--7892, 2020. Available at \url{https://aclanthology.org/2020.acl-main.704/}.
+
+\bibitem{yuan2021bartscore}
+W.~Yuan, G.~Neubig, and P.~Liu:
+``BARTScore: Evaluating Generated Text as Text Generation,''
+in \textit{Advances in Neural Information Processing Systems (NeurIPS)}, vol.~34, pp.~27263--27277, 2021. Available at \url{https://arxiv.org/abs/2106.11520}.
+
+\bibitem{reiter2018structured}
+E.~Reiter:
+``A Structured Review of the Validity of BLEU,''
+\textit{Computational Linguistics}, vol.~44, no.~3, pp.~393--401, 2018. Available at \url{https://aclanthology.org/J18-3002/}.
+
+\bibitem{holtzman2020curious}
+A.~Holtzman, J.~Buys, L.~Du, M.~Forbes, and Y.~Choi:
+``The Curious Case of Neural Text Degeneration,''
+in \textit{International Conference on Learning Representations (ICLR)}, 2020. Available at \url{https://openreview.net/forum?id=rygGQyrFvH}.
+
+\bibitem{zhang2019bertscore}
+T.~Zhang, V.~Kishore, F.~Wu, K.~Q. Weinberger, and Y.~Artzi:
+``BERTScore: Evaluating Text Generation with BERT,''
+arXiv preprint arXiv:1904.09675, 2019. Available at \url{https://arxiv.org/abs/1904.09675}.
+
+\bibitem{openai2023neurons}
+OpenAI:
+``Language models can explain neurons in language models,''
+OpenAI Blog, 2023. Available at \url{https://openai.com/index/language-models-can-explain-neurons-in-language-models/}.
+% 研究概要: GPT-2 の多数のニューロンに対し，トップ発火トークン列を GPT-4 に入力して自然言語説明を生成し，Simulation Score により説明の妥当性を自動評価する「自動解釈可能性」パイプラインを提示。
+% 本研究での位置づけ: LLM を用いたニューロン説明と自動スコアリングの代表例として参照し，本研究が扱うテキスト集合レベルのタスクとの違いを説明する。
+
+\bibitem{bills2023automatedinterp}
+S.~Bills, N.~Muennighoff, R.~Hoang, N.~Mu, et al.:
+``Automatically Interpreting Millions of Features in Large Language Models,''
+arXiv preprint arXiv:2310.13052, 2023. Available at \url{https://arxiv.org/abs/2310.13052}.
+% 研究概要: Sparse Autoencoder によって LLM の中間表現から数百万規模のスパース特徴を抽出し，各特徴に対して LLM による説明文生成と Simulation Score による自動評価を行うことで，大規模な自動概念命名・自動スコアリングを実現。
+% 本研究での位置づけ: 「OpenAI/Anthropic 型」の自動解釈パイプラインの代表として参照し，自動命名の達成度と限界に関する議論の背景とする。
+
+\bibitem{stein2024towards}
+A.~Stein, A.~Naik, Y.~Wu, M.~Naik, and E.~Wong:
+``Towards Compositionality in Concept Learning,''
+in \textit{Proceedings of the International Conference on Machine Learning (ICML)}, 2024. Available at \url{https://arxiv.org/abs/2406.18534}.
+
+\bibitem{lin2014microsoft}
+T.-Y.~Lin, M.~Maire, S.~Belongie, J.~Hays, P.~Perona, D.~Ramanan, P.~Doll{\'a}r, and C.~L. Zitnick:
+``Microsoft COCO: Common Objects in Context,''
+in \textit{Proceedings of the 13th European Conference on Computer Vision (ECCV 2014)}, Zurich, Switzerland, September 6--12, 2014, pp.~740--755, arXiv:1405.0312, doi:10.1007/978-3-319-10602-1\_48. Available at \url{https://arxiv.org/abs/1405.0312}.
+
+\bibitem{koh2020concept}
+P.~W. Koh, T.~Nguyen, Y.~S. Tang, S.~Mussmann, E.~Pierson, B.~Kim, and P.~Liang:
+``Concept Bottleneck Models,''
+in \textit{Proceedings of the 37th International Conference on Machine Learning (ICML 2020)}, vol.~119, pp.~5338--5348, 2020, arXiv:2007.04612. Available at \url{https://arxiv.org/abs/2007.04612}.
+
+\bibitem{radford2021learning}
+A.~Radford, J.~W. Kim, C.~Hallacy, A.~Ramesh, G.~Goh, S.~Agarwal, G.~Sastry, A.~Askell, P.~Mishkin, J.~Clark, G.~Krueger, and I.~Sutskever:
+``Learning Transferable Visual Models From Natural Language Supervision,''
+in \textit{Proceedings of the 38th International Conference on Machine Learning (ICML 2021)}, vol.~139, pp.~8748--8763, 2021, arXiv:2103.00020. Available at \url{https://arxiv.org/abs/2103.00020}.
+
+\bibitem{reimers2019sentence}
+N.~Reimers and I.~Gurevych:
+``Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks,''
+in \textit{Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)}, Hong Kong, China, November 3--7, 2019, pp.~3982--3992, arXiv:1908.10084. Available at \url{https://arxiv.org/abs/1908.10084}.
+
+\bibitem{bird2009natural}
+S.~Bird, E.~Klein, and E.~Loper:
+\textit{Natural Language Processing with Python: Analyzing Text with the Natural Language Toolkit},
+O'Reilly Media, 2009. Available at \url{https://www.nltk.org/book/}.
+
+\bibitem{patricio2025cbvlm}
+M.~Patr{\'\i}cio, et al.:
+``CBVLM: Training-free explainable concept-based Large Vision Language Models for medical image classification,''
+2025.
+
+\bibitem{deng2019annotation}
+Y.~Deng, et al.:
+``Efforts estimation of doctors annotating medical image,''
+in \textit{Proceedings of the 2019 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)}, 2019.
+
+\bibitem{li2024wsi}
+X.~Li, et al.:
+``Deep learning quantifies pathologists' visual patterns for whole slide image diagnosis,''
+2024.
+
+\bibitem{tseng2025expertllm}
+Y.-H.~Tseng, et al.:
+``Evaluating Large Language Models as Expert Annotators,''
+2025.
+
+\end{thebibliography}
+

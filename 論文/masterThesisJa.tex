@@ -14,12 +14,14 @@
 \student{202421675}{清野　駿}{Seino Shun}
 
 \jabst{
-　大規模言語モデル（LLM）の実運用では，判断の妥当性を説明可能にすることが重要であるが，既存手法は未知データごとに人手で解釈ラベルを付与する負担が大きい．本研究は，将来的にニューロン発火条件から得られることを想定した二つのテキスト集合 A/B に対し，その差異を自然言語で要約する「対比因子ラベル」を自動生成する枠組みの実現可能性を検証する．実験では，ニューロンの活性化ログそのものではなく，アスペクトラベルや CLIP 類似度に基づいて構成したテキスト集合（グループA: 特定概念を含むテキスト, グループB: 含まないテキスト）を，この理想的タスクの近似として用いる．手法は，A/B の代表テキストを入力として，Few-shot 例示（0/1/3-shot）付きプロンプトで LLM に差分説明を生成させる．評価は SemEval-2014 ABSA（Restaurants/Laptop），Steam ゲームレビュー，GoEmotions，COCO Retrieved Concepts を含む多様なドメインのデータセットを用い，各グループ 100 件の条件で GPT-4o-mini を含む複数の LLM を用いて対比因子ラベルを生成し，その品質を BERTScore（本論文では Sentence-BERT 埋め込みのコサイン類似度），BLEU，および LLM による意味的類似度評価を用いて多角的に測定した．結果として，全 36 実験の平均で BERTScore ≈ 0.698，BLEU ≈ 0.008 を得て，意味レベルの一致は中程度だが語彙一致は低いことが示された．また Few-shot 実験では 1-shot が最も良く，出力スタイルが「説明的叙述」から「一意に特定する語彙」へ矯正される傾向が確認された．アスペクト別には gameplay/food 等の語彙的に安定した具体的概念で高く，recommended/suggestion 等の抽象概念で低い傾向が見られた．以上より，本枠組みは一定の条件で有効であり，人手ラベリングの一部代替となる可能性がある一方，抽象概念の扱いと評価指標の高度化（人手・LLM 補助，非語彙的類似）が今後の課題である．
+    大規模言語モデル（LLM）は多様なタスクで高い性能を示している一方で，その内部処理は依然としてブラックボックス性が高く，理解が難しい。この問題を解決する試みとして，LLM 内のニューロンの発火条件を解析する研究が行われてきたが，こうした手法には，人手によるラベル付けに大きく依存するという課題がある。モデル内部でどのような情報が利用されているかを明らかにするためには，未知データごとに人間が解釈ラベルを付与する必要があり，膨大な時間とコストがかかる。もしモデル内部表現に対応する概念や特徴を自然言語で自動的に記述できれば，この負担を大きく軽減でき，説明可能 AI の実現に向けた重要な一歩となる。
+    本研究では，二つのテキスト集合 A/B の差異を自然言語で要約する「対比因子ラベル」を自動生成する枠組みの実現可能性を検証する．
+    本研究の目的は，LLM がこの対比因子ラベル生成タスクに対してどの程度の性能を示しうるかを明らかにすることである。具体的には，既存のアスペクトラベルにもとづいてあらかじめ二つのテキスト集合 A/B を構成し，LLM によって生成された対比因子ラベルと，集合を分割した元のアスペクトとの対応関係を比較することで，本枠組みの実現可能性を評価する。
+    手法としては，A/B の代表テキストを LLM に入力し，Few-shot 例示（0/1/3-shot）を与えたプロンプトにより，両集合を分ける特徴を自然言語で生成させる。評価には SemEval-2014 ABSA（Restaurants/Laptop），Steam ゲームレビュー，GoEmotions，COCO Retrieved Concepts など複数ドメインを含むデータセットを用い，各グループ100件の条件で GPT-4o-mini を含む複数モデルを比較した。生成されたラベルの品質は，Sentence-BERT による埋め込み類似度（BERTScore），BLEU，および LLM による意味的類似度評価を組み合わせ，多角的に測定した。
+    実験の結果，全 36 条件の平均で BERTScore は約 0.698 と中程度の意味的一致を示した一方，BLEU は 0.008 と語彙レベルの一致は低かった。また Few-shot では 1-shot が最も良好で，出力が「説明的な文章」から「より一意に特定可能な語彙」へと安定する傾向が見られた。さらに gameplay や food のような語彙的に具体的・安定した概念では高いスコアを示し，recommended や suggestion といった抽象概念では低下する傾向が確認された。
+    これらの結果から，提案手法は一定の条件下において、人手による解釈ラベリングを部分的に代替し得ることが示された。ただし，概念が抽象的な場合の説明の難しさや、語彙が一致しない場合の文脈を汲み取った評価ができない問題など，今後解決すべき課題も明らかになった。
 }
 
-\eabst{
-This study examines the feasibility of generating contrastive factor labels that are intended to explain neuron activation conditions, by comparing two text groups A/B. In our experiments, these groups are not constructed from actual neuron activation logs, but are approximated using aspect labels and similarity scores (e.g., CLIP-based Top-100 vs Bottom-100) so that group A contains texts strongly associated with a target concept and group B contains texts that do not. We prompt an LLM (GPT-4o-mini) with 0/1/3-shot examples to produce concise differences, and evaluate semantic and lexical alignment against gold aspect labels using BERTScore (implemented as cosine similarity of Sentence-BERT embeddings) and BLEU on SemEval-2014 ABSA (Restaurants/Laptop), Steam game reviews, GoEmotions, and COCO Retrieved Concepts, mainly with 100 samples per group. Across 36 main experiments, results show moderate semantic similarity (BERTScore ≈ 0.698) but very low lexical overlap (BLEU ≈ 0.008), with 1-shot giving the best performance in few-shot settings by steering outputs toward uniquely identifying terms. Performance is higher for lexically stable aspects (e.g., gameplay, food) and lower for abstract ones (e.g., recommended, suggestion). The approach can partially reduce manual labeling, while handling abstract concepts and improving evaluation beyond lexical matches remain as future work.
-}
 
 \advisors{若林　啓}{伊藤　寛祥}
 
@@ -50,7 +52,7 @@ This study examines the feasibility of generating contrastive factor labels that
 \input{chapters/04_experiment_and_results}
 \input{chapters/05_discussion}
 \input{chapters/06_conclusion}
-\input{chapters/acknowledgments}
-\input{chapters/references}
+\input{chapters/07_acknowledgments}
+\input{chapters/08_references}
 
 \end{document}
