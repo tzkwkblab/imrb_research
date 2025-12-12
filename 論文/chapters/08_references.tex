@@ -44,6 +44,14 @@ S.~Wachter, B.~Mittelstadt, and C.~Russell:
 ``Counterfactual explanations without opening the black box: Automated decisions and the GDPR,''
 \textit{Harvard Journal of Law \& Technology}, vol.~31, no.~2, pp.~841--887, 2017. Available at \url{https://jolt.law.harvard.edu/assets/articlePDFs/v31/Counterfactual-Explanations-without-Opening-the-Black-Box-Sandra-Wachter-et-al.pdf}.
 
+\bibitem{dhurandhar2018cem}
+A.~Dhurandhar, P.~Chen, R.~Luss, C.~Tu, P.~Shanmugam, K.~Das, Y.~Liu, and P.~Tambe:
+``Explanations based on the Missing: Towards Contrastive Explanations with Pertinent Negatives,''
+in \textit{Advances in Neural Information Processing Systems}, vol.~31, 2018 (NeurIPS 2018), Montr\'eal, Canada, December 3--8, 2018, arXiv:1802.07623. Available at \url{https://arxiv.org/abs/1802.07623}.
+% 研究概要: ブラックボックス分類器に対して、入力に含まれるべき最小限の特徴（Pertinent Positives）と含まれてはいけない最小限の特徴（Pertinent Negatives）を同時に求めるCEM（Contrastive Explanation Method）を提案し、対比的な説明を与える枠組みを示す。
+% 手法: 元の入力に対してL1/L2正則化付き最適化問題を解き、決定クラスを維持しつつ不要な特徴を削除・必要な特徴の追加を行うことでPP/PNを導出する。MNIST、調達不正データ、脳活動データなどで有効性を検証。
+% 本研究での位置づけ: 「何があるか／ないか」に基づく対比的説明の代表的先行研究として参照し、本研究で扱うテキストベースの対比因子ラベル生成との関係と違い（数値特徴前提・連続最適化ベース）を整理する際に用いる。
+
 \bibitem{kim2018interpretability}
 B.~Kim, M.~Wattenberg, J.~Gilmer, C.~Cai, J.~Wexler, F.~Viegas, et al.:
 ``Interpretability beyond feature attribution: Quantitative testing with concept activation vectors (TCAV),''
@@ -285,6 +293,43 @@ X.~Li, et al.:
 Y.-H.~Tseng, et al.:
 ``Evaluating Large Language Models as Expert Annotators,''
 2025.
+
+\bibitem{zhong2022describing}
+R.~Zhong, C.~Snell, D.~Klein, and J.~Steinhardt:
+``Describing Differences between Text Distributions with Natural Language,''
+in \textit{Proceedings of the 39th International Conference on Machine Learning (ICML 2022)}, 
+vol.~162, pp.~27099--27116, 2022.
+Available at \url{https://proceedings.mlr.press/v162/zhong22a.html}.
+% 研究概要: 2つのテキスト分布の違いを自然言語で説明するタスクを定式化。GPT-3をファインチューニングして候補説明を生成し、再ランキングにより最適な説明を選択するProposer-Verifierフレームワークを提案。54の実世界バイナリ分類タスクで評価し、人間アノテーションとの76%の類似度を達成。
+% 本研究での位置づけ: ブラックボックスなLLMを用いたテキスト分布間の差分説明の先駆的研究として参照。本研究の対比因子生成タスクとの違い（ABSAスキーマとの意味的一致評価の欠如）を説明する際の代表例として用いる。
+
+\bibitem{dunlap2024visdiff}
+L.~Dunlap, Y.~Zhang, X.~Wang, R.~Zhong, T.~Darrell, J.~Steinhardt, J.~E. Gonzalez, and S.~Yeung-Levy:
+``Describing Differences in Image Sets with Natural Language,''
+in \textit{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024)}, Seattle, WA, USA, June 17--21, 2024, pp.~17952--17961, arXiv:2312.02974. Available at \url{https://openaccess.thecvf.com/content/CVPR2024/html/Dunlap_Describing_Differences_in_Image_Sets_with_Natural_Language_CVPR_2024_paper.html}.
+% 研究概要: 画像セット間の差分を自然言語で説明するSet Difference Captioningタスクを提案。VisDiffは2段階アプローチを採用し、第1段階で画像キャプションとLLMを用いて候補説明を生成、第2段階でCLIPを用いて再ランキングを行う。VisDiffBenchデータセット（187組の画像セットペア）で評価。
+% 本研究での位置づけ: Zhong et al. (2022)の画像領域への拡張として参照。本研究のテキスト集合ベース・ABSAスキーマ評価との違いを説明する際の代表例として用いる。
+
+\bibitem{pham2024topicgpt}
+C.~M. Pham, A.~Hoyle, S.~Sun, P.~Resnik, and M.~Iyyer:
+``TopicGPT: A Prompt-based Topic Modeling Framework,''
+in \textit{Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT 2024)}, Mexico City, Mexico, June 16--21, 2024, pp.~2956--2984. Available at \url{https://aclanthology.org/2024.naacl-long.164/}.
+% 研究概要: LLMを用いたトピックモデリングフレームワークTopicGPTを提案。従来のLDAのような曖昧な単語バッグ表現ではなく、自然言語ラベルと自由形式の説明を持つトピックを生成し、解釈可能性を向上。ユーザーが制約を指定し、モデルを再訓練せずにトピックを修正可能。Wikipediaトピックに対する調和平均純度0.74を達成。
+% 本研究での位置づけ: LLMを用いたクラスタ・トピックラベリングの代表例として参照。本研究の対比的概念命名タスクとの違い（差分説明の欠如、ABSAスキーマ評価の欠如）を説明する際の代表例として用いる。
+
+\bibitem{lam2024lloom}
+M.~S. Lam, J.~Teoh, J.~Landay, J.~Heer, and M.~S. Bernstein:
+``Concept Induction: Analyzing Unstructured Text with High-Level Concepts Using LLooM,''
+in \textit{Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (CHI '24)}, Honolulu, HI, USA, May 11--16, 2024, Art.~No.~632, pp.~1--17, doi:10.1145/3613904.3642607.
+% 研究概要: 非構造化テキストから高レベルで人間が解釈可能な概念を抽出するLLooMアルゴリズムを提案。従来のトピックモデリングやクラスタリングが低レベルのキーワードに焦点を当てるのに対し、LLooMはLLMを活用して反復的にサンプルテキストを合成し、より一般的な概念を提案。LLooM Workbenchは対話型テキスト分析ツールとして、自動生成された概念を可視化し、カスタム概念の作成を可能にする。
+% 本研究での位置づけ: LLMを用いた高レベル概念帰納の代表例として参照。本研究の対比的概念命名タスクとの違い（単一コーパスからの概念帰納 vs 対比的テキスト集合間の差分説明）を説明する際の代表例として用いる。
+
+\bibitem{anthropic2024monosemantic}
+A.~Templeton, T.~Conerly, J.~Marcus, J.~Lindsey, T.~Bricken, B.~Chen, A.~Pearce, et al.:
+``Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet,''
+\textit{Transformer Circuits Thread}, 2024. Available at \url{https://transformer-circuits.pub/2024/scaling-monosemanticity/}.
+% 研究概要: Claude 3 Sonnetの中間層活性をSparse Autoencoder (SAE)を用いて分解し、より解釈可能なコンポーネントに変換する手法を提案。SAEにより、モデル内から数百万の解釈可能な特徴を抽出し、言語やモダリティを超えた抽象的概念に対応する特徴を特定。Golden Gate Bridgeのような具体的実体から、「裏切り」「自己認識」などの高度に抽象的な概念までを含む特徴を発見。
+% 本研究での位置づけ: LLM内部活性ベースの自動解釈可能性の代表例として参照。本研究のブラックボックス設定（内部活性アクセス不要）との違いを説明する際の代表例として用いる。
 
 \end{thebibliography}
 
