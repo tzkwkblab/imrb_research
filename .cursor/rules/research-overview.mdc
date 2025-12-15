@@ -124,6 +124,14 @@ alwaysApply: false
 
 この内容で「対比因子」の定義も明確に含めた最新版の研究概要となります。
 
+---
+
+## 論文執筆スタイル（表記ルール）
+
+- 本文では原則として **かぎかっこ（「」『』）を使用しない**。
+- 強調や用語の初出は，必要に応じて \textbf{...} や \emph{...} などで行う。
+- 例外として，引用・固有表現・既存文献の原文再現など，かぎかっこが必要な場合のみ使用する。
+
 [1] https://zenn.dev/kat/articles/8a55ef34646ed0
 [2] https://www.ai-souken.com/article/text-mining-methods-with-chatgpt
 [3] https://liginc.co.jp/644631

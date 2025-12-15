@@ -120,8 +120,12 @@ def main():
         base_dir / '論文/chapters/01_introduction.tex',
         base_dir / '論文/chapters/02_related_work.tex',
         base_dir / '論文/chapters/03_proposal.tex',
-        base_dir / '論文/chapters/04_experiment_and_results.tex',
-        base_dir / '論文/chapters/references.tex',
+        base_dir / '論文/chapters/04_experiment.tex',
+        base_dir / '論文/chapters/05_results_and_discussion.tex',
+        base_dir / '論文/chapters/06_discussion.tex',
+        base_dir / '論文/chapters/07_conclusion.tex',
+        base_dir / '論文/chapters/08_acknowledgments.tex',
+        base_dir / '論文/chapters/09_references.tex',
     ]
     
     output_file = base_dir / '論文_統合.md'

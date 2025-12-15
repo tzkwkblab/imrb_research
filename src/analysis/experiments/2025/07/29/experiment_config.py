@@ -34,7 +34,7 @@ USE_ASPECT_DESCRIPTION = True
 # LLM設定
 MODEL_CONFIG = {
     "model": "gpt-4o-mini",
-    "temperature": 0.7,
+    "temperature": 0.0,
     "max_tokens": 1000
 }
 

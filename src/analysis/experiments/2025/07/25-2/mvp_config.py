@@ -15,7 +15,7 @@ SHOT_CONFIG = 0   # 0-shotのみ
 OUTPUT_DIR = "results/"
 
 # LLM設定
-TEMPERATURE = 0.7
+TEMPERATURE = 0.0
 MAX_TOKENS = 1000
 MODEL_NAME = "gpt-3.5-turbo"
 

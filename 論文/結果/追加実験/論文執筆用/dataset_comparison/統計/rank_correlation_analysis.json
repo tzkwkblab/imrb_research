@@ -1,0 +1,779 @@
+{
+  "metadata": {
+    "calculated_at": "2025-12-15T15:51:22.898797",
+    "source_data": "論文/結果/追加実験/main_experiment_rerun_temperature0/main_experiment_statistics.json",
+    "description": "SBERT類似度とLLM評価の順位相関分析"
+  },
+  "results": {
+    "overall": {
+      "correlation": 0.7266361575540363,
+      "p_value": 5.229815418073367e-07,
+      "n": 36
+    },
+    "by_dataset": {
+      "semeval": {
+        "correlation": 0.2581988897471611,
+        "p_value": 0.7418011102528389,
+        "n": 4
+      },
+      "goemotions": {
+        "correlation": 0.76771207202124,
+        "p_value": 1.8600786081462643e-06,
+        "n": 28
+      },
+      "steam": {
+        "correlation": -0.2581988897471611,
+        "p_value": 0.7418011102528389,
+        "n": 4
+      }
+    },
+    "rank_matches": {
+      "top3_match": 2,
+      "bottom3_match": 0,
+      "top3_aspects_bert": [
+        "embarrassment",
+        "gratitude",
+        "disgust"
+      ],
+      "top3_aspects_llm": [
+        "disgust",
+        "embarrassment",
+        "joy"
+      ],
+      "bottom3_aspects_bert": [
+        "visual",
+        "story",
+        "neutral"
+      ],
+      "bottom3_aspects_llm": [
+        "admiration",
+        "approval",
+        "caring"
+      ]
+    },
+    "scatter_data": [
+      {
+        "aspect": "food",
+        "dataset": "semeval",
+        "bert_score": 0.7285852432250977,
+        "llm_score": 0.4,
+        "bert_rank": 14,
+        "llm_rank": 19
+      },
+      {
+        "aspect": "service",
+        "dataset": "semeval",
+        "bert_score": 0.7180842161178589,
+        "llm_score": 0.6,
+        "bert_rank": 17,
+        "llm_rank": 5
+      },
+      {
+        "aspect": "battery",
+        "dataset": "semeval",
+        "bert_score": 0.7645697593688965,
+        "llm_score": 0.6,
+        "bert_rank": 11,
+        "llm_rank": 6
+      },
+      {
+        "aspect": "screen",
+        "dataset": "semeval",
+        "bert_score": 0.8011960983276367,
+        "llm_score": 0.6,
+        "bert_rank": 8,
+        "llm_rank": 7
+      },
+      {
+        "aspect": "admiration",
+        "dataset": "goemotions",
+        "bert_score": 0.6797959804534912,
+        "llm_score": 0.2,
+        "bert_rank": 20,
+        "llm_rank": 26
+      },
+      {
+        "aspect": "amusement",
+        "dataset": "goemotions",
+        "bert_score": 0.6248886585235596,
+        "llm_score": 0.4,
+        "bert_rank": 27,
+        "llm_rank": 20
+      },
+      {
+        "aspect": "anger",
+        "dataset": "goemotions",
+        "bert_score": 0.72139573097229,
+        "llm_score": 0.6,
+        "bert_rank": 16,
+        "llm_rank": 8
+      },
+      {
+        "aspect": "annoyance",
+        "dataset": "goemotions",
+        "bert_score": 0.7173399925231934,
+        "llm_score": 0.4,
+        "bert_rank": 18,
+        "llm_rank": 21
+      },
+      {
+        "aspect": "approval",
+        "dataset": "goemotions",
+        "bert_score": 0.5900338888168335,
+        "llm_score": 0.2,
+        "bert_rank": 30,
+        "llm_rank": 27
+      },
+      {
+        "aspect": "caring",
+        "dataset": "goemotions",
+        "bert_score": 0.6374245285987854,
+        "llm_score": 0.2,
+        "bert_rank": 26,
+        "llm_rank": 28
+      },
+      {
+        "aspect": "confusion",
+        "dataset": "goemotions",
+        "bert_score": 0.6102278828620911,
+        "llm_score": 0.2,
+        "bert_rank": 29,
+        "llm_rank": 29
+      },
+      {
+        "aspect": "curiosity",
+        "dataset": "goemotions",
+        "bert_score": 0.6140465140342712,
+        "llm_score": 0.2,
+        "bert_rank": 28,
+        "llm_rank": 30
+      },
+      {
+        "aspect": "desire",
+        "dataset": "goemotions",
+        "bert_score": 0.6719898581504822,
+        "llm_score": 0.6,
+        "bert_rank": 21,
+        "llm_rank": 9
+      },
+      {
+        "aspect": "disappointment",
+        "dataset": "goemotions",
+        "bert_score": 0.8254852890968323,
+        "llm_score": 0.6,
+        "bert_rank": 4,
+        "llm_rank": 10
+      },
+      {
+        "aspect": "disapproval",
+        "dataset": "goemotions",
+        "bert_score": 0.6565675735473633,
+        "llm_score": 0.4,
+        "bert_rank": 24,
+        "llm_rank": 22
+      },
+      {
+        "aspect": "disgust",
+        "dataset": "goemotions",
+        "bert_score": 0.8315679430961609,
+        "llm_score": 0.8,
+        "bert_rank": 3,
+        "llm_rank": 1
+      },
+      {
+        "aspect": "embarrassment",
+        "dataset": "goemotions",
+        "bert_score": 0.8940741419792175,
+        "llm_score": 0.8,
+        "bert_rank": 1,
+        "llm_rank": 2
+      },
+      {
+        "aspect": "excitement",
+        "dataset": "goemotions",
+        "bert_score": 0.6673444509506226,
+        "llm_score": 0.6,
+        "bert_rank": 22,
+        "llm_rank": 11
+      },
+      {
+        "aspect": "fear",
+        "dataset": "goemotions",
+        "bert_score": 0.8208826184272766,
+        "llm_score": 0.6,
+        "bert_rank": 5,
+        "llm_rank": 12
+      },
+      {
+        "aspect": "gratitude",
+        "dataset": "goemotions",
+        "bert_score": 0.8445321321487427,
+        "llm_score": 0.6,
+        "bert_rank": 2,
+        "llm_rank": 13
+      },
+      {
+        "aspect": "grief",
+        "dataset": "goemotions",
+        "bert_score": 0.81471848487854,
+        "llm_score": 0.4,
+        "bert_rank": 7,
+        "llm_rank": 23
+      },
+      {
+        "aspect": "joy",
+        "dataset": "goemotions",
+        "bert_score": 0.8192455172538757,
+        "llm_score": 0.8,
+        "bert_rank": 6,
+        "llm_rank": 3
+      },
+      {
+        "aspect": "love",
+        "dataset": "goemotions",
+        "bert_score": 0.7740534543991089,
+        "llm_score": 0.8,
+        "bert_rank": 9,
+        "llm_rank": 4
+      },
+      {
+        "aspect": "nervousness",
+        "dataset": "goemotions",
+        "bert_score": 0.7152619361877441,
+        "llm_score": 0.6,
+        "bert_rank": 19,
+        "llm_rank": 14
+      },
+      {
+        "aspect": "optimism",
+        "dataset": "goemotions",
+        "bert_score": 0.6494102478027344,
+        "llm_score": 0.6,
+        "bert_rank": 25,
+        "llm_rank": 15
+      },
+      {
+        "aspect": "pride",
+        "dataset": "goemotions",
+        "bert_score": 0.7564718723297119,
+        "llm_score": 0.6,
+        "bert_rank": 12,
+        "llm_rank": 16
+      },
+      {
+        "aspect": "realization",
+        "dataset": "goemotions",
+        "bert_score": 0.5880522131919861,
+        "llm_score": 0.2,
+        "bert_rank": 31,
+        "llm_rank": 31
+      },
+      {
+        "aspect": "relief",
+        "dataset": "goemotions",
+        "bert_score": 0.7307558655738831,
+        "llm_score": 0.4,
+        "bert_rank": 13,
+        "llm_rank": 24
+      },
+      {
+        "aspect": "remorse",
+        "dataset": "goemotions",
+        "bert_score": 0.7707457542419434,
+        "llm_score": 0.6,
+        "bert_rank": 10,
+        "llm_rank": 17
+      },
+      {
+        "aspect": "sadness",
+        "dataset": "goemotions",
+        "bert_score": 0.7271047234535217,
+        "llm_score": 0.4,
+        "bert_rank": 15,
+        "llm_rank": 25
+      },
+      {
+        "aspect": "surprise",
+        "dataset": "goemotions",
+        "bert_score": 0.6572964191436768,
+        "llm_score": 0.2,
+        "bert_rank": 23,
+        "llm_rank": 32
+      },
+      {
+        "aspect": "neutral",
+        "dataset": "goemotions",
+        "bert_score": 0.5436765551567078,
+        "llm_score": 0.2,
+        "bert_rank": 34,
+        "llm_rank": 33
+      },
+      {
+        "aspect": "gameplay",
+        "dataset": "steam",
+        "bert_score": 0.5612260699272156,
+        "llm_score": 0.2,
+        "bert_rank": 32,
+        "llm_rank": 34
+      },
+      {
+        "aspect": "visual",
+        "dataset": "steam",
+        "bert_score": 0.5163538455963135,
+        "llm_score": 0.2,
+        "bert_rank": 36,
+        "llm_rank": 35
+      },
+      {
+        "aspect": "story",
+        "dataset": "steam",
+        "bert_score": 0.5383032560348511,
+        "llm_score": 0.6,
+        "bert_rank": 35,
+        "llm_rank": 18
+      },
+      {
+        "aspect": "audio",
+        "dataset": "steam",
+        "bert_score": 0.5451562404632568,
+        "llm_score": 0.2,
+        "bert_rank": 33,
+        "llm_rank": 36
+      }
+    ],
+    "aspect_details": [
+      {
+        "aspect": "food",
+        "dataset": "semeval",
+        "bert_score": 0.7285852432250977,
+        "llm_score": 0.4,
+        "bert_scores": [
+          0.7285852432250977
+        ],
+        "llm_scores": [
+          0.4
+        ]
+      },
+      {
+        "aspect": "service",
+        "dataset": "semeval",
+        "bert_score": 0.7180842161178589,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.7180842161178589
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "battery",
+        "dataset": "semeval",
+        "bert_score": 0.7645697593688965,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.7645697593688965
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "screen",
+        "dataset": "semeval",
+        "bert_score": 0.8011960983276367,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.8011960983276367
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "admiration",
+        "dataset": "goemotions",
+        "bert_score": 0.6797959804534912,
+        "llm_score": 0.2,
+        "bert_scores": [
+          0.6797959804534912
+        ],
+        "llm_scores": [
+          0.2
+        ]
+      },
+      {
+        "aspect": "amusement",
+        "dataset": "goemotions",
+        "bert_score": 0.6248886585235596,
+        "llm_score": 0.4,
+        "bert_scores": [
+          0.6248886585235596
+        ],
+        "llm_scores": [
+          0.4
+        ]
+      },
+      {
+        "aspect": "anger",
+        "dataset": "goemotions",
+        "bert_score": 0.72139573097229,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.72139573097229
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "annoyance",
+        "dataset": "goemotions",
+        "bert_score": 0.7173399925231934,
+        "llm_score": 0.4,
+        "bert_scores": [
+          0.7173399925231934
+        ],
+        "llm_scores": [
+          0.4
+        ]
+      },
+      {
+        "aspect": "approval",
+        "dataset": "goemotions",
+        "bert_score": 0.5900338888168335,
+        "llm_score": 0.2,
+        "bert_scores": [
+          0.5900338888168335
+        ],
+        "llm_scores": [
+          0.2
+        ]
+      },
+      {
+        "aspect": "caring",
+        "dataset": "goemotions",
+        "bert_score": 0.6374245285987854,
+        "llm_score": 0.2,
+        "bert_scores": [
+          0.6374245285987854
+        ],
+        "llm_scores": [
+          0.2
+        ]
+      },
+      {
+        "aspect": "confusion",
+        "dataset": "goemotions",
+        "bert_score": 0.6102278828620911,
+        "llm_score": 0.2,
+        "bert_scores": [
+          0.6102278828620911
+        ],
+        "llm_scores": [
+          0.2
+        ]
+      },
+      {
+        "aspect": "curiosity",
+        "dataset": "goemotions",
+        "bert_score": 0.6140465140342712,
+        "llm_score": 0.2,
+        "bert_scores": [
+          0.6140465140342712
+        ],
+        "llm_scores": [
+          0.2
+        ]
+      },
+      {
+        "aspect": "desire",
+        "dataset": "goemotions",
+        "bert_score": 0.6719898581504822,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.6719898581504822
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "disappointment",
+        "dataset": "goemotions",
+        "bert_score": 0.8254852890968323,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.8254852890968323
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "disapproval",
+        "dataset": "goemotions",
+        "bert_score": 0.6565675735473633,
+        "llm_score": 0.4,
+        "bert_scores": [
+          0.6565675735473633
+        ],
+        "llm_scores": [
+          0.4
+        ]
+      },
+      {
+        "aspect": "disgust",
+        "dataset": "goemotions",
+        "bert_score": 0.8315679430961609,
+        "llm_score": 0.8,
+        "bert_scores": [
+          0.8315679430961609
+        ],
+        "llm_scores": [
+          0.8
+        ]
+      },
+      {
+        "aspect": "embarrassment",
+        "dataset": "goemotions",
+        "bert_score": 0.8940741419792175,
+        "llm_score": 0.8,
+        "bert_scores": [
+          0.8940741419792175
+        ],
+        "llm_scores": [
+          0.8
+        ]
+      },
+      {
+        "aspect": "excitement",
+        "dataset": "goemotions",
+        "bert_score": 0.6673444509506226,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.6673444509506226
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "fear",
+        "dataset": "goemotions",
+        "bert_score": 0.8208826184272766,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.8208826184272766
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "gratitude",
+        "dataset": "goemotions",
+        "bert_score": 0.8445321321487427,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.8445321321487427
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "grief",
+        "dataset": "goemotions",
+        "bert_score": 0.81471848487854,
+        "llm_score": 0.4,
+        "bert_scores": [
+          0.81471848487854
+        ],
+        "llm_scores": [
+          0.4
+        ]
+      },
+      {
+        "aspect": "joy",
+        "dataset": "goemotions",
+        "bert_score": 0.8192455172538757,
+        "llm_score": 0.8,
+        "bert_scores": [
+          0.8192455172538757
+        ],
+        "llm_scores": [
+          0.8
+        ]
+      },
+      {
+        "aspect": "love",
+        "dataset": "goemotions",
+        "bert_score": 0.7740534543991089,
+        "llm_score": 0.8,
+        "bert_scores": [
+          0.7740534543991089
+        ],
+        "llm_scores": [
+          0.8
+        ]
+      },
+      {
+        "aspect": "nervousness",
+        "dataset": "goemotions",
+        "bert_score": 0.7152619361877441,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.7152619361877441
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "optimism",
+        "dataset": "goemotions",
+        "bert_score": 0.6494102478027344,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.6494102478027344
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "pride",
+        "dataset": "goemotions",
+        "bert_score": 0.7564718723297119,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.7564718723297119
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "realization",
+        "dataset": "goemotions",
+        "bert_score": 0.5880522131919861,
+        "llm_score": 0.2,
+        "bert_scores": [
+          0.5880522131919861
+        ],
+        "llm_scores": [
+          0.2
+        ]
+      },
+      {
+        "aspect": "relief",
+        "dataset": "goemotions",
+        "bert_score": 0.7307558655738831,
+        "llm_score": 0.4,
+        "bert_scores": [
+          0.7307558655738831
+        ],
+        "llm_scores": [
+          0.4
+        ]
+      },
+      {
+        "aspect": "remorse",
+        "dataset": "goemotions",
+        "bert_score": 0.7707457542419434,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.7707457542419434
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "sadness",
+        "dataset": "goemotions",
+        "bert_score": 0.7271047234535217,
+        "llm_score": 0.4,
+        "bert_scores": [
+          0.7271047234535217
+        ],
+        "llm_scores": [
+          0.4
+        ]
+      },
+      {
+        "aspect": "surprise",
+        "dataset": "goemotions",
+        "bert_score": 0.6572964191436768,
+        "llm_score": 0.2,
+        "bert_scores": [
+          0.6572964191436768
+        ],
+        "llm_scores": [
+          0.2
+        ]
+      },
+      {
+        "aspect": "neutral",
+        "dataset": "goemotions",
+        "bert_score": 0.5436765551567078,
+        "llm_score": 0.2,
+        "bert_scores": [
+          0.5436765551567078
+        ],
+        "llm_scores": [
+          0.2
+        ]
+      },
+      {
+        "aspect": "gameplay",
+        "dataset": "steam",
+        "bert_score": 0.5612260699272156,
+        "llm_score": 0.2,
+        "bert_scores": [
+          0.5612260699272156
+        ],
+        "llm_scores": [
+          0.2
+        ]
+      },
+      {
+        "aspect": "visual",
+        "dataset": "steam",
+        "bert_score": 0.5163538455963135,
+        "llm_score": 0.2,
+        "bert_scores": [
+          0.5163538455963135
+        ],
+        "llm_scores": [
+          0.2
+        ]
+      },
+      {
+        "aspect": "story",
+        "dataset": "steam",
+        "bert_score": 0.5383032560348511,
+        "llm_score": 0.6,
+        "bert_scores": [
+          0.5383032560348511
+        ],
+        "llm_scores": [
+          0.6
+        ]
+      },
+      {
+        "aspect": "audio",
+        "dataset": "steam",
+        "bert_score": 0.5451562404632568,
+        "llm_score": 0.2,
+        "bert_scores": [
+          0.5451562404632568
+        ],
+        "llm_scores": [
+          0.2
+        ]
+      }
+    ]
+  }
+}

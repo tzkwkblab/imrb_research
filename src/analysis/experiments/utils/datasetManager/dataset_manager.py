@@ -81,7 +81,7 @@ class DatasetManager:
         splitter_class = self.SPLITTERS[split_type]
         splitter = splitter_class()
         
-        options = SplitOptions(group_size=group_size)
+        options = SplitOptions(group_size=group_size, random_seed=42)
         
         return splitter.split(records, aspect, options)
     

@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "calculated_at": "2025-12-15T15:51:29.585887",
+    "description": "グループA/B間の統計的差分（KL divergence、語彙重複率など）"
+  },
+  "results": {
+    "steam": {
+      "gameplay": {
+        "error": "グループAまたはBが空です",
+        "group_a_size": 0,
+        "group_b_size": 0
+      },
+      "visual": {
+        "error": "グループAまたはBが空です",
+        "group_a_size": 0,
+        "group_b_size": 0
+      },
+      "story": {
+        "error": "グループAまたはBが空です",
+        "group_a_size": 0,
+        "group_b_size": 0
+      },
+      "audio": {
+        "error": "グループAまたはBが空です",
+        "group_a_size": 0,
+        "group_b_size": 0
+      }
+    },
+    "goemotions": {
+      "admiration": {
+        "error": "グループAまたはBが空です",
+        "group_a_size": 0,
+        "group_b_size": 43410
+      },
+      "amusement": {
+        "error": "グループAまたはBが空です",
+        "group_a_size": 0,
+        "group_b_size": 43410
+      },
+      "anger": {
+        "error": "グループAまたはBが空です",
+        "group_a_size": 0,
+        "group_b_size": 43410
+      },
+      "joy": {
+        "error": "グループAまたはBが空です",
+        "group_a_size": 0,
+        "group_b_size": 43410
+      },
+      "sadness": {
+        "error": "グループAまたはBが空です",
+        "group_a_size": 0,
+        "group_b_size": 43410
+      }
+    }
+  }
+}

@@ -13,11 +13,12 @@
 │   ├── 01_introduction.tex
 │   ├── 02_related_work.tex
 │   ├── 03_proposal.tex
-│   ├── 04_experiment_and_results.tex
-│   ├── 05_discussion.tex
-│   ├── 06_conclusion.tex
-│   ├── acknowledgments.tex
-│   └── references.tex
+│   ├── 04_experiment.tex
+│   ├── 05_results_and_discussion.tex
+│   ├── 06_discussion.tex
+│   ├── 07_conclusion.tex
+│   ├── 08_acknowledgments.tex
+│   └── 09_references.tex
 ├── 実験結果集約/                # 実験結果の集約スクリプトとレポート
 ├── 結果/                       # 実験結果と分析レポート
 ├── image/                      # 論文に使用する画像
@@ -64,11 +65,12 @@ latexmk -C masterThesisJa.tex
 - **01_introduction.tex**: 序論
 - **02_related_work.tex**: 関連研究
 - **03_proposal.tex**: 提案手法
-- **04_experiment_and_results.tex**: 実験と結果
-- **05_discussion.tex**: 考察
-- **06_conclusion.tex**: 結論
-- **acknowledgments.tex**: 謝辞
-- **references.tex**: 参考文献
+- **04_experiment.tex**: 評価実験（実験設定）
+- **05_results_and_discussion.tex**: 結果と考察
+- **06_discussion.tex**: 総合考察
+- **07_conclusion.tex**: 結論
+- **08_acknowledgments.tex**: 謝辞
+- **09_references.tex**: 参考文献
 
 ## サブディレクトリ
 

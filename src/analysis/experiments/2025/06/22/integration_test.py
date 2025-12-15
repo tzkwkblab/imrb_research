@@ -90,7 +90,7 @@ def run_integration_test():
     
     gpt_response = llm_client.query(
         messages=messages,
-        temperature=model_config.get('temperature', 0.7),
+        temperature=model_config.get('temperature', 0.0),
         max_tokens=model_config.get('max_tokens', 100)
     )
     

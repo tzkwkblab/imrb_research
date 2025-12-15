@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "calculated_at": "2025-12-15T15:51:24.444445",
+    "source_data": "data/external/steam-review-aspect-dataset/current",
+    "description": "Steamデータセットの定量統計（レビュー長、語彙多様性、アスペクト統計）"
+  },
+  "results": {
+    "total_reviews": 1100,
+    "review_length": {
+      "character_length": {
+        "mean": 1367.040909090909,
+        "median": 870.5,
+        "q1": 412.25,
+        "q3": 1725.25,
+        "min": 15,
+        "max": 7992,
+        "std": 1462.949950587702
+      },
+      "word_count": {
+        "mean": 251.04636363636362,
+        "median": 162.5,
+        "q1": 74.0,
+        "q3": 322.75,
+        "min": 3,
+        "max": 1521,
+        "std": 265.85165333155544
+      },
+      "sentence_count": {
+        "mean": 14.296363636363637,
+        "median": 9.0,
+        "q1": 4.0,
+        "q3": 18.0,
+        "min": 1,
+        "max": 114,
+        "std": 15.283531594275486
+      }
+    },
+    "vocabulary_diversity": {
+      "total_tokens": 276151,
+      "unique_types": 15740,
+      "type_token_ratio": 0.05699780192720649,
+      "top_10_words": {
+        "the": 13181,
+        "and": 7537,
+        "to": 7191,
+        "a": 6919,
+        "of": 5607,
+        "i": 5328,
+        "you": 5251,
+        "it": 4934,
+        "game": 4605,
+        "is": 4345
+      }
+    },
+    "aspect_statistics": {}
+  }
+}

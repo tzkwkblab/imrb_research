@@ -1,0 +1,476 @@
+% 参考文献（References）
+\newpage
+\addcontentsline{toc}{chapter}{参考文献}
+\renewcommand{\bibname}{参考文献}
+
+%% 参考文献に bibtex を使う場合
+%\bibliographystyle{junsrt}
+%\bibliography{hoge}
+
+%% 参考文献を直接ファイルに含めて書く場合
+\begin{thebibliography}{99}
+
+\bibitem{pontiki-EtAl:2014:SemEval2014Task4}
+M.~Pontiki, D.~Galanis, J.~Pavlopoulos, H.~Papageorgiou, I.~Androutsopoulos, and S.~Manandhar:
+``SemEval-2014 Task 4: Aspect Based Sentiment Analysis,''
+in \textit{Proceedings of the 8th International Workshop on Semantic Evaluation (SemEval 2014)}, Dublin, Ireland, August 23--24, 2014, pp.~27--35, doi:10.3115/v1/S14-2004.
+% 研究概要: Aspect Based Sentiment Analysis（アスペクトベース感情分析）の標準ベンチマークタスクを提案。レビュー文からアスペクト（観点）とその極性（ポジティブ/ネガティブ/ニュートラル）を抽出するタスクを定義し、評価データセットを提供。
+% データセット: Restaurant（レストラン）とLaptop（ノートPC）の2ドメインで構成。Restaurantドメインではfood, service, price, atmosphereなどのアスペクト、Laptopドメインではbattery, screen, keyboard, performanceなどのアスペクトが定義されている。
+% タスク構成: 複数のサブタスク（アスペクト抽出、極性分類、アスペクトカテゴリ分類など）を含む包括的な評価フレームワークを提供。
+% 本研究での使用: 対比因子生成実験の主要データセットとして使用。Restaurantドメインからfood/service、Laptopドメインからbattery/screenの4アスペクトを用い、アスペクトを含むテキスト群と含まないテキスト群の対比分析に活用。
+% 意義: ABSA研究の標準ベンチマークとして広く用いられ，本研究における対比因子生成手法の評価基盤を提供。
+
+\bibitem{ribeiro2016should}
+M.~T. Ribeiro, S.~Singh, and C.~Guestrin:
+``Why should I trust you?: Explaining the predictions of any classifier,''
+in \textit{Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}, San Francisco, CA, USA, August 13--17, 2016, pp.~1135--1144, doi:10.1145/2939672.2939778.
+% 研究概要: ブラックボックス機械学習モデルの予測を説明するための手法LIME（Local Interpretable Model-agnostic Explanations）を提案。任意の分類器に対して、個々の予測に対する局所的な説明を生成する。
+% 手法: モデル非依存（model-agnostic）のアプローチで、対象インスタンスの近傍で擬似データを生成し、距離カーネルで重み付けしたLASSO回帰（線形モデル）を学習して各特徴量の重要度を算出。テキスト、画像、表形式データなど複数のモダリティに対応。
+% 主な貢献: 説明可能性の評価指標としてlocal fidelity（忠実性：局所近傍で説明モデルが元のモデルをどれだけ再現できているか）とinterpretability（可読性）を導入し、人間実験により説明の有用性（予測精度向上や欠陥発見）を実証。SP-LIME（submodular pick）により、サブモジュラー最適化を用いて冗長性の少ない多様な代表的説明セットを選択する手法も提案。
+% 課題: 局所的な説明に限定され、モデル全体の動作原理は説明しない。後続研究（Slack et al. 2020、Alvarez-Melis & Jaakkola 2018）により、敵対的攻撃に対する脆弱性やロバスト性の問題が指摘されている。なお、説明の安定性（stability）は本論文の中心的な評価指標ではなく、主に後続研究で議論される概念である。
+
+\bibitem{lundberg2017unified}
+S.~M. Lundberg and S.-I. Lee:
+``A unified approach to interpreting model predictions,''
+in \textit{Advances in Neural Information Processing Systems}, vol.~30, Long Beach, CA, USA, December 4--9, 2017, pp.~4765--4774, arXiv:1705.07874, doi:10.5555/3295222.3295230.
+% 研究概要: 協力ゲーム理論のShapley値に基づき、機械学習モデルの予測に対する各特徴量の寄与度を説明するSHAP (SHapley Additive exPlanations) を提案。
+% 手法: 既存の複数の説明手法（LIME、DeepLIFT、Layer-Wise Relevance Propagation、Shapley regression valuesなど）を統一的に解釈できる理論的フレームワークを提供。
+% SHAP値は、特徴量のすべての可能な組み合わせに対する予測への寄与度を平均することで計算され、加法性（各特徴量のSHAP値の合計が予測値と基準値の差に等しい）を満たす。
+% 主な貢献: 異なる説明手法間の比較を可能にし、モデル解釈の統一的な評価基準を確立。線形モデル、ツリーモデル、深層学習モデルなど、様々なモデルタイプに適用可能。
+% 課題: 計算コストが高く、特に特徴量数が多い場合には近似手法が必要。また、後付け説明（post-hoc explanation）の限界として、モデル自体の解釈可能性を高めるわけではない。
+
+\bibitem{wachter2017counterfactual}
+S.~Wachter, B.~Mittelstadt, and C.~Russell:
+``Counterfactual explanations without opening the black box: Automated decisions and the GDPR,''
+\textit{Harvard Journal of Law \& Technology}, vol.~31, no.~2, pp.~841--887, 2017.
+% 研究概要: GDPRの文脈で、ブラックボックスを開かずに個別の自動意思決定を説明する手段として反事実説明（counterfactual explanations）を提案。
+% 提案内容: 望ましい結果を得るために何を最小限変更すべきかを示す無条件反事実説明を定義し、当事者の理解・異議申立て・将来の行動支援という目的に対応づける。
+% 本研究での位置づけ: 対比因子（差分）を言語化する説明の理論的起点として参照し、内部特徴の寄与（feature attribution）とは異なる説明観を整理する。
+% 注意: 法的要請と説明の定義が中心で、具体的な生成アルゴリズムや実装詳細は限定的。
+
+\bibitem{dhurandhar2018cem}
+A.~Dhurandhar, P.~Chen, R.~Luss, C.~Tu, P.~Shanmugam, K.~Das, Y.~Liu, and P.~Tambe:
+``Explanations based on the Missing: Towards Contrastive Explanations with Pertinent Negatives,''
+in \textit{Advances in Neural Information Processing Systems}, vol.~31, 2018 (NeurIPS 2018), Montr\'eal, Canada, December 3--8, 2018, arXiv:1802.07623.
+% 研究概要: ブラックボックス分類器に対して、入力に含まれるべき最小限の特徴（Pertinent Positives）と含まれてはいけない最小限の特徴（Pertinent Negatives）を同時に求めるCEM（Contrastive Explanation Method）を提案し、対比的な説明を与える枠組みを示す。
+% 手法: 元の入力に対してL1/L2正則化付き最適化問題を解き、決定クラスを維持しつつ不要な特徴を削除・必要な特徴の追加を行うことでPP/PNを導出する。MNIST、調達不正データ、脳活動データなどで有効性を検証。
+% 本研究での位置づけ: 「何があるか／ないか」に基づく対比的説明の代表的先行研究として参照し、本研究で扱うテキストベースの対比因子ラベル生成との関係と違い（数値特徴前提・連続最適化ベース）を整理する際に用いる。
+
+\bibitem{kim2018interpretability}
+B.~Kim, M.~Wattenberg, J.~Gilmer, C.~Cai, J.~Wexler, F.~Viegas, et al.:
+``Interpretability beyond feature attribution: Quantitative testing with concept activation vectors (TCAV),''
+in \textit{Proceedings of the 35th International Conference on Machine Learning (ICML 2018)}, Stockholm, Sweden, July 10--15, 2018, pp.~2668--2677, arXiv:1711.11279.
+% 研究概要: 高レベル概念（ストライプ、色、性別など）の重要度を、入力特徴量への寄与ではなく「概念」単位で定量評価する手法 TCAV（Testing with Concept Activation Vectors）を提案。
+% 手法: ユーザーが用意した概念例（正例）と対照例から Concept Activation Vector（CAV）を学習し、内部表現における方向微分（directional derivative）で概念感度を測ることで、クラス予測が概念にどれだけ依存するかを評価する。
+% 本研究での位置づけ: 固定語彙の特徴重要度ではなく「概念でテストする」解釈の代表例として参照し、本研究の対比因子ラベル生成（テキスト集合の差分を言語化）との共通点・差異（内部表現アクセス前提か否か）を整理する。
+% 注意: 概念例の選び方・対照集合の設計に結果が依存しやすく、また内部表現（bottleneck）をどこに取るかで解釈が変わりうる。
+
+\bibitem{luss2024cell}
+R.~Luss, E.~Miehling, and A.~Dhurandhar:
+``CELL your Model: Contrastive Explanations for Large Language Models,''
+arXiv preprint arXiv:2406.11785, June 2024.
+% 研究概要: 生成タスクでは「クラス予測」がない点に着目し、プロンプトを最小限変更したときに出力が（矛盾する/望ましくない等）別応答へ変わることを根拠に、LLMの応答理由を対比的に説明する CELL を提案。
+% 手法: ブラックボックス（API呼び出し）前提で、プロンプトのマスク化とインフィリングにより候補の対比プロンプトを探索し、ユーザー定義のスコア関数（距離/好ましさ等）で「対比」が成立する変更を見つける。長文文脈向けにクエリ予算制約付き探索も提示。
+% 本研究での位置づけ: 出力説明を「入力の最小変更で別出力になる」という対比で与える系譜として参照し、テキスト集合の差分を言語化する本研究の対比因子生成と、ブラックボックス前提・スコア関数設計という観点で接続する。
+% 注意: 生成される対比はスコア関数・インフィラー・探索予算に強く依存し、得られる説明は因果の保証というより局所的な反実仮想の提示に近い。
+
+\bibitem{bucinca2024contrastive}
+Z.~Bu{\c{c}}inca, S.~Swaroop, A.~E. Paluch, F.~Doshi-Velez, and K.~Z. Gajos:
+``Contrastive Explanations That Anticipate Human Misconceptions Can Improve Human Decision-Making Skills,''
+arXiv preprint arXiv:2410.04253, October 2024.
+% 研究概要: 人が持ちがちな誤概念（誤った直観）を予測し、AIの判断と人の判断の「差分」を説明する対比的説明（human-centered contrastive explanations）を提案し、意思決定スキルの向上（deskillingの抑制）を実験で検証。
+% 提案内容: AIの選択そのものを正当化する一方向（unilateral）説明ではなく、AIの選択と「人が選びそうな選択」の対比を示すことで、なぜ自分の推論がずれたかを学べる設計枠組みを提示。
+% 本研究での位置づけ: 対比説明を「人間側の推論（誤概念）」まで含めて設計する立場として参照し、本研究の対比因子ラベル生成が想定する利用者（比較・理解・学習）との接続点を整理する。
+% 注意: 誤概念の推定（人が選びそうな選択の予測）モデルやタスク設定に依存し、汎化や運用時の失敗（誤推定による逆効果）のリスク評価が重要。
+
+\bibitem{anthropic2025biology}
+Anthropic:
+``On the Biology of a Large Language Model,''
+Transformer Circuits, 2025. Available at \url{https://transformer-circuits.pub/2025/attribution-graphs/biology.html} (accessed: 2025-12-13).
+% 研究概要: Claude 3.5 Haikuを対象に、Circuit Tracing（回路トレース）手法を用いてモデル内部の計算プロセスを解析。
+% 手法: 出力から逆方向に、各特徴量（features）がどの順序で使われたかを追跡し、最終出力への影響を数値化。
+% 元の巨大モデルを直接可視化するのではなく、あるプロンプトに対する振る舞いを模倣するより単純な「置き換えモデル（replacement model）」を構築し、その上で特徴量間の相互作用をグラフとして可視化することで、影響の大きい計算経路（attribution graph）を抽出。
+% 主な発見: 多言語処理における共通概念空間、詩生成における計画性、推論プロセスと自己説明の乖離など。
+% 注意: 解析対象は主に「特徴量（features）」とその相互作用であり、個々の物理的ニューロンではなく人間が意味づけしやすい中間表現（superfeatures/human-interpretable features）を扱う。
+% 課題: Attribution Graphが描くのは「replacement model上のfeaturesの流れ」であり、必ずしもオリジナルのすべての内部挙動を忠実に再現したものとは限らない。
+% また、紹介されている回路や計算経路はモデルが出力を生成する過程のごく一部を捉えたものであり、複雑な長文や多段推論、リアルタイムの文脈変化などをすべてトレースするのは現状では困難。
+% グラフのノード（特徴量）の意味付けは自動化されておらず、手動で「スーパーノード」としてグループ化する必要がある。また、attribution graphを因果（causal）な説明と見るか相関（correlational）な説明と見るかには慎重さが求められる。
+
+\bibitem{demszky2020goemotions}
+D.~Demszky, D.~Movshovitz-Attias, J.~Ko, A.~Cowen, G.~Nemade, and S.~Ravi:
+``GoEmotions: A Dataset of Fine-Grained Emotions,''
+in \textit{Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020)}, pp.~4040--4054, 2020.
+% 研究概要: Redditコメント約5.8万件に対し、27感情カテゴリ＋Neutralの多ラベル注釈を付与した大規模な英語感情データセット GoEmotions を提案。
+% データセット: 会話的テキスト（Reddit）を対象とし、細粒度の感情分類や転移学習評価に利用できる設計。多ラベルである点が特徴（1文に複数感情が付与されうる）。
+% 本研究での使用: 感情/主観表現を含むテキスト集合を扱う際の代表的公開データセットとして参照し、テキスト集合差分の言語化（対比因子生成）と親和性のあるタスク背景として位置づける。
+% 注意: Reddit由来のドメイン偏りや注釈方針（多ラベル・Neutral）の影響があり、他ドメインへの一般化やラベル解釈には留意が必要。
+
+\bibitem{srec:steam-review-aspect-dataset}
+S.~Khosasi:
+``Steam review aspect dataset,''
+2024. Available at \url{https://srec.ai/blog/steam-review-aspect-dataset} (accessed: 2025-12-13).
+% 研究概要: Steamレビューを対象に、レビュー本文に対するアスペクト（観点）情報を扱うためのデータセットを公開・紹介する記事。
+% データセット: アスペクト抽出/アスペクト分類など、レビューの観点分析タスクでの利用を想定したリソースとして位置づけられている。
+% 本研究での使用: Steamレビューを用いた対比因子生成・評価の背景データ（アスペクトという外部ラベル）として参照。
+% 注意: Web記事由来の参照で、配布形式や最新版URLが変更されうるため、再現の際は取得日時やスナップショットの確保が望ましい。
+
+\bibitem{papineni-etal-2002-bleu}
+K.~Papineni, S.~Roukos, T.~Ward, and W.-J. Zhu:
+``BLEU: a Method for Automatic Evaluation of Machine Translation,''
+in \textit{Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics (ACL 2002)}, pp.~311--318, 2002.
+% 研究概要: 機械翻訳の自動評価指標 BLEU を提案。参照訳との n-gram 一致率（修正精度）を基礎に、短すぎる出力を抑制する brevity penalty を組み合わせてスコア化する。
+% 特徴: 高速・言語非依存・大規模評価に適し、人手評価との相関を狙う指標として普及。主に表層一致（n-gram）に基づくため、同義表現には弱い。
+% 本研究での使用: 生成した説明文/ラベル文の自動評価で、意味類似系（BERTScore）と併用する主要指標の一つとして用いる（表層的一致度の補助軸）。
+% 注意: 語彙や言い換えに敏感で、単文・短文では不安定になりやすい。単独で品質判断せず、意味指標や定性確認と併用する。
+
+\bibitem{devlin2018bert}
+J.~Devlin, M.-W. Chang, K.~Lee, and K.~Toutanova:
+``BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,''
+arXiv preprint arXiv:1810.04805, 2018.
+
+\bibitem{bau2017networkdissection}
+D.~Bau, B.~Zhou, A.~Khosla, A.~Oliva, and A.~Torralba:
+``Network Dissection: Quantifying Interpretability of Deep Visual Representations,''
+in \textit{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2017)}, Honolulu, HI, USA, July 2017, pp.~6541--6549, arXiv:1704.05796.
+% 研究概要: CNN の各ユニットと Broden データセットの概念マスクとの IoU を用いて，「どのユニットがどの概念を検出しているか」を定量化する手法 Network Dissection を提案し，深層視覚表現の解釈可能性を測定。
+% 本研究での位置づけ: 画像モデル内部の概念特徴に対する「固定語彙ベースの自動ラベリング」手法として参照し，対比因子生成タスクとの違い（内部アクティベーション前提・画像中心）を説明する際の代表例として用いる。
+
+\bibitem{oikarinen2022clipdissect}
+T.~Oikarinen and T.-W. Weng:
+``CLIP-Dissect: Automatic Description of Neuron Visual Features with Language Models,''
+arXiv preprint arXiv:2204.10965, 2022.
+% 研究概要: CLIP の画像・テキスト埋め込み空間を用い，高活性化画像と多数のテキスト候補との類似度を計算することで，任意の視覚モデルのユニットにオープンエンドな概念ラベルを自動付与する CLIP-Dissect を提案。
+% 本研究での位置づけ: CLIP を用いた検索ベースの自動概念命名の代表例として参照し，本研究のテキスト集合ベース・外部ラベル評価との対比に用いる。
+
+\bibitem{schrodi2024unsupervised}
+S.~Schrodi, M.~R{\"u}ckl, T.~Wirth, M.~B{\"o}hm, and D.~R{\"u}gamer:
+``Concept Bottleneck Models Without Predefined Concepts,''
+arXiv preprint arXiv:2407.03921, 2024.
+
+\bibitem{oikarinen2023labelfree}
+T.~Oikarinen, S.~Tripathi, T.~M. Mitchell, and D.~Alvarez\mbox{-}Melis:
+``Label-Free Concept Bottleneck Models,''
+in \textit{Proceedings of the 11th International Conference on Learning Representations (ICLR 2023)}, Kigali, Rwanda, May 2023, arXiv:2304.06129.
+% 研究概要: GPT-3 や CLIP を用いてタスクに関連する概念候補リスト（概念バンク）を自動生成し，ラベル付き概念を用いずに Concept Bottleneck Model を構築する Label-Free CBM を提案。
+% 本研究での位置づけ: 事前定義概念なしに概念ボトルネックを構築する既存手法として引用し，Discover-then-Name との関係や，本研究の「テキスト集合＋外部アスペクトラベル」という評価設定との違いを説明する。
+
+\bibitem{rao2024discoverthenname}
+S.~Rao, Y.~Zhao, M.~Sachan, and A.~Gupta:
+``Discover-then-Name: Task-Agnostic Concept Bottlenecks via Automated Concept Discovery,''
+arXiv preprint arXiv:2407.14499, 2024.
+% 研究概要: CLIP 特徴に対して Sparse Autoencoder や NMF を適用して概念方向を教師なしで発見し，高活性化画像と CLIP/LLM を用いて概念に名前を付ける Discover-then-Name (DN-CBM) を提案。
+% 本研究での位置づけ: 「発見してから名付ける」コンセプトボトルネックの代表例として参照し，本研究の対比因子生成タスクとのタスク設計の違いを議論する。
+
+\bibitem{ameisen2025attribution}
+E.~Ameisen, J.~Lindsey, A.~Pearce, W.~Gurnee, N.~L. Turner, B.~Chen, C.~Citro, D.~Abrahams, S.~Carter, B.~Hosmer, J.~Marcus, M.~Sklar, A.~Templeton, T.~Bricken, C.~McDougall, H.~Cunningham, T.~Henighan, A.~Jermyn, A.~Jones, A.~Persic, Z.~Qi, T.~B. Thompson, S.~Zimmerman, K.~Rivoire, T.~Conerly, C.~Olah, and J.~Batson:
+``Circuit Tracing: Revealing Computational Graphs in Language Models,''
+\textit{Transformer Circuits}, 2025. Available at \url{https://transformer-circuits.pub/2025/attribution-graphs/methods.html} (accessed: 2025-12-13).
+% 研究概要: Attribution Graphsの手法論を提案。LLMの内部計算プロセスをトレースし、特徴量間の相互作用をグラフとして可視化することで計算構造（回路）を発見する。
+% 手法: ある出力が計算されるまでにネットワーク内部でどのニューロンや重みがどのような順序で使われたかを、出力側からさかのぼって追跡。
+% 各ニューロンや結合が最終出力にどの程度影響したかを数値化し、影響の大きい経路どうしを結んだグラフとして可視化することで、計算グラフを抽出。
+% 課題: グラフのノードとして発見される「特徴量（features）」は必ずしも自然言語的に意味のある概念（semantic concept）とは限らず、ノードが具体的に何を検出しているかを自然言語で特定するプロセスは自動化されていない。
+% また、Attribution Graphはモデルの振る舞いの一部を可視化できるが、すべての振る舞いやグローバルなアルゴリズムを保証するものではない。特に注意（attention）による経路は追えない場合があり、「dark matter」と呼ばれる未説明部分が残る。
+% 可視化された回路は多くのノード・エッジを含みうるため、手作業での解釈や簡潔な説明への落とし込みが困難で、feature-splitting/absorptionやsupernodesによる手動グルーピングが必要となる。
+% 関連研究: anthropic2025biologyと同一シリーズの研究で、Attribution Graphsの手法を具体的に適用した実証研究。
+
+\bibitem{bordt2022posthoc}
+S.~Bordt, M.~Finck, E.~Raidl, and U.~von Luxburg:
+``Post-Hoc Explanations Fail to Achieve their Purpose in Adversarial Contexts,''
+in \textit{Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency (FAccT '22)}, Seoul, Republic of Korea, June 21-24, 2022, pp.~1495--1515, doi:10.1145/3531146.3533153.
+% 研究概要: 機械学習の説明可能性に関する法的義務（説明要求）を念頭に，post-hoc説明アルゴリズムがその目的（透明性確保）を達成できないことを論じる。
+% 視点: 法・哲学・技術の観点を統合し，説明の提供者と受け手の利害が対立する敵対的状況では，説明が操作されうる点を中心に議論する。
+% 主張: 現実的な適用場面ではpost-hoc説明は多義的で解釈の余地が大きく，この曖昧性ゆえに根本的な対立を解消できず，規制が意図する透明性目的に不適合になりうる。
+% 本研究での位置づけ: post-hoc説明の限界（特に敵対的文脈）を整理し，評価設計や説明の目的の明確化が必要であるという問題意識の根拠として参照する（arXiv:2201.10295 の要旨で主張を確認）。
+
+\bibitem{slack2020fooling}
+D.~Slack, S.~Hilgard, E.~Jia, S.~Singh, and H.~Lakkaraju:
+``Fooling LIME and SHAP: Adversarial Attacks on Post hoc Explanation Methods,''
+in \textit{Proceedings of the 2020 AAAI/ACM Conference on AI, Ethics, and Society (AIES 2020)}, New York, NY, USA, February 7--8, 2020, pp.~180--186, arXiv:1911.02508, doi:10.1145/3375627.3375830.
+% 研究概要: 入力摂動に基づくpost-hoc説明（LIME/SHAP）が信頼できないことを示し，モデルの偏りを隠したまま無害に見える説明を出させる攻撃を提案する。
+% 手法: 元の分類器の予測挙動（入力分布上の偏り）を維持しつつ，説明器が参照する摂動周辺の振る舞いを細工するscaffoldingにより，任意の望ましい説明を誘導できることを示す。
+% 実験: COMPASを含む複数の実データで，極端に偏った分類器でもLIME/SHAPが無害な説明を返すようにできることを検証する。
+% 本研究での位置づけ: post-hoc説明の敵対的脆弱性（説明が監査や偏り診断に使われる状況での限界）を示す代表例として参照する（arXiv:1911.02508 の要旨で主張を確認）。
+
+\bibitem{alvarez2018robustness}
+D.~Alvarez\mbox{-}Melis and T.~S. Jaakkola:
+``On the Robustness of Interpretability Methods,''
+in \textit{Proceedings of the 32nd Conference on Neural Information Processing Systems (NeurIPS 2018) Workshops}, 2018, arXiv:1806.08049.
+% 研究概要: 解釈手法における重要要件として「説明のロバスト性」（入力が類似なら説明も類似すべき）を主張し，その定量指標を提案する。
+% 手法: 説明のロバスト性を測るメトリクスを導入し，既存の説明手法がそれらの指標に照らして十分にロバストではないことを示す。
+% 提案: 既存の解釈手法にロバスト性制約を組み込むことで改善する方向性（ロバスト性の強制）を提示する。
+% 本研究での位置づけ: 説明（post-hoc含む）の品質要件としてロバスト性を明示し，本研究の評価観点・限界整理（小さな入力差で説明が大きく変わる問題）に接続する（arXiv:1806.08049 の要旨で主張を確認）。
+
+\bibitem{mersha2024survey}
+M.~Mersha, K.~Lam, J.~Wood, A.~AlShami, and J.~Kalita:
+``Explainable AI: A Survey of Needs, Techniques, Applications, and Future Direction,''
+arXiv preprint arXiv:2409.00265, 2024.
+% 研究概要: 医療・金融・自動運転など安全クリティカル領域でのブラックボックス性の課題に対し，XAIが透明性・説明責任・公平性を支えるという問題設定を整理するサーベイ。
+% まとめ内容: 用語と定義，XAIの必要性と受益者，手法のタクソノミー（分類），応用領域での適用例を包括的に整理し，信頼性向上の観点で俯瞰する。
+% 本研究での位置づけ: XAI全体の背景整理（ニーズ・分類・応用）として参照し，本研究の対比因子ラベル生成をXAIの枠組みの中で位置づける際の導入・関連付けに用いる（arXiv:2409.00265 の要旨で主張を確認）。
+
+\bibitem{rudin2019stop}
+C.~Rudin:
+``Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead,''
+\textit{Nature Machine Intelligence}, vol.~1, no.~5, pp.~206--215, 2019, doi:10.1038/s42256-019-0048-x.
+% 研究概要: ブラックボックスモデルに対するpost-hoc説明（explainable AI）の流れに対し，高リスク意思決定（医療・刑事司法など）では，説明を後付けするよりも最初から解釈可能なモデルを用いるべきだと主張する。
+% 主張: 説明生成でブラックボックス利用を正当化する方向ではなく，運用上の安全性・説明責任の要請が強い領域では「解釈可能性を内在化したモデル設計」へ研究と実装の重心を移すべきだと論じる。
+% 本研究での位置づけ: 対比因子生成のような説明生成を議論する際に，post-hoc説明の限界と「解釈可能な仕組みの設計」志向（説明の目的・適用範囲の明確化）の背景として参照する（Nature公開descriptionで主旨を確認）。
+
+\bibitem{vilone2020systematic}
+G.~Vilone and L.~Longo:
+``Explainable Artificial Intelligence: a Systematic Review,''
+arXiv preprint arXiv:2006.00093, 2020, doi:10.48550/arXiv.2006.00093.
+
+% 研究概要: 深層学習の普及に伴いXAIが急速に拡大している背景を整理し，既存の多様なXAI研究を体系的に俯瞰するシステマティックレビュー。
+% 整理方法: 階層的な分類体系でXAI文献を4クラスタ（サーベイ，理論・概念，手法，評価）に整理し，研究領域の全体像をまとめる。
+% 本研究での位置づけ: XAI研究の全体地図（手法と評価の位置づけ）を引用し，本研究の対比因子ラベル生成とその評価設計を関連研究の枠組みに接続する（arXiv:2006.00093 の要旨で主張を確認）。
+
+% 研究概要: ローカル説明（例: 特徴重要度や根拠ハイライト）を多数集め、説明の類似性にもとづいて概念レベルのクラスタ（Concept Explanation Clusters）にまとめることで、個別説明の集合からグローバルな傾向や代表パターンを抽出する枠組みを提案。
+% 本研究での位置づけ: ローカル説明を集約してデータ集合レベルの差異や偏りを読むという観点で関連し、対比因子ラベル生成におけるグループ差分の要約と接続できる。
+
+\bibitem{haedecke2025conceptClusters}
+E.~Haedecke, M.~Akila, and L.~von Rueden:
+``Global Properties from Local Explanations with Concept Explanation Clusters,''
+in \textit{World Conference on eXplainable Artificial Intelligence (xAI 2025)}, Springer, Cham, 2025, pp.~3--24, doi:10.1007/978-3-031-41510-0\_1.
+
+% 研究概要: クラスタリング手法が精度・効率を優先するあまりブラックボックス化してきた背景を整理し，高リスク領域での利用に向けて「解釈可能なクラスタリング」の要件・評価観点・研究動向を体系化したサーベイ。
+% タクソノミー: クラスタリングの流れを pre-clustering / in-clustering / post-clustering に分け，決定木・ルール・プロトタイプ等の解釈モデルの違いも含めて分類し，適用場面に応じた手法選択の指針を与える。
+% 本研究での位置づけ: 本文（関連研究）では，クラスタ（グループ）レベルのパターン理解と個別インスタンスの所属理由の間に説明ギャップがあるという問題意識の根拠として参照し，本研究の対比因子ラベル生成を集合レベル説明の方向として位置づける。
+% 実在確認: arXiv:2409.00743 の要旨で主張を確認（下記URL）。
+\bibitem{hu2024interpretableClustering}
+L.~Hu, M.~Jiang, J.~Dong, X.~Liu, and Z.~He:
+``Interpretable Clustering: A Survey,''
+arXiv preprint arXiv:2409.00743, 2024.
+
+% 研究概要: 2つ以上の文書群を比較し，差分（相違点）を強調する対比的／比較要約（contrastive/comparative summarization）について，手法・データセット・評価指標・応用を系統的に整理したサーベイ。
+% 整理ポイント: 既存研究を方法論の観点で俯瞰し，標準データセットや競争的タスクの不足など，今後の研究基盤整備上の課題も指摘する。
+% 本研究での位置づけ: 本文（関連研究）では，対比的要約／グループ差分要約の問題設定（複数文書群の比較と差分ハイライト）を整理する基礎文献として参照し，本研究の集合レベル差分の自然言語記述タスクの背景付けに用いる。
+% 実在確認: Springer（International Journal of Data Science and Analytics）に公開され，DOIが付与されている（下記URL）。
+\bibitem{strohle2024contrastive}
+T.~Str{\"o}hle, R.~Campos, and A.~Jatowt:
+``Contrastive text summarization: a survey,''
+\textit{International Journal of Data Science and Analytics}, vol.~18, pp.~353--367, 2024, doi:10.1007/s41060-023-00434-4.
+
+% 研究概要: 2対象（A vs B）の比較に対して，LLMで差分を抽出・整理し，意思決定に有用な「属性付き・構造化された」対比要約を生成する手法 STRUM-LLM を提案。
+% 手法: 入力ソースから差分となる属性（helpful contrast）を同定し，根拠テキストに紐づく形で整理して提示することで，ユーザ向け比較要約の可用性と検証可能性を高める。
+% 本研究での位置づけ: 本文（関連研究）では，A vs B の差分を属性として構造化するLLMパイプラインの代表例として参照し，本研究の対比因子ラベル生成（集合間の意味差分を言語化）との接点と差分を示す。
+% 実在確認: arXiv:2403.19710 の要旨で主張を確認（下記URL）。
+\bibitem{saha2024strumllm}
+A.~Saha, B.~P. Majumder, H.~Jhamtani, S.~Subramanian, S.~Sreedhar, S.~Chakrabarti, and P.~Kankar:
+``STRUM-LLM: Attributed and Structured Contrastive Summarization for User-Oriented Comparison,''
+arXiv preprint arXiv:2403.19710, 2024, doi:10.48550/arXiv.2403.19710.
+
+% 研究概要: ABSA（アスペクトベース感情分析）に対して GPT-4 / GPT-3.5 の zero-shot / few-shot / fine-tuning を比較評価し，性能とコストのトレードオフを整理する。
+% 結果: SemEval-2014 Task 4 の「アスペクト抽出＋極性分類（joint）」で fine-tuned GPT-3.5 が高いF1（SOTA相当）を達成する一方，推論コスト（モデル規模・運用負荷）の増大も指摘し，プロンプト工夫と微調整の使い分け指針を提示。
+% 本研究での位置づけ: 本文（関連研究）では，LLMを用いたABSAの代表的検討として参照し，「所与のアスペクト／極性ラベル体系への対応づけ（予測）」と，本研究の非教師あり・集合間コントラストの命名（差分記述）とのタスク設計上の違いを明確化するために用いる。
+% 実在確認: arXiv:2310.18025 の要旨で主張を確認（下記URL）。
+\bibitem{simmering2023llmabsa}
+P.~F. Simmering and P.~Huoviala:
+``Large language models for aspect-based sentiment analysis,''
+arXiv preprint arXiv:2310.18025, 2023, doi:10.48550/arXiv.2310.18025.
+
+% 研究概要: テキストクラスタリングを分類問題として再定式化し，LLMのin-context learningで，埋め込み微調整やK-means等のクラスタリング手順を介さずにクラスタ割当を行う枠組みを提案。
+% 論文中の課題意識: 既存のLLM利用クラスタリングは外部埋め込みモデルと類似度計算，クラスタ数などのハイパーパラメータ調整に依存し，計算コストとドメイン適応負担が残る点，およびクラスタの解釈性が弱い点を課題とする。
+% 手法: (1) データをミニバッチで逐次投入し候補ラベルを生成，(2) 近義ラベルをLLMで統合して粒度を調整，(3) 得られたラベル集合に対して各テキストをLLMで分類し，ラベル=クラスタとして出力する。
+% 実験設定の要点: 5データセット（例: ArxivS2S, GoEmo, Massive-D/I, MTOP-I）でACC/NMI/ARIにより評価。実装ではGPT-3.5-turbo，ミニバッチサイズ15，例示ラベル数は真のラベル数の20%を使用。
+% 本研究での位置づけ: 本研究は集合A/Bの差分に対応する対比因子の命名が主目的で，本論文は単一集合のクラスタ割当とクラスタラベル生成が主目的。ただし，ラベル候補生成と同義統合により粒度を調整する設計は，対比因子ラベルの候補生成・正規化の参照点となる。
+% 特筆: 粒度分析，プロンプト差分分析，few-shotでのラベル生成，コスト比較を行い，クラスタリングをLLM分類へ寄せることで計算手順を単純化できる点を補強している。
+% 実在確認: arXiv:2410.00927（下記URL）に加え，SIGIR-AP 2025 掲載でACM DOI 10.1145/3767695.3769519 が付与されている（arXiv HTML版で確認）。
+\bibitem{huang2024textclustering}
+C.~Huang and G.~He:
+``Text Clustering as Classification with LLMs,''
+in \textit{Proceedings of the 2025 Annual International ACM SIGIR Conference on Research and Development in Information Retrieval in the Asia Pacific Region (SIGIR-AP 2025)}, 2025, doi:10.1145/3767695.3769519.
+
+% 研究概要: 生成文と参照文のペアを入力として，人手評価に近いスコアを回帰的に予測する学習型評価指標 BLEURT を提案。BERT表現を用い，合成データを用いた大規模事前学習の後に，人手スコアで微調整することで頑健性を高める。
+% 論文中の課題意識: BLEU/ROUGE等の表層一致指標は，人手判断との相関が低い場合があり，ドメイン変化やモデル品質向上に伴う分布変化に弱い点を課題とする。
+% 本研究での位置づけ: 本研究では説明文の自動評価としてBERTScore/BLEUを主要指標とする一方，学習型評価指標の代表例として，評価指標の限界と改善方向（学習により人手判断へ近づける）を示す背景文献として参照する。
+% 特筆: 少量の（偏り得る）人手例でも学習可能で，合成例による事前学習によりout-of-distribution下でも性能が落ちにくいことを，WMT MetricsやWebNLGで実験的に示す。
+\bibitem{sellam-etal-2020-bleurt}
+T.~Sellam, D.~Das, and A.~Parikh:
+``BLEURT: Learning Robust Metrics for Text Generation,''
+in \textit{Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020)}, pp.~7881--7892, 2020, doi:10.18653/v1/2020.acl-main.704.
+
+\bibitem{yuan2021bartscore}
+W.~Yuan, G.~Neubig, and P.~Liu:
+``BARTScore: Evaluating Generated Text as Text Generation,''
+% 研究概要: 生成文評価を，事前学習済みseq2seqモデルによるテキスト生成確率（平均対数尤度）として捉える枠組みを提案し，BARTに基づく自動評価指標 BARTScore を提示する。参照文→生成文（または逆）の条件付き生成確率をスコアとし，観点（流暢性・情報性・事実性など）に応じた変種を構成できる。
+% 論文中の課題意識: BLEU等の表層一致指標や，単純な埋め込み類似度は，評価観点の切替や意味的妥当性の捉え方に限界があり，生成タスク横断で頑健に使える自動評価が課題である。
+% 本研究での位置づけ: 本研究は説明文の自動評価にBERTScore/BLEUを主要指標として用いるが，生成確率ベースの代替指標として位置づけ，評価指標選択の幅（回帰型: BLEURT，生成型: BARTScore）を整理する際の参照文献とする。
+% 特筆: 多様なタスク・観点で既存指標より良い相関／性能を示すと主張し，ExplainaBoard上でメタ評価の可視化を提供して，指標間の補完関係の分析を促す。
+in \textit{Advances in Neural Information Processing Systems (NeurIPS)}, vol.~34, pp.~27263--27277, 2021, doi:10.48550/arXiv.2106.11520.
+
+\bibitem{reiter2018structured}
+E.~Reiter:
+``A Structured Review of the Validity of BLEU,''
+% 研究概要: BLEUと人手評価の相関に関する既存研究を構造化レビューとして整理し，34本の論文から報告された284個の相関を集約して，BLEUの妥当性を検討する。
+% 論文中の課題意識: BLEUを評価指標として使うには，人手評価や実運用上の有用性と結びつく検証が必要だが，文生成（NLG）や文単位評価，仮説検証での利用は根拠が弱い点を指摘する。
+% 本研究での位置づけ: 本研究は説明文の自動評価にBERTScore/BLEUを用いるが，BLEUを主要指標として扱う際の注意点（用途限定・過信回避）を明確化するための根拠文献として参照する。
+\textit{Computational Linguistics}, vol.~44, no.~3, pp.~393--401, 2018, doi:10.1162/COLI\_a\_00322.
+
+\bibitem{holtzman2020curious}
+A.~Holtzman, J.~Buys, L.~Du, M.~Forbes, and Y.~Choi:
+``The Curious Case of Neural Text Degeneration,''
+% 研究概要: 同一モデルでもデコーディング戦略次第で生成文が単調・反復的に劣化する現象（degeneration）を分析し，確率分布の上位確率質量の集合からサンプリングするnucleus sampling（top-p）を提案する。
+% 論文中の課題意識: 最尤に基づくデコーディング（例: 貪欲・ビーム）が，人間文と異なる分布的性質を誘発し，反復や凡庸さを生む点を問題化する。
+% 本研究での位置づけ: 対比因子ラベル生成や説明文生成ではLLM出力の品質が重要であり，温度・top-p等のデコーディング設定が結果に与える影響を議論する際の基礎文献として参照する。
+in \textit{International Conference on Learning Representations (ICLR)}, 2020, doi:10.48550/arXiv.1904.09751.
+
+\bibitem{zhang2019bertscore}
+T.~Zhang, V.~Kishore, F.~Wu, K.~Q. Weinberger, and Y.~Artzi:
+``BERTScore: Evaluating Text Generation with BERT,''
+% 研究概要: 生成文と参照文の各トークン同士の類似度を，BERTの文脈化埋め込みに基づいて算出し，precision/recall/F1として集約する自動評価指標 BERTScore を提案する（表層一致ではなく意味的近さを捉える）。
+% 論文中の課題意識: BLEU等のn-gram一致は言い換えに弱く，人手評価との相関やモデル選択に限界がある点を問題として，文脈表現によるロバストな評価を目指す。
+% 本研究での位置づけ: 本研究の主要評価指標（BERTスコア）として用い，対比因子ラベル生成で得られた説明文が正解説明とどの程度意味的に整合するかを定量化するために用いる。
+% 特筆: 多数のMT/キャプション生成システム出力で人手評価との相関改善を示し，難しい言い換え（adversarial paraphrase）に対する頑健性も報告する。IDF重み付けなどの実装上の選択肢も提示される。
+arXiv preprint arXiv:1904.09675, 2019, doi:10.48550/arXiv.1904.09675.
+
+\bibitem{openai2023neurons}
+OpenAI:
+``Language models can explain neurons in language models,''
+OpenAI Blog, 2023. Available at \url{https://openai.com/index/language-models-can-explain-neurons-in-language-models/} (accessed: 2025-12-13).
+% 研究概要: GPT-2 の多数のニューロンに対し，トップ発火トークン列を GPT-4 に入力して自然言語説明を生成し，Simulation Score により説明の妥当性を自動評価する「自動解釈可能性」パイプラインを提示。
+% 本研究での位置づけ: LLM を用いたニューロン説明と自動スコアリングの代表例として参照し，本研究が扱うテキスト集合レベルのタスクとの違いを説明する。
+
+\bibitem{bills2023automatedinterp}
+S.~Bills, N.~Muennighoff, R.~Hoang, N.~Mu, et al.:
+``Automatically Interpreting Millions of Features in Large Language Models,''
+arXiv preprint arXiv:2310.13052, 2023.
+% 研究概要: Sparse Autoencoder によって LLM の中間表現から数百万規模のスパース特徴を抽出し，各特徴に対して LLM による説明文生成と Simulation Score による自動評価を行うことで，大規模な自動概念命名・自動スコアリングを実現。
+% 本研究での位置づけ: 「OpenAI/Anthropic 型」の自動解釈パイプラインの代表として参照し，自動命名の達成度と限界に関する議論の背景とする。
+
+\bibitem{stein2024towards}
+A.~Stein, A.~Naik, Y.~Wu, M.~Naik, and E.~Wong:
+``Towards Compositionality in Concept Learning,''
+in \textit{Proceedings of the International Conference on Machine Learning (ICML)}, 2024, doi:10.48550/arXiv.2406.18534.
+% 研究概要: 概念ベース解釈（埋め込みを高水準概念へ分解）において，個々の概念が合成的に全体サンプルを説明できること（compositionality）が重要だと位置づけ，既存の教師なし概念抽出が非合成的な概念に陥りやすい点を示す。
+% 論文中の課題意識: 概念抽出が得る概念が「部分の和として全体を説明する」性質を満たさず，解釈可能性や下流タスクでの有用性が限定される点を課題とする。
+% 手法: 合成的概念表現が満たすべき性質を整理し，それらに従う概念を自動発見する Compositional Concept Extraction (CCE) を提案する。
+% 本研究での位置づけ: 本研究は集合間差分を言語化して対比因子ラベルを生成するが，「概念（説明単位）がどの程度合成的に全体を説明できるか」という観点は，生成ラベルの解釈可能性・再利用可能性を議論する際の背景として参照できる。
+% 特筆: 画像・テキストを含む複数データセットで評価し，ベースラインより合成性が高い概念を得られ，複数の下流分類で精度改善も報告する。
+
+\bibitem{lin2014microsoft}
+T.-Y.~Lin, M.~Maire, S.~Belongie, J.~Hays, P.~Perona, D.~Ramanan, P.~Doll{\'a}r, and C.~L. Zitnick:
+``Microsoft COCO: Common Objects in Context,''
+in \textit{Proceedings of the 13th European Conference on Computer Vision (ECCV 2014)}, Zurich, Switzerland, September 6--12, 2014, pp.~740--755, arXiv:1405.0312, doi:10.1007/978-3-319-10602-1\_48.
+% 研究概要: 日常シーン画像に対して，物体カテゴリとインスタンス単位のセグメンテーション等を大規模に付与したデータセット COCO を提案し，物体認識を「シーン理解の文脈」で評価する基盤を提供する。
+% 論文中の課題意識: 既存データセット（例: PASCAL/ ImageNet）では，文脈を含む複雑な日常シーンでの検出・分割を十分に評価しにくい点を課題として，より現実的なシーンと密なアノテーションを整備する。
+% 本研究での位置づけ: 本研究で扱う自然言語説明・概念ラベルの評価や例示において，COCO由来の画像キャプション／概念資源を参照する場合のデータセット基盤として位置づける（必要に応じて）。
+% 特筆: インスタンスセグメンテーションを含む多様なアノテーションと，PASCAL等との統計比較・ベースライン提示により，ベンチマークとしての設計意図を明確化している。
+
+\bibitem{koh2020concept}
+P.~W. Koh, T.~Nguyen, Y.~S. Tang, S.~Mussmann, E.~Pierson, B.~Kim, and P.~Liang:
+``Concept Bottleneck Models,''
+in \textit{Proceedings of the 37th International Conference on Machine Learning (ICML 2020)}, vol.~119, pp.~5338--5348, 2020, arXiv:2007.04612, doi:10.48550/arXiv.2007.04612.
+% 研究概要: 入力→概念（人間可読な属性）→ラベルの二段階で予測する Concept Bottleneck Models (CBM) を提案し，概念予測値を編集して最終予測へ反映する「概念介入」を可能にする。
+% 論文中の課題意識: 端から端まで学習する高性能モデルは，高水準概念での操作・デバッグが難しく，説明や介入の粒度が人間の理解単位と合わない点を課題とする。
+% 本研究での位置づけ: 本研究は概念ボトルネックを設けるのではなく集合間差分を言語化するが，「中間の説明単位（概念/対比因子）を介して人間が介入可能にする」という解釈可能性の設計思想として関連づけられる。
+% 特筆: テスト時に概念を人手で訂正できると精度が改善することを示し，人間-モデル協調の評価軸（介入可能性）を明確化している。
+
+\bibitem{radford2021learning}
+A.~Radford, J.~W. Kim, C.~Hallacy, A.~Ramesh, G.~Goh, S.~Agarwal, G.~Sastry, A.~Askell, P.~Mishkin, J.~Clark, G.~Krueger, and I.~Sutskever:
+``Learning Transferable Visual Models From Natural Language Supervision,''
+in \textit{Proceedings of the 38th International Conference on Machine Learning (ICML 2021)}, vol.~139, pp.~8748--8763, 2021, arXiv:2103.00020, doi:10.48550/arXiv.2103.00020.
+% 研究概要: 大規模な画像-テキスト対に対して，キャプションと画像の対応を当てる対照学習（CLIP）により視覚表現を事前学習し，自然言語プロンプトを介したゼロショット転移で多様な下流タスクへ適用できることを示す。
+% 論文中の課題意識: 固定カテゴリの教師あり学習に依存する従来CVは，新しい概念に対して追加ラベルが必要で汎用性が制限される点を課題とし，より広い言語 supervision による一般化を狙う。
+% 本研究での位置づけ: 本研究はテキスト集合差分の言語化が中心だが，「自然言語で概念を参照し，表現空間上で評価・転移する」枠組みは，概念ベース手法やラベル語彙の扱いを議論する際の基盤として関連づけられる。
+% 特筆: ImageNetを含む多数ベンチマークでゼロショット性能を報告し，プロンプト設計が性能に影響することも示唆する（モデルを固定したまま言語入力でタスク定義を切替）。
+
+
+\bibitem{reimers2019sentence}
+N.~Reimers and I.~Gurevych:
+``Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks,''
+in \textit{Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)}, Hong Kong, China, November 3--7, 2019, pp.~3982--3992, doi:10.18653/v1/D19-1410.
+% 研究概要: BERTをクロスエンコーダ（文ペア同時入力）ではなくSiamese/Triplet構造で微調整し，単文から固定長の文埋め込みを生成する Sentence-BERT (SBERT) を提案。コサイン類似度での検索・クラスタリングを高速に実行できる。
+% 論文中の課題意識: BERTの文ペア比較は高精度だが，全組合せ比較が必要な類似検索・クラスタリングでは計算量が爆発し実用的でない点，および単純な[CLS]/平均プーリングが有用な文埋め込みになりにくい点を課題とする。
+% 本研究での位置づけ: 本研究の対比因子ラベル生成ではテキスト集合の分割・近傍検索・代表例抽出などで文埋め込みを用いる局面があり得るため，SBERTは「高速な意味類似度計算の標準的基盤」として位置づけられる。
+% 特筆: 10,000文の類似ペア探索をクロスエンコーダの数十時間規模から，埋め込み計算＋近似探索により秒〜ミリ秒オーダへ落とせる点を明確に示し，STS等で性能も維持/改善を報告する。
+
+\bibitem{bird2009natural}
+S.~Bird, E.~Klein, and E.~Loper:
+\textit{Natural Language Processing with Python: Analyzing Text with the Natural Language Toolkit},
+O'Reilly Media, 2009, ISBN:9780596516499. Available at \url{https://www.nltk.org/book/} (accessed: 2025-12-13).
+% 研究概要: NLTKを用いた自然言語処理の入門書として，トークナイズ・品詞タグ付け・構文解析・情報抽出・コーパス/WordNet利用など，典型的NLP処理をPythonコードと例題で体系化する。
+% 本（教材）が扱う課題意識: NLPの基本処理は理論だけでなく「再現可能な実装」として学ぶ必要がある一方，実データ（コーパス）とアルゴリズムを結びつけたハンズオン教材が不足しがちである点を背景に，標準ライブラリ（NLTK）と公開データで学べる形にまとめる。
+% 本研究での位置づけ: 本研究の実験実装では，テキスト前処理・特徴抽出・データ確認などの基礎作業が不可避であり，その実装パターン（コーパス操作・前処理）を参照する実務的な基盤文献として位置づける。
+% 特筆: オンラインで公開された付録/実行例（NLTK Bookサイト）により，環境構築後すぐ試せる教材として再利用性が高い。
+
+\bibitem{patricio2025cbvlm}
+C.~Patr{\'\i}cio, I.~Rio-Torto, J.~S. Cardoso, L.~F. Teixeira, and J.~C. Neves:
+``CBVLM: Training-free explainable concept-based Large Vision Language Models for medical image classification,''
+arXiv preprint arXiv:2501.12266, 2025, doi:10.48550/arXiv.2501.12266. (Accepted for publication in \textit{Computers in Biology and Medicine}.)
+% 研究概要: 医用画像分類に対して，Concept Bottleneck Model (CBM) の「概念→診断」という説明様式を，学習なし（training-free）でLVLM/LLMにより実現する枠組み CBVLM を提案。概念ごとにLVLMへ有無判定を問い合わせ，得られた概念列に基づいて最終診断を生成/選択させることで，診断を概念に接地した説明として提示する。
+% 論文中の課題意識: 医用領域では(1)アノテーション不足と(2)ブラックボックス性が導入障壁となる。CBMは解釈性を与えるが概念注釈コストが高く，新概念追加のたびに再学習が必要という運用上の負担がある。
+% 手法: (1) 概念検出: 画像と概念テキストの照合/質問により概念の有無を推定，(2) 診断: 予測概念をプロンプトに埋め込み診断を出力。加えて retrieval による in-context example 選択でfew-shot性能を補強する。
+% 本研究での位置づけ: 本研究はテキスト集合差分の言語化が主対象だが，「説明単位（概念/因子）を先に推定し，最終判断（ラベル生成/診断）をその説明単位に接地して出力する」という設計思想は，対比因子ラベル生成の根拠付け・人手介入可能性の議論と接続できる。
+% 特筆: training-freeで概念の追加が容易であり，少数例のICL＋retrievalで注釈コストを下げつつ，複数データセット・複数LVLMでCBMや教師あり法を上回ると報告する。
+
+
+\bibitem{deng2019annotation}
+Y.~Deng, Y.~Sun, Y.~Zhu, Y.~Xu, Q.~Yang, S.~Zhang, M.~Zhu, J.~Sun, W.~Zhao, X.~Zhou, and K.~Yuan:
+``Efforts estimation of doctors annotating medical image,''
+arXiv preprint arXiv:1901.02355, 2019, doi:10.48550/arXiv.1901.02355.
+% 研究概要: 医用画像アノテーションに要する医師の作業量（effort）を定量化する指標を提案し，能動学習によるサンプル選択とU-Net系のセグメンテーションを組み合わせて，「枚数削減」だけでなく「実際の労力削減」を評価対象に据える。
+% 論文中の課題意識: 医用画像の高精度アノテーションは専門医の時間を要し高コストである。既存の能動学習は候補数削減に寄りがちで，少数でも時間がかかる現実の労力を直接扱えていない点を課題とする。
+% 本研究での位置づけ: 本研究の対比因子ラベル生成でも，人手作業（正解説明/概念の整備・検証）コストがボトルネックになり得るため，「コストを対象化して評価する」という問題設定の近さから背景文献として参照できる。
+% 特筆: セグメンテーションを例に，候補数の削減率と労力削減率が一致しないことを示し，労力を明示的に最適化/報告する重要性を強調する。
+% 実在確認（再調査）: arXiv:1901.02355 として公開（上記URL）。arXivページ上に journal reference の記載はなく，IEEE Xplore 等でも同一タイトルの会議録を確認できなかったため，確実な arXiv 版で記載する。
+
+\bibitem{nan2025deep}
+T.~Nan, S.~Zheng, et al.:
+``Deep learning quantifies pathologists' visual patterns for whole slide image diagnosis,''
+\textit{Nature Communications}, vol.~16, 5493, 2025, doi:10.1038/s41467-025-60307-1.
+% 研究概要: 病理医のWSI閲覧時の視線（eye-tracking）から視覚的レビュー・パターンを収集し，それを手がかりに病理医の専門知を復号して診断する深層学習システムPEAN（Pathology Expertise Acquisition Network）を提案。ピクセル単位の手動アノテーションに代わる低負担な知識獲得として位置づけ，5881件のWSI・皮膚病変5分類でAUC 0.992，診断精度96.3%を報告。視線ベースの収集によりアノテーション時間は手動の約4%まで削減可能とする（要旨より）。
+% 論文中の課題意識: 高精度なWSI診断モデルは病理医によるピクセル単位アノテーションに依存しがちだが，WSIは超高解像度でアノテーションコストが極めて高く，大規模データセット構築の障壁になる。弱教師ありはコストを下げる一方で，病理医の事前知識による誘導が弱く，頑健性・解釈性の面で臨床要件を満たしにくい。
+% 本研究での位置づけ: 本研究はテキスト集合A/Bの差分を対比因子ラベルとして言語化する立場だが，「専門家の暗黙知（どこを見るか）を低コストで外部化し，モデルの推論過程を人間の判断過程に近づける」という観点は，対比因子ラベルの根拠付け・説明可能性の議論（人間にとって妥当な注目領域/差分の抽出）と接続できる。
+% 引用箇所での使われ方: 関連研究（人手ラベリングへの依存）で，専門家アノテーションの高コスト性を補足する具体例として引用（要旨では視線データにより手動の約4%へ削減可能と主張）。
+
+
+\bibitem{tseng2025expertllm}
+Y.-M.~Tseng, W.-L.~Chen, C.-C.~Chen, and H.-H.~Chen:
+``Evaluating Large Language Models as Expert Annotators,''
+arXiv preprint arXiv:2508.07827, 2025. (Accepted to COLM 2025).
+% 研究概要: 一般領域ではLLMを人間アノテータの代替として使う動きがある一方で，専門知識が必要な領域での有効性は十分検証されていないという問題意識のもと，finance/biomedicine/law の3領域で，単体LLMとマルチエージェント（複数LLMの議論による合意形成）を比較評価する。推論時手法（CoT，self-consistency）や推論モデル（例：o3-mini）も含めて検証する（要旨より）。
+% 論文中の課題意識: 専門領域アノテーションは高コストであり，LLM代替が期待されるが，ベンチマーク上の「専門性」と実タスクの専門知識要求は一致しない可能性がある。推論時の長いCoTが専門領域アノテーションに必ずしも効かず，議論環境でもモデルが頑固に初期判断を変えない等の挙動が出る点を課題として示す。
+% 本研究での位置づけ: 本研究はLLMに対比因子ラベル生成を担わせ，評価にもLLMを用いるため，「LLMを（準）アノテータとして使う際の限界・安定性（推論時手法や推論モデルの効果が限定的）」という知見は，評価設計（人手ゴールドとの併用，条件統制，エラー分析）や議論による改善可能性の検討に直結する。
+% 引用箇所での使われ方: 2025-12-13時点で本文（論文/chapters/）内に \cite{tseng2025expertllm} は存在せず，参考文献リストのみ。関連研究で使う場合は，「専門領域でLLMを専門家アノテータ代替として使う際，CoT等が効きにくい／推論モデル優位が明確でない」点を根拠に，LLM評価・自動ラベリングの限界を述べる位置が自然。
+
+\bibitem{zhong2022describing}
+R.~Zhong, C.~Snell, D.~Klein, and J.~Steinhardt:
+``Describing Differences between Text Distributions with Natural Language,''
+in \textit{Proceedings of the 39th International Conference on Machine Learning (ICML 2022)}, 
+vol.~162, pp.~27099--27116, 2022.
+% 研究概要: 2つのテキスト分布の違いを自然言語で説明するタスクを定式化。GPT-3をファインチューニングして候補説明を生成し、再ランキングにより最適な説明を選択するProposer-Verifierフレームワークを提案。54の実世界バイナリ分類タスクで評価し、人間アノテーションとの76%の類似度を達成。
+% 本研究での位置づけ: ブラックボックスなLLMを用いたテキスト分布間の差分説明の先駆的研究として参照。本研究の対比因子生成タスクとの違い（ABSAスキーマとの意味的一致評価の欠如）を説明する際の代表例として用いる。
+
+\bibitem{dunlap2024visdiff}
+L.~Dunlap, Y.~Zhang, X.~Wang, R.~Zhong, T.~Darrell, J.~Steinhardt, J.~E. Gonzalez, and S.~Yeung-Levy:
+``Describing Differences in Image Sets with Natural Language,''
+in \textit{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024)}, Seattle, WA, USA, June 17--21, 2024, pp.~17952--17961, arXiv:2312.02974.
+% 研究概要: 画像セット間の差分を自然言語で説明するSet Difference Captioningタスクを提案。VisDiffは2段階アプローチを用い、第1段階で画像キャプションとLLMを用いて候補説明を生成、第2段階でCLIPを用いて再ランキングを行う。VisDiffBenchデータセット（187組の画像セットペア）で評価。
+% 本研究での位置づけ: Zhong et al. (2022)の画像領域への拡張として参照。本研究のテキスト集合ベース・ABSAスキーマ評価との違いを説明する際の代表例として用いる。
+
+\bibitem{pham2024topicgpt}
+C.~M. Pham, A.~Hoyle, S.~Sun, P.~Resnik, and M.~Iyyer:
+``TopicGPT: A Prompt-based Topic Modeling Framework,''
+in \textit{Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT 2024)}, Mexico City, Mexico, June 16--21, 2024, pp.~2956--2984.
+% 研究概要: LLMを用いたトピックモデリングフレームワークTopicGPTを提案。従来のLDAのような曖昧な単語バッグ表現ではなく、自然言語ラベルと自由形式の説明を持つトピックを生成し、解釈可能性を向上。ユーザーが制約を指定し、モデルを再訓練せずにトピックを修正可能。Wikipediaトピックに対する調和平均純度0.74を達成。
+% 本研究での位置づけ: LLMを用いたクラスタ・トピックラベリングの代表例として参照。本研究の対比的概念命名タスクとの違い（差分説明の欠如、ABSAスキーマ評価の欠如）を説明する際の代表例として用いる。
+
+\bibitem{lam2024lloom}
+M.~S. Lam, J.~Teoh, J.~Landay, J.~Heer, and M.~S. Bernstein:
+``Concept Induction: Analyzing Unstructured Text with High-Level Concepts Using LLooM,''
+in \textit{Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (CHI '24)}, Honolulu, HI, USA, May 11--16, 2024, Art.~No.~933, doi:10.1145/3613904.3642830.
+% 研究概要: 非構造化テキストを，明示的な包含基準を伴う高レベル概念（concept）として抽出・整理する concept induction を提案し，LLMを用いてサンプルテキストの合成と概念の一般化を反復するLLooMアルゴリズムと，分析を支援する対話型ツールLLooM Workbenchを提示する（要旨より）。
+% 論文中の課題意識: トピックモデルやクラスタリングは低レベルのキーワードに寄りやすく解釈作業が重い。そこで，理論駆動の分析に使える形で，高レベル概念を自然言語の包含基準として明示し，データ被覆も確保しながら抽出したい，という課題を扱う（要旨より）。
+% 本研究での位置づけ: LLMを用いた高レベル概念帰納の代表例として参照。本研究の対比的概念命名タスクとの違い（単一コーパスからの概念帰納 vs 対比的テキスト集合間の差分説明）を説明する際の代表例として用いる。
+% 引用箇所での使われ方: 序論で，LLMを用いたクラスタ／トピックの命名・概念帰納の代表例として関連研究列挙の中で引用（`01_introduction.tex`）。
+
+\bibitem{anthropic2024monosemantic}
+A.~Templeton, T.~Conerly, J.~Marcus, J.~Lindsey, T.~Bricken, B.~Chen, A.~Pearce, et al.:
+``Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet,''
+\textit{Transformer Circuits Thread}, 2024. Available at \url{https://transformer-circuits.pub/2024/scaling-monosemanticity/} (accessed: 2025-12-13).
+% 研究概要: Claude 3 Sonnetの中間層活性をSparse Autoencoder (SAE)を用いて分解し、より解釈可能なコンポーネントに変換する手法を提案。SAEにより、モデル内から数百万の解釈可能な特徴を抽出し、言語やモダリティを超えた抽象的概念に対応する特徴を特定。Golden Gate Bridgeのような具体的実体から、「裏切り」「自己認識」などの高度に抽象的な概念までを含む特徴を発見。
+% 本研究での位置づけ: LLM内部活性ベースの自動解釈可能性の代表例として参照。本研究のブラックボックス設定（内部活性アクセス不要）との違いを説明する際の代表例として用いる。
+
+\end{thebibliography}
+

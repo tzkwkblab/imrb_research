@@ -14,7 +14,7 @@ from ..loaders.base import UnifiedRecord
 class SplitOptions:
     """分割オプション"""
     group_size: int = 300
-    random_seed: Optional[int] = None
+    random_seed: Optional[int] = 42
     balance_labels: bool = False
     min_samples_per_label: int = 10
     

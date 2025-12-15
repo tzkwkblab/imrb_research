@@ -128,7 +128,7 @@ class BaselineGPTAnalyzer:
                     {"role": "system", "content": "You are an expert in analyzing product reviews and identifying textual patterns."},
                     {"role": "user", "content": prompt}
                 ],
-                temperature=0.7,
+                temperature=0,
                 max_tokens=500
             )
             

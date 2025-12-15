@@ -87,9 +87,11 @@ def generate_contrast_factor_prompt(
     # max_tokensが指定されている場合は上書き
     if max_tokens is not None:
         model_config['max_tokens'] = max_tokens
-    # temperatureが指定されている場合は上書き
+    # temperatureが指定されている場合は上書き、Noneの場合は0.0を設定
     if temperature is not None:
         model_config['temperature'] = temperature
+    else:
+        model_config['temperature'] = 0.0
     prompt_config = _load_prompt_config()
     
     # デフォルト言語設定

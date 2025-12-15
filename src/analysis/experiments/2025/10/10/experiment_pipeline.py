@@ -11,6 +11,8 @@ import json
 import yaml
 import logging
 import os
+import random
+import numpy as np
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, List, Optional, Any
@@ -18,6 +20,11 @@ from dotenv import load_dotenv
 
 # 環境変数読み込み
 load_dotenv()
+
+# ランダムシード固定（再現性のため）
+RANDOM_SEED = 42
+random.seed(RANDOM_SEED)
+np.random.seed(RANDOM_SEED)
 
 # utilsディレクトリのパス設定
 SCRIPT_DIR = Path(__file__).parent
@@ -255,7 +262,7 @@ class ExperimentPipeline:
             llm_cfg = self.config.get('llm', {}) or {}
             llm_model = llm_cfg.get('model', 'gpt-5-nano')
             llm_max_tokens = llm_cfg.get('max_tokens')
-            llm_temperature = float(llm_cfg.get('temperature', 0.7))
+            llm_temperature = float(llm_cfg.get('temperature', 0.0))
             
             # 評価設定からLLM評価設定を取得
             evaluation_cfg = self.config.get('evaluation', {}) or {}

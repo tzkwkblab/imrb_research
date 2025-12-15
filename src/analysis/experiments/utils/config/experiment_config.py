@@ -54,7 +54,7 @@ class ConfigManager:
             # デフォルト設定
             return {
                 'model': 'gpt-4o-mini',
-                'temperature': 0.7,
+                'temperature': 0.0,
                 'system_prompt': 'You are a helpful assistant.',
                 'output_format': 'json',
                 'evaluation_metrics': ['bert_score', 'bleu_score']
@@ -64,7 +64,7 @@ class ConfigManager:
         """モデル設定を取得"""
         return ModelConfig(
             model=self._config.get('model', 'gpt-4o-mini'),
-            temperature=self._config.get('temperature', 0.7),
+            temperature=self._config.get('temperature', 0.0),
             system_prompt=self._config.get('system_prompt', 'You are a helpful assistant.'),
             output_format=self._config.get('output_format', 'json')
         )

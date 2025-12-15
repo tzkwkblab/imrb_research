@@ -19,7 +19,7 @@ class BaseLLM(ABC):
         # デフォルト設定（外部依存なし）
         self.model = model or 'gpt-4o-mini'
         self.max_retries = max_retries
-        self.default_temperature = 0.7
+        self.default_temperature = 0.0
         self.default_max_tokens = 1000
     
     def get_api_key(self, env_key: str) -> str:

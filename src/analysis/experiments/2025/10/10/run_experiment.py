@@ -194,7 +194,7 @@ def create_quick_config(args) -> dict:
         },
         'llm': {
             'model': args.llm_model if args.llm_model else 'gpt-5-nano',
-            'temperature': 0.7,
+            'temperature': 0.0,
             'max_tokens': 5000  # GPT-5-nanoなどの推論系モデルでは推論プロセスを含むため、より多くのトークンが必要
         },
         'general': {

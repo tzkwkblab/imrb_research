@@ -28,6 +28,10 @@ from LLM.llm_factory import LLMFactory
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+# ランダムシード固定（再現性のため）
+RANDOM_SEED = 42
+random.seed(RANDOM_SEED)
+
 # グローバル変数
 _cleanup_registered = False
 MAX_PARALLEL_PROCESSES = 3
@@ -355,7 +359,7 @@ def analyze_individual_experiments(
                 # LLMに問い合わせ
                 analysis = llm_client.ask(
                     prompt,
-                    temperature=0.7,
+                    temperature=0,
                     max_tokens=8000
                 )
                 
@@ -465,7 +469,7 @@ def analyze_individual_experiments(
                     # LLMに問い合わせ
                     analysis = llm_client.ask(
                         prompt,
-                        temperature=0.7,
+                        temperature=0.0,
                         max_tokens=8000
                     )
                     

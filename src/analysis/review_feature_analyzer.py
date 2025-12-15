@@ -130,7 +130,7 @@ class ReviewFeatureAnalyzer:
                     {"role": "system", "content": "You are an expert in analyzing product reviews."},
                     {"role": "user", "content": prompt}
                 ],
-                temperature=0.7
+                temperature=0.0,
             )
             
             return self._parse_response(response.choices[0].message.content)
