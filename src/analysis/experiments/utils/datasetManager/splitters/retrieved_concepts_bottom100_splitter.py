@@ -89,6 +89,8 @@ class RetrievedConceptsBottom100Splitter(BaseSplitter):
             options=options,
             original_a_size=original_a_size,
             original_b_size=original_b_size,
+            actual_a_size=len(group_a_texts),
+            actual_b_size=len(group_b_texts),
             additional_metadata={
                 "group_a_source": "top100",
                 "group_b_source": "bottom100",

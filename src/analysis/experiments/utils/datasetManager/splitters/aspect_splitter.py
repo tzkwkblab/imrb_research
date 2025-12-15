@@ -76,6 +76,8 @@ class AspectSplitter(BaseSplitter):
             options=options,
             original_a_size=original_a_size,
             original_b_size=original_b_size,
+            actual_a_size=len(group_a_texts),
+            actual_b_size=len(group_b_texts),
             additional_metadata={
                 "group_a_label_distribution": self.get_label_distribution(group_a_records),
                 "group_b_label_distribution": self.get_label_distribution(group_b_records)

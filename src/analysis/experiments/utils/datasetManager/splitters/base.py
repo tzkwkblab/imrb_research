@@ -3,11 +3,14 @@
 """
 
 import random
+import logging
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Dict, List, Optional, Union
 from ..loaders.base import UnifiedRecord
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -74,12 +77,21 @@ class BaseSplitter(ABC):
         pass
     
     def adjust_sample_size(self, samples: List[str], target_size: int) -> List[str]:
-        """サンプル数調整（共通処理）"""
+        """
+        サンプル数調整（共通処理）
+        
+        データが目標数より少ない場合は補完せず、そのまま返す。
+        データ不足の情報はメタデータに記録される。
+        """
         if len(samples) >= target_size:
             return random.sample(samples, target_size)
         elif len(samples) > 0:
-            # 重複サンプリングで補完
-            return samples + random.choices(samples, k=target_size - len(samples))
+            # データ不足の場合は補完せず、そのまま返す
+            logger.warning(
+                f"データ不足: 目標数={target_size}, 実際の数={len(samples)}. "
+                f"補完せずに少ない数のまま実行します。"
+            )
+            return samples
         else:
             return samples
     
@@ -90,16 +102,36 @@ class BaseSplitter(ABC):
         options: SplitOptions,
         original_a_size: int,
         original_b_size: int,
+        actual_a_size: Optional[int] = None,
+        actual_b_size: Optional[int] = None,
         additional_metadata: Optional[Dict] = None
     ) -> Dict:
-        """メタデータ作成"""
+        """
+        メタデータ作成
+        
+        Args:
+            actual_a_size: 調整後のグループAの実際のサイズ（Noneの場合はoriginal_a_sizeを使用）
+            actual_b_size: 調整後のグループBの実際のサイズ（Noneの場合はoriginal_b_sizeを使用）
+        """
+        actual_a = actual_a_size if actual_a_size is not None else original_a_size
+        actual_b = actual_b_size if actual_b_size is not None else original_b_size
+        
+        # データ不足フラグを判定
+        insufficient_a = actual_a < options.group_size
+        insufficient_b = actual_b < options.group_size
+        
         metadata = {
             "dataset_id": dataset_id,
             "aspect": aspect,
             "split_type": self.split_type,
             "original_a_size": original_a_size,
             "original_b_size": original_b_size,
+            "actual_a_size": actual_a,
+            "actual_b_size": actual_b,
             "requested_group_size": options.group_size,
+            "insufficient_data_a": insufficient_a,
+            "insufficient_data_b": insufficient_b,
+            "insufficient_data": insufficient_a or insufficient_b,
             "random_seed": options.random_seed,
             "timestamp": datetime.now().isoformat()
         }

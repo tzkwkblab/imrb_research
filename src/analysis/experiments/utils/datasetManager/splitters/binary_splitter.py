@@ -72,6 +72,8 @@ class BinarySplitter(BaseSplitter):
             options=options,
             original_a_size=original_a_size,
             original_b_size=original_b_size,
+            actual_a_size=len(group_a_texts),
+            actual_b_size=len(group_b_texts),
             additional_metadata={
                 "positive_label_count": len(positive_records),
                 "negative_label_count": len(negative_records),
