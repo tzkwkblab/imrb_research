@@ -14,7 +14,7 @@
 
 研究背景・関連研究:
   論文/masterThesisJaSample.tex
-  results/20251119_153853/analysis_workspace/research_context.md
+  論文/結果/追加実験/論文執筆用/dataset_comparison/research_context.md
   .cursor/rules/research-overview.mdc
 
 【実験セクション】
@@ -26,7 +26,11 @@
 
 実験設定・計画:
   実験マトリックス.json
-  results/20251119_153853/batch_results.json
+  論文/結果/追加実験/論文執筆用/追加実験結果参照ガイド.md
+  論文/結果/追加実験/論文執筆用/dataset_comparison/実験結果/batch_results.json
+  論文/結果/追加実験/論文執筆用/dataset_comparison/統計/rank_correlation_analysis.json
+  論文/結果/追加実験/論文執筆用/dataset_comparison/統計/steam_dataset_statistics.json
+  論文/結果/追加実験/論文執筆用/dataset_comparison/実験設定/実験パラメータ.md
 
 【結果と考察セクション】
 ------------------------------
@@ -34,4 +38,6 @@
 考察レポート: 71 ファイル
 集計・分析結果:
   src/analysis/experiments/2025/10/10/aggregate_results.py
-  results/20251119_153853/analysis_workspace/analysis.log
+  論文/結果/追加実験/論文執筆用/README.md
+  論文/結果/追加実験/論文執筆用/dataset_comparison/分析レポート/dataset_comparison_analysis.md
+  論文/結果/追加実験/論文執筆用/dataset_comparison/分析レポート/dataset_comparison_results_report.md

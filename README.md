@@ -98,6 +98,13 @@ python run_experiment.py --config pipeline_config.yaml
 - 実験ドキュメント: `docs/experiments/`
 - ユーティリティ/再利用パターン: `docs/utils.md`, `docs/reusable-components/`
 
+## 論文執筆で参照するデータ（重要）
+
+- **論文本文で引用する追加実験の結果・統計・考察は `論文/結果/追加実験/論文執筆用/` 配下を正とする**
+  - 入口: `論文/結果/追加実験/論文執筆用/追加実験結果参照ガイド.md`
+- **参照ルール**: `.cursor/rules/`（特に `thesis-writing.mdc`）
+- **論文執筆データのパス一覧**: `paper_data_paths.txt`
+
 ## 論文（原稿）
 
 - 場所: `論文/`

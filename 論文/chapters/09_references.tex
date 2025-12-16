@@ -472,5 +472,54 @@ A.~Templeton, T.~Conerly, J.~Marcus, J.~Lindsey, T.~Bricken, B.~Chen, A.~Pearce,
 % 研究概要: Claude 3 Sonnetの中間層活性をSparse Autoencoder (SAE)を用いて分解し、より解釈可能なコンポーネントに変換する手法を提案。SAEにより、モデル内から数百万の解釈可能な特徴を抽出し、言語やモダリティを超えた抽象的概念に対応する特徴を特定。Golden Gate Bridgeのような具体的実体から、「裏切り」「自己認識」などの高度に抽象的な概念までを含む特徴を発見。
 % 本研究での位置づけ: LLM内部活性ベースの自動解釈可能性の代表例として参照。本研究のブラックボックス設定（内部活性アクセス不要）との違いを説明する際の代表例として用いる。
 
+\bibitem{spearman1904association}
+C.~Spearman:
+``The Proof and Measurement of Association between Two Things,''
+\textit{The American Journal of Psychology}, vol.~15, no.~1, pp.~72--101, 1904, doi:10.2307/1412159.
+% 実在確認: The American Journal of Psychology 15(1):72-101 (1904). JSTOR stable id 1412159（https://www.jstor.org/stable/1412159）。
+% 研究概要: 2変数の連関を順位にもとづく相関として定式化し，Spearmanの順位相関係数（rho）として知られる指標の導入・議論を行う古典。
+% 本研究での位置づけ: 順位（ランキング）間の一致度を測る非パラメトリック相関として，結果の順位比較・相関分析の根拠文献になりうる。
+
+\bibitem{friedman1937use}
+M.~Friedman:
+``The Use of Ranks to Avoid the Assumption of Normality Implicit in the Analysis of Variance,''
+\textit{Journal of the American Statistical Association}, vol.~32, no.~200, pp.~675--701, 1937, doi:10.1080/01621459.1937.10503522.
+% 実在確認: Journal of the American Statistical Association 32(200):675-701 (1937). DOI:10.1080/01621459.1937.10503522（doi.orgからTaylor\&Francisへ解決、Crossrefに登録あり）。
+% 研究概要: 分散分析で暗黙に仮定される正規性等を避けるため，観測値を順位に置き換えて検定する枠組みを整理（いわゆるFriedman検定の古典的原典として参照される）。
+% 本研究での位置づけ: 手法比較の順位データに基づく差の検定（ノンパラメトリック）を述べる際の基礎文献になりうる。
+
+\bibitem{holm1979simple}
+S.~Holm:
+``A Simple Sequentially Rejective Multiple Test Procedure,''
+\textit{Scandinavian Journal of Statistics}, vol.~6, no.~2, pp.~65--70, 1979.
+% 実在確認: Scandinavian Journal of Statistics 6(2):65-70 (1979). Semantic Scholar掲載情報より確認（https://www.semanticscholar.org/paper/b0ebbcf713b3ddf3f94325bc58dc39ff76fdc412）。
+% 研究概要: 多重検定で家族誤差率（FWER）を制御する逐次棄却（step-down）手順を提案（Holm--Bonferroni法）。Bonferroniより一様に強力（棄却しやすい）な補正として標準的に参照される。
+% 本研究での位置づけ: 複数条件/複数モデルの比較で p 値を多数扱う際の多重比較補正（Holm補正）の根拠文献になりうる。
+
+\bibitem{wilcoxon1945individual}
+F.~Wilcoxon:
+``Individual Comparisons by Ranking Methods,''
+\textit{Biometrics Bulletin}, vol.~1, no.~6, pp.~80--83, 1945.
+% 実在確認: Biometrics Bulletin 1(6):80-83 (1945). Crossref登録あり。DOI:10.2307/3001968（doi.orgからJSTOR stableへ解決）。
+% 研究概要: 対応のある2群比較などを順位にもとづいて行うノンパラメトリック検定（Wilcoxonの順位和/符号付順位検定として定着する手法）の原典。
+% 本研究での位置づけ: 正規性を仮定しにくいスコア分布の比較で，順位ベースの検定手法を参照する際の基礎文献になりうる。
+
+\bibitem{demsar2006statistical}
+J.~Dem\v{s}ar:
+``Statistical Comparisons of Classifiers over Multiple Data Sets,''
+\textit{Journal of Machine Learning Research}, vol.~7, pp.~1--30, 2006.
+Available at \url{https://www.jmlr.org/papers/v7/demsar06a.html} (accessed: 2025-12-16).
+% 実在確認: Journal of Machine Learning Research (JMLR) vol.7, pp.1-30 (2006). JMLR公式ページ（https://www.jmlr.org/papers/v7/demsar06a.html）で公開を確認。
+% 研究概要: 複数データセット上で複数分類器を比較する統計的手順を整理し，平均順位にもとづくFriedman検定と事後比較（Nemenyi/Bonferroni-Dunn等）の推奨・注意点をまとめる定番文献。
+% 本研究での位置づけ: 複数条件（モデル/設定）×複数データセットの性能比較における統計検定（順位ベース）と事後比較の根拠文献になりうる。
+
+\bibitem{virtanen2020scipy}
+P.~Virtanen et al.:
+``SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python,''
+\textit{Nature Methods}, vol.~17, pp.~261--272, 2020, doi:10.1038/s41592-019-0686-2.
+% 実在確認: Nature Methods 17:261-272 (2020). DOI:10.1038/s41592-019-0686-2（doi.orgからnature.comへ解決、Crossrefに書誌登録あり）。
+% 研究概要: Python科学計算ライブラリSciPyの主要アルゴリズム群（最適化・線形代数・統計・信号処理等）とソフトウェア基盤、品質管理・貢献体制を総覧するソフトウェア論文。
+% 本研究での位置づけ: 統計検定や数値計算（例: Friedman検定、順位処理、最適化等）をSciPyで実装・再現する際の基盤文献になりうる。
+
 \end{thebibliography}
 

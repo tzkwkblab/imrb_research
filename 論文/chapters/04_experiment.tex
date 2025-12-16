@@ -24,7 +24,7 @@
 \end{table}
 
 本実験は，以下の 6 つの実験カテゴリで構成された．
-メイン実験では，SemEval-2014 ABSA，GoEmotions，Steam Review Aspect Dataset の 3 データセットを用いて，提案手法の基本性能を評価した．
+データセット別比較では，SemEval-2014 ABSA，GoEmotions，Steam Review Aspect Dataset の 3 データセットを用いて，提案手法の基本性能を評価した．
 Few-shot 設定による性能比較実験では，0-shot，1-shot，3-shot の 3 つの設定を比較した．
 グループサイズの影響分析実験では，group\_size を 50，100，150，200，300 の 5 段階で変化させた．
 モデル比較実験では，GPT-4o-mini と GPT-5.1 の 2 モデルを比較した．
@@ -39,7 +39,7 @@ COCO Retrieved Concepts 実験では，正解ラベルがない画像キャプ�
     \toprule
     実験カテゴリ & 目的・検証内容 \\
     \midrule
-    メイン実験 & 基本性能評価（3データセット） \\
+    データセット別比較 & 基本性能評価 3データセット \\
     Few-shot実験 & 0/1/3-shot設定の比較 \\
     グループサイズ比較 & group\_size（50--300）の影響分析 \\
     モデル比較 & GPT-4o-mini vs GPT-5.1 \\
@@ -81,23 +81,41 @@ Steam Review Aspect Dataset は，ゲームという特定の製品ドメイン�
 Retrieved Concepts（COCO Captions）は，画像キャプションデータセットであり，視覚的概念記述の生成能力を検証するために選定した~\cite{lin2014microsoft}．
 
 ドメインの多様性として，レビューテキスト（SemEval-2014，Steam），感情分類テキスト（GoEmotions），画像キャプション（COCO）という異なるテキストタイプを網羅した．
-また，具体的なアスペクト（Food，Price，Gameplay，Technical）と抽象的な概念（Atmosphere，Story，感情カテゴリ）の両方を扱うことで，概念の具体性による性能差を検証できるようにした．
+また，具体的なアスペクト（Food，Price，Gameplay，Technical）と抽象的な概念（Atmosphere，Story，感情カテゴリ）を含むデータセットを扱うことで，概念の性質やデータセット特性と性能の関係を考察できるようにした．
+
+以降の考察でデータセット特性を定量的に参照するため，テキスト統計の概要を表~\ref{tab:text_stats_overview}に示す（語数は小文字化後の空白分割による）．
+\begin{table}[htbp]
+  \centering
+  \caption{テキスト統計の概要（train/dev/test 合算）}
+  \label{tab:text_stats_overview}
+  \begin{tabular}{lrrrrrr}
+    \toprule
+    データセット & 件数 & 平均語数 & 中央語数 & 最大語数 & 平均ラベル数 & 複数ラベル率 \\
+    \midrule
+    GoEmotions & 54,263 & 12.83 & 12 & 33 & 1.18 & 16.25\% \\
+    Steam Review Aspect & 1,100 & 244.70 & 156 & 1,473 & 3.27 & 90.27\% \\
+    SemEval-2014 restaurant14 & 4,728 & 19.41 & 18 & 79 & 1.00 & 0.00\% \\
+    SemEval-2014 laptop14 & 2,966 & 20.75 & 18 & 83 & 1.00 & 0.00\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 \subsection{Steam Review Aspect Dataset}
 Steam Review Aspect Dataset は，Steam ゲームレビューから収集されたテキストデータであり，特定のゲームアスペクトに関する言及を含むデータセットである~\cite{srec:steam-review-aspect-dataset}．
 本データセットは英語の Steam ゲームレビュー 1,100 件（学習用 900 件，テスト用 200 件）で構成され，データ収集は SRec データベースのスナップショットに基づき行われた．レビューを特徴づける 8 種類のアスペクトが人手でアノテーションされており，Recommended（推奨），Story（物語），Gameplay（ゲームプレイ），Visual（視覚），Audio（聴覚），Technical（技術），Price（価格），Suggestion（提案・要望）からなる．ゲームという特定の製品ドメインに特化しており，特に \texttt{Gameplay} や \texttt{Technical} といったゲーム固有のメカニクスや技術的側面に関するアスペクトを含む．テストセットにおけるアスペクト件数の例として，Gameplay が 154 件，Recommended が 148 件，Story が 89 件である．
-レビュー長は平均 251 語（中央値 163 語，最大 1,521 語）であり，語彙タイプ数は 15,740 語である．
+レビュー長は平均 244.70 語（中央値 156 語，最大 1,473 語）であり，語彙タイプ数は 29,056 語である．また，1 サンプルあたりの平均ラベル数は 3.27 で，複数アスペクトを併記するレビューは 90.27\% を占める．
 
 実験での使用方法として，各アスペクトについて，そのアスペクトを含むテキスト群をグループ A，含まないテキスト群をグループ B として抽出した．
 分割タイプは \texttt{aspect\_vs\_others} を用い，特定のアスペクトが含まれるテキストと含まれないテキストを比較した．
 グループ A と B の抽出は，各アスペクトのラベルに基づいて行い，group\_size パラメータに応じてサンプル数を調整した．
-メイン実験では，group\_size = 100 を用い，各グループから最大 100 件のテキストを抽出した．
+データセット別比較では，group\_size = 100 を用い，各グループから最大 100 件のテキストを抽出した．
 
-% メイン実験で使用したアスペクト一覧は第\ref{sec:experiment_setup}節でまとめて述べる．
+% データセット別比較で使用したアスペクト一覧は第\ref{sec:experiment_setup}節でまとめて述べる．
 
 \subsection{SemEval-2014 ABSA（Restaurants）}
 SemEval-2014 ABSA（Restaurants）は，アスペクトベース感情分析（ABSA）の標準的なベンチマークとして広く使用されるレストランレビューのデータセットである~\cite{pontiki-EtAl:2014:SemEval2014Task4}．
-レストランレビューのテキストを含み，各文に対してアスペクト（観点）とそれに対する感情極性が人手でアノテーションされている．本研究では主に Food（食べ物），Service（サービス），Price（価格），Atmosphere（雰囲気）の 4 種類のアスペクトを用いる．Food や Price は具体的な名詞や数値に関連する言及が中心となる一方，Atmosphere は広範な文脈や比喩的表現からの推論を必要とし，概念の具体性が命名性能に与える影響を検証するための比較対象となる．
+レストランレビューのテキストを含み，各文に対してアスペクト（観点）とそれに対する感情極性が人手でアノテーションされている．本研究では主に Food（食べ物），Service（サービス），Price（価格），Atmosphere（雰囲気）の 4 種類のアスペクトを用いる．Food や Price は具体的な名詞や数値に関連する言及が中心となる一方，Atmosphere は広範な文脈や比喩的表現からの推論を必要とし，データセット特性と命名性能の関係を考察する際の比較対象となる．
+本データセットは 1 文あたり 1 アスペクトを前提としており，restaurant14 は平均 19.41 語，laptop14 は平均 20.75 語と短文である（表~\ref{tab:text_stats_overview}）．
 
 実験での使用方法として，SemEval-2014 データセットにおいて，Restaurant ドメインから Food と Service，Laptop ドメインから Battery と Screen の 4 アスペクトを用いた．
 各アスペクトについて，そのアスペクトを含むテキスト群をグループ A，含まないテキスト群をグループ B として抽出し，split\_type = \texttt{aspect\_vs\_others} で分割した．
@@ -108,6 +126,7 @@ SemEval-2014 ABSA（Restaurants）は，アスペクトベース感情分析（A
 \subsection{GoEmotions}
 GoEmotions は，細粒度感情分類タスクのために Reddit コメントから収集されたデータセットである~\cite{demszky2020goemotions}．
 Demszky らによって構築された総レコード数 63,812 件から成るマルチラベル形式のデータセットであり，28 の感情カテゴリ（27 感情 + neutral）でラベル付けされている．主要なカテゴリには Joy（喜び），Anger（怒り），Admiration（称賛），Neutral（中立）などが含まれる．感情という抽象的概念をテキスト集合差分から推論する必要があるため，具体的な物理的実体を持たない概念の命名精度を検証する目的で用いた．実験では任意の感情アスペクト（例：joy）を指定し，その感情を含むテキスト群 $A$ とその他のアスペクトを含むテキスト群 $B$ を比較する設定とした．
+平均 12.83 語の短文が中心であり，複数感情ラベルを併記するサンプルは 16.25\% である（表~\ref{tab:text_stats_overview}）．
 
 実験での使用方法として，GoEmotions データセットから全 28 感情カテゴリを用いた．
 各感情カテゴリについて，その感情を含むテキスト群をグループ A，含まないテキスト群をグループ B として抽出し，split\_type = \texttt{aspect\_vs\_others} で分割した．
@@ -137,7 +156,7 @@ MS-COCO 2017 train split の画像に対して，実験協力者のFarnoosh Java
 \begin{itemize}
   \item \textbf{タスク定式化}: 第3章で定義したとおり，集合 $A$ と $B$ の差分から自然言語ラベル $L$ を生成する写像 $\text{textContrastiveNaming}(A,B) \to L$ を用いる．本章の実験では，各データセットごとに定義されたグルーピング規則にもとづき構成したグループA/Bを入力として用いる．
   \item \textbf{グルーピング}: 各データセットごとに定義された規則に従い，ハイパーパラメータ $group\_size$ を用いて集合 $A$ と $B$ を抽出する．SemEval，GoEmotions，Steam ではアスペクトラベルの有無にもとづき，COCO Retrieved Concepts では各潜在コンセプトに対する Top-100/Bottom-100 画像のキャプションにもとづいてグループA/Bを構成する．
-  メイン実験では，プロンプトのコンテキスト長制限を考慮し，$group\_size = 100$ を用いた．
+  データセット別比較では，プロンプトのコンテキスト長制限を考慮し，$group\_size = 100$ を用いた．
   \item \textbf{Few-shot ICL の検証}: LLM の出力形式の揺らぎや語彙の安定性を確保するための検証手段として，Few-shot インコンテキスト・ラーニング（ICL）のバリエーション（0-shot, 1-shot, 3-shot）を定量的に検証した．
   LLM は，プロンプト内でグループAとグループBを比較し，グループAに特徴的でグループBには欠如している意味的側面を推論するよう指示された．
 \end{itemize}
@@ -152,24 +171,24 @@ MS-COCO 2017 train split の画像に対して，実験協力者のFarnoosh Java
   \item \textbf{評価}：生成されたラベルと正解ラベルの意味的類似度をSBERT類似度，BLEU，LLM評価により測定する．
 \end{enumerate}
 
-メイン実験で対象としたアスペクトは，SemEval-2014 から Food，Service，Battery，Screen の 4 種類，GoEmotions から全 28 感情カテゴリ，Steam から Gameplay，Visual，Story，Audio の 4 種類である．
+データセット別比較で対象としたアスペクトは，SemEval-2014 から Food，Service，Battery，Screen の 4 種類，GoEmotions から全 28 感情カテゴリ，Steam から Gameplay，Visual，Story，Audio の 4 種類である．
 
 \subsection{LLMモデルとパラメータ設定}
 本実験では，対比因子ラベル生成器として GPT-4o-mini を主要モデルとして用いた．
 モデル比較実験では，GPT-5.1 も使用した．
 GPT-4o-mini を選択した理由は，コスト効率が高く，かつ十分な性能を発揮することが既存研究で確認されているためである．
 
-各実験カテゴリでのモデル選択として，メイン実験，Few-shot 実験，グループサイズ比較実験では GPT-4o-mini を使用した．
+各実験カテゴリでのモデル選択として，データセット別比較，Few-shot 実験，グループサイズ比較実験では GPT-4o-mini を使用した．
 アスペクト説明文比較実験では GPT-4o を使用した．
 モデル比較実験では，GPT-4o-mini と GPT-5.1 の 2 モデルを比較した．
 COCO Retrieved Concepts 実験では，GPT-4o-mini を使用した．
 
-温度パラメータ（temperature）の設定として，メイン実験では temperature = 0.0 を用いた．
+温度パラメータ（temperature）の設定として，データセット別比較では temperature = 0.0 を用いた．
 この設定により，決定論的な出力が得られ，実験の再現性が確保される．
 Few-shot 実験，グループサイズ比較実験，モデル比較実験，アスペクト説明文比較実験においても temperature = 0.0 を用いた．
 COCO Retrieved Concepts 実験においても temperature = 0.0 を用いた．
 
-最大トークン数（max\_tokens）の設定として，メイン実験では max\_tokens = 2000 に設定した．
+最大トークン数（max\_tokens）の設定として，データセット別比較では max\_tokens = 2000 に設定した．
 Few-shot 実験，モデル比較実験では max\_tokens = 100 に設定した．
 グループサイズ比較実験，アスペクト説明文比較実験，COCO Retrieved Concepts 実験では max\_tokens = 2000 に設定した．
 
@@ -204,14 +223,14 @@ Few-shot 例の形式は \texttt{【例題N】グループA: [...] グループB
 分割タイプは \texttt{aspect\_vs\_others} を用い，特定のアスペクトが含まれるテキストと含まれないテキストを比較した．
 COCO Retrieved Concepts 実験では，分割タイプとして \texttt{aspect\_vs\_bottom100} を用い，Top-100のキャプションをグループA，Bottom-100のキャプションをグループBとして抽出した．
 
-グループサイズ（group\_size）の決定方法として，メイン実験では group\_size = 100 を用いた．
+グループサイズ（group\_size）の決定方法として，データセット別比較では group\_size = 100 を用いた．
 この値は，プロンプトのコンテキスト長制限を考慮して決定された．
 グループサイズ比較実験では，group\_size を 50，100，150，200，300 の 5 段階で変化させた．
 
 サンプリングは，各グループの候補集合から group\_size 件になるようランダムにサブサンプリングし，候補数が group\_size 未満の場合は重複を許して補完した．重み付きサンプリングは使用しなかった．
 
 コンテキスト長制限への対応として，各グループから最大 100 件のテキストを抽出し，プロンプトのコンテキスト長を制限内に収めた．
-メイン実験では group\_size = 100 を用い，グループサイズ比較実験では最大 300 まで検証したが，コンテキスト長超過エラーを回避するため，実際のプロンプトでは必要に応じてテキスト数を制限した．
+データセット別比較では group\_size = 100 を用い，グループサイズ比較実験では最大 300 まで検証したが，コンテキスト長超過エラーを回避するため，実際のプロンプトでは必要に応じてテキスト数を制限した．
 
 \subsection{Few-shot例の作成方法}
 Few-shot例の選定基準として，各データセットのアスペクトラベルに基づき，正解ラベルが明確な例を選定した．
@@ -228,22 +247,26 @@ Few-shot 実験では，0-shot，1-shot，3-shot の 3 つの設定を比較し�
 \subsection{実験カテゴリの定義}
 各実験カテゴリのパラメータ設定を表~\ref{tab:experiment_config}に示す．
 
+temperature は全条件で 0.0 とし，top\_p や frequency\_penalty などその他の生成パラメータはデフォルト値を使用した．
+LLM 評価は gpt-4o-mini（temperature = 0.0）で実施し，COCO 実験のみ無効とした．
+
 \begin{table}[htbp]
-  \centering
-  \caption{実験カテゴリ別パラメータ設定}
-  \label{tab:experiment_config}
-  \begin{tabular}{lllllll}
-    \toprule
-    実験カテゴリ & temperature & max\_tokens & few\_shot & group\_size & GPTモデル & LLM評価 \\
-    \midrule
-    メイン実験 & 0.0 & 2000 & 0 & 100 & gpt-4o-mini & 有効 \\
-    Few-shot実験 & 0.0 & 100 & 0-3 & 100 & gpt-4o-mini & 有効 \\
-    グループサイズ比較 & 0.0 & 2000 & 0 & 50-300 & gpt-4o-mini & 有効 \\
-    モデル比較 & 0.0 & 100 & 0 & 100 & gpt-4o-mini/gpt-5.1 & 有効 \\
-    アスペクト説明文比較 & 0.0 & 2000 & 0 & 100 & gpt-4o & 有効 \\
-    COCO実験 & 0.0 & 2000 & 0 & 100 & gpt-4o-mini & 無効 \\
-    \bottomrule
-  \end{tabular}
+\centering
+\caption{実験カテゴリ別パラメータ設定（変動項目のみ）}
+\label{tab:experiment_config}
+\small
+\begin{tabular}{lllll}
+  \toprule
+  実験カテゴリ & max\_tokens & few\_shot & group\_size & 生成モデル \\
+  \midrule
+  データセット別比較 & 2000 & 0 & 100 & \texttt{4o-mini} \\
+  Few-shot実験 & 100 & 0/1/3 & 100 & \texttt{4o-mini} \\
+  グループサイズ比較 & 2000 & 0 & 50--300 & \texttt{4o-mini} \\
+  モデル比較 & 100 & 0 & 100 & \texttt{4o-mini, 5.1} \\
+  アスペクト説明文比較 & 2000 & 0 & 100 & \texttt{4o} \\
+  COCO実験 & 2000 & 0 & 100 & \texttt{4o-mini} \\
+  \bottomrule
+\end{tabular}
 \end{table}
 
 \subsection{比較手法とベンチマーク}
@@ -279,14 +302,14 @@ BLEU は，生成文と参照文の間の n-gram の重複にもとづき，語�
 
 本実験では，NLTK~\cite{bird2009natural} の \texttt{sentence\_bleu} により，参照側に正解ラベル（またはその説明文），候補側に生成ラベルを与えて BLEU を算出し，SmoothingFunction.method1 を適用した．評価範囲は 0.0 から 1.0 であり，1.0 に近いほど一致度が高いことを示す．
 
-本指標は，語彙レベルの一致度を補助的に確認するために用いた．ただし，本タスクでは正解ラベルが \texttt{food} や \texttt{price} のように短い一方，生成ラベルが \texttt{食べ物の品質に関する言及} のような説明的フレーズになりやすく，BLEU が低値になりやすい．したがって，BLEU は参考値として解釈する．
+本指標は，語彙レベルの一致度を補助的に確認するために用いた．ただし，本タスクでは正解ラベルが \texttt{food} や \texttt{price} のように 1 語の名詞句で与えられることが多い一方，生成ラベルは説明的フレーズになりやすく，n-gram が成立しにくいため BLEU が低値になりやすい．したがって，BLEU は参考値として解釈する．
 
 \subsection{LLM評価スコア}
 LLM 評価は，LLM を評価器として用い，参照テキストと候補テキストの意味的類似度を段階評価する指標である．
 
-本実験では，参照側に正解ラベル（またはその説明文），候補側に生成ラベルを与え，GPT 系モデルに 5 段階（1--5）で評価させた．メイン実験，Few-shot 実験，グループサイズ比較実験，アスペクト説明文比較実験では GPT-4o-mini を用い，temperature = 0.0 に設定した．モデル比較実験では GPT-4o を用い，temperature = 0.0 に設定した．COCO Retrieved Concepts 実験では LLM 評価を無効化した．
+本実験では，参照側に正解ラベル（またはその説明文），候補側に生成ラベルを与え，GPT 系モデルに 5 段階（1--5）で評価させた．データセット別比較，Few-shot 実験，グループサイズ比較実験，アスペクト説明文比較実験では GPT-4o-mini を用い，temperature = 0.0 に設定した．モデル比較実験では GPT-4o を用い，temperature = 0.0 に設定した．COCO Retrieved Concepts 実験では LLM 評価を無効化した．
 
-本指標により，埋め込み類似度では捉えにくい意味的一致／不一致を補助的に確認し，BERTスコアやBLEUの結果の解釈を支えることを狙う．
+本指標により，埋め込み類似度では捉えにくい意味的一致／不一致を補助的に確認し，BERTスコアやBLEUの結果の解釈を支えることを狙う．ただし，単一モデルを評価器として用いる自動評価であるため，評価器バイアスが混入し得る点に留意し，補助指標として解釈する．
 
 評価プロンプトの設計として，以下のプロンプトを使用した．
 \begin{quote}
@@ -312,3 +335,16 @@ LLM 評価は，LLM を評価器として用い，参照テキストと候補テ
 正規化方法として，5 段階評価（1-5）を 0.0-1.0 に正規化し，normalized\_score = (score - 1) / 4 として計算した．
 
 SBERT類似度 との関係として，LLM 評価スコアは SBERT類似度 を補完する補助指標として位置づけられ，両指標を併用することで生成ラベルの品質を多角的に評価した．
+
+\section{統計的分析}
+\label{sec:statistical_tests}
+追加実験では，条件差がアスペクトに依らず一貫して観測されるかを補足的に確認するため，統計的検定を行った．有意水準は \( \alpha=0.05 \)（両側）とした．検定対象は，生成ラベルと参照ラベル（または説明文）との意味的一致を表す主要指標である SBERT類似度（BERTスコア）とした．検定統計量の計算には SciPy を用いた~\cite{virtanen2020scipy}．
+
+\subsection{繰り返し測定（ブロック）と多水準比較}
+Few-shot（0/1/3-shot）および group\_size（50/100/150/200/300）の比較では，Steam の 4 アスペクトをブロック（繰り返し測定の単位）とみなし，条件を要因とする Friedman 検定を実施した~\cite{friedman1937use,demsar2006statistical}．補足として条件ペアごとの対応のある Wilcoxon 検定（両側）も算出し~\cite{wilcoxon1945individual}，多重比較の補正には Holm 法を用いた~\cite{holm1979simple}（主検定が非有意の場合，事後比較は参考として扱う）．
+
+\subsection{2条件比較}
+モデル比較およびアスペクト説明文あり/なしの比較では，Steam の 4 アスペクトをブロックとする対応のある Wilcoxon 検定（両側）を用いた~\cite{wilcoxon1945individual}．
+
+\subsection{指標間の整合（補足）}
+SBERT類似度と LLM 評価の序列がどの程度一致するかを補足的に示すため，全 36 条件の順位に対して Spearman の順位相関（両側）を算出した~\cite{spearman1904association}．

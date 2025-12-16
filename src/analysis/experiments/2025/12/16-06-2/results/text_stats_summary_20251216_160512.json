@@ -1,0 +1,247 @@
+{
+  "timestamp": "2025-12-16T16:05:12",
+  "definitions": {
+    "tokenization": "text.lower().split() (no punctuation removal)",
+    "vocab": "unique tokens aggregated over all samples",
+    "ttr": "types/tokens over aggregated texts",
+    "label_count_per_sample": "number of labels linked to each sample (>=2 -> multi-label)",
+    "ref_label_word_count": "len(label.lower().split()) per label string"
+  },
+  "datasets": [
+    {
+      "dataset": "GoEmotions",
+      "files": {
+        "train": "/Users/seinoshun/imrb_research/data/external/goemotions/kaggle-debarshichanda/current/data/train.tsv",
+        "dev": "/Users/seinoshun/imrb_research/data/external/goemotions/kaggle-debarshichanda/current/data/dev.tsv",
+        "test": "/Users/seinoshun/imrb_research/data/external/goemotions/kaggle-debarshichanda/current/data/test.tsv"
+      },
+      "text_column": "col0 (text)",
+      "label_column": "col1 (label_ids comma-separated)",
+      "label_mapping": "/Users/seinoshun/imrb_research/data/external/goemotions/kaggle-debarshichanda/current/data/emotions.txt",
+      "splits": {
+        "train": {
+          "n_samples": 43410,
+          "word_count_mean": 12.844828380557475,
+          "word_count_median": 12.0,
+          "word_count_max": 33,
+          "word_count_min": 1,
+          "vocab_size": 50276,
+          "ttr": 0.09016596304838287,
+          "mean_labels_per_sample": 1.1772172310527529,
+          "pct_multi_label": 0.16360285648468095,
+          "ref_label_mean_words": 1.0,
+          "ref_label_median_words": 1.0
+        },
+        "dev": {
+          "n_samples": 5426,
+          "word_count_mean": 12.794692222631772,
+          "word_count_median": 12.0,
+          "word_count_max": 30,
+          "word_count_min": 1,
+          "vocab_size": 12937,
+          "ttr": 0.1863476607513252,
+          "mean_labels_per_sample": 1.1758201253225211,
+          "pct_multi_label": 0.1618134906008109,
+          "ref_label_mean_words": 1.0,
+          "ref_label_median_words": 1.0
+        },
+        "test": {
+          "n_samples": 5427,
+          "word_count_mean": 12.730237700386954,
+          "word_count_median": 12.0,
+          "word_count_max": 32,
+          "word_count_min": 1,
+          "vocab_size": 12704,
+          "ttr": 0.18388408817867327,
+          "mean_labels_per_sample": 1.1662060070020268,
+          "pct_multi_label": 0.15422885572139303,
+          "ref_label_mean_words": 1.0,
+          "ref_label_median_words": 1.0
+        }
+      },
+      "aggregate": {
+        "n_samples": 54263,
+        "word_count_mean": 12.828354495696884,
+        "word_count_median": 12.0,
+        "word_count_max": 33,
+        "word_count_min": 1,
+        "vocab_size": 57862,
+        "ttr": 0.0831225174363063,
+        "mean_labels_per_sample": 1.175976263752465,
+        "pct_multi_label": 0.16248640878683449,
+        "ref_label_mean_words": 1.0,
+        "ref_label_median_words": 1.0
+      }
+    },
+    {
+      "dataset": "Steam Review Aspect",
+      "files": {
+        "train": "/Users/seinoshun/imrb_research/data/external/steam-review-aspect-dataset/current/train.csv",
+        "test": "/Users/seinoshun/imrb_research/data/external/steam-review-aspect-dataset/current/test.csv"
+      },
+      "text_column": "cleaned_review (fallback: review)",
+      "label_columns": [
+        "label_recommended",
+        "label_story",
+        "label_gameplay",
+        "label_visual",
+        "label_audio",
+        "label_technical",
+        "label_price",
+        "label_suggestion"
+      ],
+      "splits": {
+        "train": {
+          "n_samples": 900,
+          "word_count_mean": 249.0,
+          "word_count_median": 156.0,
+          "word_count_max": 1473,
+          "word_count_min": 3,
+          "vocab_size": 25798,
+          "ttr": 0.11511825078090138,
+          "mean_labels_per_sample": 3.2744444444444443,
+          "pct_multi_label": 0.9011111111111111,
+          "ref_label_mean_words": 1.0,
+          "ref_label_median_words": 1.0
+        },
+        "test": {
+          "n_samples": 200,
+          "word_count_mean": 225.345,
+          "word_count_median": 156.5,
+          "word_count_max": 1368,
+          "word_count_min": 3,
+          "vocab_size": 9040,
+          "ttr": 0.20058133084825489,
+          "mean_labels_per_sample": 3.27,
+          "pct_multi_label": 0.91,
+          "ref_label_mean_words": 1.0,
+          "ref_label_median_words": 1.0
+        }
+      },
+      "aggregate": {
+        "n_samples": 1100,
+        "word_count_mean": 244.6990909090909,
+        "word_count_median": 156.0,
+        "word_count_max": 1473,
+        "word_count_min": 3,
+        "vocab_size": 29056,
+        "ttr": 0.10794705185218209,
+        "mean_labels_per_sample": 3.2736363636363635,
+        "pct_multi_label": 0.9027272727272727,
+        "ref_label_mean_words": 1.0,
+        "ref_label_median_words": 1.0
+      }
+    },
+    {
+      "dataset": "SemEval-2014 laptop14",
+      "files": {
+        "train": "/Users/seinoshun/imrb_research/data/external/absa-review-dataset/pyabsa-integrated/current/ABSADatasets/datasets/apc_datasets/110.SemEval/113.laptop14/Laptops_Train.xml.seg",
+        "test": "/Users/seinoshun/imrb_research/data/external/absa-review-dataset/pyabsa-integrated/current/ABSADatasets/datasets/apc_datasets/110.SemEval/113.laptop14/Laptops_Test_Gold.xml.seg"
+      },
+      "text_column": "line0 in 3-line block ($T$ placeholder)",
+      "label_column": "line1 in 3-line block (aspect term)",
+      "splits": {
+        "train": {
+          "n_samples": 2328,
+          "word_count_mean": 21.58376288659794,
+          "word_count_median": 19.0,
+          "word_count_max": 83,
+          "word_count_min": 3,
+          "vocab_size": 3074,
+          "ttr": 0.06117778175811491,
+          "mean_labels_per_sample": 1.0,
+          "pct_multi_label": 0.0,
+          "ref_label_mean_words": 1.4802405498281788,
+          "ref_label_median_words": 1.0
+        },
+        "test": {
+          "n_samples": 638,
+          "word_count_mean": 17.71003134796238,
+          "word_count_median": 16.0,
+          "word_count_max": 72,
+          "word_count_min": 3,
+          "vocab_size": 1322,
+          "ttr": 0.11700150455792548,
+          "mean_labels_per_sample": 1.0,
+          "pct_multi_label": 0.0,
+          "ref_label_mean_words": 1.6332288401253918,
+          "ref_label_median_words": 1.0
+        }
+      },
+      "aggregate": {
+        "n_samples": 2966,
+        "word_count_mean": 20.750505731625083,
+        "word_count_median": 18.0,
+        "word_count_max": 83,
+        "word_count_min": 3,
+        "vocab_size": 3432,
+        "ttr": 0.05576316901179605,
+        "mean_labels_per_sample": 1.0,
+        "pct_multi_label": 0.0,
+        "ref_label_mean_words": 1.5131490222521915,
+        "ref_label_median_words": 1.0
+      }
+    },
+    {
+      "dataset": "SemEval-2014 restaurant14",
+      "files": {
+        "train": "/Users/seinoshun/imrb_research/data/external/absa-review-dataset/pyabsa-integrated/current/ABSADatasets/datasets/apc_datasets/110.SemEval/114.restaurant14/Restaurants_Train.xml.seg",
+        "test": "/Users/seinoshun/imrb_research/data/external/absa-review-dataset/pyabsa-integrated/current/ABSADatasets/datasets/apc_datasets/110.SemEval/114.restaurant14/Restaurants_Test_Gold.xml.seg"
+      },
+      "text_column": "line0 in 3-line block ($T$ placeholder)",
+      "label_column": "line1 in 3-line block (aspect term)",
+      "splits": {
+        "train": {
+          "n_samples": 3608,
+          "word_count_mean": 19.669345898004433,
+          "word_count_median": 18.0,
+          "word_count_max": 79,
+          "word_count_min": 3,
+          "vocab_size": 3724,
+          "ttr": 0.052475094057801513,
+          "mean_labels_per_sample": 1.0,
+          "pct_multi_label": 0.0,
+          "ref_label_mean_words": 1.3883037694013303,
+          "ref_label_median_words": 1.0
+        },
+        "test": {
+          "n_samples": 1120,
+          "word_count_mean": 18.553571428571427,
+          "word_count_median": 17.0,
+          "word_count_max": 70,
+          "word_count_min": 4,
+          "vocab_size": 1880,
+          "ttr": 0.0904716073147257,
+          "mean_labels_per_sample": 1.0,
+          "pct_multi_label": 0.0,
+          "ref_label_mean_words": 1.4473214285714286,
+          "ref_label_median_words": 1.0
+        }
+      },
+      "aggregate": {
+        "n_samples": 4728,
+        "word_count_mean": 19.405033840947546,
+        "word_count_median": 18.0,
+        "word_count_max": 79,
+        "word_count_min": 3,
+        "vocab_size": 4381,
+        "ttr": 0.04775088013777017,
+        "mean_labels_per_sample": 1.0,
+        "pct_multi_label": 0.0,
+        "ref_label_mean_words": 1.4022842639593909,
+        "ref_label_median_words": 1.0
+      }
+    }
+  ],
+  "llm_eval_settings": {
+    "models": [
+      "GPT-4o-mini (main)",
+      "GPT-5.1 (model comparison)",
+      "GPT-4o (aspect explanation comparison)"
+    ],
+    "temperature": 0.0,
+    "rating_scale": "1-5, normalized via (score-1)/4",
+    "prompt_source": "論文/chapters/04_experiment.tex",
+    "evaluation_runs": "single pass per pair"
+  }
+}
