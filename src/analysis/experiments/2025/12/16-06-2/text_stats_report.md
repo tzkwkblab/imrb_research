@@ -22,3 +22,6 @@
 - 評価器: GPT-4o-mini（モデル比較時のみ GPT-4o）、temperature=0.0、5段階評価→(score-1)/4で正規化
 - 評価回数: 参照・候補ペアあたり1回（single pass）
 
+
+
+

@@ -31,7 +31,7 @@ source .venv/bin/activate
 
 # スクリプト実行
 python 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/実行ファイル/generate_coco_analysis_with_images.py \
-  --batch-results results/20251127_140836/batch_results.json \
+  --batch-results 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/実験結果/batch_results.json \
   --research-context 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/research_context.md \
   --output 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/分析レポート/coco_analysis_with_images.md \
   --model gpt-5.1 \
@@ -42,7 +42,7 @@ python 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/実行
 
 ```bash
 python 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/実行ファイル/generate_coco_analysis_with_images.py \
-  --batch-results results/20251127_140836/batch_results.json \
+  --batch-results 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/実験結果/batch_results.json \
   --research-context 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/research_context.md \
   --output 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/分析レポート/coco_analysis_concept_0.md \
   --model gpt-5.1 \
@@ -54,7 +54,7 @@ python 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/実行
 
 ```bash
 python 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/実行ファイル/generate_coco_analysis_with_images.py \
-  --batch-results results/20251127_140836/batch_results.json \
+  --batch-results 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/実験結果/batch_results.json \
   --research-context 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/research_context.md \
   --output 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/分析レポート/coco_analysis_with_images.md \
   --model gpt-5.1 \
@@ -129,7 +129,7 @@ python 論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/実行
 
 - GPTClient実装: `src/analysis/experiments/utils/LLM/gpt/gpt_client.py`
 - 研究コンテキスト: `論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/research_context.md`
-- 実験結果: `results/20251127_140836/batch_results.json`
+- 実験結果: `論文/結果/追加実験/論文執筆用/coco_retrieved_concepts/実験結果/batch_results.json`
 
 
 

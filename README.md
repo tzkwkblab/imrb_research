@@ -59,8 +59,10 @@
 
 - 実験結果は日付階層: `src/analysis/experiments/{YYYY}/{MM}/{DD-実験番号}/`
   - 例: `2025/10/10/` に統一パイプライン（`run_experiment.py`, `pipeline_config.yaml` 等）
-  - 結果は `results/batch_experiment_*.json` として保存（実験メタ情報含む）
+  - 実行結果（ログ/アーカイブ）は `results/batch_experiment_*.json` として保存（実験メタ情報含む）
 - 実験履歴の集約は `src/analysis/experiment_history_consolidator.py`（サマリーは `experiment_summaries/`）
+
+- 論文本文で引用・要約・数値参照する結果は `論文/結果/追加実験/論文執筆用/` を参照（`results/` は実行ログ/過去実験のアーカイブとして扱い、引用元にしない）
 
 ## 実行方法（最短ルート）
 

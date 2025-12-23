@@ -84,7 +84,7 @@ python mvp_experiment.py
 BERTスコア: 0.8234
 BLEUスコア: 0.6123
 品質評価: good
-保存先: results/mvp_gameplay_20250725_120000.json
+保存先（ログ/アーカイブ）: results/mvp_gameplay_20250725_120000.json
 --------------------------------------------------
 
 アスペクト: visual
@@ -97,11 +97,11 @@ BLEUスコア: 0.6123
 BERTスコア: 0.7891
 BLEUスコア: 0.5934
 品質評価: fair
-保存先: results/mvp_visual_20250725_120001.json
+保存先（ログ/アーカイブ）: results/mvp_visual_20250725_120001.json
 --------------------------------------------------
 
 === 実験完了 ===
-統合結果: results/mvp_summary_20250725_120000.json
+統合結果（ログ/アーカイブ）: results/mvp_summary_20250725_120000.json
 ✅ MVP実験が正常に完了しました
 ```
 
@@ -171,7 +171,7 @@ result = analyzer.analyze(
     group_a=splits.group_a,
     group_b=splits.group_b,
     correct_answer=splits.correct_answer,
-    output_dir="results/",
+    output_dir="results/",  # ログ/アーカイブ用途
     experiment_name=f"mvp_{aspect}_{timestamp}"
 )
 ```

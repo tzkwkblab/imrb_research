@@ -17,8 +17,8 @@ in \textit{Proceedings of the 8th International Workshop on Semantic Evaluation 
 % 研究概要: Aspect Based Sentiment Analysis（アスペクトベース感情分析）の標準ベンチマークタスクを提案。レビュー文からアスペクト（観点）とその極性（ポジティブ/ネガティブ/ニュートラル）を抽出するタスクを定義し、評価データセットを提供。
 % データセット: Restaurant（レストラン）とLaptop（ノートPC）の2ドメインで構成。Restaurantドメインではfood, service, price, atmosphereなどのアスペクト、Laptopドメインではbattery, screen, keyboard, performanceなどのアスペクトが定義されている。
 % タスク構成: 複数のサブタスク（アスペクト抽出、極性分類、アスペクトカテゴリ分類など）を含む包括的な評価フレームワークを提供。
-% 本研究での使用: 対比因子生成実験の主要データセットとして使用。Restaurantドメインからfood/service、Laptopドメインからbattery/screenの4アスペクトを用い、アスペクトを含むテキスト群と含まないテキスト群の対比分析に活用。
-% 意義: ABSA研究の標準ベンチマークとして広く用いられ，本研究における対比因子生成手法の評価基盤を提供。
+% 本研究での使用: 対比因子ラベル生成実験の主要データセットとして使用。Restaurantドメインからfood/service、Laptopドメインからbattery/screenの4アスペクトを用い、アスペクトを含むテキスト群と含まないテキスト群の対比分析に活用。
+% 意義: ABSA研究の標準ベンチマークとして広く用いられ，本研究における対比因子ラベル生成手法の評価基盤を提供。
 
 \bibitem{ribeiro2016should}
 M.~T. Ribeiro, S.~Singh, and C.~Guestrin:
@@ -71,7 +71,7 @@ R.~Luss, E.~Miehling, and A.~Dhurandhar:
 arXiv preprint arXiv:2406.11785, June 2024.
 % 研究概要: 生成タスクでは「クラス予測」がない点に着目し、プロンプトを最小限変更したときに出力が（矛盾する/望ましくない等）別応答へ変わることを根拠に、LLMの応答理由を対比的に説明する CELL を提案。
 % 手法: ブラックボックス（API呼び出し）前提で、プロンプトのマスク化とインフィリングにより候補の対比プロンプトを探索し、ユーザー定義のスコア関数（距離/好ましさ等）で「対比」が成立する変更を見つける。長文文脈向けにクエリ予算制約付き探索も提示。
-% 本研究での位置づけ: 出力説明を「入力の最小変更で別出力になる」という対比で与える系譜として参照し、テキスト集合の差分を言語化する本研究の対比因子生成と、ブラックボックス前提・スコア関数設計という観点で接続する。
+% 本研究での位置づけ: 出力説明を「入力の最小変更で別出力になる」という対比で与える系譜として参照し、テキスト集合の差分を言語化する本研究の対比因子ラベル生成と、ブラックボックス前提・スコア関数設計という観点で接続する。
 % 注意: 生成される対比はスコア関数・インフィラー・探索予算に強く依存し、得られる説明は因果の保証というより局所的な反実仮想の提示に近い。
 
 \bibitem{bucinca2024contrastive}
@@ -102,7 +102,7 @@ D.~Demszky, D.~Movshovitz-Attias, J.~Ko, A.~Cowen, G.~Nemade, and S.~Ravi:
 in \textit{Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020)}, pp.~4040--4054, 2020.
 % 研究概要: Redditコメント約5.8万件に対し、27感情カテゴリ＋Neutralの多ラベル注釈を付与した大規模な英語感情データセット GoEmotions を提案。
 % データセット: 会話的テキスト（Reddit）を対象とし、細粒度の感情分類や転移学習評価に利用できる設計。多ラベルである点が特徴（1文に複数感情が付与されうる）。
-% 本研究での使用: 感情/主観表現を含むテキスト集合を扱う際の代表的公開データセットとして参照し、テキスト集合差分の言語化（対比因子生成）と親和性のあるタスク背景として位置づける。
+% 本研究での使用: 感情/主観表現を含むテキスト集合を扱う際の代表的公開データセットとして参照し、テキスト集合差分の言語化（対比因子ラベル生成）と親和性のあるタスク背景として位置づける。
 % 注意: Reddit由来のドメイン偏りや注釈方針（多ラベル・Neutral）の影響があり、他ドメインへの一般化やラベル解釈には留意が必要。
 
 \bibitem{srec:steam-review-aspect-dataset}
@@ -111,7 +111,7 @@ S.~Khosasi:
 2024. Available at \url{https://srec.ai/blog/steam-review-aspect-dataset} (accessed: 2025-12-13).
 % 研究概要: Steamレビューを対象に、レビュー本文に対するアスペクト（観点）情報を扱うためのデータセットを公開・紹介する記事。
 % データセット: アスペクト抽出/アスペクト分類など、レビューの観点分析タスクでの利用を想定したリソースとして位置づけられている。
-% 本研究での使用: Steamレビューを用いた対比因子生成・評価の背景データ（アスペクトという外部ラベル）として参照。
+% 本研究での使用: Steamレビューを用いた対比因子ラベル生成・評価の背景データ（アスペクトという外部ラベル）として参照。
 % 注意: Web記事由来の参照で、配布形式や最新版URLが変更されうるため、再現の際は取得日時やスナップショットの確保が望ましい。
 
 \bibitem{papineni-etal-2002-bleu}
@@ -133,7 +133,7 @@ D.~Bau, B.~Zhou, A.~Khosla, A.~Oliva, and A.~Torralba:
 ``Network Dissection: Quantifying Interpretability of Deep Visual Representations,''
 in \textit{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2017)}, Honolulu, HI, USA, July 2017, pp.~6541--6549, arXiv:1704.05796.
 % 研究概要: CNN の各ユニットと Broden データセットの概念マスクとの IoU を用いて，「どのユニットがどの概念を検出しているか」を定量化する手法 Network Dissection を提案し，深層視覚表現の解釈可能性を測定。
-% 本研究での位置づけ: 画像モデル内部の概念特徴に対する「固定語彙ベースの自動ラベリング」手法として参照し，対比因子生成タスクとの違い（内部アクティベーション前提・画像中心）を説明する際の代表例として用いる。
+% 本研究での位置づけ: 画像モデル内部の概念特徴に対する「固定語彙ベースの自動ラベリング」手法として参照し，対比因子ラベル生成タスクとの違い（内部アクティベーション前提・画像中心）を説明する際の代表例として用いる。
 
 \bibitem{oikarinen2022clipdissect}
 T.~Oikarinen and T.-W. Weng:
@@ -159,7 +159,7 @@ S.~Rao, Y.~Zhao, M.~Sachan, and A.~Gupta:
 ``Discover-then-Name: Task-Agnostic Concept Bottlenecks via Automated Concept Discovery,''
 arXiv preprint arXiv:2407.14499, 2024.
 % 研究概要: CLIP 特徴に対して Sparse Autoencoder や NMF を適用して概念方向を教師なしで発見し，高活性化画像と CLIP/LLM を用いて概念に名前を付ける Discover-then-Name (DN-CBM) を提案。
-% 本研究での位置づけ: 「発見してから名付ける」コンセプトボトルネックの代表例として参照し，本研究の対比因子生成タスクとのタスク設計の違いを議論する。
+% 本研究での位置づけ: 「発見してから名付ける」コンセプトボトルネックの代表例として参照し，本研究の対比因子ラベル生成タスクとのタスク設計の違いを議論する。
 
 \bibitem{ameisen2025attribution}
 E.~Ameisen, J.~Lindsey, A.~Pearce, W.~Gurnee, N.~L. Turner, B.~Chen, C.~Citro, D.~Abrahams, S.~Carter, B.~Hosmer, J.~Marcus, M.~Sklar, A.~Templeton, T.~Bricken, C.~McDougall, H.~Cunningham, T.~Henighan, A.~Jermyn, A.~Jones, A.~Persic, Z.~Qi, T.~B. Thompson, S.~Zimmerman, K.~Rivoire, T.~Conerly, C.~Olah, and J.~Batson:
@@ -214,7 +214,7 @@ C.~Rudin:
 \textit{Nature Machine Intelligence}, vol.~1, no.~5, pp.~206--215, 2019, doi:10.1038/s42256-019-0048-x.
 % 研究概要: ブラックボックスモデルに対するpost-hoc説明（explainable AI）の流れに対し，高リスク意思決定（医療・刑事司法など）では，説明を後付けするよりも最初から解釈可能なモデルを用いるべきだと主張する。
 % 主張: 説明生成でブラックボックス利用を正当化する方向ではなく，運用上の安全性・説明責任の要請が強い領域では「解釈可能性を内在化したモデル設計」へ研究と実装の重心を移すべきだと論じる。
-% 本研究での位置づけ: 対比因子生成のような説明生成を議論する際に，post-hoc説明の限界と「解釈可能な仕組みの設計」志向（説明の目的・適用範囲の明確化）の背景として参照する（Nature公開descriptionで主旨を確認）。
+% 本研究での位置づけ: 対比因子ラベル生成のような説明生成を議論する際に，post-hoc説明の限界と「解釈可能な仕組みの設計」志向（説明の目的・適用範囲の明確化）の背景として参照する（Nature公開descriptionで主旨を確認）。
 
 \bibitem{vilone2020systematic}
 G.~Vilone and L.~Longo:

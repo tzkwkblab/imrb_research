@@ -118,3 +118,6 @@ def calculate_llm_vision_alignment_score(
     return {"score": score, "normalized_score": normalized, "reasoning": reasoning}
 
 
+
+
+

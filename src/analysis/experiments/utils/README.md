@@ -26,7 +26,7 @@ result = analyzer.analyze(
     group_a=["Great battery life", "Long-lasting battery"],
     group_b=["Poor screen quality", "Slow performance"],
     correct_answer="Battery performance and power management",
-    output_dir="results/",
+    output_dir="results/",  # ログ/アーカイブ用途
     experiment_name="battery_vs_screen"
 )
 
@@ -53,7 +53,7 @@ result = analyzer.analyze(
     group_a=group_a,
     group_b=group_b,
     correct_answer=correct_answer,
-    output_dir="results/",
+    output_dir="results/",  # ログ/アーカイブ用途
     examples=examples,  # Few-shot例題
     output_language="英語"
 )
@@ -79,7 +79,7 @@ experiments = [
 
 results = analyzer.analyze_batch(
     experiments=experiments,
-    output_dir="results/batch/",
+    output_dir="results/batch/",  # ログ/アーカイブ用途
     base_experiment_name="multi_feature_test"
 )
 ```
