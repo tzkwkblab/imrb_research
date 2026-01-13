@@ -19,7 +19,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-
+*.mp4
 # Virtual Environment
 .env
 .venv

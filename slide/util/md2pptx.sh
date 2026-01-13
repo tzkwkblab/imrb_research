@@ -64,13 +64,13 @@ case $option in
         output_file="$selected_dir/${selected_name}.pptx"
         echo
         echo "通常のPowerPoint形式に変換中..."
-        npx @marp-team/marp-cli "$selected_file" --pptx -o "$output_file"
+        npx @marp-team/marp-cli "$selected_file" --pptx --allow-local-files -o "$output_file"
         ;;
     2)
         output_file="$selected_dir/${selected_name}_editable.pptx"
         echo
         echo "編集可能なPowerPoint形式に変換中..."
-        npx @marp-team/marp-cli "$selected_file" --pptx-editable -o "$output_file"
+        npx @marp-team/marp-cli "$selected_file" --pptx-editable --allow-local-files -o "$output_file"
         ;;
     *)
         echo "ERROR: 無効な選択です。1または2を選択してください。"
