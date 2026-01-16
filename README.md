@@ -1,141 +1,271 @@
-## プロジェクト概要
+# 対比因子ラベル生成 研究プロジェクト
 
-このリポジトリは、説明可能 AI のための「対比因子ラベル生成」手法を検証する研究プロジェクトです。A/B 2 群のテキスト差分を LLM で要約し、意味的に妥当なラベル（対比因子）を自動生成・評価します。詳細は各ディレクトリの README と `docs/` を参照してください。
+## 概要
 
-### 研究テーマ/方向性（要点）
+### 背景
+深層学習モデルは多様なタスクで高い性能を示す一方、その内部処理はブラックボックス性が高く、意思決定の根拠を人間が理解することは容易ではない。モデル内部から抽出された潜在概念に意味を付与する作業は人手で行われており、その負担軽減のために LLM を用いた自動化が検討されている。
 
-- **目的**: 2 群（A: 特徴あり, B: 特徴なし）の本質的差分を自然言語で要約し、概念レベルの説明を自動生成
-- **適用データ**: Steam ゲームレビュー、SemEval ABSA（レストラン）、Amazon レビュー、GoEmotions（感情分類）
-- **評価**: 主要指標は BERTScore と BLEU（意味/語彙の両面を記録）
+### 手法
+A/B 2群（特徴あり/なし）のテキスト集合の差分に基づき、「Aに含まれ Bに含まれない特徴」を表す自然言語ラベル（対比因子）を LLM で生成する**対比因子ラベル生成タスク**を提案。Few-shot プロンプト（0/1/3-shot）を用い、GPT-4o-mini 等の複数モデルで実験を行った。
 
-## ディレクトリ構成（トップレベル）
+### 実験
+SemEval-2014 ABSA、Steam ゲームレビュー、GoEmotions、COCO Retrieved Concepts など複数ドメインのデータセットを使用。各グループ100件の条件で Sentence-BERT 類似度、BLEU、LLM 評価を組み合わせて生成ラベルの品質を多角的に測定した。
 
-- `src/`: 分析/実験コード（統一パイプライン、ユーティリティ、データ処理）
-- `data/`:
-  - `external/` 外部データ（読み取り専用、`current` シンボリックリンク運用）
-  - `processed/` 前処理済み
-  - `analysis-workspace/` 実験で参照する説明 CSV や例題
-  - `cache/` 一時ファイル
-- `docs/`: データセット・実験・ユーティリティなどのドキュメント集
-- `experiment_summaries/`: 実験サマリーの Markdown
-- `scripts/`: 実行支援スクリプト（対話型実験ランナー等）
-- `slide/`: 発表用スライド（Markdown→PPTX 変換ユーティリティあり）
-- `論文/`: LaTeX 原稿一式（和文テンプレート）
+### 結果
+全36条件の平均で SBERT類似度 約0.698（中程度の意味的一致）、BLEU 0.008（語彙一致は低い）を記録。1-shot が最も良好で、gameplay や food のような具体的な概念では高スコア、抽象度の高い概念では低下する傾向を確認した。
 
-各詳細は当該ディレクトリ直下の README または `docs/` を参照してください。
+### 結論
+提案手法は一定の条件下で人手による解釈ラベリングを部分的に代替できることを示した。ただし抽象概念への適用や文脈を汲み取った評価など、課題も明らかになった。
 
-## データ管理と配置（要点）
+---
 
-- 基本構造と運用は `data/README.md` を参照
-- 外部データは `data/external/{dataset}/{source}/{version}/` に配置し、最新版は `current` リンクで参照
-- 処理済みは `data/processed/`、ワーク系（説明 CSV や few-shot 例題）は `data/analysis-workspace/`
-- 直接編集禁止: `external/` 配下（バージョン/整合性保持）
+## 🔗 主要リンク
 
-## 主要データセット（概要のみ）
+| 項目 | リンク |
+|------|--------|
+| 📄 論文 (PDF) | [論文/清野_修士卒論2025__New_.pdf](論文/清野_修士卒論2025__New_.pdf) |
+| 📊 論文用実験結果 | [論文/結果/](論文/結果/) |
+| 🔬 実験スクリプト | [scripts/run_interactive_experiment.sh](scripts/run_interactive_experiment.sh) |
+| 📝 Overleaf | [Overleaf プロジェクト](https://www.overleaf.com/project/6943b94af12b74c92a2c1b1a) |
 
-- **Steam Review aspect dataset**（8 アスペクト: recommended, story, gameplay, visual, audio, technical, price, suggestion）
+---
 
-  - ドキュメント: `docs/datasets/steam-review-aspect-dataset/README.md`
-  - 正規 CSV: `data/analysis-workspace/aspect_descriptions/steam/descriptions_official.csv`
+## 🚀 クイックスタート
 
-- **SemEval ABSA (Restaurants)**（`food, service, price, atmosphere` を採用）
-
-  - ドキュメント: `docs/datasets/semeval-absa/README.md`
-  - 正規 CSV: `data/analysis-workspace/aspect_descriptions/semeval/descriptions_official.csv`
-
-- **Amazon Product Reviews (Bittlingmayer)**（本プロジェクト独自アスペクト: `quality, price, delivery, service, product`）
-  - ドキュメント: `docs/datasets/amazon-product-reviews/README.md`
-  - 正規 CSV: `data/analysis-workspace/aspect_descriptions/amazon/descriptions_official.csv`
-
-- **Retrieved Concepts (COCO Captions)**（300 コンセプト: concept_0 ～ concept_299）
-  - ドキュメント: `docs/datasets/retrieved-concepts/README.md`
-  - Top-100/Bottom-100 の類似度順キャプションデータ
-
-- **GoEmotions**（28感情カテゴリ: admiration, amusement, anger, joy, neutral など）
-  - ドキュメント: `docs/datasets/goemotions/README.md`
-  - Redditコメントから収集された細粒度感情分類データセット
-
-## 実験ワークフローと配置
-
-- 実験結果は日付階層: `src/analysis/experiments/{YYYY}/{MM}/{DD-実験番号}/`
-  - 例: `2025/10/10/` に統一パイプライン（`run_experiment.py`, `pipeline_config.yaml` 等）
-  - 実行結果（ログ/アーカイブ）は `results/batch_experiment_*.json` として保存（実験メタ情報含む）
-- 実験履歴の集約は `src/analysis/experiment_history_consolidator.py`（サマリーは `experiment_summaries/`）
-
-- 論文本文で引用・要約・数値参照する結果は `論文/結果/追加実験/論文執筆用/` を参照（`results/` は実行ログ/過去実験のアーカイブとして扱い、引用元にしない）
-
-## 実行方法（最短ルート）
-
-1. 仮想環境の準備/アクティベート（プロジェクトルート）
+以下の手順で環境構築から実験実行まで完結します。
 
 ```bash
-cd /Users/seinoshun/imrb_research
-source .venv/bin/activate
+# 1. リポジトリのクローン
+git clone https://github.com/tzkwkblab/imrb_research.git
+cd imrb_research
+
+# 2. 仮想環境の作成と有効化
+python -m venv .venv
+source .venv/bin/activate  # Mac/Linux
+
+# 3. 依存ライブラリのインストール
+pip install -r requirements.txt
+
+# 4. 環境変数の設定（.env.example をコピーして編集）
+cp .env.example .env
+# .env を編集して API キーを設定
+
+# 5. データセットのダウンロード
+python scripts/download_datasets.py --all
+
+# 6. 実験の実行（対話型 or コマンドライン）
+bash scripts/run_interactive_experiment.sh
+# または直接実行:
+# python src/analysis/experiments/2025/10/10/run_experiment.py --dataset steam --aspect gameplay --group-size 100
 ```
 
-2. 対話型ランナー（推奨）
+---
+
+## 📋 初期設定
+
+### Python 環境
+
+- **Python 3.9 以上** を推奨
+- 仮想環境を必ず使用（システム Python 禁止）
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+### API 認証情報の設定
+
+`.env.example` をコピーして `.env` を作成し、各 API キーを設定してください。
+
+```bash
+cp .env.example .env
+```
+
+**必須:**
+| 項目 | 用途 | 取得先 |
+|------|------|--------|
+| `OPENAI_API_KEY` | LLM 実験実行 | [OpenAI Platform](https://platform.openai.com/) |
+
+**オプション（データセットダウンロード時）:**
+| 項目 | 用途 | 取得先 |
+|------|------|--------|
+| `KAGGLE_USERNAME`, `KAGGLE_KEY` | Kaggle データセット取得 | [Kaggle Settings](https://www.kaggle.com/settings) → API → Create New Token |
+
+---
+
+## 📦 データセットセットアップ
+
+`.gitignore` により `data/external/`, `data/processed/`, `data/analysis-workspace/` はリポジトリに含まれません。
+
+```bash
+# Kaggle認証情報を設定後、実行
+python scripts/download_datasets.py --all
+
+# 個別ダウンロード
+python scripts/download_datasets.py --dataset steam
+python scripts/download_datasets.py --dataset goemotions
+python scripts/download_datasets.py --dataset amazon
+
+# 利用可能なデータセット一覧
+python scripts/download_datasets.py --list
+```
+
+詳細な配置ルールは `data/README.md` を参照してください。
+
+---
+
+## 🔬 実験実行
+
+### 対話型スクリプト（推奨）
 
 ```bash
 bash scripts/run_interactive_experiment.sh
 ```
 
-詳細な使い方は [実験スクリプト使い方ガイド](docs/experiments/guides/experiment-script-guide.md) を参照してください。
+対話形式でデータセット、アスペクト、グループサイズなどを選択できます。
 
-3. 直接実行（例: 2025/10/10 の統一パイプライン）
-
-```bash
-cd src/analysis/experiments/2025/10/10
-python run_experiment.py --config pipeline_config.yaml
-# あるいは: python run_experiment.py --dataset steam --aspect gameplay --group-size 50
-```
-
-## 評価指標（研究の主要スコア）
-
-- **BERTScore**（意味類似）と **BLEU**（語彙一致）を常に記録
-- 位置づけ/理由は `docs/` と各実験 README を参照
-
-## ドキュメントの見方
-
-- データセット詳細: `docs/datasets/`
-- 実験ドキュメント: `docs/experiments/`
-- ユーティリティ/再利用パターン: `docs/utils.md`, `docs/reusable-components/`
-
-## 論文執筆で参照するデータ（重要）
-
-- **論文本文で引用する追加実験の結果・統計・考察は `論文/結果/追加実験/論文執筆用/` 配下を正とする**
-  - 入口: `論文/結果/追加実験/論文執筆用/追加実験結果参照ガイド.md`
-- **参照ルール**: `.cursor/rules/`（特に `thesis-writing.mdc`）
-- **論文執筆データのパス一覧**: `paper_data_paths.txt`
-
-## 論文（原稿）
-
-- 場所: `論文/`
-- 主ファイル: `論文/masterThesisJaSample.tex`
-- ビルド例（latexmk がある場合）:
+### コマンドライン直接実行
 
 ```bash
-cd /Users/seinoshun/imrb_research/論文
-latexmk -pdf masterThesisJaSample.tex
+# Steam データセット、gameplay アスペクト、グループサイズ 100
+python src/analysis/experiments/2025/10/10/run_experiment.py \
+    --dataset steam --aspect gameplay --group-size 100 --split-type binary_label
 ```
 
-## スライド（発表資料）
+**主要オプション:**
+| オプション | 説明 | デフォルト |
+|-----------|------|-----------|
+| `--dataset` | データセット名 (steam, semeval, amazon, goemotions, retrieved_concepts) | 必須 |
+| `--aspect` | アスペクト名 | 必須 |
+| `--group-size` | 各グループのサンプル数 | 50 |
+| `--split-type` | 分割タイプ (binary_label, aspect_vs_others, aspect_vs_bottom100) | binary_label |
+| `--silent` | ファイル保存をスキップ（デバッグ用） | False |
 
-- 場所: `slide/`
-- 変換: Markdown → PPTX 変換ユーティリティ `slide/util/md2pptx.sh`
-
-```bash
-bash slide/util/md2pptx.sh
-```
-
-## 環境準備（Python）
-
-- 依存関係: `requirements.txt`
-- 実行前に仮想環境を必ずアクティベート（システム Python 禁止）
-
-## コミットルール
-
-- 1 行・最大 50 文字目安、命令形で簡潔に（詳細は `.cursor/rules/` を参照）
+詳細は [実験スクリプト使い方ガイド](docs/experiments/guides/experiment-script-guide.md) を参照してください。
 
 ---
 
-補足: 本 README は概要のみを記載しています。各項目の詳細は該当ディレクトリの README または `docs/` に配置しています。
+## 📊 実行サンプルと期待結果
+
+### サンプル実行
+
+```bash
+# サンプル: Steam の gameplay アスペクトで実験
+python src/analysis/experiments/2025/10/10/run_experiment.py \
+    --dataset steam --aspect gameplay --group-size 100 --split-type binary_label
+```
+
+### 期待される出力
+
+```
+============================================================
+統一実験パイプライン
+============================================================
+
+[モード] コマンドライン引数から実行
+データセット: steam
+
+==================================================
+実験開始: steam_gameplay_20260116_151500
+データセット: steam
+アスペクト: gameplay
+グループサイズ: 100
+分割タイプ: binary_label
+
+[1/3] データ読み込み中...
+✅ データ読み込み完了 (A: 100件, B: 100件)
+
+[2/3] 対比因子分析実行中...
+✅ LLM応答取得完了
+
+[3/3] スコア確認中...
+✅ スコア確認完了
+
+==================================================
+=== 結果 ===
+BERTスコア: 0.75
+BLEUスコア: 0.12
+LLM応答: Engaging and immersive game mechanics with intuitive controls.
+品質評価: good
+
+📁 結果保存: results/batch_experiment_20260116_151500.json
+
+✅ パイプライン実行完了
+```
+
+### 結果の解釈
+
+- **BERTScore**: 意味的類似度（0.0-1.0、高いほど良い）
+- **BLEUScore**: 語彙的一致度（0.0-1.0、高いほど良い）
+- **LLM応答**: 生成された対比因子ラベル
+- **品質評価**: `poor` / `medium` / `good`
+
+結果ファイルは `results/batch_experiment_*.json` に保存されます。
+
+---
+
+## 📁 ディレクトリ構成
+
+```
+imrb_research/
+├── src/                          # 分析/実験コード
+├── data/                         # データディレクトリ（詳細は data/README.md）
+│   ├── external/                 # 外部データセット（読み取り専用）
+│   ├── processed/                # 前処理済みデータ
+│   ├── analysis-workspace/       # 実験用説明CSV・例題
+│   └── cache/                    # 一時ファイル
+├── docs/                         # ドキュメント集
+├── scripts/                      # 実行支援スクリプト
+├── experiment_summaries/         # 実験サマリー
+├── results/                      # 実験結果ログ
+├── slide/                        # 発表スライド
+├── 論文/                         # LaTeX 論文原稿
+└── 引き継ぎ資料/                 # 引き継ぎ用資料
+```
+
+---
+
+## 📚 主要データセット
+
+| データセット | アスペクト数 | ドキュメント |
+|-------------|-------------|-------------|
+| Steam Review | 8 (gameplay, visual, story 等) | `docs/datasets/steam-review-aspect-dataset/` |
+| SemEval ABSA | 4 (food, service, price, atmosphere) | `docs/datasets/semeval-absa/` |
+| Amazon Reviews | 5 (quality, price, delivery 等) | `docs/datasets/amazon-product-reviews/` |
+| GoEmotions | 28 (admiration, anger, joy 等) | `docs/datasets/goemotions/` |
+| Retrieved Concepts | 300 (concept_0 ～ concept_299) | `docs/datasets/retrieved-concepts/` |
+
+---
+
+## 📖 ドキュメント
+
+- **データセット詳細**: `docs/datasets/`
+- **実験ガイド**: `docs/experiments/guides/experiment-script-guide.md`
+- **データ管理**: `data/README.md`
+- **スクリプト一覧**: `scripts/README.md`
+
+---
+
+## 🔧 トラブルシューティング
+
+### Kaggle API 認証エラー
+
+```bash
+# ~/.kaggle/kaggle.json が必要
+mkdir -p ~/.kaggle
+# Kaggle Settings → API → Create New Token でダウンロードしたファイルを配置
+chmod 600 ~/.kaggle/kaggle.json
+```
+
+### OpenAI API エラー
+
+`.env` ファイルに有効な `OPENAI_API_KEY` が設定されているか確認してください。
+
+### データセットが見つからない
+
+`download_datasets.py` を実行してデータセットをダウンロードするか、`data/README.md` に従って手動配置してください。
+
+---
+
+補足: 各項目の詳細は該当ディレクトリの README または `docs/` に配置しています。
